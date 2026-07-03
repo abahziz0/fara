@@ -1,0 +1,20 @@
+{
+  "total_villages": 1023,
+  "districts": {
+    "Maungdaw": 716,
+    "Sittwe": 307
+  },
+  "townships": {
+    "Maungdaw": 378,
+    "Buthidaung": 338,
+    "Rathedaung": 214,
+    "Sittwe": 93
+  },
+  "village_tract_count": 290,
+  "villages_missing_rohingya_name": 298,
+  "villages_missing_burmese_name": 378,
+  "unverified_coordinates": [
+    338
+  ],
+  "corrections": "id 1025 Fawyazi Para -> Maungdaw; id 338 Four Miles South -> Buthidaung (source coords erroneous, flagged unverified)"
+}
