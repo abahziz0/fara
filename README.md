@@ -14,6 +14,13 @@ A self-contained, single-file archive explorer styled as a futuristic intelligen
 - **Command palette** (`⌘K` / `Ctrl+K`) — every action and village one keystroke away
 - **Trilingual instant search** (`/`) — Rohingya, English, Burmese names + tracts
 - **Village dossiers** — record ID (`FARA-0043`), Rohingya-first names, coordinates with copy, Google Maps link, shareable deep links (`#v=<id>`), copy-as-text record, 6 nearest villages with distances
+- **Satellite imagery in every dossier** — loads automatically when a village is opened. Requires internet; no API key or server.
+  - **Clear** — the sharpest free image of the village (Esri World Imagery, ≈30–60 cm), stitched from native zoom-18 tiles and labelled with its real capture date, age, resolution and source.
+  - **History** — every earlier capture of the same spot from the Esri Wayback archive (typically 8–10 dates back to 2010), each with its capture date.
+  - **Latest** — the newest Copernicus Sentinel-2 pass that is cloud-free *over the village itself* (checked against the scene-classification band, not the scene average), contrast-stretched and lightly sharpened. 10 m per pixel: recent, not sharp. Step to older/newer passes with ◂ ▸.
+  - **Full-screen viewer** — click either image to zoom and pan. **Clear** tab has a capture-date timeline; **Latest** tab has a pass timeline with clear/cloudy markers; **Compare** tab is a draggable before/after swipe between any two capture dates. `←` `→` step through dates, `Esc` closes.
+  - Older captures are often hazy with a green-blue cast; the viewer applies a gentle display-only colour correction to them (the imagery itself is untouched).
+  - Sources: Esri World Imagery + Wayback, Earth Search STAC (Element 84) + public Sentinel-2 cloud-optimised GeoTIFFs read in the browser with geotiff.js.
 - **Registry table** (`R`) — full sortable/filterable archive with CSV export of any filtered subset
 - **Measure tool** (`M`) — click points on the map to measure distances
 - **Watchlist** — bookmark villages (persisted locally)

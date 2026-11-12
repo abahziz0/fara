@@ -52,7 +52,12 @@ input,select{font-family:inherit}
 .leaflet-control-zoom{border:1px solid var(--line)!important;border-radius:8px!important;overflow:hidden;box-shadow:var(--glow)!important;margin-bottom:44px!important}
 .leaflet-control-zoom a{background:var(--panel-solid)!important;color:var(--cyan)!important;border-bottom:1px solid var(--line-soft)!important;width:36px!important;height:36px!important;line-height:36px!important;font-size:17px!important;transition:background .2s}
 .leaflet-control-zoom a:hover{background:#0D1B30!important}
-.leaflet-control-attribution{background:rgba(2,5,10,.8)!important;color:var(--text-faint)!important;font-size:9px!important;font-family:'Share Tech Mono',monospace;margin-bottom:34px!important}
+.leaflet-control-attribution{display:flex;align-items:center;max-width:22px;height:22px;overflow:hidden;white-space:nowrap;padding:0!important;margin:0 10px 40px 0!important;border:1px solid var(--line-soft);border-radius:11px;background:rgba(2,5,10,.82)!important;color:var(--text-faint)!important;font-size:9px!important;font-family:'Share Tech Mono',monospace;cursor:default;transition:max-width .3s ease}
+.leaflet-control-attribution::before{content:"i";flex:none;width:20px;height:20px;display:grid;place-items:center;font:italic 600 11px Georgia,serif;color:var(--text-dim)}
+.leaflet-control-attribution:hover,.leaflet-control-attribution.open{max-width:520px;padding-right:10px!important}
+#ivmap .leaflet-control-attribution{margin:0 10px 10px 0!important}
+.gridbase{filter:brightness(.74) contrast(1.42) saturate(1.6) hue-rotate(8deg)}
+.gridref{filter:brightness(.9);opacity:.85}
 .leaflet-control-attribution a{color:var(--text-dim)!important}
 .leaflet-tooltip.v-tip{background:rgba(4,10,20,.94);border:1px solid var(--line);color:var(--text);border-radius:6px;padding:6px 10px;font-size:12px;box-shadow:0 0 14px rgba(0,229,255,.18);font-family:'Space Grotesk',sans-serif}
 .leaflet-tooltip.v-tip::before{display:none}
@@ -182,7 +187,7 @@ input,select{font-family:inherit}
 
 /* ============ DOSSIER PANEL ============ */
 #panel{
-  position:fixed;top:70px;right:14px;bottom:44px;width:min(392px,calc(100vw - 28px));
+  position:fixed;top:70px;right:14px;bottom:44px;width:min(clamp(392px,31vw,500px),calc(100vw - 28px));
   z-index:var(--z-panel);
   background:var(--panel);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
   border:1px solid var(--line);
@@ -191,7 +196,7 @@ input,select{font-family:inherit}
   display:flex;flex-direction:column;overflow:hidden;
 }
 #panel.open{transform:translateX(0)}
-#panel .ph{padding:14px 18px 13px;border-bottom:1px solid var(--line-soft);position:relative}
+#panel .ph{padding:16px 20px 15px;border-bottom:1px solid var(--line-soft);position:relative}
 #panel .ph::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),transparent 70%);opacity:.6}
 .dossier-top{display:flex;align-items:center;gap:8px;margin-bottom:9px}
 #p-id{font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:.18em;color:var(--text-faint)}
@@ -202,29 +207,112 @@ input,select{font-family:inherit}
 #bookmarkbtn.on{color:var(--amber);filter:drop-shadow(0 0 6px rgba(255,176,32,.6))}
 #pclose{width:30px;height:30px;display:grid;place-items:center;color:var(--text-dim);transition:all .2s;cursor:pointer}
 #pclose:hover{color:var(--cyan);background:rgba(0,229,255,.08)}
-#p-ro{font-size:25px;font-weight:700;line-height:1.15}
+#p-ro{font-size:27px;font-weight:700;line-height:1.15;letter-spacing:-.01em}
 #p-en{color:var(--text-dim);font-size:13.5px;margin-top:4px;font-family:'Share Tech Mono',monospace}
 #p-mmr{color:var(--text-dim);font-size:15px;margin-top:2px}
 #unverified{display:none;margin-top:10px;padding:8px 11px;border:1px solid rgba(255,59,92,.5);background:rgba(255,59,92,.08);color:var(--red);font-family:'Share Tech Mono',monospace;font-size:10.5px;letter-spacing:.08em;line-height:1.5}
 #unverified.show{display:block}
-#panel .pb{flex:1;overflow-y:auto;padding:14px 18px}
-.metagrid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
-.meta{border:1px solid var(--line-soft);padding:8px 10px;background:rgba(255,255,255,.015)}
-.meta .k{font-size:8px;letter-spacing:.22em;text-transform:uppercase;color:var(--text-faint);font-family:'Share Tech Mono',monospace;margin-bottom:3px}
-.meta .v{font-size:12.5px;font-weight:500;word-break:break-word}
+#panel .pb{flex:1;overflow-y:auto;padding:16px 20px 22px;scrollbar-width:thin;scrollbar-color:rgba(0,229,255,.22) transparent}
+.metagrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.meta{border:1px solid var(--line-soft);padding:10px 12px;background:rgba(255,255,255,.015)}
+.meta .k{font-size:8.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--text-faint);font-family:'Share Tech Mono',monospace;margin-bottom:3px}
+.meta .v{font-size:13.5px;font-weight:500;word-break:break-word}
 .meta.wide{grid-column:1/-1}
 .coordrow{display:flex;align-items:center;gap:8px}
 .coordrow .v{font-family:'Share Tech Mono',monospace;color:var(--cyan);font-size:12.5px}
 .chip{display:inline-flex;align-items:center;gap:5px;font-size:10px;padding:3px 8px;border:1px solid var(--line-soft);color:var(--text-dim);transition:all .2s;cursor:pointer;font-family:'Share Tech Mono',monospace}
 .chip:hover{color:var(--cyan);border-color:var(--cyan-dim)}
-.actions{display:flex;gap:7px;margin-top:12px;flex-wrap:wrap}
+.actions{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
 .abtn{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;padding:9px;border:1px solid var(--line);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--text);transition:all .2s;cursor:pointer;min-width:96px;text-decoration:none;font-family:'Share Tech Mono',monospace}
 .abtn:hover{border-color:var(--cyan-dim);color:var(--cyan);box-shadow:0 0 14px rgba(0,229,255,.15)}
 .abtn.primary{background:rgba(0,229,255,.1);border-color:var(--cyan-dim);color:var(--cyan)}
 .abtn.primary:hover{background:rgba(0,229,255,.18)}
-.sect{font-size:9px;letter-spacing:.26em;text-transform:uppercase;color:var(--text-faint);font-family:'Share Tech Mono',monospace;margin:18px 0 9px;display:flex;align-items:center;gap:6px}
+.sect{font-size:9px;letter-spacing:.26em;text-transform:uppercase;color:var(--text-faint);font-family:'Share Tech Mono',monospace;margin:22px 0 10px;display:flex;align-items:center;gap:6px}
 .sect::before{content:"//";color:var(--cyan);opacity:.7}
 .sect::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+/* ---- dossier satellite imagery ---- */
+#imgsec.off{display:none}
+.imgcard{margin-bottom:12px;border:1px solid var(--line-soft);background:rgba(2,6,12,.55);transition:border-color .2s,box-shadow .2s}
+.imgcard:hover{border-color:var(--line);box-shadow:0 0 18px rgba(0,229,255,.07)}
+.imgframe{position:relative;aspect-ratio:16/10;background:#03070d;overflow:hidden;cursor:zoom-in}
+.imgframe img,.imgframe canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .35s}
+.imgframe.ready img,.imgframe.ready canvas{opacity:1}
+.imgframe::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,rgba(0,229,255,.07) 50%,transparent 70%);background-size:220% 100%;animation:imgscan 1.6s linear infinite}
+.imgframe.ready::before,.imgframe.fail::before{display:none}
+@keyframes imgscan{from{background-position:120% 0}to{background-position:-120% 0}}
+@media (prefers-reduced-motion:reduce){.imgframe::before{animation:none}}
+.imgframe::after{content:"⤢ ENLARGE";position:absolute;right:8px;top:8px;padding:4px 7px;background:rgba(2,5,10,.78);border:1px solid var(--line);color:var(--cyan);font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:.12em;opacity:0;transform:translateY(-3px);transition:opacity .2s,transform .2s;pointer-events:none}
+.imgframe.ready:hover::after,.imgframe.ready:focus-visible::after{opacity:1;transform:none}
+@media (hover:none){.imgframe.ready::after{opacity:.85;transform:none}}
+.imgtag{position:absolute;left:8px;top:8px;z-index:2;padding:4px 8px;background:rgba(2,5,10,.78);border:1px solid var(--cyan-dim);color:var(--cyan);font-family:'Share Tech Mono',monospace;font-size:9.5px;letter-spacing:.16em;pointer-events:none}
+.imgtag.live{border-color:rgba(43,240,141,.6);color:var(--green)}
+.imgtag.live::before{content:"";display:inline-block;width:6px;height:6px;margin-right:6px;border-radius:50%;background:var(--green);box-shadow:0 0 6px var(--green);vertical-align:1px}
+.imgframe .xh{position:absolute;left:50%;top:50%;width:18px;height:18px;margin:-9px 0 0 -9px;border:1.5px solid var(--cyan);border-radius:50%;box-shadow:0 0 0 1px rgba(0,0,0,.6),0 0 8px rgba(0,229,255,.6);pointer-events:none;opacity:0}
+.imgframe.ready .xh{opacity:.9}
+.imgframe .imgmsg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:12px;text-align:center;font-family:'Share Tech Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:var(--text-faint)}
+.imgframe.ready .imgmsg{display:none}
+.imgcap{display:flex;align-items:center;gap:10px;padding:10px 12px;font-family:'Share Tech Mono',monospace;border-top:1px solid var(--line-soft)}
+.imgcap .cap{flex:1;min-width:0}
+.imgcap .l1{display:block;font-size:12.5px;color:var(--text);letter-spacing:.02em}
+.imgcap .l2{display:block;margin-top:3px;font-size:10.5px;color:var(--text-dim)}
+.ivcap b{color:var(--text);font-weight:400}
+.good{color:var(--green)}
+.warn{color:var(--amber)}
+.imgnav{flex:none;display:flex;gap:4px}
+.imgnav button{width:30px;height:30px;border:1px solid var(--line);color:var(--text);cursor:pointer;font-size:12px;line-height:1;transition:all .2s}
+.imgnav button:hover:not(:disabled){border-color:var(--cyan-dim);color:var(--cyan);background:rgba(0,229,255,.06)}
+.imgnav button:disabled{opacity:.3;cursor:default}
+.imgsub{display:none;gap:8px;padding:0 12px 12px}
+.imgsub.show{display:flex}
+.imgsub button{flex:1;min-width:0;padding:9px 8px;border:1px solid var(--line);color:var(--text);font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition:all .2s}
+.imgsub button:hover{border-color:var(--cyan-dim);color:var(--cyan);background:rgba(0,229,255,.06);box-shadow:0 0 14px rgba(0,229,255,.12)}
+.imgsubnote{display:none;margin:0 12px 12px;padding:7px 10px;border-left:2px solid var(--cyan-dim);background:rgba(0,229,255,.04);font-family:'Share Tech Mono',monospace;font-size:10px;line-height:1.55;color:var(--text-dim)}
+.imgsubnote.show{display:block}
+/* ---- full-screen imagery viewer ---- */
+#imgviewer{padding:14px}
+.ivcard{position:relative;display:flex;flex-direction:column;width:min(1400px,100%);height:100%;background:var(--panel-solid);border:1px solid var(--line);box-shadow:0 0 40px rgba(0,229,255,.12)}
+.ivhead{display:flex;align-items:center;gap:14px;padding:10px 56px 10px 16px;border-bottom:1px solid var(--line-soft);flex-wrap:wrap}
+.ivtitle{flex:1;min-width:140px;font-size:15px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ivtabs{display:flex;align-items:center;gap:6px}
+.ivtabs>button{padding:8px 14px;border:1px solid var(--line);color:var(--text-dim);font-family:'Share Tech Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:all .2s}
+.ivtabs>button:hover:not(:disabled){color:var(--cyan);border-color:var(--cyan-dim)}
+.ivtabs>button.on{background:rgba(0,229,255,.1);border-color:var(--cyan-dim);color:var(--cyan)}
+.ivtabs>button:disabled{opacity:.35;cursor:default}
+.ivcard .mclose{top:9px;right:10px}
+.ivbar{display:flex;align-items:center;gap:6px;padding:9px 16px;border-bottom:1px solid var(--line-soft);overflow-x:auto;overflow-y:hidden;scrollbar-width:none;font-family:'Share Tech Mono',monospace;font-size:10.5px;color:var(--text-faint);min-height:47px;user-select:none;
+  --fl:0px;--fr:0px;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 var(--fl),#000 calc(100% - var(--fr)),transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 var(--fl),#000 calc(100% - var(--fr)),transparent 100%)}
+.ivbar::-webkit-scrollbar{display:none}
+.ivbar.fl{--fl:44px}.ivbar.fr{--fr:44px}
+.ivbar.fl,.ivbar.fr{cursor:grab}
+.ivbar.dragging{cursor:grabbing}
+.ivbar .lbl{flex:none;letter-spacing:.12em;margin-right:4px}
+.ivchip{flex:none;display:flex;align-items:center;gap:6px;padding:6px 10px;border:1px solid var(--line-soft);color:var(--text-dim);font-family:inherit;font-size:10.5px;cursor:pointer;white-space:nowrap;transition:all .15s}
+.ivchip:hover{border-color:var(--cyan-dim);color:var(--text)}
+.ivchip.on{border-color:var(--cyan);color:var(--cyan);background:rgba(0,229,255,.1)}
+.ivchip .st{width:6px;height:6px;border-radius:50%;background:var(--text-faint)}
+.ivchip .st.ok{background:var(--green);box-shadow:0 0 6px var(--green)}
+.ivchip .st.cl{background:var(--amber)}
+.ivbar select{flex:none;padding:6px 8px;background:var(--bg-2);border:1px solid var(--line);color:var(--text);font-family:inherit;font-size:11px;cursor:pointer}
+.ivbar .hint{margin-left:6px;white-space:nowrap}
+.ivbody{position:relative;flex:1;min-height:0;background:#03070d;overflow:hidden}
+#ivmap{position:absolute;inset:0;background:#03070d}
+.ivdiv{position:absolute;top:0;bottom:0;left:50%;width:2px;margin-left:-1px;background:var(--cyan);box-shadow:0 0 10px rgba(0,229,255,.7);z-index:600;display:none;pointer-events:none}
+.ivdiv.show{display:block}
+.ivhandle{position:absolute;top:50%;left:50%;width:40px;height:40px;margin:-20px 0 0 -20px;border-radius:50%;background:var(--panel-solid);border:2px solid var(--cyan);color:var(--cyan);display:grid;place-items:center;font-size:15px;cursor:ew-resize;pointer-events:auto;touch-action:none;user-select:none}
+.ivside{position:absolute;top:12px;z-index:550;display:none;padding:5px 9px;background:rgba(2,5,10,.82);border:1px solid var(--line);font-family:'Share Tech Mono',monospace;font-size:11px;color:var(--text);pointer-events:none}
+.ivside.show{display:block}
+.ivside.l{left:12px}.ivside.r{right:12px}
+.ivmsg{position:absolute;left:50%;top:14px;transform:translateX(-50%);z-index:560;display:none;padding:7px 12px;background:rgba(2,5,10,.85);border:1px solid var(--line);font-family:'Share Tech Mono',monospace;font-size:11px;color:var(--text-dim);white-space:nowrap}
+.ivmsg.show{display:block}
+.ivcap{padding:9px 16px;border-top:1px solid var(--line-soft);font-family:'Share Tech Mono',monospace;font-size:11px;color:var(--text-dim);line-height:1.5}
+@media (max-width:640px){
+  #imgviewer{padding:0}
+  .ivhead{padding:9px 48px 9px 12px;gap:8px}
+  .ivtitle{flex-basis:100%;font-size:14px}
+  .ivtabs>button{padding:9px 12px}
+  .ivbar,.ivcap{padding-left:12px;padding-right:12px}
+  .ivbar .hint{display:none}
+}
 .near{display:flex;align-items:center;gap:10px;width:100%;text-align:left;padding:8px 9px;border:1px solid transparent;transition:all .15s;cursor:pointer}
 .near:hover{background:rgba(0,229,255,.06);border-color:var(--line-soft)}
 .near .dot{width:7px;height:7px;border-radius:50%;flex:none;box-shadow:0 0 6px currentColor}
@@ -596,10 +684,58 @@ button:focus-visible,input:focus-visible,a:focus-visible,select:focus-visible{ou
       <button class="abtn" id="copyrec">Copy Record</button>
       <a class="abtn" id="gmapsbtn" target="_blank" rel="noopener" href="#">G-Maps</a>
     </div>
+    <div id="imgsec">
+      <div class="sect">Satellite Imagery</div>
+      <div class="imgcard">
+        <div class="imgframe" id="clearframe" role="button" tabindex="0" title="Open large zoomable view">
+          <canvas id="clearcv" role="img" aria-label="High-resolution satellite image of the village"></canvas>
+          <span class="imgtag">CLEAR</span>
+          <div class="xh"></div><div class="imgmsg" id="clearmsg">// loading…</div>
+        </div>
+        <div class="imgcap"><span class="cap" id="clearcap"></span></div>
+        <div class="imgsub" id="histrow">
+          <button id="histbtn"></button><button id="cmpbtn">⇆ Before / after</button>
+        </div>
+      </div>
+      <div class="imgcard">
+        <div class="imgframe" id="latestframe" role="button" tabindex="0" title="Open large zoomable view">
+          <canvas id="latestcv" role="img" aria-label="Most recent Sentinel-2 satellite image of the village"></canvas>
+          <span class="imgtag live">LATEST</span>
+          <div class="xh"></div><div class="imgmsg" id="latestmsg">// searching recent passes…</div>
+        </div>
+        <div class="imgcap"><span class="cap" id="latestcap"></span>
+          <span class="imgnav"><button id="imgolder" aria-label="Older image" title="Older image">◂</button><button id="imgnewer" aria-label="Newer image" title="Newer image">▸</button></span>
+        </div>
+        <div class="imgsubnote" id="latestnote"></div>
+      </div>
+    </div>
     <div class="sect">Nearby Villages</div>
     <div id="nearlist"></div>
   </div>
 </aside>
+
+<svg id="ivdefs" width="0" height="0" style="position:absolute" aria-hidden="true"></svg>
+<div class="modal" id="imgviewer" role="dialog" aria-modal="true" aria-label="Satellite imagery viewer">
+  <div class="ivcard">
+    <div class="ivhead">
+      <div class="ivtitle" id="ivtitle"></div>
+      <div class="ivtabs">
+        <button id="ivclear" class="on">Clear</button><button id="ivlatest">Latest</button><button id="ivcompare">Compare</button>
+      </div>
+      <button class="mclose" data-close="imgviewer" aria-label="Close">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <div class="ivbar" id="ivbar"></div>
+    <div class="ivbody">
+      <div id="ivmap"></div>
+      <div class="ivdiv" id="ivdiv"><span class="ivhandle" id="ivhandle" role="slider" aria-label="Drag to compare" tabindex="0">⇆</span></div>
+      <div class="ivside l" id="ivsl"></div><div class="ivside r" id="ivsr"></div>
+      <div class="ivmsg" id="ivmsg"></div>
+    </div>
+    <div class="ivcap" id="ivcap"></div>
+  </div>
+</div>
 
 <div class="modal" id="statsmodal" role="dialog" aria-modal="true" aria-label="Archive telemetry">
   <div class="mcard notch">
@@ -826,10 +962,14 @@ let bi = 0;
 })();
 
 /* ================= MAP ================= */
-const map = L.map('map', { zoomControl:false, attributionControl:true, minZoom:7, maxZoom:18, preferCanvas:true });
+const map = L.map('map', { zoomControl:false, attributionControl:true, minZoom:7, maxZoom:20, preferCanvas:true });
 L.control.zoom({ position:'bottomright' }).addTo(map);
-const darkTiles = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { attribution:'&copy; OpenStreetMap &copy; CARTO', subdomains:'abcd', maxZoom:19 });
-const satTiles = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { attribution:'Esri, Maxar, Earthstar Geographics', maxZoom:18 });
+map.attributionControl.setPrefix(false);
+const darkTiles = L.layerGroup([
+  L.tileLayer('https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', { attribution:'Esri, TomTom, Garmin, &copy; OpenStreetMap contributors', maxNativeZoom:16, maxZoom:20, className:'gridbase' }),
+  L.tileLayer('https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', { maxNativeZoom:16, maxZoom:20, className:'gridref' })
+]);
+const satTiles = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { attribution:'Esri, Vantor, Earthstar Geographics', maxNativeZoom:18, maxZoom:20 });
 satTiles.addTo(map);
 
 const plottable = VILLAGES.filter(v => !isUnverified(v));
@@ -1134,12 +1274,553 @@ function openVillage(v, fly){
     }).addTo(map);
     if (fly) map.flyTo([+v.lat,+v.lng], Math.max(map.getZoom(),13), {duration:1.1});
   }
+  loadImagery(v);
   panel.classList.add('open');
   history.replaceState(null,'','#v='+v.id);
 }
+/* ================= DOSSIER SATELLITE IMAGERY =================
+   CLEAR   — Esri World Imagery (sharpest free source) + its capture date, plus every earlier
+             capture of the same spot from the Esri Wayback archive (history + swipe compare).
+   LATEST  — newest Copernicus Sentinel-2 pass that is cloud-free over the village itself
+             (checked against the scene-classification band), read straight from the public
+             cloud-optimised GeoTIFFs with geotiff.js. No API key, no server. */
+const IMG = { token:0, scenes:[], idx:0, pick:0, tiffs:new Map(), hist:[], histCache:new Map(), z19:false, clearCap:'' };
+const cap2 = (id, l1, l2) => { document.getElementById(id).innerHTML='<span class="l1">'+l1+'</span>'+(l2 ? '<span class="l2">'+l2+'</span>' : ''); };
+const ESRI_IMG = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer';
+const WB = 'https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery';
+const WB_CFG = 'https://s3-us-west-2.amazonaws.com/config.maptiles.arcgis.com/waybackconfig.json';
+const STAC_URL = 'https://earth-search.aws.element84.com/v1/search';
+const GEOTIFF_JS = 'https://cdn.jsdelivr.net/npm/geotiff@2.1.3/dist-browser/geotiff.js';
+const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const fmtDay = d => d.getUTCDate()+' '+MONTHS[d.getUTCMonth()]+' '+d.getUTCFullYear();
+const fmtMon = d => MONTHS[d.getUTCMonth()]+' '+d.getUTCFullYear();
+function ago(d){
+  const days=Math.max(0,Math.round((Date.now()-d)/864e5));
+  if (days===0) return 'today';
+  if (days===1) return '1 day ago';
+  if (days<60) return days+' days ago';
+  const mo=Math.round(days/30.44);
+  if (mo<24) return mo+' months ago';
+  return Math.round(days/365.25)+' years ago';
+}
+function tileXY(lat, lng, z){
+  const n=2**z;
+  return [Math.floor((lng+180)/360*n), Math.floor((1-Math.asinh(Math.tan(lat*Math.PI/180))/Math.PI)/2*n)];
+}
+let geotiffReady = null;
+function loadGeoTIFF(){
+  return geotiffReady || (geotiffReady = new Promise((res,rej)=>{
+    const sc=document.createElement('script'); sc.src=GEOTIFF_JS;
+    sc.onload=()=>res(window.GeoTIFF); sc.onerror=()=>{ geotiffReady=null; rej(new Error('geotiff.js failed to load')); };
+    document.head.appendChild(sc);
+  }));
+}
+async function openTiff(href){
+  const G=await loadGeoTIFF();
+  if (!IMG.tiffs.has(href)){
+    const p=G.fromUrl(href).then(t=>t.getImage());
+    p.catch(()=>IMG.tiffs.delete(href));
+    IMG.tiffs.set(href, p);
+  }
+  return IMG.tiffs.get(href);
+}
+/* WGS84 lat/lng → UTM metres for the given EPSG 326xx / 327xx code */
+function toUTM(lat, lng, epsg){
+  const zone=epsg%100, south=Math.floor(epsg/100)===327;
+  const a=6378137, f=1/298.257223563, e2=f*(2-f), ep2=e2/(1-e2), k0=0.9996;
+  const ph=lat*Math.PI/180, dl=(lng-(zone*6-183))*Math.PI/180;
+  const sn=Math.sin(ph), cs=Math.cos(ph), tn=Math.tan(ph);
+  const N=a/Math.sqrt(1-e2*sn*sn), T=tn*tn, C=ep2*cs*cs, A=dl*cs;
+  const M=a*((1-e2/4-3*e2*e2/64-5*e2**3/256)*ph-(3*e2/8+3*e2*e2/32+45*e2**3/1024)*Math.sin(2*ph)
+        +(15*e2*e2/256+45*e2**3/1024)*Math.sin(4*ph)-(35*e2**3/3072)*Math.sin(6*ph));
+  const x=500000+k0*N*(A+(1-T+C)*A**3/6+(5-18*T+T*T+72*C-58*ep2)*A**5/120);
+  const y=k0*(M+N*tn*(A*A/2+(5-T+9*C+4*C*C)*A**4/24+(61-58*T+T*T+600*C-330*ep2)*A**6/720));
+  return [x, south ? y+1e7 : y];
+}
+/* pixel window of ±halfE × ±halfN metres around the village inside a UTM GeoTIFF (null if off the edge) */
+function tiffWindow(im, v, halfE, halfN){
+  const epsg=(im.geoKeys||{}).ProjectedCSTypeGeoKey;
+  if (!epsg) throw new Error('no projection');
+  const [x,y]=toUTM(+v.lat,+v.lng,epsg), [ox,oy]=im.getOrigin(), [rx,ry]=im.getResolution();
+  const m=Math.abs(rx), HW=Math.round(halfE/m), HH=Math.round(halfN/m);
+  const px=Math.round((x-ox)/rx), py=Math.round((y-oy)/ry), W=im.getWidth(), H=im.getHeight();
+  const win=[Math.max(0,px-HW),Math.max(0,py-HH),Math.min(W,px+HW),Math.min(H,py+HH)];
+  const w=win[2]-win[0], h=win[3]-win[1];
+  if (w<HW || h<HH) return null;
+  const lat=+v.lat, lng=+v.lng, dLat=1/111320, dLng=1/(111320*Math.cos(lat*Math.PI/180));
+  return { win, w, h, bounds:[[lat-(win[3]-py)*m*dLat, lng-(px-win[0])*m*dLng],[lat+(py-win[1])*m*dLat, lng+(win[2]-px)*m*dLng]] };
+}
+/* True-colour window around the village → contrast-stretched, lightly sharpened ImageData (null = no data) */
+async function readWindow(im, v, halfE, halfN){
+  const t=tiffWindow(im, v, halfE, halfN);
+  if (!t) return null;
+  const { w, h }=t, n=w*h;
+  const data=await im.readRasters({ window:t.win, interleave:true });
+  const hist=new Uint32Array(256); let filled=0;
+  for (let i=0;i<n;i++){ const r=data[i*3],g=data[i*3+1],b=data[i*3+2]; if (r|g|b){ filled++; hist[Math.round(.299*r+.587*g+.114*b)]++; } }
+  if (filled<n*.6) return null;
+  let lo=0, hi=255, acc=0;
+  for (let i=0;i<256;i++){ acc+=hist[i]; if (acc>=filled*.005){ lo=i; break; } }
+  acc=0; for (let i=255;i>=0;i--){ acc+=hist[i]; if (acc>=filled*.01){ hi=i; break; } }
+  hi=Math.max(hi,lo+70);
+  const lut=new Float32Array(256);                                   // stretch + gentle shadow lift
+  for (let i=0;i<256;i++){ const u=Math.min(1,Math.max(0,(i-lo)/(hi-lo))); lut[i]=255*Math.pow(u,.82); }
+  const st=new Float32Array(n*3);
+  for (let i=0;i<n*3;i++) st[i]=lut[data[i]];
+  const id=new ImageData(w,h), o=id.data, AMT=.75;                   // unsharp mask, 3×3 gaussian
+  for (let y=0;y<h;y++){
+    const y0=(y>0?y-1:y)*w, y1=y*w, y2=(y<h-1?y+1:y)*w;
+    for (let x=0;x<w;x++){
+      const xa=x>0?x-1:x, xb=x<w-1?x+1:x, q=(y1+x)*4;
+      for (let c=0;c<3;c++){
+        const blur=(st[(y0+xa)*3+c]+2*st[(y0+x)*3+c]+st[(y0+xb)*3+c]
+                  +2*st[(y1+xa)*3+c]+4*st[(y1+x)*3+c]+2*st[(y1+xb)*3+c]
+                  +st[(y2+xa)*3+c]+2*st[(y2+x)*3+c]+st[(y2+xb)*3+c])/16;
+        const s0=st[(y1+x)*3+c];
+        o[q+c]=s0+AMT*(s0-blur);
+      }
+      o[q+3]=255;
+    }
+  }
+  return { id, w, h, bounds:t.bounds };
+}
+/* How cloudy is this pass over the village itself? Uses the 20 m scene-classification band. */
+async function assessScene(v, sc){
+  if (sc.local!==undefined) return sc.local;
+  try{
+    const im=await openTiff(sc.scl), t=tiffWindow(im, v, 1200, 750);
+    if (!t){ sc.local={ ok:false, cloud:0, cirrus:0, nodata:1 }; return sc.local; }
+    const band=(await im.readRasters({ window:t.win }))[0], n=band.length;
+    let cloud=0, cirrus=0, nodata=0;
+    for (let i=0;i<n;i++){ const c=band[i]; if (c===0||c===1) nodata++; else if (c===3||c===8||c===9) cloud++; else if (c===10) cirrus++; }
+    cloud/=n; cirrus/=n; nodata/=n;
+    sc.local={ cloud, cirrus, nodata, ok: nodata<.05 && cloud<.03 && cirrus<.25 };
+  }catch(e){ sc.local=null; }
+  return sc.local;
+}
+function imgState(frameId, msgId, msg){
+  const fr=document.getElementById(frameId);
+  fr.classList.toggle('ready', msg===null);
+  fr.classList.toggle('fail', msg!==null && !/…$/.test(msg));
+  if (msg!==null) document.getElementById(msgId).textContent = msg;
+}
+
+/* ---------- CLEAR ---------- */
+function loadClear(v, token){
+  const lat=+v.lat, lng=+v.lng;
+  /* thumbnail: stitch the native zoom-18 tiles (≈0.56 m per pixel) around the village — sharper and faster than a server export */
+  const Z=18, n=2**Z, W=1072, H=670;
+  const fx=(lng+180)/360*n*256, fy=(1-Math.asinh(Math.tan(lat*Math.PI/180))/Math.PI)/2*n*256;
+  const x0=Math.round(fx-W/2), y0=Math.round(fy-H/2);
+  const cv=document.getElementById('clearcv'); cv.width=W; cv.height=H;
+  const ctx=cv.getContext('2d');
+  imgState('clearframe','clearmsg','// loading…');
+  IMG.clearCap='High-resolution basemap'; cap2('clearcap','High-resolution image','looking up capture date…');
+  let pending=0, good=0;
+  const settle=()=>{ if (--pending===0 && token===IMG.token) imgState('clearframe','clearmsg', good ? null : '// high-resolution image unavailable'); };
+  for (let ty=Math.floor(y0/256); ty<=Math.floor((y0+H-1)/256); ty++){
+    for (let tx=Math.floor(x0/256); tx<=Math.floor((x0+W-1)/256); tx++){
+      pending++;
+      const im=new Image();
+      im.onload=()=>{ if (token===IMG.token){ ctx.drawImage(im, tx*256-x0, ty*256-y0); good++; } settle(); };
+      im.onerror=settle;
+      im.src=`${ESRI_IMG}/tile/${Z}/${ty}/${tx}`;
+    }
+  }
+  const d=0.003;
+  fetch(`${ESRI_IMG}/identify?f=json&geometry=${lng},${lat}&geometryType=esriGeometryPoint&sr=4326&layers=all:0&tolerance=1`
+      +`&mapExtent=${lng-d},${lat-d},${lng+d},${lat+d}&imageDisplay=800,800,96&returnGeometry=false`)
+    .then(r=>r.json()).then(j=>{
+      if (token!==IMG.token) return;
+      const a=((j.results||[])[0]||{}).attributes; if (!a) return;
+      const raw=a['DATE (YYYYMMDD)'], alt=a.SRC_DATE2; let when=null;
+      if (/^\d{8}$/.test(raw||'')) when=new Date(Date.UTC(+raw.slice(0,4),+raw.slice(4,6)-1,+raw.slice(6,8)));
+      else if (/^\d{1,2}\/\d{1,2}\/\d{4}$/.test(alt||'')){ const p=alt.split('/'); when=new Date(Date.UTC(+p[2],+p[0]-1,+p[1])); }
+      const res=parseFloat(a['RESOLUTION (M)']);
+      const l1=when ? 'Captured '+fmtDay(when) : 'Capture date not published';
+      const rest=[when ? ago(when) : null, res>0 ? (res<1 ? Math.round(res*100)+' cm' : res+' m') : null, a.SOURCE && a.SOURCE!=='Null' ? esc(a.SOURCE) : null].filter(Boolean).join(' · ');
+      IMG.clearCap='<b>'+l1+'</b>'+(rest ? ' · '+rest : '');
+      cap2('clearcap', l1, rest);
+      ivRefresh();
+    }).catch(()=>{});
+  /* does this spot have an extra-deep zoom level? */
+  IMG.z19=false;
+  const [tx,ty]=tileXY(lat,lng,19);
+  fetch(`${ESRI_IMG}/tilemap/19/${ty}/${tx}`).then(r=>r.json()).then(j=>{
+    if (token===IMG.token) IMG.z19=!!(j.data && j.data[0]===1);
+  }).catch(()=>{});
+}
+
+/* ---------- HISTORY (Esri Wayback) ---------- */
+let wbConfig=null;
+function loadWbConfig(){
+  return wbConfig || (wbConfig = fetch(WB_CFG).then(r=>r.json()).then(c=>Object.keys(c).map(k=>({
+      rel:+k, released:(c[k].itemTitle.match(/\d{4}-\d{2}-\d{2}/)||[''])[0], meta:c[k].metadataLayerUrl }))
+    .filter(r=>r.released).sort((a,b)=> a.released<b.released ? 1 : -1))
+    .catch(e=>{ wbConfig=null; throw e; }));
+}
+async function wbCapture(rel, lat, lng){
+  const q='f=json&where=1%3D1&outFields=SRC_DATE2,NICE_DESC,SAMP_RES&returnGeometry=false&geometryType=esriGeometryPoint'
+    +'&spatialRel=esriSpatialRelIntersects&geometry='+encodeURIComponent(JSON.stringify({x:lng,y:lat,spatialReference:{wkid:4326}}));
+  for (const layer of [6,7,5,8]){                                      // metadata layers by zoom level; 6 ≈ zoom 17
+    try{
+      const j=await fetch(`${rel.meta}/${layer}/query?${q}`).then(r=>r.json());
+      const a=((j.features||[])[0]||{}).attributes;
+      if (a && a.SRC_DATE2) return { date:new Date(a.SRC_DATE2), res:a.SAMP_RES, src:a.NICE_DESC };
+    }catch(e){}
+  }
+  return null;
+}
+/* Walk the Wayback archive from newest to oldest, collecting each release where this spot's imagery actually changed */
+async function loadHistory(v, token){
+  const row=document.getElementById('histrow');
+  row.classList.remove('show'); IMG.hist=[];
+  if (IMG.histCache.has(v.id)){ IMG.hist=IMG.histCache.get(v.id); renderHistRow(); return; }
+  try{
+    const rels=await loadWbConfig(), lat=+v.lat, lng=+v.lng;
+    const [tx,ty]=tileXY(lat,lng,17), [tx18,ty18]=tileXY(lat,lng,18);
+    const detail=async rel=>{                                           // capture date + whether zoom 18 exists, fetched as soon as a version is found
+      const [cap, tm]=await Promise.all([
+        wbCapture(rel, lat, lng),
+        fetch(`${WB}/MapServer/tilemap/${rel.rel}/18/${ty18}/${tx18}`).then(r=>r.json()).catch(()=>null) ]);
+      return cap ? { rel:rel.rel, date:cap.date, res:cap.res, src:cap.src, z18:!!(tm && tm.data && tm.data[0]===1) } : null;
+    };
+    const jobs=[]; let i=0, guard=0;
+    while (i<rels.length && guard++<40){
+      const j=await fetch(`${WB}/MapServer/tilemap/${rels[i].rel}/17/${ty}/${tx}`).then(r=>r.json());
+      if (token!==IMG.token) return;
+      if (!j.data || j.data[0]!==1) break;
+      const k=j.select ? rels.findIndex(r=>r.rel===j.select[0]) : i;
+      const at=k>=i ? k : i;
+      jobs.push(detail(rels[at])); i=at+1;
+    }
+    const items=await Promise.all(jobs);
+    if (token!==IMG.token) return;
+    const seen=new Set(), hist=[];
+    items.filter(Boolean).sort((a,b)=>b.date-a.date).forEach(h=>{
+      const key=h.date.toISOString().slice(0,10); if (seen.has(key)) return; seen.add(key); hist.push(h); });
+    IMG.hist=hist; IMG.histCache.set(v.id, hist);
+    renderHistRow();
+  }catch(e){}
+}
+function renderHistRow(){
+  const n=IMG.hist.length, row=document.getElementById('histrow');
+  row.classList.toggle('show', n>1);
+  if (n>1){
+    const a=IMG.hist[n-1].date.getUTCFullYear(), b=IMG.hist[0].date.getUTCFullYear();
+    document.getElementById('histbtn').textContent='◷ '+n+' dates · '+a+'–'+b;
+  }
+  ivRefresh();
+}
+
+/* ---------- LATEST (Sentinel-2) ---------- */
+async function loadLatest(v, token){
+  IMG.scenes=[]; IMG.idx=0; IMG.pick=0; updateImgNav();
+  document.getElementById('latestnote').classList.remove('show');
+  imgState('latestframe','latestmsg','// searching recent passes…');
+  cap2('latestcap','Sentinel-2','finding the newest clear pass…');
+  try{
+    const r=await fetch(STAC_URL,{ method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({
+      collections:['sentinel-2-l2a'], intersects:{type:'Point',coordinates:[+v.lng,+v.lat]},
+      query:{'eo:cloud_cover':{lt:97}}, sortby:[{field:'properties.datetime',direction:'desc'}], limit:40 })});
+    const j=await r.json();
+    if (token!==IMG.token) return;
+    const seen=new Set();
+    IMG.scenes=(j.features||[]).filter(f=>f.assets&&f.assets.visual&&f.assets.visual.href).map(f=>({
+      href:f.assets.visual.href, scl:f.assets.scl&&f.assets.scl.href, date:new Date(f.properties.datetime), cloud:f.properties['eo:cloud_cover'] }))
+      .filter(sc=>{ const k=sc.date.toISOString().slice(0,10); if (seen.has(k)) return false; seen.add(k); return true; })
+      .slice(0,24);
+    if (!IMG.scenes.length){ imgState('latestframe','latestmsg','// no recent Sentinel-2 pass found'); return; }
+    /* scan from the newest pass until one is cloud-free over this village */
+    const LIMIT=Math.min(IMG.scenes.length,16); let pick=-1;
+    for (let i=0;i<LIMIT && pick<0;i+=4){
+      imgState('latestframe','latestmsg','// checking the newest passes for cloud over this village…');
+      await Promise.all(IMG.scenes.slice(i,Math.min(i+4,LIMIT)).map(sc=>assessScene(v,sc)));
+      if (token!==IMG.token) return;
+      pick=IMG.scenes.findIndex((sc,k)=>k<i+4 && sc.local && sc.local.ok);
+      ivRefresh();
+    }
+    if (pick<0){                                                       // nothing clear — fall back to the least cloudy
+      let best=1e9;
+      IMG.scenes.forEach((sc,k)=>{ if (k<LIMIT && sc.local){ const s=sc.local.cloud+sc.local.cirrus*.5+sc.local.nodata*2; if (s<best){ best=s; pick=k; } } });
+      if (pick<0) pick=0;
+    }
+    IMG.pick=pick;
+    await showScene(v, token, pick, 1);
+  }catch(e){ if (token===IMG.token) imgState('latestframe','latestmsg','// latest imagery unavailable (network)'); }
+}
+function latestStatus(sc){
+  const l=sc.local;
+  if (l && l.ok) return '<span class="good">clear over village</span>';
+  if (l && l.nodata>.3) return '<span class="warn">partial coverage</span>';
+  if (l) return '<span class="warn">'+Math.max(1,Math.min(100,Math.round((l.cloud+l.cirrus)*100)))+'% cloud over village</span>';
+  return 'scene cloud '+Math.round(sc.cloud)+'%';
+}
+const latestCaption = sc => '<b>'+fmtDay(sc.date)+'</b> · '+ago(sc.date)+' · Sentinel-2 · '+latestStatus(sc);
+/* dir: +1 walks to older scenes, -1 to newer, when a scene has no data over the village */
+async function showScene(v, token, idx, dir){
+  if (idx<0 || idx>=IMG.scenes.length){ imgState('latestframe','latestmsg','// no usable Sentinel-2 image for this location'); return; }
+  IMG.idx=idx; updateImgNav();
+  const sc=IMG.scenes[idx];
+  imgState('latestframe','latestmsg','// downloading '+fmtDay(sc.date)+'…');
+  try{
+    const [im]=await Promise.all([openTiff(sc.href), sc.scl ? assessScene(v,sc) : null]);
+    if (token!==IMG.token || IMG.idx!==idx) return;
+    const win=await readWindow(im, v, 1200, 750);                      // ≈2.4 × 1.5 km
+    if (token!==IMG.token || IMG.idx!==idx) return;
+    if (!win) return showScene(v, token, idx+dir, dir);                // village falls outside this pass
+    const cv=document.getElementById('latestcv'); cv.width=win.w; cv.height=win.h;
+    cv.getContext('2d').putImageData(win.id,0,0);
+    cap2('latestcap', fmtDay(sc.date)+' · '+ago(sc.date), 'Sentinel-2 · 10 m · '+latestStatus(sc));
+    const note=document.getElementById('latestnote'), ok=sc.local && sc.local.ok;
+    let txt='';
+    if (idx===IMG.pick && idx>0 && ok) txt='Newest pass with a clear view of this village. '+idx+' newer pass'+(idx>1?'es were':' was')+' cloudy here — use ▸ to see '+(idx>1?'them':'it')+'.';
+    else if (idx===IMG.pick && !ok) txt='No recent pass is fully clear over this village (monsoon cloud) — this is the least cloudy. Use ◂ for older passes.';
+    note.textContent=txt; note.classList.toggle('show', !!txt);
+    imgState('latestframe','latestmsg',null);
+  }catch(e){
+    if (token===IMG.token && IMG.idx===idx) imgState('latestframe','latestmsg','// could not load this image — try another date');
+  }
+}
+function updateImgNav(){
+  document.getElementById('imgolder').disabled = IMG.idx>=IMG.scenes.length-1;
+  document.getElementById('imgnewer').disabled = IMG.idx<=0;
+}
+function loadImagery(v){
+  const token=++IMG.token, sec=document.getElementById('imgsec');
+  if (isUnverified(v)){ sec.classList.add('off'); return; }
+  sec.classList.remove('off');
+  loadClear(v, token); loadLatest(v, token); loadHistory(v, token);
+}
+document.getElementById('imgolder').addEventListener('click',()=>{ if (current) showScene(current, IMG.token, IMG.idx+1, 1); });
+document.getElementById('imgnewer').addEventListener('click',()=>{ if (current) showScene(current, IMG.token, IMG.idx-1, -1); });
+
+/* ---------- FULL-SCREEN VIEWER: zoom, pan, history, swipe compare ---------- */
+const IV = { map:null, layers:[], overlay:null, pin:null, mode:'clear', job:0, a:0, l:0, r:0, split:.5, viewKey:'' };
+const ivOpen = () => document.getElementById('imgviewer').classList.contains('open');
+function ivInit(){
+  if (IV.map) return;
+  IV.map=L.map('ivmap',{ zoomControl:false, attributionControl:true, minZoom:10, maxZoom:21, zoomSnap:.5, zoomDelta:.5 });
+  L.control.zoom({ position:'bottomright' }).addTo(IV.map);
+  L.control.scale({ imperial:false, position:'bottomleft' }).addTo(IV.map);
+  IV.map.attributionControl.setPrefix(false);
+  IV.map.on('move zoom resize', ivClip);
+  const handle=document.getElementById('ivhandle'), body=handle.closest('.ivbody');
+  const setSplit=x=>{ const rc=body.getBoundingClientRect(); IV.split=Math.min(.97,Math.max(.03,(x-rc.left)/rc.width)); ivClip(); };
+  handle.addEventListener('pointerdown',e=>{ handle.setPointerCapture(e.pointerId); e.preventDefault(); });
+  handle.addEventListener('pointermove',e=>{ if (handle.hasPointerCapture(e.pointerId)) setSplit(e.clientX); });
+  handle.addEventListener('keydown',e=>{
+    if (e.key==='ArrowLeft' || e.key==='ArrowRight'){ IV.split=Math.min(.97,Math.max(.03,IV.split+(e.key==='ArrowLeft'?-.04:.04))); ivClip(); e.preventDefault(); e.stopPropagation(); }
+  });
+}
+/* Older captures are often hazy with a green-blue cast. Measure one tile of that capture and build a
+   gentle per-channel levels correction (an SVG filter) — display only, the imagery itself is untouched. */
+const TONE = new Map(); let toneSeq=0;
+function ivTone(h, v){
+  const [tx,ty]=tileXY(+v.lat,+v.lng,15), key=h.rel+'_'+tx+'_'+ty;
+  if (!TONE.has(key)) TONE.set(key, new Promise(res=>{
+    const im=new Image(); im.crossOrigin='anonymous';
+    im.onerror=()=>res(null);
+    im.onload=()=>{
+      try{
+        const c=document.createElement('canvas'); c.width=c.height=128;
+        const x=c.getContext('2d',{ willReadFrequently:true }); x.drawImage(im,0,0,128,128);
+        const d=x.getImageData(0,0,128,128).data, n=128*128, S=.5; let fn='';
+        ['R','G','B'].forEach((name,ch)=>{
+          const hist=new Uint32Array(256); for (let i=0;i<n;i++) hist[d[i*4+ch]]++;
+          let lo=0, hi=255, acc=0;
+          for (let i=0;i<256;i++){ acc+=hist[i]; if (acc>=n*.01){ lo=i; break; } }
+          acc=0; for (let i=255;i>=0;i--){ acc+=hist[i]; if (acc>=n*.02){ hi=i; break; } }
+          hi=Math.max(hi,lo+80); const k=Math.min(2.2,255/(hi-lo));
+          fn+=`<feFunc${name} type="linear" slope="${(1+S*(k-1)).toFixed(3)}" intercept="${(-S*lo*k/255).toFixed(3)}"/>`;
+        });
+        const id='ivtone'+(++toneSeq);
+        document.getElementById('ivdefs').insertAdjacentHTML('beforeend',`<filter id="${id}" color-interpolation-filters="sRGB"><feComponentTransfer>${fn}</feComponentTransfer></filter>`);
+        res(id);
+      }catch(e){ res(null); }
+    };
+    im.src=`${WB}/WMTS/1.0.0/default028mm/MapServer/tile/${h.rel}/15/${ty}/${tx}`;
+  }));
+  return TONE.get(key);
+}
+function ivTiles(i){
+  const h=IMG.hist[i];
+  if (!h || i===0) return L.tileLayer(ESRI_IMG+'/tile/{z}/{y}/{x}',{ attribution:'Esri, Vantor, Earthstar Geographics', maxNativeZoom:IMG.z19?19:18, maxZoom:21 });
+  const layer=L.tileLayer(`${WB}/WMTS/1.0.0/default028mm/MapServer/tile/${h.rel}/{z}/{y}/{x}`,{ attribution:'Esri World Imagery Wayback', maxNativeZoom:h.z18?18:17, maxZoom:21 });
+  const v=current;
+  layer.on('add',()=>ivTone(h,v).then(id=>{ const c=layer.getContainer(); if (id && c) c.style.filter='url(#'+id+')'; }));
+  return layer;
+}
+function ivHistCap(i){
+  const h=IMG.hist[i];
+  if (!h || i===0) return IMG.clearCap;
+  const res=parseFloat(h.res);
+  return '<b>Captured '+fmtDay(h.date)+'</b> · '+ago(h.date)+(res>0 ? ' · '+(res<1?Math.round(res*100)+' cm':res+' m') : '')+(h.src ? ' · '+esc(h.src) : '');
+}
+function ivHistLabel(i){
+  const h=IMG.hist[i]; if (!h) return 'Current';
+  const dup=IMG.hist.some((o,k)=>k!==i && fmtMon(o.date)===fmtMon(h.date));
+  return dup ? fmtDay(h.date) : fmtMon(h.date);
+}
+function ivClip(){
+  if (IV.mode!=='compare' || IV.layers.length<2) return;
+  const m=IV.map, sz=m.getSize(), nw=m.containerPointToLayerPoint([0,0]), se=m.containerPointToLayerPoint(sz), cx=nw.x+sz.x*IV.split;
+  const L0=IV.layers[0].getContainer(), R0=IV.layers[1].getContainer();
+  if (L0) L0.style.clip=`rect(${nw.y}px,${cx}px,${se.y}px,${nw.x}px)`;
+  if (R0) R0.style.clip=`rect(${nw.y}px,${se.x}px,${se.y}px,${cx}px)`;
+  document.getElementById('ivdiv').style.left=(IV.split*100)+'%';
+}
+function ivReset(){
+  IV.layers.forEach(l=>l.remove()); IV.layers=[];
+  if (IV.overlay){ IV.overlay.remove(); IV.overlay=null; }
+  ['ivdiv','ivsl','ivsr','ivmsg'].forEach(id=>document.getElementById(id).classList.remove('show'));
+}
+function ivPin(v){
+  if (IV.pin) IV.pin.remove();
+  IV.pin=L.circleMarker([+v.lat,+v.lng],{ radius:10, color:'#00E5FF', weight:2, fill:false, interactive:false }).addTo(IV.map);
+}
+function ivBar(){
+  const bar=document.getElementById('ivbar'), n=IMG.hist.length;
+  if (IV.mode==='clear'){
+    bar.innerHTML = n>1
+      ? '<span class="lbl">CAPTURED</span>'+IMG.hist.map((h,i)=>`<button class="ivchip${i===IV.a?' on':''}" data-h="${i}" title="${fmtDay(h.date)}">${ivHistLabel(i)}${i===0?' · newest':''}</button>`).reverse().join('')
+      : '<span class="lbl">'+(IMG.histCache.has(current.id) ? 'Only one capture date is on record for this spot' : 'Looking up earlier captures…')+'</span>';
+  } else if (IV.mode==='latest'){
+    const yr=new Date().getUTCFullYear();
+    bar.innerHTML = '<span class="lbl">SENTINEL-2 PASS</span>'+IMG.scenes.map((sc,i)=>{
+      const l=sc.local, st=l ? (l.ok?'ok':'cl') : '', tip=l ? (l.ok?'clear over village':'cloud over village') : 'not checked yet';
+      return `<button class="ivchip${i===IMG.idx?' on':''}" data-s="${i}" title="${fmtDay(sc.date)} · ${tip}"><span class="st ${st}"></span>${sc.date.getUTCDate()} ${MONTHS[sc.date.getUTCMonth()]}${sc.date.getUTCFullYear()!==yr?' '+sc.date.getUTCFullYear():''}</button>`;
+    }).reverse().join('') + (IMG.scenes.length ? '' : '<span>searching…</span>');
+  } else {
+    const opts=sel=>IMG.hist.map((h,i)=>`<option value="${i}"${i===sel?' selected':''}>${fmtDay(h.date)}</option>`).join('');
+    bar.innerHTML = `<span class="lbl">LEFT</span><select id="ivselL" aria-label="Left image date">${opts(IV.l)}</select>`
+      +`<span class="lbl" style="margin-left:10px">RIGHT</span><select id="ivselR" aria-label="Right image date">${opts(IV.r)}</select>`
+      +'<span class="hint">drag the ⇆ handle to compare</span>';
+  }
+  const on=bar.querySelector('.ivchip.on'); if (on) bar.scrollLeft=Math.max(0, on.offsetLeft-bar.clientWidth+on.offsetWidth+24);
+  document.getElementById('ivcompare').disabled = n<2;
+  ivBarEdges();
+}
+/* re-draw viewer chrome when background lookups (dates, history, cloud checks) finish */
+function ivRefresh(){
+  if (!ivOpen() || !current) return;
+  ivBar();
+  if (IV.mode==='clear') document.getElementById('ivcap').innerHTML=ivHistCap(IV.a)+' · scroll or pinch to zoom, drag to move';
+}
+async function ivShow(mode){
+  const v=current; if (!v || isUnverified(v)) return;
+  if (mode==='compare' && IMG.hist.length<2) mode='clear';
+  IV.mode=mode; const job=++IV.job;
+  ['clear','latest','compare'].forEach(m=>document.getElementById('iv'+m).classList.toggle('on', m===mode));
+  document.getElementById('ivtitle').textContent = roName(v)+' · '+enName(v);
+  const cap=document.getElementById('ivcap'), msg=document.getElementById('ivmsg');
+  ivReset(); ivPin(v);
+  const sharp = mode!=='latest', key=v.id+(sharp?':sharp':':wide');
+  const fresh = IV.viewKey!==key; IV.viewKey=key;
+  if (sharp && fresh) IV.map.setView([+v.lat,+v.lng], 17, {animate:false});
+  if (mode==='clear'){
+    if (IV.a>=Math.max(1,IMG.hist.length)) IV.a=0;
+    IV.layers=[ivTiles(IV.a).addTo(IV.map)];
+    cap.innerHTML=ivHistCap(IV.a)+' · scroll or pinch to zoom, drag to move';
+    ivBar(); return;
+  }
+  if (mode==='compare'){
+    const n=IMG.hist.length;
+    if (IV.l>=n || IV.r>=n || IV.l===IV.r){ IV.l=n-1; IV.r=0; }
+    IV.layers=[ivTiles(IV.l).addTo(IV.map), ivTiles(IV.r).addTo(IV.map)];
+    const sl=document.getElementById('ivsl'), sr=document.getElementById('ivsr');
+    sl.textContent=fmtDay(IMG.hist[IV.l].date); sr.textContent=fmtDay(IMG.hist[IV.r].date);
+    [sl,sr,document.getElementById('ivdiv')].forEach(el=>el.classList.add('show'));
+    cap.innerHTML='<b>'+fmtDay(IMG.hist[IV.l].date)+'</b> on the left · <b>'+fmtDay(IMG.hist[IV.r].date)+'</b> on the right · same place, drag the divider';
+    ivBar(); ivClip(); return;
+  }
+  if (fresh) IV.map.setView([+v.lat,+v.lng], 14, {animate:false});
+  ivBar();
+  const sc=IMG.scenes[IMG.idx];
+  if (!sc){ cap.textContent='Sentinel-2'; msg.textContent='// still searching for Sentinel-2 passes…'; msg.classList.add('show'); return; }
+  cap.innerHTML=latestCaption(sc)+' · 10 m per pixel';
+  msg.textContent='// downloading '+fmtDay(sc.date)+'…'; msg.classList.add('show');
+  try{
+    const im=await openTiff(sc.href);
+    const win=await readWindow(im, v, 4000, 3000);                     // ≈8 × 6 km
+    if (job!==IV.job) return;
+    if (!win){ msg.textContent='// this pass does not cover the village — pick another date'; return; }
+    const cv=document.createElement('canvas'); cv.width=win.w; cv.height=win.h;
+    cv.getContext('2d').putImageData(win.id,0,0);
+    IV.overlay=L.imageOverlay(cv.toDataURL('image/jpeg',.95), win.bounds).addTo(IV.map);
+    if (fresh) IV.map.fitBounds(win.bounds, {animate:false});
+    cap.innerHTML=latestCaption(sc)+' · 10 m per pixel';
+    msg.classList.remove('show');
+  }catch(e){ if (job===IV.job) msg.textContent='// could not load this image — pick another date'; }
+}
+function openViewer(mode){
+  if (!current || isUnverified(current)) return;
+  document.getElementById('imgviewer').classList.add('open');
+  ivInit(); IV.map.invalidateSize();
+  if (IV.forId!==current.id){ IV.forId=current.id; IV.a=0; IV.l=0; IV.r=0; IV.split=.5; IV.viewKey=''; }
+  ivShow(mode);
+}
+async function ivPass(i){
+  if (!current || i<0 || i>=IMG.scenes.length) return;
+  await showScene(current, IMG.token, i, i>IMG.idx ? 1 : -1);
+  if (ivOpen()) ivShow('latest');
+}
+['clearframe','latestframe'].forEach(id=>{
+  const el=document.getElementById(id), mode=id==='clearframe'?'clear':'latest';
+  el.addEventListener('click',()=>openViewer(mode));
+  el.addEventListener('keydown',e=>{ if (e.key==='Enter' || e.key===' '){ e.preventDefault(); openViewer(mode); } });
+});
+document.getElementById('histbtn').addEventListener('click',()=>openViewer('clear'));
+document.getElementById('cmpbtn').addEventListener('click',()=>openViewer('compare'));
+['clear','latest','compare'].forEach(m=>document.getElementById('iv'+m).addEventListener('click',()=>ivShow(m)));
+const ivbarEl=document.getElementById('ivbar');
+function ivBarEdges(){
+  ivbarEl.classList.toggle('fl', ivbarEl.scrollLeft>4);
+  ivbarEl.classList.toggle('fr', ivbarEl.scrollLeft<ivbarEl.scrollWidth-ivbarEl.clientWidth-4);
+}
+ivbarEl.addEventListener('scroll', ivBarEdges, { passive:true });
+window.addEventListener('resize', ivBarEdges);
+ivbarEl.addEventListener('wheel',e=>{                                   // mouse wheel scrolls the timeline sideways
+  if (ivbarEl.scrollWidth>ivbarEl.clientWidth && Math.abs(e.deltaY)>Math.abs(e.deltaX)){ ivbarEl.scrollLeft+=e.deltaY; e.preventDefault(); }
+},{ passive:false });
+let ivDrag=null;                                                        // …and it can be dragged
+ivbarEl.addEventListener('pointerdown',e=>{ if (e.pointerType==='mouse' && e.button===0 && e.target.tagName!=='SELECT') ivDrag={ x:e.clientX, s:ivbarEl.scrollLeft, moved:false }; });
+window.addEventListener('pointermove',e=>{
+  if (!ivDrag) return;
+  const dx=e.clientX-ivDrag.x;
+  if (Math.abs(dx)>5){ ivDrag.moved=true; ivbarEl.classList.add('dragging'); }
+  if (ivDrag.moved) ivbarEl.scrollLeft=ivDrag.s-dx;
+});
+window.addEventListener('pointerup',()=>{
+  if (ivDrag && ivDrag.moved){ ivbarEl.dataset.dragged='1'; setTimeout(()=>delete ivbarEl.dataset.dragged,0); }
+  ivbarEl.classList.remove('dragging'); ivDrag=null;
+});
+/* credits sit behind a small ⓘ — tap toggles them on touch screens */
+document.addEventListener('click',e=>{ const a=e.target.closest('.leaflet-control-attribution'); if (a) a.classList.toggle('open'); });
+document.getElementById('ivbar').addEventListener('click',e=>{
+  if (ivbarEl.dataset.dragged) return;
+  const b=e.target.closest('.ivchip'); if (!b) return;
+  if (b.dataset.h!==undefined){ IV.a=+b.dataset.h; ivShow('clear'); }
+  else if (b.dataset.s!==undefined) ivPass(+b.dataset.s);
+});
+document.getElementById('ivbar').addEventListener('change',e=>{
+  if (e.target.id==='ivselL') IV.l=+e.target.value; else if (e.target.id==='ivselR') IV.r=+e.target.value; else return;
+  ivShow('compare');
+});
+/* ← / → step through dates while the viewer is open */
+document.addEventListener('keydown',e=>{
+  if (!ivOpen() || (e.key!=='ArrowLeft' && e.key!=='ArrowRight') || /^(INPUT|SELECT|TEXTAREA)$/.test(e.target.tagName)) return;
+  const d=e.key==='ArrowLeft' ? 1 : -1;                                // ← = older, matching the timeline
+  if (IV.mode==='clear' && IMG.hist.length>1){ IV.a=Math.min(IMG.hist.length-1,Math.max(0,IV.a+d)); ivShow('clear'); }
+  else if (IV.mode==='latest') ivPass(IMG.idx+d);
+  else return;
+  e.preventDefault(); e.stopPropagation();
+}, true);
+
 function closePanel(){
   panel.classList.remove('open');
   if (selMarker){ selMarker.remove(); selMarker=null; }
+  IMG.token++;
   current=null;
   history.replaceState(null,'',location.pathname);
 }
@@ -1966,6 +2647,7 @@ document.addEventListener('keydown', e=>{
   switch(e.key){
     case '/': e.preventDefault(); searchEl.focus(); searchEl.select(); break;
     case 'Escape':
+      if (document.getElementById('imgviewer').classList.contains('open')){ document.getElementById('imgviewer').classList.remove('open'); break; }
       if (measuring) setMeasure(false);
       closeModals(); closePanel(); closeResults(); break;
     case 'r': case 'R': openModal('registrymodal'); break;
