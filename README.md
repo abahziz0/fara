@@ -27,7 +27,7 @@ A self-contained, single-file archive explorer styled as a futuristic intelligen
 - **Telemetry** (`T`) — records per township, name-coverage rings, verified-location count
 - **Optics** — dark Grid / satellite Orbital basemaps, graticule overlay (`G`), permanent labels at high zoom
 - **Live status bar** — cursor coordinates, zoom, villages in view, scrolling name-preservation ticker, Myanmar time (MMT), AB Aziz credit
-- **Orbital (satellite) basemap by default**, Grid dark map one click away; loads straight into the map with a scan-line fly-in (no intro screen); custom FARA favicon
+- **Orbital (satellite) basemap by default**, Grid dark map one click away; loads straight into the map with a scan-line fly-in (no intro or loading screen); custom FARA favicon
 - **Mission modal** credits the project: A project by AB Aziz · ab@rohingya.ro
 - **Discover** (`D`) — radar-sweep to a random village
 - **Map Art Studio** (`P`, "Map Art" in the top bar, or the Map Art tab on phones) — printable poster art for any village at 2400×3600 px (8″×12″ @ 300 DPI).
@@ -43,7 +43,7 @@ A self-contained, single-file archive explorer styled as a futuristic intelligen
   - Menu (townships, optics, tools) is a pull-down-to-dismiss sheet; dialogs become full pages; the records table shows three readable columns
   - imagery viewer goes full screen with its tabs and date timeline at thumb height
   - larger tap targets, forgiving marker taps, safe-area insets for notches, and "Add to Home Screen" support (`manifest.webmanifest` + icons)
-- Keyboard shortcuts overlay (`?`), terminal boot sequence, reduced-motion support
+- Keyboard shortcuts overlay (`?`), reduced-motion support
 
 `fara_template.html` is the editable source. Regenerate after edits:
 

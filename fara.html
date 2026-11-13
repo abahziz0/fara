@@ -430,20 +430,6 @@ input,select{font-family:inherit}
 #toast{position:fixed;bottom:44px;left:50%;transform:translate(-50%,80px);z-index:var(--z-palette);background:var(--panel-solid);border:1px solid var(--cyan-dim);padding:9px 17px;font-size:12px;font-family:'Share Tech Mono',monospace;color:var(--cyan);box-shadow:0 0 20px rgba(0,229,255,.2);transition:transform .3s cubic-bezier(.22,1,.36,1);pointer-events:none}
 #toast.show{transform:translate(-50%,0)}
 
-/* ============ BOOT ============ */
-#boot{position:fixed;inset:0;z-index:var(--z-boot);background:var(--bg);display:flex;align-items:center;justify-content:center;transition:opacity .55s,visibility .55s}
-#boot.done{opacity:0;visibility:hidden}
-#bootin{width:min(430px,86vw)}
-#bootlogo{display:flex;align-items:center;gap:13px;margin-bottom:22px}
-#bootlogo svg{width:52px;height:52px}
-#bootlogo h2{font-size:30px;letter-spacing:.4em;color:var(--cyan);text-shadow:0 0 16px rgba(0,229,255,.55);font-weight:700}
-#bootlogo .bsub{font-size:9px;letter-spacing:.2em;color:var(--text-faint);font-family:'Share Tech Mono',monospace;text-transform:uppercase;margin-top:5px}
-#bootlog{font-family:'Share Tech Mono',monospace;font-size:11px;line-height:1.9;color:var(--text-dim);min-height:132px}
-#bootlog .ok{color:var(--green)}
-#bootlog .val{color:var(--cyan)}
-#bootbarw{margin-top:14px;height:2px;background:rgba(255,255,255,.06);overflow:hidden}
-#bootbar{height:100%;width:0;background:var(--cyan);box-shadow:0 0 12px var(--cyan);transition:width .28s}
-
 /* ============ MAP ART STUDIO ============ */
 #postermodal .mcard{width:min(1150px,100%)}
 .artgrid{display:grid;grid-template-columns:330px 1fr;gap:22px}
@@ -743,30 +729,6 @@ button:focus-visible,input:focus-visible,a:focus-visible,select:focus-visible{ou
 </style>
 </head>
 <body>
-
-<div id="boot" role="status" aria-label="Loading FARA">
-  <div id="bootin">
-    <div id="bootlogo">
-      <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
-        <rect x="4" y="4" width="56" height="56" stroke="#00E5FF" stroke-opacity=".35" stroke-width="1"/>
-        <rect x="4" y="4" width="14" height="2" fill="#00E5FF"/><rect x="4" y="4" width="2" height="14" fill="#00E5FF"/>
-        <rect x="46" y="58" width="14" height="2" fill="#00E5FF"/><rect x="58" y="46" width="2" height="14" fill="#00E5FF"/>
-        <circle cx="32" cy="32" r="14" stroke="#00E5FF" stroke-width="1.4" stroke-dasharray="20 8"/>
-        <circle cx="32" cy="32" r="4" fill="#00E5FF"/>
-        <line x1="32" y1="10" x2="32" y2="22" stroke="#00E5FF" stroke-opacity=".6"/>
-        <line x1="32" y1="42" x2="32" y2="54" stroke="#00E5FF" stroke-opacity=".6"/>
-        <line x1="10" y1="32" x2="22" y2="32" stroke="#00E5FF" stroke-opacity=".6"/>
-        <line x1="42" y1="32" x2="54" y2="32" stroke="#00E5FF" stroke-opacity=".6"/>
-      </svg>
-      <div>
-        <h2>FARA</h2>
-        <div class="bsub">The Arakan Village Name Archive</div>
-      </div>
-    </div>
-    <div id="bootlog"></div>
-    <div id="bootbarw"><div id="bootbar"></div></div>
-  </div>
-</div>
 
 <div id="map" role="application" aria-label="Interactive village archive map"></div>
 <div id="fx" aria-hidden="true"></div>
@@ -1200,32 +1162,14 @@ const inRegion = v => { const la=+v.lat, ln=+v.lng; return la>18 && la<23.5 && l
 const isUnverified = v => v.coord_status === 'unverified' || !inRegion(v);
 function esc(s){ return String(s??'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 
-/* ================= BOOT ================= */
-const bootLines = [
-  ['> mounting archive…','ok'],
-  ['> loading <span class="val">'+VILLAGES.length.toLocaleString()+'</span> village records','ok'],
-  ['> indexing names · <span class="val">ROHINGYA</span> / <span class="val">ENGLISH</span> / <span class="val">MYANMAR</span>','ok'],
-  ['> plotting coordinates over Arakan','ok'],
-  ['> archive integrity check','ok'],
-  ['> <span class="ok">FARA ONLINE — every name preserved</span>','']
-];
-const bootlog = document.getElementById('bootlog');
+/* ================= START =================
+   No loading screen: the map is there at once, the villages sweep in north → south,
+   and the scan line + fly-in run as before. */
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
-let bi = 0;
-(function bootTick(){
-  if (bi < bootLines.length) {
-    bootlog.innerHTML += bootLines[bi][0] + (bootLines[bi][1] ? ' <span class="ok">[OK]</span>' : '') + '<br>';
-    document.getElementById('bootbar').style.width = Math.round((bi+1)/bootLines.length*100)+'%';
-    bi++;
-    setTimeout(bootTick, reduceMotion ? 10 : 230);
-  } else {
-    setTimeout(() => {
-      document.getElementById('boot').classList.add('done');
-      addBatch(); // villages materialize north → south
-      if (!hasDeepLink) setTimeout(cinematicEnter, 450);
-    }, reduceMotion ? 10 : 420);
-  }
-})();
+setTimeout(() => {
+  addBatch();
+  if (!hasDeepLink) setTimeout(cinematicEnter, 450);
+}, 0);
 
 /* ================= MAP ================= */
 const map = L.map('map', { zoomControl:false, attributionControl:true, minZoom:7, maxZoom:20, preferCanvas:true });
