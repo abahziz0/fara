@@ -45,11 +45,38 @@ A self-contained, single-file archive explorer styled as a futuristic intelligen
   - larger tap targets, forgiving marker taps, safe-area insets for notches, and "Add to Home Screen" support (`manifest.webmanifest` + icons)
 - Keyboard shortcuts overlay (`?`), reduced-motion support
 
-`fara_template.html` is the editable source. Regenerate after edits:
+`fara_template.html` is the editable source. After any edit, rebuild everything with:
 
 ```
-python3 -c "import json; d=json.dumps([{k:r[k] for k in ['id','name','lat','lng','township','district','village_tract','rohingya_name','village_name_mmr','coord_status'] if r.get(k) is not None} for r in json.load(open('arakan_villages.json'))],ensure_ascii=False,separators=(',',':')); open('fara.html','w').write(open('fara_template.html').read().replace('__VILLAGE_DATA__',d))"
+python3 build.py
 ```
+
+This writes `fara.html`, one page per village, the township and A–Z index pages, `sitemap.xml`, `robots.txt`, `llms.txt` and `sw.js`.
+
+### Pages for search engines, AI assistants and link previews
+
+- **One page per village** at `/village/<id>-<name>/` (1,023 pages): names in three languages, location, a satellite image, nearby villages, a short question-and-answer section, how to cite, and a button into the interactive map. Each has its own title, description, link preview and structured data (`Place`, `BreadcrumbList`, `FAQPage`).
+- **Township pages** at `/township/<name>/` and an **A–Z index** at `/villages/`.
+- `sitemap.xml` (1,029 URLs), `robots.txt` (search engines and AI crawlers welcome), `llms.txt` (a plain summary of the archive and its data for AI assistants), and `Dataset` + `WebSite` structured data on the home page.
+- The record panel's **Share Link** and Map Art captions point to the village's own page, so shared links show that village's name.
+
+### Logo, site icon and share pictures
+
+The logo is the word *fara* in Hanifi Rohingya (𐴉𐴝𐴌𐴝); the dot of its first letter is drawn as a village point. It is stored as outlines in `tools/logo.json` (from Noto Sans Hanifi Rohingya Bold, SIL Open Font License), so it looks the same everywhere without needing the font.
+
+```
+python3 tools/build_share.py
+```
+
+writes the site icons (`favicon.svg`, `favicon.ico`, `icon-192.png`, `icon-512.png`, `apple-touch-icon.png`), `logo.svg` / `logo.png`, the site's share picture `og.png`, one share picture per village (`share/img/v/<id>.png`: names, township, tract, coordinates and a locator map), and one page and picture per village poster (`art/<id>/`, `share/img/art/<id>.png`). A poster shared from Map Art links to `/art/<id>`, which previews as a poster and opens Map Art on that village. Needs Google Chrome and Pillow; takes about five minutes. Run it again when village data changes.
+
+### Community, research and offline
+
+- **Suggest a name or correction** on every village record. Suggestions are never published directly; they go to the archive's keeper for review. Delivery is set by `SUGGEST_ENDPOINT` in the template: empty means the visitor's email app opens with the suggestion written out; set to a form endpoint and suggestions are posted to it and queued while offline.
+- **Area tool** (`A`): outline an area on the map to list the villages inside it, then filter the registry to them and export CSV.
+- **PDF Record**: a one-page printable record for any village (names, location, both satellite images with their dates, nearby villages, source and citation).
+- **Works offline**: a service worker saves the app, and the map tiles you have looked at, on the device. Pages load from the network when online, so updates arrive normally.
+- **Usage statistics**: Vercel Web Analytics (no cookies, no personal data). Enable it once under the project's Analytics tab in Vercel.
 
 ## Coverage
 
@@ -86,6 +113,23 @@ Records with data issues are **flagged, never silently altered**.
 | `township` / `district` | Administrative divisions |
 | `layer` / `layer_color` | Source map layer info |
 | `coord_status` | `unverified` when source coordinates are known-bad (only id 338) |
+| `pcode_village` | Official MIMU village place code (6 digits, e.g. `197894`). Empty when there is none or it is not confirmed yet |
+| `pcode_village_tract` | MIMU village tract code (e.g. `MMR012009034`), the tract MIMU itself places the village in |
+| `pcode_township` / `pcode_district` | MIMU township and district codes (e.g. `MMR012009`, `MMR012D002`) |
+| `mimu_village_name` / `mimu_village_tract_name` | MIMU's official spelling of the village and its tract |
+| `mimu_village_status` / `mimu_village_tract_status` | `active`, or `inactive_…` when MIMU has removed the place from its list or reclassified it to a ward or town |
+| `pcode_match` | How sure the village code is: `exact`, `strong`, `unconfirmed` (a likely code awaits a human check, so none is given) or `none` (no official code exists) |
+
+## Official place codes (MIMU P-codes)
+
+Every record carries the place codes the United Nations and aid agencies use for Myanmar, so it can be linked to their datasets.
+
+- **Source:** MIMU Place Codes, Release 9.7 (22 January 2026), Rakhine workbook, from https://themimu.info/place-codes. © Myanmar Information Management Unit; free to use with attribution, not for sale or commercial use.
+- **Result:** 1,017 of 1,023 villages have a village code (995 exact, 22 strong). 4 are unconfirmed (ids 716, 796, 800, 802) and 2 have no official code (ids 338, 1025). All 290 named village tracts have a code.
+- **How they were matched:** 1,016 records sit on exactly the same coordinates as a MIMU village point, one village each; name and tract were then compared. The Rohingya name was not used for matching. A code is only given when the match is exact or strong; nothing is guessed.
+- **Inactive in MIMU:** 72 matched villages and 5 tracts are marked inactive by MIMU (removed from the official list, or reclassified to a town ward or town). Their codes are kept and the status is shown.
+- **Files:** `pcodes.json` and `pcodes.csv` hold the full match for every record (tier, method, distance, MIMU names); `pcodes_review.csv` lists the records a person should look at.
+- **To update:** edit or regenerate `pcodes.json`, then run `python3 tools/add_pcodes.py` (writes the codes into the data files) and `python3 build.py`.
 
 ## Files
 
@@ -97,5 +141,15 @@ Records with data issues are **flagged, never silently altered**.
 | `arakan_villages.csv` | Spreadsheet-friendly CSV |
 | `arakan_villages.geojson` | Point FeatureCollection (verified coordinates only) — QGIS/Leaflet/Mapbox ready |
 | `summary.json` | Counts, coverage, corrections log |
+| `pcodes.json`, `pcodes.csv`, `pcodes_review.csv` | Official MIMU place codes matched to every record, and the records needing review |
+| `tools/add_pcodes.py` | Writes the place codes from `pcodes.json` into the data files |
+| `build.py` | Builds the whole static site from the template and the dataset |
+| `village/`, `township/`, `villages/` | Generated record and index pages |
+| `pages.css` | Styles for the generated pages |
+| `sitemap.xml`, `robots.txt`, `llms.txt`, `og.png` | Search engine, AI assistant and link-preview files |
+| `sw.template.js`, `sw.js` | Offline support (the second is generated) |
+| `tools/build_share.py`, `tools/logo.json` | Builds the logo, icons and share pictures |
+| `favicon.svg`, `favicon.ico`, `logo.svg`, `logo.png` | Site icon and logo |
+| `share/img/`, `art/` | Generated share pictures and poster pages |
 | `manifest.webmanifest`, `icon-192.png`, `icon-512.png`, `apple-touch-icon.png` | Home-screen install support for phones |
 | `by_township/` | Per-township `.json` + `.csv` splits |
