@@ -1,8 +1,8 @@
-/* FARA offline support. build.py stamps 257db07359ef so every release gets fresh caches.
+/* FARA offline support. build.py stamps 934100512bfe so every release gets fresh caches.
    - pages: network first, saved copy when offline
    - app files, fonts, libraries: saved on first use
    - map tiles: saved as they are viewed (capped), so areas already looked at stay visible offline */
-const VERSION = '257db07359ef';
+const VERSION = '934100512bfe';
 const SHELL = 'fara-shell-' + VERSION, LIBS = 'fara-libs-v1', TILES = 'fara-tiles-v1';
 const PRECACHE = ['/', '/fara.html', '/wards.js', '/pages.css', '/manifest.webmanifest', '/icon-192.png', '/icon-512.png', '/apple-touch-icon.png',
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css', 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'];

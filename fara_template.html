@@ -856,6 +856,22 @@ body.areaing #areabar{display:flex}
   .card.tools .tool{padding:15px 10px;min-height:50px;font-size:11.5px;gap:10px}
   .card.tools .tool svg{width:17px;height:17px}
 }
+
+/* ============ WAITING FOR EARLIER CAPTURES ============ */
+.spin{flex:none;display:inline-block;width:12px;height:12px;border-radius:50%;border:2px solid rgba(0,229,255,.25);border-top-color:var(--cyan);animation:spin .8s linear infinite;vertical-align:-2px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.histwait{display:none;align-items:center;gap:9px;padding:0 12px 12px;font-family:'Share Tech Mono',monospace;font-size:10.5px;line-height:1.5;color:var(--text-dim)}
+.histwait.show{display:flex}
+.histwait.err{display:none;color:var(--amber)}
+.histwait.err.show{display:block}
+.histwait button{margin-left:6px;padding:4px 9px;border:1px solid var(--line);color:var(--cyan);font-family:inherit;font-size:10px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+.ivbar .spin{margin-right:2px}
+.ivprog{flex:none;width:120px;height:3px;margin-left:8px;background:rgba(255,255,255,.08);overflow:hidden}
+.ivprog i{display:block;height:100%;width:40%;background:var(--cyan);box-shadow:0 0 8px var(--cyan);animation:ivprog 1.1s ease-in-out infinite}
+@keyframes ivprog{0%{transform:translateX(-100%)}100%{transform:translateX(250%)}}
+.ivchip .spin{width:9px;height:9px;border-width:1.5px}
+.ivdating{margin-left:8px;white-space:nowrap}
+@media (prefers-reduced-motion:reduce){.spin{animation-duration:2.4s}.ivprog i{animation:none;width:100%;opacity:.5}}
 </style>
 </head>
 <body>
@@ -1038,6 +1054,7 @@ body.areaing #areabar{display:flex}
         <div class="imgsub" id="histrow">
           <button id="histbtn"></button><button id="cmpbtn">⇆ Before / after</button>
         </div>
+        <div class="histwait" id="histwait" role="status"></div>
       </div>
       <div class="imgcard">
         <div class="imgframe" id="latestframe" role="button" tabindex="0" title="Open large zoomable view">
@@ -1554,15 +1571,15 @@ document.getElementById('ivzones').addEventListener('click', () => ivZones(!IV.z
 async function openEvidence(){
   const v = current; if (!v || isUnverified(v)) return;
   track('2017 evidence');
-  if (!IMG.histCache.has(v.id)){
+  if (IMG.histState==='loading' || IMG.histState==='partial'){
     showToast('// loading capture dates…');
     const t0 = performance.now();
-    while (performance.now() - t0 < 9000 && current === v && !IMG.histCache.has(v.id)) await new Promise(r => setTimeout(r, 250));
+    while (performance.now() - t0 < 12000 && current === v && (IMG.histState==='loading' || IMG.histState==='partial')) await new Promise(r => setTimeout(r, 250));
     if (current !== v) return;
   }
   const H = IMG.hist, before = new Date('2017-08-25'), after = new Date('2017-10-11');
-  const l = H.findIndex(h => h.date < before);                      // newest capture before the destruction
-  let r = -1; for (let i = H.length - 1; i >= 0; i--) if (H[i].date > after){ r = i; break; }   // earliest capture after it
+  const l = H.findIndex(h => !h.approx && h.date < before);                      // newest capture before the destruction
+  let r = -1; for (let i = H.length - 1; i >= 0; i--) if (!H[i].approx && H[i].date > after){ r = i; break; }   // earliest capture after it
   openViewer(l >= 0 && r >= 0 ? 'compare' : 'clear');
   if (l >= 0 && r >= 0){ IV.l = l; IV.r = r; ivShow('compare'); }
   else showToast('// no capture from both before and after 2017 here — showing what exists');
@@ -2152,58 +2169,148 @@ function loadClear(v, token){
   }).catch(()=>{});
 }
 
-/* ---------- HISTORY (Esri Wayback) ---------- */
+/* ---------- HISTORY (Esri Wayback) ----------
+   Which earlier captures of this exact spot exist, and when each was taken.
+   Fast and failure-proof: the archive is probed in parallel, every request has a time limit,
+   a slow or failed date lookup falls back to "by <release date>" instead of blocking,
+   results are kept on the device for two weeks, and an error offers a retry instead of hanging. */
 let wbConfig=null;
+function getJson(url, ms){
+  const ac=new AbortController(), t=setTimeout(()=>ac.abort(), ms);
+  return fetch(url,{ signal:ac.signal }).then(r=>{ if (!r.ok) throw new Error('http '+r.status); return r.json(); }).finally(()=>clearTimeout(t));
+}
 function loadWbConfig(){
-  return wbConfig || (wbConfig = fetch(WB_CFG).then(r=>r.json()).then(c=>Object.keys(c).map(k=>({
+  return wbConfig || (wbConfig = getJson(WB_CFG, 9000).then(c=>Object.keys(c).map(k=>({
       rel:+k, released:(c[k].itemTitle.match(/\d{4}-\d{2}-\d{2}/)||[''])[0], meta:c[k].metadataLayerUrl }))
     .filter(r=>r.released).sort((a,b)=> a.released<b.released ? 1 : -1))
     .catch(e=>{ wbConfig=null; throw e; }));
 }
-async function wbCapture(rel, lat, lng){
+/* capture date of one release at this spot: the usual metadata layer first; if it is slow or empty, the neighbouring layers too */
+function wbCapture(rel, lat, lng){
   const q='f=json&where=1%3D1&outFields=SRC_DATE2,NICE_DESC,SAMP_RES&returnGeometry=false&geometryType=esriGeometryPoint'
     +'&spatialRel=esriSpatialRelIntersects&geometry='+encodeURIComponent(JSON.stringify({x:lng,y:lat,spatialReference:{wkid:4326}}));
-  for (const layer of [6,7,5,8]){                                      // metadata layers by zoom level; 6 ≈ zoom 17
-    try{
-      const j=await fetch(`${rel.meta}/${layer}/query?${q}`).then(r=>r.json());
-      const a=((j.features||[])[0]||{}).attributes;
-      if (a && a.SRC_DATE2) return { date:new Date(a.SRC_DATE2), res:a.SAMP_RES, src:a.NICE_DESC };
-    }catch(e){}
-  }
-  return null;
+  const ask=layer=>getJson(`${rel.meta}/${layer}/query?${q}`, 6500).then(j=>{
+    const a=((j.features||[])[0]||{}).attributes;
+    if (!a || !a.SRC_DATE2) throw new Error('none');
+    return { date:new Date(a.SRC_DATE2), res:a.SAMP_RES, src:a.NICE_DESC };
+  });
+  let done=false;
+  const first=ask(6); first.then(()=>{ done=true; }, ()=>{});
+  const rest=Promise.race([first.then(()=>new Promise(()=>{}), ()=>0), new Promise(r=>setTimeout(r, 2200))])
+    .then(()=> done ? Promise.reject(new Error('not needed')) : Promise.any([ask(5), ask(7)]));
+  return Promise.any([first, rest]).catch(()=>null);
 }
-/* Walk the Wayback archive from newest to oldest, collecting each release where this spot's imagery actually changed */
-async function loadHistory(v, token){
-  const row=document.getElementById('histrow');
-  row.classList.remove('show'); IMG.hist=[];
-  if (IMG.histCache.has(v.id)){ IMG.hist=IMG.histCache.get(v.id); renderHistRow(); return; }
-  try{
-    const rels=await loadWbConfig(), lat=+v.lat, lng=+v.lng;
-    const [tx,ty]=tileXY(lat,lng,17), [tx18,ty18]=tileXY(lat,lng,18);
-    const detail=async rel=>{                                           // capture date + whether zoom 18 exists, fetched as soon as a version is found
-      const [cap, tm]=await Promise.all([
-        wbCapture(rel, lat, lng),
-        fetch(`${WB}/MapServer/tilemap/${rel.rel}/18/${ty18}/${tx18}`).then(r=>r.json()).catch(()=>null) ]);
-      return cap ? { rel:rel.rel, date:cap.date, res:cap.res, src:cap.src, z18:!!(tm && tm.data && tm.data[0]===1) } : null;
-    };
-    const jobs=[]; let i=0, guard=0;
-    while (i<rels.length && guard++<40){
-      const j=await fetch(`${WB}/MapServer/tilemap/${rels[i].rel}/17/${ty}/${tx}`).then(r=>r.json());
-      if (token!==IMG.token) return;
-      if (!j.data || j.data[0]!==1) break;
+/* Find every release where this spot's imagery actually changed. A probe of release i answers with the release
+   its tile really comes from, so everything between the two is the same picture. Probing many releases at
+   once and then only the gaps takes two to four round trips instead of one request per version. */
+async function wbVersions(rels, tx, ty, alive){
+  const actual=new Map();                                             // probed index → index its tile comes from (-1 no imagery, null failed)
+  const probe=async i=>{
+    try{
+      const j=await getJson(`${WB}/MapServer/tilemap/${rels[i].rel}/17/${ty}/${tx}`, 6000);
+      if (!j.data || j.data[0]!==1){ actual.set(i,-1); return; }
       const k=j.select ? rels.findIndex(r=>r.rel===j.select[0]) : i;
-      const at=k>=i ? k : i;
-      jobs.push(detail(rels[at])); i=at+1;
+      actual.set(i, k>=i ? k : i);
+    }catch(e){ actual.set(i,null); }
+  };
+  let todo=[]; for (let i=0;i<rels.length;i+=14) todo.push(i);
+  for (let round=0; round<14 && todo.length; round++){
+    await Promise.all(todo.map(probe));
+    if (!alive()) return null;
+    todo=[];
+    const starts=[...actual.keys()].sort((a,b)=>a-b);
+    let i=0;
+    while (i<rels.length){
+      if (!actual.has(i)){ todo.push(i); const nxt=starts.find(s=>s>i); if (nxt===undefined) break; i=nxt; continue; }
+      const a=actual.get(i);
+      if (a===-1) break;
+      i=(a===null ? i : a)+1;
     }
-    const items=await Promise.all(jobs);
-    if (token!==IMG.token) return;
-    const seen=new Set(), hist=[];
-    items.filter(Boolean).sort((a,b)=>b.date-a.date).forEach(h=>{
-      const key=h.date.toISOString().slice(0,10); if (seen.has(key)) return; seen.add(key); hist.push(h); });
-    IMG.hist=hist; IMG.histCache.set(v.id, hist);
-    renderHistRow();
+  }
+  const out=[]; let i=0, failed=0;
+  while (i<rels.length){
+    const a=actual.get(i);
+    if (a===undefined || a===-1) break;
+    if (a===null){ failed++; i++; continue; }
+    out.push(a); i=a+1;
+  }
+  if (!out.length && failed) throw new Error('archive unreachable');
+  return out;
+}
+const HIST_KEY='fara_hist_v2', HIST_TTL=14*864e5;
+function histStore(){ try{ return JSON.parse(localStorage.getItem(HIST_KEY)||'{}'); }catch(e){ return {}; } }
+function histRemember(id, hist){
+  try{
+    const s=histStore();
+    s[id]={ t:Date.now(), h:hist.map(h=>[h.rel, +h.date, h.res==null?null:h.res, h.src||null, h.z18?1:0]) };
+    const ids=Object.keys(s);
+    if (ids.length>200) ids.sort((a,b)=>s[a].t-s[b].t).slice(0, ids.length-200).forEach(k=>delete s[k]);
+    localStorage.setItem(HIST_KEY, JSON.stringify(s));
   }catch(e){}
 }
+function histRecall(id){
+  const e=histStore()[id];
+  if (!e || Date.now()-e.t>HIST_TTL || !Array.isArray(e.h)) return null;
+  return e.h.map(a=>({ rel:a[0], date:new Date(a[1]), res:a[2], src:a[3], z18:!!a[4] }));
+}
+const histDay = h => h.approx ? 'by '+fmtDay(h.date) : fmtDay(h.date);
+async function loadHistory(v, token){
+  const row=document.getElementById('histrow');
+  row.classList.remove('show'); IMG.hist=[]; IMG.histState='loading'; IMG.histProg=''; histWait();
+  const saved = IMG.histCache.get(v.id) || histRecall(v.id);
+  if (saved){ IMG.hist=saved; IMG.histCache.set(v.id, saved); IMG.histState='ok'; renderHistRow(); return; }
+  const alive=()=>token===IMG.token;
+  try{
+    const rels=await loadWbConfig(), lat=+v.lat, lng=+v.lng;
+    if (!alive()) return;
+    const [tx,ty]=tileXY(lat,lng,17), [tx18,ty18]=tileXY(lat,lng,18);
+    const idx=await wbVersions(rels, tx, ty, alive);
+    if (!idx) return;
+    /* the timeline is usable from here: every version is listed at once, dated for now by when it entered
+       the archive ("by …"); the real capture dates replace those as each lookup answers */
+    const hist=idx.map(a=>({ rel:rels[a].rel, date:new Date(rels[a].released+'T00:00:00Z'), approx:true, pending:true, z18:false, meta:rels[a] }));
+    let got=0;
+    IMG.hist=hist; IMG.histState='partial'; IMG.histProg='0 of '+hist.length; renderHistRow();
+    await Promise.all(hist.map(async h=>{
+      const [cap, tm]=await Promise.all([
+        wbCapture(h.meta, lat, lng),
+        getJson(`${WB}/MapServer/tilemap/${h.rel}/18/${ty18}/${tx18}`, 5000).catch(()=>null) ]);
+      if (!alive()) return;
+      if (cap){ h.date=cap.date; h.res=cap.res; h.src=cap.src; h.approx=false; }
+      h.pending=false; h.z18=!!(tm && tm.data && tm.data[0]===1); delete h.meta;
+      IMG.histProg=(++got)+' of '+hist.length; renderHistRow();
+    }));
+    if (!alive()) return;
+    /* all dates in: merge versions that turned out to be the same capture, put them in date order,
+       and keep whatever the viewer has selected pointing at the same image */
+    const pick=k=>IMG.hist[IV[k]] ? IMG.hist[IV[k]] : null, was={ a:pick('a'), l:pick('l'), r:pick('r') };
+    const seen=new Map(), done=[];
+    hist.forEach(h=>{
+      const key=h.approx ? 'r'+h.rel : h.date.toISOString().slice(0,10);
+      if (seen.has(key)){ h.same=seen.get(key); return; }
+      seen.set(key, h); done.push(h);
+    });
+    const newest=done[0];
+    done.sort((x,y)=> x===newest ? -1 : y===newest ? 1 : y.date-x.date);       // the current basemap stays first
+    const before=['a','l','r'].map(k=>IV[k]);
+    ['a','l','r'].forEach(k=>{ const h=was[k]; if (h) IV[k]=Math.max(0, done.indexOf(h.same || h)); });
+    IMG.hist=done; IMG.histCache.set(v.id, done); IMG.histState='ok'; IMG.histProg='';
+    if (done.length && !done.some(h=>h.approx)) histRemember(v.id, done);       // only complete answers are kept, so a failed date is asked again next time
+    renderHistRow();
+    if (ivOpen() && IV.mode!=='latest' && ['a','l','r'].some((k,n)=>IV[k]!==before[n])) ivShow(IV.mode);
+  }catch(e){
+    if (alive()){ IMG.histState='error'; ivRefresh(); }
+  }
+}
+function histWait(){
+  const el=document.getElementById('histwait'), st=IMG.histState;
+  el.classList.toggle('show', st==='loading' || st==='partial' || st==='error');
+  el.classList.toggle('err', st==='error');
+  el.innerHTML = st==='error'
+    ? 'Earlier captures could not be loaded. <button type="button" id="histretry">Try again</button>'
+    : '<span class="spin"></span>'+(st==='partial' ? 'Dating the captures · '+IMG.histProg+'…' : 'Looking up earlier captures…');
+}
+document.getElementById('histwait').addEventListener('click', e=>{ if (e.target.id==='histretry' && current) loadHistory(current, IMG.token); });
 function renderHistRow(){
   const n=IMG.hist.length, row=document.getElementById('histrow');
   row.classList.toggle('show', n>1);
@@ -2356,11 +2463,13 @@ function ivHistCap(i){
   const h=IMG.hist[i];
   if (!h || i===0) return IMG.clearCap;
   const res=parseFloat(h.res);
+  if (h.approx) return '<b>Capture date not published</b> · in Esri’s archive by '+fmtDay(h.date);
   return '<b>Captured '+fmtDay(h.date)+'</b> · '+ago(h.date)+(res>0 ? ' · '+(res<1?Math.round(res*100)+' cm':res+' m') : '')+(h.src ? ' · '+esc(h.src) : '');
 }
 function ivHistLabel(i){
   const h=IMG.hist[i]; if (!h) return 'Current';
   const dup=IMG.hist.some((o,k)=>k!==i && fmtMon(o.date)===fmtMon(h.date));
+  if (h.approx) return 'by '+fmtMon(h.date);
   return dup ? fmtDay(h.date) : fmtMon(h.date);
 }
 function ivClip(){
@@ -2385,8 +2494,13 @@ function ivBar(){
   const bar=document.getElementById('ivbar'), n=IMG.hist.length;
   if (IV.mode==='clear'){
     bar.innerHTML = n>1
-      ? '<span class="lbl">CAPTURED</span>'+IMG.hist.map((h,i)=>`<button class="ivchip${i===IV.a?' on':''}" data-h="${i}" title="${fmtDay(h.date)}">${ivHistLabel(i)}${i===0?' · newest':''}</button>`).reverse().join('')
-      : '<span class="lbl">'+(IMG.histCache.has(current.id) ? 'Only one capture date is on record for this spot' : 'Looking up earlier captures…')+'</span>';
+      ? '<span class="lbl">CAPTURED</span>'+IMG.hist.map((h,i)=>`<button class="ivchip${i===IV.a?' on':''}" data-h="${i}" title="${h.pending ? 'Capture date still loading' : histDay(h)}">${h.pending ? '<span class="spin"></span>' : ''}${ivHistLabel(i)}${i===0?' · newest':''}</button>`).reverse().join('')
+        + (IMG.histState==='partial' ? '<span class="lbl ivdating">dating · '+IMG.histProg+'</span>' : '')
+      : IMG.histState==='error'
+        ? '<span class="lbl">The image archive could not be reached.</span><button class="ivchip" data-retry="1">Try again</button>'
+      : IMG.histState==='loading'
+        ? '<span class="spin"></span><span class="lbl">Looking up earlier captures…</span><span class="ivprog"><i></i></span>'
+        : '<span class="lbl">Only one capture date is on record for this spot</span>';
   } else if (IV.mode==='latest'){
     const yr=new Date().getUTCFullYear();
     bar.innerHTML = '<span class="lbl">SENTINEL-2 PASS</span>'+IMG.scenes.map((sc,i)=>{
@@ -2394,7 +2508,7 @@ function ivBar(){
       return `<button class="ivchip${i===IMG.idx?' on':''}" data-s="${i}" title="${fmtDay(sc.date)} · ${tip}"><span class="st ${st}"></span>${sc.date.getUTCDate()} ${MONTHS[sc.date.getUTCMonth()]}${sc.date.getUTCFullYear()!==yr?' '+sc.date.getUTCFullYear():''}</button>`;
     }).reverse().join('') + (IMG.scenes.length ? '' : '<span>searching…</span>');
   } else {
-    const opts=sel=>IMG.hist.map((h,i)=>`<option value="${i}"${i===sel?' selected':''}>${fmtDay(h.date)}</option>`).join('');
+    const opts=sel=>IMG.hist.map((h,i)=>`<option value="${i}"${i===sel?' selected':''}>${histDay(h)}</option>`).join('');
     bar.innerHTML = `<span class="lbl">LEFT</span><select id="ivselL" aria-label="Left image date">${opts(IV.l)}</select>`
       +`<span class="lbl" style="margin-left:10px">RIGHT</span><select id="ivselR" aria-label="Right image date">${opts(IV.r)}</select>`
       +'<span class="hint">drag the ⇆ handle to compare</span>';
@@ -2405,6 +2519,7 @@ function ivBar(){
 }
 /* re-draw viewer chrome when background lookups (dates, history, cloud checks) finish */
 function ivRefresh(){
+  histWait();
   if (!ivOpen() || !current) return;
   ivBar();
   if (IV.mode==='clear') document.getElementById('ivcap').innerHTML=ivHistCap(IV.a)+' · scroll or pinch to zoom, drag to move';
@@ -2431,9 +2546,9 @@ async function ivShow(mode){
     if (IV.l>=n || IV.r>=n || IV.l===IV.r){ IV.l=n-1; IV.r=0; }
     IV.layers=[ivTiles(IV.l).addTo(IV.map), ivTiles(IV.r).addTo(IV.map)];
     const sl=document.getElementById('ivsl'), sr=document.getElementById('ivsr');
-    sl.textContent=fmtDay(IMG.hist[IV.l].date); sr.textContent=fmtDay(IMG.hist[IV.r].date);
+    sl.textContent=histDay(IMG.hist[IV.l]); sr.textContent=histDay(IMG.hist[IV.r]);
     [sl,sr,document.getElementById('ivdiv')].forEach(el=>el.classList.add('show'));
-    cap.innerHTML='<b>'+fmtDay(IMG.hist[IV.l].date)+'</b> on the left · <b>'+fmtDay(IMG.hist[IV.r].date)+'</b> on the right · same place, drag the divider';
+    cap.innerHTML='<b>'+histDay(IMG.hist[IV.l])+'</b> on the left · <b>'+histDay(IMG.hist[IV.r])+'</b> on the right · same place, drag the divider';
     ivBar(); ivClip(); return;
   }
   if (fresh) IV.map.setView([+v.lat,+v.lng], 14, {animate:false});
@@ -2503,6 +2618,7 @@ document.addEventListener('click',e=>{ const a=e.target.closest('.leaflet-contro
 document.getElementById('ivbar').addEventListener('click',e=>{
   if (ivbarEl.dataset.dragged) return;
   const b=e.target.closest('.ivchip'); if (!b) return;
+  if (b.dataset.retry){ if (current) loadHistory(current, IMG.token); return; }
   if (b.dataset.h!==undefined){ IV.a=+b.dataset.h; ivShow('clear'); }
   else if (b.dataset.s!==undefined) ivPass(+b.dataset.s);
 });
