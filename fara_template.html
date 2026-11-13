@@ -2617,7 +2617,8 @@ document.getElementById('sug-form').addEventListener('submit', async e => {
     btn.disabled = false;
     if (ok){ done('Thank you. Your suggestion was sent and will be reviewed before the archive changes.'); return; }
     try{ localStorage.setItem('fara_suggest_queue', JSON.stringify([...sugQueue(), item])); }catch(err){}
-    done('Saved on this device. It will be sent automatically the next time you are online.');
+    done(navigator.onLine ? 'Saved on this device. It could not be delivered just now and will be sent automatically the next time you open the archive.'
+                          : 'Saved on this device. It will be sent automatically the next time you are online.');
     return;
   }
   location.href = 'mailto:' + SUGGEST_EMAIL + '?subject=' + encodeURIComponent('FARA suggestion — ' + recId(v) + ' ' + roName(v)) + '&body=' + encodeURIComponent(text);
