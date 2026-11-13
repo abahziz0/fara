@@ -8,6 +8,13 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="FARA">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FARA">
+<meta property="og:title" content="FARA — The Arakan Village Name Archive">
+<meta property="og:description" content="Every village had a name. FARA preserves the names and locations of 1,023 Rohingya villages across Arakan, in Rohingya, English and Burmese.">
+<meta property="og:url" content="https://map.rohingya.ro/">
+<meta property="og:image" content="https://map.rohingya.ro/icon-512.png">
+<meta name="twitter:card" content="summary">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <title>FARA — The Arakan Village Name Archive</title>
@@ -72,6 +79,23 @@ input,select{font-family:inherit}
 .v-tip .tt-en{color:var(--text-dim);font-size:11px;font-family:'Share Tech Mono',monospace}
 .m-tip{background:rgba(4,10,20,.94)!important;border:1px solid var(--cyan-dim)!important;color:var(--cyan)!important;border-radius:5px;font-family:'Share Tech Mono',monospace!important;font-size:11px!important;padding:3px 8px!important;box-shadow:none!important}
 .m-tip::before{display:none!important}
+/* ============ WARDS (ရပ်ကွက်) — town ward boundaries, self-contained ============ */
+.wardnum{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:11.5px;color:#fff;text-align:center;white-space:nowrap;text-shadow:0 0 3px #000,0 0 6px #000,0 1px 2px #000;pointer-events:none;transform:translate(-50%,-50%)}
+.townlabel{font-family:'Share Tech Mono',monospace;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;color:var(--text);background:rgba(4,10,20,.9);border:1px solid var(--line);padding:3px 8px;cursor:pointer;transform:translate(-50%,-160%);box-shadow:0 0 12px rgba(0,229,255,.16)}
+.townlabel:hover{border-color:var(--cyan);color:var(--cyan)}
+.townlabel b{color:var(--cyan);font-weight:400}
+.v-tip .tt-my{font-family:'Noto Sans Myanmar',sans-serif;font-size:12px;color:var(--text-dim);line-height:1.7}
+.wardui{display:none}
+#panel.ward .wardui{display:block}
+#panel.ward .pb>:not(.wardui):not(#imgsec){display:none}
+#panel.ward #bookmarkbtn{display:none}
+#panel.ward #pclose{margin-left:auto}
+.wardui .v.my{font-family:'Noto Sans Myanmar',sans-serif;line-height:1.7}
+.wardui .wn{flex:none;min-width:26px;height:22px;padding:0 5px;display:grid;place-items:center;border:1px solid var(--line);font-family:'Share Tech Mono',monospace;font-size:11px;color:var(--cyan)}
+.wardui .near.cur{border-color:var(--line);background:rgba(0,229,255,.07)}
+.wardui .near .ne.my{font-family:'Noto Sans Myanmar',sans-serif;font-size:11.5px;line-height:1.7}
+.wardui .wsrc{margin-top:20px;font-size:10.5px;line-height:1.6;color:var(--text-faint);font-family:'Share Tech Mono',monospace}
+.wardui .wsrc a{color:var(--text-dim)}
 
 /* selected pulse + radar */
 .pulse-wrap{position:relative}
@@ -446,6 +470,11 @@ input,select{font-family:inherit}
 .artactions .abtn{min-width:130px;flex:none;padding:11px 18px}
 #sharebar{display:none;gap:10px;justify-content:center}
 #sharebar.show{display:flex}
+#sharecap{display:none;width:100%;max-width:520px}
+#sharebar.show + #sharecap{display:block}
+#sharetext{white-space:pre-wrap;word-break:break-word;border:1px solid var(--line-soft);background:rgba(255,255,255,.02);padding:12px 14px;font-size:13px;line-height:1.55;color:var(--text-dim);max-height:220px;overflow-y:auto;-webkit-user-select:text;user-select:text}
+#sharecap .abtn{display:inline-flex;flex:none;margin-top:8px;padding:10px 16px}
+.shicon{position:relative}
 .shicon{width:48px;height:48px;border:1px solid var(--line);display:grid;place-items:center;color:var(--text-dim);transition:all .2s;cursor:pointer;background:rgba(255,255,255,.02)}
 .shicon:hover{color:var(--cyan);border-color:var(--cyan-dim);box-shadow:0 0 14px rgba(0,229,255,.15)}
 .shicon svg{width:20px;height:20px;fill:currentColor}
@@ -463,6 +492,39 @@ input,select{font-family:inherit}
 .seg.seg3{grid-template-columns:repeat(3,1fr)}
 #duofields{display:none;border:1px solid var(--line-soft);padding:10px;margin-top:8px;background:rgba(255,255,255,.015)}
 #duofields.show{display:block}
+/* simpler Map Art: two numbered steps, the rest tucked away */
+.artside{min-width:0}
+.artstep{display:flex;align-items:center;gap:10px;margin:18px 0 9px;font-size:14px;font-weight:600;color:var(--text)}
+.artstep:first-child{margin-top:0}
+.artstep b{flex:none;width:22px;height:22px;display:grid;place-items:center;border:1px solid var(--cyan-dim);color:var(--cyan);font-family:'Share Tech Mono',monospace;font-size:11px;font-weight:400}
+.artside .artin{font-size:15px;padding:12px 13px}
+.themebtn{padding:11px 4px 9px;font-size:9.5px}
+.themebtn .sw i{width:17px;height:17px}
+#artgen{font-size:13px;padding:14px;margin-top:18px}
+#artstatus{font-family:'Space Grotesk',sans-serif;font-size:12.5px;letter-spacing:0;line-height:1.45;color:var(--text-dim);min-height:18px}
+#artmore{margin-top:14px;border-top:1px solid var(--line-soft)}
+#artmore summary{list-style:none;display:flex;align-items:center;gap:8px;padding:13px 0;cursor:pointer;color:var(--text-dim);font-family:'Share Tech Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+#artmore summary::-webkit-details-marker{display:none}
+#artmore summary::before{content:"+";width:14px;color:var(--cyan);font-size:14px}
+#artmore[open] summary::before{content:"–"}
+#artmore summary:hover{color:var(--cyan)}
+#artmore .artlabel{font-size:10px;letter-spacing:.16em;margin:16px 0 7px}
+#artmore .artlabel:first-of-type{margin-top:2px}
+.seg.seg4{grid-template-columns:repeat(4,1fr)}
+.seg.seg4 button{padding:8px 2px;font-size:9.5px}
+.artcheck{display:flex;align-items:center;gap:10px;margin-top:12px;font-size:13.5px;color:var(--text);cursor:pointer}
+.artcheck input{width:18px;height:18px;accent-color:var(--cyan);flex:none}
+.artpreview{position:relative}
+#artempty{font-family:'Space Grotesk',sans-serif;font-size:14px;letter-spacing:0;line-height:1.7}
+#artbusy{display:none;position:absolute;inset:0;z-index:3;align-items:center;justify-content:center;background:rgba(2,5,10,.72);color:var(--cyan);font-family:'Share Tech Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.artpreview.busy #artbusy{display:flex}
+#artcanvas{max-width:520px}
+@media (max-width:900px){
+  .artgrid{gap:16px}
+  .artpreview{min-height:0;padding:12px}
+  .artactions{width:100%}
+  .artactions .abtn{flex:1;min-width:0;padding:14px 8px}
+}
 
 /* ============ INTRO HERO ============ */
 #intro{
@@ -827,6 +889,7 @@ button:focus-visible,input:focus-visible,a:focus-visible,select:focus-visible{ou
     <div id="unverified">⚠ LOCATION UNVERIFIED — source coordinates are invalid. Record preserved pending correction.</div>
   </div>
   <div class="pb">
+    <div id="wardbody" class="wardui"></div>
     <div class="metagrid">
       <div class="meta"><div class="k">District</div><div class="v" id="p-district"></div></div>
       <div class="meta"><div class="k">Village Tract</div><div class="v" id="p-tract"></div></div>
@@ -868,6 +931,7 @@ button:focus-visible,input:focus-visible,a:focus-visible,select:focus-visible{ou
         <div class="imgsubnote" id="latestnote"></div>
       </div>
     </div>
+    <div id="wardlists" class="wardui"></div>
     <div class="sect">Nearby Villages</div>
     <div id="nearlist"></div>
   </div>
@@ -950,7 +1014,7 @@ button:focus-visible,input:focus-visible,a:focus-visible,select:focus-visible{ou
     <p>Across Arakan (Rakhine State, Myanmar), the names of Rohingya villages — spoken for generations — are being systematically <b>renamed, depopulated, and wiped from official maps</b>. When a name disappears, the memory of the people who lived there begins to disappear with it.</p>
     <p><b>FARA is a digital archive of 1,023 villages</b> across Maungdaw, Buthidaung, Rathedaung and Sittwe townships. Each record preserves the village's <b>Rohingya name</b>, its official romanized name, its Burmese-script name, its village tract, and its exact coordinates.</p>
     <p>The archive is built to support <b>research, reporting, documentation, and evidence-based understanding</b> of Rohingya village names and locations — for journalists, researchers, human-rights documentation, and the Rohingya community itself.</p>
-    <p>Source data: <a href="https://map.rohingyakhobor.com/map" target="_blank" rel="noopener">Rohingya Khobor — Arakan Maps Project</a>. Records with known data issues are flagged, never silently altered.</p>
+    <p>Source data: <a href="https://map.rohingyakhobor.com/map" target="_blank" rel="noopener">Rohingya Khobor — Arakan Maps Project</a>. Records with known data issues are flagged, never silently altered. Map Art posters are drawn from map data © OpenStreetMap contributors.</p>
     <p><b>A project by AB Aziz</b> · Contact — <a href="mailto:ab@rohingya.ro">ab@rohingya.ro</a></p>
   </div>
 </div>
@@ -983,74 +1047,83 @@ button:focus-visible,input:focus-visible,a:focus-visible,select:focus-visible{ou
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
     </button>
     <h2>MAP ART <span>STUDIO</span></h2>
-    <div class="sub2">create a printable poster of any village — real map data, drawn at print resolution</div>
+    <div class="sub2">choose a village and a style — the poster draws itself</div>
     <div class="artgrid">
-      <div>
-        <div class="artlabel">Village · Rohingya / English / Burmese</div>
+      <div class="artside">
+        <div class="artstep"><b>1</b>Choose a village</div>
         <div class="artwrap">
           <input class="artin" id="art-search" placeholder="Type a village name…" autocomplete="off" aria-label="Choose a village">
           <div class="artdrop" id="art-drop"></div>
         </div>
-        <div class="artlabel">Or coordinates (lat, lng)</div>
-        <input class="artin mono" id="art-coords" placeholder="20.82876, 92.53770" aria-label="Coordinates">
-        <div class="artlabel">Format</div>
-        <div class="seg seg5" id="fmtseg">
-          <button data-f="classic" class="on">Classic</button>
-          <button data-f="full">Full</button>
-          <button data-f="circle">Circle</button>
-          <button data-f="heart">Heart</button>
-          <button data-f="duo">2 Homes</button>
-        </div>
-        <div id="duofields">
-          <div class="artlabel" style="margin-top:0">Second place · for “Two Homes”</div>
-          <div class="artwrap">
-            <input class="artin" id="art-search2" placeholder="Second village — or any city in the world…" autocomplete="off" aria-label="Second place">
-            <div class="artdrop" id="art-drop2"></div>
-          </div>
-          <input class="artin mono" id="art-coords2" placeholder="41.00820, 28.97840 (any place on earth)" style="margin-top:6px" aria-label="Second coordinates">
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:6px">
-            <input class="artin" id="art-labelA" placeholder="Label A" aria-label="Label A">
-            <input class="artin" id="art-labelB" placeholder="Label B" aria-label="Label B">
-          </div>
-        </div>
-        <div class="artlabel">Frame</div>
-        <div class="seg seg3" id="radseg">
-          <button data-r="2500" class="on">Village</button>
-          <button data-r="5000">Area</button>
-          <button data-r="12000">Region</button>
-        </div>
-        <div class="artlabel">Marker</div>
-        <div class="seg seg3" id="mkseg">
-          <button data-m="ring" class="on">Ring</button>
-          <button data-m="heart">Heart</button>
-          <button data-m="none">None</button>
-        </div>
-        <div class="artlabel">Theme</div>
+        <div class="artstep"><b>2</b>Pick a style</div>
         <div class="themerow" id="themerow"></div>
-        <div class="artlabel">Title</div>
-        <input class="artin" id="art-title" placeholder="Village name">
-        <div class="artlabel">Subtitle</div>
-        <input class="artin" id="art-sub" placeholder="English name · Township">
-        <div class="artlabel">Burmese line (optional)</div>
-        <input class="artin mmr" id="art-mmr" placeholder="မြန်မာအမည်">
-        <div class="artlabel">Message (optional)</div>
-        <input class="artin" id="art-msg" placeholder="Every village had a name.">
-        <button id="artgen">Generate Poster</button>
-        <div id="artstatus"></div>
+        <button id="artgen">Make poster</button>
+        <div id="artstatus" role="status"></div>
+        <details id="artmore">
+          <summary>More options</summary>
+          <div class="artlabel">Shape</div>
+          <div class="seg seg5" id="fmtseg">
+            <button data-f="classic" class="on">Classic</button>
+            <button data-f="full">Full</button>
+            <button data-f="circle">Circle</button>
+            <button data-f="heart">Heart</button>
+            <button data-f="duo">2 Homes</button>
+          </div>
+          <div id="duofields">
+            <div class="artlabel" style="margin-top:0">Second place — a village, or any city in the world</div>
+            <div class="artwrap">
+              <input class="artin" id="art-search2" placeholder="Type a village or city…" autocomplete="off" aria-label="Second place">
+              <div class="artdrop" id="art-drop2"></div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:6px">
+              <input class="artin" id="art-labelA" placeholder="Name under first map" aria-label="Name under first map">
+              <input class="artin" id="art-labelB" placeholder="Name under second map" aria-label="Name under second map">
+            </div>
+            <input class="artin mono" id="art-coords2" placeholder="or coordinates: 41.00820, 28.97840" style="margin-top:6px" aria-label="Second coordinates">
+          </div>
+          <div class="artlabel">How much to show</div>
+          <div class="seg seg4" id="radseg">
+            <button data-r="1300">Close</button>
+            <button data-r="2500" class="on">Village</button>
+            <button data-r="5000">Area</button>
+            <button data-r="12000">Region</button>
+          </div>
+          <div class="artlabel">Marker on the village</div>
+          <div class="seg seg3" id="mkseg">
+            <button data-m="ring" class="on">Ring</button>
+            <button data-m="heart">Heart</button>
+            <button data-m="none">None</button>
+          </div>
+          <label class="artcheck"><input type="checkbox" id="art-names" checked><span>Name the neighbouring villages</span></label>
+          <label class="artcheck"><input type="checkbox" id="art-detail" checked><span>Show houses and landmarks</span></label>
+          <div class="artlabel">Words on the poster</div>
+          <input class="artin" id="art-title" placeholder="Title — the village name" aria-label="Title">
+          <input class="artin" id="art-sub" placeholder="Second line — English name, township" aria-label="Second line" style="margin-top:6px">
+          <input class="artin mmr" id="art-mmr" placeholder="Burmese line (optional)" aria-label="Burmese line" style="margin-top:6px">
+          <input class="artin" id="art-msg" placeholder="A message (optional) — Every village had a name." aria-label="Message" style="margin-top:6px">
+          <div class="artlabel">Exact spot</div>
+          <input class="artin mono" id="art-coords" placeholder="20.82876, 92.53770" aria-label="Coordinates">
+        </details>
       </div>
       <div class="artpreview">
-        <div id="artempty">// SELECT A VILLAGE AND GENERATE<br>road + river data is fetched live from OpenStreetMap<br>rendered at 2400 × 3600 px — print ready</div>
+        <div id="artempty">Your poster appears here.<br>Choose a village to begin.</div>
+        <div id="artbusy" aria-hidden="true">Making your poster…</div>
         <canvas id="artcanvas" width="2400" height="3600" aria-label="Poster preview"></canvas>
         <div class="artactions" id="artactions">
-          <button class="abtn primary" id="artdl">Download PNG</button>
+          <button class="abtn primary" id="artdl">Download</button>
           <button class="abtn" id="artprint">Print</button>
           <button class="abtn" id="artshare">Share</button>
         </div>
-        <div id="sharebar" aria-label="Share to">
+        <div id="sharebar" role="group" aria-label="Share to">
           <button class="shicon" data-p="facebook" aria-label="Share to Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></button>
           <button class="shicon" data-p="whatsapp" aria-label="Share to WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></button>
           <button class="shicon" data-p="instagram" aria-label="Share to Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></button>
           <button class="shicon" data-p="tiktok" aria-label="Share to TikTok" title="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></button>
+        </div>
+        <div id="sharecap">
+          <div class="artlabel" style="margin-top:0">Caption that goes with it</div>
+          <div id="sharetext"></div>
+          <button class="abtn" id="sharecopy" type="button">Copy caption</button>
         </div>
       </div>
     </div>
@@ -1109,6 +1182,7 @@ button:focus-visible,input:focus-visible,a:focus-visible,select:focus-visible{ou
 <div id="toast" role="status"></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="wards.js"></script>
 <script>
 /* ================= DATA ================= */
 const VILLAGES = __VILLAGE_DATA__;
@@ -1166,7 +1240,7 @@ satTiles.addTo(map);
 
 const plottable = VILLAGES.filter(v => !isUnverified(v));
 const bounds = L.latLngBounds(plottable.map(v => [ +v.lat, +v.lng ]));
-const hasDeepLink = /^#v=\d+$/.test(location.hash);
+const hasDeepLink = /^#(v=\d+|w=MMR\d+)$/.test(location.hash);
 map.fitBounds(bounds.pad(hasDeepLink ? 0.05 : 0.55));
 
 const renderer = L.canvas({ padding:.4, tolerance: matchMedia('(pointer:coarse)').matches ? 12 : 0 });   /* forgiving tap targets on touch screens */
@@ -1303,6 +1377,7 @@ function toggleLabels(){
   refreshLabels();
 }
 function refreshLabels(){
+  refreshWards();
   const show = labelsOn && map.getZoom() >= 13;
   markers.forEach((m, id) => {
     const t = m.getTooltip();
@@ -1317,6 +1392,130 @@ function refreshLabels(){
 }
 document.getElementById('labelsbtn').addEventListener('click', toggleLabels);
 map.on('zoomend', refreshLabels);
+
+/* ================= WARDS (ရပ်ကွက်) =================
+   Town ward boundaries for Buthidaung, Maungdaw, Rathedaung and Sittwe, loaded from wards.js.
+   Boundaries are always drawn as outlines; names appear only with the Labels toggle.
+   Self-contained: remove this block, wards.js, .wardui and the WARDS css to take it out. */
+const WARDS = window.FARA_WARDS || [];
+const myNum = n => String(n).replace(/\d/g, d => '၀၁၂၃၄၅၆၇၈၉'[d]);
+const wardsOfTown = t => WARDS.filter(w => w.t === t);
+const wardStyle = (w, state) => {
+  const c = TOWN_COLORS[w.t] || '#00E5FF';
+  return state==='sel' ? { color:'#fff', weight:2.4, opacity:1, fillColor:c, fillOpacity:.22 }
+       : state==='hot' ? { color:c, weight:2, opacity:1, fillColor:c, fillOpacity:.16 }
+       :                 { color:c, weight:1.4, opacity:.95, fillColor:c, fillOpacity:0 };   /* outline only */
+};
+let curWard = null;
+const wardPolys = new Map();
+const wardLayer = L.layerGroup(), wardNums = L.layerGroup(), townLabels = L.layerGroup();
+WARDS.forEach(w => {
+  const poly = L.polygon(w.g, { renderer, ...wardStyle(w) });
+  poly.bindTooltip(`<div class="tt-ro">Ward ${w.n} · ${esc(w.en.replace(/ Ward$/,''))}</div><div class="tt-my">${esc(w.my)} · ရပ်ကွက် ${myNum(w.n)}</div>`,
+    { className:'v-tip', sticky:true, direction:'top', offset:[0,-8] });
+  poly.on('mouseover', () => { if (curWard!==w) poly.setStyle(wardStyle(w,'hot')); });
+  poly.on('mouseout',  () => { if (curWard!==w) poly.setStyle(wardStyle(w)); });
+  poly.on('click', () => { if (!measuring) openWard(w, false); });
+  wardPolys.set(w.p, poly); wardLayer.addLayer(poly);
+  const lbl = html => L.marker(w.c, { interactive:false, keyboard:false, icon:L.divIcon({ className:'', iconSize:[0,0], html:`<div class="wardnum">${html}</div>` }) });
+  w.lblName = lbl(esc(w.en.replace(/ Ward$/,''))); w.lblNum = lbl(w.n);
+  /* stand-in record so the satellite imagery panel and viewer work for a ward as they do for a village */
+  w.pv = { id:'W'+w.p, isWard:true, p:w.p, g:w.g, name:w.town, rohingya_name:w.en, village_name_mmr:w.my, township:w.t, lat:String(w.c[0]), lng:String(w.c[1]) };
+});
+[...new Set(WARDS.map(w => w.t))].forEach(t => {
+  const ws = wardsOfTown(t), b = L.latLngBounds(ws.flatMap(w => w.g.flat(2)));
+  const m = L.marker(b.getCenter(), { keyboard:false,
+    icon:L.divIcon({ className:'', iconSize:[0,0], html:`<div class="townlabel">${esc(ws[0].town)} · <b>${ws.length} wards</b></div>` }) });
+  m.on('click', () => map.flyToBounds(b.pad(.25), { duration: reduceMotion ? 0 : 1 }));
+  townLabels.addLayer(m);
+});
+function refreshWards(){
+  if (!WARDS.length) return;
+  const z = map.getZoom();
+  if (!map.hasLayer(wardLayer)){ wardLayer.addTo(map); wardPolys.forEach(p => p.bringToBack()); }   /* keep village dots on top */
+  /* names only when Labels is on: town tags when zoomed out, ward names (or just the number where a ward is too small) up close */
+  if (labelsOn && z>=9 && z<=12) townLabels.addTo(map); else map.removeLayer(townLabels);
+  wardNums.clearLayers();
+  if (labelsOn && z>=13){
+    const mpp = 40075016 * Math.cos(20.5*Math.PI/180) / (256 * 2**z);
+    WARDS.forEach(w => { const px = Math.sqrt(w.a)*1000/mpp; if (px >= 24) wardNums.addLayer(px >= w.en.length*6.2 ? w.lblName : w.lblNum); });
+  }
+  wardNums.addTo(map);
+}
+refreshWards();
+
+function clearWard(){
+  if (!curWard) return;
+  const p = wardPolys.get(curWard.p); if (p) p.setStyle(wardStyle(curWard));
+  curWard = null;
+  panel.classList.remove('ward');
+}
+function flyToWard(w){
+  const b = wardPolys.get(w.p).getBounds(), dur = reduceMotion ? 0 : 1;
+  const sz = map.getSize();
+  if (sz.x < 480 && !PHONE.matches || sz.y < 320){ map.setView(w.c, 15, { animate:false }); return; }   /* no room to fit: just centre it */
+  if (PHONE.matches) map.flyToBounds(b, { paddingTopLeft:[24,96], paddingBottomRight:[24, Math.round(innerHeight*.46)+document.getElementById('tabbar').offsetHeight+16], maxZoom:16, duration:dur });
+  else map.flyToBounds(b, { paddingTopLeft:[60,110], paddingBottomRight:[panel.offsetWidth+60,80], maxZoom:16, duration:dur });
+}
+function openWard(w, fly){
+  clearWard();
+  if (selMarker){ selMarker.remove(); selMarker=null; }
+  current = w.pv;
+  curWard = w;
+  const town = wardsOfTown(w.t), c = TOWN_COLORS[w.t] || '#00E5FF', poly = wardPolys.get(w.p);
+  poly.setStyle(wardStyle(w,'sel'));
+  document.getElementById('p-id').textContent = `WARD ${w.n} / ${town.length}`;
+  document.getElementById('p-town-tag').style.color = c;
+  document.getElementById('p-town-name').textContent = w.town.toUpperCase();
+  document.getElementById('p-ro').textContent = w.en;
+  document.getElementById('p-en').textContent = `WARD ${w.n} OF ${town.length} · ${w.town.toUpperCase()}`;
+  document.getElementById('p-mmr').textContent = `${w.my} · ရပ်ကွက် ${myNum(w.n)}`;
+  document.getElementById('unverified').classList.remove('show');
+
+  const lat = w.c[0].toFixed(6), lng = w.c[1].toFixed(6), pt = { lat:w.c[0], lng:w.c[1] };
+  const inside = w.v.map(id => VILLAGES.find(x => x.id===id)).filter(Boolean);
+  const near = plottable.filter(x => !w.v.includes(x.id))
+    .map(x => [distKm(pt,{lat:+x.lat,lng:+x.lng}), x]).sort((a,b) => a[0]-b[0]).slice(0,4);
+  const vRow = (x, d) => `
+    <button class="near" data-v="${x.id}">
+      <span class="dot" style="background:${colorOf(x)};color:${colorOf(x)}"></span>
+      <span><span class="nn">${esc(roName(x))}</span><br><span class="ne">${esc(enName(x))}</span></span>
+      ${d==null ? '' : `<span class="dist">${d<1?Math.round(d*1000)+' m':d.toFixed(1)+' km'}</span>`}
+    </button>`;
+  const body = document.getElementById('wardbody');
+  body.innerHTML = `
+    <div class="metagrid">
+      <div class="meta"><div class="k">Town</div><div class="v">${esc(w.town)}</div></div>
+      <div class="meta"><div class="k">Township</div><div class="v">${esc(w.t)}</div></div>
+      <div class="meta"><div class="k">Ward</div><div class="v">${w.n} of ${town.length}</div></div>
+      <div class="meta"><div class="k">Burmese</div><div class="v my">ရပ်ကွက် ${myNum(w.n)}</div></div>
+      <div class="meta"><div class="k">Area</div><div class="v">${w.a<1 ? Math.round(w.a*100)+' ha' : w.a.toFixed(2)+' km²'}</div></div>
+      <div class="meta"><div class="k">Place code</div><div class="v mono" style="font-size:11px">${esc(w.p)}</div></div>
+      <div class="meta wide"><div class="k">Centre · WGS84</div><div class="coordrow"><div class="v mono">${lat}, ${lng}</div>
+        <a class="chip" target="_blank" rel="noopener" href="https://www.google.com/maps?q=${lat},${lng}">g-maps</a></div></div>
+    </div>`;
+  const lists = document.getElementById('wardlists');
+  lists.innerHTML = `
+    <div class="sect">All ${town.length} wards · ${esc(w.town)}</div>
+    ${town.map(x => `
+      <button class="near${x===w?' cur':''}" data-w="${x.p}">
+        <span class="wn">${x.n}</span>
+        <span><span class="nn">${esc(x.en)}</span><br><span class="ne my">${esc(x.my)} · ရပ်ကွက် ${myNum(x.n)}</span></span>
+      </button>`).join('')}
+    <div class="sect">Archive villages inside this ward</div>
+    ${inside.length ? inside.map(x => vRow(x)).join('') : '<div class="res-empty">// none recorded inside this boundary</div>'}
+    <div class="sect">Nearest villages</div>
+    ${near.map(([d,x]) => vRow(x,d)).join('')}
+    <div class="wsrc">Boundary: MIMU Ward Boundaries v9.4, digitised from General Administration Department township maps. © Myanmar Information Management Unit.<br>Ward numbers follow the order of the official place-code list; numbers used locally may differ.</div>`;
+  lists.querySelectorAll('[data-w]').forEach(b => b.addEventListener('click', () => { const x=WARDS.find(y => y.p===b.dataset.w); if (x) openWard(x, true); }));
+  lists.querySelectorAll('[data-v]').forEach(b => b.addEventListener('click', () => { const x=VILLAGES.find(y => y.id===+b.dataset.v); if (x) openVillage(x, true); }));
+  panel.querySelector('.pb').scrollTop = 0;
+  loadImagery(w.pv);
+  panel.classList.add('ward','open');
+  if (PHONE.matches){ sheet.opened=performance.now(); closeMenu(); snapSheet('half'); }
+  if (fly || PHONE.matches) flyToWard(w);
+  history.replaceState(null,'','#w='+w.p);
+}
 
 /* ================= COUNTERS ================= */
 function countUp(el,target,dur=1100){
@@ -1420,6 +1619,7 @@ function distKm(a,b){
   return 12742*Math.asin(Math.sqrt(s));
 }
 function openVillage(v, fly){
+  clearWard();
   current=v;
   const c=colorOf(v), unv=isUnverified(v);
   document.getElementById('p-id').textContent = recId(v);
@@ -1873,7 +2073,8 @@ function ivReset(){
 }
 function ivPin(v){
   if (IV.pin) IV.pin.remove();
-  IV.pin=L.circleMarker([+v.lat,+v.lng],{ radius:10, color:'#00E5FF', weight:2, fill:false, interactive:false }).addTo(IV.map);
+  IV.pin = v.isWard ? L.polygon(v.g,{ color:'#00E5FF', weight:2, fill:false, interactive:false }).addTo(IV.map)
+                    : L.circleMarker([+v.lat,+v.lng],{ radius:10, color:'#00E5FF', weight:2, fill:false, interactive:false }).addTo(IV.map);
 }
 function ivBar(){
   const bar=document.getElementById('ivbar'), n=IMG.hist.length;
@@ -2014,6 +2215,7 @@ document.addEventListener('keydown',e=>{
 }, true);
 
 function closePanel(){
+  clearWard();
   panel.classList.remove('open');
   document.body.classList.remove('sheet-full');
   if (selMarker){ selMarker.remove(); selMarker=null; }
@@ -2052,6 +2254,8 @@ document.getElementById('copyrec').addEventListener('click',()=>{
 function checkHash(){
   const m=location.hash.match(/^#v=(\d+)$/);
   if (m){ const v=VILLAGES.find(x=>x.id===+m[1]); if (v) setTimeout(()=>openVillage(v,true),700); }
+  const wm=location.hash.match(/^#w=(MMR\d+)$/);
+  if (wm){ const w=WARDS.find(x=>x.p===wm[1]); if (w) setTimeout(()=>openWard(w,true),700); }
 }
 
 /* ================= PHONE ================= */
@@ -2493,7 +2697,7 @@ function fuzzyVillages(q){
 /* ---- pickers ---- */
 function pickVillage(v, which){
   if (which === 'A'){
-    art.lat = +v.lat; art.lng = +v.lng; art.villageName = roName(v);
+    art.lat = +v.lat; art.lng = +v.lng; art.villageName = roName(v); art.srcId = v.id;
     document.getElementById('art-coords').value = (+v.lat).toFixed(5) + ', ' + (+v.lng).toFixed(5);
     document.getElementById('art-title').value = roName(v);
     document.getElementById('art-sub').value = [enName(v) !== roName(v) ? enName(v) : null, v.township, 'Arakan'].filter(Boolean).join(' · ');
@@ -2505,6 +2709,7 @@ function pickVillage(v, which){
     document.getElementById('art-labelB').value = roName(v);
   }
   artStatus('');
+  if (document.getElementById('postermodal').classList.contains('open') && (which === 'A' || art.format === 'duo')) generatePoster(which === 'A');
 }
 let nomTimer = null;
 function attachPicker(inputId, dropId, which, world){
@@ -2512,7 +2717,7 @@ function attachPicker(inputId, dropId, which, world){
   const build = (local, fuzzy, worldItems) => {
     let html = '';
     if (local.length){
-      html += (fuzzy ? '<div class="adhead">// did you mean</div>' : '<div class="adhead">// archive</div>');
+      html += (fuzzy ? '<div class="adhead">Did you mean</div>' : '<div class="adhead">Villages</div>');
       html += local.map(v => `
         <button class="adit" data-id="${v.id}">
           <span class="adro">${esc(roName(v))}</span>
@@ -2520,7 +2725,7 @@ function attachPicker(inputId, dropId, which, world){
         </button>`).join('');
     }
     if (world && worldItems && worldItems.length){
-      html += '<div class="adhead">// world</div>' + worldItems.map(w => {
+      html += '<div class="adhead">Places worldwide</div>' + worldItems.map(w => {
         const parts = (w.display_name || '').split(',');
         const name = esc(parts[0].trim());
         const rest = esc(parts.slice(1, 3).join(',').trim());
@@ -2529,13 +2734,13 @@ function attachPicker(inputId, dropId, which, world){
         </button>`;
       }).join('');
     }
-    if (!html) html = '<div class="adempty">// no match' + (world ? ' in archive — searching the world…' : ' — try another spelling') + '</div>';
+    if (!html) html = '<div class="adempty">No match' + (world ? ' in the archive. Searching the world…' : '. Try another spelling.') + '</div>';
     drop.innerHTML = html;
     drop.querySelectorAll('.adit[data-id]').forEach(b => b.addEventListener('click', () => {
       const v = VILLAGES.find(x => x.id === +b.dataset.id);
       drop.style.display = 'none';
       if (!v) return;
-      if (isUnverified(v)){ artStatus('// that record has no verified location', true); return; }
+      if (isUnverified(v)){ artStatus('That village has no verified location, so it cannot be drawn.', true); return; }
       inp.value = roName(v) + ' · ' + enName(v);
       pickVillage(v, which);
     }));
@@ -2547,6 +2752,7 @@ function attachPicker(inputId, dropId, which, world){
       document.getElementById('art-coords2').value = lat.toFixed(5) + ', ' + lon.toFixed(5);
       document.getElementById('art-labelB').value = nm;
       artStatus('');
+      if (art.format === 'duo') generatePoster(false);
     }));
     drop.style.display = 'block';
   };
@@ -2572,7 +2778,7 @@ function attachPicker(inputId, dropId, which, world){
   document.addEventListener('click', e => { if (!inp.parentElement.contains(e.target)) drop.style.display = 'none'; });
 }
 
-function canRender(){ return art.dataA && (art.format !== 'duo' || art.dataB); }
+function canRender(){ return artReady(); }
 
 (function initStudio(){
   const row = document.getElementById('themerow');
@@ -2583,7 +2789,7 @@ function canRender(){ return art.dataA && (art.format !== 'duo' || art.dataB); }
   row.querySelectorAll('.themebtn').forEach(b => b.addEventListener('click', () => {
     art.theme = b.dataset.t;
     row.querySelectorAll('.themebtn').forEach(x => { x.classList.toggle('on', x===b); x.setAttribute('aria-pressed', String(x===b)); });
-    if (canRender()) renderPoster();
+    artRefresh(false);
   }));
   const seg = (id, attr, fn) => {
     document.querySelectorAll('#' + id + ' button').forEach(b => b.addEventListener('click', () => {
@@ -2591,21 +2797,24 @@ function canRender(){ return art.dataA && (art.format !== 'duo' || art.dataB); }
       fn(b.dataset[attr]);
     }));
   };
-  seg('radseg', 'r', v => { art.radius = +v; });
-  seg('mkseg', 'm', v => { art.marker = v; if (canRender()) renderPoster(); });
+  seg('radseg', 'r', v => { art.radius = +v; artRefresh(true); });
+  seg('mkseg', 'm', v => { art.marker = v; artRefresh(false); });
   seg('fmtseg', 'f', v => {
     art.format = v;
     document.getElementById('duofields').classList.toggle('show', v === 'duo');
-    if (canRender()) renderPoster();
+    if (v === 'duo' && art.latB == null){ artStatus('Add the second place below.'); document.getElementById('art-search2').focus(); }
+    else artRefresh(true);
   });
   attachPicker('art-search', 'art-drop', 'A');
   attachPicker('art-search2', 'art-drop2', 'B', true);
   const coordIn = (id, fn) => document.getElementById(id).addEventListener('change', e => {
     const m = e.target.value.match(/(-?\d+\.?\d*)\s*[, ]\s*(-?\d+\.?\d*)/);
-    if (m){ fn(+m[1], +m[2]); artStatus(''); }
+    if (m){ fn(+m[1], +m[2]); artStatus(''); artRefresh(true); }
   });
   coordIn('art-coords', (a,b) => { art.lat = a; art.lng = b; });
   coordIn('art-coords2', (a,b) => { art.latB = a; art.lngB = b; });
+  ['art-title','art-sub','art-mmr','art-msg','art-labelA','art-labelB'].forEach(id => document.getElementById(id).addEventListener('input', () => artTyping()));
+  ['art-names','art-detail'].forEach(id => document.getElementById(id).addEventListener('change', () => artRefresh(false)));
 })();
 
 function artStatus(msg, err){
@@ -2613,34 +2822,172 @@ function artStatus(msg, err){
   el.textContent = msg; el.classList.toggle('err', !!err);
 }
 
+/* ---- map data for posters ----
+   Primary source: OpenFreeMap vector tiles (OpenStreetMap data, pre-built and served from a CDN),
+   so a poster's data arrives in about a second and does not depend on a busy query server.
+   If the tiles cannot be reached, fall back to the Overpass API, asking three servers at once. */
+/* ---- minimal Mapbox Vector Tile reader (protobuf) — no library needed ---- */
+function mvtDecode(buf){
+  const b = new Uint8Array(buf), dv = new DataView(b.buffer, b.byteOffset, b.byteLength);
+  let p = 0;
+  const varint = () => { let r = 0, s = 0, c; do { c = b[p++]; r += (c & 127) * Math.pow(2, s); s += 7; } while (c & 128); return r; };
+  const skip = wt => { if (wt === 0) varint(); else if (wt === 1) p += 8; else if (wt === 2) p += varint(); else if (wt === 5) p += 4; };
+  const dec = new TextDecoder();
+  const str = len => { const s = dec.decode(b.subarray(p, p + len)); p += len; return s; };
+  const layers = {};
+  while (p < b.length){
+    const tag = varint();
+    if (tag >> 3 !== 3 || (tag & 7) !== 2){ skip(tag & 7); continue; }
+    const lLen = varint(), lEnd = p + lLen;
+    const L = { name:'', extent:4096, keys:[], vals:[], raw:[] };
+    while (p < lEnd){
+      const t = varint(), f = t >> 3, wt = t & 7;
+      if (f === 1) L.name = str(varint());
+      else if (f === 2){ const len = varint(); L.raw.push([p, p + len]); p += len; }
+      else if (f === 3) L.keys.push(str(varint()));
+      else if (f === 4){
+        const vLen = varint(), vEnd = p + vLen; let v = null;
+        while (p < vEnd){
+          const vt = varint(), vf = vt >> 3;
+          if (vf === 1) v = str(varint());
+          else if (vf === 2){ v = dv.getFloat32(p, true); p += 4; }
+          else if (vf === 3){ v = dv.getFloat64(p, true); p += 8; }
+          else if (vf === 4 || vf === 5) v = varint();
+          else if (vf === 6){ const n = varint(); v = (n % 2) ? -(n + 1) / 2 : n / 2; }
+          else if (vf === 7) v = !!varint();
+          else skip(vt & 7);
+        }
+        L.vals.push(v);
+      }
+      else if (f === 5) L.extent = varint();
+      else skip(wt);
+    }
+    L.features = L.raw.map(([s, e]) => {
+      p = s; const F = { type:0, props:{}, rings:[] }; let geom = null, tags = null;
+      while (p < e){
+        const t = varint(), f = t >> 3, wt = t & 7;
+        if (f === 2 && wt === 2){ const n = varint(), end = p + n; tags = []; while (p < end) tags.push(varint()); }
+        else if (f === 3) F.type = varint();
+        else if (f === 4 && wt === 2){ const n = varint(), end = p + n; geom = []; while (p < end) geom.push(varint()); }
+        else skip(wt);
+      }
+      if (tags) for (let i = 0; i + 1 < tags.length; i += 2) F.props[L.keys[tags[i]]] = L.vals[tags[i + 1]];
+      if (geom){
+        let x = 0, y = 0, i = 0, ring = null;
+        while (i < geom.length){
+          const cmd = geom[i] & 7, n = geom[i] >> 3; i++;
+          if (cmd === 7){ if (ring && ring.length) ring.push(ring[0]); continue; }
+          for (let k = 0; k < n; k++){
+            const dx = geom[i++], dy = geom[i++];
+            x += (dx >> 1) ^ -(dx & 1); y += (dy >> 1) ^ -(dy & 1);
+            if (cmd === 1){ ring = []; F.rings.push(ring); }
+            ring.push([x, y]);
+          }
+        }
+      }
+      return F;
+    });
+    delete L.raw;
+    layers[L.name] = L;
+    p = lEnd;
+  }
+  return layers;
+}
+const OFM_JSON = 'https://tiles.openfreemap.org/planet';
+let ofmTemplate = null;
+const tileCache = new Map();
+async function ofmTileUrl(){
+  if (!ofmTemplate) ofmTemplate = fetch(OFM_JSON).then(r => { if (!r.ok) throw new Error('tiles'); return r.json(); })
+    .then(j => j.tiles[0]).catch(e => { ofmTemplate = null; throw e; });
+  return ofmTemplate;
+}
+function emptyArea(){
+  return { roads:[], rails:[], waterPolys:[], waterLines:[], coast:[], green:[], wet:[], farm:[], resid:[], buildings:[], pois:[] };
+}
+const POI_KEEP = /^(place_of_worship|school|college|hospital|town_hall|ferry_terminal|monument|museum|attraction|castle|cemetery|police|fire_station|stadium|library|post)$/;
+async function fetchTile(tpl, z, x, y){
+  const url = tpl.replace('{z}', z).replace('{x}', x).replace('{y}', y);
+  if (!tileCache.has(url)){
+    const ac = new AbortController(), timer = setTimeout(() => ac.abort(), 12000);
+    const p = fetch(url, { signal:ac.signal }).then(r => {
+      if (r.status === 404 || r.status === 204) return null;                 // empty sea / no data
+      if (!r.ok) throw new Error('tile ' + r.status);
+      return r.arrayBuffer();
+    }).then(buf => buf && buf.byteLength ? mvtDecode(buf) : null).finally(() => clearTimeout(timer));
+    p.catch(() => tileCache.delete(url));
+    tileCache.set(url, p);
+  }
+  return tileCache.get(url);
+}
+async function getAreaTiles(lat, lng, radius, maxTiles){
+  const tpl = await ofmTileUrl();
+  const mLat = 110540, mLng = 111320 * Math.cos(lat * Math.PI/180);
+  const dLng = radius * 1.08 / mLng, dLat = radius * 1.6 / mLat;             // the tallest format is 1.5× as high as wide
+  const tx = (lo, z) => Math.floor((lo + 180) / 360 * 2**z);
+  const ty = (la, z) => Math.floor((1 - Math.asinh(Math.tan(la * Math.PI/180)) / Math.PI) / 2 * 2**z);
+  let z = 14, x0, x1, y0, y1;
+  for (; z >= 9; z--){                                                        // deepest zoom that needs at most 24 tiles
+    x0 = tx(lng - dLng, z); x1 = tx(lng + dLng, z); y0 = ty(lat + dLat, z); y1 = ty(lat - dLat, z);
+    if ((x1 - x0 + 1) * (y1 - y0 + 1) <= maxTiles) break;
+  }
+  const jobs = [];
+  for (let x = x0; x <= x1; x++) for (let y = y0; y <= y1; y++) jobs.push(fetchTile(tpl, z, x, y).then(L => ({ L, x, y })));
+  const tiles = await Promise.all(jobs);
+  const d = emptyArea(), n = 2**z;
+  for (const { L, x, y } of tiles){
+    if (!L) continue;
+    const conv = (ext, ring) => ring.map(([px, py]) => ({
+      lon: (x + px/ext) / n * 360 - 180,
+      lat: Math.atan(Math.sinh(Math.PI * (1 - 2 * (y + py/ext) / n))) * 180 / Math.PI }));
+    const each = (name, fn) => { const l = L[name]; if (l) for (const f of l.features) fn(f, r => conv(l.extent, r)); };
+    each('water', (f, c) => { if (f.type === 3) d.waterPolys.push({ rings:f.rings.map(c) }); });
+    each('waterway', (f, c) => { if (f.type === 2) f.rings.forEach(r => d.waterLines.push({ cls:f.props.class || 'stream', pts:c(r) })); });
+    each('landcover', (f, c) => {
+      if (f.type !== 3) return;
+      const k = f.props.class, o = { rings:f.rings.map(c) };
+      if (k === 'wood') d.green.push(o); else if (k === 'wetland') d.wet.push(o); else if (k === 'farmland' || k === 'grass') d.farm.push(o);
+    });
+    each('landuse', (f, c) => { if (f.type === 3 && f.props.class === 'residential') d.resid.push({ rings:f.rings.map(c) }); });
+    each('transportation', (f, c) => {
+      if (f.type !== 2) return;
+      const k = f.props.class;
+      if (k === 'ferry' || k === 'cable_car' || k === 'gondola') return;
+      f.rings.forEach(r => (k === 'rail' || k === 'transit' ? d.rails : d.roads).push({ cls:k, pts:c(r) }));
+    });
+    each('building', (f, c) => { if (f.type === 3) d.buildings.push({ rings:f.rings.map(c) }); });
+    each('poi', (f, c) => { if (f.type === 1 && POI_KEEP.test(f.props.class || '') && f.rings[0]){ const p = c(f.rings[0])[0]; d.pois.push({ lat:p.lat, lon:p.lon, cls:f.props.class }); } });
+  }
+  return d;
+}
+
 async function overpassFetch(q){
   const eps = ['https://overpass-api.de/api/interpreter','https://overpass.kumi.systems/api/interpreter','https://overpass.private.coffee/api/interpreter'];
-  for (const ep of eps){
-    const ac = new AbortController();
-    const timer = setTimeout(() => ac.abort(), 60000);
-    try {
-      const r = await fetch(ep, { method:'POST', body:'data='+encodeURIComponent(q),
-        headers:{ 'Content-Type':'application/x-www-form-urlencoded' }, signal:ac.signal });
-      clearTimeout(timer);
-      if (r.ok) return await r.json();
-    } catch(e){ clearTimeout(timer); }
-  }
-  throw new Error('map data service busy — wait a minute and try again');
+  const ask = ep => {
+    const ac = new AbortController(), timer = setTimeout(() => ac.abort(), 25000);
+    return fetch(ep, { method:'POST', body:'data='+encodeURIComponent(q), headers:{ 'Content-Type':'application/x-www-form-urlencoded' }, signal:ac.signal })
+      .then(r => { if (!r.ok) throw new Error(String(r.status)); return r.json(); }).finally(() => clearTimeout(timer));
+  };
+  try { return await Promise.any(eps.map(ask)); }
+  catch(e){ throw new Error('The map data service is busy. Please try again in a minute.'); }
 }
 
 function parseOSM(json){
-  const d = { roads:[], waterPolys:[], waterLines:[], coast:[], green:[] };
+  const d = emptyArea();
   for (const el of json.elements || []){
     if (el.type === 'way' && el.geometry){
       const t = el.tags || {}, pts = el.geometry;
-      if (t.highway) d.roads.push({ cls:t.highway, pts });
+      if (t.building) d.buildings.push({ pts });
+      else if (t.railway === 'rail') d.rails.push({ pts });
+      else if (t.highway) d.roads.push({ cls:t.highway, pts });
       else if (t.natural === 'coastline') d.coast.push({ pts });
       else if (t.natural === 'water' || t.waterway === 'riverbank'){
         const closed = pts.length > 2 && pts[0].lat === pts[pts.length-1].lat && pts[0].lon === pts[pts.length-1].lon;
         (closed ? d.waterPolys : d.waterLines).push({ cls:'river', pts });
       }
-      else if (/^(river|stream|canal)$/.test(t.waterway || '')) d.waterLines.push({ cls:t.waterway, pts });
+      else if (/^(river|stream|canal|drain|ditch)$/.test(t.waterway || '')) d.waterLines.push({ cls:t.waterway, pts });
       else if (t.landuse === 'forest' || t.natural === 'wood') d.green.push({ pts });
+      else if (t.natural === 'wetland') d.wet.push({ pts });
+      else if (t.landuse === 'residential') d.resid.push({ pts });
     }
     if (el.type === 'relation' && el.members && (el.tags||{}).natural === 'water'){
       for (const mm of el.members)
@@ -2650,51 +2997,68 @@ function parseOSM(json){
   return d;
 }
 
-async function getArea(lat, lng, radius, tag){
-  const key = lat.toFixed(5) + '|' + lng.toFixed(5) + '|' + radius;
+async function getArea(lat, lng, radius, light){                      // light: the small twin maps of “2 Homes” need far fewer tiles
+  const key = lat.toFixed(5) + '|' + lng.toFixed(5) + '|' + radius + (light ? '|light' : '');
   if (art.cache.has(key)) return art.cache.get(key);
-  artStatus('// querying openstreetmap… (' + tag + ')');
-  const R = Math.round(radius * 1.35);
-  const q = `[out:json][timeout:90];(
-    way["highway"](around:${R},${lat},${lng});
-    way["waterway"~"^(river|stream|canal|riverbank)$"](around:${R},${lat},${lng});
-    way["natural"="water"](around:${R},${lat},${lng});
-    relation["natural"="water"](around:${R},${lat},${lng});
-    way["natural"="coastline"](around:${R},${lat},${lng});
-    way["landuse"="forest"](around:${R},${lat},${lng});
-    way["natural"="wood"](around:${R},${lat},${lng});
-  );out geom;`;
-  const json = await overpassFetch(q);
-  const d = parseOSM(json);
+  let d;
+  try { d = await getAreaTiles(lat, lng, radius, light ? 6 : 24); }
+  catch(e){
+    const R = Math.round(radius * 1.6);
+    const q = `[out:json][timeout:25];(
+      way["highway"](around:${R},${lat},${lng});
+      way["railway"="rail"](around:${R},${lat},${lng});
+      way["building"](around:${R},${lat},${lng});
+      way["waterway"~"^(river|stream|canal|riverbank|drain|ditch)$"](around:${R},${lat},${lng});
+      way["natural"~"^(water|coastline|wood|wetland)$"](around:${R},${lat},${lng});
+      relation["natural"="water"](around:${R},${lat},${lng});
+      way["landuse"~"^(forest|residential)$"](around:${R},${lat},${lng});
+    );out geom;`;
+    d = parseOSM(await overpassFetch(q));
+  }
   art.cache.set(key, d);
   return d;
 }
 
-async function generatePoster(){
-  if (art.lat == null){ artStatus('// choose a village or enter coordinates first', true); return; }
-  if (art.format === 'duo' && art.latB == null){ artStatus('// TWO HOMES needs a second place — fill in the fields under the format row', true); return; }
-  const btn = document.getElementById('artgen');
-  btn.disabled = true;
+let artRun = 0;
+const artReady = () => art.dataA && (art.format !== 'duo' || art.dataB);
+async function generatePoster(reveal){
+  const more = document.getElementById('artmore');
+  if (art.lat == null){ artStatus('Choose a village first.', true); document.getElementById('art-search').focus(); return; }
+  if (art.format === 'duo' && art.latB == null){ artStatus('“2 Homes” needs a second place. Add it below.', true); more.open = true; document.getElementById('art-search2').focus(); return; }
+  const run = ++artRun, btn = document.getElementById('artgen'), prev = document.querySelector('.artpreview');
+  btn.disabled = true; btn.textContent = 'Making poster…'; prev.classList.add('busy');
+  artStatus('Loading map data…');
   try {
-    art.dataA = await getArea(art.lat, art.lng, art.radius, 'A');
-    if (art.format === 'duo') art.dataB = await getArea(art.latB, art.lngB, art.radius, 'B');
-    if (!art.dataA.roads.length && !art.dataA.waterLines.length && !art.dataA.waterPolys.length)
-      artStatus('// very little map data here — poster may look sparse');
-    else artStatus('// rendering at 2400 × 3600…');
-    await Promise.all([
-      document.fonts.load('600 100px "Playfair Display"'),
-      document.fonts.load('italic 500 60px "Playfair Display"'),
-      document.fonts.load('500 40px "Space Grotesk"'),
-      document.fonts.load('40px "Share Tech Mono"'),
-      document.fonts.load('600 40px "Noto Sans Myanmar"')
-    ]);
+    const [a, b] = await Promise.all([
+      getArea(art.lat, art.lng, art.radius, art.format === 'duo'),
+      art.format === 'duo' ? getArea(art.latB, art.lngB, art.radius, true) : null ]);
+    if (run !== artRun) return;
+    art.dataA = a; art.dataB = b;
+    artStatus('Drawing…');
+    await Promise.race([Promise.all([                                         // never let a slow font hold the poster up
+      document.fonts.load('600 100px "Playfair Display"'), document.fonts.load('italic 500 60px "Playfair Display"'),
+      document.fonts.load('500 40px "Space Grotesk"'), document.fonts.load('40px "Share Tech Mono"'),
+      document.fonts.load('600 40px "Noto Sans Myanmar"') ]).catch(() => {}), new Promise(r => setTimeout(r, 3000))]);
+    if (run !== artRun) return;
     renderPoster();
-    artStatus('// ready — download or print below');
+    const thin = a.roads.length + a.waterLines.length + a.waterPolys.length + a.buildings.length < 4;
+    artStatus(thin ? 'Ready. Very little has been mapped around this village, so the poster is simple. Try a wider zoom under More options.'
+                   : 'Ready. Download, print or share it.');
+    if (reveal && innerWidth <= 900) document.getElementById('artcanvas').scrollIntoView({ behavior:'smooth', block:'start' });
   } catch(err){
-    artStatus('// ' + (err.message || 'failed — try again'), true);
-  } finally { btn.disabled = false; }
+    if (run === artRun) artStatus((err && err.message) || 'Something went wrong. Please try again.', true);
+  } finally {
+    if (run === artRun){ btn.disabled = false; btn.textContent = 'Make poster'; prev.classList.remove('busy'); }
+  }
 }
-document.getElementById('artgen').addEventListener('click', generatePoster);
+/* redraw as options change: straight away if the data is here, otherwise fetch it first */
+function artRefresh(needData){
+  if (art.lat == null) return;
+  if (needData || !artReady()) generatePoster(false); else renderPoster();
+}
+let artTypeT = null;
+const artTyping = () => { clearTimeout(artTypeT); artTypeT = setTimeout(() => { if (artReady()) renderPoster(); }, 250); };
+document.getElementById('artgen').addEventListener('click', () => generatePoster(true));
 
 /* ---- rendering ---- */
 function coordStr(lat, lng){
@@ -2706,31 +3070,90 @@ function heartShape(x2, cx, cy, w){
   x2.bezierCurveTo(cx - 10*t, cy - 1.5*t, cx - 6.5*t, cy - 9.5*t, cx, cy - 4.5*t);
   x2.bezierCurveTo(cx + 6.5*t, cy - 9.5*t, cx + 10*t, cy - 1.5*t, cx, cy + 7*t);
 }
+/* blend two #rrggbb colours — opaque tints, so tile overlaps never show as darker bands */
+function mixHex(a, b, f){
+  const pa = [1,3,5].map(i => parseInt(a.slice(i, i+2), 16)), pb = [1,3,5].map(i => parseInt(b.slice(i, i+2), 16));
+  return '#' + pa.map((v, i) => Math.round(v + (pb[i] - v) * f).toString(16).padStart(2, '0')).join('');
+}
 function drawGeo(x2, t, d, center, radius, rect, clip){
   const mLat = 110540, mLng = 111320 * Math.cos(center.lat * Math.PI/180);
   const s = rect.w / (2 * radius);
   const px = p => rect.x + rect.w/2 + (p.lon - center.lng) * mLng * s;
   const py = p => rect.y + rect.h/2 - (p.lat - center.lat) * mLat * s;
-  const path = pts => { x2.beginPath(); pts.forEach((p,i) => i ? x2.lineTo(px(p), py(p)) : x2.moveTo(px(p), py(p))); };
+  const line = pts => { x2.beginPath(); pts.forEach((p,i) => i ? x2.lineTo(px(p), py(p)) : x2.moveTo(px(p), py(p))); };
+  const area = (list, colour) => {
+    if (!list || !list.length) return;
+    x2.fillStyle = colour;
+    for (const o of list){                                                  // one fill per feature: neighbouring tiles overlap, and must not cancel out
+      x2.beginPath();
+      for (const ring of (o.rings || [o.pts])){ ring.forEach((p,i) => i ? x2.lineTo(px(p), py(p)) : x2.moveTo(px(p), py(p))); x2.closePath(); }
+      x2.fill('evenodd');
+    }
+  };
   const k = Math.max(rect.w / 1980, 0.45);
+  const detail = document.getElementById('art-detail').checked;
   x2.save();
   x2.beginPath(); clip(); x2.clip();
   x2.lineCap = 'round'; x2.lineJoin = 'round';
-  if (t.green) d.green.forEach(g => { path(g.pts); x2.closePath(); x2.fillStyle = t.green; x2.fill(); });
-  d.waterPolys.forEach(w => { path(w.pts); x2.closePath(); x2.fillStyle = t.water; x2.fill(); });
-  d.waterLines.forEach(w => { path(w.pts); x2.strokeStyle = t.water; x2.lineWidth = (w.cls === 'stream' ? 3 : w.cls === 'canal' ? 4 : 8) * k; x2.stroke(); });
-  d.coast.forEach(w => { path(w.pts); x2.strokeStyle = t.water; x2.lineWidth = 5 * k; x2.stroke(); });
-  const wOf = cls => /motorway|trunk/.test(cls) ? 8 : cls === 'primary' ? 7 : cls === 'secondary' ? 5.5 :
-    cls === 'tertiary' ? 4.5 : /residential|unclassified|service|living_street/.test(cls) ? 3 : cls === 'track' ? 2.2 : 1.6;
-  const rank = cls => /motorway|trunk|primary/.test(cls) ? 3 : /secondary|tertiary/.test(cls) ? 2 : /residential|unclassified|service/.test(cls) ? 1 : 0;
+  /* land */
+  area(d.farm,  mixHex(t.bg, t.green || t.road, t.green ? .35 : .025));
+  area(d.resid, mixHex(t.bg, t.road, .05));
+  area(d.green, t.green || mixHex(t.bg, t.road, .085));
+  area(d.wet,   mixHex(t.bg, t.water, .55));
+  /* water */
+  area(d.waterPolys, t.water);
+  const wW = { river:9, canal:5, stream:3.4, drain:2.2, ditch:2 };
+  d.waterLines.forEach(w => { line(w.pts); x2.strokeStyle = t.water; x2.lineWidth = Math.max((wW[w.cls] || 3) * k, 1.2); x2.stroke(); });
+  d.coast.forEach(w => { line(w.pts); x2.strokeStyle = t.water; x2.lineWidth = 5 * k; x2.stroke(); });
+  /* houses and other buildings */
+  if (detail) area(d.buildings, mixHex(t.bg, t.road, .6));
+  /* railways */
+  d.rails.forEach(r => { line(r.pts); x2.strokeStyle = t.minor; x2.lineWidth = Math.max(2.4 * k, 1); x2.setLineDash([14*k, 9*k]); x2.stroke(); });
+  x2.setLineDash([]);
+  /* roads, tracks and footpaths — minor first so main roads sit on top */
+  const wOf = c => /motorway|trunk/.test(c) ? 9.5 : c === 'primary' ? 8.5 : c === 'secondary' ? 6.8 : c === 'tertiary' ? 5.4 :
+    /minor|residential|unclassified|living_street/.test(c) ? 3.6 : c === 'service' ? 2.6 : c === 'track' ? 2.3 : 1.7;
+  const rank = c => /motorway|trunk|primary/.test(c) ? 3 : /secondary|tertiary/.test(c) ? 2 : /minor|residential|unclassified|service|living_street/.test(c) ? 1 : 0;
   [...d.roads].sort((a,b) => rank(a.cls) - rank(b.cls)).forEach(r => {
-    path(r.pts);
+    line(r.pts);
     x2.strokeStyle = rank(r.cls) >= 2 ? t.road : t.minor;
     x2.lineWidth = Math.max(wOf(r.cls) * k, 1);
+    if (rank(r.cls) === 0 && r.cls !== 'track') x2.setLineDash([7*k, 6*k]); else x2.setLineDash([]);
     x2.stroke();
   });
+  x2.setLineDash([]);
+  /* landmarks: mosques and other places of worship, schools, clinics, jetties… */
+  if (detail && rect.w > 700){
+    d.pois.forEach(p => {
+      const X = px(p), Y = py(p);
+      if (X < rect.x || X > rect.x + rect.w || Y < rect.y || Y > rect.y + rect.h) return;
+      x2.beginPath(); x2.arc(X, Y, 7.5*k, 0, 7); x2.fillStyle = t.accent; x2.fill();
+      x2.strokeStyle = t.bg; x2.lineWidth = 3*k; x2.stroke();
+    });
+  }
+  /* neighbouring villages from the archive, by their Rohingya names */
+  if (document.getElementById('art-names').checked && rect.w > 1200){
+    const fs = Math.round(30 * k), boxes = [[rect.x + rect.w/2 - 95*k, rect.y + rect.h/2 - 95*k, 190*k, 190*k]];
+    x2.font = `500 ${fs}px "Space Grotesk", sans-serif`; x2.textAlign = 'left'; x2.textBaseline = 'middle';
+    const hit = (a, b) => a[0] < b[0]+b[2] && a[0]+a[2] > b[0] && a[1] < b[1]+b[3] && a[1]+a[3] > b[1];
+    plottable.map(v => ({ v, X:px({ lon:+v.lng }), Y:py({ lat:+v.lat }), dist:Math.hypot((+v.lat-center.lat)*mLat, (+v.lng-center.lng)*mLng) }))
+      .filter(o => o.dist > 60 && o.X > rect.x + 40 && o.X < rect.x + rect.w - 40 && o.Y > rect.y + 40 && o.Y < rect.y + rect.h - 40)
+      .sort((a,b) => a.dist - b.dist).slice(0, 40).forEach(o => {
+        const name = roName(o.v), w = x2.measureText(name).width;
+        const right = o.X + 16*k + w < rect.x + rect.w - 20;
+        const box = [right ? o.X - 8*k : o.X - 16*k - w, o.Y - fs*.7, w + 26*k, fs*1.4];
+        if (boxes.some(b => hit(box, b))) return;
+        boxes.push(box);
+        x2.beginPath(); x2.arc(o.X, o.Y, 6*k, 0, 7); x2.fillStyle = t.text; x2.fill(); x2.strokeStyle = t.bg; x2.lineWidth = 3*k; x2.stroke();
+        const tx = right ? o.X + 16*k : o.X - 16*k - w;
+        x2.lineWidth = 9*k; x2.strokeStyle = t.bg; x2.strokeText(name, tx, o.Y + 1);
+        x2.fillStyle = t.text; x2.globalAlpha = .82; x2.fillText(name, tx, o.Y + 1); x2.globalAlpha = 1;
+      });
+    x2.textBaseline = 'alphabetic';
+  }
   x2.restore();
 }
+
 function drawMarker(x2, t, cx, cy, k){
   if (art.marker === 'none') return;
   const a = t.accent;
@@ -2923,6 +3346,9 @@ function renderPoster(){
     markCredit(x2, t, W, H, false);
   }
 
+  art.file = null;
+  c.toBlob(b => { if (b) art.file = posterFileOf(b); }, 'image/png');
+  if (document.getElementById('sharebar').classList.contains('show')) showShareCaption();
   c.style.display = 'block';
   document.getElementById('artempty').style.display = 'none';
   document.getElementById('artactions').style.display = 'flex';
@@ -2937,50 +3363,108 @@ document.getElementById('artdl').addEventListener('click', () => {
     a.download = 'fara-' + slug + '-poster.png';
     a.click();
     setTimeout(() => URL.revokeObjectURL(a.href), 4000);
-    showToast('// poster downloaded — 2400 × 3600 px');
+    showToast('Poster saved · 2400 × 3600 px');
   }, 'image/png');
 });
 document.getElementById('artprint').addEventListener('click', () => {
   const url = document.getElementById('artcanvas').toDataURL('image/png');
   const w = window.open('', '_blank');
-  if (!w){ showToast('// allow pop-ups to print'); return; }
+  if (!w){ showToast('Allow pop-ups to print'); return; }
   w.document.write('<html><head><title>FARA Poster</title><style>@page{margin:0}body{margin:0}img{width:100vw}</style></head><body><img src="' + url + '" onload="setTimeout(function(){window.print()},400)"></body></html>');
   w.document.close();
 });
-document.getElementById('artshare').addEventListener('click', () => {
-  document.getElementById('sharebar').classList.toggle('show');
-});
-function posterCaption(){
-  const title = document.getElementById('art-title').value.trim() || art.villageName || 'Arakan';
-  return title + ' · ' + coordStr(art.lat, art.lng) + ' — FARA · The Arakan Village Name Archive · by AB Aziz';
+/* ---- sharing ----
+   Each button goes to its own platform with a caption about the village and the archive.
+   WhatsApp takes the caption directly and Facebook takes the village's link; Instagram and TikTok
+   accept no web links at all, so there the poster is handed to the phone's share sheet, or on a
+   computer saved alongside a copied caption. */
+const SHARE_NAMES = { facebook:'Facebook', whatsapp:'WhatsApp', instagram:'Instagram', tiktok:'TikTok' };
+const canShareFiles = () => { try{ return matchMedia('(pointer:coarse)').matches && !!navigator.canShare && navigator.canShare({ files:[new File([''], 'x.png', { type:'image/png' })] }); }catch(e){ return false; } };
+function shareVillage(){ return art.srcId != null ? VILLAGES.find(v => v.id === art.srcId) : null; }
+function shareUrl(){
+  const local = /^(localhost|127\.|0\.0\.0\.0|\[::1\])/.test(location.hostname) || location.protocol === 'file:';
+  const base = local ? 'https://map.rohingya.ro/' : location.origin + location.pathname;
+  const v = shareVillage();
+  return v ? base + '#v=' + v.id : base;
 }
-async function shareTo(platform){
-  const blob = await new Promise(res => document.getElementById('artcanvas').toBlob(res, 'image/png'));
-  const file = new File([blob], 'fara-poster.png', { type:'image/png' });
-  const caption = posterCaption();
-  if (navigator.canShare && navigator.canShare({ files:[file] })){
-    try { await navigator.share({ files:[file], text:caption }); showToast('// shared'); return; }
-    catch(e){ if (e && e.name === 'AbortError') return; }
+function posterCaption(){
+  const v = shareVillage(), lines = [];
+  const where = (la, ln) => coordStr(la, ln).replace('  /  ', ', ');
+  if (v){
+    const ro = v.rohingya_name, en = v.name, name = ro || en || 'This village';
+    lines.push(name + ' is a Rohingya village in ' + (v.township ? v.township + ' township, ' : '') + 'Arakan (Rakhine State, Myanmar).');
+    const facts = [];
+    if (ro && en && ro !== en) facts.push('Name: ' + en);
+    if (v.village_name_mmr) facts.push('Burmese: ' + v.village_name_mmr);
+    if (v.village_tract) facts.push('Village tract: ' + v.village_tract);
+    facts.push('Location: ' + where(+v.lat, +v.lng));
+    lines.push(facts.join('\n'));
+  } else {
+    const title = document.getElementById('art-title').value.trim() || art.villageName || 'Arakan';
+    lines.push(title + '\nLocation: ' + where(art.lat, art.lng));
   }
+  lines.push('Every village had a name. FARA, the Arakan Village Name Archive, preserves the names and locations of '
+    + VILLAGES.length.toLocaleString() + ' Rohingya villages in Rohingya, English and Burmese, so they are never erased.');
+  lines.push((v ? 'See this village: ' : 'Explore the archive: ') + shareUrl());
+  return lines.join('\n\n');
+}
+function showShareCaption(){ document.getElementById('sharetext').textContent = posterCaption(); }
+function posterBlob(){ return new Promise(res => document.getElementById('artcanvas').toBlob(res, 'image/png')); }
+const posterFileOf = blob => new File([blob], 'fara-poster.png', { type:'image/png' });
+function savePoster(file){
   const a = document.createElement('a');
   a.href = URL.createObjectURL(file); a.download = file.name; a.click();
   setTimeout(() => URL.revokeObjectURL(a.href), 4000);
-  try { await navigator.clipboard.writeText(caption); } catch(e){}
-  const links = {
-    facebook:'https://www.facebook.com/', whatsapp:'https://wa.me/?text=' + encodeURIComponent(caption),
-    instagram:'https://www.instagram.com/', tiktok:'https://www.tiktok.com/upload'
-  };
-  window.open(links[platform], '_blank', 'noopener');
-  showToast('// poster downloaded & caption copied — attach it on ' + platform);
+}
+const copyCaption = caption => { try{ return navigator.clipboard.writeText(caption).then(() => true, () => false); }catch(e){ return Promise.resolve(false); } };
+
+document.getElementById('artshare').addEventListener('click', async () => {
+  const bar = document.getElementById('sharebar');
+  showShareCaption();
+  if (art.file && canShareFiles()){                                       // phones: the system share sheet carries the poster itself
+    bar.classList.add('show');
+    try { await navigator.share({ files:[art.file], text:posterCaption() }); showToast('Shared'); }
+    catch(e){}
+    return;
+  }
+  bar.classList.toggle('show');
+});
+document.getElementById('sharecopy').addEventListener('click', async () => {
+  showToast(await copyCaption(posterCaption()) ? 'Caption copied' : 'Could not copy. Select the text and copy it.');
+});
+async function shareTo(platform){
+  const caption = posterCaption(), name = SHARE_NAMES[platform];
+  showShareCaption();
+  copyCaption(caption);
+  /* these two take text or a link, so they open straight away (before any waiting, or the browser blocks the pop-up) */
+  if (platform === 'whatsapp'){
+    window.open('https://wa.me/?text=' + encodeURIComponent(caption), '_blank', 'noopener');
+    showToast('Opening WhatsApp with your caption');
+    return;
+  }
+  if (platform === 'facebook'){
+    window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(shareUrl()) + '&hashtag=%23Rohingya', '_blank', 'noopener');
+    showToast('Opening Facebook. Caption copied, paste it into your post.');
+    return;
+  }
+  /* Instagram and TikTok only accept an image from the device */
+  if (art.file && canShareFiles()){
+    try { await navigator.share({ files:[art.file], text:caption }); return; }
+    catch(e){ if (e && e.name === 'AbortError') return; }
+  }
+  const site = { instagram:'https://www.instagram.com/', tiktok:'https://www.tiktok.com/upload' }[platform];
+  window.open(site, '_blank', 'noopener');
+  savePoster(art.file || posterFileOf(await posterBlob()));
+  showToast('Poster saved and caption copied. Add both to your ' + name + ' post.');
 }
 document.querySelectorAll('#sharebar .shicon').forEach(b => b.addEventListener('click', () => shareTo(b.dataset.p)));
 document.getElementById('posterbtn').addEventListener('click', () => {
-  if (current && !isUnverified(current) && art.lat == null){
+  openModal('postermodal');
+  /* opened from a village record: start with that village, and draw it straight away */
+  if (current && !isUnverified(current) && art.srcId !== current.id){
     document.getElementById('art-search').value = roName(current) + ' · ' + enName(current);
     pickVillage(current, 'A');
-    document.getElementById('art-title').value = roName(current);
-  }
-  openModal('postermodal');
+  } else if (art.lat != null && !artReady()) generatePoster(false);
 });
 
 /* ================= GLOBAL KEYS ================= */
