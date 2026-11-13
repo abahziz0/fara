@@ -1467,7 +1467,7 @@ function openWard(w, fly){
   document.getElementById('p-id').textContent = `WARD ${w.n} / ${town.length}`;
   document.getElementById('p-town-tag').style.color = c;
   document.getElementById('p-town-name').textContent = w.town.toUpperCase();
-  document.getElementById('p-ro').textContent = w.en;
+  document.getElementById('p-ro').textContent = 'Ward '+w.n;
   document.getElementById('p-en').textContent = `WARD ${w.n} OF ${town.length} · ${w.town.toUpperCase()}`;
   document.getElementById('p-mmr').textContent = `${w.my} · ရပ်ကွက် ${myNum(w.n)}`;
   document.getElementById('unverified').classList.remove('show');
