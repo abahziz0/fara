@@ -31,7 +31,14 @@ A self-contained, single-file archive explorer styled as a futuristic intelligen
 - **Mission modal** credits the project: A project by AB Aziz · ab@rohingya.ro
 - **Discover** (`D`) — radar-sweep to a random village
 - **Map Art Studio** (`P`, or "Map Art" in the top bar) — generate printable poster art for any village or coordinates: live road/river data from OpenStreetMap rendered on canvas at 2400×3600 px (8″×12″ @ 300 DPI). **5 formats** (Classic framed, Full-bleed, Circle, Heart-clipped, "Two Homes" duo — second place can be any village or **any city in the world** via built-in geocoding), **6 themes**, village **markers** (ring/heart/none), editable trilingual title block + optional message line, fixed **"by AB Aziz" watermark**, typo-tolerant search, PNG download + print + **share** (system share sheet with the poster image; falls back to download + caption copy + opening Facebook/WhatsApp/Instagram/TikTok). Requires internet (Overpass API, 3 fallback endpoints; Nominatim for world search).
-- Keyboard shortcuts overlay (`?`), terminal boot sequence, responsive mobile layout, reduced-motion support
+- **Built for phones** (screens up to 760 px wide) — not a shrunk desktop:
+  - floating search bar that opens a full-screen search with recently opened villages
+  - bottom tab bar: Map · Records · Discover · Map Art · Menu
+  - the village record is a draggable sheet with three stops (peek / half / full); the map re-centres the village in the space above it, and tapping the map tucks the sheet away
+  - Menu (townships, optics, tools) is a pull-down-to-dismiss sheet; dialogs become full pages; the records table shows three readable columns
+  - imagery viewer goes full screen with its tabs and date timeline at thumb height
+  - larger tap targets, forgiving marker taps, safe-area insets for notches, and "Add to Home Screen" support (`manifest.webmanifest` + icons)
+- Keyboard shortcuts overlay (`?`), terminal boot sequence, reduced-motion support
 
 `fara_template.html` is the editable source. Regenerate after edits:
 
@@ -85,4 +92,5 @@ Records with data issues are **flagged, never silently altered**.
 | `arakan_villages.csv` | Spreadsheet-friendly CSV |
 | `arakan_villages.geojson` | Point FeatureCollection (verified coordinates only) — QGIS/Leaflet/Mapbox ready |
 | `summary.json` | Counts, coverage, corrections log |
+| `manifest.webmanifest`, `icon-192.png`, `icon-512.png`, `apple-touch-icon.png` | Home-screen install support for phones |
 | `by_township/` | Per-township `.json` + `.csv` splits |

@@ -1,0 +1,15 @@
+{
+  "name": "FARA — The Arakan Village Name Archive",
+  "short_name": "FARA",
+  "description": "The names and locations of 1,023 Rohingya villages across Arakan.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#02050A",
+  "theme_color": "#02050A",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
