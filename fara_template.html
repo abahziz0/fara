@@ -2548,9 +2548,10 @@ const trackVillage = v => { try{ window.va('pageview', { route:'/village/[id]', 
 
 /* ================= SUGGEST A NAME OR CORRECTION =================
    Suggestions are never published directly: they go to the archive's keeper for review.
-   If SUGGEST_ENDPOINT is set they are posted to it (and queued while offline);
-   otherwise the visitor's own email app opens with the suggestion written out. */
-const SUGGEST_ENDPOINT = '';
+   They are posted to SUGGEST_ENDPOINT, a FormSubmit address that forwards each one to the keeper's
+   inbox, and are kept on the device and sent later if the visitor is offline or delivery fails.
+   With SUGGEST_ENDPOINT empty, the visitor's own email app opens with the suggestion written out. */
+const SUGGEST_ENDPOINT = 'https://formsubmit.co/ajax/ab@rohingya.ro';
 const SUGGEST_EMAIL = 'ab@rohingya.ro';
 const sug = { v:null };
 function suggestText(){
@@ -2578,14 +2579,19 @@ function openSuggest(v){
 }
 function sugStatus(msg, err){ const el = document.getElementById('sug-status'); el.textContent = msg; el.classList.toggle('err', !!err); }
 function sugQueue(){ try{ return JSON.parse(localStorage.getItem('fara_suggest_queue') || '[]'); }catch(e){ return []; } }
+async function sugPost(item){
+  try {
+    const r = await fetch(SUGGEST_ENDPOINT, { method:'POST', headers:{ 'Content-Type':'application/json', 'Accept':'application/json' }, body:JSON.stringify(item) });
+    if (!r.ok) return false;
+    const j = await r.json().catch(() => ({}));
+    return j.success === true || j.success === 'true';
+  } catch(e){ return false; }
+}
 async function sugFlush(){
   if (!SUGGEST_ENDPOINT || !navigator.onLine) return;
   const q = sugQueue(); if (!q.length) return;
   const left = [];
-  for (const item of q){
-    try { const r = await fetch(SUGGEST_ENDPOINT, { method:'POST', headers:{ 'Content-Type':'application/json', 'Accept':'application/json' }, body:JSON.stringify(item) }); if (!r.ok) left.push(item); }
-    catch(e){ left.push(item); }
-  }
+  for (const item of q){ if (!(await sugPost(item))) left.push(item); }
   try{ localStorage.setItem('fara_suggest_queue', JSON.stringify(left)); }catch(e){}
   if (left.length < q.length) showToast('// ' + (q.length - left.length) + ' saved suggestion' + (q.length - left.length > 1 ? 's' : '') + ' sent');
 }
@@ -2602,13 +2608,12 @@ document.getElementById('sug-form').addEventListener('submit', async e => {
   };
   track('Suggest sent');
   if (SUGGEST_ENDPOINT){
-    const item = { _subject:'FARA suggestion — ' + recId(v) + ' ' + roName(v), record:recId(v), village:roName(v), official_name:enName(v), township:v.township || '',
-      rohingya_name:g('sug-ro'), other_name:g('sug-other'), note:g('sug-note'), how:document.getElementById('sug-how').value, from:g('sug-from') || 'anonymous', page:pageUrl(v), message:text };
+    const item = { _subject:'FARA suggestion — ' + recId(v) + ' ' + roName(v), _template:'table', _captcha:'false',
+      'Record':recId(v), 'Village':roName(v), 'Official name':enName(v), 'Township':v.township || '', 'Village tract':v.village_tract || '',
+      'Suggested Rohingya name':g('sug-ro') || '—', 'Other name or spelling':g('sug-other') || '—', 'What is wrong or missing':g('sug-note') || '—',
+      'How they know':document.getElementById('sug-how').value, 'From':g('sug-from') || 'anonymous', 'Page':pageUrl(v) };
     const btn = document.getElementById('sug-send'); btn.disabled = true; sugStatus('Sending…');
-    let ok = false;
-    if (navigator.onLine){
-      try { const r = await fetch(SUGGEST_ENDPOINT, { method:'POST', headers:{ 'Content-Type':'application/json', 'Accept':'application/json' }, body:JSON.stringify(item) }); ok = r.ok; }catch(err){}
-    }
+    const ok = navigator.onLine ? await sugPost(item) : false;
     btn.disabled = false;
     if (ok){ done('Thank you. Your suggestion was sent and will be reviewed before the archive changes.'); return; }
     try{ localStorage.setItem('fara_suggest_queue', JSON.stringify([...sugQueue(), item])); }catch(err){}

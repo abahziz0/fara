@@ -72,7 +72,7 @@ writes the site icons (`favicon.svg`, `favicon.ico`, `icon-192.png`, `icon-512.p
 
 ### Community, research and offline
 
-- **Suggest a name or correction** on every village record. Suggestions are never published directly; they go to the archive's keeper for review. Delivery is set by `SUGGEST_ENDPOINT` in the template: empty means the visitor's email app opens with the suggestion written out; set to a form endpoint and suggestions are posted to it and queued while offline.
+- **Suggest a name or correction** on every village record. Suggestions are never published directly; they go to the archive's keeper for review. Each suggestion is posted to FormSubmit (`SUGGEST_ENDPOINT` in the template), which forwards it by email to the keeper's inbox; if the visitor is offline or delivery fails it is kept on the device and sent later. With `SUGGEST_ENDPOINT` empty, the visitor's email app opens with the suggestion written out instead.
 - **Area tool** (`A`): outline an area on the map to list the villages inside it, then filter the registry to them and export CSV.
 - **PDF Record**: a one-page printable record for any village (names, location, both satellite images with their dates, nearby villages, source and citation).
 - **Works offline**: a service worker saves the app, and the map tiles you have looked at, on the device. Pages load from the network when online, so updates arrive normally.
