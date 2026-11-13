@@ -1,215 +1,215 @@
-id,name,rohingya_name,village_name_mmr,lat,lng,village_tract,township,district,layer,layer_color,coord_status
-809,Ah Htet Nan Yar,Razarbill Orro fara,အထက်နန်းရာ,20.555611,92.643517,Ah Htet Nan Yar,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-810,Navy Seik,,နေဗီဆိပ်,20.511930,92.645317,Ah Htet Nan Yar,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-811,Ni Lin Paw,Nilam Bor Fara,နီလင်ပေါ်,20.550770,92.650513,Ah Htet Nan Yar,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-812,Nyaung Pin Hla,,ညောင်ပင်လှ,20.518520,92.640938,Ah Htet Nan Yar,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-813,Pyaing Taung,Shay Rah Khara,ပြိုင်းတောင်,20.542891,92.634163,Ah Htet Nan Yar,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-814,Sin Oe,,ဆင်အိုး,20.523090,92.637947,Ah Htet Nan Yar,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-815,Ah Nauk Pyin,Anaf Parang,အနောက်ပြင်,20.399710,92.781143,Ah Nauk Pyin,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-816,Taung Thar Yar,,တောင်သာယာ,20.407579,92.803108,Ah Nauk Pyin,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-817,Ah Ngu Maw (Ku Lar),,အငူမော် (ကုလား),20.288780,92.737556,Ah Ngu Maw,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-818,Ah Ngu Maw (Rakhine),,အငူမော် (ရခိုင်),20.286409,92.727867,Ah Ngu Maw,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-819,Ma Gyi Chaung,,မကျည်းချောင်း,20.294821,92.731651,Ah Ngu Maw,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-820,Ah Ngu Maw (Kone Tan),,အငူမော် (ကုန်းတန်း),20.287991,92.725960,Ah Ngu Maw Kone Tan,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-821,Auk Nan Yar,Razarbill Lamar fara,အောက်နန်းရာ,20.553640,92.674217,Auk Nan Yar,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-822,Aung Ba La,,အောင်ဗလ,20.337730,92.693222,Aung Ba La,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-823,Sin Paik,,ဆင်ပိုက်,20.328751,92.693588,Aung Ba La,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-824,Tan Aye,,တန်အေး,20.317110,92.703369,Aung Ba La,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-825,Thar Si,,သာစည်,20.311520,92.708252,Aung Ba La,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-826,Aung Seik,,အောင်ဆိပ်,20.419710,92.692368,Aung Seik,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-827,Kaung Ri Chaung Ywar Thit,,ကောင်းရီချောင်းရွာသစ်,20.438721,92.688629,Aung Seik,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-828,Thet,,သက်,20.419680,92.690353,Aung Seik,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-829,Bar Ta Lay,,ဘာတလေ,20.511391,92.805527,Bar Ta Lay,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-830,Tha Yet Chaung Kha Mway,,သရက်ချောင်းခမွေး,20.503691,92.811707,Bar Ta Lay,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-831,Chin (Pyaing Taung),,ချင်း (ပြိုင်းတောင်),20.581470,92.643272,Chut Pyin,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-832,Chut Pyin,Shuap praun Muslim ,ချွတ်ပြင်,20.569796,92.640526,Chut Pyin,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-833,Pi Dauk Myaing,,ပိတောက်မြိုင်,20.583776,92.629669,Chut Pyin,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-834,Thet,,သက်,20.571611,92.644203,Chut Pyin,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-835,Done Paik,,ဒုံးပိုက်,20.355970,92.678917,Done Paik,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-836,Gwa Son,,ခွဆုံ,20.528681,92.679382,Gwa Son,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-837,Hpet Leik,,ဖက်လိပ်,20.631229,92.641533,Hpet Leik,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-838,Tha Pyay Taw,,သပြေတော,20.614019,92.648903,Hpet Leik,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-839,Daing Kyat,,ဒိုင်းကျပ်,20.358601,92.827217,Hpyu Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-840,Hpyu Chaung,,ဖြူချောင်း,20.346930,92.844353,Hpyu Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-841,Aung Thar Zay,,အောင်သာဇေ,20.584473,92.755806,Htee Swea,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-842,Htee Swea Ywar Haung,,ထီးစွဲရွာဟောင်း,20.578461,92.743088,Htee Swea,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-843,Htee Swea Ywar Thit,,ထီးစွဲရွာသစ်,20.578230,92.739983,Htee Swea,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-844,Htun Ya Wai,,ထွန်းရဝေ,20.486142,92.806840,Htun Ya Wai,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-845,Htun Ya Wai Ywar Thit,,ထွန်းရဝေရွာသစ်,20.496090,92.821404,Htun Ya Wai,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-846,Ka Nyin Chaung,,ကညင်ချောင်း,20.520451,92.707512,Ka Nyin Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-847,Pyin Chaung Ku Lar,,ပြင်ချောင်းကုလား,20.348770,92.716782,Ka Paing,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-848,Yae Hpyu Kan,,ရေဖြူကန်,20.362930,92.711243,Ka Paing,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-849,Kan Pyin,,ကံပြင်,20.369450,92.774063,Kan Pyin,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-850,Kat Chaung,,ကပ်ချောင်း,20.350241,92.783791,Kat Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-851,Kaung Ri Chaung Ywar Haung,,ကောင်းရီချောင်းရွာဟောင်း,20.437630,92.721138,Kaung Ri Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-852,Kyun Chaung,,ကျွန်းချောင်း,20.428810,92.723763,Kaung Ri Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-853,Kan Pyin,,ကံပြင်,20.509390,92.743134,Kha Naung Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-854,Kha Naung Gyi,,ခနောင်းကြီး,20.521931,92.739532,Kha Naung Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-855,Se Kan Ywar Thit,,ဆည်ကံရွာသစ်,20.518419,92.743607,Kha Naung Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-856,Ywar Thit Kay,,ရွာသစ်ကေ,20.538610,92.749496,Kha Naung Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-857,Bar Sar Ra,,ဘာဆာရာ,20.416759,92.663193,Koe Tan Kauk,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-858,Chein Khar Li (Ku Lar),,ချိန်ခါလီ (ကုလား),20.411850,92.656792,Koe Tan Kauk,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-859,Chein Khar Li (Rakhine),,ချိန်ခါလီ (ရခိုင်),20.397039,92.664452,Koe Tan Kauk,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-860,Koe Tan Kauk,,ကိုးတန်ကောက်,20.432280,92.650177,Koe Tan Kauk,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-861,Koe Tan Kauk (Rakhine),,ကိုးတန်ကောက် (ရခိုင်),20.447399,92.630463,Koe Tan Kauk,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-862,Koe Tan Kauk Ywar Ma,,ကိုးတန်ကောက်ရွာမ,20.442110,92.637177,Koe Tan Kauk,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-863,Kon Tan (Ku Lar),,ကုန်တန်း (ကုလား),20.465151,92.686203,Kon Tan,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-864,Kon Tan (Rakhine),,ကုန်တန်း (ရခိုင်),20.470060,92.686256,Kon Tan,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-865,Naw Wai,,နော်ဝေ,20.453831,92.683090,Kon Tan,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-866,Ku Lar Chaung,,ကုလားချောင်း,20.332800,92.724663,Ku Lar Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-867,Ku Taung,,ကူတောင်,20.417919,92.784363,Ku Taung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-868,Ku Taung Ywar Chay,,ကူတောင်ရွာချေ,20.434420,92.784767,Ku Taung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-869,Baw Di Kone,,ဗောဓိကုန်း,20.473930,92.668854,Kyauk Sar Taing,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-870,Kon Tan Zay,,ကုန်တန်းဈေး,20.469950,92.676437,Kyauk Sar Taing,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-871,Kyauk Sar Taing,,ကျောက်စာတိုင်,20.463909,92.675468,Kyauk Sar Taing,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-872,Mi Chaung Yae Thauk,,မိချောင်းရေသောက်,20.470119,92.672653,Kyauk Sar Taing,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-873,Kyauk Tan,,ကျောက်တန်း,20.594839,92.751137,Kyauk Tan,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-874,Kyauk Yan Thar Si,,ကျောက်ရံသာစည်,20.643591,92.722618,Kyauk Yan Thar Si,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-875,Maung Hpyu (Da Pyu Chaung),,မောင်ဖြူ (ဒပြူချောင်း),20.639530,92.721909,Kyauk Yan Thar Si,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-876,Yae Poke,,ရေပုတ်,20.614630,92.741997,Kyauk Yan Thar Si,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-877,Kha Maung Tone,,ခမောင်းတုံး,20.534269,92.706963,Kyaung Taung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-878,Kyaung Taung,,ကျောင်းတောင်,20.564011,92.704819,Kyaung Taung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-879,Doe Wai Chaung,,ဒိုးဝေချောင်း,20.585840,92.670723,Kyein Tan,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-880,Hman Ni Pyin,,မှန်နီပြင်,20.614910,92.667419,Kyein Tan,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-881,Kyein Tan,,ကြိမ်တန်း,20.598709,92.664337,Kyein Tan,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-882,Kar May (Kha Mway),,ကာမေ (ခမွေး),20.486700,92.842583,Kyein Thar,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-883,Kar May (Rakhine),,ကာမေ (ရခိုင်),20.492390,92.841530,Kyein Thar,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-884,Kyein Thar,,ကြိန်သာ,20.481239,92.833794,Kyein Thar,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-885,Hpa Yar Hla,,ဘုရားလှ,20.346020,92.806557,Kyet Yoe Seik,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-886,Kyet Yoe Seik,,ကြက်ရိုးဆိပ်,20.340309,92.801849,Kyet Yoe Seik,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-887,Kyun Gyi,,ကျွန်းကြီး,20.322020,92.805687,Kyun Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-888,Kyun Paw,,ကျွန်းပေါ်,20.521271,92.686096,Kyun Paw,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-889,La Mone Taing,,လမုန်းတိုင်,20.578194,92.783539,La Mone Taing,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-890,Nwar Tin Koke,,နွားတင်းကုတ်,20.563219,92.793579,La Mone Taing,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-891,Aung Ma,,အောင်မ,20.370609,92.711700,Laung Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-892,Ka Paing Chaung,,ကပိုင်ချောင်း,20.356791,92.712250,Laung Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-893,Laung Chaung,,လောင်းချောင်း,20.375259,92.710159,Laung Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-894,Lay Gwa Son (Ywar Haung),,လေးခွဆုံ (ရွာဟောင်း),20.516876,92.792442,Lay Gwa Son,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-895,Lay Gwa Son (Ywar Thit),,လေးခွဆုံ (ရွာသစ်),20.519814,92.798698,Lay Gwa Son,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-896,Sagar Ywar,,စံကားရွာ,20.522108,92.805969,Lay Gwa Son,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-897,Lay Kan,,လေးကံ,20.449720,92.795319,Lay Kan (Pauk Taw Gyi),Rathedaung,Sittwe,Rathidaung,#AFB42B,
-898,Pauk Taw Gyi,,ပေါက်တောကြီး,20.472260,92.803307,Lay Kan (Pauk Taw Gyi),Rathedaung,Sittwe,Rathidaung,#AFB42B,
-899,Ah Lel Zee Kaing,,အလယ်ဇီးကိုင်း,20.323200,92.842827,Let Pan Pin Yin,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-900,Hnan Kham Ywar,,နှမ်းခမ်းရွာ,20.329876,92.833527,Let Pan Pin Yin,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-901,Let Pan Pin Yin,,လက်ပံပင်ရင်း,20.323709,92.836929,Let Pan Pin Yin,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-902,Mi Nyo Htaunt,,မိညိုထောင့်,20.504730,92.683113,Mi Nyo Htaunt,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-903,Mi Nyo Htaunt Ywar Thit,,မိညိုထောင့်ရွာသစ်,20.500710,92.680359,Mi Nyo Htaunt,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-904,Thar Si,,သာစည်,20.497299,92.683098,Mi Nyo Htaunt,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-905,Min Kan,,မင်းကံ,20.420349,92.811279,Min Kan,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-906,Myin Gan Chaung,,မြင်းဂန်းချောင်း,20.376040,92.776894,Myin Gan Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-907,Myin Gan Chaung Kone Tan,,မြင်းဂန်းချောင်းကုန်တန်း,20.379299,92.781036,Myin Gan Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-908,Seik Gyi Nar,,ဆိပ်ကြီးနား,20.376881,92.790627,Myin Gan Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-909,Myin Hpu,,မြင်းဖူး,20.450081,92.688728,Myin Hpu,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-910,Myin Hpu Ywar Thit,,မြင်းဖူးရွာသစ်,20.442579,92.686203,Myin Hpu,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-911,Ah Htet Na Gar Mauk,,အထက်နဂါးမောက်,20.436180,92.845177,Na Gar Mauk,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-912,Ah Lel Na Gar Mauk,,အလယ်နဂါးမောက်,20.431660,92.847923,Na Gar Mauk,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-913,Auk Na Gar Mauk,,အောက်နဂါးမောက်,20.415390,92.860489,Na Gar Mauk,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-914,Ah Lel Chaung,,အလယ်ချောင်း,20.459169,92.711189,Nat Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-915,Nat Chaung,,နတ်ချောင်း,20.455139,92.713257,Nat Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-916,Ah Myet Taung,,အမျက်တောင်,20.655180,92.720322,Nga San Baw,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-917,Nga/ San Baw (Moke Soe Chaung) (Ywar Haung),,င/စံဘော် (မုဆိုးချောင်း) (ရွာဟောင်း),20.636511,92.713379,Nga San Baw,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-918,Nga Tauk Tu Chay,,ငတောက်တူချေ,20.502939,92.767487,Nga Tauk Tu Chay,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-919,Se Kan Ywar Haung,,ဆည်ကံရွာဟောင်း,20.512951,92.749893,Nga Tauk Tu Chay,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-920,Taung Hla Maw,,တောင်လှမော်,20.490480,92.759178,Nga Tauk Tu Chay,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-921,Bat Kar,,ဘက္ကား,20.518009,92.775970,Nga Tauk Tu Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-922,Nga Tauk Tu Gyi,,ငတောက်တူကြီး,20.499981,92.779327,Nga Tauk Tu Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-923,Nwar Hla Kyaw,,နွားလှကျော်,20.590870,92.773216,Nwar Hla Kyaw,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-924,Nyaung Pin Gyi (Ku Lar),,ညောင်ပင်ကြီး (ကုလား),20.335911,92.784416,Nyaung Pin Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-925,Nyaung Pin Gyi (Rakhine),,ညောင်ပင်ကြီး (ရခိုင်),20.339800,92.782654,Nyaung Pin Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-926,Pan Zin Maw,,ပန်းဇင်းမော်,20.319111,92.777542,Nyaung Pin Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-927,Khway Tauk Chaung Ywar Thit (Hnin Si Kone),,ခွေးတောက်ချောင်းရွာသစ် (ခ) နှင်းဆီကုန်း,20.469561,92.701103,Nyaung Pin Hla,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-928,Nyaung Pin Hla (Khway Tauk Chaung),,ညောင်ပင်လှ (ခ) ခွေးတောက်ချောင်း,20.468651,92.710129,Nyaung Pin Hla,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-929,Leik Htaunt Teit Su,,လိပ်ထောင့်တဲ့စု,20.333691,92.814598,Nyaung Pin Lel,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-930,Nyaung Pin Lel,,ညောင်ပင်လယ်,20.321939,92.825447,Nyaung Pin Lel,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-931,Ohn Chaung,,အုန်းချောင်း,20.686460,92.682327,Ohn Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-932,Kan Sit,,ကံဆစ်,20.683399,92.656609,Oke Hpo (Oe Hpauk),Rathedaung,Sittwe,Rathidaung,#AFB42B,
-933,Oe Hpauk Ywar Thit,,အိုးဖောက်ရွာသစ်,20.694500,92.647751,Oke Hpo (Oe Hpauk),Rathedaung,Sittwe,Rathidaung,#AFB42B,
-934,Oke Hpo (Oe Hpauk),,အုတ်ဖို (အိုးဖောက်),20.688629,92.652481,Oke Hpo (Oe Hpauk),Rathedaung,Sittwe,Rathidaung,#AFB42B,
-935,Pan Hpaw Pyin,,ပန်းဖေါ်ပြင်,20.517700,92.660263,Pan Hpaw Pyin,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-936,Pan Kaing,,ပန်းကိုင်း,20.508341,92.649094,Pan Hpaw Pyin,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-937,Ah Du,,အဒူ,20.547621,92.671059,Pauk Pin Yin (Pauk Taw),Rathedaung,Sittwe,Rathidaung,#AFB42B,
-938,Be Lar Mi,,ဘဲလာမိ,20.546440,92.648399,Pauk Pin Yin (Pauk Taw),Rathedaung,Sittwe,Rathidaung,#AFB42B,
-939,Pauk Pin Yin,,ပေါက်ပင်ရင်း,20.543480,92.676979,Pauk Pin Yin (Pauk Taw),Rathedaung,Sittwe,Rathidaung,#AFB42B,
-940,Than Du,,သံဒူ,20.550131,92.656723,Pauk Pin Yin (Pauk Taw),Rathedaung,Sittwe,Rathidaung,#AFB42B,
-941,Aung Zay Ya,,အောင်ဇေယျ,20.456470,92.762329,Pauk Taw,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-942,Kyauk Son,,ကျောက်ဆုံ,20.447809,92.776627,Pauk Taw,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-943,Pauk Taw Chay,,ပေါက်တောချေ,20.460911,92.766930,Pauk Taw,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-944,Pauk Taw Chay Ywar Thit,,ပေါက်တောချေရွာသစ်,20.455360,92.774803,Pauk Taw,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-945,Pyin Khaung Ywar Thit,,ပြင်ခေါင်ရွာသစ်,20.472860,92.763168,Pauk Taw,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-946,Kyet Yoe Kone Tan,,ကြက်ရိုးကုန်းတန်း,20.409849,92.719681,Paung Zar,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-947,Nay Pu Khan,,နေပူခံ,20.418909,92.724998,Paung Zar,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-948,Paung Zar,,ပေါင်းဇား,20.416109,92.724457,Paung Zar,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-949,Baw Di Kaing,,ဗောဓိကိုင်း,20.674360,92.735970,Pe Tha Du,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-950,Done,,ဒုံး,20.665779,92.725517,Pe Tha Du,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-951,Kyauk Kon Boke,,ကျောက်ကုန်ဘုတ်,20.667919,92.719093,Pe Tha Du,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-952,Let Wea Det,,လက်ဝဲဒက်,20.666491,92.737091,Pe Tha Du,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-953,Nay Pu Khan,,နေပူခံ,20.678270,92.715790,Pe Tha Du,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-954,Pe Tha Du,,ပဲသဒူ,20.678160,92.713821,Pe Tha Du,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-955,Thet Pyay Kya,,သက်ပြေကျ,20.680479,92.707642,Pe Tha Du,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-956,Ah Wa Dar,,အဝဒါ,20.472210,92.784187,Pyar Chaung Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-957,Pyar Chaung Gyi,,ပြားချောင်းကြီး,20.487729,92.772687,Pyar Chaung Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-958,Pyar Chaung Gyi (Middle),,ပြားချောင်းကြီး (အလယ်),20.484253,92.772970,Pyar Chaung Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-959,Pyin Khaung Ywar Haung,,ပြင်ခေါင်းရွာဟောင်း,20.478081,92.771111,Pyar Chaung Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-960,Pyar Pin Yin,,ပြာပင်ရင်း,20.489229,92.713707,Pyar Pin Yin,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-961,Aung Zay Ya,,အောင်ဇေယျ,20.635401,92.685966,Pyein Taw,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-962,Kone Tan,,ကုန်းတန်း,20.651939,92.684578,Pyein Taw,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-963,Ma Nyin Taung,,မညင်းတောင်,20.641279,92.700439,Pyein Taw,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-964,Pyein Taw,,ပြိန်းတော,20.620729,92.697693,Pyein Taw,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-965,Aung Si Kone,,အောင်စည်ကုန်း,20.586620,92.689621,Pyin Shey,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-966,Kan Pyin,,ကံပြင်,20.593061,92.692085,Pyin Shey,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-967,Pyin Shey (Sa Hpo Kyun),,ပြင်ရှည် (စဖိုကျွန်း),20.589970,92.691757,Pyin Shey,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-968,Pyin Wan,,ပြင်ဝမ်း,20.596470,92.687897,Pyin Shey,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-969,Kan Pyin,,ကံပြင်,20.527800,92.778847,Sa Par Htar,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-970,Sa Par Htar,,စပါးထား,20.534430,92.777797,Sa Par Htar,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-971,Sar Pyin Chay,,ဆားပြင်ချေ,20.315531,92.788933,Sar Pyin Chay,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-972,Sar Pyin Gyi,,ဆားပြင်ကြီး,20.306219,92.817871,Sar Pyin Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-973,Say Oe Kya,,ဆေးအိုးကျ,20.435658,92.824098,Say Oe Kya,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-974,Shwe Laung Tin,,ရွှေလောင်းတင်,20.391680,92.770866,Shwe Laung Tin (Paik Seik),Rathedaung,Sittwe,Rathidaung,#AFB42B,
-975,Lun Taung,,လွန်းတောင်,20.730360,92.647377,Sin Khone Taing,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-976,Sin Khone Taing (Ku Lar),,ဆင်ခုန်းတိုင် (ကုလား),20.716560,92.645409,Sin Khone Taing,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-977,Sin Khone Taing (Rakhine),,ဆင်ခုန်းတိုင် (ရခိုင်),20.725330,92.647957,Sin Khone Taing,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-978,Sin Khone Taing Zay,,ဆင်ခုန်းတိုင်ဈေး,20.727461,92.643402,Sin Khone Taing,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-979,Soe May,,စိုးမေ,20.461550,92.835037,Soe May,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-980,Wet Noke Thee,,ဝက်နုတ်သီး,20.452829,92.831467,Soe May,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-981,Aung Myay Kone,,အောင်မြေကုန်း,20.603041,92.731667,Tha Mee Hla,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-982,Sauk Khat Ywar Haung (Tha Mee Hla),,ဆောက်ခပ်ရွာဟောင်း (သမီးလှ),20.603540,92.738853,Tha Mee Hla,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-983,Sauk Khat Ywar Thit,,ဆောင်ခပ်ရွာသစ်,20.607180,92.726936,Tha Mee Hla,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-984,Tha Yet Chaung,,သရက်ချောင်း,20.392200,92.703468,Tha Yet Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-985,Tha Yet Pyin,,သရက်ပြင်,20.391649,92.707657,Tha Yet Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-986,Than Chaung,,သံချောင်း,20.400311,92.697281,Than Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-987,Chay Yar Taw,,ခြေရာတော်,20.374041,92.831749,Thar Si Htaunt,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-988,Thar Si Htaunt,,သာစည်ထောင့်,20.390209,92.825523,Thar Si Htaunt,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-989,Thaung Da Rar,,သောင်းဒရား,20.553610,92.753258,Thaung Da Rar,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-990,Kyauk Yan,,ကျောက်ရန်,20.596420,92.658028,Thein Taung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-991,Maw Htet,,မော်ထက်,20.582689,92.664680,Thein Taung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-992,Tar Zaw,,တာဇော,20.616390,92.628403,Thein Taung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-993,Thazin Myaing,,သဇင်မြိုင်,20.607965,92.616272,Thein Taung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-994,Thein Taung,,သိန်တောင်,20.602591,92.655418,Thein Taung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-995,Thin Ga Net,,သင်းဂနက်,20.609690,92.635368,Thein Taung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-996,Kan Pyin,,ကံပြင်,20.495670,92.651497,Thit Ka Toe,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-997,Kyone Pyin,,ကျုံးပြင်,20.502600,92.647476,Thit Ka Toe,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-998,Thit Ka Toe,,သစ်ကတိုး,20.486931,92.662758,Thit Ka Toe,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-999,Laung Zin,,လောင်းဇင်,20.407761,92.840714,Tin Koke,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-1000,Tin Koke,,တင်းကုတ်,20.405109,92.829224,Tin Koke,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-1001,U Gar,,ဦးဂါ,20.366871,92.796837,U Gar,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-1002,Aung Taing (Laung Chaung),,အောင်တိုင် (လောင်းချောင်း),20.715750,92.699722,Yae Gaung Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-1003,Aung Taing Taung Pyo,,အောင်တိုင်တောင်ပြို,20.718691,92.727043,Yae Gaung Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-1004,Kha Yu Chaung,,ခရုချောင်း,20.698799,92.703682,Yae Gaung Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-1005,Nga Yant Chaung,,ငရန့်ချောင်း,20.720039,92.701813,Yae Gaung Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-1006,Yae Gaung Chaung,,ရေဂေါင်းချောင်း,20.714260,92.692131,Yae Gaung Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-1007,Nyaung Pin Hla,,ညောင်ပင်လှ,20.619101,92.710274,Yae Myet,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-1008,Yae Myet (Ywar Haung),,ရေမျက် (ရွာဟောင်း),20.609631,92.714020,Yae Myet,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-1009,Yae Myet (Ywar Thit),,ရေမျက် (ရွာသစ်),20.609131,92.719368,Yae Myet,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-1010,Yae Paik Son,,ရေပိုက်ဆုံ,20.345110,92.821213,Yae Paik Son,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-1011,Kin Pun Chaung,,ကင်းပွန်းချောင်း,20.656561,92.758423,Yae Soe Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-1012,Yae Chan Chaung Kha Mway,,ရေချမ်းချောင်းမွေး,20.667450,92.758987,Yae Soe Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-1013,Yae Soe Chaung,,ရေစိုးချောင်း,20.653940,92.736633,Yae Soe Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-1014,Yae Zar Te Su,,ရေဇာတဲစု,20.666750,92.755417,Yae Soe Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-1015,Lone Tin,,လုံးတင်,20.480101,92.704819,Yan Aung Pyin,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-1016,Yan Aung Pyin,,ရန်အောင်ပြင်,20.478970,92.683746,Yan Aung Pyin,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-1017,Ahr Kar Taung,,အာကာတောင်,20.678459,92.663757,Yet Khone Taing,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-1018,Yet Khone Taing,,ရက်ခုန်းတိုင်,20.665930,92.672691,Yet Khone Taing,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-1019,Zay Di Pyin,,စေတီပြင်,20.575781,92.670403,Zay Di Pyin,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-1020,Auk Zee Kaing,,အောက်ဇီးကိုင်း,20.322559,92.850487,Zee Kaing,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-1021,Tha Mee Hla Ywar Thit,,သမီးလှရွာသစ်,20.660872,92.683090,Zee Khaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
-1022,Zee Khaung,,ဇီးခေါင်း,20.672281,92.701523,Zee Khaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,
+id,name,rohingya_name,village_name_mmr,lat,lng,village_tract,township,district,layer,layer_color,coord_status,pcode_district,pcode_township,pcode_village_tract,pcode_village,mimu_village_name,mimu_village_tract_name,mimu_village_status,mimu_village_tract_status,pcode_match
+809,Ah Htet Nan Yar,Razarbill Orro fara,အထက်နန်းရာ,20.555611,92.643517,Ah Htet Nan Yar,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008007,197593,Ah Htet Nan Yar,Ah Htet Nan Yar,active,active,exact
+810,Navy Seik,,နေဗီဆိပ်,20.511930,92.645317,Ah Htet Nan Yar,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008007,197596,Navy Seik,Ah Htet Nan Yar,active,active,exact
+811,Ni Lin Paw,Nilam Bor Fara,နီလင်ပေါ်,20.550770,92.650513,Ah Htet Nan Yar,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008007,197597,Ni Lin Paw,Ah Htet Nan Yar,active,active,exact
+812,Nyaung Pin Hla,,ညောင်ပင်လှ,20.518520,92.640938,Ah Htet Nan Yar,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008007,197598,Nyaung Pin Hla,Ah Htet Nan Yar,active,active,exact
+813,Pyaing Taung,Shay Rah Khara,ပြိုင်းတောင်,20.542891,92.634163,Ah Htet Nan Yar,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008007,197594,Pyaing Taung,Ah Htet Nan Yar,active,active,exact
+814,Sin Oe,,ဆင်အိုး,20.523090,92.637947,Ah Htet Nan Yar,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008007,197595,Sin Oe,Ah Htet Nan Yar,active,active,exact
+815,Ah Nauk Pyin,Anaf Parang,အနောက်ပြင်,20.399710,92.781143,Ah Nauk Pyin,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008072,197763,Ah Nauk Pyin,Ah Nauk Pyin,active,active,exact
+816,Taung Thar Yar,,တောင်သာယာ,20.407579,92.803108,Ah Nauk Pyin,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008072,197764,Taung Thar Yar,Ah Nauk Pyin,inactive_removed_from_list,active,exact
+817,Ah Ngu Maw (Ku Lar),,အငူမော် (ကုလား),20.288780,92.737556,Ah Ngu Maw,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008036,197663,Ah Ngu Maw (Ku Lar),Ah Ngu Maw,inactive_removed_from_list,active,exact
+818,Ah Ngu Maw (Rakhine),,အငူမော် (ရခိုင်),20.286409,92.727867,Ah Ngu Maw,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008036,197662,Ah Ngu Maw (Rakhine),Ah Ngu Maw,active,active,exact
+819,Ma Gyi Chaung,,မကျည်းချောင်း,20.294821,92.731651,Ah Ngu Maw,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008036,197664,Ma Gyi Chaung,Ah Ngu Maw,active,active,exact
+820,Ah Ngu Maw (Kone Tan),,အငူမော် (ကုန်းတန်း),20.287991,92.725960,Ah Ngu Maw Kone Tan,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008035,197661,Ah Ngu Maw (Kone Tan),Ah Ngu Maw Kone Tan,active,active,exact
+821,Auk Nan Yar,Razarbill Lamar fara,အောက်နန်းရာ,20.553640,92.674217,Auk Nan Yar,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008009,197603,Auk Nan Yar,Auk Nan Yar,active,active,exact
+822,Aung Ba La,,အောင်ဗလ,20.337730,92.693222,Aung Ba La,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008033,197656,Aung Ba La,Aung Ba La,active,active,exact
+823,Sin Paik,,ဆင်ပိုက်,20.328751,92.693588,Aung Ba La,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008033,197657,Sin Paik,Aung Ba La,active,active,exact
+824,Tan Aye,,တန်အေး,20.317110,92.703369,Aung Ba La,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008033,197658,Tan Aye,Aung Ba La,active,active,exact
+825,Thar Si,,သာစည်,20.311520,92.708252,Aung Ba La,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008033,197659,Thar Si,Aung Ba La,active,active,exact
+826,Aung Seik,,အောင်ဆိပ်,20.419710,92.692368,Aung Seik,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008024,197633,Aung Seik,Aung Seik,active,active,exact
+827,Kaung Ri Chaung Ywar Thit,,ကောင်းရီချောင်းရွာသစ်,20.438721,92.688629,Aung Seik,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008024,197635,Kaung Ri Chaung Ywar Thit,Aung Seik,active,active,exact
+828,Thet,,သက်,20.419680,92.690353,Aung Seik,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008024,197634,Thet,Aung Seik,inactive_removed_from_list,active,exact
+829,Bar Ta Lay,,ဘာတလေ,20.511391,92.805527,Bar Ta Lay,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008062,197743,Bar Ta Lay,Bar Ta Lay,active,active,exact
+830,Tha Yet Chaung Kha Mway,,သရက်ချောင်းခမွေး,20.503691,92.811707,Bar Ta Lay,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008062,197744,Tha Yet Chaung Kha Mway,Bar Ta Lay,inactive_removed_from_list,active,exact
+831,Chin (Pyaing Taung),,ချင်း (ပြိုင်းတောင်),20.581470,92.643272,Chut Pyin,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008006,197591,Chin (Pyaing Taung),Chut Pyin,active,active,exact
+832,Chut Pyin,Shuap praun Muslim ,ချွတ်ပြင်,20.569796,92.640526,Chut Pyin,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008006,197590,Chut Pyin,Chut Pyin,active,active,exact
+833,Pi Dauk Myaing,,ပိတောက်မြိုင်,20.583776,92.629669,Chut Pyin,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008006,220694,Pa Tauk Myaing,Chut Pyin,active,active,strong
+834,Thet,,သက်,20.571611,92.644203,Chut Pyin,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008006,197592,Thet,Chut Pyin,inactive_removed_from_list,active,exact
+835,Done Paik,,ဒုံးပိုက်,20.355970,92.678917,Done Paik,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008032,197655,Done Paik,Done Paik,active,active,exact
+836,Gwa Son,,ခွဆုံ,20.528681,92.679382,Gwa Son,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008011,197606,Gwa Son,Gwa Son,active,active,exact
+837,Hpet Leik,,ဖက်လိပ်,20.631229,92.641533,Hpet Leik,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008002,197581,Hpet Leik,Hpet Leik,active,active,exact
+838,Tha Pyay Taw,,သပြေတော,20.614019,92.648903,Hpet Leik,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008002,197582,Tha Pyay Taw,Hpet Leik,active,active,exact
+839,Daing Kyat,,ဒိုင်းကျပ်,20.358601,92.827217,Hpyu Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008077,197773,Daing Kyat,Hpyu Chaung,active,active,exact
+840,Hpyu Chaung,,ဖြူချောင်း,20.346930,92.844353,Hpyu Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008077,197772,Hpyu Chaung,Hpyu Chaung,active,active,exact
+841,Aung Thar Zay,,အောင်သာဇေ,20.584473,92.755806,Htee Swea,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008052,197717,Aung Thar Zay,Htee Swea,active,active,exact
+842,Htee Swea Ywar Haung,,ထီးစွဲရွာဟောင်း,20.578461,92.743088,Htee Swea,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008052,197715,Htee Swea Ywar Haung,Htee Swea,active,active,exact
+843,Htee Swea Ywar Thit,,ထီးစွဲရွာသစ်,20.578230,92.739983,Htee Swea,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008052,197716,Htee Swea Ywar Thit,Htee Swea,inactive_removed_from_list,active,exact
+844,Htun Ya Wai,,ထွန်းရဝေ,20.486142,92.806840,Htun Ya Wai,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008063,197745,Htun Ya Wai,Htun Ya Wai,active,active,exact
+845,Htun Ya Wai Ywar Thit,,ထွန်းရဝေရွာသစ်,20.496090,92.821404,Htun Ya Wai,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008063,197746,Htun Ya Wai Ywar Thit,Htun Ya Wai,active,active,exact
+846,Ka Nyin Chaung,,ကညင်ချောင်း,20.520451,92.707512,Ka Nyin Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008012,197607,Ka Nyin Chaung,Ka Nyin Chaung,active,active,exact
+847,Pyin Chaung Ku Lar,,ပြင်ချောင်းကုလား,20.348770,92.716782,Ka Paing,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008030,197647,Pyin Chaung Ku Lar,Ka Paing,active,active,exact
+848,Yae Hpyu Kan,,ရေဖြူကန်,20.362930,92.711243,Ka Paing,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008030,197648,Yae Hpyu Kan,Ka Paing,active,active,exact
+849,Kan Pyin,,ကံပြင်,20.369450,92.774063,Kan Pyin,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008080,197777,Kan Pyin,Kan Pyin,active,active,exact
+850,Kat Chaung,,ကပ်ချောင်း,20.350241,92.783791,Kat Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008081,197778,Kat Chaung,Kat Chaung,active,active,exact
+851,Kaung Ri Chaung Ywar Haung,,ကောင်းရီချောင်းရွာဟောင်း,20.437630,92.721138,Kaung Ri Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008025,197636,Kaung Ri Chaung Ywar Haung,Kaung Ri Chaung,active,active,exact
+852,Kyun Chaung,,ကျွန်းချောင်း,20.428810,92.723763,Kaung Ri Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008025,197637,Kyun Chaung,Kaung Ri Chaung,active,active,exact
+853,Kan Pyin,,ကံပြင်,20.509390,92.743134,Kha Naung Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008056,197725,Kan Pyin,Kha Naung Gyi,active,active,exact
+854,Kha Naung Gyi,,ခနောင်းကြီး,20.521931,92.739532,Kha Naung Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008056,197723,Kha Naung Gyi,Kha Naung Gyi,active,active,exact
+855,Se Kan Ywar Thit,,ဆည်ကံရွာသစ်,20.518419,92.743607,Kha Naung Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008056,197726,Se Kan Ywar Thit,Kha Naung Gyi,inactive_removed_from_list,active,exact
+856,Ywar Thit Kay,,ရွာသစ်ကေ,20.538610,92.749496,Kha Naung Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008056,197724,Ywar Thit Kay,Kha Naung Gyi,active,active,exact
+857,Bar Sar Ra,,ဘာဆာရာ,20.416759,92.663193,Koe Tan Kauk,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008031,197653,Bar Sar Ra,Koe Tan Kauk,inactive_removed_from_list,active,exact
+858,Chein Khar Li (Ku Lar),,ချိန်ခါလီ (ကုလား),20.411850,92.656792,Koe Tan Kauk,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008031,197651,Chein Khar Li (Ku Lar),Koe Tan Kauk,active,active,exact
+859,Chein Khar Li (Rakhine),,ချိန်ခါလီ (ရခိုင်),20.397039,92.664452,Koe Tan Kauk,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008031,197650,Chein Khar Li (Rakhine),Koe Tan Kauk,active,active,exact
+860,Koe Tan Kauk,,ကိုးတန်ကောက်,20.432280,92.650177,Koe Tan Kauk,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008031,197649,Koe Tan Kauk,Koe Tan Kauk,active,active,exact
+861,Koe Tan Kauk (Rakhine),,ကိုးတန်ကောက် (ရခိုင်),20.447399,92.630463,Koe Tan Kauk,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008031,197654,Koe Tan Kauk (Rakhine),Koe Tan Kauk,active,active,exact
+862,Koe Tan Kauk Ywar Ma,,ကိုးတန်ကောက်ရွာမ,20.442110,92.637177,Koe Tan Kauk,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008031,197652,Koe Tan Kauk Ywar Ma,Koe Tan Kauk,active,active,exact
+863,Kon Tan (Ku Lar),,ကုန်တန်း (ကုလား),20.465151,92.686203,Kon Tan,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008018,197620,Kon Tan (Ku Lar),Kon Tan,active,active,exact
+864,Kon Tan (Rakhine),,ကုန်တန်း (ရခိုင်),20.470060,92.686256,Kon Tan,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008018,197619,Kon Tan (Rakhine),Kon Tan,active,active,exact
+865,Naw Wai,,နော်ဝေ,20.453831,92.683090,Kon Tan,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008018,197621,Naw Wai,Kon Tan,active,active,exact
+866,Ku Lar Chaung,,ကုလားချောင်း,20.332800,92.724663,Ku Lar Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008034,197660,Ku Lar Chaung,Ku Lar Chaung,active,active,exact
+867,Ku Taung,,ကူတောင်,20.417919,92.784363,Ku Taung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008071,197761,Ku Taung,Ku Taung,active,active,exact
+868,Ku Taung Ywar Chay,,ကူတောင်ရွာချေ,20.434420,92.784767,Ku Taung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008071,197762,Ku Taung Ywar Chay,Ku Taung,active,active,exact
+869,Baw Di Kone,,ဗောဓိကုန်း,20.473930,92.668854,Kyauk Sar Taing,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008023,197631,Baw Di Kone,Kyauk Sar Taing,active,active,exact
+870,Kon Tan Zay,,ကုန်တန်းဈေး,20.469950,92.676437,Kyauk Sar Taing,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008023,197632,Kon Tan Zay,Kyauk Sar Taing,active,active,exact
+871,Kyauk Sar Taing,,ကျောက်စာတိုင်,20.463909,92.675468,Kyauk Sar Taing,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008023,197629,Kyauk Sar Taing,Kyauk Sar Taing,active,active,exact
+872,Mi Chaung Yae Thauk,,မိချောင်းရေသောက်,20.470119,92.672653,Kyauk Sar Taing,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008023,197630,Mi Chaung Yae Thauk,Kyauk Sar Taing,active,active,exact
+873,Kyauk Tan,,ကျောက်တန်း,20.594839,92.751137,Kyauk Tan,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008050,197709,Kyauk Tan,Kyauk Tan,active,active,exact
+874,Kyauk Yan Thar Si,,ကျောက်ရံသာစည်,20.643591,92.722618,Kyauk Yan Thar Si,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008049,197706,Kyauk Yan Thar Si,Kyauk Yan Thar Si,active,active,exact
+875,Maung Hpyu (Da Pyu Chaung),,မောင်ဖြူ (ဒပြူချောင်း),20.639530,92.721909,Kyauk Yan Thar Si,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008049,197707,Maung Hpyu (Da Pyu Chaung),Kyauk Yan Thar Si,active,active,exact
+876,Yae Poke,,ရေပုတ်,20.614630,92.741997,Kyauk Yan Thar Si,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008049,197708,Yae Poke,Kyauk Yan Thar Si,active,active,exact
+877,Kha Maung Tone,,ခမောင်းတုံး,20.534269,92.706963,Kyaung Taung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008010,197605,Kha Maung Tone,Kyaung Taung,active,active,exact
+878,Kyaung Taung,,ကျောင်းတောင်,20.564011,92.704819,Kyaung Taung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008010,197604,Kyaung Taung,Kyaung Taung,active,active,exact
+879,Doe Wai Chaung,,ဒိုးဝေချောင်း,20.585840,92.670723,Kyein Tan,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008003,197585,Doe Wai Chaung,Kyein Tan,active,active,exact
+880,Hman Ni Pyin,,မှန်နီပြင်,20.614910,92.667419,Kyein Tan,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008003,197584,Hman Ni Pyin,Kyein Tan,active,active,exact
+881,Kyein Tan,,ကြိမ်တန်း,20.598709,92.664337,Kyein Tan,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008003,197583,Kyein Tan,Kyein Tan,active,active,exact
+882,Kar May (Kha Mway),,ကာမေ (ခမွေး),20.486700,92.842583,Kyein Thar,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008064,197749,Kar May (Kha Mway),Kyein Thar,inactive_removed_from_list,active,exact
+883,Kar May (Rakhine),,ကာမေ (ရခိုင်),20.492390,92.841530,Kyein Thar,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008064,197748,Kar May (Rakhine),Kyein Thar,inactive_removed_from_list,active,exact
+884,Kyein Thar,,ကြိန်သာ,20.481239,92.833794,Kyein Thar,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008064,197747,Kyein Thar,Kyein Thar,active,active,exact
+885,Hpa Yar Hla,,ဘုရားလှ,20.346020,92.806557,Kyet Yoe Seik,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008079,197776,Hpa Yar Hla,Kyet Yoe Seik,active,active,exact
+886,Kyet Yoe Seik,,ကြက်ရိုးဆိပ်,20.340309,92.801849,Kyet Yoe Seik,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008079,197775,Kyet Yoe Seik,Kyet Yoe Seik,active,active,exact
+887,Kyun Gyi,,ကျွန်းကြီး,20.322020,92.805687,Kyun Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008084,197783,Kyun Gyi,Kyun Gyi,active,active,exact
+888,Kyun Paw,,ကျွန်းပေါ်,20.521271,92.686096,Kyun Paw,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008013,197608,Kyun Paw,Kyun Paw,active,active,exact
+889,La Mone Taing,,လမုန်းတိုင်,20.578194,92.783539,La Mone Taing,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008054,197719,La Mone Taing,La Mone Taing,active,active,exact
+890,Nwar Tin Koke,,နွားတင်းကုတ်,20.563219,92.793579,La Mone Taing,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008054,197720,Nwar Tin Koke,La Mone Taing,active,active,exact
+891,Aung Ma,,အောင်မ,20.370609,92.711700,Laung Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008029,197645,Aung Ma,Laung Chaung,active,active,exact
+892,Ka Paing Chaung,,ကပိုင်ချောင်း,20.356791,92.712250,Laung Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008029,197646,Ka Paing Chaung,Laung Chaung,active,active,exact
+893,Laung Chaung,,လောင်းချောင်း,20.375259,92.710159,Laung Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008029,197644,Laung Chaung,Laung Chaung,active,active,exact
+894,Lay Gwa Son (Ywar Haung),,လေးခွဆုံ (ရွာဟောင်း),20.516876,92.792442,Lay Gwa Son,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008058,197729,Lay Gwa Son (Ywar Haung),Lay Gwa Son,active,active,exact
+895,Lay Gwa Son (Ywar Thit),,လေးခွဆုံ (ရွာသစ်),20.519814,92.798698,Lay Gwa Son,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008058,197730,Lay Gwa Son (Ywar Thit),Lay Gwa Son,active,active,exact
+896,Sagar Ywar,,စံကားရွာ,20.522108,92.805969,Lay Gwa Son,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008058,220696,San Kar Ywar,Lay Gwa Son,active,active,strong
+897,Lay Kan,,လေးကံ,20.449720,92.795319,Lay Kan (Pauk Taw Gyi),Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008066,197753,Lay Kan,Lay Kan (Pauk Taw Gyi),active,active,exact
+898,Pauk Taw Gyi,,ပေါက်တောကြီး,20.472260,92.803307,Lay Kan (Pauk Taw Gyi),Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008066,197752,Pauk Taw Gyi,Lay Kan (Pauk Taw Gyi),active,active,exact
+899,Ah Lel Zee Kaing,,အလယ်ဇီးကိုင်း,20.323200,92.842827,Let Pan Pin Yin,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008087,197788,Ah Lel Zee Kaing,Let Pan Pin Yin,active,active,exact
+900,Hnan Kham Ywar,,နှမ်းခမ်းရွာ,20.329876,92.833527,Let Pan Pin Yin,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008087,220697,Hnan Kham Ywar,Let Pan Pin Yin,active,active,exact
+901,Let Pan Pin Yin,,လက်ပံပင်ရင်း,20.323709,92.836929,Let Pan Pin Yin,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008087,197787,Let Pan Pin Yin,Let Pan Pin Yin,active,active,exact
+902,Mi Nyo Htaunt,,မိညိုထောင့်,20.504730,92.683113,Mi Nyo Htaunt,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008015,197611,Mi Nyo Htaunt,Mi Nyo Htaunt,active,active,exact
+903,Mi Nyo Htaunt Ywar Thit,,မိညိုထောင့်ရွာသစ်,20.500710,92.680359,Mi Nyo Htaunt,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008015,197612,Mi Nyo Htaunt Ywar Thit,Mi Nyo Htaunt,active,active,exact
+904,Thar Si,,သာစည်,20.497299,92.683098,Mi Nyo Htaunt,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008015,197613,Thar Si,Mi Nyo Htaunt,active,active,exact
+905,Min Kan,,မင်းကံ,20.420349,92.811279,Min Kan,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008070,197760,Min Kan,Min Kan,active,active,exact
+906,Myin Gan Chaung,,မြင်းဂန်းချောင်း,20.376040,92.776894,Myin Gan Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008074,197766,Myin Gan Chaung,Myin Gan Chaung,active,active,exact
+907,Myin Gan Chaung Kone Tan,,မြင်းဂန်းချောင်းကုန်တန်း,20.379299,92.781036,Myin Gan Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008074,197767,Myin Gan Chaung Kone Tan,Myin Gan Chaung,active,active,exact
+908,Seik Gyi Nar,,ဆိပ်ကြီးနား,20.376881,92.790627,Myin Gan Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008074,197768,Seik Gyi Nar,Myin Gan Chaung,inactive_removed_from_list,active,exact
+909,Myin Hpu,,မြင်းဖူး,20.450081,92.688728,Myin Hpu,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008022,197627,Myin Hpu,Myin Hpu,active,active,exact
+910,Myin Hpu Ywar Thit,,မြင်းဖူးရွာသစ်,20.442579,92.686203,Myin Hpu,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008022,197628,Myin Hpu Ywar Thit,Myin Hpu,active,active,exact
+911,Ah Htet Na Gar Mauk,,အထက်နဂါးမောက်,20.436180,92.845177,Na Gar Mauk,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008068,197757,Ah Htet Na Gar Mauk,Na Gar Mauk,active,active,exact
+912,Ah Lel Na Gar Mauk,,အလယ်နဂါးမောက်,20.431660,92.847923,Na Gar Mauk,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008068,197756,Ah Lel Na Gar Mauk,Na Gar Mauk,active,active,exact
+913,Auk Na Gar Mauk,,အောက်နဂါးမောက်,20.415390,92.860489,Na Gar Mauk,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008068,197755,Auk Na Gar Mauk,Na Gar Mauk,active,active,exact
+914,Ah Lel Chaung,,အလယ်ချောင်း,20.459169,92.711189,Nat Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008021,197626,Ah Lel Chaung,Nat Chaung,active,active,exact
+915,Nat Chaung,,နတ်ချောင်း,20.455139,92.713257,Nat Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008021,197625,Nat Chaung,Nat Chaung,active,active,exact
+916,Ah Myet Taung,,အမျက်တောင်,20.655180,92.720322,Nga San Baw,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008044,197691,Ah Myet Taung,Nga San Baw,active,active,exact
+917,Nga/ San Baw (Moke Soe Chaung) (Ywar Haung),,င/စံဘော် (မုဆိုးချောင်း) (ရွာဟောင်း),20.636511,92.713379,Nga San Baw,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008044,197690,Nga/ San Baw (Moke Soe Chaung) (Ywar Haung),Nga San Baw,active,active,exact
+918,Nga Tauk Tu Chay,,ငတောက်တူချေ,20.502939,92.767487,Nga Tauk Tu Chay,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008059,197731,Nga Tauk Tu Chay,Nga Tauk Tu Chay,active,active,exact
+919,Se Kan Ywar Haung,,ဆည်ကံရွာဟောင်း,20.512951,92.749893,Nga Tauk Tu Chay,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008059,197733,Se Kan Ywar Haung,Nga Tauk Tu Chay,active,active,exact
+920,Taung Hla Maw,,တောင်လှမော်,20.490480,92.759178,Nga Tauk Tu Chay,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008059,197732,Taung Hla Maw,Nga Tauk Tu Chay,active,active,exact
+921,Bat Kar,,ဘက္ကား,20.518009,92.775970,Nga Tauk Tu Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008057,197728,Bat Kar,Nga Tauk Tu Gyi,active,active,exact
+922,Nga Tauk Tu Gyi,,ငတောက်တူကြီး,20.499981,92.779327,Nga Tauk Tu Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008057,197727,Nga Tauk Tu Gyi,Nga Tauk Tu Gyi,active,active,exact
+923,Nwar Hla Kyaw,,နွားလှကျော်,20.590870,92.773216,Nwar Hla Kyaw,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008051,197713,Nwar Hla Kyaw,Nwar Hla Kyaw,active,active,exact
+924,Nyaung Pin Gyi (Ku Lar),,ညောင်ပင်ကြီး (ကုလား),20.335911,92.784416,Nyaung Pin Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008082,197780,Nyaung Pin Gyi (Ku Lar),Nyaung Pin Gyi,active,active,exact
+925,Nyaung Pin Gyi (Rakhine),,ညောင်ပင်ကြီး (ရခိုင်),20.339800,92.782654,Nyaung Pin Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008082,197779,Nyaung Pin Gyi (Rakhine),Nyaung Pin Gyi,active,active,exact
+926,Pan Zin Maw,,ပန်းဇင်းမော်,20.319111,92.777542,Nyaung Pin Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008082,197781,Pan Zin Maw,Nyaung Pin Gyi,active,active,exact
+927,Khway Tauk Chaung Ywar Thit (Hnin Si Kone),,ခွေးတောက်ချောင်းရွာသစ် (ခ) နှင်းဆီကုန်း,20.469561,92.701103,Nyaung Pin Hla,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008020,197624,Khway Tauk Chaung Ywar Thit (Hnin Si Kone),Nyaung Pin Hla,active,active,exact
+928,Nyaung Pin Hla (Khway Tauk Chaung),,ညောင်ပင်လှ (ခ) ခွေးတောက်ချောင်း,20.468651,92.710129,Nyaung Pin Hla,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008020,197623,Nyaung Pin Hla (Khway Tauk Chaung),Nyaung Pin Hla,active,active,exact
+929,Leik Htaunt Teit Su,,လိပ်ထောင့်တဲ့စု,20.333691,92.814598,Nyaung Pin Lel,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008085,197785,Leik Htaunt Teit Su,Nyaung Pin Lel,active,active,exact
+930,Nyaung Pin Lel,,ညောင်ပင်လယ်,20.321939,92.825447,Nyaung Pin Lel,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008085,197784,Nyaung Pin Lel,Nyaung Pin Lel,active,active,exact
+931,Ohn Chaung,,အုန်းချောင်း,20.686460,92.682327,Ohn Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008039,197672,Ohn Chaung,Ohn Chaung,active,active,exact
+932,Kan Sit,,ကံဆစ်,20.683399,92.656609,Oke Hpo (Oe Hpauk),Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008038,197670,Kan Sit,Oke Hpo (Oe Hpauk),active,active,exact
+933,Oe Hpauk Ywar Thit,,အိုးဖောက်ရွာသစ်,20.694500,92.647751,Oke Hpo (Oe Hpauk),Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008038,197671,Oe Hpauk Ywar Thit,Oke Hpo (Oe Hpauk),active,active,exact
+934,Oke Hpo (Oe Hpauk),,အုတ်ဖို (အိုးဖောက်),20.688629,92.652481,Oke Hpo (Oe Hpauk),Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008038,197669,Oke Hpo (Oe Hpauk),Oke Hpo (Oe Hpauk),active,active,exact
+935,Pan Hpaw Pyin,,ပန်းဖေါ်ပြင်,20.517700,92.660263,Pan Hpaw Pyin,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008014,197609,Pan Hpaw Pyin,Pan Hpaw Pyin,active,active,exact
+936,Pan Kaing,,ပန်းကိုင်း,20.508341,92.649094,Pan Hpaw Pyin,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008014,197610,Pan Kaing,Pan Hpaw Pyin,active,active,exact
+937,Ah Du,,အဒူ,20.547621,92.671059,Pauk Pin Yin (Pauk Taw),Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008008,197602,Ah Du,Pauk Pin Yin (Pauk Taw),active,active,exact
+938,Be Lar Mi,,ဘဲလာမိ,20.546440,92.648399,Pauk Pin Yin (Pauk Taw),Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008008,197601,Be Lar Mi,Pauk Pin Yin (Pauk Taw),active,active,exact
+939,Pauk Pin Yin,,ပေါက်ပင်ရင်း,20.543480,92.676979,Pauk Pin Yin (Pauk Taw),Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008008,197599,Pauk Pin Yin,Pauk Pin Yin (Pauk Taw),active,active,exact
+940,Than Du,,သံဒူ,20.550131,92.656723,Pauk Pin Yin (Pauk Taw),Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008008,197600,Than Du,Pauk Pin Yin (Pauk Taw),active,active,exact
+941,Aung Zay Ya,,အောင်ဇေယျ,20.456470,92.762329,Pauk Taw,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008060,197738,Aung Zay Ya,Pauk Taw,inactive_removed_from_list,active,exact
+942,Kyauk Son,,ကျောက်ဆုံ,20.447809,92.776627,Pauk Taw,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008060,197736,Kyauk Son,Pauk Taw,active,active,exact
+943,Pauk Taw Chay,,ပေါက်တောချေ,20.460911,92.766930,Pauk Taw,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008060,197734,Pauk Taw Chay,Pauk Taw,active,active,exact
+944,Pauk Taw Chay Ywar Thit,,ပေါက်တောချေရွာသစ်,20.455360,92.774803,Pauk Taw,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008060,197735,Pauk Taw Chay Ywar Thit,Pauk Taw,inactive_removed_from_list,active,exact
+945,Pyin Khaung Ywar Thit,,ပြင်ခေါင်ရွာသစ်,20.472860,92.763168,Pauk Taw,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008060,197737,Pyin Khaung Ywar Thit,Pauk Taw,active,active,exact
+946,Kyet Yoe Kone Tan,,ကြက်ရိုးကုန်းတန်း,20.409849,92.719681,Paung Zar,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008027,197640,Kyet Yoe Kone Tan,Paung Zar,active,active,exact
+947,Nay Pu Khan,,နေပူခံ,20.418909,92.724998,Paung Zar,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008027,197641,Nay Pu Khan,Paung Zar,active,active,exact
+948,Paung Zar,,ပေါင်းဇား,20.416109,92.724457,Paung Zar,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008027,197639,Paung Zar,Paung Zar,active,active,exact
+949,Baw Di Kaing,,ဗောဓိကိုင်း,20.674360,92.735970,Pe Tha Du,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008043,197686,Baw Di Kaing,Pe Tha Du,active,active,exact
+950,Done,,ဒုံး,20.665779,92.725517,Pe Tha Du,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008043,197688,Done,Pe Tha Du,inactive_removed_from_list,active,exact
+951,Kyauk Kon Boke,,ကျောက်ကုန်ဘုတ်,20.667919,92.719093,Pe Tha Du,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008043,197685,Kyauk Kon Boke,Pe Tha Du,active,active,exact
+952,Let Wea Det,,လက်ဝဲဒက်,20.666491,92.737091,Pe Tha Du,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008043,197689,Let Wea Det,Pe Tha Du,inactive_removed_from_list,active,exact
+953,Nay Pu Khan,,နေပူခံ,20.678270,92.715790,Pe Tha Du,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008043,197687,Nay Pu Khan,Pe Tha Du,inactive_removed_from_list,active,exact
+954,Pe Tha Du,,ပဲသဒူ,20.678160,92.713821,Pe Tha Du,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008043,197683,Pe Tha Du,Pe Tha Du,active,active,exact
+955,Thet Pyay Kya,,သက်ပြေကျ,20.680479,92.707642,Pe Tha Du,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008043,197684,Thet Pyay Kya,Pe Tha Du,active,active,exact
+956,Ah Wa Dar,,အဝဒါ,20.472210,92.784187,Pyar Chaung Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008061,197742,Ah Wa Dar,Pyar Chaung Gyi,active,active,exact
+957,Pyar Chaung Gyi,,ပြားချောင်းကြီး,20.487729,92.772687,Pyar Chaung Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008061,197739,Pyar Chaung Gyi,Pyar Chaung Gyi,active,active,exact
+958,Pyar Chaung Gyi (Middle),,ပြားချောင်းကြီး (အလယ်),20.484253,92.772970,Pyar Chaung Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008061,197740,Pyar Chaung Gyi (Middle),Pyar Chaung Gyi,active,active,exact
+959,Pyin Khaung Ywar Haung,,ပြင်ခေါင်းရွာဟောင်း,20.478081,92.771111,Pyar Chaung Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008061,197741,Pyin Khaung Ywar Haung,Pyar Chaung Gyi,active,active,exact
+960,Pyar Pin Yin,,ပြာပင်ရင်း,20.489229,92.713707,Pyar Pin Yin,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008019,197622,Pyar Pin Yin,Pyar Pin Yin,active,active,exact
+961,Aung Zay Ya,,အောင်ဇေယျ,20.635401,92.685966,Pyein Taw,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008045,197693,Aung Zay Ya,Pyein Taw,active,active,exact
+962,Kone Tan,,ကုန်းတန်း,20.651939,92.684578,Pyein Taw,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008045,197695,Kone Tan,Pyein Taw,active,active,exact
+963,Ma Nyin Taung,,မညင်းတောင်,20.641279,92.700439,Pyein Taw,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008045,197694,Ma Nyin Taung,Pyein Taw,active,active,exact
+964,Pyein Taw,,ပြိန်းတော,20.620729,92.697693,Pyein Taw,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008045,197692,Pyein Taw,Pyein Taw,active,active,exact
+965,Aung Si Kone,,အောင်စည်ကုန်း,20.586620,92.689621,Pyin Shey,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008004,220693,Aung Si Kone,Pyin Shey,active,active,exact
+966,Kan Pyin,,ကံပြင်,20.593061,92.692085,Pyin Shey,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008004,197587,Kan Pyin,Pyin Shey,active,active,exact
+967,Pyin Shey (Sa Hpo Kyun),,ပြင်ရှည် (စဖိုကျွန်း),20.589970,92.691757,Pyin Shey,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008004,197586,Pyin Shey (Sa Hpo Kyun),Pyin Shey,active,active,exact
+968,Pyin Wan,,ပြင်ဝမ်း,20.596470,92.687897,Pyin Shey,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008004,197588,Pyin Wan,Pyin Shey,active,active,exact
+969,Kan Pyin,,ကံပြင်,20.527800,92.778847,Sa Par Htar,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008055,197722,Kan Pyin,Sa Par Htar,active,active,exact
+970,Sa Par Htar,,စပါးထား,20.534430,92.777797,Sa Par Htar,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008055,197721,Sa Par Htar,Sa Par Htar,active,active,exact
+971,Sar Pyin Chay,,ဆားပြင်ချေ,20.315531,92.788933,Sar Pyin Chay,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008083,197782,Sar Pyin Chay,Sar Pyin Chay,active,active,exact
+972,Sar Pyin Gyi,,ဆားပြင်ကြီး,20.306219,92.817871,Sar Pyin Gyi,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008086,197786,Sar Pyin Gyi,Sar Pyin Gyi,active,active,exact
+973,Say Oe Kya,,ဆေးအိုးကျ,20.435658,92.824098,Say Oe Kya,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008067,197754,Say Oe Kya,Say Oe Kya,active,active,exact
+974,Shwe Laung Tin,,ရွှေလောင်းတင်,20.391680,92.770866,Shwe Laung Tin (Paik Seik),Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008073,197765,Shwe Laung Tin,Shwe Laung Tin (Paik Seik),active,active,exact
+975,Lun Taung,,လွန်းတောင်,20.730360,92.647377,Sin Khone Taing,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008037,197668,Lun Taung,Sin Khone Taing,active,active,exact
+976,Sin Khone Taing (Ku Lar),,ဆင်ခုန်းတိုင် (ကုလား),20.716560,92.645409,Sin Khone Taing,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008037,197666,Sin Khone Taing (Ku Lar),Sin Khone Taing,active,active,exact
+977,Sin Khone Taing (Rakhine),,ဆင်ခုန်းတိုင် (ရခိုင်),20.725330,92.647957,Sin Khone Taing,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008037,197665,Sin Khone Taing (Rakhine),Sin Khone Taing,active,active,exact
+978,Sin Khone Taing Zay,,ဆင်ခုန်းတိုင်ဈေး,20.727461,92.643402,Sin Khone Taing,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008037,197667,Sin Khone Taing Zay,Sin Khone Taing,active,active,exact
+979,Soe May,,စိုးမေ,20.461550,92.835037,Soe May,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008065,197750,Soe May,Soe May,active,active,exact
+980,Wet Noke Thee,,ဝက်နုတ်သီး,20.452829,92.831467,Soe May,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008065,197751,Wet Noke Thee,Soe May,active,active,exact
+981,Aung Myay Kone,,အောင်မြေကုန်း,20.603041,92.731667,Tha Mee Hla,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008047,197700,Aung Myay Kone,Tha Mee Hla,active,active,exact
+982,Sauk Khat Ywar Haung (Tha Mee Hla),,ဆောက်ခပ်ရွာဟောင်း (သမီးလှ),20.603540,92.738853,Tha Mee Hla,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008047,197699,Sauk Khat Ywar Haung (Tha Mee Hla),Tha Mee Hla,active,active,exact
+983,Sauk Khat Ywar Thit,,ဆောင်ခပ်ရွာသစ်,20.607180,92.726936,Tha Mee Hla,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008047,197701,Sauk Khat Ywar Thit,Tha Mee Hla,active,active,exact
+984,Tha Yet Chaung,,သရက်ချောင်း,20.392200,92.703468,Tha Yet Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008028,197642,Tha Yet Chaung,Tha Yet Chaung,active,active,exact
+985,Tha Yet Pyin,,သရက်ပြင်,20.391649,92.707657,Tha Yet Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008028,197643,Tha Yet Pyin,Tha Yet Chaung,active,active,exact
+986,Than Chaung,,သံချောင်း,20.400311,92.697281,Than Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008026,197638,Than Chaung,Than Chaung,active,active,exact
+987,Chay Yar Taw,,ခြေရာတော်,20.374041,92.831749,Thar Si Htaunt,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008076,197771,Chay Yar Taw,Thar Si Htaunt,active,active,exact
+988,Thar Si Htaunt,,သာစည်ထောင့်,20.390209,92.825523,Thar Si Htaunt,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008076,197770,Thar Si Htaunt,Thar Si Htaunt,active,active,exact
+989,Thaung Da Rar,,သောင်းဒရား,20.553610,92.753258,Thaung Da Rar,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008053,197718,Thaung Da Rar,Thaung Da Rar,active,active,exact
+990,Kyauk Yan,,ကျောက်ရန်,20.596420,92.658028,Thein Taung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008001,197579,Kyauk Yan,Thein Taung,active,active,exact
+991,Maw Htet,,မော်ထက်,20.582689,92.664680,Thein Taung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008001,197580,Maw Htet,Thein Taung,active,active,exact
+992,Tar Zaw,,တာဇော,20.616390,92.628403,Thein Taung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008001,197578,Tar Zaw,Thein Taung,active,active,exact
+993,Thazin Myaing,,သဇင်မြိုင်,20.607965,92.616272,Thein Taung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008001,220692,Tha Zin Myaing,Thein Taung,active,active,strong
+994,Thein Taung,,သိန်တောင်,20.602591,92.655418,Thein Taung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008001,197576,Thein Taung,Thein Taung,active,active,exact
+995,Thin Ga Net,,သင်းဂနက်,20.609690,92.635368,Thein Taung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008001,197577,Thin Ga Net,Thein Taung,active,active,exact
+996,Kan Pyin,,ကံပြင်,20.495670,92.651497,Thit Ka Toe,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008016,197616,Kan Pyin,Thit Ka Toe,active,active,exact
+997,Kyone Pyin,,ကျုံးပြင်,20.502600,92.647476,Thit Ka Toe,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008016,197615,Kyone Pyin,Thit Ka Toe,active,active,exact
+998,Thit Ka Toe,,သစ်ကတိုး,20.486931,92.662758,Thit Ka Toe,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008016,197614,Thit Ka Toe,Thit Ka Toe,active,active,exact
+999,Laung Zin,,လောင်းဇင်,20.407761,92.840714,Tin Koke,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008069,197759,Laung Zin,Tin Koke,active,active,exact
+1000,Tin Koke,,တင်းကုတ်,20.405109,92.829224,Tin Koke,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008069,197758,Tin Koke,Tin Koke,active,active,exact
+1001,U Gar,,ဦးဂါ,20.366871,92.796837,U Gar,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008075,197769,U Gar,U Gar,active,active,exact
+1002,Aung Taing (Laung Chaung),,အောင်တိုင် (လောင်းချောင်း),20.715750,92.699722,Yae Gaung Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008042,197681,Aung Taing (Laung Chaung),Yae Gaung Chaung,inactive_removed_from_list,active,exact
+1003,Aung Taing Taung Pyo,,အောင်တိုင်တောင်ပြို,20.718691,92.727043,Yae Gaung Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008042,197682,Aung Taing Taung Pyo,Yae Gaung Chaung,inactive_removed_from_list,active,exact
+1004,Kha Yu Chaung,,ခရုချောင်း,20.698799,92.703682,Yae Gaung Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008042,197679,Kha Yu Chaung,Yae Gaung Chaung,active,active,exact
+1005,Nga Yant Chaung,,ငရန့်ချောင်း,20.720039,92.701813,Yae Gaung Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008042,197680,Nga Yant Chaung,Yae Gaung Chaung,inactive_removed_from_list,active,exact
+1006,Yae Gaung Chaung,,ရေဂေါင်းချောင်း,20.714260,92.692131,Yae Gaung Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008042,197678,Yae Gaung Chaung,Yae Gaung Chaung,active,active,exact
+1007,Nyaung Pin Hla,,ညောင်ပင်လှ,20.619101,92.710274,Yae Myet,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008046,197698,Nyaung Pin Hla,Yae Myet,active,active,exact
+1008,Yae Myet (Ywar Haung),,ရေမျက် (ရွာဟောင်း),20.609631,92.714020,Yae Myet,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008046,197697,Yae Myet (Ywar Haung),Yae Myet,active,active,exact
+1009,Yae Myet (Ywar Thit),,ရေမျက် (ရွာသစ်),20.609131,92.719368,Yae Myet,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008046,197696,Yae Myet (Ywar Thit),Yae Myet,active,active,exact
+1010,Yae Paik Son,,ရေပိုက်ဆုံ,20.345110,92.821213,Yae Paik Son,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008078,197774,Yae Paik Son,Yae Paik Son,active,active,exact
+1011,Kin Pun Chaung,,ကင်းပွန်းချောင်း,20.656561,92.758423,Yae Soe Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008048,197703,Kin Pun Chaung,Yae Soe Chaung,active,active,exact
+1012,Yae Chan Chaung Kha Mway,,ရေချမ်းချောင်းမွေး,20.667450,92.758987,Yae Soe Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008048,197704,Yae Chan Chaung Kha Mway,Yae Soe Chaung,inactive_removed_from_list,active,exact
+1013,Yae Soe Chaung,,ရေစိုးချောင်း,20.653940,92.736633,Yae Soe Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008048,197702,Yae Soe Chaung,Yae Soe Chaung,active,active,exact
+1014,Yae Zar Te Su,,ရေဇာတဲစု,20.666750,92.755417,Yae Soe Chaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008048,197705,Yae Zar Te Su,Yae Soe Chaung,inactive_removed_from_list,active,exact
+1015,Lone Tin,,လုံးတင်,20.480101,92.704819,Yan Aung Pyin,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008017,197618,Lone Tin,Yan Aung Pyin,active,active,exact
+1016,Yan Aung Pyin,,ရန်အောင်ပြင်,20.478970,92.683746,Yan Aung Pyin,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008017,197617,Yan Aung Pyin,Yan Aung Pyin,active,active,exact
+1017,Ahr Kar Taung,,အာကာတောင်,20.678459,92.663757,Yet Khone Taing,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008040,197674,Ahr Kar Taung,Yet Khone Taing,active,active,exact
+1018,Yet Khone Taing,,ရက်ခုန်းတိုင်,20.665930,92.672691,Yet Khone Taing,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008040,197673,Yet Khone Taing,Yet Khone Taing,active,active,exact
+1019,Zay Di Pyin,,စေတီပြင်,20.575781,92.670403,Zay Di Pyin,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008005,197589,Zay Di Pyin,Zay Di Pyin,active,active,exact
+1020,Auk Zee Kaing,,အောက်ဇီးကိုင်း,20.322559,92.850487,Zee Kaing,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008088,197789,Auk Zee Kaing,Zee Kaing,active,active,exact
+1021,Tha Mee Hla Ywar Thit,,သမီးလှရွာသစ်,20.660872,92.683090,Zee Khaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008041,197677,Tha Mee Hla Ywar Thit,Zee Khaung,active,active,exact
+1022,Zee Khaung,,ဇီးခေါင်း,20.672281,92.701523,Zee Khaung,Rathedaung,Sittwe,Rathidaung,#AFB42B,,MMR012D001,MMR012008,MMR012008041,197675,Zee Khaung,Zee Khaung,active,active,exact

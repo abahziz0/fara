@@ -1,344 +1,344 @@
-id,name,rohingya_name,village_name_mmr,lat,lng,village_tract,township,district,layer,layer_color,coord_status
+id,name,rohingya_name,village_name_mmr,lat,lng,village_tract,township,district,layer,layer_color,coord_status,pcode_district,pcode_township,pcode_village_tract,pcode_village,mimu_village_name,mimu_village_tract_name,mimu_village_status,mimu_village_tract_status,pcode_match
 1,Kar Di,"Hadira Para
-",ကာဒီ,20.682249,92.596123,Ah Htet Kywe Cho Maw,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-2,Kywe Cho Maw,Tik grumow mukpara,ကျွဲချိုမော်,20.687611,92.617989,Ah Htet Kywe Cho Maw,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-3,Nyaung Chaung,Tuwor para,ညောင်ချောင်း,20.691099,92.590652,Ah Htet Kywe Cho Maw,Buthidaung,Maungdaw,Buthidaung Village,#097138,
+",ကာဒီ,20.682249,92.596123,Ah Htet Kywe Cho Maw,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010070,198445,Kar Di,Ah Htet Kywe Cho Maw,active,active,exact
+2,Kywe Cho Maw,Tik grumow mukpara,ကျွဲချိုမော်,20.687611,92.617989,Ah Htet Kywe Cho Maw,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010070,198444,Kywe Cho Maw,Ah Htet Kywe Cho Maw,active,active,exact
+3,Nyaung Chaung,Tuwor para,ညောင်ချောင်း,20.691099,92.590652,Ah Htet Kywe Cho Maw,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010070,198446,Nyaung Chaung,Ah Htet Kywe Cho Maw,active,active,exact
 4,Ah Lel Chaung,"Ali Young
-",အလယ်ချောင်း,20.825701,92.542686,Ah Lel Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-5,Let Thar,Azoli para,လက်သာ,20.818911,92.541359,Ah Lel Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-6,Ah Twin Hnget Thay,Bor para,အတွင်းငှက်သေ,20.819920,92.589729,Ah Twin Hnget Thay,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-7,Hnget Thay,Nathar para,ငှက်သေ,20.809090,92.583488,Ah Twin Hnget Thay,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-8,Htan Shauk Khan,Hoyasere,ထန်းရှောက်ခံ,20.809010,92.588951,Ah Twin Hnget Thay,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-9,Kyauk Seik,shil gada,ကျောက်ဆိပ်,20.808950,92.563133,Ah Twin Hnget Thay,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-10,Myaw Taung,Khairmura para,မျောတောင်,20.809931,92.572708,Ah Twin Hnget Thay,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-11,Pyar Pin Yin,Saytur para,ပြာပင်ရင်း,20.824471,92.581543,Ah Twin Hnget Thay,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-12,Thein Taung,Sindong borpara,သိမ်တောင်,20.800699,92.569794,Ah Twin Hnget Thay,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-13,Aw Ra Ma,Mok Para,သြရမ,20.977070,92.663780,Aw Ra Ma (a) Yee Chaung Pyin Hla,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-14,Htu Myaung Lay,Mok Para,ထူးမြောင်းလေး,20.962879,92.670326,Aw Ra Ma (a) Yee Chaung Pyin Hla,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-15,Khar Lar U,Mok Para,ခါလာဦး,20.941019,92.677467,Aw Ra Ma (a) Yee Chaung Pyin Hla,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-16,Min Kaing,Mok Para,မင်းကိုင်း,20.948231,92.673279,Aw Ra Ma (a) Yee Chaung Pyin Hla,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-17,Nat Seik,Mok Para,နတ်ဆိပ်,20.996559,92.665092,Aw Ra Ma (a) Yee Chaung Pyin Hla,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-18,Nga Tin Tein,Mok Para,ငတင်းတိမ်,21.000219,92.629707,Aw Ra Ma (a) Yee Chaung Pyin Hla,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-19,Pein Hne Chaung,Mok Para,ပိန္နဲချောင်း,21.032499,92.656143,Aw Ra Ma (a) Yee Chaung Pyin Hla,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-20,Taung Chaung Gyi,Mok Para,တောင်ချောင်ကြီး,20.932140,92.667793,Aw Ra Ma (a) Yee Chaung Pyin Hla,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-21,Taung Chay,Mok Para,သောင်ချေ,21.007830,92.658340,Aw Ra Ma (a) Yee Chaung Pyin Hla,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-22,Tha Lu Pyar,Mok Para,သလူပြား,20.919621,92.683983,Aw Ra Ma (a) Yee Chaung Pyin Hla,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-23,Aye Yar Cha,Mok Para,ဧရာသျှ,20.987829,92.624313,Aye Yar Cha,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-24,Chan Thar,Mok Para,ချမ်းသာ,20.943939,92.620819,Aye Yar Cha,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-25,Dar Sauk Paing,Mok Para,ဒါးဆောက်ပိုင်,20.952579,92.613243,Aye Yar Cha,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-26,Ma Yee Mee,Mok Para,မရီးမီး,20.946581,92.644959,Aye Yar Cha,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-27,Maung Chaung,Mok Para,မောင်ချောင်း,20.961020,92.641037,Aye Yar Cha,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-28,Pein Hne Gyi,Mok Para,ပိန္နဲကြီး,21.014601,92.634727,Aye Yar Cha,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-29,Tha Ra Zaing,Mok Para,သရဇိုင်,21.190180,92.546623,Aye Yar Cha,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-30,Ah Htet Bo Ka Lay,Orar Bogli,အထက်ဘိုကလေး,21.257690,92.404800,Ba Da Kar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-31,Auk Bo Ka Lay,Lamer Bogoli,အောက်ဘိုကလေး,21.244440,92.401970,Ba Da Kar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-32,Ba Da Kar,Ba ta ka,ဘဒကား,21.192080,92.416763,Ba Da Kar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-33,Kyaung Zar Hpyu,Geyranza,ကြောင်ဇာဖြူ,21.233280,92.403717,Ba Da Kar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-34,Kyee Hnoke Thee,Kee Nok thi,ကျီးနှုတ်သီး,21.252129,92.428871,Ba Da Kar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-35,Nga/Myin Baw Kha Mway,Nga morong (kui),င/မြင်းဘော်ခမွေး,21.213770,92.428467,Ba Da Kar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-36,Nga/Myin Baw Ku Lar,Nga morong (Musul Para),င/မြင်းဘော်ကုလား,21.203751,92.417641,Ba Da Kar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-37,Pan Zi,Pan Zi,ပန်ဇီ,21.223310,92.409492,Ba Da Kar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-38,Sin Shey Myo,Morong Fara,ဆင်ရှည်မြို့,21.263720,92.406662,Ba Da Kar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-39,Ba Da Nar,Mog Ba Da Na,ဘဒနာ,20.992390,92.457657,Ba Da Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
+",အလယ်ချောင်း,20.825701,92.542686,Ah Lel Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010042,198334,Ah Lel Chaung,Ah Lel Chaung,active,active,exact
+5,Let Thar,Azoli para,လက်သာ,20.818911,92.541359,Ah Lel Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010042,198335,Let Thar,Ah Lel Chaung,active,active,exact
+6,Ah Twin Hnget Thay,Bor para,အတွင်းငှက်သေ,20.819920,92.589729,Ah Twin Hnget Thay,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010046,198349,Ah Twin Hnget Thay,Ah Twin Hnget Thay,active,active,exact
+7,Hnget Thay,Nathar para,ငှက်သေ,20.809090,92.583488,Ah Twin Hnget Thay,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010046,198352,Hnget Thay,Ah Twin Hnget Thay,active,active,exact
+8,Htan Shauk Khan,Hoyasere,ထန်းရှောက်ခံ,20.809010,92.588951,Ah Twin Hnget Thay,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010046,198350,Htan Shauk Khan,Ah Twin Hnget Thay,active,active,exact
+9,Kyauk Seik,shil gada,ကျောက်ဆိပ်,20.808950,92.563133,Ah Twin Hnget Thay,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010046,198354,Kyauk Seik,Ah Twin Hnget Thay,active,active,exact
+10,Myaw Taung,Khairmura para,မျောတောင်,20.809931,92.572708,Ah Twin Hnget Thay,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010046,198355,Myaw Taung,Ah Twin Hnget Thay,active,active,exact
+11,Pyar Pin Yin,Saytur para,ပြာပင်ရင်း,20.824471,92.581543,Ah Twin Hnget Thay,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010046,198351,Pyar Pin Yin,Ah Twin Hnget Thay,active,active,exact
+12,Thein Taung,Sindong borpara,သိမ်တောင်,20.800699,92.569794,Ah Twin Hnget Thay,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010046,198353,Thein Taung,Ah Twin Hnget Thay,active,active,exact
+13,Aw Ra Ma,Mok Para,သြရမ,20.977070,92.663780,Aw Ra Ma (a) Yee Chaung Pyin Hla,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010027,198264,Aw Ra Ma,Aw Ra Ma (a) Yee Chaung Pyin Hla,active,active,exact
+14,Htu Myaung Lay,Mok Para,ထူးမြောင်းလေး,20.962879,92.670326,Aw Ra Ma (a) Yee Chaung Pyin Hla,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010027,198269,Htu Myaung Lay,Aw Ra Ma (a) Yee Chaung Pyin Hla,active,active,exact
+15,Khar Lar U,Mok Para,ခါလာဦး,20.941019,92.677467,Aw Ra Ma (a) Yee Chaung Pyin Hla,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010027,198272,Khar Lar U,Aw Ra Ma (a) Yee Chaung Pyin Hla,active,active,exact
+16,Min Kaing,Mok Para,မင်းကိုင်း,20.948231,92.673279,Aw Ra Ma (a) Yee Chaung Pyin Hla,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010027,198268,Min Kaing,Aw Ra Ma (a) Yee Chaung Pyin Hla,active,active,exact
+17,Nat Seik,Mok Para,နတ်ဆိပ်,20.996559,92.665092,Aw Ra Ma (a) Yee Chaung Pyin Hla,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010027,198275,Nat Seik,Aw Ra Ma (a) Yee Chaung Pyin Hla,active,active,exact
+18,Nga Tin Tein,Mok Para,ငတင်းတိမ်,21.000219,92.629707,Aw Ra Ma (a) Yee Chaung Pyin Hla,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010027,198265,Nga Tin Tein,Aw Ra Ma (a) Yee Chaung Pyin Hla,active,active,exact
+19,Pein Hne Chaung,Mok Para,ပိန္နဲချောင်း,21.032499,92.656143,Aw Ra Ma (a) Yee Chaung Pyin Hla,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010027,198266,Pein Hne Chaung,Aw Ra Ma (a) Yee Chaung Pyin Hla,active,active,exact
+20,Taung Chaung Gyi,Mok Para,တောင်ချောင်ကြီး,20.932140,92.667793,Aw Ra Ma (a) Yee Chaung Pyin Hla,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010027,198274,Taung Chaung Gyi,Aw Ra Ma (a) Yee Chaung Pyin Hla,active,active,exact
+21,Taung Chay,Mok Para,သောင်ချေ,21.007830,92.658340,Aw Ra Ma (a) Yee Chaung Pyin Hla,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010027,198273,Taung Chay,Aw Ra Ma (a) Yee Chaung Pyin Hla,active,active,exact
+22,Tha Lu Pyar,Mok Para,သလူပြား,20.919621,92.683983,Aw Ra Ma (a) Yee Chaung Pyin Hla,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010027,198271,Tha Lu Pyar,Aw Ra Ma (a) Yee Chaung Pyin Hla,active,active,exact
+23,Aye Yar Cha,Mok Para,ဧရာသျှ,20.987829,92.624313,Aye Yar Cha,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010028,198276,Aye Yar Cha,Aye Yar Cha,active,active,exact
+24,Chan Thar,Mok Para,ချမ်းသာ,20.943939,92.620819,Aye Yar Cha,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010028,198284,Chan Thar,Aye Yar Cha,active,active,exact
+25,Dar Sauk Paing,Mok Para,ဒါးဆောက်ပိုင်,20.952579,92.613243,Aye Yar Cha,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010028,198282,Dar Sauk Paing,Aye Yar Cha,active,active,exact
+26,Ma Yee Mee,Mok Para,မရီးမီး,20.946581,92.644959,Aye Yar Cha,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010028,198283,Ma Yee Mee,Aye Yar Cha,active,active,exact
+27,Maung Chaung,Mok Para,မောင်ချောင်း,20.961020,92.641037,Aye Yar Cha,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010028,198280,Maung Chaung,Aye Yar Cha,active,active,exact
+28,Pein Hne Gyi,Mok Para,ပိန္နဲကြီး,21.014601,92.634727,Aye Yar Cha,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010028,198285,Pein Hne Gyi,Aye Yar Cha,active,active,exact
+29,Tha Ra Zaing,Mok Para,သရဇိုင်,21.190180,92.546623,Aye Yar Cha,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010028,198281,Tha Ra Zaing,Aye Yar Cha,active,active,exact
+30,Ah Htet Bo Ka Lay,Orar Bogli,အထက်ဘိုကလေး,21.257690,92.404800,Ba Da Kar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010001,198127,Ah Htet Bo Ka Lay,Ba Da Kar,active,active,exact
+31,Auk Bo Ka Lay,Lamer Bogoli,အောက်ဘိုကလေး,21.244440,92.401970,Ba Da Kar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010001,198128,Auk Bo Ka Lay,Ba Da Kar,active,active,exact
+32,Ba Da Kar,Ba ta ka,ဘဒကား,21.192080,92.416763,Ba Da Kar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010001,198124,Ba Da Kar,Ba Da Kar,active,active,exact
+33,Kyaung Zar Hpyu,Geyranza,ကြောင်ဇာဖြူ,21.233280,92.403717,Ba Da Kar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010001,198126,Kyaung Zar Hpyu,Ba Da Kar,active,active,exact
+34,Kyee Hnoke Thee,Kee Nok thi,ကျီးနှုတ်သီး,21.252129,92.428871,Ba Da Kar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010001,198129,Kyee Hnoke Thee,Ba Da Kar,active,active,exact
+35,Nga/Myin Baw Kha Mway,Nga morong (kui),င/မြင်းဘော်ခမွေး,21.213770,92.428467,Ba Da Kar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010001,198131,Nga/Myin Baw Kha Mway,Ba Da Kar,active,active,exact
+36,Nga/Myin Baw Ku Lar,Nga morong (Musul Para),င/မြင်းဘော်ကုလား,21.203751,92.417641,Ba Da Kar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010001,198130,Nga/Myin Baw Ku Lar,Ba Da Kar,active,active,exact
+37,Pan Zi,Pan Zi,ပန်ဇီ,21.223310,92.409492,Ba Da Kar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010001,198125,Pan Zi,Ba Da Kar,active,active,exact
+38,Sin Shey Myo,Morong Fara,ဆင်ရှည်မြို့,21.263720,92.406662,Ba Da Kar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010001,198132,Sin Shey Myo,Ba Da Kar,active,active,exact
+39,Ba Da Nar,Mog Ba Da Na,ဘဒနာ,20.992390,92.457657,Ba Da Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010008,198160,Ba Da Nar,Ba Da Nar,active,active,exact
 40,Pyin Khaung,"frin Kong
-",ပြင်ခေါင်,21.011421,92.453995,Ba Da Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-41,Yin Baung,Yang bong,ယင်းဘောင်,20.976761,92.461342,Ba Da Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-42,Ywar Thar Yar,Ruwa Thaya ,ရွာသာယာ,20.998989,92.463257,Ba Da Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-43,Ah Lel (Ba Gon Nar),Gunna Para,အလယ် (ဘဂုံးနား),20.828760,92.537697,Ba Gone Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-44,Kan Gyi Pyin,Faskuri bill,ကန်ကြီးပြင်,20.856091,92.526939,Ba Gone Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-45,Kyauk Tan,Murong Para,ကျောက်တန်း,20.836321,92.534103,Ba Gone Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-46,Myauk (Ba Gon Nar),Uttoror Bagunna,မြောက် (ဘဂုံးနား),20.844419,92.531754,Ba Gone Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-47,Myaung Nar,Mroungnna,မြောင်းနား,20.835091,92.533157,Ba Gone Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-48,Taung (Ba Gon Nar),Doyennor Bagunna,တောင် (ဘဂုံးနား),20.840879,92.519913,Ba Gone Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-49,Ywar Thit,Noya Para,ရွာသစ်,20.839260,92.534592,Ba Gone Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-50,Chin Tha Mar,Hansar Para,ခြင်းသမား,20.944450,92.532150,Chin Tha Mar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-51,Hpaung Taw Pyin,Fundu Warang,ဖောင်တောင်ပြင်,20.955700,92.524277,Chin Tha Mar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-52,Maung Nu,Monu Para,မောင်နူ,20.950781,92.530380,Chin Tha Mar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-53,Pale Taung,Mok Bill,ပုလဲတောင်,20.926781,92.539917,Chin Tha Mar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-54,Da Pyu Chaung,Dabori Young,ဒပြုချောင်း,20.864590,92.575378,Da Pyu Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-55,Inn Gyin Myaing (NaTaLa),Natala,အင်ကြင်းမြိုင် (နတလ),20.853455,92.568794,Da Pyu Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-56,Dar Paing Sa Yar,Doyin Sara,ဒါးပိုင်ဆရာ,20.936350,92.525757,Dar Paing Sa Yar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-57,Gaung Ni,Gonna Para,ဂေါင်နီ,20.931749,92.533234,Dar Paing Sa Yar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-58,Myit Nar,Hadur Fara,မြစ်နား,20.939980,92.523872,Dar Paing Sa Yar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-59,Saint Aung,Sior Para,စိုင့်အောင်,20.933201,92.524353,Dar Paing Sa Yar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-60,Zar Ti Pyin,Zadiparang,ဇာတီပြင်,20.947041,92.519661,Dar Paing Sa Yar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-61,Baw Li,Boli para,ဘော်လီ,20.649321,92.608330,Du Oe Thei Ma,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-62,Du Oe Thei Ma,Moyi Dong,ဒုအိုးသည်မ,20.642969,92.605667,Du Oe Thei Ma,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-63,Ngwe Taung,Moyi dong (Uttor kul,ငွေတောင်,20.651159,92.605713,Du Oe Thei Ma,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-64,Kyein Taung,Mok,ကြိမ်တောင်,20.671101,92.628616,Du Pyin Shey,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-65,Goke Pi,Guffi,ဂုပ်ပီ,21.086309,92.448624,Goke Pi,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-66,Oe Hpyu (Thet + Myo),Obbru (Sak+Murung),အိုဖြူ (သက်+မြို),21.122511,92.443001,Goke Pi,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-67,Oh Byu,Obbru,အိုဗြူ,21.115231,92.445343,Goke Pi,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-68,Pe Tha Htu,Fasudu,ပဲသထူ,21.125999,92.434982,Goke Pi,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-69,Sa Hone,Sa Oor Sor,စဟုန်း,21.094891,92.448692,Goke Pi,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-70,Sa Hone Kha Mway,Kui Fara,စဟုန်းခမွေး,21.114519,92.467773,Goke Pi,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-71,Gu Dar Pyin,Gudam Para,ဂူဒါပြင်,20.753370,92.545189,Gu Dar Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-72,Kyauk Sar Taing (Su See),Kyauk Sadine (muk),ကျောက်စာတိုင် (စုစည်း),20.749430,92.528648,Gu Dar Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-73,Rakhine Ywar,Mok Para,ရခိုင်ရွာ,20.738609,92.551582,Gu Dar Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-74,Taung,Mura Para,တောင်,20.749170,92.546288,Gu Dar Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-75,Tha Yet Taung,Dumma Para,သရက်တောင်,20.761530,92.544083,Gu Dar Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-76,Aung Pa,Inn Chaung (Doyin Kul),အောင်ပ,20.686819,92.578560,Hpa Yar Pyin Aung Pa,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-77,Hpa Yar Pyin,Inn Chaung (Uttor Kul),ဘုရားပြင်,20.692511,92.579689,Hpa Yar Pyin Aung Pa,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-78,Kant Kaw Myaing (NaTaLa),Na Ta La Para,ကံ့ကော်မြိုင် (နတလ),20.685690,92.572861,Hpa Yar Pyin Aung Pa,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-79,Kuwar Para,,ကူးဝါးပရ,20.726620,92.595009,Hpa Yar Pyin Thein Tan,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-80,Pyin Hla (Ywa Haung),Farulla Furanfara,ပြင်လှ,20.733280,92.601410,Hpa Yar Pyin Thein Tan,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-81,Thein Tan (Ku Lar),Sindaung Musulman Fara,သိန်းတန် (ကုလား),20.741249,92.610519,Hpa Yar Pyin Thein Tan,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-82,Thein Tan (Rakhine),Sindaung Mukfara,သိန်းတန် (ရခိုင်),20.739840,92.613457,Hpa Yar Pyin Thein Tan,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-83,Ywa Thit (Esmile Para),Noyapara(Esmile Para),ရွာသစ်(အီစမိုင်းပရ),20.730490,92.602043,Hpa Yar Pyin Thein Tan,Buthidaung,Maungdaw,Buthidaung Village,#097138,
+",ပြင်ခေါင်,21.011421,92.453995,Ba Da Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010008,198162,Pyin Khaung,Ba Da Nar,active,active,exact
+41,Yin Baung,Yang bong,ယင်းဘောင်,20.976761,92.461342,Ba Da Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010008,198161,Yin Baung,Ba Da Nar,active,active,exact
+42,Ywar Thar Yar,Ruwa Thaya ,ရွာသာယာ,20.998989,92.463257,Ba Da Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010008,198163,Ywar Thar Yar,Ba Da Nar,active,active,exact
+43,Ah Lel (Ba Gon Nar),Gunna Para,အလယ် (ဘဂုံးနား),20.828760,92.537697,Ba Gone Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010038,198320,Ah Lel (Ba Gon Nar),Ba Gone Nar,active,active,exact
+44,Kan Gyi Pyin,Faskuri bill,ကန်ကြီးပြင်,20.856091,92.526939,Ba Gone Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010038,198323,Kan Gyi Pyin,Ba Gone Nar,active,active,exact
+45,Kyauk Tan,Murong Para,ကျောက်တန်း,20.836321,92.534103,Ba Gone Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010038,198324,Kyauk Tan,Ba Gone Nar,active,active,exact
+46,Myauk (Ba Gon Nar),Uttoror Bagunna,မြောက် (ဘဂုံးနား),20.844419,92.531754,Ba Gone Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010038,198322,Myauk (Ba Gon Nar),Ba Gone Nar,active,active,exact
+47,Myaung Nar,Mroungnna,မြောင်းနား,20.835091,92.533157,Ba Gone Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010038,198321,Myaung Nar,Ba Gone Nar,active,active,exact
+48,Taung (Ba Gon Nar),Doyennor Bagunna,တောင် (ဘဂုံးနား),20.840879,92.519913,Ba Gone Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010038,198319,Taung (Ba Gon Nar),Ba Gone Nar,active,active,exact
+49,Ywar Thit,Noya Para,ရွာသစ်,20.839260,92.534592,Ba Gone Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010038,198325,Ywar Thit,Ba Gone Nar,active,active,exact
+50,Chin Tha Mar,Hansar Para,ခြင်းသမား,20.944450,92.532150,Chin Tha Mar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010021,198231,Chin Tha Mar,Chin Tha Mar,active,active,exact
+51,Hpaung Taw Pyin,Fundu Warang,ဖောင်တောင်ပြင်,20.955700,92.524277,Chin Tha Mar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010021,198232,Hpaung Taw Pyin,Chin Tha Mar,active,active,exact
+52,Maung Nu,Monu Para,မောင်နူ,20.950781,92.530380,Chin Tha Mar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010021,198233,Maung Nu,Chin Tha Mar,active,active,exact
+53,Pale Taung,Mok Bill,ပုလဲတောင်,20.926781,92.539917,Chin Tha Mar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010021,198234,Pale Taung,Chin Tha Mar,active,active,exact
+54,Da Pyu Chaung,Dabori Young,ဒပြုချောင်း,20.864590,92.575378,Da Pyu Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010030,198290,Da Pyu Chaung,Da Pyu Chaung,active,active,exact
+55,Inn Gyin Myaing (NaTaLa),Natala,အင်ကြင်းမြိုင် (နတလ),20.853455,92.568794,Da Pyu Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010030,220751,In Gyin Myaing (NaTaLa),Da Pyu Chaung,active,active,strong
+56,Dar Paing Sa Yar,Doyin Sara,ဒါးပိုင်ဆရာ,20.936350,92.525757,Dar Paing Sa Yar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010019,198223,Dar Paing Sa Yar,Dar Paing Sa Yar,active,active,exact
+57,Gaung Ni,Gonna Para,ဂေါင်နီ,20.931749,92.533234,Dar Paing Sa Yar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010019,198225,Gaung Ni,Dar Paing Sa Yar,active,active,exact
+58,Myit Nar,Hadur Fara,မြစ်နား,20.939980,92.523872,Dar Paing Sa Yar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010019,198227,Myit Nar,Dar Paing Sa Yar,active,active,exact
+59,Saint Aung,Sior Para,စိုင့်အောင်,20.933201,92.524353,Dar Paing Sa Yar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010019,198224,Saint Aung,Dar Paing Sa Yar,active,active,exact
+60,Zar Ti Pyin,Zadiparang,ဇာတီပြင်,20.947041,92.519661,Dar Paing Sa Yar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010019,198226,Zar Ti Pyin,Dar Paing Sa Yar,active,active,exact
+61,Baw Li,Boli para,ဘော်လီ,20.649321,92.608330,Du Oe Thei Ma,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010076,217887,Baw Li,Du Oe Thei Ma,active,active,exact
+62,Du Oe Thei Ma,Moyi Dong,ဒုအိုးသည်မ,20.642969,92.605667,Du Oe Thei Ma,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010076,198459,Du Oe Thei Ma,Du Oe Thei Ma,active,active,exact
+63,Ngwe Taung,Moyi dong (Uttor kul,ငွေတောင်,20.651159,92.605713,Du Oe Thei Ma,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010076,198460,Ngwe Taung,Du Oe Thei Ma,active,active,exact
+64,Kyein Taung,Mok,ကြိမ်တောင်,20.671101,92.628616,Du Pyin Shey,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010073,198453,Kyein Taung,Du Pyin Shey,active,active,exact
+65,Goke Pi,Guffi,ဂုပ်ပီ,21.086309,92.448624,Goke Pi,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010004,198140,Goke Pi,Goke Pi,active,active,exact
+66,Oe Hpyu (Thet + Myo),Obbru (Sak+Murung),အိုဖြူ (သက်+မြို),21.122511,92.443001,Goke Pi,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010004,198145,Oe Hpyu (Thet + Myo),Goke Pi,active,active,exact
+67,Oh Byu,Obbru,အိုဗြူ,21.115231,92.445343,Goke Pi,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010004,198142,Oh Byu,Goke Pi,active,active,exact
+68,Pe Tha Htu,Fasudu,ပဲသထူ,21.125999,92.434982,Goke Pi,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010004,198143,Pe Tha Htu,Goke Pi,active,active,exact
+69,Sa Hone,Sa Oor Sor,စဟုန်း,21.094891,92.448692,Goke Pi,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010004,198141,Sa Hone,Goke Pi,active,active,exact
+70,Sa Hone Kha Mway,Kui Fara,စဟုန်းခမွေး,21.114519,92.467773,Goke Pi,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010004,198144,Sa Hone Kha Mway,Goke Pi,active,active,exact
+71,Gu Dar Pyin,Gudam Para,ဂူဒါပြင်,20.753370,92.545189,Gu Dar Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010055,198390,Gu Dar Pyin,Gu Dar Pyin,active,active,exact
+72,Kyauk Sar Taing (Su See),Kyauk Sadine (muk),ကျောက်စာတိုင် (စုစည်း),20.749430,92.528648,Gu Dar Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010055,217879,Kyauk Sar Taing (Su See),Gu Dar Pyin,active,active,exact
+73,Rakhine Ywar,Mok Para,ရခိုင်ရွာ,20.738609,92.551582,Gu Dar Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010055,217880,Rakhine Ywar,Gu Dar Pyin,active,active,exact
+74,Taung,Mura Para,တောင်,20.749170,92.546288,Gu Dar Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010055,198392,Taung,Gu Dar Pyin,active,active,exact
+75,Tha Yet Taung,Dumma Para,သရက်တောင်,20.761530,92.544083,Gu Dar Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010055,198391,Tha Yet Taung,Gu Dar Pyin,active,active,exact
+76,Aung Pa,Inn Chaung (Doyin Kul),အောင်ပ,20.686819,92.578560,Hpa Yar Pyin Aung Pa,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010069,198443,Aung Pa,Hpa Yar Pyin Aung Pa,active,active,exact
+77,Hpa Yar Pyin,Inn Chaung (Uttor Kul),ဘုရားပြင်,20.692511,92.579689,Hpa Yar Pyin Aung Pa,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010069,198442,Hpa Yar Pyin,Hpa Yar Pyin Aung Pa,active,active,exact
+78,Kant Kaw Myaing (NaTaLa),Na Ta La Para,ကံ့ကော်မြိုင် (နတလ),20.685690,92.572861,Hpa Yar Pyin Aung Pa,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010069,220754,Kant Kaw Myaing (NaTaLa),Hpa Yar Pyin Aung Pa,active,active,exact
+79,Kuwar Para,,ကူးဝါးပရ,20.726620,92.595009,Hpa Yar Pyin Thein Tan,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010058,217881,Kuwar Para,Hpa Yar Pyin Thein Tan,active,active,exact
+80,Pyin Hla (Ywa Haung),Farulla Furanfara,ပြင်လှ,20.733280,92.601410,Hpa Yar Pyin Thein Tan,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010058,198400,Pyin Hla (Ywar Haung),Hpa Yar Pyin Thein Tan,active,active,strong
+81,Thein Tan (Ku Lar),Sindaung Musulman Fara,သိန်းတန် (ကုလား),20.741249,92.610519,Hpa Yar Pyin Thein Tan,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010058,198398,Thein Tan (Ku Lar),Hpa Yar Pyin Thein Tan,active,active,exact
+82,Thein Tan (Rakhine),Sindaung Mukfara,သိန်းတန် (ရခိုင်),20.739840,92.613457,Hpa Yar Pyin Thein Tan,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010058,198399,Thein Tan (Rakhine),Hpa Yar Pyin Thein Tan,active,active,exact
+83,Ywa Thit (Esmile Para),Noyapara(Esmile Para),ရွာသစ်(အီစမိုင်းပရ),20.730490,92.602043,Hpa Yar Pyin Thein Tan,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010058,217882,Ywa Thit (Esmile Para),Hpa Yar Pyin Thein Tan,active,active,exact
 84,Doe Tan (1),"Ludine Fara
-",ဒိုးတန်း (၁),20.702450,92.570740,Hpa Yon Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-85,Doe Tan (2),Ludine Fara,ဒိုးတန်း (၂),20.701679,92.575974,Hpa Yon Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-86,Hpa Yon Chaung (Daing Net),Powrun Chaung (Sakma Para),ဖရုံချောင်း (ဒိုင်းနက်),20.717770,92.568077,Hpa Yon Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-87,Hpa Yon Chaung (Ku Lar),Powrun Chaung (Musulman Para),ဖရုံချောင်း (ကုလား),20.712021,92.571136,Hpa Yon Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-88,Kywe Tet Pyin,Lay shantwe para,ကျွဲတက်ပြင်,20.709089,92.565804,Hpa Yon Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-89,Pyaing Taung,Khair mura para,ပြိုင်းတောင်,20.724211,92.560593,Hpa Yon Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-90,Hpoe Khaung Chaung,Fuhom,ဖိုးခေါင်ချောင်း,20.739630,92.564239,Hpoe Khaung Chaung (a) Kan Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-91,Kan Da (Kan Da Para),Kine Da Para,ကန္ဒ,20.749161,92.568802,Hpoe Khaung Chaung (a) Kan Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-92,Kan Pyin,Hime parang,ကံပြင်,20.756790,92.558327,Hpoe Khaung Chaung (a) Kan Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-93,Hpon Nyo Leik,Phonie Mali,ဖုံညိုလိပ်,20.793779,92.597961,Hpon Nyo Leik,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-94,Hpon Nyo Leik (Rakhine + Ku Lar),Muslman + Mok,ဖုံညိုလိပ် (ရခိုင်+ကုလား),20.795980,92.600983,Hpon Nyo Leik,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-95,Kan Du,Hineda Para,ကန်ဒူ,20.782419,92.598442,Hpon Nyo Leik,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-96,Paik Thay Ywar,Zailla Para,ပိုက်သေရွာ,20.793249,92.592628,Hpon Nyo Leik,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-97,Ba Da Nar Ku Lar,Badana Borfara,ဘဒနာကုလား,20.961651,92.502937,Inn Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-98,Ba Da Nar Ywar Thit,Noya Para,ဘဒနာရွာသစ်,20.973669,92.502617,Inn Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-99,Inn Chaung Daing Net,Ine Komg (Muk Para),အင်းချောင်းဒိုင်းနက်,20.977461,92.484467,Inn Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-100,Inn Chaung Zay,Bazar Para,အင်းချောင်းဈေး,20.974871,92.483711,Inn Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-101,Zay Teit Kaung,Oreya Para +Zailla Para,ဈေးတဲ့ကောင်,20.991100,92.493858,Inn Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-102,Ka Kyet Bet,Ka Kyet Bet,ကကျက်ဘက်,20.843710,92.537743,Ka Kyet Bet,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-103,Ba Yaung Baw Li Para,Ba Yaung Baw Li Para,ဘရောင်ဘောလိပရ,20.863630,92.523247,Ka Kyet Bet Kan Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-104,Kan Gyi Pyin,Faskuri bill,ကံကြီးပြင်,20.859030,92.526901,Ka Kyet Bet Kan Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-105,Mun Shi Ywar,Mun Shi Para,မွန်ရှီရွာ,20.857611,92.527283,Ka Kyet Bet Kan Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-106,Oe Thei,Monubill,အိုးသည်,20.849039,92.537682,Ka Kyet Bet Kan Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-107,Tat Yar (Ku Lar),Jobbor para (Muslman para),တပ်ရာ (ကုလား),20.860420,92.534477,Ka Kyet Bet Kan Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-108,Tat Yar (Rakhine),Mok Para,တပ်ရာ (ရခိုင်),20.862700,92.534729,Ka Kyet Bet Kan Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-109,Zay Di Taung,Mok Pia,စေတီတောင်,20.860849,92.539391,Ka Kyet Bet Kan Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-110,Kyauk Pyin Chaung,Mok Para,ကျောက်ပြင်ချောင်း,20.859480,92.626503,Ka Nyin Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-111,Min Hla Kaing,Mok Para,မင်းလှကိုင်း,20.838481,92.612666,Ka Nyin Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-112,Baw Di Kaing,,ဗောဓိကိုင်း,21.050426,92.586685,Kha Maung Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-113,Ku Lar Chaung,,ကုလားချောင်း,21.025860,92.588051,Kha Maung Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-114,Laung Chaung,,လောင်းချောင်း,21.169161,92.569077,Kha Maung Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-115,Nan Tha Yway,,နမ်းသရွေး,21.120193,92.598709,Kha Maung Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-116,Sin Hpyu Taung,Sna Pro Daung,ဆင်ဖြူတောင်,21.092955,92.571236,Kha Maung Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-117,Ahr Kar Pyan Kha Mway,Mok Para,အာကာပျံခမွေ,20.798450,92.506042,Kin Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-118,Kin Chaung,Mok Para,ကင်းချောင်း,20.805580,92.549843,Kin Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-119,Let Pan Kaing,Mok Para,လက်ပန်ကိုင်း,20.795839,92.522858,Kin Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-120,Pyin Shey,Mok Para,ပြင်ရှည်,20.809313,92.511681,Kin Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-121,Tha Bauk Chaung,Mok Para,သဘောက်ချောင်း,20.798540,92.552048,Kin Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-122,Bar Ri Zar,Bariza Para,ဘာရီဇာ,20.813841,92.599953,Kin Taung (a) Kyar Nyo Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-123,Done Thein,mok para,ဒုံးသိမ်,20.818291,92.594978,Kin Taung (a) Kyar Nyo Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-124,Kin Taung (Kyar Nyo Pyin),Hang Daung,ကင်းတောင် (ခ) ကြာညိုပြင်,20.821480,92.603950,Kin Taung (a) Kyar Nyo Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-125,Ah Nauk,Fosim Para,အနောက်,20.862150,92.549179,Kun Taing (a) Zee Pin Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-126,Ah Shey,Fuk Para,အရှေ့,20.862770,92.558723,Kun Taing (a) Zee Pin Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-127,Kun Taing Ywar Gyi,Bor para,ကွန်တိုင်ရွာကြီး,20.861610,92.552811,Kun Taing (a) Zee Pin Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-128,Nan Yar Kone,sangri bill,နန်းရာကုန်း,20.875151,92.546303,Kun Taing (a) Zee Pin Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-129,Pale Taung,Monnar par,ပုလဲတောင်,20.892710,92.562187,Kun Taing (a) Zee Pin Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-130,War Shee Lar (War Shee Lar Para),Washilla Para,ဝါးရှီးလာ,20.888821,92.564323,Kun Taing (a) Zee Pin Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-131,Kyauk Hpyu Taung,Kak Pru Taung,ကျောက်ဖြူတောင်,20.888069,92.471703,Kyauk Hpyu Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-132,Thar Yar Kone (a) Htein Taw,,သာယာကုန်း (ခ) ထိန်တော,20.865952,92.471756,Kyauk Hpyu Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-133,Gone Nar,Danu meya Para,ဂုံးနား,20.727690,92.577766,Kyauk Hpyu Thar Thay Kan,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-134,Thay Kan (Ku Lar),Thagan para,သေကံ (ကုလား),20.716640,92.596992,Kyauk Hpyu Thar Thay Kan,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-135,Thay Kan (Rakhine),Mok,သေကံ (ရခိုင်),20.719021,92.594078,Kyauk Hpyu Thar Thay Kan,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-136,Pyin Shey (Rakhine),Mok,ပြင်ရှည်ရခိုင်,20.914989,92.563309,Kyauk Taung (a) Pyin Shey,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-137,Kyauk Yan (Rakhine),Mok para,ကျောက်ရန် (ရခိုင်),20.769779,92.604240,Kyauk Yan,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-138,Na Nwin Ku,Neunda Para,နနွင်းကူး,20.774500,92.600487,Kyauk Yan,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-139,Taung,Gudar para,တောင်,20.790670,92.621941,Kyauk Yan,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-140,Teik Tu Pauk,Tituk para,တိတ်တူးပေါက်,20.775841,92.613083,Kyauk Yan,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-141,Kyauk Twe Chaung,,ကျောက်တွဲချောင်း,21.151840,92.419350,Kyaung Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-142,Kyaung Taung,Kayng dong,ကျောင်းတောင်,21.151251,92.429176,Kyaung Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-143,Kyaw U,Murung Fara,ကျော်ဦး,21.156321,92.424133,Kyaung Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-144,Pu Zun Chaung,Buzair Chaung,ပုဇွန်ချောင်း,21.180090,92.418114,Kyaung Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-145,Sar Kaing,Shiddar Fara,စာကိုင်း,21.164671,92.418938,Kyaung Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-146,Thea Ni Chaung,Seyni Fara,သဲနီချောင်း,21.161261,92.411034,Kyaung Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-147,Kyauk See,Kee Yo See Fara,ကျောက်ဆီး,21.139549,92.433777,Kyun Pauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-148,Kyun Pauk Ku Lar,Keyung Bo,ကျွန်းပေါက်ကုလား,21.098579,92.445549,Kyun Pauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-149,Kyway Chaung Kha Mway,kori Chaung,ကြွေချောင်းခမွေး,21.120510,92.423332,Kyun Pauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-150,Kyway Chaung Kha Mway (Lower),Kori Chaung( Lamer Fara),ကြွေချောင်းခမွေး (အောက်),21.112749,92.429733,Kyun Pauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-151,Kyway Chaung Ku Lar,Kori Chaung(muslim),ကြွေချောင်းကုလား,21.106140,92.439056,Kyun Pauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-152,Kyway Chaung Rakhine,Kori Chaung( Mok),ကြွေချောင်းရခိုင်,21.105761,92.439163,Kyun Pauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-153,Pe Lun Kha Mway,Ayassor(Kamway),ပဲလွန်းခမွေး,21.121250,92.438713,Kyun Pauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-154,Pe Tha Du (West),Fesudu(fosim),ပဲသဒူ (အနောက်),21.161280,92.431557,Kyun Pauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-155,Doe Wai,,ဒိုးဝေ,20.650150,92.632530,Kywe Yine Khat,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-156,Man Aung,,မန်အောင်,20.671690,92.634659,Kywe Yine Khat,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-157,Set Khaw,,စက်ခေါ်,20.643801,92.649017,Kywe Yine Khat,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-158,Thar Zi,,သာဇီ,20.668760,92.630081,Kywe Yine Khat,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-159,Kha Yu Chaung,Laung Chaung,ခရုချောင်း,20.936350,92.468246,Laung Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-160,Laung Chaung Daing Net,Laung Chaung,လောင်းချောင်းဒိုင်းနက်,20.945801,92.471672,Laung Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-161,Laung Chaung Ku Lar,Laung Chaung,လောင်းချောင်းကုလား,20.952780,92.469963,Laung Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
+",ဒိုးတန်း (၁),20.702450,92.570740,Hpa Yon Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010068,198437,Doe Tan (1),Hpa Yon Chaung,active,active,exact
+85,Doe Tan (2),Ludine Fara,ဒိုးတန်း (၂),20.701679,92.575974,Hpa Yon Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010068,198440,Doe Tan (2),Hpa Yon Chaung,active,active,exact
+86,Hpa Yon Chaung (Daing Net),Powrun Chaung (Sakma Para),ဖရုံချောင်း (ဒိုင်းနက်),20.717770,92.568077,Hpa Yon Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010068,198436,Hpa Yon Chaung (Daing Net),Hpa Yon Chaung,active,active,exact
+87,Hpa Yon Chaung (Ku Lar),Powrun Chaung (Musulman Para),ဖရုံချောင်း (ကုလား),20.712021,92.571136,Hpa Yon Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010068,198438,Hpa Yon Chaung (Ku Lar),Hpa Yon Chaung,active,active,exact
+88,Kywe Tet Pyin,Lay shantwe para,ကျွဲတက်ပြင်,20.709089,92.565804,Hpa Yon Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010068,198441,Kywe Tet Pyin,Hpa Yon Chaung,active,active,exact
+89,Pyaing Taung,Khair mura para,ပြိုင်းတောင်,20.724211,92.560593,Hpa Yon Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010068,198439,Pyaing Taung,Hpa Yon Chaung,active,active,exact
+90,Hpoe Khaung Chaung,Fuhom,ဖိုးခေါင်ချောင်း,20.739630,92.564239,Hpoe Khaung Chaung (a) Kan Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010056,198393,Hpoe Khaung Chaung,Hpoe Khaung Chaung (a) Kan Pyin,active,active,exact
+91,Kan Da (Kan Da Para),Kine Da Para,ကန္ဒ,20.749161,92.568802,Hpoe Khaung Chaung (a) Kan Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010056,198394,Kan Da (Kan Da Para),Hpoe Khaung Chaung (a) Kan Pyin,active,active,exact
+92,Kan Pyin,Hime parang,ကံပြင်,20.756790,92.558327,Hpoe Khaung Chaung (a) Kan Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010056,198395,Kan Pyin,Hpoe Khaung Chaung (a) Kan Pyin,active,active,exact
+93,Hpon Nyo Leik,Phonie Mali,ဖုံညိုလိပ်,20.793779,92.597961,Hpon Nyo Leik,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010051,198370,Hpon Nyo Leik,Hpon Nyo Leik,active,active,exact
+94,Hpon Nyo Leik (Rakhine + Ku Lar),Muslman + Mok,ဖုံညိုလိပ် (ရခိုင်+ကုလား),20.795980,92.600983,Hpon Nyo Leik,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010051,198372,Hpon Nyo Leik (Rakhine + Ku Lar),Hpon Nyo Leik,active,active,exact
+95,Kan Du,Hineda Para,ကန်ဒူ,20.782419,92.598442,Hpon Nyo Leik,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010051,198371,Kan Du,Hpon Nyo Leik,active,active,exact
+96,Paik Thay Ywar,Zailla Para,ပိုက်သေရွာ,20.793249,92.592628,Hpon Nyo Leik,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010051,217877,Paik Thay Ywar,Hpon Nyo Leik,active,active,exact
+97,Ba Da Nar Ku Lar,Badana Borfara,ဘဒနာကုလား,20.961651,92.502937,Inn Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010013,198185,Ba Da Nar Ku Lar,Inn Chaung,active,active,exact
+98,Ba Da Nar Ywar Thit,Noya Para,ဘဒနာရွာသစ်,20.973669,92.502617,Inn Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010013,198186,Ba Da Nar Ywar Thit,Inn Chaung,active,active,exact
+99,Inn Chaung Daing Net,Ine Komg (Muk Para),အင်းချောင်းဒိုင်းနက်,20.977461,92.484467,Inn Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010013,198183,Inn Chaung Daing Net,Inn Chaung,active,active,exact
+100,Inn Chaung Zay,Bazar Para,အင်းချောင်းဈေး,20.974871,92.483711,Inn Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010013,198187,Inn Chaung Zay,Inn Chaung,active,active,exact
+101,Zay Teit Kaung,Oreya Para +Zailla Para,ဈေးတဲ့ကောင်,20.991100,92.493858,Inn Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010013,198184,Zay Teit Kaung,Inn Chaung,active,active,exact
+102,Ka Kyet Bet,Ka Kyet Bet,ကကျက်ဘက်,20.843710,92.537743,Ka Kyet Bet,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010040,198331,Ka Kyet Bet,Ka Kyet Bet,active,active,exact
+103,Ba Yaung Baw Li Para,Ba Yaung Baw Li Para,ဘရောင်ဘောလိပရ,20.863630,92.523247,Ka Kyet Bet Kan Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010039,217874,Ba Yaung Baw Li Para,Ka Kyet Bet Kan Pyin,active,active,exact
+104,Kan Gyi Pyin,Faskuri bill,ကံကြီးပြင်,20.859030,92.526901,Ka Kyet Bet Kan Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010039,198328,Kan Gyi Pyin,Ka Kyet Bet Kan Pyin,active,active,exact
+105,Mun Shi Ywar,Mun Shi Para,မွန်ရှီရွာ,20.857611,92.527283,Ka Kyet Bet Kan Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010039,217875,Mun Shi Ywar,Ka Kyet Bet Kan Pyin,active,active,exact
+106,Oe Thei,Monubill,အိုးသည်,20.849039,92.537682,Ka Kyet Bet Kan Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010039,198327,Oe Thei,Ka Kyet Bet Kan Pyin,active,active,exact
+107,Tat Yar (Ku Lar),Jobbor para (Muslman para),တပ်ရာ (ကုလား),20.860420,92.534477,Ka Kyet Bet Kan Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010039,198330,Tat Yar (Ku Lar),Ka Kyet Bet Kan Pyin,active,active,exact
+108,Tat Yar (Rakhine),Mok Para,တပ်ရာ (ရခိုင်),20.862700,92.534729,Ka Kyet Bet Kan Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010039,198329,Tat Yar (Rakhine),Ka Kyet Bet Kan Pyin,active,active,exact
+109,Zay Di Taung,Mok Pia,စေတီတောင်,20.860849,92.539391,Ka Kyet Bet Kan Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010039,198326,Zay Di Taung,Ka Kyet Bet Kan Pyin,active,active,exact
+110,Kyauk Pyin Chaung,Mok Para,ကျောက်ပြင်ချောင်း,20.859480,92.626503,Ka Nyin Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010029,198288,Kyauk Pyin Chaung,Ka Nyin Chaung,inactive_removed_from_list,active,exact
+111,Min Hla Kaing,Mok Para,မင်းလှကိုင်း,20.838481,92.612666,Ka Nyin Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010029,198289,Min Hla Kaing,Ka Nyin Chaung,active,active,exact
+112,Baw Di Kaing,,ဗောဓိကိုင်း,21.050426,92.586685,Kha Maung Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010025,198250,Baw Di Kaing,Kha Maung Chaung,active,active,exact
+113,Ku Lar Chaung,,ကုလားချောင်း,21.025860,92.588051,Kha Maung Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010025,198259,Ku Lar Chaung,Kha Maung Chaung,active,active,exact
+114,Laung Chaung,,လောင်းချောင်း,21.169161,92.569077,Kha Maung Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010025,198249,Laung Chaung,Kha Maung Chaung,active,active,exact
+115,Nan Tha Yway,,နမ်းသရွေး,21.120193,92.598709,Kha Maung Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010025,198247,Nan Tha Yway,Kha Maung Chaung,active,active,exact
+116,Sin Hpyu Taung,Sna Pro Daung,ဆင်ဖြူတောင်,21.092955,92.571236,Kha Maung Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010025,198246,Sin Hpyu Taung,Kha Maung Chaung,active,active,exact
+117,Ahr Kar Pyan Kha Mway,Mok Para,အာကာပျံခမွေ,20.798450,92.506042,Kin Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010043,198339,Ahr Kar Pyan Kha Mway,Kin Chaung,active,active,exact
+118,Kin Chaung,Mok Para,ကင်းချောင်း,20.805580,92.549843,Kin Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010043,198336,Kin Chaung,Kin Chaung,active,active,exact
+119,Let Pan Kaing,Mok Para,လက်ပန်ကိုင်း,20.795839,92.522858,Kin Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010043,198338,Let Pan Kaing,Kin Chaung,active,active,exact
+120,Pyin Shey,Mok Para,ပြင်ရှည်,20.809313,92.511681,Kin Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010043,198340,Pyin Shey,Kin Chaung,active,active,exact
+121,Tha Bauk Chaung,Mok Para,သဘောက်ချောင်း,20.798540,92.552048,Kin Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010043,198337,Tha Bauk Chaung,Kin Chaung,active,active,exact
+122,Bar Ri Zar,Bariza Para,ဘာရီဇာ,20.813841,92.599953,Kin Taung (a) Kyar Nyo Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010047,198357,Bar Ri Zar,Kin Taung (a) Kyar Nyo Pyin,active,active,exact
+123,Done Thein,mok para,ဒုံးသိမ်,20.818291,92.594978,Kin Taung (a) Kyar Nyo Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010047,217876,Done Thein,Kin Taung (a) Kyar Nyo Pyin,active,active,exact
+124,Kin Taung (Kyar Nyo Pyin),Hang Daung,ကင်းတောင် (ခ) ကြာညိုပြင်,20.821480,92.603950,Kin Taung (a) Kyar Nyo Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010047,198356,Kin Taung (a) Kyar Nyo Pyin,Kin Taung (a) Kyar Nyo Pyin,active,active,strong
+125,Ah Nauk,Fosim Para,အနောက်,20.862150,92.549179,Kun Taing (a) Zee Pin Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010032,198295,Ah Nauk,Kun Taing (a) Zee Pin Taung,active,active,exact
+126,Ah Shey,Fuk Para,အရှေ့,20.862770,92.558723,Kun Taing (a) Zee Pin Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010032,198294,Ah Shey,Kun Taing (a) Zee Pin Taung,active,active,exact
+127,Kun Taing Ywar Gyi,Bor para,ကွန်တိုင်ရွာကြီး,20.861610,92.552811,Kun Taing (a) Zee Pin Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010032,198293,Kun Taing Ywar Gyi,Kun Taing (a) Zee Pin Taung,active,active,exact
+128,Nan Yar Kone,sangri bill,နန်းရာကုန်း,20.875151,92.546303,Kun Taing (a) Zee Pin Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010032,198296,Nan Yar Kone,Kun Taing (a) Zee Pin Taung,active,active,exact
+129,Pale Taung,Monnar par,ပုလဲတောင်,20.892710,92.562187,Kun Taing (a) Zee Pin Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010032,198297,Pale Taung,Kun Taing (a) Zee Pin Taung,active,active,exact
+130,War Shee Lar (War Shee Lar Para),Washilla Para,ဝါးရှီးလာ,20.888821,92.564323,Kun Taing (a) Zee Pin Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010032,198298,War Shee Lar (War Shee Lar Para),Kun Taing (a) Zee Pin Taung,active,active,exact
+131,Kyauk Hpyu Taung,Kak Pru Taung,ကျောက်ဖြူတောင်,20.888069,92.471703,Kyauk Hpyu Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010036,198314,Kyauk Hpyu Taung,Kyauk Hpyu Taung,active,active,exact
+132,Thar Yar Kone (a) Htein Taw,,သာယာကုန်း (ခ) ထိန်တော,20.865952,92.471756,Kyauk Hpyu Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010036,198315,Thar Yar Kone (a) Htein Taw,Kyauk Hpyu Taung,inactive_removed_from_list,active,exact
+133,Gone Nar,Danu meya Para,ဂုံးနား,20.727690,92.577766,Kyauk Hpyu Thar Thay Kan,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010067,198435,Gone Nar,Kyauk Hpyu Thar Thay Kan,active,active,exact
+134,Thay Kan (Ku Lar),Thagan para,သေကံ (ကုလား),20.716640,92.596992,Kyauk Hpyu Thar Thay Kan,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010067,198434,Thay Kan (Ku Lar),Kyauk Hpyu Thar Thay Kan,active,active,exact
+135,Thay Kan (Rakhine),Mok,သေကံ (ရခိုင်),20.719021,92.594078,Kyauk Hpyu Thar Thay Kan,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010067,198433,Thay Kan (Rakhine),Kyauk Hpyu Thar Thay Kan,active,active,exact
+136,Pyin Shey (Rakhine),Mok,ပြင်ရှည်ရခိုင်,20.914989,92.563309,Kyauk Taung (a) Pyin Shey,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010022,198235,Pyin Shey (Rakhine),Kyauk Taung (a) Pyin Shey,active,active,exact
+137,Kyauk Yan (Rakhine),Mok para,ကျောက်ရန် (ရခိုင်),20.769779,92.604240,Kyauk Yan,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010060,198404,Kyauk Yan (Rakhine),Kyauk Yan,active,active,exact
+138,Na Nwin Ku,Neunda Para,နနွင်းကူး,20.774500,92.600487,Kyauk Yan,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010060,198405,Na Nwin Ku,Kyauk Yan,active,active,exact
+139,Taung,Gudar para,တောင်,20.790670,92.621941,Kyauk Yan,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010060,198406,Taung,Kyauk Yan,active,active,exact
+140,Teik Tu Pauk,Tituk para,တိတ်တူးပေါက်,20.775841,92.613083,Kyauk Yan,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010060,198407,Teik Tu Pauk,Kyauk Yan,active,active,exact
+141,Kyauk Twe Chaung,,ကျောက်တွဲချောင်း,21.151840,92.419350,Kyaung Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010002,198138,Kyauk Twe Chaung,Kyaung Taung,inactive_removed_from_list,active,exact
+142,Kyaung Taung,Kayng dong,ကျောင်းတောင်,21.151251,92.429176,Kyaung Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010002,198133,Kyaung Taung,Kyaung Taung,active,active,exact
+143,Kyaw U,Murung Fara,ကျော်ဦး,21.156321,92.424133,Kyaung Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010002,198137,Kyaw U,Kyaung Taung,active,active,exact
+144,Pu Zun Chaung,Buzair Chaung,ပုဇွန်ချောင်း,21.180090,92.418114,Kyaung Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010002,198134,Pu Zun Chaung,Kyaung Taung,active,active,exact
+145,Sar Kaing,Shiddar Fara,စာကိုင်း,21.164671,92.418938,Kyaung Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010002,198135,Sar Kaing,Kyaung Taung,active,active,exact
+146,Thea Ni Chaung,Seyni Fara,သဲနီချောင်း,21.161261,92.411034,Kyaung Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010002,198136,Thea Ni Chaung,Kyaung Taung,active,active,exact
+147,Kyauk See,Kee Yo See Fara,ကျောက်ဆီး,21.139549,92.433777,Kyun Pauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010005,198147,Kyauk See,Kyun Pauk,active,active,exact
+148,Kyun Pauk Ku Lar,Keyung Bo,ကျွန်းပေါက်ကုလား,21.098579,92.445549,Kyun Pauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010005,198146,Kyun Pauk Ku Lar,Kyun Pauk,active,active,exact
+149,Kyway Chaung Kha Mway,kori Chaung,ကြွေချောင်းခမွေး,21.120510,92.423332,Kyun Pauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010005,198151,Kyway Chaung Kha Mway,Kyun Pauk,active,active,exact
+150,Kyway Chaung Kha Mway (Lower),Kori Chaung( Lamer Fara),ကြွေချောင်းခမွေး (အောက်),21.112749,92.429733,Kyun Pauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010005,198153,Kyway Chaung Kha Mway (Lower),Kyun Pauk,active,active,exact
+151,Kyway Chaung Ku Lar,Kori Chaung(muslim),ကြွေချောင်းကုလား,21.106140,92.439056,Kyun Pauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010005,198148,Kyway Chaung Ku Lar,Kyun Pauk,active,active,exact
+152,Kyway Chaung Rakhine,Kori Chaung( Mok),ကြွေချောင်းရခိုင်,21.105761,92.439163,Kyun Pauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010005,198149,Kyway Chaung Rakhine,Kyun Pauk,active,active,exact
+153,Pe Lun Kha Mway,Ayassor(Kamway),ပဲလွန်းခမွေး,21.121250,92.438713,Kyun Pauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010005,198150,Pe Lun Kha Mway,Kyun Pauk,active,active,exact
+154,Pe Tha Du (West),Fesudu(fosim),ပဲသဒူ (အနောက်),21.161280,92.431557,Kyun Pauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010005,198152,Pe Tha Du (West),Kyun Pauk,active,active,exact
+155,Doe Wai,,ဒိုးဝေ,20.650150,92.632530,Kywe Yine Khat,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010074,198454,Doe Wai,Kywe Yine Khat,active,active,exact
+156,Man Aung,,မန်အောင်,20.671690,92.634659,Kywe Yine Khat,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010074,198456,Man Aung,Kywe Yine Khat,active,active,exact
+157,Set Khaw,,စက်ခေါ်,20.643801,92.649017,Kywe Yine Khat,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010074,198457,Set Khaw,Kywe Yine Khat,active,active,exact
+158,Thar Zi,,သာဇီ,20.668760,92.630081,Kywe Yine Khat,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010074,198455,Thar Zi,Kywe Yine Khat,active,active,exact
+159,Kha Yu Chaung,Laung Chaung,ခရုချောင်း,20.936350,92.468246,Laung Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010009,217866,Kha Yu Chaung,Laung Chaung,active,active,exact
+160,Laung Chaung Daing Net,Laung Chaung,လောင်းချောင်းဒိုင်းနက်,20.945801,92.471672,Laung Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010009,198164,Laung Chaung Daing Net,Laung Chaung,active,active,exact
+161,Laung Chaung Ku Lar,Laung Chaung,လောင်းချောင်းကုလား,20.952780,92.469963,Laung Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010009,198166,Laung Chaung Ku Lar,Laung Chaung,active,active,exact
 162,Pyein Chaung,"frin Kong
-",ပြိန်းချောင်း,20.968809,92.442734,Laung Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-163,Sin Swei Ya,San Sira,ဆင်စွယ်ရ,20.930870,92.450943,Laung Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-164,Ah Yaing Kwet Chay,,အရိုင်းကွက်ချေ,21.188820,92.646477,Laung Yon,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-165,Chaung Pauk,Hal sera,ချောင်းပေါက်,20.792391,92.587082,Lay Myo,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-166,Kyar Nyo Pyin (Ku Lar),Hipe parang,ကြာညိုပြင် (ကုလား),20.806030,92.601952,Lay Myo,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-167,Kyar Nyo Pyin (Rakhine),mok,ကြာညိုပြင် (ရခိုင်),20.802820,92.599419,Lay Myo,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-168,Pyar (Yi) Yae,Mok,ပျာ (ရည်) ရေ,20.797041,92.594963,Lay Myo,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-169,Doe Tan,,ဒိုးတန်း,20.891331,92.491966,Let Wea Det Pu Zun Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-170,Let Wea Det,Labadok,လက်ဝဲဒက်,20.893181,92.493637,Let Wea Det Pu Zun Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-171,Pu Zun Chaung,,ပုဇွန်ချောင်း,20.895901,92.497330,Let Wea Det Pu Zun Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-172,Done Chaung,Done Chaung,ဒုံးချောင်း,20.847490,92.511498,Let Wea Det Pyin Shey,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-173,Gandamar (NaTaLa),Natala,ဂန္ဓမာ (နတလ),20.875999,92.497330,Let Wea Det Pyin Shey,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-174,Htin Shar Pyin,Lamba Alie,ထင်ရှားပြင်,20.850849,92.517357,Let Wea Det Pyin Shey,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-175,Inn Hpauk,mok,အင်းဖောက်,20.849060,92.497414,Let Wea Det Pyin Shey,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-176,Kyauk Hla Pyin,Oli Morong,ကျောက်လှပြင်,20.863850,92.514893,Let Wea Det Pyin Shey,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-177,Let Wea Det Pyin Shey,Labadok,လက်ဝဲဒက်ပြင်ရှည်,20.863079,92.497192,Let Wea Det Pyin Shey,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-178,Tha Pyay Taw,Mok,သပြေတော,20.850760,92.502449,Let Wea Det Pyin Shey,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-179,Toe Cheit Ywar,Lakkara Gunna,တိုးချဲ့ရွာ,20.867580,92.520821,Let Wea Det Pyin Shey,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-180,Maung Gyi Taung,Sharb Bazar,မောင်ကြီးတောင်,20.924641,92.533630,Maung Gyi Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-181,Sin Oe Pyin (Middle),Mash Para,ဆင်အိုးပြင် (အလယ်),20.905334,92.513618,Maung Gyi Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-182,Sin Oe Pyin (Ywar Gyi),Bor para,ဆင်အိုးပြင် (ရွာကြီး),20.900539,92.519730,Maung Gyi Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-183,Maung Hnit Ma,,မောင်နှမ,20.643829,92.619888,Maung Hna Ma (a) Pa Oe Thei Ma,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-184,Bo Gyi Chaung,Bori Young,ဘိုကြီးချောင်း,20.980980,92.521492,Mee Chaung Zay,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-185,Hpaw Tay Ahr Li,Fateyar Fara,ဖေါ်တေအာလီ,20.963160,92.513817,Mee Chaung Zay,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-186,Khaik Mu Ra,Hormura Fara,ခိုက်မူရ,20.972099,92.525482,Mee Chaung Zay,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-187,Mar Zi,Mazir Fara,မာဇီ,20.968309,92.517662,Mee Chaung Zay,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-188,Mee Chaung Zay,Min Gee Zee,မီးချောင်းဈေး,20.970881,92.512650,Mee Chaung Zay,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-189,Ywar Thit,Noya Para,ရွာသစ်,20.962799,92.527702,Mee Chaung Zay,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-190,Kone Tan Ywar Thit,Kun Tane,ကုန်းတန်းရွာသစ်,20.952999,92.482849,Mee Kyaung Khaung Swea,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-191,Ku Mi Khar Li,Kuir Hali,ကူမီခါလီ,20.972441,92.498268,Mee Kyaung Khaung Swea,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-192,Maung Hla Ma (Lin Bar Si Li),Fattar Fara,မောင်လှမ (ခ) လင်ဘာဆီလီ,20.949169,92.493759,Mee Kyaung Khaung Swea,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-193,Mee Kyaung Khaung Swea,Rong Fara,မီးကျောင်းခေါင်းဆွဲ,20.945339,92.496063,Mee Kyaung Khaung Swea,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-194,Ka Htee Hla (Na Ta La),Ka Tee La,ကထီးလှ (နတလ),21.056858,92.449280,Myauk Ye (a) Pan Be Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-195,Pan Be Chaung (Ku Lar),lou So Fara(musalman Fara),ပန်းဘဲချောင်း (ကုလား),21.038771,92.469757,Myauk Ye (a) Pan Be Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-196,Pan Be Chaung (Rakhine),lou So Fara(Mok Fara),ပန်းဘဲချောင်း (ရခိုင်),21.045910,92.463654,Myauk Ye (a) Pan Be Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-197,Day Li,Dail Para,ဒေလီ,20.833229,92.540154,Myaung Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-198,Myaung Nar,Mrng Na para,မြောင်းနား,20.833719,92.534462,Myaung Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-199,Ku Toet Seik,Sangri bill,ကူးတို့ဆိပ်,20.876711,92.537407,Nan Yar Kone,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-200,Kyauk Yit,Zailla par,ကျောက်ရစ်,20.892290,92.550079,Nan Yar Kone,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-201,Myauk (Pale Taung),Monnar Para,မြောက် (ပုလဲတောင်),20.884159,92.551064,Nan Yar Kone,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-202,Nan Yar Kone Ywar Thit,Noyapara,နန်းရာကုန်းရွာသစ်,20.887030,92.556824,Nan Yar Kone,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-203,Taung (Pale Taung),Monnar para,တောင် (ပုလဲတောင်),20.882549,92.551338,Nan Yar Kone,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-204,Than Chay,Kyarang,သံခြေ,20.887421,92.545410,Nan Yar Kone,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-205,Nga Hlan Pyin,,ငလှမ်းပြင်,20.632879,92.656868,Nga Hlan Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-206,Kyee Hnoke Thee,Kee Nee see ,ကျီးနှုတ်သီး,20.982479,92.509712,Nga Yant Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-207,Maung Hnit Ma,Boddo Fara,မောင်နှစ်မ,21.023890,92.471962,Nga Yant Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-208,Ngar Yant Chaung,Narain Kom,ငါးရန့်ချောင်း,21.004440,92.500229,Nga Yant Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-209,Pauk Taw Pyin,Futtu Farang,ပေါက်တောပြင်,21.018221,92.493713,Nga Yant Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-210,Yin Ma,Ammai Fara,ယင်းမ,21.003670,92.508873,Nga Yant Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-211,Yin Ma Zay,Rohingyah Para,ယင်းမဈေး,21.009741,92.503166,Nga Yant Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-212,Aw Lan Pyin,Olibor Fara,အော်လံပြင်,20.938021,92.497543,Nga/ Kyin Tauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-213,Aw Lan Pyin Ku Lar,Morisha Bil,အော်လံပြင်ကုလား,20.936420,92.494110,Nga/ Kyin Tauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-214,Nga Kyi Tauk Daing Net,Nakine Dong (Sakma Fara),ငကျဉ်တောက်ဒိုင်းနက်,20.936041,92.475830,Nga/ Kyin Tauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-215,Nga Kyi Tauk Ku Lar,Nakine Dong (Musulman Fara),ငကျဉ်တောက်ကုလား,20.933100,92.469353,Nga/ Kyin Tauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-216,Nga/ Kyin Tauk,Nakine Dong,င/ကျဉ်တောက်,20.938351,92.490929,Nga/ Kyin Tauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-217,Tha Yae Kone Tan,Shari Kunda,သရေကုန်းတန်း,20.943001,92.499153,Nga/ Kyin Tauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-218,Myauk Chaung,,မြောက်ချောင်း,20.965000,92.572327,Oke Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-219,Oke Taung (Rakhine),Mok Para,အုပ်တောင်ရခိုင်,20.953199,92.562538,Oke Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-220,Ah Twin Pyin,Mok Para,အတွင်းပြင်,20.630951,92.591187,Pauk Taw,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-221,Aung Ze Ya (Rakhine),Mok Para,အောင်ဇေယျ (ရခိုင်),20.618650,92.609367,Pauk Taw,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-222,Pauk Taw,Mok Para,ပေါက်တော,20.631330,92.596802,Pauk Taw,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-223,Pyaing Taung,Aazola para,ပြိုင်းတောင်,20.663370,92.613876,Pyaing Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-224,Taung Chaung,Golasira,တောင်ချောင်း,20.663879,92.609306,Pyaing Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-225,Taung Maw,Sakma Para,တောင်မော်,20.667749,92.608650,Pyaing Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-226,Zin Kha Mar,Fuk Para,ဇင်းခမာ,20.654249,92.619102,Pyaing Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-227,Let Pan Chaung,Mok Para,လက်ပန်ချောင်း,20.915480,92.666344,Pyin Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-228,Myo Ma Chaung,Mok Para,မြို့မချောင်း,20.859921,92.639450,Pyin Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-229,Pyin Chaung,Mok Para,ပြင်ချောင်း,20.835489,92.602562,Pyin Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-230,Kun Taung,Mok Para,ကွမ်းတောင်,20.750031,92.643646,Sa Par Htar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-231,Sa Par Htar,Mok Para,စပါးထား,20.734859,92.657089,Sa Par Htar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-232,Khaung Taik,Mok Para,ခေါင်းတိုက်,20.750250,92.651260,San Goe Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-233,Nwar Yon Taung,Mok Para,နွားရုံတောင်,20.756411,92.635803,San Goe Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-234,San Goe Taung,Mok Para,စံဂိုးတောင်,20.764071,92.631126,San Goe Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-235,Shat Shar Taung,Mok Para,ရှပ်ရှားတောင်,20.767719,92.631737,San Goe Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-236,Sin Thay Pyin,Santhai parang,ဆင်သေပြင်,20.771191,92.633942,San Goe Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-237,U Yin Thar,Mok Para,ဥယျာဉ်သာ,20.772551,92.638290,San Goe Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-238,U Yin Thar Kha Mway,Mok Para,ဥယျာဉ်သာခမွေး,20.774040,92.642593,San Goe Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-239,Kan Paing Chaung,Mok Para,ကမ်းပိုင်ချောင်း,20.930599,92.574707,San Hnyin Wai,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-240,Kha Mway Chaung,Mok Para,ခမွေချောင်း,20.923849,92.584450,San Hnyin Wai,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-241,Pyin Shey Ku Lar,lamba bil,ပြင်ရှည်ကုလား,20.898420,92.570259,San Hnyin Wai,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-242,San Hnyin Wai (Win Dwin Rakhine),Mok Para,စံညှင်းဝေ,20.888420,92.582367,San Hnyin Wai,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-243,San Hnyin Wai Rakhine,Mok Para,စံညှင်းဝေရခိုင်,20.904079,92.577400,San Hnyin Wai,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-244,Si Pin Thar Yar,Mok Para,စည်ပင်သာယာ,20.911409,92.590813,San Hnyin Wai,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-245,Say Oe Kya,Wari Young,ဆေးအိုးကျ,20.765671,92.577812,Say Oe Kya,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-246,Tha Zin Taw,Zumma para,သဇင်တော,20.770220,92.588058,Say Oe Kya,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-247,Wa Ra Kyun,Wari Young,ဝရကျွန်း,20.770531,92.576073,Say Oe Kya,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-248,Gwa Son,Mok Para,ဂွဆုံ,20.725130,92.673637,Say Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-249,Kan Pyin,Mok Para,ကံပြင်,20.741390,92.669327,Say Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-250,Say Taung,Mok Para,စေတောင်,20.726419,92.671181,Say Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-251,Daing Net Pyin,Fosim para,ဒိုင်းနက်ပြင်,20.762270,92.540283,Sein Hnyin Pyar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-252,Pyin Shey,Dail para,ပြင်ရှည်,20.765560,92.546837,Sein Hnyin Pyar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-253,Pyin Shey Ah Shey (Ku Lar),Tanguja para,ပြင်ရှည်အရှေ့ (ကုလား),20.769880,92.543793,Sein Hnyin Pyar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-254,Sein Hnyin Pyar Zay,Bazarpparaor fuk ,စိမ်းညှင်းပြားဈေး,20.768150,92.550079,Sein Hnyin Pyar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-255,Taw Kan,Falonga para,တောကံ,20.766081,92.541573,Sein Hnyin Pyar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-256,Tha Pyay Taw,sakma,သပြေတော,20.782770,92.551826,Sein Hnyin Pyar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-257,Tin Set,Tansar para,တင်ဆက်,20.775681,92.547577,Sein Hnyin Pyar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-258,Yet Chaung,Rashong Ga para,ရက်ချောင်း,20.770750,92.550728,Sein Hnyin Pyar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-259,Zay Ah Nauk,Bazaror Fosim,ဈေးအနောက်,20.764500,92.540413,Sein Hnyin Pyar,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-260,Ba Ho Pyin Ywar Haung,Mok Para,ဗဟိုပြင်ရွာဟောင်း,21.057610,92.515633,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-261,Ba Ho Pyin Ywar Thit,Mok Para,ဗဟိုပြင်ရွာသစ်,21.063681,92.528763,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-262,Chaung Chay,Mok Para,ချောင်းချေ,21.055811,92.541389,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-263,Doe Tan,Mok Para,ဒိုးတန်း,21.099211,92.507492,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-264,Hmaing Sa Ri,Mok Para,မှိုင်းစရီ,21.108669,92.523300,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-265,Inn Chaung,Mok Para,အင်းချောင်း,21.082260,92.515747,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-266,Nga Thaing Chaung,Mok Para,ငသိုင်းချောင်း,21.071625,92.525978,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-267,Pan Kone Ma,Mok Para,ပန်းကုံးမ,21.085171,92.509567,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-268,Pauk Kyat,Mok Para,ပေါက်ကျပ်,21.085960,92.502289,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-269,Pauk Kyat Wa,Mok Para,ပေါက်ကျပ်ဝ,21.119150,92.515060,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-270,Pi Ywet Rakhine,Mok Para,ပီရွက်ရခိုင်,21.035450,92.523178,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-271,Seik Ta Ra,Mok Para,စိတ္တရ,21.082760,92.519402,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-272,Sin Ma U Kaing,Mok Para,ဆင်မဦးကိုင်,21.106390,92.500816,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-273,Ta Ra Gu,Mok Para,တရဂူ,21.002640,92.561813,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-274,Than Pu Yar,Mok Para,သံပုရာ,21.075497,92.534569,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-275,Tharaphy (NaTaLa),Mok Para,သရဖီ (နတလ),21.076317,92.566383,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-276,Yae Chan,Mok Para,ရေချမ်း,21.036100,92.540588,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-277,Daing Net Ywar,Mok Para,ဒိုင်းနက်ရွာ,20.904169,92.461708,Tat Min Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-278,Hpa Lan,Mok Para,ဖလန်း,20.906130,92.446213,Tat Min Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-279,Myaung,Mok Para,မြောင်း,20.902201,92.466820,Tat Min Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-280,Tat Min Chaung,Tamin khali,တပ်မင်းချောင်း,20.897079,92.469521,Tat Min Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-281,Taung Paing,Mok Para,တောင်ပိုင်း,20.892321,92.469612,Tat Min Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-282,Myauk,Kharang khali,မြောက်,20.798910,92.553680,Tha Peik Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-283,Taung,Keyazinga para,တောင်,20.787411,92.551552,Tha Peik Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-284,Taung Chay,mura para,တောင်ခြေ,20.791679,92.550903,Tha Peik Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-285,Tha Peik Taung (Rakhine),Mok Para,သပိတ်တောင် (ရခိုင်),20.794100,92.554321,Tha Peik Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-286,Kyet Mauk Taung,Azimma Para/Washilla,ကြက်မောက်တောင်,20.883680,92.569939,Tha Yet Kin Ma Nu,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-287,Tha Yet Kin Ma Nu,Thara kuni,သရက်ကင်းမနု,20.871830,92.566910,Tha Yet Kin Ma Nu,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-288,Tha Yet Pyin (Ku Lar),Farikul,သရက်ပြင် (ကုလား),20.803579,92.603683,Tha Yet Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-289,Tha Yet Pyin (Rakhine),Mok Para,သရက်ပြင် (ရခိုင်),20.812450,92.608658,Tha Yet Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-290,Yae Chan Pyin,Reshup parang,ရေချမ်းပြင်,20.817289,92.606117,Tha Yet Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-291,Kyauk Pyin Seik,Mok Para,ကျောက်ပြင်ဆိပ်,20.677860,92.699928,Thaing Ta Poke,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-292,Tha Pyay Seik,Mok Para,သပြေဆိပ်,20.707460,92.680862,Thaing Ta Poke,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-293,Thaing Ta Poke,Mok Para,သိုင်းတပုတ်,20.688311,92.696960,Thaing Ta Poke,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-294,Gaung Gyi,Gongri para,ခေါင်းကြီး,20.721020,92.626198,Thay Kan Gwa Son,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-295,Gwa Son (Ku Lar),Kwa Chaung,ခွဆုံ (ကုလား),20.703791,92.628464,Thay Kan Gwa Son,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-296,Gwa Son (Rakhine),Mok Para,ခွဆုံ (ရခိုင်),20.703920,92.631500,Thay Kan Gwa Son,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-297,Maws Taw Hpi,Mustobiz para,မောစ်တော်ဖီ,20.721291,92.605141,Thay Kan Gwa Son,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-298,Wet Ma Kya,Wa Mogya,ဝက်မကြ,20.724701,92.628197,Thay Kan Gwa Son,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-299,Hla Tha Ma,Messiri para,လှသမ,20.673639,92.596298,Thein Taung Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-300,Laung Gyun,Langu para,လောင်ဂျွမ်း,20.676519,92.591667,Thein Taung Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-301,Say Tha Ma,Boyi dow para,ဆေးသမ,20.678150,92.587868,Thein Taung Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-302,Thein Taung Pyin (Daing Net),sakma,သိန်တောင်ပြင် (ဒိုင်းနက်),20.669130,92.595497,Thein Taung Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-303,Thein Taung Pyin (Ku Lar),"Kittar bil,Bor para",သိန်တောင်ပြင် (ကုလား),20.674700,92.590393,Thein Taung Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-304,Done Paing,Dom Mie,ဒုံးပိုင်,20.996700,92.512627,Thin Ga Net,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-305,Khu Taung,Doyin Kul,ခူးတောင်,20.993214,92.524986,Thin Ga Net,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-306,Kone Taung,Ottor Kul (Hazir Fara),ကုန်းတောင်,21.002581,92.524277,Thin Ga Net,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-307,Thin Ga Net,Fir Ha lee,သင်္ဂနက်,21.000639,92.521515,Thin Ga Net,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-308,Kywe Rine (Na Ta La),Na Ta La Para,ကျွဲရိုင်း (နတလ),21.152260,92.462822,Tin May,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-309,Tin May,Tami,တင်းမေ,21.153379,92.446861,Tin May,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-310,Khe War,Sheyala para,ခဲဝါ,20.814581,92.576393,U Hla Hpay,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-311,Taung,Mura para,တောင်,20.812960,92.564323,U Hla Hpay,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-312,U Hla Hpay,Oo Hla Hpay,ဦးလှဖေ,20.836651,92.558937,U Hla Hpay,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-313,Hlaing Shey Pyin,Mok Para,လှိုင်ရှည်ပြင်,20.746700,92.574837,U Kyaw (a) Thar Zin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-314,U Kyaw,Mok Para,ဦးကျော်,20.740860,92.578438,U Kyaw (a) Thar Zin,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-315,Doe Tan,Lodine Para,ဒိုးတန်း,20.780630,92.581978,Wa Ya Kyun,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-316,Kyein Chaung,Noya para,ကြိမ်ချောင်း,20.784821,92.586693,Wa Ya Kyun,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-317,Wa Ra Kyun,Shafor Fara,ဝရကျွန်း,20.774130,92.574799,Wa Ya Kyun,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-318,Zaw Baw,Zobbor Pata,ဇော်ဘော်,20.790039,92.585693,Wa Ya Kyun,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-319,Baw Li (Ku Lar),Bili para,ဘော်လီ (ကုလား),20.742060,92.630676,Wet Ma Kya (a) Zay Di Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-320,Baw Li (Rakhine),boli (mok para),ဘော်လီ (ရခိုင်),20.741570,92.632347,Wet Ma Kya (a) Zay Di Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-321,Zay Di Taung (Ku Lar),Zadi Taung( Musalman Para),စေတီတောင် (ကုလား),20.737431,92.634773,Wet Ma Kya (a) Zay Di Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-322,Zay Di Taung (Rakhine),Zadi Taung(mok para),စေတီတောင် (ရခိုင်),20.735640,92.638077,Wet Ma Kya (a) Zay Di Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-323,Ah Nauk Pyin,,အနောက်ပြင်,21.021919,92.508827,Yin Ma Kyaung Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-324,Kyein Chaung,,ကြိမ်ချောင်း,21.025631,92.524818,Yin Ma Kyaung Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-325,Rammoya Fara,Ramiya Para,ရာမိုရ ဖာရာ,21.013479,92.506073,Yin Ma Kyaung Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-326,Yin Ma Kyauk Taung,Gazonga Fara,ယင်းမကျောက်တောင်,21.023649,92.507042,Yin Ma Kyaung Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-327,Gone Nar,Gona Para,ဂုံးနား,20.889811,92.519569,Ywar Ma,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-328,Thit Yin,Sarung Para,သစ်ရင်း,20.882521,92.532066,Ywar Ma,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-329,Ywar Ma Mu Sa Lin,Musalman Para,ရွာမမူဆလင်,20.883591,92.525681,Ywar Ma,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-330,Ywar Ma Rakhine,Mok Para,ရွာမရခိုင်,20.885229,92.530212,Ywar Ma,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-331,Ah Lel (Ywet Nyo Taung),Mazor Para,အလယ် (ရွက်ညိုတောင်),20.847490,92.556473,Ywet Nyo Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-332,Myauk (Ywet Nyo Taung),Uttar Para,မြောက် (ရွက်ညိုတောင်),20.852030,92.557297,Ywet Nyo Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-333,Taung (Ywet Nyo Taung),Doyin Para,တောင် (ရွက်ညိုတောင်),20.843081,92.556396,Ywet Nyo Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-334,Taung Gyi Yin,Mok Para,တောင်ကြီးရင်း,21.041439,92.459602,Zee Hton,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-335,Thar Si (Myo),Murong Para,သာစည် (မြို),21.020180,92.430878,Zee Hton,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-336,Yin Ma Zee Hton,Lyar Bill,ယင်းမဇီးထုံ,21.034100,92.470818,Zee Hton,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-337,Zee Hton Rakhine,Mok Para,ဇီးထုံရခိုင်,21.040569,92.452469,Zee Hton,Buthidaung,Maungdaw,Buthidaung Village,#097138,
-338,Four Miles South,,,-37.854815,144.981622,,Buthidaung,Maungdaw,Buthidaung Village,#097138,unverified
+",ပြိန်းချောင်း,20.968809,92.442734,Laung Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010009,198167,Pyein Chaung,Laung Chaung,active,active,exact
+163,Sin Swei Ya,San Sira,ဆင်စွယ်ရ,20.930870,92.450943,Laung Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010009,198165,Sin Swei Ya,Laung Chaung,active,active,exact
+164,Ah Yaing Kwet Chay,,အရိုင်းကွက်ချေ,21.188820,92.646477,Laung Yon,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010026,198263,Ah Yaing Kwet Chay,Laung Yon,active,active,exact
+165,Chaung Pauk,Hal sera,ချောင်းပေါက်,20.792391,92.587082,Lay Myo,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010050,198367,Chaung Pauk,Lay Myo,active,active,exact
+166,Kyar Nyo Pyin (Ku Lar),Hipe parang,ကြာညိုပြင် (ကုလား),20.806030,92.601952,Lay Myo,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010050,198369,Kyar Nyo Pyin (Ku Lar),Lay Myo,active,active,exact
+167,Kyar Nyo Pyin (Rakhine),mok,ကြာညိုပြင် (ရခိုင်),20.802820,92.599419,Lay Myo,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010050,198368,Kyar Nyo Pyin (Rakhine),Lay Myo,active,active,exact
+168,Pyar (Yi) Yae,Mok,ပျာ (ရည်) ရေ,20.797041,92.594963,Lay Myo,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010050,198366,Pyar (Yi) Yae,Lay Myo,active,active,exact
+169,Doe Tan,,ဒိုးတန်း,20.891331,92.491966,Let Wea Det Pu Zun Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010037,198317,Doe Tan,Let Wea Det Pu Zun Chaung,active,active,exact
+170,Let Wea Det,Labadok,လက်ဝဲဒက်,20.893181,92.493637,Let Wea Det Pu Zun Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010037,198316,Let Wea Det,Let Wea Det Pu Zun Chaung,active,active,exact
+171,Pu Zun Chaung,,ပုဇွန်ချောင်း,20.895901,92.497330,Let Wea Det Pu Zun Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010037,198318,Pu Zun Chaung,Let Wea Det Pu Zun Chaung,active,active,exact
+172,Done Chaung,Done Chaung,ဒုံးချောင်း,20.847490,92.511498,Let Wea Det Pyin Shey,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010035,198310,Done Chaung,Let Wea Det Pyin Shey,active,active,exact
+173,Gandamar (NaTaLa),Natala,ဂန္ဓမာ (နတလ),20.875999,92.497330,Let Wea Det Pyin Shey,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010035,220752,Gandamar (NaTaLa),Let Wea Det Pyin Shey,active,active,exact
+174,Htin Shar Pyin,Lamba Alie,ထင်ရှားပြင်,20.850849,92.517357,Let Wea Det Pyin Shey,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010035,198309,Htin Shar Pyin,Let Wea Det Pyin Shey,active,active,exact
+175,Inn Hpauk,mok,အင်းဖောက်,20.849060,92.497414,Let Wea Det Pyin Shey,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010035,198313,Inn Hpauk,Let Wea Det Pyin Shey,active,active,exact
+176,Kyauk Hla Pyin,Oli Morong,ကျောက်လှပြင်,20.863850,92.514893,Let Wea Det Pyin Shey,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010035,198311,Kyauk Hla Pyin,Let Wea Det Pyin Shey,active,active,exact
+177,Let Wea Det Pyin Shey,Labadok,လက်ဝဲဒက်ပြင်ရှည်,20.863079,92.497192,Let Wea Det Pyin Shey,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010035,198308,Let Wea Det Pyin Shey,Let Wea Det Pyin Shey,active,active,exact
+178,Tha Pyay Taw,Mok,သပြေတော,20.850760,92.502449,Let Wea Det Pyin Shey,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010035,220753,Tha Pyay Taw,Let Wea Det Pyin Shey,active,active,exact
+179,Toe Cheit Ywar,Lakkara Gunna,တိုးချဲ့ရွာ,20.867580,92.520821,Let Wea Det Pyin Shey,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010035,217873,Toe Cheit Ywar,Let Wea Det Pyin Shey,active,active,exact
+180,Maung Gyi Taung,Sharb Bazar,မောင်ကြီးတောင်,20.924641,92.533630,Maung Gyi Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010020,198228,Maung Gyi Taung,Maung Gyi Taung,active,active,exact
+181,Sin Oe Pyin (Middle),Mash Para,ဆင်အိုးပြင် (အလယ်),20.905334,92.513618,Maung Gyi Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010020,198230,Sin Oe Pyin (Middle),Maung Gyi Taung,active,active,exact
+182,Sin Oe Pyin (Ywar Gyi),Bor para,ဆင်အိုးပြင် (ရွာကြီး),20.900539,92.519730,Maung Gyi Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010020,198229,Sin Oe Pyin (Ywar Gyi),Maung Gyi Taung,active,active,exact
+183,Maung Hnit Ma,,မောင်နှမ,20.643829,92.619888,Maung Hna Ma (a) Pa Oe Thei Ma,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010075,198458,Maung Hnit Ma,Maung Hnit Ma (a) Pa Oe Thei Ma,active,active,exact
+184,Bo Gyi Chaung,Bori Young,ဘိုကြီးချောင်း,20.980980,92.521492,Mee Chaung Zay,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010018,198218,Bo Gyi Chaung,Mee Chaung Zay,active,active,exact
+185,Hpaw Tay Ahr Li,Fateyar Fara,ဖေါ်တေအာလီ,20.963160,92.513817,Mee Chaung Zay,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010018,198221,Hpaw Tay Ahr Li,Mee Chaung Zay,active,active,exact
+186,Khaik Mu Ra,Hormura Fara,ခိုက်မူရ,20.972099,92.525482,Mee Chaung Zay,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010018,198219,Khaik Mu Ra,Mee Chaung Zay,active,active,exact
+187,Mar Zi,Mazir Fara,မာဇီ,20.968309,92.517662,Mee Chaung Zay,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010018,198220,Mar Zi,Mee Chaung Zay,active,active,exact
+188,Mee Chaung Zay,Min Gee Zee,မီးချောင်းဈေး,20.970881,92.512650,Mee Chaung Zay,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010018,198217,Mee Chaung Zay,Mee Chaung Zay,active,active,exact
+189,Ywar Thit,Noya Para,ရွာသစ်,20.962799,92.527702,Mee Chaung Zay,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010018,198222,Ywar Thit,Mee Chaung Zay,active,active,exact
+190,Kone Tan Ywar Thit,Kun Tane,ကုန်းတန်းရွာသစ်,20.952999,92.482849,Mee Kyaung Khaung Swea,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010012,198182,Kone Tan Ywar Thit,Mee Kyaung Khaung Swea,active,active,exact
+191,Ku Mi Khar Li,Kuir Hali,ကူမီခါလီ,20.972441,92.498268,Mee Kyaung Khaung Swea,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010012,198180,Ku Mi Khar Li,Mee Kyaung Khaung Swea,active,active,exact
+192,Maung Hla Ma (Lin Bar Si Li),Fattar Fara,မောင်လှမ (ခ) လင်ဘာဆီလီ,20.949169,92.493759,Mee Kyaung Khaung Swea,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010012,198181,Maung Hla Ma (Lin Bar Si Li),Mee Kyaung Khaung Swea,active,active,exact
+193,Mee Kyaung Khaung Swea,Rong Fara,မီးကျောင်းခေါင်းဆွဲ,20.945339,92.496063,Mee Kyaung Khaung Swea,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010012,198179,Mee Kyaung Khaung Swea,Mee Kyaung Khaung Swea,active,active,exact
+194,Ka Htee Hla (Na Ta La),Ka Tee La,ကထီးလှ (နတလ),21.056858,92.449280,Myauk Ye (a) Pan Be Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010006,220749,Ka Htee Hla (Na Ta La),Myauk Ye (a) Pan Be Chaung,active,active,exact
+195,Pan Be Chaung (Ku Lar),lou So Fara(musalman Fara),ပန်းဘဲချောင်း (ကုလား),21.038771,92.469757,Myauk Ye (a) Pan Be Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010006,198155,Pan Be Chaung (Ku Lar),Myauk Ye (a) Pan Be Chaung,active,active,exact
+196,Pan Be Chaung (Rakhine),lou So Fara(Mok Fara),ပန်းဘဲချောင်း (ရခိုင်),21.045910,92.463654,Myauk Ye (a) Pan Be Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010006,198154,Pan Be Chaung (Rakhine),Myauk Ye (a) Pan Be Chaung,active,active,exact
+197,Day Li,Dail Para,ဒေလီ,20.833229,92.540154,Myaung Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010041,198333,Day Li,Myaung Nar,active,active,exact
+198,Myaung Nar,Mrng Na para,မြောင်းနား,20.833719,92.534462,Myaung Nar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010041,198332,Myaung Nar,Myaung Nar,active,active,exact
+199,Ku Toet Seik,Sangri bill,ကူးတို့ဆိပ်,20.876711,92.537407,Nan Yar Kone,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010033,198301,Ku Toet Seik,Nan Yar Kone,active,active,exact
+200,Kyauk Yit,Zailla par,ကျောက်ရစ်,20.892290,92.550079,Nan Yar Kone,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010033,198303,Kyauk Yit,Nan Yar Kone,active,active,exact
+201,Myauk (Pale Taung),Monnar Para,မြောက် (ပုလဲတောင်),20.884159,92.551064,Nan Yar Kone,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010033,198302,Myauk (Pale Taung),Nan Yar Kone,active,active,exact
+202,Nan Yar Kone Ywar Thit,Noyapara,နန်းရာကုန်းရွာသစ်,20.887030,92.556824,Nan Yar Kone,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010033,217871,Nan Yar Kone Ywar Thit,Nan Yar Kone,active,active,exact
+203,Taung (Pale Taung),Monnar para,တောင် (ပုလဲတောင်),20.882549,92.551338,Nan Yar Kone,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010033,198299,Taung (Pale Taung),Nan Yar Kone,active,active,exact
+204,Than Chay,Kyarang,သံခြေ,20.887421,92.545410,Nan Yar Kone,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010033,198300,Than Chay,Nan Yar Kone,active,active,exact
+205,Nga Hlan Pyin,,ငလှမ်းပြင်,20.632879,92.656868,Nga Hlan Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010078,198463,Nga Hlan Pyin,Nga Hlan Pyin,active,active,exact
+206,Kyee Hnoke Thee,Kee Nee see ,ကျီးနှုတ်သီး,20.982479,92.509712,Nga Yant Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010014,198189,Kyee Hnoke Thee,Nga Yant Chaung,active,active,exact
+207,Maung Hnit Ma,Boddo Fara,မောင်နှစ်မ,21.023890,92.471962,Nga Yant Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010014,198193,Maung Hnit Ma,Nga Yant Chaung,active,active,exact
+208,Ngar Yant Chaung,Narain Kom,ငါးရန့်ချောင်း,21.004440,92.500229,Nga Yant Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010014,198188,Nga Yant Chaung,Nga Yant Chaung,active,active,strong
+209,Pauk Taw Pyin,Futtu Farang,ပေါက်တောပြင်,21.018221,92.493713,Nga Yant Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010014,198192,Pauk Taw Pyin,Nga Yant Chaung,active,active,exact
+210,Yin Ma,Ammai Fara,ယင်းမ,21.003670,92.508873,Nga Yant Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010014,198190,Yin Ma,Nga Yant Chaung,active,active,exact
+211,Yin Ma Zay,Rohingyah Para,ယင်းမဈေး,21.009741,92.503166,Nga Yant Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010014,198191,Yin Ma Zay,Nga Yant Chaung,active,active,exact
+212,Aw Lan Pyin,Olibor Fara,အော်လံပြင်,20.938021,92.497543,Nga/ Kyin Tauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010011,198174,Aw Lan Pyin,Nga/ Kyin Tauk,active,active,exact
+213,Aw Lan Pyin Ku Lar,Morisha Bil,အော်လံပြင်ကုလား,20.936420,92.494110,Nga/ Kyin Tauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010011,198178,Aw Lan Pyin Ku Lar,Nga/ Kyin Tauk,active,active,exact
+214,Nga Kyi Tauk Daing Net,Nakine Dong (Sakma Fara),ငကျဉ်တောက်ဒိုင်းနက်,20.936041,92.475830,Nga/ Kyin Tauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010011,198177,Nga Kyi Tauk Daing Net,Nga/ Kyin Tauk,active,active,exact
+215,Nga Kyi Tauk Ku Lar,Nakine Dong (Musulman Fara),ငကျဉ်တောက်ကုလား,20.933100,92.469353,Nga/ Kyin Tauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010011,198176,Nga Kyi Tauk Ku Lar,Nga/ Kyin Tauk,active,active,exact
+216,Nga/ Kyin Tauk,Nakine Dong,င/ကျဉ်တောက်,20.938351,92.490929,Nga/ Kyin Tauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010011,198173,Nga/ Kyin Tauk,Nga/ Kyin Tauk,active,active,exact
+217,Tha Yae Kone Tan,Shari Kunda,သရေကုန်းတန်း,20.943001,92.499153,Nga/ Kyin Tauk,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010011,198175,Tha Yae Kone Tan,Nga/ Kyin Tauk,active,active,exact
+218,Myauk Chaung,,မြောက်ချောင်း,20.965000,92.572327,Oke Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010024,198243,Myauk Chaung,Oke Taung,active,active,exact
+219,Oke Taung (Rakhine),Mok Para,အုပ်တောင်ရခိုင်,20.953199,92.562538,Oke Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010024,198242,Oke Taung (Rakhine),Oke Taung,active,active,exact
+220,Ah Twin Pyin,Mok Para,အတွင်းပြင်,20.630951,92.591187,Pauk Taw,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010077,198462,Ah Twin Pyin,Pauk Taw,active,active,exact
+221,Aung Ze Ya (Rakhine),Mok Para,အောင်ဇေယျ (ရခိုင်),20.618650,92.609367,Pauk Taw,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010077,217888,Aung Ze Ya (Rakhine),Pauk Taw,active,active,exact
+222,Pauk Taw,Mok Para,ပေါက်တော,20.631330,92.596802,Pauk Taw,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010077,198461,Pauk Taw,Pauk Taw,active,active,exact
+223,Pyaing Taung,Aazola para,ပြိုင်းတောင်,20.663370,92.613876,Pyaing Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010072,198449,Pyaing Taung,Pyaing Taung,active,active,exact
+224,Taung Chaung,Golasira,တောင်ချောင်း,20.663879,92.609306,Pyaing Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010072,198451,Taung Chaung,Pyaing Taung,active,active,exact
+225,Taung Maw,Sakma Para,တောင်မော်,20.667749,92.608650,Pyaing Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010072,198452,Taung Maw,Pyaing Taung,active,active,exact
+226,Zin Kha Mar,Fuk Para,ဇင်းခမာ,20.654249,92.619102,Pyaing Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010072,198450,Zin Kha Mar,Pyaing Taung,active,active,exact
+227,Let Pan Chaung,Mok Para,လက်ပန်ချောင်း,20.915480,92.666344,Pyin Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010048,198360,Let Pan Chaung,Pyin Chaung,active,active,exact
+228,Myo Ma Chaung,Mok Para,မြို့မချောင်း,20.859921,92.639450,Pyin Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010048,198359,Myo Ma Chaung,Pyin Chaung,active,active,exact
+229,Pyin Chaung,Mok Para,ပြင်ချောင်း,20.835489,92.602562,Pyin Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010048,198358,Pyin Chaung,Pyin Chaung,active,active,exact
+230,Kun Taung,Mok Para,ကွမ်းတောင်,20.750031,92.643646,Sa Par Htar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010062,198416,Kun Taung,Sa Par Htar,active,active,exact
+231,Sa Par Htar,Mok Para,စပါးထား,20.734859,92.657089,Sa Par Htar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010062,198415,Sa Par Htar,Sa Par Htar,active,active,exact
+232,Khaung Taik,Mok Para,ခေါင်းတိုက်,20.750250,92.651260,San Goe Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010061,198411,Khaung Taik,San Goe Taung,active,active,exact
+233,Nwar Yon Taung,Mok Para,နွားရုံတောင်,20.756411,92.635803,San Goe Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010061,198413,Nwar Yon Taung,San Goe Taung,active,active,exact
+234,San Goe Taung,Mok Para,စံဂိုးတောင်,20.764071,92.631126,San Goe Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010061,198408,San Goe Taung,San Goe Taung,active,active,exact
+235,Shat Shar Taung,Mok Para,ရှပ်ရှားတောင်,20.767719,92.631737,San Goe Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010061,198409,Shat Shar Taung,San Goe Taung,active,active,exact
+236,Sin Thay Pyin,Santhai parang,ဆင်သေပြင်,20.771191,92.633942,San Goe Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010061,198412,Sin Thay Pyin,San Goe Taung,active,active,exact
+237,U Yin Thar,Mok Para,ဥယျာဉ်သာ,20.772551,92.638290,San Goe Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010061,198410,U Yin Thar,San Goe Taung,active,active,exact
+238,U Yin Thar Kha Mway,Mok Para,ဥယျာဉ်သာခမွေး,20.774040,92.642593,San Goe Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010061,198414,U Yin Thar Kha Mway,San Goe Taung,active,active,exact
+239,Kan Paing Chaung,Mok Para,ကမ်းပိုင်ချောင်း,20.930599,92.574707,San Hnyin Wai,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010023,198237,Kan Paing Chaung,San Hnyin Wai,active,active,exact
+240,Kha Mway Chaung,Mok Para,ခမွေချောင်း,20.923849,92.584450,San Hnyin Wai,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010023,198239,Kha Mway Chaung,San Hnyin Wai,active,active,exact
+241,Pyin Shey Ku Lar,lamba bil,ပြင်ရှည်ကုလား,20.898420,92.570259,San Hnyin Wai,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010023,198238,Pyin Shey Ku Lar,San Hnyin Wai,active,active,exact
+242,San Hnyin Wai (Win Dwin Rakhine),Mok Para,စံညှင်းဝေ,20.888420,92.582367,San Hnyin Wai,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010023,198236,San Hnyin Wai (Win Dwin Rakhine),San Hnyin Wai,active,active,exact
+243,San Hnyin Wai Rakhine,Mok Para,စံညှင်းဝေရခိုင်,20.904079,92.577400,San Hnyin Wai,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010023,198241,San Hnyin Wai Rakhine,San Hnyin Wai,active,active,exact
+244,Si Pin Thar Yar,Mok Para,စည်ပင်သာယာ,20.911409,92.590813,San Hnyin Wai,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010023,198240,Si Pin Thar Yar,San Hnyin Wai,active,active,exact
+245,Say Oe Kya,Wari Young,ဆေးအိုးကျ,20.765671,92.577812,Say Oe Kya,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010059,198401,Say Oe Kya,Say Oe Kya,active,active,exact
+246,Tha Zin Taw,Zumma para,သဇင်တော,20.770220,92.588058,Say Oe Kya,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010059,198403,Tha Zin Taw,Say Oe Kya,active,active,exact
+247,Wa Ra Kyun,Wari Young,ဝရကျွန်း,20.770531,92.576073,Say Oe Kya,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010059,198402,Wa Ra Kyun,Say Oe Kya,active,active,exact
+248,Gwa Son,Mok Para,ဂွဆုံ,20.725130,92.673637,Say Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010063,217883,Gwa Son,Say Taung,active,active,exact
+249,Kan Pyin,Mok Para,ကံပြင်,20.741390,92.669327,Say Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010063,198419,Kan Pyin,Say Taung,active,active,exact
+250,Say Taung,Mok Para,စေတောင်,20.726419,92.671181,Say Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010063,198418,Say Taung,Say Taung,active,active,exact
+251,Daing Net Pyin,Fosim para,ဒိုင်းနက်ပြင်,20.762270,92.540283,Sein Hnyin Pyar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010054,198384,Daing Net Pyin,Sein Hnyin Pyar,active,active,exact
+252,Pyin Shey,Dail para,ပြင်ရှည်,20.765560,92.546837,Sein Hnyin Pyar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010054,198382,Pyin Shey,Sein Hnyin Pyar,active,active,exact
+253,Pyin Shey Ah Shey (Ku Lar),Tanguja para,ပြင်ရှည်အရှေ့ (ကုလား),20.769880,92.543793,Sein Hnyin Pyar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010054,198383,Pyin Shey Ah Shey (Ku Lar),Sein Hnyin Pyar,active,active,exact
+254,Sein Hnyin Pyar Zay,Bazarpparaor fuk ,စိမ်းညှင်းပြားဈေး,20.768150,92.550079,Sein Hnyin Pyar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010054,198381,Sein Hnyin Pyar Zay,Sein Hnyin Pyar,active,active,exact
+255,Taw Kan,Falonga para,တောကံ,20.766081,92.541573,Sein Hnyin Pyar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010054,198385,Taw Kan,Sein Hnyin Pyar,active,active,exact
+256,Tha Pyay Taw,sakma,သပြေတော,20.782770,92.551826,Sein Hnyin Pyar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010054,198388,Tha Pyay Taw,Sein Hnyin Pyar,active,active,exact
+257,Tin Set,Tansar para,တင်ဆက်,20.775681,92.547577,Sein Hnyin Pyar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010054,198387,Tin Set,Sein Hnyin Pyar,active,active,exact
+258,Yet Chaung,Rashong Ga para,ရက်ချောင်း,20.770750,92.550728,Sein Hnyin Pyar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010054,198386,Yet Chaung,Sein Hnyin Pyar,active,active,exact
+259,Zay Ah Nauk,Bazaror Fosim,ဈေးအနောက်,20.764500,92.540413,Sein Hnyin Pyar,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010054,198389,Zay Ah Nauk,Sein Hnyin Pyar,active,active,exact
+260,Ba Ho Pyin Ywar Haung,Mok Para,ဗဟိုပြင်ရွာဟောင်း,21.057610,92.515633,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010016,198201,Ba Ho Pyin Ywar Haung,Ta Ra Gu,active,active,exact
+261,Ba Ho Pyin Ywar Thit,Mok Para,ဗဟိုပြင်ရွာသစ်,21.063681,92.528763,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010016,198199,Ba Ho Pyin Ywar Thit,Ta Ra Gu,active,active,exact
+262,Chaung Chay,Mok Para,ချောင်းချေ,21.055811,92.541389,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010016,198202,Chaung Chay,Ta Ra Gu,active,active,exact
+263,Doe Tan,Mok Para,ဒိုးတန်း,21.099211,92.507492,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010016,198206,Doe Tan,Ta Ra Gu,active,active,exact
+264,Hmaing Sa Ri,Mok Para,မှိုင်းစရီ,21.108669,92.523300,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010016,198198,Hmaing Sa Ri,Ta Ra Gu,active,active,exact
+265,Inn Chaung,Mok Para,အင်းချောင်း,21.082260,92.515747,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010016,198212,Inn Chaung,Ta Ra Gu,active,active,exact
+266,Nga Thaing Chaung,Mok Para,ငသိုင်းချောင်း,21.071625,92.525978,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010016,198210,Nga Thaing Chaung,Ta Ra Gu,active,active,exact
+267,Pan Kone Ma,Mok Para,ပန်းကုံးမ,21.085171,92.509567,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010016,198203,Pan Kone Ma,Ta Ra Gu,active,active,exact
+268,Pauk Kyat,Mok Para,ပေါက်ကျပ်,21.085960,92.502289,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010016,198204,Pauk Kyat,Ta Ra Gu,active,active,exact
+269,Pauk Kyat Wa,Mok Para,ပေါက်ကျပ်ဝ,21.119150,92.515060,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010016,198209,Pauk Kyat Wa,Ta Ra Gu,active,active,exact
+270,Pi Ywet Rakhine,Mok Para,ပီရွက်ရခိုင်,21.035450,92.523178,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010016,198207,Pi Ywet Rakhine,Ta Ra Gu,active,active,exact
+271,Seik Ta Ra,Mok Para,စိတ္တရ,21.082760,92.519402,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010016,198211,Seik Ta Ra,Ta Ra Gu,active,active,exact
+272,Sin Ma U Kaing,Mok Para,ဆင်မဦးကိုင်,21.106390,92.500816,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010016,198205,Sin Ma U Kaing,Ta Ra Gu,active,active,exact
+273,Ta Ra Gu,Mok Para,တရဂူ,21.002640,92.561813,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010016,198197,Ta Ra Gu,Ta Ra Gu,active,active,exact
+274,Than Pu Yar,Mok Para,သံပုရာ,21.075497,92.534569,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010016,198200,Than Pu Yar,Ta Ra Gu,active,active,exact
+275,Tharaphy (NaTaLa),Mok Para,သရဖီ (နတလ),21.076317,92.566383,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010016,220750,Tharaphy (NaTaLa),Ta Ra Gu,active,active,exact
+276,Yae Chan,Mok Para,ရေချမ်း,21.036100,92.540588,Ta Ya Gu,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010016,198208,Yae Chan,Ta Ra Gu,active,active,exact
+277,Daing Net Ywar,Mok Para,ဒိုင်းနက်ရွာ,20.904169,92.461708,Tat Min Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010010,217867,Daing Net Ywar,Tat Min Chaung,active,active,exact
+278,Hpa Lan,Mok Para,ဖလန်း,20.906130,92.446213,Tat Min Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010010,198170,Hpa Lan,Tat Min Chaung,inactive_removed_from_list,active,exact
+279,Myaung,Mok Para,မြောင်း,20.902201,92.466820,Tat Min Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010010,198171,Myaung,Tat Min Chaung,inactive_removed_from_list,active,exact
+280,Tat Min Chaung,Tamin khali,တပ်မင်းချောင်း,20.897079,92.469521,Tat Min Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010010,198168,Tat Min Chaung,Tat Min Chaung,active,active,exact
+281,Taung Paing,Mok Para,တောင်ပိုင်း,20.892321,92.469612,Tat Min Chaung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010010,198172,Taung Paing,Tat Min Chaung,inactive_removed_from_list,active,exact
+282,Myauk,Kharang khali,မြောက်,20.798910,92.553680,Tha Peik Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010053,198379,Myauk,Tha Peik Taung,active,active,exact
+283,Taung,Keyazinga para,တောင်,20.787411,92.551552,Tha Peik Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010053,198380,Taung,Tha Peik Taung,active,active,exact
+284,Taung Chay,mura para,တောင်ခြေ,20.791679,92.550903,Tha Peik Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010053,198378,Taung Chay,Tha Peik Taung,active,active,exact
+285,Tha Peik Taung (Rakhine),Mok Para,သပိတ်တောင် (ရခိုင်),20.794100,92.554321,Tha Peik Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010053,198377,Tha Peik Taung (Rakhine),Tha Peik Taung,active,active,exact
+286,Kyet Mauk Taung,Azimma Para/Washilla,ကြက်မောက်တောင်,20.883680,92.569939,Tha Yet Kin Ma Nu,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010031,198292,Kyet Mauk Taung,Tha Yet Kin Ma Nu,active,active,exact
+287,Tha Yet Kin Ma Nu,Thara kuni,သရက်ကင်းမနု,20.871830,92.566910,Tha Yet Kin Ma Nu,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010031,198291,Tha Yet Kin Ma Nu,Tha Yet Kin Ma Nu,active,active,exact
+288,Tha Yet Pyin (Ku Lar),Farikul,သရက်ပြင် (ကုလား),20.803579,92.603683,Tha Yet Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010049,198364,Tha Yet Pyin (Ku Lar),Tha Yet Pyin,active,active,exact
+289,Tha Yet Pyin (Rakhine),Mok Para,သရက်ပြင် (ရခိုင်),20.812450,92.608658,Tha Yet Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010049,198363,Tha Yet Pyin (Rakhine),Tha Yet Pyin,active,active,exact
+290,Yae Chan Pyin,Reshup parang,ရေချမ်းပြင်,20.817289,92.606117,Tha Yet Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010049,198365,Yae Chan Pyin,Tha Yet Pyin,active,active,exact
+291,Kyauk Pyin Seik,Mok Para,ကျောက်ပြင်ဆိပ်,20.677860,92.699928,Thaing Ta Poke,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010064,198422,Kyauk Pyin Seik,Thaing Ta Poke,active,active,exact
+292,Tha Pyay Seik,Mok Para,သပြေဆိပ်,20.707460,92.680862,Thaing Ta Poke,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010064,198423,Tha Pyay Seik,Thaing Ta Poke,active,active,exact
+293,Thaing Ta Poke,Mok Para,သိုင်းတပုတ်,20.688311,92.696960,Thaing Ta Poke,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010064,198421,Thaing Ta Poke,Thaing Ta Poke,active,active,exact
+294,Gaung Gyi,Gongri para,ခေါင်းကြီး,20.721020,92.626198,Thay Kan Gwa Son,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010066,198429,Gaung Gyi,Thay Kan Gwa Son,active,active,exact
+295,Gwa Son (Ku Lar),Kwa Chaung,ခွဆုံ (ကုလား),20.703791,92.628464,Thay Kan Gwa Son,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010066,198431,Gwa Son (Ku Lar),Thay Kan Gwa Son,active,active,exact
+296,Gwa Son (Rakhine),Mok Para,ခွဆုံ (ရခိုင်),20.703920,92.631500,Thay Kan Gwa Son,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010066,198428,Gwa Son (Rakhine),Thay Kan Gwa Son,active,active,exact
+297,Maws Taw Hpi,Mustobiz para,မောစ်တော်ဖီ,20.721291,92.605141,Thay Kan Gwa Son,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010066,198432,Maws Taw Hpi,Thay Kan Gwa Son,active,active,exact
+298,Wet Ma Kya,Wa Mogya,ဝက်မကြ,20.724701,92.628197,Thay Kan Gwa Son,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010066,198430,Wet Ma Kya,Thay Kan Gwa Son,active,active,exact
+299,Hla Tha Ma,Messiri para,လှသမ,20.673639,92.596298,Thein Taung Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010071,217884,Hla Tha Ma,Thein Taung Pyin,active,active,exact
+300,Laung Gyun,Langu para,လောင်ဂျွမ်း,20.676519,92.591667,Thein Taung Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010071,217885,Laung Gyun,Thein Taung Pyin,active,active,exact
+301,Say Tha Ma,Boyi dow para,ဆေးသမ,20.678150,92.587868,Thein Taung Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010071,217886,Say Tha Ma,Thein Taung Pyin,active,active,exact
+302,Thein Taung Pyin (Daing Net),sakma,သိန်တောင်ပြင် (ဒိုင်းနက်),20.669130,92.595497,Thein Taung Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010071,198448,Thein Taung Pyin (Daing Net),Thein Taung Pyin,active,active,exact
+303,Thein Taung Pyin (Ku Lar),"Kittar bil,Bor para",သိန်တောင်ပြင် (ကုလား),20.674700,92.590393,Thein Taung Pyin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010071,198447,Thein Taung Pyin (Ku Lar),Thein Taung Pyin,active,active,exact
+304,Done Paing,Dom Mie,ဒုံးပိုင်,20.996700,92.512627,Thin Ga Net,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010017,198214,Done Paing,Thin Ga Net,active,active,exact
+305,Khu Taung,Doyin Kul,ခူးတောင်,20.993214,92.524986,Thin Ga Net,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010017,198216,Khu Taung,Thin Ga Net,active,active,exact
+306,Kone Taung,Ottor Kul (Hazir Fara),ကုန်းတောင်,21.002581,92.524277,Thin Ga Net,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010017,198215,Kone Taung,Thin Ga Net,active,active,exact
+307,Thin Ga Net,Fir Ha lee,သင်္ဂနက်,21.000639,92.521515,Thin Ga Net,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010017,198213,Thin Ga Net,Thin Ga Net,active,active,exact
+308,Kywe Rine (Na Ta La),Na Ta La Para,ကျွဲရိုင်း (နတလ),21.152260,92.462822,Tin May,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010003,220748,Kywe Rine (Na Ta La),Tin May,active,active,exact
+309,Tin May,Tami,တင်းမေ,21.153379,92.446861,Tin May,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010003,198139,Tin May,Tin May,active,active,exact
+310,Khe War,Sheyala para,ခဲဝါ,20.814581,92.576393,U Hla Hpay,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010044,198345,Khe War,U Hla Hpay,active,active,exact
+311,Taung,Mura para,တောင်,20.812960,92.564323,U Hla Hpay,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010044,198344,Taung,U Hla Hpay,active,active,exact
+312,U Hla Hpay,Oo Hla Hpay,ဦးလှဖေ,20.836651,92.558937,U Hla Hpay,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010044,198343,U Hla Hpay,U Hla Hpay,active,active,exact
+313,Hlaing Shey Pyin,Mok Para,လှိုင်ရှည်ပြင်,20.746700,92.574837,U Kyaw (a) Thar Zin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010057,198397,Hlaing Shey Pyin,U Kyaw (a) Thar Zin,active,active,exact
+314,U Kyaw,Mok Para,ဦးကျော်,20.740860,92.578438,U Kyaw (a) Thar Zin,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010057,198396,U Kyaw,U Kyaw (a) Thar Zin,active,active,exact
+315,Doe Tan,Lodine Para,ဒိုးတန်း,20.780630,92.581978,Wa Ya Kyun,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010052,198375,Doe Tan,Wa Ra Kyun,active,active,exact
+316,Kyein Chaung,Noya para,ကြိမ်ချောင်း,20.784821,92.586693,Wa Ya Kyun,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010052,198376,Kyein Chaung,Wa Ra Kyun,active,active,exact
+317,Wa Ra Kyun,Shafor Fara,ဝရကျွန်း,20.774130,92.574799,Wa Ya Kyun,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010052,198373,Wa Ra Kyun,Wa Ra Kyun,active,active,strong
+318,Zaw Baw,Zobbor Pata,ဇော်ဘော်,20.790039,92.585693,Wa Ya Kyun,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010052,198374,Zaw Baw,Wa Ra Kyun,active,active,exact
+319,Baw Li (Ku Lar),Bili para,ဘော်လီ (ကုလား),20.742060,92.630676,Wet Ma Kya (a) Zay Di Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010065,198427,Baw Li (Ku Lar),Wet Ma Kya (a) Zay Di Taung,active,active,exact
+320,Baw Li (Rakhine),boli (mok para),ဘော်လီ (ရခိုင်),20.741570,92.632347,Wet Ma Kya (a) Zay Di Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010065,198426,Baw Li (Rakhine),Wet Ma Kya (a) Zay Di Taung,active,active,exact
+321,Zay Di Taung (Ku Lar),Zadi Taung( Musalman Para),စေတီတောင် (ကုလား),20.737431,92.634773,Wet Ma Kya (a) Zay Di Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010065,198425,Zay Di Taung (Ku Lar),Wet Ma Kya (a) Zay Di Taung,active,active,exact
+322,Zay Di Taung (Rakhine),Zadi Taung(mok para),စေတီတောင် (ရခိုင်),20.735640,92.638077,Wet Ma Kya (a) Zay Di Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010065,198424,Zay Di Taung (Rakhine),Wet Ma Kya (a) Zay Di Taung,active,active,exact
+323,Ah Nauk Pyin,,အနောက်ပြင်,21.021919,92.508827,Yin Ma Kyaung Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010015,198195,Ah Nauk Pyin,Yin Ma Kyaung Taung,active,active,exact
+324,Kyein Chaung,,ကြိမ်ချောင်း,21.025631,92.524818,Yin Ma Kyaung Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010015,198196,Kyein Chaung,Yin Ma Kyaung Taung,active,active,exact
+325,Rammoya Fara,Ramiya Para,ရာမိုရ ဖာရာ,21.013479,92.506073,Yin Ma Kyaung Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010015,217869,Rammoya Fara,Yin Ma Kyaung Taung,active,active,exact
+326,Yin Ma Kyauk Taung,Gazonga Fara,ယင်းမကျောက်တောင်,21.023649,92.507042,Yin Ma Kyaung Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010015,198194,Yin Ma Kyauk Taung,Yin Ma Kyaung Taung,active,active,exact
+327,Gone Nar,Gona Para,ဂုံးနား,20.889811,92.519569,Ywar Ma,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010034,198305,Gone Nar,Ywar Ma,active,active,exact
+328,Thit Yin,Sarung Para,သစ်ရင်း,20.882521,92.532066,Ywar Ma,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010034,198307,Thit Yin,Ywar Ma,active,active,exact
+329,Ywar Ma Mu Sa Lin,Musalman Para,ရွာမမူဆလင်,20.883591,92.525681,Ywar Ma,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010034,198306,Ywar Ma Mu Sa Lin,Ywar Ma,active,active,exact
+330,Ywar Ma Rakhine,Mok Para,ရွာမရခိုင်,20.885229,92.530212,Ywar Ma,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010034,198304,Ywar Ma Rakhine,Ywar Ma,active,active,exact
+331,Ah Lel (Ywet Nyo Taung),Mazor Para,အလယ် (ရွက်ညိုတောင်),20.847490,92.556473,Ywet Nyo Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010045,198348,Ah Lel (Ywet Nyo Taung),Ywet Nyo Taung,active,active,exact
+332,Myauk (Ywet Nyo Taung),Uttar Para,မြောက် (ရွက်ညိုတောင်),20.852030,92.557297,Ywet Nyo Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010045,198347,Myauk (Ywet Nyo Taung),Ywet Nyo Taung,active,active,exact
+333,Taung (Ywet Nyo Taung),Doyin Para,တောင် (ရွက်ညိုတောင်),20.843081,92.556396,Ywet Nyo Taung,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010045,198346,Taung (Ywet Nyo Taung),Ywet Nyo Taung,active,active,exact
+334,Taung Gyi Yin,Mok Para,တောင်ကြီးရင်း,21.041439,92.459602,Zee Hton,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010007,198157,Taung Gyi Yin,Zee Hton,active,active,exact
+335,Thar Si (Myo),Murong Para,သာစည် (မြို),21.020180,92.430878,Zee Hton,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010007,198159,Thar Si (Myo),Zee Hton,inactive_removed_from_list,active,exact
+336,Yin Ma Zee Hton,Lyar Bill,ယင်းမဇီးထုံ,21.034100,92.470818,Zee Hton,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010007,198158,Yin Ma Zee Hton,Zee Hton,active,active,exact
+337,Zee Hton Rakhine,Mok Para,ဇီးထုံရခိုင်,21.040569,92.452469,Zee Hton,Buthidaung,Maungdaw,Buthidaung Village,#097138,,MMR012D002,MMR012010,MMR012010007,198156,Zee Hton Rakhine,Zee Hton,active,active,exact
+338,Four Miles South,,,-37.854815,144.981622,,Buthidaung,Maungdaw,Buthidaung Village,#097138,unverified,MMR012D002,MMR012010,,,,,,,none

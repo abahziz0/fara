@@ -16,5 +16,21 @@
   "unverified_coordinates": [
     338
   ],
-  "corrections": "id 1025 Fawyazi Para -> Maungdaw; id 338 Four Miles South -> Buthidaung (source coords erroneous, flagged unverified)"
+  "corrections": "id 1025 Fawyazi Para -> Maungdaw; id 338 Four Miles South -> Buthidaung (source coords erroneous, flagged unverified)",
+  "place_codes": {
+    "source": "MIMU Place Codes (P-codes) Release 9.7, January 2026 (Rakhine workbook)",
+    "villages_with_code": 1017,
+    "villages_unconfirmed": [
+      716,
+      796,
+      800,
+      802
+    ],
+    "villages_without_code": [
+      338,
+      1025
+    ],
+    "villages_inactive_in_mimu": 72,
+    "village_tracts_with_code": 291
+  }
 }

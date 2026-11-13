@@ -10,7 +10,16 @@
     "district": "Sittwe",
     "village_tract": "Ah Htet Nan Yar",
     "rohingya_name": "Razarbill Orro fara",
-    "village_name_mmr": "အထက်နန်းရာ"
+    "village_name_mmr": "အထက်နန်းရာ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008007",
+    "pcode_village": "197593",
+    "mimu_village_name": "Ah Htet Nan Yar",
+    "mimu_village_tract_name": "Ah Htet Nan Yar",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 810,
@@ -23,7 +32,16 @@
     "district": "Sittwe",
     "village_tract": "Ah Htet Nan Yar",
     "rohingya_name": null,
-    "village_name_mmr": "နေဗီဆိပ်"
+    "village_name_mmr": "နေဗီဆိပ်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008007",
+    "pcode_village": "197596",
+    "mimu_village_name": "Navy Seik",
+    "mimu_village_tract_name": "Ah Htet Nan Yar",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 811,
@@ -36,7 +54,16 @@
     "district": "Sittwe",
     "village_tract": "Ah Htet Nan Yar",
     "rohingya_name": "Nilam Bor Fara",
-    "village_name_mmr": "နီလင်ပေါ်"
+    "village_name_mmr": "နီလင်ပေါ်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008007",
+    "pcode_village": "197597",
+    "mimu_village_name": "Ni Lin Paw",
+    "mimu_village_tract_name": "Ah Htet Nan Yar",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 812,
@@ -49,7 +76,16 @@
     "district": "Sittwe",
     "village_tract": "Ah Htet Nan Yar",
     "rohingya_name": null,
-    "village_name_mmr": "ညောင်ပင်လှ"
+    "village_name_mmr": "ညောင်ပင်လှ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008007",
+    "pcode_village": "197598",
+    "mimu_village_name": "Nyaung Pin Hla",
+    "mimu_village_tract_name": "Ah Htet Nan Yar",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 813,
@@ -62,7 +98,16 @@
     "district": "Sittwe",
     "village_tract": "Ah Htet Nan Yar",
     "rohingya_name": "Shay Rah Khara",
-    "village_name_mmr": "ပြိုင်းတောင်"
+    "village_name_mmr": "ပြိုင်းတောင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008007",
+    "pcode_village": "197594",
+    "mimu_village_name": "Pyaing Taung",
+    "mimu_village_tract_name": "Ah Htet Nan Yar",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 814,
@@ -75,7 +120,16 @@
     "district": "Sittwe",
     "village_tract": "Ah Htet Nan Yar",
     "rohingya_name": null,
-    "village_name_mmr": "ဆင်အိုး"
+    "village_name_mmr": "ဆင်အိုး",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008007",
+    "pcode_village": "197595",
+    "mimu_village_name": "Sin Oe",
+    "mimu_village_tract_name": "Ah Htet Nan Yar",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 815,
@@ -88,7 +142,16 @@
     "district": "Sittwe",
     "village_tract": "Ah Nauk Pyin",
     "rohingya_name": "Anaf Parang",
-    "village_name_mmr": "အနောက်ပြင်"
+    "village_name_mmr": "အနောက်ပြင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008072",
+    "pcode_village": "197763",
+    "mimu_village_name": "Ah Nauk Pyin",
+    "mimu_village_tract_name": "Ah Nauk Pyin",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 816,
@@ -101,7 +164,16 @@
     "district": "Sittwe",
     "village_tract": "Ah Nauk Pyin",
     "rohingya_name": null,
-    "village_name_mmr": "တောင်သာယာ"
+    "village_name_mmr": "တောင်သာယာ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008072",
+    "pcode_village": "197764",
+    "mimu_village_name": "Taung Thar Yar",
+    "mimu_village_tract_name": "Ah Nauk Pyin",
+    "mimu_village_status": "inactive_removed_from_list",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 817,
@@ -114,7 +186,16 @@
     "district": "Sittwe",
     "village_tract": "Ah Ngu Maw",
     "rohingya_name": null,
-    "village_name_mmr": "အငူမော် (ကုလား)"
+    "village_name_mmr": "အငူမော် (ကုလား)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008036",
+    "pcode_village": "197663",
+    "mimu_village_name": "Ah Ngu Maw (Ku Lar)",
+    "mimu_village_tract_name": "Ah Ngu Maw",
+    "mimu_village_status": "inactive_removed_from_list",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 818,
@@ -127,7 +208,16 @@
     "district": "Sittwe",
     "village_tract": "Ah Ngu Maw",
     "rohingya_name": null,
-    "village_name_mmr": "အငူမော် (ရခိုင်)"
+    "village_name_mmr": "အငူမော် (ရခိုင်)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008036",
+    "pcode_village": "197662",
+    "mimu_village_name": "Ah Ngu Maw (Rakhine)",
+    "mimu_village_tract_name": "Ah Ngu Maw",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 819,
@@ -140,7 +230,16 @@
     "district": "Sittwe",
     "village_tract": "Ah Ngu Maw",
     "rohingya_name": null,
-    "village_name_mmr": "မကျည်းချောင်း"
+    "village_name_mmr": "မကျည်းချောင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008036",
+    "pcode_village": "197664",
+    "mimu_village_name": "Ma Gyi Chaung",
+    "mimu_village_tract_name": "Ah Ngu Maw",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 820,
@@ -153,7 +252,16 @@
     "district": "Sittwe",
     "village_tract": "Ah Ngu Maw Kone Tan",
     "rohingya_name": null,
-    "village_name_mmr": "အငူမော် (ကုန်းတန်း)"
+    "village_name_mmr": "အငူမော် (ကုန်းတန်း)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008035",
+    "pcode_village": "197661",
+    "mimu_village_name": "Ah Ngu Maw (Kone Tan)",
+    "mimu_village_tract_name": "Ah Ngu Maw Kone Tan",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 821,
@@ -166,7 +274,16 @@
     "district": "Sittwe",
     "village_tract": "Auk Nan Yar",
     "rohingya_name": "Razarbill Lamar fara",
-    "village_name_mmr": "အောက်နန်းရာ"
+    "village_name_mmr": "အောက်နန်းရာ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008009",
+    "pcode_village": "197603",
+    "mimu_village_name": "Auk Nan Yar",
+    "mimu_village_tract_name": "Auk Nan Yar",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 822,
@@ -179,7 +296,16 @@
     "district": "Sittwe",
     "village_tract": "Aung Ba La",
     "rohingya_name": null,
-    "village_name_mmr": "အောင်ဗလ"
+    "village_name_mmr": "အောင်ဗလ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008033",
+    "pcode_village": "197656",
+    "mimu_village_name": "Aung Ba La",
+    "mimu_village_tract_name": "Aung Ba La",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 823,
@@ -192,7 +318,16 @@
     "district": "Sittwe",
     "village_tract": "Aung Ba La",
     "rohingya_name": null,
-    "village_name_mmr": "ဆင်ပိုက်"
+    "village_name_mmr": "ဆင်ပိုက်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008033",
+    "pcode_village": "197657",
+    "mimu_village_name": "Sin Paik",
+    "mimu_village_tract_name": "Aung Ba La",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 824,
@@ -205,7 +340,16 @@
     "district": "Sittwe",
     "village_tract": "Aung Ba La",
     "rohingya_name": null,
-    "village_name_mmr": "တန်အေး"
+    "village_name_mmr": "တန်အေး",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008033",
+    "pcode_village": "197658",
+    "mimu_village_name": "Tan Aye",
+    "mimu_village_tract_name": "Aung Ba La",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 825,
@@ -218,7 +362,16 @@
     "district": "Sittwe",
     "village_tract": "Aung Ba La",
     "rohingya_name": null,
-    "village_name_mmr": "သာစည်"
+    "village_name_mmr": "သာစည်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008033",
+    "pcode_village": "197659",
+    "mimu_village_name": "Thar Si",
+    "mimu_village_tract_name": "Aung Ba La",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 826,
@@ -231,7 +384,16 @@
     "district": "Sittwe",
     "village_tract": "Aung Seik",
     "rohingya_name": null,
-    "village_name_mmr": "အောင်ဆိပ်"
+    "village_name_mmr": "အောင်ဆိပ်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008024",
+    "pcode_village": "197633",
+    "mimu_village_name": "Aung Seik",
+    "mimu_village_tract_name": "Aung Seik",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 827,
@@ -244,7 +406,16 @@
     "district": "Sittwe",
     "village_tract": "Aung Seik",
     "rohingya_name": null,
-    "village_name_mmr": "ကောင်းရီချောင်းရွာသစ်"
+    "village_name_mmr": "ကောင်းရီချောင်းရွာသစ်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008024",
+    "pcode_village": "197635",
+    "mimu_village_name": "Kaung Ri Chaung Ywar Thit",
+    "mimu_village_tract_name": "Aung Seik",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 828,
@@ -257,7 +428,16 @@
     "district": "Sittwe",
     "village_tract": "Aung Seik",
     "rohingya_name": null,
-    "village_name_mmr": "သက်"
+    "village_name_mmr": "သက်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008024",
+    "pcode_village": "197634",
+    "mimu_village_name": "Thet",
+    "mimu_village_tract_name": "Aung Seik",
+    "mimu_village_status": "inactive_removed_from_list",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 829,
@@ -270,7 +450,16 @@
     "district": "Sittwe",
     "village_tract": "Bar Ta Lay",
     "rohingya_name": null,
-    "village_name_mmr": "ဘာတလေ"
+    "village_name_mmr": "ဘာတလေ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008062",
+    "pcode_village": "197743",
+    "mimu_village_name": "Bar Ta Lay",
+    "mimu_village_tract_name": "Bar Ta Lay",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 830,
@@ -283,7 +472,16 @@
     "district": "Sittwe",
     "village_tract": "Bar Ta Lay",
     "rohingya_name": null,
-    "village_name_mmr": "သရက်ချောင်းခမွေး"
+    "village_name_mmr": "သရက်ချောင်းခမွေး",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008062",
+    "pcode_village": "197744",
+    "mimu_village_name": "Tha Yet Chaung Kha Mway",
+    "mimu_village_tract_name": "Bar Ta Lay",
+    "mimu_village_status": "inactive_removed_from_list",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 831,
@@ -296,7 +494,16 @@
     "district": "Sittwe",
     "village_tract": "Chut Pyin",
     "rohingya_name": null,
-    "village_name_mmr": "ချင်း (ပြိုင်းတောင်)"
+    "village_name_mmr": "ချင်း (ပြိုင်းတောင်)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008006",
+    "pcode_village": "197591",
+    "mimu_village_name": "Chin (Pyaing Taung)",
+    "mimu_village_tract_name": "Chut Pyin",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 832,
@@ -309,7 +516,16 @@
     "district": "Sittwe",
     "village_tract": "Chut Pyin",
     "rohingya_name": "Shuap praun Muslim ",
-    "village_name_mmr": "ချွတ်ပြင်"
+    "village_name_mmr": "ချွတ်ပြင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008006",
+    "pcode_village": "197590",
+    "mimu_village_name": "Chut Pyin",
+    "mimu_village_tract_name": "Chut Pyin",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 833,
@@ -322,7 +538,16 @@
     "district": "Sittwe",
     "village_tract": "Chut Pyin",
     "rohingya_name": null,
-    "village_name_mmr": "ပိတောက်မြိုင်"
+    "village_name_mmr": "ပိတောက်မြိုင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008006",
+    "pcode_village": "220694",
+    "mimu_village_name": "Pa Tauk Myaing",
+    "mimu_village_tract_name": "Chut Pyin",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "strong"
   },
   {
     "id": 834,
@@ -335,7 +560,16 @@
     "district": "Sittwe",
     "village_tract": "Chut Pyin",
     "rohingya_name": null,
-    "village_name_mmr": "သက်"
+    "village_name_mmr": "သက်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008006",
+    "pcode_village": "197592",
+    "mimu_village_name": "Thet",
+    "mimu_village_tract_name": "Chut Pyin",
+    "mimu_village_status": "inactive_removed_from_list",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 835,
@@ -348,7 +582,16 @@
     "district": "Sittwe",
     "village_tract": "Done Paik",
     "rohingya_name": null,
-    "village_name_mmr": "ဒုံးပိုက်"
+    "village_name_mmr": "ဒုံးပိုက်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008032",
+    "pcode_village": "197655",
+    "mimu_village_name": "Done Paik",
+    "mimu_village_tract_name": "Done Paik",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 836,
@@ -361,7 +604,16 @@
     "district": "Sittwe",
     "village_tract": "Gwa Son",
     "rohingya_name": null,
-    "village_name_mmr": "ခွဆုံ"
+    "village_name_mmr": "ခွဆုံ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008011",
+    "pcode_village": "197606",
+    "mimu_village_name": "Gwa Son",
+    "mimu_village_tract_name": "Gwa Son",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 837,
@@ -374,7 +626,16 @@
     "district": "Sittwe",
     "village_tract": "Hpet Leik",
     "rohingya_name": null,
-    "village_name_mmr": "ဖက်လိပ်"
+    "village_name_mmr": "ဖက်လိပ်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008002",
+    "pcode_village": "197581",
+    "mimu_village_name": "Hpet Leik",
+    "mimu_village_tract_name": "Hpet Leik",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 838,
@@ -387,7 +648,16 @@
     "district": "Sittwe",
     "village_tract": "Hpet Leik",
     "rohingya_name": null,
-    "village_name_mmr": "သပြေတော"
+    "village_name_mmr": "သပြေတော",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008002",
+    "pcode_village": "197582",
+    "mimu_village_name": "Tha Pyay Taw",
+    "mimu_village_tract_name": "Hpet Leik",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 839,
@@ -400,7 +670,16 @@
     "district": "Sittwe",
     "village_tract": "Hpyu Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "ဒိုင်းကျပ်"
+    "village_name_mmr": "ဒိုင်းကျပ်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008077",
+    "pcode_village": "197773",
+    "mimu_village_name": "Daing Kyat",
+    "mimu_village_tract_name": "Hpyu Chaung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 840,
@@ -413,7 +692,16 @@
     "district": "Sittwe",
     "village_tract": "Hpyu Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "ဖြူချောင်း"
+    "village_name_mmr": "ဖြူချောင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008077",
+    "pcode_village": "197772",
+    "mimu_village_name": "Hpyu Chaung",
+    "mimu_village_tract_name": "Hpyu Chaung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 841,
@@ -426,7 +714,16 @@
     "district": "Sittwe",
     "village_tract": "Htee Swea",
     "rohingya_name": null,
-    "village_name_mmr": "အောင်သာဇေ"
+    "village_name_mmr": "အောင်သာဇေ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008052",
+    "pcode_village": "197717",
+    "mimu_village_name": "Aung Thar Zay",
+    "mimu_village_tract_name": "Htee Swea",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 842,
@@ -439,7 +736,16 @@
     "district": "Sittwe",
     "village_tract": "Htee Swea",
     "rohingya_name": null,
-    "village_name_mmr": "ထီးစွဲရွာဟောင်း"
+    "village_name_mmr": "ထီးစွဲရွာဟောင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008052",
+    "pcode_village": "197715",
+    "mimu_village_name": "Htee Swea Ywar Haung",
+    "mimu_village_tract_name": "Htee Swea",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 843,
@@ -452,7 +758,16 @@
     "district": "Sittwe",
     "village_tract": "Htee Swea",
     "rohingya_name": null,
-    "village_name_mmr": "ထီးစွဲရွာသစ်"
+    "village_name_mmr": "ထီးစွဲရွာသစ်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008052",
+    "pcode_village": "197716",
+    "mimu_village_name": "Htee Swea Ywar Thit",
+    "mimu_village_tract_name": "Htee Swea",
+    "mimu_village_status": "inactive_removed_from_list",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 844,
@@ -465,7 +780,16 @@
     "district": "Sittwe",
     "village_tract": "Htun Ya Wai",
     "rohingya_name": null,
-    "village_name_mmr": "ထွန်းရဝေ"
+    "village_name_mmr": "ထွန်းရဝေ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008063",
+    "pcode_village": "197745",
+    "mimu_village_name": "Htun Ya Wai",
+    "mimu_village_tract_name": "Htun Ya Wai",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 845,
@@ -478,7 +802,16 @@
     "district": "Sittwe",
     "village_tract": "Htun Ya Wai",
     "rohingya_name": null,
-    "village_name_mmr": "ထွန်းရဝေရွာသစ်"
+    "village_name_mmr": "ထွန်းရဝေရွာသစ်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008063",
+    "pcode_village": "197746",
+    "mimu_village_name": "Htun Ya Wai Ywar Thit",
+    "mimu_village_tract_name": "Htun Ya Wai",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 846,
@@ -491,7 +824,16 @@
     "district": "Sittwe",
     "village_tract": "Ka Nyin Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "ကညင်ချောင်း"
+    "village_name_mmr": "ကညင်ချောင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008012",
+    "pcode_village": "197607",
+    "mimu_village_name": "Ka Nyin Chaung",
+    "mimu_village_tract_name": "Ka Nyin Chaung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 847,
@@ -504,7 +846,16 @@
     "district": "Sittwe",
     "village_tract": "Ka Paing",
     "rohingya_name": null,
-    "village_name_mmr": "ပြင်ချောင်းကုလား"
+    "village_name_mmr": "ပြင်ချောင်းကုလား",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008030",
+    "pcode_village": "197647",
+    "mimu_village_name": "Pyin Chaung Ku Lar",
+    "mimu_village_tract_name": "Ka Paing",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 848,
@@ -517,7 +868,16 @@
     "district": "Sittwe",
     "village_tract": "Ka Paing",
     "rohingya_name": null,
-    "village_name_mmr": "ရေဖြူကန်"
+    "village_name_mmr": "ရေဖြူကန်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008030",
+    "pcode_village": "197648",
+    "mimu_village_name": "Yae Hpyu Kan",
+    "mimu_village_tract_name": "Ka Paing",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 849,
@@ -530,7 +890,16 @@
     "district": "Sittwe",
     "village_tract": "Kan Pyin",
     "rohingya_name": null,
-    "village_name_mmr": "ကံပြင်"
+    "village_name_mmr": "ကံပြင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008080",
+    "pcode_village": "197777",
+    "mimu_village_name": "Kan Pyin",
+    "mimu_village_tract_name": "Kan Pyin",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 850,
@@ -543,7 +912,16 @@
     "district": "Sittwe",
     "village_tract": "Kat Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "ကပ်ချောင်း"
+    "village_name_mmr": "ကပ်ချောင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008081",
+    "pcode_village": "197778",
+    "mimu_village_name": "Kat Chaung",
+    "mimu_village_tract_name": "Kat Chaung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 851,
@@ -556,7 +934,16 @@
     "district": "Sittwe",
     "village_tract": "Kaung Ri Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "ကောင်းရီချောင်းရွာဟောင်း"
+    "village_name_mmr": "ကောင်းရီချောင်းရွာဟောင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008025",
+    "pcode_village": "197636",
+    "mimu_village_name": "Kaung Ri Chaung Ywar Haung",
+    "mimu_village_tract_name": "Kaung Ri Chaung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 852,
@@ -569,7 +956,16 @@
     "district": "Sittwe",
     "village_tract": "Kaung Ri Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "ကျွန်းချောင်း"
+    "village_name_mmr": "ကျွန်းချောင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008025",
+    "pcode_village": "197637",
+    "mimu_village_name": "Kyun Chaung",
+    "mimu_village_tract_name": "Kaung Ri Chaung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 853,
@@ -582,7 +978,16 @@
     "district": "Sittwe",
     "village_tract": "Kha Naung Gyi",
     "rohingya_name": null,
-    "village_name_mmr": "ကံပြင်"
+    "village_name_mmr": "ကံပြင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008056",
+    "pcode_village": "197725",
+    "mimu_village_name": "Kan Pyin",
+    "mimu_village_tract_name": "Kha Naung Gyi",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 854,
@@ -595,7 +1000,16 @@
     "district": "Sittwe",
     "village_tract": "Kha Naung Gyi",
     "rohingya_name": null,
-    "village_name_mmr": "ခနောင်းကြီး"
+    "village_name_mmr": "ခနောင်းကြီး",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008056",
+    "pcode_village": "197723",
+    "mimu_village_name": "Kha Naung Gyi",
+    "mimu_village_tract_name": "Kha Naung Gyi",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 855,
@@ -608,7 +1022,16 @@
     "district": "Sittwe",
     "village_tract": "Kha Naung Gyi",
     "rohingya_name": null,
-    "village_name_mmr": "ဆည်ကံရွာသစ်"
+    "village_name_mmr": "ဆည်ကံရွာသစ်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008056",
+    "pcode_village": "197726",
+    "mimu_village_name": "Se Kan Ywar Thit",
+    "mimu_village_tract_name": "Kha Naung Gyi",
+    "mimu_village_status": "inactive_removed_from_list",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 856,
@@ -621,7 +1044,16 @@
     "district": "Sittwe",
     "village_tract": "Kha Naung Gyi",
     "rohingya_name": null,
-    "village_name_mmr": "ရွာသစ်ကေ"
+    "village_name_mmr": "ရွာသစ်ကေ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008056",
+    "pcode_village": "197724",
+    "mimu_village_name": "Ywar Thit Kay",
+    "mimu_village_tract_name": "Kha Naung Gyi",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 857,
@@ -634,7 +1066,16 @@
     "district": "Sittwe",
     "village_tract": "Koe Tan Kauk",
     "rohingya_name": null,
-    "village_name_mmr": "ဘာဆာရာ"
+    "village_name_mmr": "ဘာဆာရာ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008031",
+    "pcode_village": "197653",
+    "mimu_village_name": "Bar Sar Ra",
+    "mimu_village_tract_name": "Koe Tan Kauk",
+    "mimu_village_status": "inactive_removed_from_list",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 858,
@@ -647,7 +1088,16 @@
     "district": "Sittwe",
     "village_tract": "Koe Tan Kauk",
     "rohingya_name": null,
-    "village_name_mmr": "ချိန်ခါလီ (ကုလား)"
+    "village_name_mmr": "ချိန်ခါလီ (ကုလား)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008031",
+    "pcode_village": "197651",
+    "mimu_village_name": "Chein Khar Li (Ku Lar)",
+    "mimu_village_tract_name": "Koe Tan Kauk",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 859,
@@ -660,7 +1110,16 @@
     "district": "Sittwe",
     "village_tract": "Koe Tan Kauk",
     "rohingya_name": null,
-    "village_name_mmr": "ချိန်ခါလီ (ရခိုင်)"
+    "village_name_mmr": "ချိန်ခါလီ (ရခိုင်)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008031",
+    "pcode_village": "197650",
+    "mimu_village_name": "Chein Khar Li (Rakhine)",
+    "mimu_village_tract_name": "Koe Tan Kauk",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 860,
@@ -673,7 +1132,16 @@
     "district": "Sittwe",
     "village_tract": "Koe Tan Kauk",
     "rohingya_name": null,
-    "village_name_mmr": "ကိုးတန်ကောက်"
+    "village_name_mmr": "ကိုးတန်ကောက်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008031",
+    "pcode_village": "197649",
+    "mimu_village_name": "Koe Tan Kauk",
+    "mimu_village_tract_name": "Koe Tan Kauk",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 861,
@@ -686,7 +1154,16 @@
     "district": "Sittwe",
     "village_tract": "Koe Tan Kauk",
     "rohingya_name": null,
-    "village_name_mmr": "ကိုးတန်ကောက် (ရခိုင်)"
+    "village_name_mmr": "ကိုးတန်ကောက် (ရခိုင်)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008031",
+    "pcode_village": "197654",
+    "mimu_village_name": "Koe Tan Kauk (Rakhine)",
+    "mimu_village_tract_name": "Koe Tan Kauk",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 862,
@@ -699,7 +1176,16 @@
     "district": "Sittwe",
     "village_tract": "Koe Tan Kauk",
     "rohingya_name": null,
-    "village_name_mmr": "ကိုးတန်ကောက်ရွာမ"
+    "village_name_mmr": "ကိုးတန်ကောက်ရွာမ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008031",
+    "pcode_village": "197652",
+    "mimu_village_name": "Koe Tan Kauk Ywar Ma",
+    "mimu_village_tract_name": "Koe Tan Kauk",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 863,
@@ -712,7 +1198,16 @@
     "district": "Sittwe",
     "village_tract": "Kon Tan",
     "rohingya_name": null,
-    "village_name_mmr": "ကုန်တန်း (ကုလား)"
+    "village_name_mmr": "ကုန်တန်း (ကုလား)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008018",
+    "pcode_village": "197620",
+    "mimu_village_name": "Kon Tan (Ku Lar)",
+    "mimu_village_tract_name": "Kon Tan",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 864,
@@ -725,7 +1220,16 @@
     "district": "Sittwe",
     "village_tract": "Kon Tan",
     "rohingya_name": null,
-    "village_name_mmr": "ကုန်တန်း (ရခိုင်)"
+    "village_name_mmr": "ကုန်တန်း (ရခိုင်)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008018",
+    "pcode_village": "197619",
+    "mimu_village_name": "Kon Tan (Rakhine)",
+    "mimu_village_tract_name": "Kon Tan",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 865,
@@ -738,7 +1242,16 @@
     "district": "Sittwe",
     "village_tract": "Kon Tan",
     "rohingya_name": null,
-    "village_name_mmr": "နော်ဝေ"
+    "village_name_mmr": "နော်ဝေ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008018",
+    "pcode_village": "197621",
+    "mimu_village_name": "Naw Wai",
+    "mimu_village_tract_name": "Kon Tan",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 866,
@@ -751,7 +1264,16 @@
     "district": "Sittwe",
     "village_tract": "Ku Lar Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "ကုလားချောင်း"
+    "village_name_mmr": "ကုလားချောင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008034",
+    "pcode_village": "197660",
+    "mimu_village_name": "Ku Lar Chaung",
+    "mimu_village_tract_name": "Ku Lar Chaung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 867,
@@ -764,7 +1286,16 @@
     "district": "Sittwe",
     "village_tract": "Ku Taung",
     "rohingya_name": null,
-    "village_name_mmr": "ကူတောင်"
+    "village_name_mmr": "ကူတောင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008071",
+    "pcode_village": "197761",
+    "mimu_village_name": "Ku Taung",
+    "mimu_village_tract_name": "Ku Taung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 868,
@@ -777,7 +1308,16 @@
     "district": "Sittwe",
     "village_tract": "Ku Taung",
     "rohingya_name": null,
-    "village_name_mmr": "ကူတောင်ရွာချေ"
+    "village_name_mmr": "ကူတောင်ရွာချေ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008071",
+    "pcode_village": "197762",
+    "mimu_village_name": "Ku Taung Ywar Chay",
+    "mimu_village_tract_name": "Ku Taung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 869,
@@ -790,7 +1330,16 @@
     "district": "Sittwe",
     "village_tract": "Kyauk Sar Taing",
     "rohingya_name": null,
-    "village_name_mmr": "ဗောဓိကုန်း"
+    "village_name_mmr": "ဗောဓိကုန်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008023",
+    "pcode_village": "197631",
+    "mimu_village_name": "Baw Di Kone",
+    "mimu_village_tract_name": "Kyauk Sar Taing",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 870,
@@ -803,7 +1352,16 @@
     "district": "Sittwe",
     "village_tract": "Kyauk Sar Taing",
     "rohingya_name": null,
-    "village_name_mmr": "ကုန်တန်းဈေး"
+    "village_name_mmr": "ကုန်တန်းဈေး",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008023",
+    "pcode_village": "197632",
+    "mimu_village_name": "Kon Tan Zay",
+    "mimu_village_tract_name": "Kyauk Sar Taing",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 871,
@@ -816,7 +1374,16 @@
     "district": "Sittwe",
     "village_tract": "Kyauk Sar Taing",
     "rohingya_name": null,
-    "village_name_mmr": "ကျောက်စာတိုင်"
+    "village_name_mmr": "ကျောက်စာတိုင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008023",
+    "pcode_village": "197629",
+    "mimu_village_name": "Kyauk Sar Taing",
+    "mimu_village_tract_name": "Kyauk Sar Taing",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 872,
@@ -829,7 +1396,16 @@
     "district": "Sittwe",
     "village_tract": "Kyauk Sar Taing",
     "rohingya_name": null,
-    "village_name_mmr": "မိချောင်းရေသောက်"
+    "village_name_mmr": "မိချောင်းရေသောက်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008023",
+    "pcode_village": "197630",
+    "mimu_village_name": "Mi Chaung Yae Thauk",
+    "mimu_village_tract_name": "Kyauk Sar Taing",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 873,
@@ -842,7 +1418,16 @@
     "district": "Sittwe",
     "village_tract": "Kyauk Tan",
     "rohingya_name": null,
-    "village_name_mmr": "ကျောက်တန်း"
+    "village_name_mmr": "ကျောက်တန်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008050",
+    "pcode_village": "197709",
+    "mimu_village_name": "Kyauk Tan",
+    "mimu_village_tract_name": "Kyauk Tan",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 874,
@@ -855,7 +1440,16 @@
     "district": "Sittwe",
     "village_tract": "Kyauk Yan Thar Si",
     "rohingya_name": null,
-    "village_name_mmr": "ကျောက်ရံသာစည်"
+    "village_name_mmr": "ကျောက်ရံသာစည်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008049",
+    "pcode_village": "197706",
+    "mimu_village_name": "Kyauk Yan Thar Si",
+    "mimu_village_tract_name": "Kyauk Yan Thar Si",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 875,
@@ -868,7 +1462,16 @@
     "district": "Sittwe",
     "village_tract": "Kyauk Yan Thar Si",
     "rohingya_name": null,
-    "village_name_mmr": "မောင်ဖြူ (ဒပြူချောင်း)"
+    "village_name_mmr": "မောင်ဖြူ (ဒပြူချောင်း)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008049",
+    "pcode_village": "197707",
+    "mimu_village_name": "Maung Hpyu (Da Pyu Chaung)",
+    "mimu_village_tract_name": "Kyauk Yan Thar Si",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 876,
@@ -881,7 +1484,16 @@
     "district": "Sittwe",
     "village_tract": "Kyauk Yan Thar Si",
     "rohingya_name": null,
-    "village_name_mmr": "ရေပုတ်"
+    "village_name_mmr": "ရေပုတ်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008049",
+    "pcode_village": "197708",
+    "mimu_village_name": "Yae Poke",
+    "mimu_village_tract_name": "Kyauk Yan Thar Si",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 877,
@@ -894,7 +1506,16 @@
     "district": "Sittwe",
     "village_tract": "Kyaung Taung",
     "rohingya_name": null,
-    "village_name_mmr": "ခမောင်းတုံး"
+    "village_name_mmr": "ခမောင်းတုံး",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008010",
+    "pcode_village": "197605",
+    "mimu_village_name": "Kha Maung Tone",
+    "mimu_village_tract_name": "Kyaung Taung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 878,
@@ -907,7 +1528,16 @@
     "district": "Sittwe",
     "village_tract": "Kyaung Taung",
     "rohingya_name": null,
-    "village_name_mmr": "ကျောင်းတောင်"
+    "village_name_mmr": "ကျောင်းတောင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008010",
+    "pcode_village": "197604",
+    "mimu_village_name": "Kyaung Taung",
+    "mimu_village_tract_name": "Kyaung Taung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 879,
@@ -920,7 +1550,16 @@
     "district": "Sittwe",
     "village_tract": "Kyein Tan",
     "rohingya_name": null,
-    "village_name_mmr": "ဒိုးဝေချောင်း"
+    "village_name_mmr": "ဒိုးဝေချောင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008003",
+    "pcode_village": "197585",
+    "mimu_village_name": "Doe Wai Chaung",
+    "mimu_village_tract_name": "Kyein Tan",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 880,
@@ -933,7 +1572,16 @@
     "district": "Sittwe",
     "village_tract": "Kyein Tan",
     "rohingya_name": null,
-    "village_name_mmr": "မှန်နီပြင်"
+    "village_name_mmr": "မှန်နီပြင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008003",
+    "pcode_village": "197584",
+    "mimu_village_name": "Hman Ni Pyin",
+    "mimu_village_tract_name": "Kyein Tan",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 881,
@@ -946,7 +1594,16 @@
     "district": "Sittwe",
     "village_tract": "Kyein Tan",
     "rohingya_name": null,
-    "village_name_mmr": "ကြိမ်တန်း"
+    "village_name_mmr": "ကြိမ်တန်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008003",
+    "pcode_village": "197583",
+    "mimu_village_name": "Kyein Tan",
+    "mimu_village_tract_name": "Kyein Tan",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 882,
@@ -959,7 +1616,16 @@
     "district": "Sittwe",
     "village_tract": "Kyein Thar",
     "rohingya_name": null,
-    "village_name_mmr": "ကာမေ (ခမွေး)"
+    "village_name_mmr": "ကာမေ (ခမွေး)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008064",
+    "pcode_village": "197749",
+    "mimu_village_name": "Kar May (Kha Mway)",
+    "mimu_village_tract_name": "Kyein Thar",
+    "mimu_village_status": "inactive_removed_from_list",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 883,
@@ -972,7 +1638,16 @@
     "district": "Sittwe",
     "village_tract": "Kyein Thar",
     "rohingya_name": null,
-    "village_name_mmr": "ကာမေ (ရခိုင်)"
+    "village_name_mmr": "ကာမေ (ရခိုင်)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008064",
+    "pcode_village": "197748",
+    "mimu_village_name": "Kar May (Rakhine)",
+    "mimu_village_tract_name": "Kyein Thar",
+    "mimu_village_status": "inactive_removed_from_list",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 884,
@@ -985,7 +1660,16 @@
     "district": "Sittwe",
     "village_tract": "Kyein Thar",
     "rohingya_name": null,
-    "village_name_mmr": "ကြိန်သာ"
+    "village_name_mmr": "ကြိန်သာ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008064",
+    "pcode_village": "197747",
+    "mimu_village_name": "Kyein Thar",
+    "mimu_village_tract_name": "Kyein Thar",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 885,
@@ -998,7 +1682,16 @@
     "district": "Sittwe",
     "village_tract": "Kyet Yoe Seik",
     "rohingya_name": null,
-    "village_name_mmr": "ဘုရားလှ"
+    "village_name_mmr": "ဘုရားလှ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008079",
+    "pcode_village": "197776",
+    "mimu_village_name": "Hpa Yar Hla",
+    "mimu_village_tract_name": "Kyet Yoe Seik",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 886,
@@ -1011,7 +1704,16 @@
     "district": "Sittwe",
     "village_tract": "Kyet Yoe Seik",
     "rohingya_name": null,
-    "village_name_mmr": "ကြက်ရိုးဆိပ်"
+    "village_name_mmr": "ကြက်ရိုးဆိပ်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008079",
+    "pcode_village": "197775",
+    "mimu_village_name": "Kyet Yoe Seik",
+    "mimu_village_tract_name": "Kyet Yoe Seik",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 887,
@@ -1024,7 +1726,16 @@
     "district": "Sittwe",
     "village_tract": "Kyun Gyi",
     "rohingya_name": null,
-    "village_name_mmr": "ကျွန်းကြီး"
+    "village_name_mmr": "ကျွန်းကြီး",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008084",
+    "pcode_village": "197783",
+    "mimu_village_name": "Kyun Gyi",
+    "mimu_village_tract_name": "Kyun Gyi",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 888,
@@ -1037,7 +1748,16 @@
     "district": "Sittwe",
     "village_tract": "Kyun Paw",
     "rohingya_name": null,
-    "village_name_mmr": "ကျွန်းပေါ်"
+    "village_name_mmr": "ကျွန်းပေါ်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008013",
+    "pcode_village": "197608",
+    "mimu_village_name": "Kyun Paw",
+    "mimu_village_tract_name": "Kyun Paw",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 889,
@@ -1050,7 +1770,16 @@
     "district": "Sittwe",
     "village_tract": "La Mone Taing",
     "rohingya_name": null,
-    "village_name_mmr": "လမုန်းတိုင်"
+    "village_name_mmr": "လမုန်းတိုင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008054",
+    "pcode_village": "197719",
+    "mimu_village_name": "La Mone Taing",
+    "mimu_village_tract_name": "La Mone Taing",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 890,
@@ -1063,7 +1792,16 @@
     "district": "Sittwe",
     "village_tract": "La Mone Taing",
     "rohingya_name": null,
-    "village_name_mmr": "နွားတင်းကုတ်"
+    "village_name_mmr": "နွားတင်းကုတ်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008054",
+    "pcode_village": "197720",
+    "mimu_village_name": "Nwar Tin Koke",
+    "mimu_village_tract_name": "La Mone Taing",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 891,
@@ -1076,7 +1814,16 @@
     "district": "Sittwe",
     "village_tract": "Laung Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "အောင်မ"
+    "village_name_mmr": "အောင်မ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008029",
+    "pcode_village": "197645",
+    "mimu_village_name": "Aung Ma",
+    "mimu_village_tract_name": "Laung Chaung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 892,
@@ -1089,7 +1836,16 @@
     "district": "Sittwe",
     "village_tract": "Laung Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "ကပိုင်ချောင်း"
+    "village_name_mmr": "ကပိုင်ချောင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008029",
+    "pcode_village": "197646",
+    "mimu_village_name": "Ka Paing Chaung",
+    "mimu_village_tract_name": "Laung Chaung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 893,
@@ -1102,7 +1858,16 @@
     "district": "Sittwe",
     "village_tract": "Laung Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "လောင်းချောင်း"
+    "village_name_mmr": "လောင်းချောင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008029",
+    "pcode_village": "197644",
+    "mimu_village_name": "Laung Chaung",
+    "mimu_village_tract_name": "Laung Chaung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 894,
@@ -1115,7 +1880,16 @@
     "district": "Sittwe",
     "village_tract": "Lay Gwa Son",
     "rohingya_name": null,
-    "village_name_mmr": "လေးခွဆုံ (ရွာဟောင်း)"
+    "village_name_mmr": "လေးခွဆုံ (ရွာဟောင်း)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008058",
+    "pcode_village": "197729",
+    "mimu_village_name": "Lay Gwa Son (Ywar Haung)",
+    "mimu_village_tract_name": "Lay Gwa Son",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 895,
@@ -1128,7 +1902,16 @@
     "district": "Sittwe",
     "village_tract": "Lay Gwa Son",
     "rohingya_name": null,
-    "village_name_mmr": "လေးခွဆုံ (ရွာသစ်)"
+    "village_name_mmr": "လေးခွဆုံ (ရွာသစ်)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008058",
+    "pcode_village": "197730",
+    "mimu_village_name": "Lay Gwa Son (Ywar Thit)",
+    "mimu_village_tract_name": "Lay Gwa Son",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 896,
@@ -1141,7 +1924,16 @@
     "district": "Sittwe",
     "village_tract": "Lay Gwa Son",
     "rohingya_name": null,
-    "village_name_mmr": "စံကားရွာ"
+    "village_name_mmr": "စံကားရွာ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008058",
+    "pcode_village": "220696",
+    "mimu_village_name": "San Kar Ywar",
+    "mimu_village_tract_name": "Lay Gwa Son",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "strong"
   },
   {
     "id": 897,
@@ -1154,7 +1946,16 @@
     "district": "Sittwe",
     "village_tract": "Lay Kan (Pauk Taw Gyi)",
     "rohingya_name": null,
-    "village_name_mmr": "လေးကံ"
+    "village_name_mmr": "လေးကံ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008066",
+    "pcode_village": "197753",
+    "mimu_village_name": "Lay Kan",
+    "mimu_village_tract_name": "Lay Kan (Pauk Taw Gyi)",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 898,
@@ -1167,7 +1968,16 @@
     "district": "Sittwe",
     "village_tract": "Lay Kan (Pauk Taw Gyi)",
     "rohingya_name": null,
-    "village_name_mmr": "ပေါက်တောကြီး"
+    "village_name_mmr": "ပေါက်တောကြီး",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008066",
+    "pcode_village": "197752",
+    "mimu_village_name": "Pauk Taw Gyi",
+    "mimu_village_tract_name": "Lay Kan (Pauk Taw Gyi)",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 899,
@@ -1180,7 +1990,16 @@
     "district": "Sittwe",
     "village_tract": "Let Pan Pin Yin",
     "rohingya_name": null,
-    "village_name_mmr": "အလယ်ဇီးကိုင်း"
+    "village_name_mmr": "အလယ်ဇီးကိုင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008087",
+    "pcode_village": "197788",
+    "mimu_village_name": "Ah Lel Zee Kaing",
+    "mimu_village_tract_name": "Let Pan Pin Yin",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 900,
@@ -1193,7 +2012,16 @@
     "district": "Sittwe",
     "village_tract": "Let Pan Pin Yin",
     "rohingya_name": null,
-    "village_name_mmr": "နှမ်းခမ်းရွာ"
+    "village_name_mmr": "နှမ်းခမ်းရွာ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008087",
+    "pcode_village": "220697",
+    "mimu_village_name": "Hnan Kham Ywar",
+    "mimu_village_tract_name": "Let Pan Pin Yin",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 901,
@@ -1206,7 +2034,16 @@
     "district": "Sittwe",
     "village_tract": "Let Pan Pin Yin",
     "rohingya_name": null,
-    "village_name_mmr": "လက်ပံပင်ရင်း"
+    "village_name_mmr": "လက်ပံပင်ရင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008087",
+    "pcode_village": "197787",
+    "mimu_village_name": "Let Pan Pin Yin",
+    "mimu_village_tract_name": "Let Pan Pin Yin",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 902,
@@ -1219,7 +2056,16 @@
     "district": "Sittwe",
     "village_tract": "Mi Nyo Htaunt",
     "rohingya_name": null,
-    "village_name_mmr": "မိညိုထောင့်"
+    "village_name_mmr": "မိညိုထောင့်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008015",
+    "pcode_village": "197611",
+    "mimu_village_name": "Mi Nyo Htaunt",
+    "mimu_village_tract_name": "Mi Nyo Htaunt",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 903,
@@ -1232,7 +2078,16 @@
     "district": "Sittwe",
     "village_tract": "Mi Nyo Htaunt",
     "rohingya_name": null,
-    "village_name_mmr": "မိညိုထောင့်ရွာသစ်"
+    "village_name_mmr": "မိညိုထောင့်ရွာသစ်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008015",
+    "pcode_village": "197612",
+    "mimu_village_name": "Mi Nyo Htaunt Ywar Thit",
+    "mimu_village_tract_name": "Mi Nyo Htaunt",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 904,
@@ -1245,7 +2100,16 @@
     "district": "Sittwe",
     "village_tract": "Mi Nyo Htaunt",
     "rohingya_name": null,
-    "village_name_mmr": "သာစည်"
+    "village_name_mmr": "သာစည်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008015",
+    "pcode_village": "197613",
+    "mimu_village_name": "Thar Si",
+    "mimu_village_tract_name": "Mi Nyo Htaunt",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 905,
@@ -1258,7 +2122,16 @@
     "district": "Sittwe",
     "village_tract": "Min Kan",
     "rohingya_name": null,
-    "village_name_mmr": "မင်းကံ"
+    "village_name_mmr": "မင်းကံ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008070",
+    "pcode_village": "197760",
+    "mimu_village_name": "Min Kan",
+    "mimu_village_tract_name": "Min Kan",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 906,
@@ -1271,7 +2144,16 @@
     "district": "Sittwe",
     "village_tract": "Myin Gan Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "မြင်းဂန်းချောင်း"
+    "village_name_mmr": "မြင်းဂန်းချောင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008074",
+    "pcode_village": "197766",
+    "mimu_village_name": "Myin Gan Chaung",
+    "mimu_village_tract_name": "Myin Gan Chaung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 907,
@@ -1284,7 +2166,16 @@
     "district": "Sittwe",
     "village_tract": "Myin Gan Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "မြင်းဂန်းချောင်းကုန်တန်း"
+    "village_name_mmr": "မြင်းဂန်းချောင်းကုန်တန်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008074",
+    "pcode_village": "197767",
+    "mimu_village_name": "Myin Gan Chaung Kone Tan",
+    "mimu_village_tract_name": "Myin Gan Chaung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 908,
@@ -1297,7 +2188,16 @@
     "district": "Sittwe",
     "village_tract": "Myin Gan Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "ဆိပ်ကြီးနား"
+    "village_name_mmr": "ဆိပ်ကြီးနား",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008074",
+    "pcode_village": "197768",
+    "mimu_village_name": "Seik Gyi Nar",
+    "mimu_village_tract_name": "Myin Gan Chaung",
+    "mimu_village_status": "inactive_removed_from_list",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 909,
@@ -1310,7 +2210,16 @@
     "district": "Sittwe",
     "village_tract": "Myin Hpu",
     "rohingya_name": null,
-    "village_name_mmr": "မြင်းဖူး"
+    "village_name_mmr": "မြင်းဖူး",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008022",
+    "pcode_village": "197627",
+    "mimu_village_name": "Myin Hpu",
+    "mimu_village_tract_name": "Myin Hpu",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 910,
@@ -1323,7 +2232,16 @@
     "district": "Sittwe",
     "village_tract": "Myin Hpu",
     "rohingya_name": null,
-    "village_name_mmr": "မြင်းဖူးရွာသစ်"
+    "village_name_mmr": "မြင်းဖူးရွာသစ်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008022",
+    "pcode_village": "197628",
+    "mimu_village_name": "Myin Hpu Ywar Thit",
+    "mimu_village_tract_name": "Myin Hpu",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 911,
@@ -1336,7 +2254,16 @@
     "district": "Sittwe",
     "village_tract": "Na Gar Mauk",
     "rohingya_name": null,
-    "village_name_mmr": "အထက်နဂါးမောက်"
+    "village_name_mmr": "အထက်နဂါးမောက်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008068",
+    "pcode_village": "197757",
+    "mimu_village_name": "Ah Htet Na Gar Mauk",
+    "mimu_village_tract_name": "Na Gar Mauk",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 912,
@@ -1349,7 +2276,16 @@
     "district": "Sittwe",
     "village_tract": "Na Gar Mauk",
     "rohingya_name": null,
-    "village_name_mmr": "အလယ်နဂါးမောက်"
+    "village_name_mmr": "အလယ်နဂါးမောက်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008068",
+    "pcode_village": "197756",
+    "mimu_village_name": "Ah Lel Na Gar Mauk",
+    "mimu_village_tract_name": "Na Gar Mauk",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 913,
@@ -1362,7 +2298,16 @@
     "district": "Sittwe",
     "village_tract": "Na Gar Mauk",
     "rohingya_name": null,
-    "village_name_mmr": "အောက်နဂါးမောက်"
+    "village_name_mmr": "အောက်နဂါးမောက်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008068",
+    "pcode_village": "197755",
+    "mimu_village_name": "Auk Na Gar Mauk",
+    "mimu_village_tract_name": "Na Gar Mauk",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 914,
@@ -1375,7 +2320,16 @@
     "district": "Sittwe",
     "village_tract": "Nat Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "အလယ်ချောင်း"
+    "village_name_mmr": "အလယ်ချောင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008021",
+    "pcode_village": "197626",
+    "mimu_village_name": "Ah Lel Chaung",
+    "mimu_village_tract_name": "Nat Chaung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 915,
@@ -1388,7 +2342,16 @@
     "district": "Sittwe",
     "village_tract": "Nat Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "နတ်ချောင်း"
+    "village_name_mmr": "နတ်ချောင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008021",
+    "pcode_village": "197625",
+    "mimu_village_name": "Nat Chaung",
+    "mimu_village_tract_name": "Nat Chaung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 916,
@@ -1401,7 +2364,16 @@
     "district": "Sittwe",
     "village_tract": "Nga San Baw",
     "rohingya_name": null,
-    "village_name_mmr": "အမျက်တောင်"
+    "village_name_mmr": "အမျက်တောင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008044",
+    "pcode_village": "197691",
+    "mimu_village_name": "Ah Myet Taung",
+    "mimu_village_tract_name": "Nga San Baw",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 917,
@@ -1414,7 +2386,16 @@
     "district": "Sittwe",
     "village_tract": "Nga San Baw",
     "rohingya_name": null,
-    "village_name_mmr": "င/စံဘော် (မုဆိုးချောင်း) (ရွာဟောင်း)"
+    "village_name_mmr": "င/စံဘော် (မုဆိုးချောင်း) (ရွာဟောင်း)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008044",
+    "pcode_village": "197690",
+    "mimu_village_name": "Nga/ San Baw (Moke Soe Chaung) (Ywar Haung)",
+    "mimu_village_tract_name": "Nga San Baw",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 918,
@@ -1427,7 +2408,16 @@
     "district": "Sittwe",
     "village_tract": "Nga Tauk Tu Chay",
     "rohingya_name": null,
-    "village_name_mmr": "ငတောက်တူချေ"
+    "village_name_mmr": "ငတောက်တူချေ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008059",
+    "pcode_village": "197731",
+    "mimu_village_name": "Nga Tauk Tu Chay",
+    "mimu_village_tract_name": "Nga Tauk Tu Chay",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 919,
@@ -1440,7 +2430,16 @@
     "district": "Sittwe",
     "village_tract": "Nga Tauk Tu Chay",
     "rohingya_name": null,
-    "village_name_mmr": "ဆည်ကံရွာဟောင်း"
+    "village_name_mmr": "ဆည်ကံရွာဟောင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008059",
+    "pcode_village": "197733",
+    "mimu_village_name": "Se Kan Ywar Haung",
+    "mimu_village_tract_name": "Nga Tauk Tu Chay",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 920,
@@ -1453,7 +2452,16 @@
     "district": "Sittwe",
     "village_tract": "Nga Tauk Tu Chay",
     "rohingya_name": null,
-    "village_name_mmr": "တောင်လှမော်"
+    "village_name_mmr": "တောင်လှမော်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008059",
+    "pcode_village": "197732",
+    "mimu_village_name": "Taung Hla Maw",
+    "mimu_village_tract_name": "Nga Tauk Tu Chay",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 921,
@@ -1466,7 +2474,16 @@
     "district": "Sittwe",
     "village_tract": "Nga Tauk Tu Gyi",
     "rohingya_name": null,
-    "village_name_mmr": "ဘက္ကား"
+    "village_name_mmr": "ဘက္ကား",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008057",
+    "pcode_village": "197728",
+    "mimu_village_name": "Bat Kar",
+    "mimu_village_tract_name": "Nga Tauk Tu Gyi",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 922,
@@ -1479,7 +2496,16 @@
     "district": "Sittwe",
     "village_tract": "Nga Tauk Tu Gyi",
     "rohingya_name": null,
-    "village_name_mmr": "ငတောက်တူကြီး"
+    "village_name_mmr": "ငတောက်တူကြီး",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008057",
+    "pcode_village": "197727",
+    "mimu_village_name": "Nga Tauk Tu Gyi",
+    "mimu_village_tract_name": "Nga Tauk Tu Gyi",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 923,
@@ -1492,7 +2518,16 @@
     "district": "Sittwe",
     "village_tract": "Nwar Hla Kyaw",
     "rohingya_name": null,
-    "village_name_mmr": "နွားလှကျော်"
+    "village_name_mmr": "နွားလှကျော်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008051",
+    "pcode_village": "197713",
+    "mimu_village_name": "Nwar Hla Kyaw",
+    "mimu_village_tract_name": "Nwar Hla Kyaw",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 924,
@@ -1505,7 +2540,16 @@
     "district": "Sittwe",
     "village_tract": "Nyaung Pin Gyi",
     "rohingya_name": null,
-    "village_name_mmr": "ညောင်ပင်ကြီး (ကုလား)"
+    "village_name_mmr": "ညောင်ပင်ကြီး (ကုလား)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008082",
+    "pcode_village": "197780",
+    "mimu_village_name": "Nyaung Pin Gyi (Ku Lar)",
+    "mimu_village_tract_name": "Nyaung Pin Gyi",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 925,
@@ -1518,7 +2562,16 @@
     "district": "Sittwe",
     "village_tract": "Nyaung Pin Gyi",
     "rohingya_name": null,
-    "village_name_mmr": "ညောင်ပင်ကြီး (ရခိုင်)"
+    "village_name_mmr": "ညောင်ပင်ကြီး (ရခိုင်)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008082",
+    "pcode_village": "197779",
+    "mimu_village_name": "Nyaung Pin Gyi (Rakhine)",
+    "mimu_village_tract_name": "Nyaung Pin Gyi",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 926,
@@ -1531,7 +2584,16 @@
     "district": "Sittwe",
     "village_tract": "Nyaung Pin Gyi",
     "rohingya_name": null,
-    "village_name_mmr": "ပန်းဇင်းမော်"
+    "village_name_mmr": "ပန်းဇင်းမော်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008082",
+    "pcode_village": "197781",
+    "mimu_village_name": "Pan Zin Maw",
+    "mimu_village_tract_name": "Nyaung Pin Gyi",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 927,
@@ -1544,7 +2606,16 @@
     "district": "Sittwe",
     "village_tract": "Nyaung Pin Hla",
     "rohingya_name": null,
-    "village_name_mmr": "ခွေးတောက်ချောင်းရွာသစ် (ခ) နှင်းဆီကုန်း"
+    "village_name_mmr": "ခွေးတောက်ချောင်းရွာသစ် (ခ) နှင်းဆီကုန်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008020",
+    "pcode_village": "197624",
+    "mimu_village_name": "Khway Tauk Chaung Ywar Thit (Hnin Si Kone)",
+    "mimu_village_tract_name": "Nyaung Pin Hla",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 928,
@@ -1557,7 +2628,16 @@
     "district": "Sittwe",
     "village_tract": "Nyaung Pin Hla",
     "rohingya_name": null,
-    "village_name_mmr": "ညောင်ပင်လှ (ခ) ခွေးတောက်ချောင်း"
+    "village_name_mmr": "ညောင်ပင်လှ (ခ) ခွေးတောက်ချောင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008020",
+    "pcode_village": "197623",
+    "mimu_village_name": "Nyaung Pin Hla (Khway Tauk Chaung)",
+    "mimu_village_tract_name": "Nyaung Pin Hla",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 929,
@@ -1570,7 +2650,16 @@
     "district": "Sittwe",
     "village_tract": "Nyaung Pin Lel",
     "rohingya_name": null,
-    "village_name_mmr": "လိပ်ထောင့်တဲ့စု"
+    "village_name_mmr": "လိပ်ထောင့်တဲ့စု",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008085",
+    "pcode_village": "197785",
+    "mimu_village_name": "Leik Htaunt Teit Su",
+    "mimu_village_tract_name": "Nyaung Pin Lel",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 930,
@@ -1583,7 +2672,16 @@
     "district": "Sittwe",
     "village_tract": "Nyaung Pin Lel",
     "rohingya_name": null,
-    "village_name_mmr": "ညောင်ပင်လယ်"
+    "village_name_mmr": "ညောင်ပင်လယ်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008085",
+    "pcode_village": "197784",
+    "mimu_village_name": "Nyaung Pin Lel",
+    "mimu_village_tract_name": "Nyaung Pin Lel",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 931,
@@ -1596,7 +2694,16 @@
     "district": "Sittwe",
     "village_tract": "Ohn Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "အုန်းချောင်း"
+    "village_name_mmr": "အုန်းချောင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008039",
+    "pcode_village": "197672",
+    "mimu_village_name": "Ohn Chaung",
+    "mimu_village_tract_name": "Ohn Chaung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 932,
@@ -1609,7 +2716,16 @@
     "district": "Sittwe",
     "village_tract": "Oke Hpo (Oe Hpauk)",
     "rohingya_name": null,
-    "village_name_mmr": "ကံဆစ်"
+    "village_name_mmr": "ကံဆစ်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008038",
+    "pcode_village": "197670",
+    "mimu_village_name": "Kan Sit",
+    "mimu_village_tract_name": "Oke Hpo (Oe Hpauk)",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 933,
@@ -1622,7 +2738,16 @@
     "district": "Sittwe",
     "village_tract": "Oke Hpo (Oe Hpauk)",
     "rohingya_name": null,
-    "village_name_mmr": "အိုးဖောက်ရွာသစ်"
+    "village_name_mmr": "အိုးဖောက်ရွာသစ်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008038",
+    "pcode_village": "197671",
+    "mimu_village_name": "Oe Hpauk Ywar Thit",
+    "mimu_village_tract_name": "Oke Hpo (Oe Hpauk)",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 934,
@@ -1635,7 +2760,16 @@
     "district": "Sittwe",
     "village_tract": "Oke Hpo (Oe Hpauk)",
     "rohingya_name": null,
-    "village_name_mmr": "အုတ်ဖို (အိုးဖောက်)"
+    "village_name_mmr": "အုတ်ဖို (အိုးဖောက်)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008038",
+    "pcode_village": "197669",
+    "mimu_village_name": "Oke Hpo (Oe Hpauk)",
+    "mimu_village_tract_name": "Oke Hpo (Oe Hpauk)",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 935,
@@ -1648,7 +2782,16 @@
     "district": "Sittwe",
     "village_tract": "Pan Hpaw Pyin",
     "rohingya_name": null,
-    "village_name_mmr": "ပန်းဖေါ်ပြင်"
+    "village_name_mmr": "ပန်းဖေါ်ပြင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008014",
+    "pcode_village": "197609",
+    "mimu_village_name": "Pan Hpaw Pyin",
+    "mimu_village_tract_name": "Pan Hpaw Pyin",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 936,
@@ -1661,7 +2804,16 @@
     "district": "Sittwe",
     "village_tract": "Pan Hpaw Pyin",
     "rohingya_name": null,
-    "village_name_mmr": "ပန်းကိုင်း"
+    "village_name_mmr": "ပန်းကိုင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008014",
+    "pcode_village": "197610",
+    "mimu_village_name": "Pan Kaing",
+    "mimu_village_tract_name": "Pan Hpaw Pyin",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 937,
@@ -1674,7 +2826,16 @@
     "district": "Sittwe",
     "village_tract": "Pauk Pin Yin (Pauk Taw)",
     "rohingya_name": null,
-    "village_name_mmr": "အဒူ"
+    "village_name_mmr": "အဒူ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008008",
+    "pcode_village": "197602",
+    "mimu_village_name": "Ah Du",
+    "mimu_village_tract_name": "Pauk Pin Yin (Pauk Taw)",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 938,
@@ -1687,7 +2848,16 @@
     "district": "Sittwe",
     "village_tract": "Pauk Pin Yin (Pauk Taw)",
     "rohingya_name": null,
-    "village_name_mmr": "ဘဲလာမိ"
+    "village_name_mmr": "ဘဲလာမိ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008008",
+    "pcode_village": "197601",
+    "mimu_village_name": "Be Lar Mi",
+    "mimu_village_tract_name": "Pauk Pin Yin (Pauk Taw)",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 939,
@@ -1700,7 +2870,16 @@
     "district": "Sittwe",
     "village_tract": "Pauk Pin Yin (Pauk Taw)",
     "rohingya_name": null,
-    "village_name_mmr": "ပေါက်ပင်ရင်း"
+    "village_name_mmr": "ပေါက်ပင်ရင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008008",
+    "pcode_village": "197599",
+    "mimu_village_name": "Pauk Pin Yin",
+    "mimu_village_tract_name": "Pauk Pin Yin (Pauk Taw)",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 940,
@@ -1713,7 +2892,16 @@
     "district": "Sittwe",
     "village_tract": "Pauk Pin Yin (Pauk Taw)",
     "rohingya_name": null,
-    "village_name_mmr": "သံဒူ"
+    "village_name_mmr": "သံဒူ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008008",
+    "pcode_village": "197600",
+    "mimu_village_name": "Than Du",
+    "mimu_village_tract_name": "Pauk Pin Yin (Pauk Taw)",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 941,
@@ -1726,7 +2914,16 @@
     "district": "Sittwe",
     "village_tract": "Pauk Taw",
     "rohingya_name": null,
-    "village_name_mmr": "အောင်ဇေယျ"
+    "village_name_mmr": "အောင်ဇေယျ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008060",
+    "pcode_village": "197738",
+    "mimu_village_name": "Aung Zay Ya",
+    "mimu_village_tract_name": "Pauk Taw",
+    "mimu_village_status": "inactive_removed_from_list",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 942,
@@ -1739,7 +2936,16 @@
     "district": "Sittwe",
     "village_tract": "Pauk Taw",
     "rohingya_name": null,
-    "village_name_mmr": "ကျောက်ဆုံ"
+    "village_name_mmr": "ကျောက်ဆုံ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008060",
+    "pcode_village": "197736",
+    "mimu_village_name": "Kyauk Son",
+    "mimu_village_tract_name": "Pauk Taw",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 943,
@@ -1752,7 +2958,16 @@
     "district": "Sittwe",
     "village_tract": "Pauk Taw",
     "rohingya_name": null,
-    "village_name_mmr": "ပေါက်တောချေ"
+    "village_name_mmr": "ပေါက်တောချေ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008060",
+    "pcode_village": "197734",
+    "mimu_village_name": "Pauk Taw Chay",
+    "mimu_village_tract_name": "Pauk Taw",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 944,
@@ -1765,7 +2980,16 @@
     "district": "Sittwe",
     "village_tract": "Pauk Taw",
     "rohingya_name": null,
-    "village_name_mmr": "ပေါက်တောချေရွာသစ်"
+    "village_name_mmr": "ပေါက်တောချေရွာသစ်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008060",
+    "pcode_village": "197735",
+    "mimu_village_name": "Pauk Taw Chay Ywar Thit",
+    "mimu_village_tract_name": "Pauk Taw",
+    "mimu_village_status": "inactive_removed_from_list",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 945,
@@ -1778,7 +3002,16 @@
     "district": "Sittwe",
     "village_tract": "Pauk Taw",
     "rohingya_name": null,
-    "village_name_mmr": "ပြင်ခေါင်ရွာသစ်"
+    "village_name_mmr": "ပြင်ခေါင်ရွာသစ်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008060",
+    "pcode_village": "197737",
+    "mimu_village_name": "Pyin Khaung Ywar Thit",
+    "mimu_village_tract_name": "Pauk Taw",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 946,
@@ -1791,7 +3024,16 @@
     "district": "Sittwe",
     "village_tract": "Paung Zar",
     "rohingya_name": null,
-    "village_name_mmr": "ကြက်ရိုးကုန်းတန်း"
+    "village_name_mmr": "ကြက်ရိုးကုန်းတန်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008027",
+    "pcode_village": "197640",
+    "mimu_village_name": "Kyet Yoe Kone Tan",
+    "mimu_village_tract_name": "Paung Zar",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 947,
@@ -1804,7 +3046,16 @@
     "district": "Sittwe",
     "village_tract": "Paung Zar",
     "rohingya_name": null,
-    "village_name_mmr": "နေပူခံ"
+    "village_name_mmr": "နေပူခံ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008027",
+    "pcode_village": "197641",
+    "mimu_village_name": "Nay Pu Khan",
+    "mimu_village_tract_name": "Paung Zar",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 948,
@@ -1817,7 +3068,16 @@
     "district": "Sittwe",
     "village_tract": "Paung Zar",
     "rohingya_name": null,
-    "village_name_mmr": "ပေါင်းဇား"
+    "village_name_mmr": "ပေါင်းဇား",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008027",
+    "pcode_village": "197639",
+    "mimu_village_name": "Paung Zar",
+    "mimu_village_tract_name": "Paung Zar",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 949,
@@ -1830,7 +3090,16 @@
     "district": "Sittwe",
     "village_tract": "Pe Tha Du",
     "rohingya_name": null,
-    "village_name_mmr": "ဗောဓိကိုင်း"
+    "village_name_mmr": "ဗောဓိကိုင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008043",
+    "pcode_village": "197686",
+    "mimu_village_name": "Baw Di Kaing",
+    "mimu_village_tract_name": "Pe Tha Du",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 950,
@@ -1843,7 +3112,16 @@
     "district": "Sittwe",
     "village_tract": "Pe Tha Du",
     "rohingya_name": null,
-    "village_name_mmr": "ဒုံး"
+    "village_name_mmr": "ဒုံး",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008043",
+    "pcode_village": "197688",
+    "mimu_village_name": "Done",
+    "mimu_village_tract_name": "Pe Tha Du",
+    "mimu_village_status": "inactive_removed_from_list",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 951,
@@ -1856,7 +3134,16 @@
     "district": "Sittwe",
     "village_tract": "Pe Tha Du",
     "rohingya_name": null,
-    "village_name_mmr": "ကျောက်ကုန်ဘုတ်"
+    "village_name_mmr": "ကျောက်ကုန်ဘုတ်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008043",
+    "pcode_village": "197685",
+    "mimu_village_name": "Kyauk Kon Boke",
+    "mimu_village_tract_name": "Pe Tha Du",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 952,
@@ -1869,7 +3156,16 @@
     "district": "Sittwe",
     "village_tract": "Pe Tha Du",
     "rohingya_name": null,
-    "village_name_mmr": "လက်ဝဲဒက်"
+    "village_name_mmr": "လက်ဝဲဒက်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008043",
+    "pcode_village": "197689",
+    "mimu_village_name": "Let Wea Det",
+    "mimu_village_tract_name": "Pe Tha Du",
+    "mimu_village_status": "inactive_removed_from_list",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 953,
@@ -1882,7 +3178,16 @@
     "district": "Sittwe",
     "village_tract": "Pe Tha Du",
     "rohingya_name": null,
-    "village_name_mmr": "နေပူခံ"
+    "village_name_mmr": "နေပူခံ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008043",
+    "pcode_village": "197687",
+    "mimu_village_name": "Nay Pu Khan",
+    "mimu_village_tract_name": "Pe Tha Du",
+    "mimu_village_status": "inactive_removed_from_list",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 954,
@@ -1895,7 +3200,16 @@
     "district": "Sittwe",
     "village_tract": "Pe Tha Du",
     "rohingya_name": null,
-    "village_name_mmr": "ပဲသဒူ"
+    "village_name_mmr": "ပဲသဒူ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008043",
+    "pcode_village": "197683",
+    "mimu_village_name": "Pe Tha Du",
+    "mimu_village_tract_name": "Pe Tha Du",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 955,
@@ -1908,7 +3222,16 @@
     "district": "Sittwe",
     "village_tract": "Pe Tha Du",
     "rohingya_name": null,
-    "village_name_mmr": "သက်ပြေကျ"
+    "village_name_mmr": "သက်ပြေကျ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008043",
+    "pcode_village": "197684",
+    "mimu_village_name": "Thet Pyay Kya",
+    "mimu_village_tract_name": "Pe Tha Du",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 956,
@@ -1921,7 +3244,16 @@
     "district": "Sittwe",
     "village_tract": "Pyar Chaung Gyi",
     "rohingya_name": null,
-    "village_name_mmr": "အဝဒါ"
+    "village_name_mmr": "အဝဒါ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008061",
+    "pcode_village": "197742",
+    "mimu_village_name": "Ah Wa Dar",
+    "mimu_village_tract_name": "Pyar Chaung Gyi",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 957,
@@ -1934,7 +3266,16 @@
     "district": "Sittwe",
     "village_tract": "Pyar Chaung Gyi",
     "rohingya_name": null,
-    "village_name_mmr": "ပြားချောင်းကြီး"
+    "village_name_mmr": "ပြားချောင်းကြီး",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008061",
+    "pcode_village": "197739",
+    "mimu_village_name": "Pyar Chaung Gyi",
+    "mimu_village_tract_name": "Pyar Chaung Gyi",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 958,
@@ -1947,7 +3288,16 @@
     "district": "Sittwe",
     "village_tract": "Pyar Chaung Gyi",
     "rohingya_name": null,
-    "village_name_mmr": "ပြားချောင်းကြီး (အလယ်)"
+    "village_name_mmr": "ပြားချောင်းကြီး (အလယ်)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008061",
+    "pcode_village": "197740",
+    "mimu_village_name": "Pyar Chaung Gyi (Middle)",
+    "mimu_village_tract_name": "Pyar Chaung Gyi",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 959,
@@ -1960,7 +3310,16 @@
     "district": "Sittwe",
     "village_tract": "Pyar Chaung Gyi",
     "rohingya_name": null,
-    "village_name_mmr": "ပြင်ခေါင်းရွာဟောင်း"
+    "village_name_mmr": "ပြင်ခေါင်းရွာဟောင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008061",
+    "pcode_village": "197741",
+    "mimu_village_name": "Pyin Khaung Ywar Haung",
+    "mimu_village_tract_name": "Pyar Chaung Gyi",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 960,
@@ -1973,7 +3332,16 @@
     "district": "Sittwe",
     "village_tract": "Pyar Pin Yin",
     "rohingya_name": null,
-    "village_name_mmr": "ပြာပင်ရင်း"
+    "village_name_mmr": "ပြာပင်ရင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008019",
+    "pcode_village": "197622",
+    "mimu_village_name": "Pyar Pin Yin",
+    "mimu_village_tract_name": "Pyar Pin Yin",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 961,
@@ -1986,7 +3354,16 @@
     "district": "Sittwe",
     "village_tract": "Pyein Taw",
     "rohingya_name": null,
-    "village_name_mmr": "အောင်ဇေယျ"
+    "village_name_mmr": "အောင်ဇေယျ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008045",
+    "pcode_village": "197693",
+    "mimu_village_name": "Aung Zay Ya",
+    "mimu_village_tract_name": "Pyein Taw",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 962,
@@ -1999,7 +3376,16 @@
     "district": "Sittwe",
     "village_tract": "Pyein Taw",
     "rohingya_name": null,
-    "village_name_mmr": "ကုန်းတန်း"
+    "village_name_mmr": "ကုန်းတန်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008045",
+    "pcode_village": "197695",
+    "mimu_village_name": "Kone Tan",
+    "mimu_village_tract_name": "Pyein Taw",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 963,
@@ -2012,7 +3398,16 @@
     "district": "Sittwe",
     "village_tract": "Pyein Taw",
     "rohingya_name": null,
-    "village_name_mmr": "မညင်းတောင်"
+    "village_name_mmr": "မညင်းတောင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008045",
+    "pcode_village": "197694",
+    "mimu_village_name": "Ma Nyin Taung",
+    "mimu_village_tract_name": "Pyein Taw",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 964,
@@ -2025,7 +3420,16 @@
     "district": "Sittwe",
     "village_tract": "Pyein Taw",
     "rohingya_name": null,
-    "village_name_mmr": "ပြိန်းတော"
+    "village_name_mmr": "ပြိန်းတော",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008045",
+    "pcode_village": "197692",
+    "mimu_village_name": "Pyein Taw",
+    "mimu_village_tract_name": "Pyein Taw",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 965,
@@ -2038,7 +3442,16 @@
     "district": "Sittwe",
     "village_tract": "Pyin Shey",
     "rohingya_name": null,
-    "village_name_mmr": "အောင်စည်ကုန်း"
+    "village_name_mmr": "အောင်စည်ကုန်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008004",
+    "pcode_village": "220693",
+    "mimu_village_name": "Aung Si Kone",
+    "mimu_village_tract_name": "Pyin Shey",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 966,
@@ -2051,7 +3464,16 @@
     "district": "Sittwe",
     "village_tract": "Pyin Shey",
     "rohingya_name": null,
-    "village_name_mmr": "ကံပြင်"
+    "village_name_mmr": "ကံပြင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008004",
+    "pcode_village": "197587",
+    "mimu_village_name": "Kan Pyin",
+    "mimu_village_tract_name": "Pyin Shey",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 967,
@@ -2064,7 +3486,16 @@
     "district": "Sittwe",
     "village_tract": "Pyin Shey",
     "rohingya_name": null,
-    "village_name_mmr": "ပြင်ရှည် (စဖိုကျွန်း)"
+    "village_name_mmr": "ပြင်ရှည် (စဖိုကျွန်း)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008004",
+    "pcode_village": "197586",
+    "mimu_village_name": "Pyin Shey (Sa Hpo Kyun)",
+    "mimu_village_tract_name": "Pyin Shey",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 968,
@@ -2077,7 +3508,16 @@
     "district": "Sittwe",
     "village_tract": "Pyin Shey",
     "rohingya_name": null,
-    "village_name_mmr": "ပြင်ဝမ်း"
+    "village_name_mmr": "ပြင်ဝမ်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008004",
+    "pcode_village": "197588",
+    "mimu_village_name": "Pyin Wan",
+    "mimu_village_tract_name": "Pyin Shey",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 969,
@@ -2090,7 +3530,16 @@
     "district": "Sittwe",
     "village_tract": "Sa Par Htar",
     "rohingya_name": null,
-    "village_name_mmr": "ကံပြင်"
+    "village_name_mmr": "ကံပြင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008055",
+    "pcode_village": "197722",
+    "mimu_village_name": "Kan Pyin",
+    "mimu_village_tract_name": "Sa Par Htar",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 970,
@@ -2103,7 +3552,16 @@
     "district": "Sittwe",
     "village_tract": "Sa Par Htar",
     "rohingya_name": null,
-    "village_name_mmr": "စပါးထား"
+    "village_name_mmr": "စပါးထား",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008055",
+    "pcode_village": "197721",
+    "mimu_village_name": "Sa Par Htar",
+    "mimu_village_tract_name": "Sa Par Htar",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 971,
@@ -2116,7 +3574,16 @@
     "district": "Sittwe",
     "village_tract": "Sar Pyin Chay",
     "rohingya_name": null,
-    "village_name_mmr": "ဆားပြင်ချေ"
+    "village_name_mmr": "ဆားပြင်ချေ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008083",
+    "pcode_village": "197782",
+    "mimu_village_name": "Sar Pyin Chay",
+    "mimu_village_tract_name": "Sar Pyin Chay",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 972,
@@ -2129,7 +3596,16 @@
     "district": "Sittwe",
     "village_tract": "Sar Pyin Gyi",
     "rohingya_name": null,
-    "village_name_mmr": "ဆားပြင်ကြီး"
+    "village_name_mmr": "ဆားပြင်ကြီး",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008086",
+    "pcode_village": "197786",
+    "mimu_village_name": "Sar Pyin Gyi",
+    "mimu_village_tract_name": "Sar Pyin Gyi",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 973,
@@ -2142,7 +3618,16 @@
     "district": "Sittwe",
     "village_tract": "Say Oe Kya",
     "rohingya_name": null,
-    "village_name_mmr": "ဆေးအိုးကျ"
+    "village_name_mmr": "ဆေးအိုးကျ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008067",
+    "pcode_village": "197754",
+    "mimu_village_name": "Say Oe Kya",
+    "mimu_village_tract_name": "Say Oe Kya",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 974,
@@ -2155,7 +3640,16 @@
     "district": "Sittwe",
     "village_tract": "Shwe Laung Tin (Paik Seik)",
     "rohingya_name": null,
-    "village_name_mmr": "ရွှေလောင်းတင်"
+    "village_name_mmr": "ရွှေလောင်းတင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008073",
+    "pcode_village": "197765",
+    "mimu_village_name": "Shwe Laung Tin",
+    "mimu_village_tract_name": "Shwe Laung Tin (Paik Seik)",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 975,
@@ -2168,7 +3662,16 @@
     "district": "Sittwe",
     "village_tract": "Sin Khone Taing",
     "rohingya_name": null,
-    "village_name_mmr": "လွန်းတောင်"
+    "village_name_mmr": "လွန်းတောင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008037",
+    "pcode_village": "197668",
+    "mimu_village_name": "Lun Taung",
+    "mimu_village_tract_name": "Sin Khone Taing",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 976,
@@ -2181,7 +3684,16 @@
     "district": "Sittwe",
     "village_tract": "Sin Khone Taing",
     "rohingya_name": null,
-    "village_name_mmr": "ဆင်ခုန်းတိုင် (ကုလား)"
+    "village_name_mmr": "ဆင်ခုန်းတိုင် (ကုလား)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008037",
+    "pcode_village": "197666",
+    "mimu_village_name": "Sin Khone Taing (Ku Lar)",
+    "mimu_village_tract_name": "Sin Khone Taing",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 977,
@@ -2194,7 +3706,16 @@
     "district": "Sittwe",
     "village_tract": "Sin Khone Taing",
     "rohingya_name": null,
-    "village_name_mmr": "ဆင်ခုန်းတိုင် (ရခိုင်)"
+    "village_name_mmr": "ဆင်ခုန်းတိုင် (ရခိုင်)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008037",
+    "pcode_village": "197665",
+    "mimu_village_name": "Sin Khone Taing (Rakhine)",
+    "mimu_village_tract_name": "Sin Khone Taing",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 978,
@@ -2207,7 +3728,16 @@
     "district": "Sittwe",
     "village_tract": "Sin Khone Taing",
     "rohingya_name": null,
-    "village_name_mmr": "ဆင်ခုန်းတိုင်ဈေး"
+    "village_name_mmr": "ဆင်ခုန်းတိုင်ဈေး",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008037",
+    "pcode_village": "197667",
+    "mimu_village_name": "Sin Khone Taing Zay",
+    "mimu_village_tract_name": "Sin Khone Taing",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 979,
@@ -2220,7 +3750,16 @@
     "district": "Sittwe",
     "village_tract": "Soe May",
     "rohingya_name": null,
-    "village_name_mmr": "စိုးမေ"
+    "village_name_mmr": "စိုးမေ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008065",
+    "pcode_village": "197750",
+    "mimu_village_name": "Soe May",
+    "mimu_village_tract_name": "Soe May",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 980,
@@ -2233,7 +3772,16 @@
     "district": "Sittwe",
     "village_tract": "Soe May",
     "rohingya_name": null,
-    "village_name_mmr": "ဝက်နုတ်သီး"
+    "village_name_mmr": "ဝက်နုတ်သီး",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008065",
+    "pcode_village": "197751",
+    "mimu_village_name": "Wet Noke Thee",
+    "mimu_village_tract_name": "Soe May",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 981,
@@ -2246,7 +3794,16 @@
     "district": "Sittwe",
     "village_tract": "Tha Mee Hla",
     "rohingya_name": null,
-    "village_name_mmr": "အောင်မြေကုန်း"
+    "village_name_mmr": "အောင်မြေကုန်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008047",
+    "pcode_village": "197700",
+    "mimu_village_name": "Aung Myay Kone",
+    "mimu_village_tract_name": "Tha Mee Hla",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 982,
@@ -2259,7 +3816,16 @@
     "district": "Sittwe",
     "village_tract": "Tha Mee Hla",
     "rohingya_name": null,
-    "village_name_mmr": "ဆောက်ခပ်ရွာဟောင်း (သမီးလှ)"
+    "village_name_mmr": "ဆောက်ခပ်ရွာဟောင်း (သမီးလှ)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008047",
+    "pcode_village": "197699",
+    "mimu_village_name": "Sauk Khat Ywar Haung (Tha Mee Hla)",
+    "mimu_village_tract_name": "Tha Mee Hla",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 983,
@@ -2272,7 +3838,16 @@
     "district": "Sittwe",
     "village_tract": "Tha Mee Hla",
     "rohingya_name": null,
-    "village_name_mmr": "ဆောင်ခပ်ရွာသစ်"
+    "village_name_mmr": "ဆောင်ခပ်ရွာသစ်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008047",
+    "pcode_village": "197701",
+    "mimu_village_name": "Sauk Khat Ywar Thit",
+    "mimu_village_tract_name": "Tha Mee Hla",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 984,
@@ -2285,7 +3860,16 @@
     "district": "Sittwe",
     "village_tract": "Tha Yet Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "သရက်ချောင်း"
+    "village_name_mmr": "သရက်ချောင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008028",
+    "pcode_village": "197642",
+    "mimu_village_name": "Tha Yet Chaung",
+    "mimu_village_tract_name": "Tha Yet Chaung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 985,
@@ -2298,7 +3882,16 @@
     "district": "Sittwe",
     "village_tract": "Tha Yet Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "သရက်ပြင်"
+    "village_name_mmr": "သရက်ပြင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008028",
+    "pcode_village": "197643",
+    "mimu_village_name": "Tha Yet Pyin",
+    "mimu_village_tract_name": "Tha Yet Chaung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 986,
@@ -2311,7 +3904,16 @@
     "district": "Sittwe",
     "village_tract": "Than Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "သံချောင်း"
+    "village_name_mmr": "သံချောင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008026",
+    "pcode_village": "197638",
+    "mimu_village_name": "Than Chaung",
+    "mimu_village_tract_name": "Than Chaung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 987,
@@ -2324,7 +3926,16 @@
     "district": "Sittwe",
     "village_tract": "Thar Si Htaunt",
     "rohingya_name": null,
-    "village_name_mmr": "ခြေရာတော်"
+    "village_name_mmr": "ခြေရာတော်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008076",
+    "pcode_village": "197771",
+    "mimu_village_name": "Chay Yar Taw",
+    "mimu_village_tract_name": "Thar Si Htaunt",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 988,
@@ -2337,7 +3948,16 @@
     "district": "Sittwe",
     "village_tract": "Thar Si Htaunt",
     "rohingya_name": null,
-    "village_name_mmr": "သာစည်ထောင့်"
+    "village_name_mmr": "သာစည်ထောင့်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008076",
+    "pcode_village": "197770",
+    "mimu_village_name": "Thar Si Htaunt",
+    "mimu_village_tract_name": "Thar Si Htaunt",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 989,
@@ -2350,7 +3970,16 @@
     "district": "Sittwe",
     "village_tract": "Thaung Da Rar",
     "rohingya_name": null,
-    "village_name_mmr": "သောင်းဒရား"
+    "village_name_mmr": "သောင်းဒရား",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008053",
+    "pcode_village": "197718",
+    "mimu_village_name": "Thaung Da Rar",
+    "mimu_village_tract_name": "Thaung Da Rar",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 990,
@@ -2363,7 +3992,16 @@
     "district": "Sittwe",
     "village_tract": "Thein Taung",
     "rohingya_name": null,
-    "village_name_mmr": "ကျောက်ရန်"
+    "village_name_mmr": "ကျောက်ရန်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008001",
+    "pcode_village": "197579",
+    "mimu_village_name": "Kyauk Yan",
+    "mimu_village_tract_name": "Thein Taung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 991,
@@ -2376,7 +4014,16 @@
     "district": "Sittwe",
     "village_tract": "Thein Taung",
     "rohingya_name": null,
-    "village_name_mmr": "မော်ထက်"
+    "village_name_mmr": "မော်ထက်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008001",
+    "pcode_village": "197580",
+    "mimu_village_name": "Maw Htet",
+    "mimu_village_tract_name": "Thein Taung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 992,
@@ -2389,7 +4036,16 @@
     "district": "Sittwe",
     "village_tract": "Thein Taung",
     "rohingya_name": null,
-    "village_name_mmr": "တာဇော"
+    "village_name_mmr": "တာဇော",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008001",
+    "pcode_village": "197578",
+    "mimu_village_name": "Tar Zaw",
+    "mimu_village_tract_name": "Thein Taung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 993,
@@ -2402,7 +4058,16 @@
     "district": "Sittwe",
     "village_tract": "Thein Taung",
     "rohingya_name": null,
-    "village_name_mmr": "သဇင်မြိုင်"
+    "village_name_mmr": "သဇင်မြိုင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008001",
+    "pcode_village": "220692",
+    "mimu_village_name": "Tha Zin Myaing",
+    "mimu_village_tract_name": "Thein Taung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "strong"
   },
   {
     "id": 994,
@@ -2415,7 +4080,16 @@
     "district": "Sittwe",
     "village_tract": "Thein Taung",
     "rohingya_name": null,
-    "village_name_mmr": "သိန်တောင်"
+    "village_name_mmr": "သိန်တောင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008001",
+    "pcode_village": "197576",
+    "mimu_village_name": "Thein Taung",
+    "mimu_village_tract_name": "Thein Taung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 995,
@@ -2428,7 +4102,16 @@
     "district": "Sittwe",
     "village_tract": "Thein Taung",
     "rohingya_name": null,
-    "village_name_mmr": "သင်းဂနက်"
+    "village_name_mmr": "သင်းဂနက်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008001",
+    "pcode_village": "197577",
+    "mimu_village_name": "Thin Ga Net",
+    "mimu_village_tract_name": "Thein Taung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 996,
@@ -2441,7 +4124,16 @@
     "district": "Sittwe",
     "village_tract": "Thit Ka Toe",
     "rohingya_name": null,
-    "village_name_mmr": "ကံပြင်"
+    "village_name_mmr": "ကံပြင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008016",
+    "pcode_village": "197616",
+    "mimu_village_name": "Kan Pyin",
+    "mimu_village_tract_name": "Thit Ka Toe",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 997,
@@ -2454,7 +4146,16 @@
     "district": "Sittwe",
     "village_tract": "Thit Ka Toe",
     "rohingya_name": null,
-    "village_name_mmr": "ကျုံးပြင်"
+    "village_name_mmr": "ကျုံးပြင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008016",
+    "pcode_village": "197615",
+    "mimu_village_name": "Kyone Pyin",
+    "mimu_village_tract_name": "Thit Ka Toe",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 998,
@@ -2467,7 +4168,16 @@
     "district": "Sittwe",
     "village_tract": "Thit Ka Toe",
     "rohingya_name": null,
-    "village_name_mmr": "သစ်ကတိုး"
+    "village_name_mmr": "သစ်ကတိုး",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008016",
+    "pcode_village": "197614",
+    "mimu_village_name": "Thit Ka Toe",
+    "mimu_village_tract_name": "Thit Ka Toe",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 999,
@@ -2480,7 +4190,16 @@
     "district": "Sittwe",
     "village_tract": "Tin Koke",
     "rohingya_name": null,
-    "village_name_mmr": "လောင်းဇင်"
+    "village_name_mmr": "လောင်းဇင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008069",
+    "pcode_village": "197759",
+    "mimu_village_name": "Laung Zin",
+    "mimu_village_tract_name": "Tin Koke",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 1000,
@@ -2493,7 +4212,16 @@
     "district": "Sittwe",
     "village_tract": "Tin Koke",
     "rohingya_name": null,
-    "village_name_mmr": "တင်းကုတ်"
+    "village_name_mmr": "တင်းကုတ်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008069",
+    "pcode_village": "197758",
+    "mimu_village_name": "Tin Koke",
+    "mimu_village_tract_name": "Tin Koke",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 1001,
@@ -2506,7 +4234,16 @@
     "district": "Sittwe",
     "village_tract": "U Gar",
     "rohingya_name": null,
-    "village_name_mmr": "ဦးဂါ"
+    "village_name_mmr": "ဦးဂါ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008075",
+    "pcode_village": "197769",
+    "mimu_village_name": "U Gar",
+    "mimu_village_tract_name": "U Gar",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 1002,
@@ -2519,7 +4256,16 @@
     "district": "Sittwe",
     "village_tract": "Yae Gaung Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "အောင်တိုင် (လောင်းချောင်း)"
+    "village_name_mmr": "အောင်တိုင် (လောင်းချောင်း)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008042",
+    "pcode_village": "197681",
+    "mimu_village_name": "Aung Taing (Laung Chaung)",
+    "mimu_village_tract_name": "Yae Gaung Chaung",
+    "mimu_village_status": "inactive_removed_from_list",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 1003,
@@ -2532,7 +4278,16 @@
     "district": "Sittwe",
     "village_tract": "Yae Gaung Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "အောင်တိုင်တောင်ပြို"
+    "village_name_mmr": "အောင်တိုင်တောင်ပြို",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008042",
+    "pcode_village": "197682",
+    "mimu_village_name": "Aung Taing Taung Pyo",
+    "mimu_village_tract_name": "Yae Gaung Chaung",
+    "mimu_village_status": "inactive_removed_from_list",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 1004,
@@ -2545,7 +4300,16 @@
     "district": "Sittwe",
     "village_tract": "Yae Gaung Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "ခရုချောင်း"
+    "village_name_mmr": "ခရုချောင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008042",
+    "pcode_village": "197679",
+    "mimu_village_name": "Kha Yu Chaung",
+    "mimu_village_tract_name": "Yae Gaung Chaung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 1005,
@@ -2558,7 +4322,16 @@
     "district": "Sittwe",
     "village_tract": "Yae Gaung Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "ငရန့်ချောင်း"
+    "village_name_mmr": "ငရန့်ချောင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008042",
+    "pcode_village": "197680",
+    "mimu_village_name": "Nga Yant Chaung",
+    "mimu_village_tract_name": "Yae Gaung Chaung",
+    "mimu_village_status": "inactive_removed_from_list",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 1006,
@@ -2571,7 +4344,16 @@
     "district": "Sittwe",
     "village_tract": "Yae Gaung Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "ရေဂေါင်းချောင်း"
+    "village_name_mmr": "ရေဂေါင်းချောင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008042",
+    "pcode_village": "197678",
+    "mimu_village_name": "Yae Gaung Chaung",
+    "mimu_village_tract_name": "Yae Gaung Chaung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 1007,
@@ -2584,7 +4366,16 @@
     "district": "Sittwe",
     "village_tract": "Yae Myet",
     "rohingya_name": null,
-    "village_name_mmr": "ညောင်ပင်လှ"
+    "village_name_mmr": "ညောင်ပင်လှ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008046",
+    "pcode_village": "197698",
+    "mimu_village_name": "Nyaung Pin Hla",
+    "mimu_village_tract_name": "Yae Myet",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 1008,
@@ -2597,7 +4388,16 @@
     "district": "Sittwe",
     "village_tract": "Yae Myet",
     "rohingya_name": null,
-    "village_name_mmr": "ရေမျက် (ရွာဟောင်း)"
+    "village_name_mmr": "ရေမျက် (ရွာဟောင်း)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008046",
+    "pcode_village": "197697",
+    "mimu_village_name": "Yae Myet (Ywar Haung)",
+    "mimu_village_tract_name": "Yae Myet",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 1009,
@@ -2610,7 +4410,16 @@
     "district": "Sittwe",
     "village_tract": "Yae Myet",
     "rohingya_name": null,
-    "village_name_mmr": "ရေမျက် (ရွာသစ်)"
+    "village_name_mmr": "ရေမျက် (ရွာသစ်)",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008046",
+    "pcode_village": "197696",
+    "mimu_village_name": "Yae Myet (Ywar Thit)",
+    "mimu_village_tract_name": "Yae Myet",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 1010,
@@ -2623,7 +4432,16 @@
     "district": "Sittwe",
     "village_tract": "Yae Paik Son",
     "rohingya_name": null,
-    "village_name_mmr": "ရေပိုက်ဆုံ"
+    "village_name_mmr": "ရေပိုက်ဆုံ",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008078",
+    "pcode_village": "197774",
+    "mimu_village_name": "Yae Paik Son",
+    "mimu_village_tract_name": "Yae Paik Son",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 1011,
@@ -2636,7 +4454,16 @@
     "district": "Sittwe",
     "village_tract": "Yae Soe Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "ကင်းပွန်းချောင်း"
+    "village_name_mmr": "ကင်းပွန်းချောင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008048",
+    "pcode_village": "197703",
+    "mimu_village_name": "Kin Pun Chaung",
+    "mimu_village_tract_name": "Yae Soe Chaung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 1012,
@@ -2649,7 +4476,16 @@
     "district": "Sittwe",
     "village_tract": "Yae Soe Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "ရေချမ်းချောင်းမွေး"
+    "village_name_mmr": "ရေချမ်းချောင်းမွေး",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008048",
+    "pcode_village": "197704",
+    "mimu_village_name": "Yae Chan Chaung Kha Mway",
+    "mimu_village_tract_name": "Yae Soe Chaung",
+    "mimu_village_status": "inactive_removed_from_list",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 1013,
@@ -2662,7 +4498,16 @@
     "district": "Sittwe",
     "village_tract": "Yae Soe Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "ရေစိုးချောင်း"
+    "village_name_mmr": "ရေစိုးချောင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008048",
+    "pcode_village": "197702",
+    "mimu_village_name": "Yae Soe Chaung",
+    "mimu_village_tract_name": "Yae Soe Chaung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 1014,
@@ -2675,7 +4520,16 @@
     "district": "Sittwe",
     "village_tract": "Yae Soe Chaung",
     "rohingya_name": null,
-    "village_name_mmr": "ရေဇာတဲစု"
+    "village_name_mmr": "ရေဇာတဲစု",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008048",
+    "pcode_village": "197705",
+    "mimu_village_name": "Yae Zar Te Su",
+    "mimu_village_tract_name": "Yae Soe Chaung",
+    "mimu_village_status": "inactive_removed_from_list",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 1015,
@@ -2688,7 +4542,16 @@
     "district": "Sittwe",
     "village_tract": "Yan Aung Pyin",
     "rohingya_name": null,
-    "village_name_mmr": "လုံးတင်"
+    "village_name_mmr": "လုံးတင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008017",
+    "pcode_village": "197618",
+    "mimu_village_name": "Lone Tin",
+    "mimu_village_tract_name": "Yan Aung Pyin",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 1016,
@@ -2701,7 +4564,16 @@
     "district": "Sittwe",
     "village_tract": "Yan Aung Pyin",
     "rohingya_name": null,
-    "village_name_mmr": "ရန်အောင်ပြင်"
+    "village_name_mmr": "ရန်အောင်ပြင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008017",
+    "pcode_village": "197617",
+    "mimu_village_name": "Yan Aung Pyin",
+    "mimu_village_tract_name": "Yan Aung Pyin",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 1017,
@@ -2714,7 +4586,16 @@
     "district": "Sittwe",
     "village_tract": "Yet Khone Taing",
     "rohingya_name": null,
-    "village_name_mmr": "အာကာတောင်"
+    "village_name_mmr": "အာကာတောင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008040",
+    "pcode_village": "197674",
+    "mimu_village_name": "Ahr Kar Taung",
+    "mimu_village_tract_name": "Yet Khone Taing",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 1018,
@@ -2727,7 +4608,16 @@
     "district": "Sittwe",
     "village_tract": "Yet Khone Taing",
     "rohingya_name": null,
-    "village_name_mmr": "ရက်ခုန်းတိုင်"
+    "village_name_mmr": "ရက်ခုန်းတိုင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008040",
+    "pcode_village": "197673",
+    "mimu_village_name": "Yet Khone Taing",
+    "mimu_village_tract_name": "Yet Khone Taing",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 1019,
@@ -2740,7 +4630,16 @@
     "district": "Sittwe",
     "village_tract": "Zay Di Pyin",
     "rohingya_name": null,
-    "village_name_mmr": "စေတီပြင်"
+    "village_name_mmr": "စေတီပြင်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008005",
+    "pcode_village": "197589",
+    "mimu_village_name": "Zay Di Pyin",
+    "mimu_village_tract_name": "Zay Di Pyin",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 1020,
@@ -2753,7 +4652,16 @@
     "district": "Sittwe",
     "village_tract": "Zee Kaing",
     "rohingya_name": null,
-    "village_name_mmr": "အောက်ဇီးကိုင်း"
+    "village_name_mmr": "အောက်ဇီးကိုင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008088",
+    "pcode_village": "197789",
+    "mimu_village_name": "Auk Zee Kaing",
+    "mimu_village_tract_name": "Zee Kaing",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 1021,
@@ -2766,7 +4674,16 @@
     "district": "Sittwe",
     "village_tract": "Zee Khaung",
     "rohingya_name": null,
-    "village_name_mmr": "သမီးလှရွာသစ်"
+    "village_name_mmr": "သမီးလှရွာသစ်",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008041",
+    "pcode_village": "197677",
+    "mimu_village_name": "Tha Mee Hla Ywar Thit",
+    "mimu_village_tract_name": "Zee Khaung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   },
   {
     "id": 1022,
@@ -2779,6 +4696,15 @@
     "district": "Sittwe",
     "village_tract": "Zee Khaung",
     "rohingya_name": null,
-    "village_name_mmr": "ဇီးခေါင်း"
+    "village_name_mmr": "ဇီးခေါင်း",
+    "pcode_district": "MMR012D001",
+    "pcode_township": "MMR012008",
+    "pcode_village_tract": "MMR012008041",
+    "pcode_village": "197675",
+    "mimu_village_name": "Zee Khaung",
+    "mimu_village_tract_name": "Zee Khaung",
+    "mimu_village_status": "active",
+    "mimu_village_tract_status": "active",
+    "pcode_match": "exact"
   }
 ]
