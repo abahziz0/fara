@@ -1,0 +1,1029 @@
+id,rohingya_name,name,township,village_tract,lat,lng,status,reason,point_inside_zone,nearest_zone_m,destroyed_ha_within_300m,share_of_300m_circle,zones,first_seen,last_seen,confidence,cloud_note
+1,"Hadira Para
+",Kar Di,Buthidaung,Ah Htet Kywe Cho Maw,20.682249,92.596123,none_detected,,,,,,,,,,
+2,Tik grumow mukpara,Kywe Cho Maw,Buthidaung,Ah Htet Kywe Cho Maw,20.687611,92.617989,none_detected,,,,,,,,,,
+3,Tuwor para,Nyaung Chaung,Buthidaung,Ah Htet Kywe Cho Maw,20.691099,92.590652,none_detected,,,,,,,,,,
+4,"Ali Young
+",Ah Lel Chaung,Buthidaung,Ah Lel Chaung,20.825701,92.542686,none_detected,,,,,,,,,,
+5,Azoli para,Let Thar,Buthidaung,Ah Lel Chaung,20.818911,92.541359,none_detected,,,,,,,,,,
+6,Bor para,Ah Twin Hnget Thay,Buthidaung,Ah Twin Hnget Thay,20.819920,92.589729,none_detected,,,,,,,,,,
+7,Nathar para,Hnget Thay,Buthidaung,Ah Twin Hnget Thay,20.809090,92.583488,none_detected,,,,,,,,,,
+8,Hoyasere,Htan Shauk Khan,Buthidaung,Ah Twin Hnget Thay,20.809010,92.588951,none_detected,,,,,,,,,,
+9,shil gada,Kyauk Seik,Buthidaung,Ah Twin Hnget Thay,20.808950,92.563133,none_detected,,,,,,,,,,
+10,Khairmura para,Myaw Taung,Buthidaung,Ah Twin Hnget Thay,20.809931,92.572708,none_detected,,,,,,,,,,
+11,Saytur para,Pyar Pin Yin,Buthidaung,Ah Twin Hnget Thay,20.824471,92.581543,none_detected,,,,,,,,,,
+12,Sindong borpara,Thein Taung,Buthidaung,Ah Twin Hnget Thay,20.800699,92.569794,none_detected,,,,,,,,,,
+13,Mok Para,Aw Ra Ma,Buthidaung,Aw Ra Ma (a) Yee Chaung Pyin Hla,20.977070,92.663780,none_detected,,,,,,,,,,
+14,Mok Para,Htu Myaung Lay,Buthidaung,Aw Ra Ma (a) Yee Chaung Pyin Hla,20.962879,92.670326,none_detected,,,,,,,,,,
+15,Mok Para,Khar Lar U,Buthidaung,Aw Ra Ma (a) Yee Chaung Pyin Hla,20.941019,92.677467,none_detected,,,,,,,,,,
+16,Mok Para,Min Kaing,Buthidaung,Aw Ra Ma (a) Yee Chaung Pyin Hla,20.948231,92.673279,none_detected,,,,,,,,,,
+17,Mok Para,Nat Seik,Buthidaung,Aw Ra Ma (a) Yee Chaung Pyin Hla,20.996559,92.665092,none_detected,,,,,,,,,,
+18,Mok Para,Nga Tin Tein,Buthidaung,Aw Ra Ma (a) Yee Chaung Pyin Hla,21.000219,92.629707,none_detected,,,,,,,,,,
+19,Mok Para,Pein Hne Chaung,Buthidaung,Aw Ra Ma (a) Yee Chaung Pyin Hla,21.032499,92.656143,none_detected,,,,,,,,,,
+20,Mok Para,Taung Chaung Gyi,Buthidaung,Aw Ra Ma (a) Yee Chaung Pyin Hla,20.932140,92.667793,none_detected,,,,,,,,,,
+21,Mok Para,Taung Chay,Buthidaung,Aw Ra Ma (a) Yee Chaung Pyin Hla,21.007830,92.658340,none_detected,,,,,,,,,,
+22,Mok Para,Tha Lu Pyar,Buthidaung,Aw Ra Ma (a) Yee Chaung Pyin Hla,20.919621,92.683983,none_detected,,,,,,,,,,
+23,Mok Para,Aye Yar Cha,Buthidaung,Aye Yar Cha,20.987829,92.624313,none_detected,,,,,,,,,,
+24,Mok Para,Chan Thar,Buthidaung,Aye Yar Cha,20.943939,92.620819,none_detected,,,,,,,,,,
+25,Mok Para,Dar Sauk Paing,Buthidaung,Aye Yar Cha,20.952579,92.613243,none_detected,,,,,,,,,,
+26,Mok Para,Ma Yee Mee,Buthidaung,Aye Yar Cha,20.946581,92.644959,none_detected,,,,,,,,,,
+27,Mok Para,Maung Chaung,Buthidaung,Aye Yar Cha,20.961020,92.641037,none_detected,,,,,,,,,,
+28,Mok Para,Pein Hne Gyi,Buthidaung,Aye Yar Cha,21.014601,92.634727,none_detected,,,,,,,,,,
+29,Mok Para,Tha Ra Zaing,Buthidaung,Aye Yar Cha,21.190180,92.546623,none_detected,,,,,,,,,,
+30,Orar Bogli,Ah Htet Bo Ka Lay,Buthidaung,Ba Da Kar,21.257690,92.404800,none_detected,,,,,,,,,,
+31,Lamer Bogoli,Auk Bo Ka Lay,Buthidaung,Ba Da Kar,21.244440,92.401970,none_detected,,,,,,,,,,
+32,Ba ta ka,Ba Da Kar,Buthidaung,Ba Da Kar,21.192080,92.416763,none_detected,,,,,,,,,,
+33,Geyranza,Kyaung Zar Hpyu,Buthidaung,Ba Da Kar,21.233280,92.403717,none_detected,,,,,,,,,,
+34,Kee Nok thi,Kyee Hnoke Thee,Buthidaung,Ba Da Kar,21.252129,92.428871,none_detected,,,,,,,,,,
+35,Nga morong (kui),Nga/Myin Baw Kha Mway,Buthidaung,Ba Da Kar,21.213770,92.428467,none_detected,,,,,,,,,,
+36,Nga morong (Musul Para),Nga/Myin Baw Ku Lar,Buthidaung,Ba Da Kar,21.203751,92.417641,none_detected,,,,,,,,,,
+37,Pan Zi,Pan Zi,Buthidaung,Ba Da Kar,21.223310,92.409492,none_detected,,,,,,,,,,
+38,Morong Fara,Sin Shey Myo,Buthidaung,Ba Da Kar,21.263720,92.406662,none_detected,,,,,,,,,,
+39,Mog Ba Da Na,Ba Da Nar,Buthidaung,Ba Da Nar,20.992390,92.457657,none_detected,,,,,,,,,,
+40,"frin Kong
+",Pyin Khaung,Buthidaung,Ba Da Nar,21.011421,92.453995,none_detected,,,,,,,,,,
+41,Yang bong,Yin Baung,Buthidaung,Ba Da Nar,20.976761,92.461342,none_detected,,,,,,,,,,
+42,Ruwa Thaya ,Ywar Thar Yar,Buthidaung,Ba Da Nar,20.998989,92.463257,none_detected,,,,,,,,,,
+43,Gunna Para,Ah Lel (Ba Gon Nar),Buthidaung,Ba Gone Nar,20.828760,92.537697,none_detected,,,,,,,,,,
+44,Faskuri bill,Kan Gyi Pyin,Buthidaung,Ba Gone Nar,20.856091,92.526939,none_detected,,,,,,,,,,
+45,Murong Para,Kyauk Tan,Buthidaung,Ba Gone Nar,20.836321,92.534103,none_detected,,,,,,,,,,
+46,Uttoror Bagunna,Myauk (Ba Gon Nar),Buthidaung,Ba Gone Nar,20.844419,92.531754,none_detected,,,,,,,,,,
+47,Mroungnna,Myaung Nar,Buthidaung,Ba Gone Nar,20.835091,92.533157,none_detected,,,,,,,,,,
+48,Doyennor Bagunna,Taung (Ba Gon Nar),Buthidaung,Ba Gone Nar,20.840879,92.519913,none_detected,,,,,,,,,,
+49,Noya Para,Ywar Thit,Buthidaung,Ba Gone Nar,20.839260,92.534592,none_detected,,,,,,,,,,
+50,Hansar Para,Chin Tha Mar,Buthidaung,Chin Tha Mar,20.944450,92.532150,nearby,,False,120,0.7,0.025,2,2017-09-16,2017-09-16,medium,False
+51,Fundu Warang,Hpaung Taw Pyin,Buthidaung,Chin Tha Mar,20.955700,92.524277,destroyed,,False,1,7.88,0.278,2,2017-09-16,2017-09-16,medium,False
+52,Monu Para,Maung Nu,Buthidaung,Chin Tha Mar,20.950781,92.530380,nearby,,False,151,0.81,0.029,4,2017-09-16,2017-09-16,medium,False
+53,Mok Bill,Pale Taung,Buthidaung,Chin Tha Mar,20.926781,92.539917,destroyed,,False,12,3.31,0.117,2,2017-09-16,2017-09-16,medium,False
+54,Dabori Young,Da Pyu Chaung,Buthidaung,Da Pyu Chaung,20.864590,92.575378,none_detected,,,,,,,,,,
+55,Natala,Inn Gyin Myaing (NaTaLa),Buthidaung,Da Pyu Chaung,20.853455,92.568794,none_detected,,,,,,,,,,
+56,Doyin Sara,Dar Paing Sa Yar,Buthidaung,Dar Paing Sa Yar,20.936350,92.525757,none_detected,,,,,,,,,,
+57,Gonna Para,Gaung Ni,Buthidaung,Dar Paing Sa Yar,20.931749,92.533234,none_detected,,,,,,,,,,
+58,Hadur Fara,Myit Nar,Buthidaung,Dar Paing Sa Yar,20.939980,92.523872,none_detected,,,,,,,,,,
+59,Sior Para,Saint Aung,Buthidaung,Dar Paing Sa Yar,20.933201,92.524353,none_detected,,,,,,,,,,
+60,Zadiparang,Zar Ti Pyin,Buthidaung,Dar Paing Sa Yar,20.947041,92.519661,none_detected,,,,,,,,,,
+61,Boli para,Baw Li,Buthidaung,Du Oe Thei Ma,20.649321,92.608330,none_detected,,,,,,,,,,
+62,Moyi Dong,Du Oe Thei Ma,Buthidaung,Du Oe Thei Ma,20.642969,92.605667,none_detected,,,,,,,,,,
+63,Moyi dong (Uttor kul,Ngwe Taung,Buthidaung,Du Oe Thei Ma,20.651159,92.605713,none_detected,,,,,,,,,,
+64,Mok,Kyein Taung,Buthidaung,Du Pyin Shey,20.671101,92.628616,none_detected,,,,,,,,,,
+65,Guffi,Goke Pi,Buthidaung,Goke Pi,21.086309,92.448624,nearby,,False,74,0.56,0.02,6,2017-10-11,2017-10-11,medium,False
+66,Obbru (Sak+Murung),Oe Hpyu (Thet + Myo),Buthidaung,Goke Pi,21.122511,92.443001,none_detected,,,,,,,,,,
+67,Obbru,Oh Byu,Buthidaung,Goke Pi,21.115231,92.445343,none_detected,,,,,,,,,,
+68,Fasudu,Pe Tha Htu,Buthidaung,Goke Pi,21.125999,92.434982,none_detected,,,,,,,,,,
+69,Sa Oor Sor,Sa Hone,Buthidaung,Goke Pi,21.094891,92.448692,none_detected,,,,,,,,,,
+70,Kui Fara,Sa Hone Kha Mway,Buthidaung,Goke Pi,21.114519,92.467773,none_detected,,,,,,,,,,
+71,Gudam Para,Gu Dar Pyin,Buthidaung,Gu Dar Pyin,20.753370,92.545189,destroyed,,True,0,14.8,0.523,1,2017-09-16,2017-09-16,medium,False
+72,Kyauk Sadine (muk),Kyauk Sar Taing (Su See),Buthidaung,Gu Dar Pyin,20.749430,92.528648,none_detected,,,,,,,,,,
+73,Mok Para,Rakhine Ywar,Buthidaung,Gu Dar Pyin,20.738609,92.551582,none_detected,,,,,,,,,,
+74,Mura Para,Taung,Buthidaung,Gu Dar Pyin,20.749170,92.546288,destroyed,,True,0,8.23,0.291,1,2017-09-16,2017-09-16,medium,False
+75,Dumma Para,Tha Yet Taung,Buthidaung,Gu Dar Pyin,20.761530,92.544083,nearby,,False,49,0.85,0.03,1,2017-09-16,2017-09-16,medium,False
+76,Inn Chaung (Doyin Kul),Aung Pa,Buthidaung,Hpa Yar Pyin Aung Pa,20.686819,92.578560,none_detected,,,,,,,,,,
+77,Inn Chaung (Uttor Kul),Hpa Yar Pyin,Buthidaung,Hpa Yar Pyin Aung Pa,20.692511,92.579689,none_detected,,,,,,,,,,
+78,Na Ta La Para,Kant Kaw Myaing (NaTaLa),Buthidaung,Hpa Yar Pyin Aung Pa,20.685690,92.572861,none_detected,,,,,,,,,,
+79,,Kuwar Para,Buthidaung,Hpa Yar Pyin Thein Tan,20.726620,92.595009,none_detected,,,,,,,,,,
+80,Farulla Furanfara,Pyin Hla (Ywa Haung),Buthidaung,Hpa Yar Pyin Thein Tan,20.733280,92.601410,none_detected,,,,,,,,,,
+81,Sindaung Musulman Fara,Thein Tan (Ku Lar),Buthidaung,Hpa Yar Pyin Thein Tan,20.741249,92.610519,none_detected,,,,,,,,,,
+82,Sindaung Mukfara,Thein Tan (Rakhine),Buthidaung,Hpa Yar Pyin Thein Tan,20.739840,92.613457,none_detected,,,,,,,,,,
+83,Noyapara(Esmile Para),Ywa Thit (Esmile Para),Buthidaung,Hpa Yar Pyin Thein Tan,20.730490,92.602043,none_detected,,,,,,,,,,
+84,"Ludine Fara
+",Doe Tan (1),Buthidaung,Hpa Yon Chaung,20.702450,92.570740,none_detected,,,,,,,,,,
+85,Ludine Fara,Doe Tan (2),Buthidaung,Hpa Yon Chaung,20.701679,92.575974,none_detected,,,,,,,,,,
+86,Powrun Chaung (Sakma Para),Hpa Yon Chaung (Daing Net),Buthidaung,Hpa Yon Chaung,20.717770,92.568077,none_detected,,,,,,,,,,
+87,Powrun Chaung (Musulman Para),Hpa Yon Chaung (Ku Lar),Buthidaung,Hpa Yon Chaung,20.712021,92.571136,none_detected,,,,,,,,,,
+88,Lay shantwe para,Kywe Tet Pyin,Buthidaung,Hpa Yon Chaung,20.709089,92.565804,none_detected,,,,,,,,,,
+89,Khair mura para,Pyaing Taung,Buthidaung,Hpa Yon Chaung,20.724211,92.560593,none_detected,,,,,,,,,,
+90,Fuhom,Hpoe Khaung Chaung,Buthidaung,Hpoe Khaung Chaung (a) Kan Pyin,20.739630,92.564239,none_detected,,,,,,,,,,
+91,Kine Da Para,Kan Da (Kan Da Para),Buthidaung,Hpoe Khaung Chaung (a) Kan Pyin,20.749161,92.568802,none_detected,,,,,,,,,,
+92,Hime parang,Kan Pyin,Buthidaung,Hpoe Khaung Chaung (a) Kan Pyin,20.756790,92.558327,none_detected,,,,,,,,,,
+93,Phonie Mali,Hpon Nyo Leik,Buthidaung,Hpon Nyo Leik,20.793779,92.597961,none_detected,,,,,,,,,,
+94,Muslman + Mok,Hpon Nyo Leik (Rakhine + Ku Lar),Buthidaung,Hpon Nyo Leik,20.795980,92.600983,none_detected,,,,,,,,,,
+95,Hineda Para,Kan Du,Buthidaung,Hpon Nyo Leik,20.782419,92.598442,none_detected,,,,,,,,,,
+96,Zailla Para,Paik Thay Ywar,Buthidaung,Hpon Nyo Leik,20.793249,92.592628,none_detected,,,,,,,,,,
+97,Badana Borfara,Ba Da Nar Ku Lar,Buthidaung,Inn Chaung,20.961651,92.502937,none_detected,,,,,,,,,,
+98,Noya Para,Ba Da Nar Ywar Thit,Buthidaung,Inn Chaung,20.973669,92.502617,none_detected,,,,,,,,,,
+99,Ine Komg (Muk Para),Inn Chaung Daing Net,Buthidaung,Inn Chaung,20.977461,92.484467,none_detected,,,,,,,,,,
+100,Bazar Para,Inn Chaung Zay,Buthidaung,Inn Chaung,20.974871,92.483711,none_detected,,,,,,,,,,
+101,Oreya Para +Zailla Para,Zay Teit Kaung,Buthidaung,Inn Chaung,20.991100,92.493858,none_detected,,,,,,,,,,
+102,Ka Kyet Bet,Ka Kyet Bet,Buthidaung,Ka Kyet Bet,20.843710,92.537743,none_detected,,,,,,,,,,
+103,Ba Yaung Baw Li Para,Ba Yaung Baw Li Para,Buthidaung,Ka Kyet Bet Kan Pyin,20.863630,92.523247,none_detected,,,,,,,,,,
+104,Faskuri bill,Kan Gyi Pyin,Buthidaung,Ka Kyet Bet Kan Pyin,20.859030,92.526901,none_detected,,,,,,,,,,
+105,Mun Shi Para,Mun Shi Ywar,Buthidaung,Ka Kyet Bet Kan Pyin,20.857611,92.527283,none_detected,,,,,,,,,,
+106,Monubill,Oe Thei,Buthidaung,Ka Kyet Bet Kan Pyin,20.849039,92.537682,none_detected,,,,,,,,,,
+107,Jobbor para (Muslman para),Tat Yar (Ku Lar),Buthidaung,Ka Kyet Bet Kan Pyin,20.860420,92.534477,none_detected,,,,,,,,,,
+108,Mok Para,Tat Yar (Rakhine),Buthidaung,Ka Kyet Bet Kan Pyin,20.862700,92.534729,none_detected,,,,,,,,,,
+109,Mok Pia,Zay Di Taung,Buthidaung,Ka Kyet Bet Kan Pyin,20.860849,92.539391,none_detected,,,,,,,,,,
+110,Mok Para,Kyauk Pyin Chaung,Buthidaung,Ka Nyin Chaung,20.859480,92.626503,none_detected,,,,,,,,,,
+111,Mok Para,Min Hla Kaing,Buthidaung,Ka Nyin Chaung,20.838481,92.612666,none_detected,,,,,,,,,,
+112,,Baw Di Kaing,Buthidaung,Kha Maung Chaung,21.050426,92.586685,none_detected,,,,,,,,,,
+113,,Ku Lar Chaung,Buthidaung,Kha Maung Chaung,21.025860,92.588051,none_detected,,,,,,,,,,
+114,,Laung Chaung,Buthidaung,Kha Maung Chaung,21.169161,92.569077,none_detected,,,,,,,,,,
+115,,Nan Tha Yway,Buthidaung,Kha Maung Chaung,21.120193,92.598709,none_detected,,,,,,,,,,
+116,Sna Pro Daung,Sin Hpyu Taung,Buthidaung,Kha Maung Chaung,21.092955,92.571236,none_detected,,,,,,,,,,
+117,Mok Para,Ahr Kar Pyan Kha Mway,Buthidaung,Kin Chaung,20.798450,92.506042,none_detected,,,,,,,,,,
+118,Mok Para,Kin Chaung,Buthidaung,Kin Chaung,20.805580,92.549843,none_detected,,,,,,,,,,
+119,Mok Para,Let Pan Kaing,Buthidaung,Kin Chaung,20.795839,92.522858,none_detected,,,,,,,,,,
+120,Mok Para,Pyin Shey,Buthidaung,Kin Chaung,20.809313,92.511681,none_detected,,,,,,,,,,
+121,Mok Para,Tha Bauk Chaung,Buthidaung,Kin Chaung,20.798540,92.552048,none_detected,,,,,,,,,,
+122,Bariza Para,Bar Ri Zar,Buthidaung,Kin Taung (a) Kyar Nyo Pyin,20.813841,92.599953,none_detected,,,,,,,,,,
+123,mok para,Done Thein,Buthidaung,Kin Taung (a) Kyar Nyo Pyin,20.818291,92.594978,none_detected,,,,,,,,,,
+124,Hang Daung,Kin Taung (Kyar Nyo Pyin),Buthidaung,Kin Taung (a) Kyar Nyo Pyin,20.821480,92.603950,none_detected,,,,,,,,,,
+125,Fosim Para,Ah Nauk,Buthidaung,Kun Taing (a) Zee Pin Taung,20.862150,92.549179,none_detected,,,,,,,,,,
+126,Fuk Para,Ah Shey,Buthidaung,Kun Taing (a) Zee Pin Taung,20.862770,92.558723,none_detected,,,,,,,,,,
+127,Bor para,Kun Taing Ywar Gyi,Buthidaung,Kun Taing (a) Zee Pin Taung,20.861610,92.552811,none_detected,,,,,,,,,,
+128,sangri bill,Nan Yar Kone,Buthidaung,Kun Taing (a) Zee Pin Taung,20.875151,92.546303,none_detected,,,,,,,,,,
+129,Monnar par,Pale Taung,Buthidaung,Kun Taing (a) Zee Pin Taung,20.892710,92.562187,none_detected,,,,,,,,,,
+130,Washilla Para,War Shee Lar (War Shee Lar Para),Buthidaung,Kun Taing (a) Zee Pin Taung,20.888821,92.564323,none_detected,,,,,,,,,,
+131,Kak Pru Taung,Kyauk Hpyu Taung,Buthidaung,Kyauk Hpyu Taung,20.888069,92.471703,none_detected,,,,,,,,,,
+132,,Thar Yar Kone (a) Htein Taw,Buthidaung,Kyauk Hpyu Taung,20.865952,92.471756,none_detected,,,,,,,,,,
+133,Danu meya Para,Gone Nar,Buthidaung,Kyauk Hpyu Thar Thay Kan,20.727690,92.577766,none_detected,,,,,,,,,,
+134,Thagan para,Thay Kan (Ku Lar),Buthidaung,Kyauk Hpyu Thar Thay Kan,20.716640,92.596992,none_detected,,,,,,,,,,
+135,Mok,Thay Kan (Rakhine),Buthidaung,Kyauk Hpyu Thar Thay Kan,20.719021,92.594078,none_detected,,,,,,,,,,
+136,Mok,Pyin Shey (Rakhine),Buthidaung,Kyauk Taung (a) Pyin Shey,20.914989,92.563309,none_detected,,,,,,,,,,
+137,Mok para,Kyauk Yan (Rakhine),Buthidaung,Kyauk Yan,20.769779,92.604240,none_detected,,,,,,,,,,
+138,Neunda Para,Na Nwin Ku,Buthidaung,Kyauk Yan,20.774500,92.600487,none_detected,,,,,,,,,,
+139,Gudar para,Taung,Buthidaung,Kyauk Yan,20.790670,92.621941,none_detected,,,,,,,,,,
+140,Tituk para,Teik Tu Pauk,Buthidaung,Kyauk Yan,20.775841,92.613083,none_detected,,,,,,,,,,
+141,,Kyauk Twe Chaung,Buthidaung,Kyaung Taung,21.151840,92.419350,nearby,,False,85,0.72,0.025,2,2017-09-25,2017-10-11,medium,False
+142,Kayng dong,Kyaung Taung,Buthidaung,Kyaung Taung,21.151251,92.429176,none_detected,,,,,,,,,,
+143,Murung Fara,Kyaw U,Buthidaung,Kyaung Taung,21.156321,92.424133,nearby,,False,83,0.68,0.024,1,2017-09-16,2017-09-16,medium,False
+144,Buzair Chaung,Pu Zun Chaung,Buthidaung,Kyaung Taung,21.180090,92.418114,nearby,,False,379,0.0,0.0,1,2017-09-16,2017-09-16,medium,False
+145,Shiddar Fara,Sar Kaing,Buthidaung,Kyaung Taung,21.164671,92.418938,none_detected,,,,,,,,,,
+146,Seyni Fara,Thea Ni Chaung,Buthidaung,Kyaung Taung,21.161261,92.411034,none_detected,,,,,,,,,,
+147,Kee Yo See Fara,Kyauk See,Buthidaung,Kyun Pauk,21.139549,92.433777,none_detected,,,,,,,,,,
+148,Keyung Bo,Kyun Pauk Ku Lar,Buthidaung,Kyun Pauk,21.098579,92.445549,none_detected,,,,,,,,,,
+149,kori Chaung,Kyway Chaung Kha Mway,Buthidaung,Kyun Pauk,21.120510,92.423332,none_detected,,,,,,,,,,
+150,Kori Chaung( Lamer Fara),Kyway Chaung Kha Mway (Lower),Buthidaung,Kyun Pauk,21.112749,92.429733,none_detected,,,,,,,,,,
+151,Kori Chaung(muslim),Kyway Chaung Ku Lar,Buthidaung,Kyun Pauk,21.106140,92.439056,none_detected,,,,,,,,,,
+152,Kori Chaung( Mok),Kyway Chaung Rakhine,Buthidaung,Kyun Pauk,21.105761,92.439163,none_detected,,,,,,,,,,
+153,Ayassor(Kamway),Pe Lun Kha Mway,Buthidaung,Kyun Pauk,21.121250,92.438713,none_detected,,,,,,,,,,
+154,Fesudu(fosim),Pe Tha Du (West),Buthidaung,Kyun Pauk,21.161280,92.431557,none_detected,,,,,,,,,,
+155,,Doe Wai,Buthidaung,Kywe Yine Khat,20.650150,92.632530,none_detected,,,,,,,,,,
+156,,Man Aung,Buthidaung,Kywe Yine Khat,20.671690,92.634659,none_detected,,,,,,,,,,
+157,,Set Khaw,Buthidaung,Kywe Yine Khat,20.643801,92.649017,none_detected,,,,,,,,,,
+158,,Thar Zi,Buthidaung,Kywe Yine Khat,20.668760,92.630081,none_detected,,,,,,,,,,
+159,Laung Chaung,Kha Yu Chaung,Buthidaung,Laung Chaung,20.936350,92.468246,none_detected,,,,,,,,,,
+160,Laung Chaung,Laung Chaung Daing Net,Buthidaung,Laung Chaung,20.945801,92.471672,none_detected,,,,,,,,,,
+161,Laung Chaung,Laung Chaung Ku Lar,Buthidaung,Laung Chaung,20.952780,92.469963,none_detected,,,,,,,,,,
+162,"frin Kong
+",Pyein Chaung,Buthidaung,Laung Chaung,20.968809,92.442734,none_detected,,,,,,,,,,
+163,San Sira,Sin Swei Ya,Buthidaung,Laung Chaung,20.930870,92.450943,none_detected,,,,,,,,,,
+164,,Ah Yaing Kwet Chay,Buthidaung,Laung Yon,21.188820,92.646477,none_detected,,,,,,,,,,
+165,Hal sera,Chaung Pauk,Buthidaung,Lay Myo,20.792391,92.587082,none_detected,,,,,,,,,,
+166,Hipe parang,Kyar Nyo Pyin (Ku Lar),Buthidaung,Lay Myo,20.806030,92.601952,none_detected,,,,,,,,,,
+167,mok,Kyar Nyo Pyin (Rakhine),Buthidaung,Lay Myo,20.802820,92.599419,none_detected,,,,,,,,,,
+168,Mok,Pyar (Yi) Yae,Buthidaung,Lay Myo,20.797041,92.594963,none_detected,,,,,,,,,,
+169,,Doe Tan,Buthidaung,Let Wea Det Pu Zun Chaung,20.891331,92.491966,none_detected,,,,,,,,,,
+170,Labadok,Let Wea Det,Buthidaung,Let Wea Det Pu Zun Chaung,20.893181,92.493637,none_detected,,,,,,,,,,
+171,,Pu Zun Chaung,Buthidaung,Let Wea Det Pu Zun Chaung,20.895901,92.497330,none_detected,,,,,,,,,,
+172,Done Chaung,Done Chaung,Buthidaung,Let Wea Det Pyin Shey,20.847490,92.511498,none_detected,,,,,,,,,,
+173,Natala,Gandamar (NaTaLa),Buthidaung,Let Wea Det Pyin Shey,20.875999,92.497330,none_detected,,,,,,,,,,
+174,Lamba Alie,Htin Shar Pyin,Buthidaung,Let Wea Det Pyin Shey,20.850849,92.517357,none_detected,,,,,,,,,,
+175,mok,Inn Hpauk,Buthidaung,Let Wea Det Pyin Shey,20.849060,92.497414,none_detected,,,,,,,,,,
+176,Oli Morong,Kyauk Hla Pyin,Buthidaung,Let Wea Det Pyin Shey,20.863850,92.514893,nearby,,False,377,0.0,0.0,2,2017-09-16,2017-09-16,medium,False
+177,Labadok,Let Wea Det Pyin Shey,Buthidaung,Let Wea Det Pyin Shey,20.863079,92.497192,none_detected,,,,,,,,,,
+178,Mok,Tha Pyay Taw,Buthidaung,Let Wea Det Pyin Shey,20.850760,92.502449,none_detected,,,,,,,,,,
+179,Lakkara Gunna,Toe Cheit Ywar,Buthidaung,Let Wea Det Pyin Shey,20.867580,92.520821,none_detected,,,,,,,,,,
+180,Sharb Bazar,Maung Gyi Taung,Buthidaung,Maung Gyi Taung,20.924641,92.533630,none_detected,,,,,,,,,,
+181,Mash Para,Sin Oe Pyin (Middle),Buthidaung,Maung Gyi Taung,20.905334,92.513618,none_detected,,,,,,,,,,
+182,Bor para,Sin Oe Pyin (Ywar Gyi),Buthidaung,Maung Gyi Taung,20.900539,92.519730,destroyed,,True,0,1.6,0.056,4,2017-09-16,2017-09-16,medium,False
+183,,Maung Hnit Ma,Buthidaung,Maung Hna Ma (a) Pa Oe Thei Ma,20.643829,92.619888,none_detected,,,,,,,,,,
+184,Bori Young,Bo Gyi Chaung,Buthidaung,Mee Chaung Zay,20.980980,92.521492,destroyed,,True,0,6.03,0.213,2,2017-09-16,2017-09-16,medium,False
+185,Fateyar Fara,Hpaw Tay Ahr Li,Buthidaung,Mee Chaung Zay,20.963160,92.513817,nearby,,False,56,0.77,0.027,6,2017-09-16,2017-09-16,medium,False
+186,Hormura Fara,Khaik Mu Ra,Buthidaung,Mee Chaung Zay,20.972099,92.525482,none_detected,,,,,,,,,,
+187,Mazir Fara,Mar Zi,Buthidaung,Mee Chaung Zay,20.968309,92.517662,destroyed,,True,0,3.17,0.112,6,2017-09-16,2017-09-16,medium,False
+188,Min Gee Zee,Mee Chaung Zay,Buthidaung,Mee Chaung Zay,20.970881,92.512650,nearby,,False,107,0.2,0.007,2,2017-10-11,2017-10-11,medium,False
+189,Noya Para,Ywar Thit,Buthidaung,Mee Chaung Zay,20.962799,92.527702,destroyed,,False,20,4.03,0.142,3,2017-09-16,2017-09-16,medium,False
+190,Kun Tane,Kone Tan Ywar Thit,Buthidaung,Mee Kyaung Khaung Swea,20.952999,92.482849,none_detected,,,,,,,,,,
+191,Kuir Hali,Ku Mi Khar Li,Buthidaung,Mee Kyaung Khaung Swea,20.972441,92.498268,none_detected,,,,,,,,,,
+192,Fattar Fara,Maung Hla Ma (Lin Bar Si Li),Buthidaung,Mee Kyaung Khaung Swea,20.949169,92.493759,none_detected,,,,,,,,,,
+193,Rong Fara,Mee Kyaung Khaung Swea,Buthidaung,Mee Kyaung Khaung Swea,20.945339,92.496063,none_detected,,,,,,,,,,
+194,Ka Tee La,Ka Htee Hla (Na Ta La),Buthidaung,Myauk Ye (a) Pan Be Chaung,21.056858,92.449280,none_detected,,,,,,,,,,
+195,lou So Fara(musalman Fara),Pan Be Chaung (Ku Lar),Buthidaung,Myauk Ye (a) Pan Be Chaung,21.038771,92.469757,destroyed,,False,19,3.31,0.117,3,2017-09-25,2017-09-25,uncertain,True
+196,lou So Fara(Mok Fara),Pan Be Chaung (Rakhine),Buthidaung,Myauk Ye (a) Pan Be Chaung,21.045910,92.463654,nearby,,False,403,0.0,0.0,1,2017-09-25,2017-09-25,uncertain,True
+197,Dail Para,Day Li,Buthidaung,Myaung Nar,20.833229,92.540154,none_detected,,,,,,,,,,
+198,Mrng Na para,Myaung Nar,Buthidaung,Myaung Nar,20.833719,92.534462,none_detected,,,,,,,,,,
+199,Sangri bill,Ku Toet Seik,Buthidaung,Nan Yar Kone,20.876711,92.537407,none_detected,,,,,,,,,,
+200,Zailla par,Kyauk Yit,Buthidaung,Nan Yar Kone,20.892290,92.550079,none_detected,,,,,,,,,,
+201,Monnar Para,Myauk (Pale Taung),Buthidaung,Nan Yar Kone,20.884159,92.551064,none_detected,,,,,,,,,,
+202,Noyapara,Nan Yar Kone Ywar Thit,Buthidaung,Nan Yar Kone,20.887030,92.556824,nearby,,False,65,0.0,0.0,1,2017-10-01,2017-10-01,medium,True
+203,Monnar para,Taung (Pale Taung),Buthidaung,Nan Yar Kone,20.882549,92.551338,none_detected,,,,,,,,,,
+204,Kyarang,Than Chay,Buthidaung,Nan Yar Kone,20.887421,92.545410,none_detected,,,,,,,,,,
+205,,Nga Hlan Pyin,Buthidaung,Nga Hlan Pyin,20.632879,92.656868,none_detected,,,,,,,,,,
+206,Kee Nee see ,Kyee Hnoke Thee,Buthidaung,Nga Yant Chaung,20.982479,92.509712,none_detected,,,,,,,,,,
+207,Boddo Fara,Maung Hnit Ma,Buthidaung,Nga Yant Chaung,21.023890,92.471962,destroyed,,True,0,5.78,0.204,3,2017-09-16,2017-09-16,medium,False
+208,Narain Kom,Ngar Yant Chaung,Buthidaung,Nga Yant Chaung,21.004440,92.500229,nearby,,False,238,0.07,0.002,1,2017-10-11,2017-10-11,medium,False
+209,Futtu Farang,Pauk Taw Pyin,Buthidaung,Nga Yant Chaung,21.018221,92.493713,destroyed,,False,56,1.84,0.065,3,2017-09-16,2017-09-16,medium,False
+210,Ammai Fara,Yin Ma,Buthidaung,Nga Yant Chaung,21.003670,92.508873,nearby,,False,239,0.34,0.012,2,2017-09-16,2017-09-16,medium,False
+211,Rohingyah Para,Yin Ma Zay,Buthidaung,Nga Yant Chaung,21.009741,92.503166,nearby,,False,218,0.27,0.01,2,2017-09-16,2017-09-16,medium,False
+212,Olibor Fara,Aw Lan Pyin,Buthidaung,Nga/ Kyin Tauk,20.938021,92.497543,nearby,,False,262,0.09,0.003,1,2017-10-11,2017-10-11,medium,True
+213,Morisha Bil,Aw Lan Pyin Ku Lar,Buthidaung,Nga/ Kyin Tauk,20.936420,92.494110,nearby,,False,48,0.11,0.004,2,2017-10-01,2017-10-11,medium,True
+214,Nakine Dong (Sakma Fara),Nga Kyi Tauk Daing Net,Buthidaung,Nga/ Kyin Tauk,20.936041,92.475830,none_detected,,,,,,,,,,
+215,Nakine Dong (Musulman Fara),Nga Kyi Tauk Ku Lar,Buthidaung,Nga/ Kyin Tauk,20.933100,92.469353,none_detected,,,,,,,,,,
+216,Nakine Dong,Nga/ Kyin Tauk,Buthidaung,Nga/ Kyin Tauk,20.938351,92.490929,nearby,,False,355,0.0,0.0,2,2017-10-01,2017-10-11,medium,True
+217,Shari Kunda,Tha Yae Kone Tan,Buthidaung,Nga/ Kyin Tauk,20.943001,92.499153,none_detected,,,,,,,,,,
+218,,Myauk Chaung,Buthidaung,Oke Taung,20.965000,92.572327,none_detected,,,,,,,,,,
+219,Mok Para,Oke Taung (Rakhine),Buthidaung,Oke Taung,20.953199,92.562538,none_detected,,,,,,,,,,
+220,Mok Para,Ah Twin Pyin,Buthidaung,Pauk Taw,20.630951,92.591187,none_detected,,,,,,,,,,
+221,Mok Para,Aung Ze Ya (Rakhine),Buthidaung,Pauk Taw,20.618650,92.609367,none_detected,,,,,,,,,,
+222,Mok Para,Pauk Taw,Buthidaung,Pauk Taw,20.631330,92.596802,none_detected,,,,,,,,,,
+223,Aazola para,Pyaing Taung,Buthidaung,Pyaing Taung,20.663370,92.613876,none_detected,,,,,,,,,,
+224,Golasira,Taung Chaung,Buthidaung,Pyaing Taung,20.663879,92.609306,none_detected,,,,,,,,,,
+225,Sakma Para,Taung Maw,Buthidaung,Pyaing Taung,20.667749,92.608650,none_detected,,,,,,,,,,
+226,Fuk Para,Zin Kha Mar,Buthidaung,Pyaing Taung,20.654249,92.619102,none_detected,,,,,,,,,,
+227,Mok Para,Let Pan Chaung,Buthidaung,Pyin Chaung,20.915480,92.666344,none_detected,,,,,,,,,,
+228,Mok Para,Myo Ma Chaung,Buthidaung,Pyin Chaung,20.859921,92.639450,none_detected,,,,,,,,,,
+229,Mok Para,Pyin Chaung,Buthidaung,Pyin Chaung,20.835489,92.602562,none_detected,,,,,,,,,,
+230,Mok Para,Kun Taung,Buthidaung,Sa Par Htar,20.750031,92.643646,none_detected,,,,,,,,,,
+231,Mok Para,Sa Par Htar,Buthidaung,Sa Par Htar,20.734859,92.657089,none_detected,,,,,,,,,,
+232,Mok Para,Khaung Taik,Buthidaung,San Goe Taung,20.750250,92.651260,none_detected,,,,,,,,,,
+233,Mok Para,Nwar Yon Taung,Buthidaung,San Goe Taung,20.756411,92.635803,none_detected,,,,,,,,,,
+234,Mok Para,San Goe Taung,Buthidaung,San Goe Taung,20.764071,92.631126,none_detected,,,,,,,,,,
+235,Mok Para,Shat Shar Taung,Buthidaung,San Goe Taung,20.767719,92.631737,none_detected,,,,,,,,,,
+236,Santhai parang,Sin Thay Pyin,Buthidaung,San Goe Taung,20.771191,92.633942,none_detected,,,,,,,,,,
+237,Mok Para,U Yin Thar,Buthidaung,San Goe Taung,20.772551,92.638290,none_detected,,,,,,,,,,
+238,Mok Para,U Yin Thar Kha Mway,Buthidaung,San Goe Taung,20.774040,92.642593,none_detected,,,,,,,,,,
+239,Mok Para,Kan Paing Chaung,Buthidaung,San Hnyin Wai,20.930599,92.574707,none_detected,,,,,,,,,,
+240,Mok Para,Kha Mway Chaung,Buthidaung,San Hnyin Wai,20.923849,92.584450,none_detected,,,,,,,,,,
+241,lamba bil,Pyin Shey Ku Lar,Buthidaung,San Hnyin Wai,20.898420,92.570259,none_detected,,,,,,,,,,
+242,Mok Para,San Hnyin Wai (Win Dwin Rakhine),Buthidaung,San Hnyin Wai,20.888420,92.582367,none_detected,,,,,,,,,,
+243,Mok Para,San Hnyin Wai Rakhine,Buthidaung,San Hnyin Wai,20.904079,92.577400,none_detected,,,,,,,,,,
+244,Mok Para,Si Pin Thar Yar,Buthidaung,San Hnyin Wai,20.911409,92.590813,none_detected,,,,,,,,,,
+245,Wari Young,Say Oe Kya,Buthidaung,Say Oe Kya,20.765671,92.577812,none_detected,,,,,,,,,,
+246,Zumma para,Tha Zin Taw,Buthidaung,Say Oe Kya,20.770220,92.588058,none_detected,,,,,,,,,,
+247,Wari Young,Wa Ra Kyun,Buthidaung,Say Oe Kya,20.770531,92.576073,none_detected,,,,,,,,,,
+248,Mok Para,Gwa Son,Buthidaung,Say Taung,20.725130,92.673637,none_detected,,,,,,,,,,
+249,Mok Para,Kan Pyin,Buthidaung,Say Taung,20.741390,92.669327,none_detected,,,,,,,,,,
+250,Mok Para,Say Taung,Buthidaung,Say Taung,20.726419,92.671181,none_detected,,,,,,,,,,
+251,Fosim para,Daing Net Pyin,Buthidaung,Sein Hnyin Pyar,20.762270,92.540283,nearby,,False,442,0.0,0.0,1,2017-09-16,2017-09-16,medium,False
+252,Dail para,Pyin Shey,Buthidaung,Sein Hnyin Pyar,20.765560,92.546837,nearby,,False,180,0.72,0.025,1,2017-09-16,2017-09-16,medium,False
+253,Tanguja para,Pyin Shey Ah Shey (Ku Lar),Buthidaung,Sein Hnyin Pyar,20.769880,92.543793,none_detected,,,,,,,,,,
+254,Bazarpparaor fuk ,Sein Hnyin Pyar Zay,Buthidaung,Sein Hnyin Pyar,20.768150,92.550079,destroyed,,False,109,2.21,0.078,1,2017-09-16,2017-09-16,medium,False
+255,Falonga para,Taw Kan,Buthidaung,Sein Hnyin Pyar,20.766081,92.541573,none_detected,,,,,,,,,,
+256,sakma,Tha Pyay Taw,Buthidaung,Sein Hnyin Pyar,20.782770,92.551826,none_detected,,,,,,,,,,
+257,Tansar para,Tin Set,Buthidaung,Sein Hnyin Pyar,20.775681,92.547577,nearby,,False,70,0.88,0.031,1,2017-09-16,2017-09-16,medium,False
+258,Rashong Ga para,Yet Chaung,Buthidaung,Sein Hnyin Pyar,20.770750,92.550728,nearby,,False,388,0.0,0.0,1,2017-09-16,2017-09-16,medium,False
+259,Bazaror Fosim,Zay Ah Nauk,Buthidaung,Sein Hnyin Pyar,20.764500,92.540413,none_detected,,,,,,,,,,
+260,Mok Para,Ba Ho Pyin Ywar Haung,Buthidaung,Ta Ya Gu,21.057610,92.515633,none_detected,,,,,,,,,,
+261,Mok Para,Ba Ho Pyin Ywar Thit,Buthidaung,Ta Ya Gu,21.063681,92.528763,none_detected,,,,,,,,,,
+262,Mok Para,Chaung Chay,Buthidaung,Ta Ya Gu,21.055811,92.541389,none_detected,,,,,,,,,,
+263,Mok Para,Doe Tan,Buthidaung,Ta Ya Gu,21.099211,92.507492,none_detected,,,,,,,,,,
+264,Mok Para,Hmaing Sa Ri,Buthidaung,Ta Ya Gu,21.108669,92.523300,none_detected,,,,,,,,,,
+265,Mok Para,Inn Chaung,Buthidaung,Ta Ya Gu,21.082260,92.515747,none_detected,,,,,,,,,,
+266,Mok Para,Nga Thaing Chaung,Buthidaung,Ta Ya Gu,21.071625,92.525978,none_detected,,,,,,,,,,
+267,Mok Para,Pan Kone Ma,Buthidaung,Ta Ya Gu,21.085171,92.509567,none_detected,,,,,,,,,,
+268,Mok Para,Pauk Kyat,Buthidaung,Ta Ya Gu,21.085960,92.502289,none_detected,,,,,,,,,,
+269,Mok Para,Pauk Kyat Wa,Buthidaung,Ta Ya Gu,21.119150,92.515060,none_detected,,,,,,,,,,
+270,Mok Para,Pi Ywet Rakhine,Buthidaung,Ta Ya Gu,21.035450,92.523178,none_detected,,,,,,,,,,
+271,Mok Para,Seik Ta Ra,Buthidaung,Ta Ya Gu,21.082760,92.519402,none_detected,,,,,,,,,,
+272,Mok Para,Sin Ma U Kaing,Buthidaung,Ta Ya Gu,21.106390,92.500816,none_detected,,,,,,,,,,
+273,Mok Para,Ta Ra Gu,Buthidaung,Ta Ya Gu,21.002640,92.561813,none_detected,,,,,,,,,,
+274,Mok Para,Than Pu Yar,Buthidaung,Ta Ya Gu,21.075497,92.534569,none_detected,,,,,,,,,,
+275,Mok Para,Tharaphy (NaTaLa),Buthidaung,Ta Ya Gu,21.076317,92.566383,none_detected,,,,,,,,,,
+276,Mok Para,Yae Chan,Buthidaung,Ta Ya Gu,21.036100,92.540588,none_detected,,,,,,,,,,
+277,Mok Para,Daing Net Ywar,Buthidaung,Tat Min Chaung,20.904169,92.461708,none_detected,,,,,,,,,,
+278,Mok Para,Hpa Lan,Buthidaung,Tat Min Chaung,20.906130,92.446213,none_detected,,,,,,,,,,
+279,Mok Para,Myaung,Buthidaung,Tat Min Chaung,20.902201,92.466820,none_detected,,,,,,,,,,
+280,Tamin khali,Tat Min Chaung,Buthidaung,Tat Min Chaung,20.897079,92.469521,none_detected,,,,,,,,,,
+281,Mok Para,Taung Paing,Buthidaung,Tat Min Chaung,20.892321,92.469612,none_detected,,,,,,,,,,
+282,Kharang khali,Myauk,Buthidaung,Tha Peik Taung,20.798910,92.553680,none_detected,,,,,,,,,,
+283,Keyazinga para,Taung,Buthidaung,Tha Peik Taung,20.787411,92.551552,none_detected,,,,,,,,,,
+284,mura para,Taung Chay,Buthidaung,Tha Peik Taung,20.791679,92.550903,none_detected,,,,,,,,,,
+285,Mok Para,Tha Peik Taung (Rakhine),Buthidaung,Tha Peik Taung,20.794100,92.554321,none_detected,,,,,,,,,,
+286,Azimma Para/Washilla,Kyet Mauk Taung,Buthidaung,Tha Yet Kin Ma Nu,20.883680,92.569939,none_detected,,,,,,,,,,
+287,Thara kuni,Tha Yet Kin Ma Nu,Buthidaung,Tha Yet Kin Ma Nu,20.871830,92.566910,none_detected,,,,,,,,,,
+288,Farikul,Tha Yet Pyin (Ku Lar),Buthidaung,Tha Yet Pyin,20.803579,92.603683,none_detected,,,,,,,,,,
+289,Mok Para,Tha Yet Pyin (Rakhine),Buthidaung,Tha Yet Pyin,20.812450,92.608658,none_detected,,,,,,,,,,
+290,Reshup parang,Yae Chan Pyin,Buthidaung,Tha Yet Pyin,20.817289,92.606117,none_detected,,,,,,,,,,
+291,Mok Para,Kyauk Pyin Seik,Buthidaung,Thaing Ta Poke,20.677860,92.699928,none_detected,,,,,,,,,,
+292,Mok Para,Tha Pyay Seik,Buthidaung,Thaing Ta Poke,20.707460,92.680862,none_detected,,,,,,,,,,
+293,Mok Para,Thaing Ta Poke,Buthidaung,Thaing Ta Poke,20.688311,92.696960,none_detected,,,,,,,,,,
+294,Gongri para,Gaung Gyi,Buthidaung,Thay Kan Gwa Son,20.721020,92.626198,none_detected,,,,,,,,,,
+295,Kwa Chaung,Gwa Son (Ku Lar),Buthidaung,Thay Kan Gwa Son,20.703791,92.628464,none_detected,,,,,,,,,,
+296,Mok Para,Gwa Son (Rakhine),Buthidaung,Thay Kan Gwa Son,20.703920,92.631500,none_detected,,,,,,,,,,
+297,Mustobiz para,Maws Taw Hpi,Buthidaung,Thay Kan Gwa Son,20.721291,92.605141,none_detected,,,,,,,,,,
+298,Wa Mogya,Wet Ma Kya,Buthidaung,Thay Kan Gwa Son,20.724701,92.628197,none_detected,,,,,,,,,,
+299,Messiri para,Hla Tha Ma,Buthidaung,Thein Taung Pyin,20.673639,92.596298,none_detected,,,,,,,,,,
+300,Langu para,Laung Gyun,Buthidaung,Thein Taung Pyin,20.676519,92.591667,none_detected,,,,,,,,,,
+301,Boyi dow para,Say Tha Ma,Buthidaung,Thein Taung Pyin,20.678150,92.587868,none_detected,,,,,,,,,,
+302,sakma,Thein Taung Pyin (Daing Net),Buthidaung,Thein Taung Pyin,20.669130,92.595497,none_detected,,,,,,,,,,
+303,"Kittar bil,Bor para",Thein Taung Pyin (Ku Lar),Buthidaung,Thein Taung Pyin,20.674700,92.590393,none_detected,,,,,,,,,,
+304,Dom Mie,Done Paing,Buthidaung,Thin Ga Net,20.996700,92.512627,nearby,,False,336,0.0,0.0,2,2017-09-16,2017-09-25,medium,True
+305,Doyin Kul,Khu Taung,Buthidaung,Thin Ga Net,20.993214,92.524986,destroyed,,True,0,5.42,0.192,4,2017-09-16,2017-09-16,medium,False
+306,Ottor Kul (Hazir Fara),Kone Taung,Buthidaung,Thin Ga Net,21.002581,92.524277,destroyed,,False,33,7.11,0.251,2,2017-09-16,2017-09-25,medium,True
+307,Fir Ha lee,Thin Ga Net,Buthidaung,Thin Ga Net,21.000639,92.521515,destroyed,,False,9,6.64,0.235,4,2017-09-16,2017-09-25,medium,True
+308,Na Ta La Para,Kywe Rine (Na Ta La),Buthidaung,Tin May,21.152260,92.462822,none_detected,,,,,,,,,,
+309,Tami,Tin May,Buthidaung,Tin May,21.153379,92.446861,nearby,,False,47,0.83,0.029,7,2017-10-11,2017-10-11,medium,False
+310,Sheyala para,Khe War,Buthidaung,U Hla Hpay,20.814581,92.576393,none_detected,,,,,,,,,,
+311,Mura para,Taung,Buthidaung,U Hla Hpay,20.812960,92.564323,none_detected,,,,,,,,,,
+312,Oo Hla Hpay,U Hla Hpay,Buthidaung,U Hla Hpay,20.836651,92.558937,none_detected,,,,,,,,,,
+313,Mok Para,Hlaing Shey Pyin,Buthidaung,U Kyaw (a) Thar Zin,20.746700,92.574837,none_detected,,,,,,,,,,
+314,Mok Para,U Kyaw,Buthidaung,U Kyaw (a) Thar Zin,20.740860,92.578438,none_detected,,,,,,,,,,
+315,Lodine Para,Doe Tan,Buthidaung,Wa Ya Kyun,20.780630,92.581978,none_detected,,,,,,,,,,
+316,Noya para,Kyein Chaung,Buthidaung,Wa Ya Kyun,20.784821,92.586693,none_detected,,,,,,,,,,
+317,Shafor Fara,Wa Ra Kyun,Buthidaung,Wa Ya Kyun,20.774130,92.574799,none_detected,,,,,,,,,,
+318,Zobbor Pata,Zaw Baw,Buthidaung,Wa Ya Kyun,20.790039,92.585693,none_detected,,,,,,,,,,
+319,Bili para,Baw Li (Ku Lar),Buthidaung,Wet Ma Kya (a) Zay Di Taung,20.742060,92.630676,none_detected,,,,,,,,,,
+320,boli (mok para),Baw Li (Rakhine),Buthidaung,Wet Ma Kya (a) Zay Di Taung,20.741570,92.632347,none_detected,,,,,,,,,,
+321,Zadi Taung( Musalman Para),Zay Di Taung (Ku Lar),Buthidaung,Wet Ma Kya (a) Zay Di Taung,20.737431,92.634773,none_detected,,,,,,,,,,
+322,Zadi Taung(mok para),Zay Di Taung (Rakhine),Buthidaung,Wet Ma Kya (a) Zay Di Taung,20.735640,92.638077,none_detected,,,,,,,,,,
+323,,Ah Nauk Pyin,Buthidaung,Yin Ma Kyaung Taung,21.021919,92.508827,destroyed,,False,38,4.41,0.156,10,2017-09-16,2017-09-16,medium,False
+324,,Kyein Chaung,Buthidaung,Yin Ma Kyaung Taung,21.025631,92.524818,none_detected,,,,,,,,,,
+325,Ramiya Para,Rammoya Fara,Buthidaung,Yin Ma Kyaung Taung,21.013479,92.506073,destroyed,,False,2,1.46,0.052,2,2017-09-16,2017-10-11,medium,True
+326,Gazonga Fara,Yin Ma Kyauk Taung,Buthidaung,Yin Ma Kyaung Taung,21.023649,92.507042,destroyed,,False,34,1.26,0.045,12,2017-09-16,2017-09-16,medium,False
+327,Gona Para,Gone Nar,Buthidaung,Ywar Ma,20.889811,92.519569,none_detected,,,,,,,,,,
+328,Sarung Para,Thit Yin,Buthidaung,Ywar Ma,20.882521,92.532066,none_detected,,,,,,,,,,
+329,Musalman Para,Ywar Ma Mu Sa Lin,Buthidaung,Ywar Ma,20.883591,92.525681,none_detected,,,,,,,,,,
+330,Mok Para,Ywar Ma Rakhine,Buthidaung,Ywar Ma,20.885229,92.530212,none_detected,,,,,,,,,,
+331,Mazor Para,Ah Lel (Ywet Nyo Taung),Buthidaung,Ywet Nyo Taung,20.847490,92.556473,none_detected,,,,,,,,,,
+332,Uttar Para,Myauk (Ywet Nyo Taung),Buthidaung,Ywet Nyo Taung,20.852030,92.557297,nearby,,False,491,0.0,0.0,1,2017-09-16,2017-09-16,medium,False
+333,Doyin Para,Taung (Ywet Nyo Taung),Buthidaung,Ywet Nyo Taung,20.843081,92.556396,none_detected,,,,,,,,,,
+334,Mok Para,Taung Gyi Yin,Buthidaung,Zee Hton,21.041439,92.459602,none_detected,,,,,,,,,,
+335,Murong Para,Thar Si (Myo),Buthidaung,Zee Hton,21.020180,92.430878,none_detected,,,,,,,,,,
+336,Lyar Bill,Yin Ma Zee Hton,Buthidaung,Zee Hton,21.034100,92.470818,destroyed,,False,35,5.08,0.18,3,2017-09-25,2017-09-25,uncertain,True
+337,Mok Para,Zee Hton Rakhine,Buthidaung,Zee Hton,21.040569,92.452469,none_detected,,,,,,,,,,
+338,,Four Miles South,Buthidaung,,-37.854815,144.981622,not_assessed,no verified location,,,,,,,,,
+339,Kilai Daung Fuk Para,(Du) Chee Yar Tan (East),Maungdaw,(Du) Chee Yar Tan,20.768190,92.418137,destroyed,,False,110,6.71,0.237,3,2017-09-16,2017-09-16,medium,False
+340,Kilai Daung Mazor Para,(Du) Chee Yar Tan (Middle),Maungdaw,(Du) Chee Yar Tan,20.771040,92.412483,destroyed,,True,0,8.62,0.305,5,2017-09-16,2017-09-16,medium,False
+341,Kilai Daung Doin Para,(Du) Chee Yar Tan (South),Maungdaw,(Du) Chee Yar Tan,20.766920,92.415916,destroyed,,True,0,9.18,0.325,3,2017-09-16,2017-09-16,medium,False
+342,Kilai Daung FosimPara,(Du) Chee Yar Tan (West),Maungdaw,(Du) Chee Yar Tan,20.769661,92.402573,destroyed,,True,0,5.58,0.197,2,2017-09-16,2017-09-16,medium,False
+343,Morong Deyl,Baw Di Kone,Maungdaw,(Du) Chee Yar Tan,20.796021,92.415558,none_detected,,,,,,,,,,
+344,DPA (Nyein Chan Yay) ,DPA (Nyein Chan Yay),Maungdaw,(Du) Chee Yar Tan,20.782110,92.412964,nearby,,False,451,0.0,0.0,1,2017-09-16,2017-09-16,medium,False
+345,Kha Yay Myaing (Rakhine),Kha Yay Myaing (NaTaLa),Maungdaw,(Du) Chee Yar Tan,20.765240,92.422333,nearby,,False,322,0.0,0.0,3,2017-09-16,2017-09-16,medium,False
+346,Furushi Para,Kin Chaung,Maungdaw,(Du) Chee Yar Tan,20.764370,92.424492,none_detected,,,,,,,,,,
+347,Nu Na Suri,Nu Nar Sar Ri,Maungdaw,(Du) Chee Yar Tan,20.766830,92.403954,destroyed,,True,0,2.63,0.093,2,2017-09-16,2017-09-16,medium,False
+348,Sor Para,Tat U Chaung,Maungdaw,(Du) Chee Yar Tan,20.770081,92.416473,destroyed,,True,0,9.65,0.341,2,2017-09-16,2017-09-16,medium,False
+349,Shaira Para,(Du) Nyaung Pin Gyi,Maungdaw,(Du) Nyaung Pin Gyi,20.776569,92.394897,none_detected,,,,,,,,,,
+350,Lail Lah Para,(Pa) Chee Yar Tan,Maungdaw,(Pa) Nyaung Pin Gyi,20.733681,92.406517,destroyed,,False,3,4.3,0.152,2,2017-09-16,2017-09-16,medium,False
+351,Daung Khali,(Pa) Nyaung Pin Gyi,Maungdaw,(Pa) Nyaung Pin Gyi,20.740179,92.403481,nearby,,False,219,0.32,0.011,1,2017-09-25,2017-09-25,medium,False
+352,Boiddo Para,Maw,Maungdaw,(Pa) Nyaung Pin Gyi,20.736040,92.394989,none_detected,,,,,,,,,,
+353,Khasari Bil,Ah Htet Pyu Ma,Maungdaw,Ah Htet Pyu Ma,21.053431,92.297836,destroyed,,True,0,8.05,0.285,4,2017-09-16,2017-09-16,medium,False
+354,Guda Para,Koe Taung,Maungdaw,Ah Htet Pyu Ma,21.048660,92.293350,destroyed,,True,0,3.65,0.129,5,2017-09-16,2017-09-16,medium,False
+355,Mura Para,Taung Yin,Maungdaw,Ah Htet Pyu Ma,21.061220,92.305511,destroyed,,False,45,6.25,0.221,15,2017-09-16,2017-10-01,medium,True
+356,Bodu Para,Byu Har Kone,Maungdaw,Ah Lel Than Kyaw,20.684349,92.426651,none_detected,,,,,,,,,,
+357,Hanpu Para,Kan Hpu,Maungdaw,Ah Lel Than Kyaw,20.684401,92.425507,none_detected,,,,,,,,,,
+358,Moidana para,Kan Paing Gyi (Lower),Maungdaw,Ah Lel Than Kyaw,20.680149,92.433540,destroyed,,True,0,5.36,0.189,2,2017-09-16,2017-09-16,medium,False
+359,Hazee Para,Kan Paing Gyi (Upper),Maungdaw,Ah Lel Than Kyaw,20.685221,92.433250,destroyed,,True,0,3.22,0.114,10,2017-09-16,2017-09-25,medium,False
+360,Deyl Para,Lay Yin Pyan Kwin,Maungdaw,Ah Lel Than Kyaw,20.685369,92.420708,none_detected,,,,,,,,,,
+361,Mown Tu Lar,Maw Tu Lar,Maungdaw,Ah Lel Than Kyaw,20.676291,92.448936,destroyed,,False,44,6.71,0.237,5,2017-09-16,2017-09-16,medium,False
+362,Bazar para,Zay Kone Tan,Maungdaw,Ah Lel Than Kyaw,20.684589,92.443581,destroyed,,True,0,10.91,0.386,3,2017-09-16,2017-09-16,medium,False
+363,,Aung Zan,Maungdaw,Aung Zan,21.318846,92.225395,nearby,,False,213,0.47,0.017,3,2017-09-16,2017-09-25,medium,True
+364,Aung Zan (Daing Net),Aung Zan (Daing Net),Maungdaw,Aung Zan,21.315790,92.221909,nearby,,False,44,0.56,0.02,7,2017-09-16,2017-09-16,medium,False
+365,,Kyaung Toe,Maungdaw,Aung Zan,21.327101,92.232246,nearby,,False,254,0.2,0.007,1,2017-09-16,2017-09-16,medium,False
+366,,Shee Dar,Maungdaw,Aung Zan,21.311661,92.249870,nearby,,False,154,0.18,0.006,2,2017-09-16,2017-09-16,medium,False
+367,Natala Para,Aung Zay Ya (Nyein Chan Yay),Maungdaw,Aung Zay Ya (Nyein Chan Yay),21.179270,92.183693,none_detected,,,,,,,,,,
+368,Khaim Prang Rakhine,Chan Pyin,Maungdaw,Chan Pyin,20.991560,92.290878,none_detected,,,,,,,,,,
+369,Mogh Para,Sa Bai Pin Yin,Maungdaw,Chan Pyin,21.004551,92.294601,none_detected,,,,,,,,,,
+370,Shil Khali Fuk Para,Ah Kya (Chein Khar Li) (Lower),Maungdaw,Chein Khar Li,20.689920,92.446213,destroyed,,False,71,4.7,0.166,1,2017-09-16,2017-09-16,medium,False
+371,Shil Khali,Chein Khar Li,Maungdaw,Chein Khar Li,20.694229,92.451172,destroyed,,True,0,10.73,0.379,2,2017-09-16,2017-09-16,medium,False
+372,Shil Khali Fosim Para,Chein Khar Li (West),Maungdaw,Chein Khar Li,20.692511,92.444946,destroyed,,True,0,11.9,0.421,3,2017-09-16,2017-09-16,medium,False
+373,Shoro Gow Zey Beel,Dar Gyi Zar,Maungdaw,Dar Gyi Zar,20.953291,92.329117,none_detected,,,,,,,,,,
+375,Lamba Guna,Lin Bar Gone Nar,Maungdaw,Doe Tan,21.053699,92.324120,destroyed,,True,0,7.67,0.271,2,2017-09-16,2017-09-16,medium,False
+376,Sin Daung,Thein Taung,Maungdaw,Doe Tan,21.037380,92.308983,destroyed,,True,0,11.95,0.422,5,2017-09-16,2017-09-16,medium,False
+377,Bois Char,Bo Bar,Maungdaw,Done Paik (Aung Seik Pyin),21.106569,92.328049,destroyed,,True,0,7.67,0.271,9,2017-09-16,2017-10-01,medium,False
+378,Dumbai,Done Paik,Maungdaw,Done Paik (Aung Seik Pyin),21.094311,92.335670,destroyed,,True,0,8.66,0.306,5,2017-09-16,2017-10-01,medium,False
+379,Sadul Lar Shor,Kyet Kyein,Maungdaw,Done Paik (Aung Seik Pyin),21.120979,92.325089,destroyed,,False,38,5.94,0.21,2,2017-09-16,2017-09-16,medium,False
+380,Ran Aung Pyin Natala,Ran Aung Pyin (NaTaLa),Maungdaw,Done Paik (Aung Seik Pyin),21.116583,92.345482,none_detected,,,,,,,,,,
+381,Reeda,Ree Dar,Maungdaw,Done Paik (Aung Seik Pyin),21.102461,92.335663,destroyed,,True,0,12.76,0.451,4,2017-09-16,2017-09-16,medium,False
+374,Ludaing,Doe Tan,Maungdaw,Hla Poe Khaung,21.045031,92.307671,destroyed,,False,35,8.3,0.294,3,2017-09-16,2017-09-16,medium,False
+382,Sorfoddo Beel,Hla Poe Khaung,Maungdaw,Hla Poe Khaung,20.912580,92.353889,destroyed,,True,0,11.36,0.402,3,2017-09-16,2017-09-16,medium,False
+383,Shil Khali,Shein Kar Li,Maungdaw,Hla Poe Khaung,20.907391,92.359528,destroyed,,False,22,2.34,0.083,9,2017-09-16,2017-09-16,medium,False
+384,Bot Tola,Baw Taw Lar,Maungdaw,Hlaing Thi,21.257311,92.255409,destroyed,,False,11,3.96,0.14,3,2017-09-16,2017-09-16,medium,False
+385,Hlaing Si,Hlaing Thi,Maungdaw,Hlaing Thi,21.248619,92.257683,none_detected,,,,,,,,,,
+386,Hati Para,Sin Thay Pyin,Maungdaw,Hlaing Thi,21.266649,92.259827,nearby,,False,140,0.7,0.025,6,2017-09-16,2017-10-11,medium,False
+387,Taung Bru,Taung Pyo,Maungdaw,Hlaing Thi,21.265539,92.247002,none_detected,,,,,,,,,,
+388,,Tone Chaung,Maungdaw,Hlaing Thi,21.288200,92.254951,nearby,,False,213,0.07,0.002,2,2017-09-25,2017-09-25,medium,False
+389,"Fuwa Khali, Bor Para",Hpar Wat Chaung (Ywar Haung),Maungdaw,Hpar Wut Chaung (Ywar Thit),20.986820,92.351013,destroyed,,False,2,6.57,0.232,6,2017-09-25,2017-09-25,medium,False
+390,Hpar Wut Chaung ( Rakhine),Hpar Wut Chaung (Su Sae),Maungdaw,Hpar Wut Chaung (Ywar Thit),20.985067,92.363976,nearby,,False,200,0.68,0.024,1,2017-09-16,2017-09-16,medium,False
+391,Fuwa Khali Noa Para,Hpar Wut Chaung (Ywar Thit),Maungdaw,Hpar Wut Chaung (Ywar Thit),20.987419,92.362137,destroyed,,True,0,3.29,0.116,1,2017-09-16,2017-09-16,medium,False
+392,Balu Khali,Thea Chaung,Maungdaw,Hpar Wut Chaung (Ywar Thit),20.971479,92.366547,destroyed,,False,12,14.09,0.498,1,2017-09-16,2017-09-16,medium,False
+393,Wah Prang,War Pyin,Maungdaw,Hpar Wut Chaung (Ywar Thit),20.974470,92.367508,destroyed,,True,0,12.51,0.442,4,2017-09-16,2017-09-16,medium,False
+394, Aung Chan Thar,Aung Chan Thar,Maungdaw,In Tu Lar,21.393927,92.280716,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+395,Bot Tola,Baw Tu Lar,Maungdaw,In Tu Lar,21.409630,92.279572,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+396,An Ta La,In Tu Lar,Maungdaw,In Tu Lar,21.403290,92.281174,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+397,Kuwas Chaung,Koe Ein Su,Maungdaw,In Tu Lar,21.398178,92.281837,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+398,An Dang Fuk Para,Inn Din (East),Maungdaw,Inn Din,20.509300,92.586922,destroyed,,True,0,7.51,0.266,3,2017-09-16,2017-10-03,medium,True
+399,An Dang Major Para,Inn Din (Middle),Maungdaw,Inn Din,20.505329,92.586929,destroyed,,True,0,4.68,0.165,4,2017-09-16,2017-10-03,medium,True
+400,An Dang Moag Para,Inn Din (Rakhine),Maungdaw,Inn Din,20.512520,92.582893,destroyed,,True,0,12.4,0.438,2,2017-09-16,2017-09-16,medium,False
+401,An DAng Fosim Para,Inn Din (West),Maungdaw,Inn Din,20.508150,92.581093,destroyed,,False,19,8.05,0.285,4,2017-09-16,2017-10-03,medium,True
+402,An Dang Natala Para,Pe Yone (NaTaLa),Maungdaw,Inn Din,20.516857,92.577988,nearby,,False,396,0.0,0.0,2,2017-09-16,2017-09-16,medium,False
+403,Sone Hodda Bio,Doe Tan,Maungdaw,Ka Nyin Tan (a) Alel Than Kyaw Ka Nyin Tan,20.697929,92.403770,none_detected,,,,,,,,,,
+404,Gor Zon Diya,Ka Nyin Tan,Maungdaw,Ka Nyin Tan (a) Alel Than Kyaw Ka Nyin Tan,20.694660,92.418129,none_detected,,,,,,,,,,
+405,Nakkon Diya,Na Khaung To,Maungdaw,Ka Nyin Tan (a) Alel Than Kyaw Ka Nyin Tan,20.702061,92.386597,none_detected,,,,,,,,,,
+406,Shik Dar Para,Ka Nyin Tan,Maungdaw,Ka Nyin Tan (a) Myo Ma Ka Nyin Tan,20.819731,92.376846,none_detected,,,,,,,,,,
+407,Maung Ni Para,Maung Ni,Maungdaw,Ka Nyin Tan (a) Myo Ma Ka Nyin Tan,20.815889,92.372566,none_detected,,,,,,,,,,
+408,Arisha Para,Ah Kyaw (Arisha Para),Maungdaw,Ka Nyin Taw,20.878229,92.347267,none_detected,,,,,,,,,,
+409,,Dar Shey,Maungdaw,Ka Nyin Taw,20.864849,92.347359,none_detected,,,,,,,,,,
+410,,Ka Nyin,Maungdaw,Ka Nyin Taw,20.866529,92.364883,none_detected,,,,,,,,,,
+411,Gorzon Dahl,Ka Nyin Taw,Maungdaw,Ka Nyin Taw,20.872419,92.352493,none_detected,,,,,,,,,,
+412,Hoinza Beel,Kan Hpu,Maungdaw,Kan Hpu,20.685450,92.457474,destroyed,,True,0,5.87,0.208,8,2017-09-16,2017-10-01,medium,True
+413,Zur Foizza,Pan Be ( Pan Be (South)),Maungdaw,Kan Hpu,20.679041,92.458420,destroyed,,False,20,4.86,0.172,3,2017-09-16,2017-09-25,medium,True
+414,Fuk Para,Ah Nauk Tan Chaung,Maungdaw,Kar Lar Day Hpet,21.292940,92.284576,destroyed,,False,95,1.1,0.039,2,2017-10-11,2017-10-11,medium,False
+415,Aung Tha Pyay,Aung Tha Pyay,Maungdaw,Kar Lar Day Hpet,21.363350,92.280487,none_detected,,,,,,,,,,
+416,Gumira Para,Gu Mi Yar,Maungdaw,Kar Lar Day Hpet,21.315960,92.283340,nearby,,False,36,0.58,0.021,3,2017-09-25,2017-10-01,medium,False
+417,Hala Day Pa,Kar Lar Day Hpet,Maungdaw,Kar Lar Day Hpet,21.341410,92.283478,nearby,,False,9,0.81,0.029,3,2017-09-25,2017-10-01,medium,False
+418,Noya pPara,Naw Yar,Maungdaw,Kar Lar Day Hpet,21.368080,92.279770,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+419,Ranga Zay Di  Para,Ran Khar Zay Di,Maungdaw,Kar Lar Day Hpet,21.277142,92.297813,none_detected,,,,,,,,,,
+420,Sansuri Para,San Su Ri,Maungdaw,Kar Lar Day Hpet,21.354191,92.280342,destroyed,,False,100,1.42,0.05,1,2017-10-11,2017-10-11,medium,False
+421,Khayoung Khali,Kat Pa Kaung,Maungdaw,Kat Pa Kaung,21.016569,92.307716,none_detected,,,,,,,,,,
+422,Taimmong Khali,Tha Dut Taung,Maungdaw,Kat Pa Kaung,21.021080,92.301689,destroyed,,True,0,9.36,0.331,3,2017-09-16,2017-09-16,medium,False
+423,Foira Bazar (Fosim Para),Ah Nauk Hka Maung Seik,Maungdaw,Kha Maung Seik,21.265539,92.271408,destroyed,,True,0,7.7,0.272,2,2017-09-16,2017-09-16,medium,False
+424,Bor Para,Ah San Kyaw,Maungdaw,Kha Maung Seik,21.256460,92.274437,destroyed,,False,9,1.6,0.056,7,2017-09-16,2017-09-16,medium,False
+425,Foira Bazar (Fuk Para),Ah Shey Kha Maung Seik,Maungdaw,Kha Maung Seik,21.270369,92.276367,destroyed,,True,0,9.43,0.333,1,2017-09-16,2017-09-16,medium,False
+426,Furan Para,Mee Kyaung Chaung,Maungdaw,Kha Maung Seik,21.259689,92.265846,destroyed,,False,45,1.94,0.068,7,2017-09-16,2017-09-16,medium,False
+427,Min Kha Maung (NaTaLa),Min Kha Maung (NaTaLa),Maungdaw,Kha Maung Seik,21.260096,92.278442,nearby,,False,477,0.0,0.0,2,2017-09-16,2017-09-16,medium,False
+428,Taing Bin Gar,Taing Bin Gar,Maungdaw,Kha Maung Seik,21.275410,92.257736,destroyed,,False,33,3.67,0.13,6,2017-09-16,2017-10-11,medium,False
+429, Reb Bo Za Para,Ye Bauk Kyar,Maungdaw,Kha Maung Seik,21.269541,92.268990,destroyed,,False,58,3.78,0.134,2,2017-09-25,2017-09-25,medium,True
+430,Kwan Thi Bang,Kun Thee Pin,Maungdaw,Kun Thee Pin,21.157270,92.209740,destroyed,,True,0,18.45,0.652,1,2017-09-16,2017-09-16,medium,False
+431,Lop po Ya Para,Let Hpwet Kya,Maungdaw,Kun Thee Pin,21.161131,92.235207,nearby,,False,270,0.16,0.006,1,2017-10-11,2017-10-11,medium,False
+432,Me De,Me Te,Maungdaw,Kun Thee Pin,21.168619,92.212433,none_detected,,,,,,,,,,
+433,Na Sha Daung ,Nant Thar Taung,Maungdaw,Kun Thee Pin,21.144661,92.215263,destroyed,,True,0,11.29,0.399,1,2017-09-16,2017-09-16,medium,False
+434,Rabailla,Kyar Gaung Taung,Maungdaw,Kyar Gaung Taung,20.985821,92.314682,destroyed,,True,0,4.79,0.169,6,2017-09-16,2017-09-16,medium,False
+435,Mazor Para,Ah Lel,Maungdaw,Kyauk Chaung,21.091921,92.256447,none_detected,,,,,,,,,,
+436,Shil khali noa para,Kyauk Chaung Ywar Thit,Maungdaw,Kyauk Chaung,21.097210,92.249779,none_detected,,,,,,,,,,
+437,Dar Guwad Dayl,Kyauk Hlay Kar,Maungdaw,Kyauk Hlay Kar,20.914120,92.350601,destroyed,,True,0,4.91,0.173,3,2017-09-16,2017-09-16,medium,False
+438,Balu Khali,Thea Chaung Pyu Su,Maungdaw,Kyauk Hlay Kar,20.905331,92.344803,none_detected,,,,,,,,,,
+439,Balukhali Noya Para,Thea Chaung Ywar Thit Kay,Maungdaw,Kyauk Hlay Kar,20.900990,92.355827,destroyed,,True,0,11.74,0.415,2,2017-09-16,2017-09-16,medium,False
+440,Khai Dor Kuna,Ho Kay Day Kone Nar,Maungdaw,Kyauk Pan Du,20.553459,92.533669,destroyed,,True,0,9.29,0.329,2,2017-09-16,2017-09-16,medium,False
+441,Shi Ta Fori Ka,Kyauk Pan Du,Maungdaw,Kyauk Pan Du,20.543221,92.544296,destroyed,,True,0,23.87,0.844,1,2017-09-16,2017-09-16,medium,False
+442,Shi Ta Fori Ka(Natala Para),Kyauk Pan Du (NaTaLa),Maungdaw,Kyauk Pan Du,20.557680,92.533005,nearby,,False,308,0.0,0.0,2,2017-09-16,2017-09-16,medium,False
+443,Zadi Para,Zay Di,Maungdaw,Kyauk Pan Du,20.551050,92.539612,destroyed,,True,0,11.05,0.391,4,2017-09-16,2017-09-16,medium,False
+444,Nari Beel,Kyauk Pyin Seik,Maungdaw,Kyauk Pyin Seik,20.929131,92.350220,destroyed,,False,11,7.18,0.254,4,2017-09-16,2017-09-16,medium,False
+445,Fuk Para,Set Khwar (East),Maungdaw,Kyauk Pyin Seik,20.934120,92.361366,destroyed,,True,0,11.93,0.422,5,2017-09-16,2017-09-16,medium,False
+446,Fosim Para,Set Khwar (West),Maungdaw,Kyauk Pyin Seik,20.934401,92.358627,destroyed,,True,0,9.43,0.333,4,2017-09-16,2017-09-16,medium,False
+447,Tan  Khali,Ah Shey Tan Chaung (Htan Khar Li),Maungdaw,Kyaung Na Hpay,21.289320,92.285110,nearby,,False,70,0.27,0.01,1,2017-10-11,2017-10-11,medium,True
+448,Gore Para,Gaw Yin,Maungdaw,Kyaung Na Hpay,21.289370,92.277901,nearby,,False,294,0.02,0.001,1,2017-10-11,2017-10-11,medium,False
+449,Kyaung Na Hpay ( Fuk Para),Kyaung Na Hpay (East),Maungdaw,Kyaung Na Hpay,21.304541,92.296143,none_detected,,,,,,,,,,
+450,Kyaung Na Hpay (Uttor Para),Kyaung Na Hpay (Myo),Maungdaw,Kyaung Na Hpay,21.299641,92.290604,none_detected,,,,,,,,,,
+451,Foira Para,Hpway Thar,Maungdaw,Kyaung Taung,20.654730,92.484497,destroyed,,True,0,9.0,0.318,2,2017-09-16,2017-09-16,medium,False
+452,,Kyaung Taung (1),Maungdaw,Kyaung Taung,20.646851,92.493553,destroyed,,False,34,5.94,0.21,2,2017-09-16,2017-09-25,medium,True
+453,,Kyaung Taung (2),Maungdaw,Kyaung Taung,20.663219,92.485382,destroyed,,True,0,14.98,0.53,2,2017-09-16,2017-09-25,medium,True
+454,,Mwi Thee,Maungdaw,Kyaung Taung,20.651440,92.490433,destroyed,,True,0,11.25,0.398,1,2017-09-16,2017-09-16,medium,False
+455,Aung Thar Yar Natala,Aung Thar Yar (NaTaLa),Maungdaw,Kyee Kan Pyin,20.910376,92.400139,none_detected,,,,,,,,,,
+456,Natala Para,Aung Zay Ya (Su See),Maungdaw,Kyee Kan Pyin,20.899179,92.404053,nearby,,False,483,0.0,0.0,1,2017-09-25,2017-09-25,uncertain,True
+457,Hawar Beel (Mazor Para),Kyee Kan Pyin (Middle),Maungdaw,Kyee Kan Pyin,20.895000,92.398575,destroyed,,True,0,11.25,0.398,7,2017-09-16,2017-09-25,medium,True
+458,Hawar Beel (Doin Para),Kyee Kan Pyin (South),Maungdaw,Kyee Kan Pyin,20.886461,92.395409,destroyed,,True,0,9.59,0.339,4,2017-09-16,2017-09-16,medium,False
+459,Hwar Beel (Fosim Para),Kyee Kan Pyin (West),Maungdaw,Kyee Kan Pyin,20.898781,92.392021,destroyed,,False,38,8.64,0.305,6,2017-09-16,2017-09-16,medium,False
+460,Wa Bek,Wa Peik,Maungdaw,Kyee Kan Pyin,20.919380,92.388741,none_detected,,,,,,,,,,
+461,Boli Bazar,Kyein Chaung,Maungdaw,Kyein Chaung,21.086777,92.337112,destroyed,,True,0,5.87,0.208,10,2017-09-16,2017-10-11,medium,True
+462,Uttor Para,Myauk,Maungdaw,Kyein Chaung,21.089907,92.341599,destroyed,,True,0,4.37,0.154,13,2017-09-16,2017-10-11,medium,True
+463,"keyari prang, Doin Para",Kyet Yoe Pyin (South),Maungdaw,Kyet Yoe Pyin,21.011000,92.334930,none_detected,,,,,,,,,,
+464,Keyari Prang,Kyet Yoe Pyin (Ywa Ma),Maungdaw,Kyet Yoe Pyin,21.012831,92.338959,none_detected,,,,,,,,,,
+465,Foiroz Zaga,Kywe Ta Ma,Maungdaw,Kyet Yoe Pyin,21.021259,92.339539,none_detected,,,,,,,,,,
+466,Luti Prang,Lu Hpan Pyin,Maungdaw,Kyet Yoe Pyin,21.018480,92.334000,none_detected,,,,,,,,,,
+467,Bor Para,Baw Da Li (2),Maungdaw,Kyun Pauk Pyu Su,21.093130,92.276093,destroyed,,True,0,2.43,0.086,2,2017-09-25,2017-09-25,uncertain,True
+468,Gone Nar Para,Baw Tar Li,Maungdaw,Kyun Pauk Pyu Su,21.093410,92.274406,destroyed,,True,0,2.41,0.085,2,2017-09-25,2017-09-25,uncertain,True
+469,Pallay prang,Hpet Leik Pyin,Maungdaw,Kyun Pauk Pyu Su,21.094290,92.262497,none_detected,,,,,,,,,,
+470,Kyan Bong,Kyun Pauk Pyu Su,Maungdaw,Kyun Pauk Pyu Su,21.099110,92.274017,destroyed,,True,0,2.88,0.102,3,2017-09-16,2017-10-11,medium,False
+471,Kyan Bong Furan Para,Kyun Pauk Ywar Haung,Maungdaw,Kyun Pauk Pyu Su,21.089130,92.274879,nearby,,False,13,0.9,0.032,5,2017-09-25,2017-10-11,medium,True
+474,Gay Rek Khali,Gyit Chaung,Maungdaw,Kyun Pauk Sin Oe,21.072121,92.314163,destroyed,,True,0,3.49,0.123,4,2017-09-16,2017-09-16,medium,False
+472,Somunia Para,Kyun Pauk Sin Oe,Maungdaw,Kyun Pauk Sin Oe,21.105671,92.268593,nearby,,False,69,0.54,0.019,3,2017-09-16,2017-10-01,medium,False
+473,Fosim Para,Saung Paing Nyar,Maungdaw,Kyun Pauk Sin Oe,21.111610,92.270576,nearby,,False,76,0.14,0.005,1,2017-09-25,2017-09-25,medium,False
+475,Baw dikone,Hpaw Ti Kaung,Maungdaw,Laung Don,21.081631,92.338387,destroyed,,True,0,10.44,0.369,11,2017-09-16,2017-10-11,medium,True
+476,Sing Gri Para,Kyun Gaung,Maungdaw,Laung Don,21.066549,92.315628,destroyed,,True,0,11.18,0.395,1,2017-09-16,2017-09-16,medium,False
+477,Long Don,Laung Don (Myo),Maungdaw,Laung Don,21.090958,92.361534,none_detected,,,,,,,,,,
+478,Laung Don Natala,Laung Don (NaTaLa),Maungdaw,Laung Don,21.064899,92.335739,nearby,,False,272,0.07,0.002,2,2017-09-16,2017-09-16,medium,False
+479,Laung Don Zay Di Pyin (Mogh Para,Laung Done Zay Di Pyin,Maungdaw,Laung Don,21.068220,92.336433,destroyed,,False,34,1.87,0.066,2,2017-09-16,2017-09-16,medium,False
+480,Miyazon Kuna,Myar Zin,Maungdaw,Laung Don,21.076389,92.330681,destroyed,,True,0,12.13,0.429,3,2017-09-16,2017-09-25,medium,False
+481,Hati Para,Sin Thay Pyin,Maungdaw,Laung Don,21.065229,92.345413,destroyed,,False,16,6.12,0.216,5,2017-09-16,2017-09-16,medium,False
+482,Kuinr Khali Mazor Para,Leik Ya (Middle),Maungdaw,Leik Ya,21.118481,92.246063,nearby,,False,274,0.04,0.002,1,2017-09-16,2017-09-16,medium,False
+483,Kuinr Khali (Doin Para),Leik Ya (South),Maungdaw,Leik Ya,21.114679,92.246208,none_detected,,,,,,,,,,
+484,Kuinr Khali (Uttor Para),Leik Ya Hpar Ri (Leik Ya (North)),Maungdaw,Leik Ya,21.125601,92.245666,destroyed,,False,13,1.96,0.069,19,2017-09-16,2017-09-16,medium,False
+485,"Kuinr Khali, Zone Khara",Leik Ya Zone Karr Yar,Maungdaw,Leik Ya,21.120880,92.236122,nearby,,False,392,0.0,0.0,1,2017-09-16,2017-09-16,medium,False
+486,Aung Mingala Natala Para,Aung Min Ga Lar (NaTaLa),Maungdaw,Maung Hna Ma,20.931335,92.381462,nearby,,False,246,0.49,0.018,1,2017-09-16,2017-09-16,medium,False
+487,Shil Boinna,Kyauk Chaung,Maungdaw,Maung Hna Ma,20.932600,92.378983,destroyed,,False,22,3.29,0.116,2,2017-09-16,2017-09-16,medium,False
+488,Moung Daw Ma Bor Para,Maung Hnit Ma (Gyi),Maungdaw,Maung Hna Ma,20.962240,92.370781,destroyed,,True,0,18.61,0.658,1,2017-09-16,2017-09-16,medium,False
+489,Moung Daw ma  Suraw Para,Maung Hnit Ma (Nge),Maungdaw,Maung Hna Ma,20.946520,92.378120,destroyed,,True,0,15.35,0.543,2,2017-09-16,2017-09-16,medium,False
+490,May Ze Tu Lar,May Ze Tu Lar,Maungdaw,Maung Hna Ma,20.956320,92.374779,destroyed,,True,0,12.35,0.437,3,2017-09-16,2017-09-16,medium,False
+491,Fanis Sora,Hpon Thi,Maungdaw,Mee Taik,21.182140,92.218208,destroyed,,False,30,2.86,0.101,7,2017-09-25,2017-09-25,uncertain,True
+492,Medi,Mee Taik,Maungdaw,Mee Taik,21.195299,92.221542,none_detected,,,,,,,,,,
+493,Raimmong Khali,Ye Aung Chaung,Maungdaw,Mee Taik,21.178949,92.205528,destroyed,,False,9,3.62,0.128,8,2017-09-16,2017-09-25,medium,True
+494,Munchi Para,Mee Kyaung Tet,Maungdaw,Min Ga Lar Gyi (Pyin Hpyu),20.896761,92.332222,none_detected,,,,,,,,,,
+495,Ferang Pru Bor Para,Min Ga Lar Gyi,Maungdaw,Min Ga Lar Gyi (Pyin Hpyu),20.903370,92.332237,none_detected,,,,,,,,,,
+496,Hor Boinna Para,Thar Zay,Maungdaw,Min Ga Lar Gyi (Pyin Hpyu),20.895069,92.339661,none_detected,,,,,,,,,,
+497,Mangala,Min Gyi (Ku Lar),Maungdaw,Min Gyi (Tu Lar Tu Li),21.139830,92.330849,destroyed,,True,0,6.17,0.218,4,2017-09-16,2017-09-16,medium,False
+498,Tu La Tuli,Min Gyi (Tu Lar Tu Li),Maungdaw,Min Gyi (Tu Lar Tu Li),21.134050,92.323479,nearby,,False,351,0.0,0.0,5,2017-09-16,2017-09-16,medium,False
+500,Sali Prang,Myaw Taung,Maungdaw,Myaw Taung,20.974470,92.342644,none_detected,,,,,,,,,,
+501,Tha Lu Chaung ,Tha Lu Chaung,Maungdaw,Myaw Taung,20.952410,92.351562,none_detected,,,,,,,,,,
+502,Grain Daung,Gyin Taw,Maungdaw,Myin Hlut,20.594540,92.521690,destroyed,,True,0,7.4,0.262,5,2017-09-16,2017-09-16,medium,False
+503,Foira Para,Hpway Yar,Maungdaw,Myin Hlut,20.639330,92.508781,destroyed,,False,110,1.28,0.045,3,2017-09-25,2017-10-01,uncertain,True
+504,Furan Para,Kan Nar Ywar Haung,Maungdaw,Myin Hlut,20.625879,92.511230,destroyed,,True,0,7.81,0.276,2,2017-09-16,2017-09-16,medium,False
+505,Khoru Tola,Myaw Chaung,Maungdaw,Myin Hlut,20.600981,92.521584,destroyed,,True,0,4.57,0.161,1,2017-09-16,2017-09-16,medium,False
+506,"Merulla, Fuk Para",Myin Hlut (East),Maungdaw,Myin Hlut,20.633421,92.503532,destroyed,,True,0,16.36,0.578,2,2017-09-16,2017-09-16,medium,False
+507,"Merulla, Mazor Para",Myin Hlut (Middle),Maungdaw,Myin Hlut,20.631460,92.502113,destroyed,,True,0,14.27,0.504,4,2017-09-16,2017-09-16,medium,False
+508,"Merulla, Doin Para",Myin Hlut (South),Maungdaw,Myin Hlut,20.628500,92.502670,destroyed,,True,0,14.09,0.498,2,2017-09-16,2017-09-16,medium,False
+509,"Merulla, Fosim Para",Myin Hlut (West),Maungdaw,Myin Hlut,20.626970,92.500977,destroyed,,True,0,12.33,0.436,2,2017-09-16,2017-09-16,medium,False
+510,"Merulla, Bahar Sora",Myin Hlut Ywar Thit,Maungdaw,Myin Hlut,20.614149,92.515717,destroyed,,True,0,9.31,0.329,1,2017-09-16,2017-09-16,medium,False
+511,"Merulla, Shid Da Para",Shee Dar,Maungdaw,Myin Hlut,20.642530,92.502052,destroyed,,True,0,15.46,0.547,2,2017-09-16,2017-10-01,medium,True
+512,Zone Khara,Zone Kalar/Zone Kara,Maungdaw,Myin Hlut,20.636009,92.502258,destroyed,,True,0,11.21,0.396,1,2017-09-16,2017-09-16,medium,False
+513,Marma Khali,Myo Mi Chaung,Maungdaw,Myo Mi Chaung,21.086370,92.321129,none_detected,,,,,,,,,,
+514,Myo Thite,Myo Thit,Maungdaw,Myo Thit,21.031490,92.294487,nearby,,False,397,0.0,0.0,8,2017-09-16,2017-09-25,medium,True
+515,Uttor Para,Kan Kya (North),Maungdaw,Myo Thu Gyi,20.830490,92.393707,destroyed,,True,0,6.59,0.233,7,2017-09-16,2017-09-25,medium,True
+516,Doin Para,Kan Kya (South),Maungdaw,Myo Thu Gyi,20.824989,92.390572,destroyed,,True,0,16.96,0.6,2,2017-09-16,2017-09-25,medium,True
+499,Mraw Haung,Myaw Chaung,Maungdaw,Myo Thu Gyi,21.074730,92.303383,destroyed,,False,45,2.32,0.082,5,2017-09-16,2017-09-16,medium,False
+517,Razar bil,Myo Thu Gyi (Yar Zar Bi),Maungdaw,Myo Thu Gyi,20.830910,92.404190,nearby,,False,248,0.04,0.002,1,2017-09-16,2017-09-16,medium,False
+518,Som Boinna Para,Thaung Paing Nyar,Maungdaw,Myo Thu Gyi,20.825541,92.413956,none_detected,,,,,,,,,,
+519,Natala Para,Wai Thar Li,Maungdaw,Myo Thu Gyi,20.827559,92.403984,nearby,,False,198,0.32,0.011,3,2017-09-16,2017-09-16,medium,False
+520,Furan Para,Ywar Haung,Maungdaw,Myo Thu Gyi,20.824770,92.398788,destroyed,,True,0,12.22,0.432,4,2017-09-16,2017-09-16,medium,False
+521,Naitor deyl,Auk (Let Thar),Maungdaw,Myo U,20.836439,92.369003,none_detected,,,,,,,,,,
+522,Basur Para,Bar Su Ba,Maungdaw,Myo U,20.840010,92.378418,none_detected,,,,,,,,,,
+523,Guna Para,Gone Nar,Maungdaw,Myo U,20.833561,92.389641,destroyed,,False,28,4.0,0.142,6,2017-09-16,2017-09-16,medium,False
+524,Horo Tola,Haw Ri Tu Lar,Maungdaw,Myo U,20.838440,92.372414,none_detected,,,,,,,,,,
+525,Aye Te Li Yar,Myo U,Maungdaw,Myo U,20.834230,92.379677,none_detected,,,,,,,,,,
+526,Hindu Para,Sar Kon Boke (Hindu Para),Maungdaw,Myo U,20.834700,92.372391,none_detected,,,,,,,,,,
+527,Zan Toilla,Zin Tu Lar,Maungdaw,Myo U,20.846190,92.372879,none_detected,,,,,,,,,,
+528,Zula Para,Zu La,Maungdaw,Myo U,20.834850,92.396317,destroyed,,False,129,4.32,0.153,5,2017-09-16,2017-09-16,medium,False
+529,Nan Yar Gone,Nan Yar Kaing,Maungdaw,Nan Yar Kaing,21.245773,92.308762,nearby,,False,302,0.0,0.0,1,2017-09-16,2017-09-16,medium,False
+530,Nan Yar Gone,Nan Yar Kaing (NaTaLa),Maungdaw,Nan Yar Kaing,21.245684,92.303314,destroyed,,True,0,5.54,0.196,1,2017-09-16,2017-09-16,medium,False
+540,Hindu Para,Hindu,Maungdaw,Nga Khu Ya,21.027990,92.298882,destroyed,,True,0,6.21,0.22,3,2017-09-16,2017-09-16,medium,False
+541,Nak kura,Ngar Khu Ya,Maungdaw,Nga Khu Ya,21.025551,92.295288,destroyed,,False,16,9.74,0.344,1,2017-09-16,2017-09-16,medium,False
+542,Ngar Khu Ya Musalman para,Ngar Khu Ya (Ku Lar),Maungdaw,Nga Khu Ya,21.019171,92.291992,none_detected,,,,,,,,,,
+543,Hmaing Sa Ri,Hmaing Sa Ri,Maungdaw,Nga Yant Chaung,21.241570,92.282043,destroyed,,True,0,4.82,0.17,2,2017-09-16,2017-09-16,medium,False
+544,Naraing Chaung,Ngar Yant Chaung,Maungdaw,Nga Yant Chaung,21.252558,92.274109,destroyed,,True,0,5.0,0.177,6,2017-09-16,2017-09-16,medium,False
+545,Guna Para,Gone Nar,Maungdaw,Ngan Chaung,21.007271,92.358521,none_detected,,,,,,,,,,
+546,Nain chaung,Ngan Chaung,Maungdaw,Ngan Chaung,21.003771,92.351143,none_detected,,,,,,,,,,
+547,Kep Pru Chor,Hpan Myaung,Maungdaw,Ngar Sar Kyu,21.059790,92.349968,destroyed,,True,0,5.69,0.201,8,2017-09-16,2017-09-25,medium,False
+548,Thid Duizza Para,Leik Aing,Maungdaw,Ngar Sar Kyu,21.025379,92.325996,none_detected,,,,,,,,,,
+549,Naisa Gru,Ngar Sar Kyu,Maungdaw,Ngar Sar Kyu,21.035009,92.332047,nearby,,False,117,0.43,0.015,3,2017-09-25,2017-09-25,medium,False
+550,Furan Para,Pyaung Paik,Maungdaw,Ngar Sar Kyu,21.046490,92.339302,destroyed,,False,6,5.04,0.178,2,2017-09-16,2017-09-16,medium,False
+551,Horot Dhil,Nwar Yon Taung,Maungdaw,Nwar Yon Taung,20.866247,92.386345,destroyed,,True,0,13.61,0.481,4,2017-09-16,2017-09-16,medium,False
+552,Fosim Para,Pyar Thar,Maungdaw,Nwar Yon Taung,20.869020,92.382050,nearby,,False,240,0.29,0.01,1,2017-09-16,2017-09-16,medium,False
+553,Fuk Para,Thu Kha Myaing,Maungdaw,Nwar Yon Taung,20.856621,92.405930,none_detected,,,,,,,,,,
+554,Kwaing Sara Bil,Yae Myet Taung,Maungdaw,Nwar Yon Taung,20.878719,92.380272,destroyed,,True,0,7.88,0.278,4,2017-09-16,2017-09-16,medium,False
+555,Khadir Beel,Nyaung Chaung,Maungdaw,Nyaung Chaung,20.809099,92.398293,destroyed,,False,92,5.6,0.198,3,2017-09-16,2017-09-16,medium,False
+556,Shwe Yin Aye Natala,Shwe Yin Aye (NaTaLa),Maungdaw,Nyaung Chaung,20.806211,92.404358,nearby,,False,417,0.0,0.0,1,2017-09-16,2017-09-16,medium,False
+531,Gora Khali,Gar Yar Pyin,Maungdaw,N‌at Chaung,21.179810,92.316147,destroyed,,True,0,11.25,0.398,1,2017-09-16,2017-09-16,medium,False
+532,lappo Wa Para,La Baw Wa,Maungdaw,N‌at Chaung,21.168140,92.317001,destroyed,,True,0,2.68,0.095,2,2017-09-16,2017-10-11,medium,False
+533,Lorgo Para,Laung Boke,Maungdaw,N‌at Chaung,21.187981,92.314583,destroyed,,False,13,5.83,0.206,1,2017-09-16,2017-09-16,medium,False
+534,Natala para,Myawaddy (NaTaLa),Maungdaw,N‌at Chaung,21.160345,92.319389,none_detected,,,,,,,,,,
+535,,N‌at Chaung,Maungdaw,N‌at Chaung,21.170561,92.329071,destroyed,,False,29,10.48,0.371,3,2017-09-16,2017-09-25,medium,False
+536,,Pa Da Kar Taung,Maungdaw,N‌at Chaung,21.166771,92.330093,destroyed,,True,0,5.78,0.204,5,2017-09-16,2017-09-16,medium,False
+537,Tat Chaung,Tat Chaung,Maungdaw,N‌at Chaung,21.183849,92.312790,destroyed,,False,9,11.38,0.403,1,2017-09-16,2017-09-16,medium,False
+538,,Than Hpa Yar,Maungdaw,N‌at Chaung,21.172600,92.325233,destroyed,,True,0,4.14,0.146,1,2017-09-16,2017-09-16,medium,False
+539,,Zaw Za Dein,Maungdaw,N‌at Chaung,21.174120,92.321609,destroyed,,False,10,3.44,0.122,2,2017-09-16,2017-09-16,medium,False
+557,Boroi Toli,Done Ku Lar,Maungdaw,Pa Da Kar Ywar Thit,21.152550,92.330299,destroyed,,True,0,9.43,0.333,11,2017-09-16,2017-09-25,medium,False
+558,Diyal Tali,Pa Da Kar Ywar Thit,Maungdaw,Pa Da Kar Ywar Thit,21.160549,92.330261,destroyed,,False,22,7.56,0.267,4,2017-09-16,2017-09-25,medium,False
+559,Gorzon Diya,Ka Nyin Tan,Maungdaw,Pa Din,20.780500,92.385628,destroyed,,True,0,8.37,0.296,1,2017-09-16,2017-09-16,medium,False
+560,Khun Khara Para,Khaung Ta Kar,Maungdaw,Pa Din,20.786091,92.387489,destroyed,,True,0,10.69,0.378,1,2017-09-16,2017-09-16,medium,False
+561,Pa Din,Pa Din,Maungdaw,Pa Din,20.779760,92.378143,destroyed,,False,43,6.39,0.226,4,2017-09-16,2017-09-16,medium,False
+562,Fatan Sah,Paik Seik,Maungdaw,Pa Din,20.774010,92.388191,nearby,,False,417,0.0,0.0,1,2017-09-16,2017-09-16,medium,False
+563,Bod Deyl,Yae Hpu Pyin,Maungdaw,Pa Din,20.783051,92.377533,destroyed,,True,0,6.55,0.232,1,2017-09-16,2017-09-16,medium,False
+564,Fosim Para,Ah Nauk,Maungdaw,Pan Taw Pyin,20.803909,92.376831,none_detected,,,,,,,,,,
+565,Fuk Para,Ah Shey,Maungdaw,Pan Taw Pyin,20.802851,92.392670,nearby,,False,394,0.0,0.0,1,2017-09-16,2017-09-16,medium,False
+566,Bot Toli,Pan Taw Pyin Ywar Thit,Maungdaw,Pan Taw Pyin,20.799780,92.396873,destroyed,,True,0,6.28,0.222,1,2017-09-16,2017-09-16,medium,False
+567,Bor Para,Ywar Gyi (Middle),Maungdaw,Pan Taw Pyin,20.805981,92.383308,none_detected,,,,,,,,,,
+568,Ashik Ka Para,Paung Zar,Maungdaw,Paung Zar,20.872400,92.337608,none_detected,,,,,,,,,,
+569,Prang Pru,Pyin Hpyu,Maungdaw,Paung Zar,20.879431,92.334373,none_detected,,,,,,,,,,
+570,Zambainna Doin Para,Pa Yin Taung,Maungdaw,Pwint Hpyu Chaung,20.988430,92.332787,none_detected,,,,,,,,,,
+571,Wang Pru Chaung,Pwint Hpyu Chaung,Maungdaw,Pwint Hpyu Chaung,20.996019,92.330254,none_detected,,,,,,,,,,
+572,Zam Bainna,Zin Paing Nyar,Maungdaw,Pwint Hpyu Chaung,21.001021,92.334760,none_detected,,,,,,,,,,
+573,"Myu Ma Ka Yin Tan, Moagh Para",Auk Pyu Ma (Rakhine),Maungdaw,Pyu Ma Ka Nyin Tan,21.041269,92.282631,nearby,,False,369,0.0,0.0,2,2017-09-25,2017-09-25,uncertain,True
+574,Shikdar Para,Pyu Ma Ka Nyin Tan,Maungdaw,Pyu Ma Ka Nyin Tan,21.033091,92.287209,destroyed,,False,35,7.02,0.248,14,2017-09-16,2017-09-25,medium,True
+575,Hazi Beel,Sa Bai Kone,Maungdaw,Sa Bai Kone,21.058350,92.336327,destroyed,,True,0,7.49,0.265,1,2017-09-16,2017-09-16,medium,False
+576,Yae Myet,Yae Myet,Maungdaw,Sa Bai Kone,21.057631,92.340233,destroyed,,False,15,8.66,0.306,1,2017-09-16,2017-09-16,medium,False
+577,Mya zoonlar Guna,San Kar Pin Yin,Maungdaw,San Kar Pin Yin,21.112221,92.320412,destroyed,,False,73,4.07,0.144,2,2017-09-16,2017-09-25,medium,True
+578,Mya zoonlar Guna (Uttor Para),San Kar Pin Yin (Myo),Maungdaw,San Kar Pin Yin,21.125860,92.297440,none_detected,,,,,,,,,,
+579,San Kar pin Yin (Mogh Para),San Kar Pin Yin (Rakhine),Maungdaw,San Kar Pin Yin,21.115376,92.309418,none_detected,,,,,,,,,,
+580,Aung Manga La,Aung Ba La (Rakhine),Maungdaw,Shwe Zar Kat Pa Kaung,20.832991,92.353683,none_detected,,,,,,,,,,
+581,Goinna Para,Gaung Nyar,Maungdaw,Shwe Zar Kat Pa Kaung,20.857500,92.357841,destroyed,,False,18,1.46,0.052,2,2017-09-16,2017-10-11,medium,True
+582,Guna Para,Gone Nar,Maungdaw,Shwe Zar Kat Pa Kaung,20.831850,92.359428,none_detected,,,,,,,,,,
+583,Kha Yaung Khali,Ka Nyin Chaung,Maungdaw,Shwe Zar Kat Pa Kaung,20.849939,92.348213,none_detected,,,,,,,,,,
+584,Doliya Para,Kan Be,Maungdaw,Shwe Zar Kat Pa Kaung,20.850080,92.353577,nearby,,False,468,0.0,0.0,1,2017-09-16,2017-09-16,medium,False
+585,Kan Bainna,Kan Paing Nar,Maungdaw,Shwe Zar Kat Pa Kaung,20.845720,92.353950,none_detected,,,,,,,,,,
+586,Bainna Para,Pan Htein,Maungdaw,Shwe Zar Kat Pa Kaung,20.836750,92.355637,none_detected,,,,,,,,,,
+587,Shweza Fosim Para,Shwe Zar (West),Maungdaw,Shwe Zar Kat Pa Kaung,20.836729,92.350952,none_detected,,,,,,,,,,
+588,Shuza Para,Shwe Zar Kat Pa Kaung,Maungdaw,Shwe Zar Kat Pa Kaung,20.852360,92.352791,nearby,,False,443,0.0,0.0,1,2017-09-16,2017-09-16,medium,False
+589,Zadi Para,Zay Di Pyin,Maungdaw,Shwe Zar Kat Pa Kaung,20.840981,92.357201,none_detected,,,,,,,,,,
+590,Hpaung Seik,Hpaung Seik,Maungdaw,Ta Man Thar,21.203051,92.300629,nearby,,False,330,0.0,0.0,3,2017-09-16,2017-09-16,medium,False
+591,Mingalar Nyunt (NaTaLa),Mingalar Nyunt (NaTaLa),Maungdaw,Ta Man Thar,21.224543,92.294197,none_detected,,,,,,,,,,
+592,Noya Para,Ta Man Thar (Bo Hmu Gyi Thet),Maungdaw,Ta Man Thar,21.210880,92.296791,destroyed,,True,0,4.79,0.169,4,2017-09-16,2017-09-16,medium,False
+593,Shab Bazar Bor Para,Ta Man Thar (Ku Lar),Maungdaw,Ta Man Thar,21.216930,92.292976,destroyed,,True,0,11.77,0.416,2,2017-09-16,2017-09-16,medium,False
+594,Shab Bazar,Ta Man Thar (Myo),Maungdaw,Ta Man Thar,21.218201,92.323174,none_detected,,,,,,,,,,
+595,Ta Man Thar Ah Nauk(Mogh Para),Ta Man Thar Ah Nauk (Rakhine),Maungdaw,Ta Man Thar,21.218611,92.300232,destroyed,,True,0,4.05,0.143,10,2017-09-16,2017-09-16,medium,False
+596,Fuk Para,Ta Man Thar Ah Shey (Ku Lar),Maungdaw,Ta Man Thar,21.213512,92.304886,destroyed,,True,0,8.84,0.313,2,2017-09-16,2017-09-16,medium,False
+597,Biyamu Para,Ta Man Thar Bo Hmu Gyi,Maungdaw,Ta Man Thar,21.213140,92.300751,nearby,,False,194,0.61,0.021,8,2017-09-16,2017-09-16,medium,False
+598,Shab Bazar (Doin Para),Ta Man Thar Taung,Maungdaw,Ta Man Thar,21.211990,92.294441,destroyed,,True,0,6.73,0.238,3,2017-09-16,2017-09-16,medium,False
+599,San kone dain,Ta Man Thar Thea Kone Tan,Maungdaw,Ta Man Thar,21.213400,92.292236,destroyed,,True,0,6.57,0.232,1,2017-09-16,2017-09-16,medium,False
+600,Bazaror Para,Ta Man Thar Zay Nar,Maungdaw,Ta Man Thar,21.214640,92.296959,destroyed,,True,0,6.39,0.226,3,2017-09-16,2017-09-16,medium,False
+601,,Hpar Zay Dar,Maungdaw,Tat Chaung,21.368530,92.305237,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+602,,Ku Kway (Thet),Maungdaw,Tat Chaung,21.359562,92.308266,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+603,,Myo,Maungdaw,Tat Chaung,21.372980,92.328270,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+604,Shwe Taing (Mogh Para),Shwe Taing (Rakhine),Maungdaw,Tat Chaung,21.352259,92.306213,none_detected,,,,,,,,,,
+605,Balu Khali,Tat Chaung,Maungdaw,Tat Chaung,21.372259,92.305038,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+606,Foira Para,Hpway Yar,Maungdaw,Tat U Chaung,20.788670,92.397301,destroyed,,True,0,4.03,0.142,4,2017-09-16,2017-09-16,medium,False
+607,Haim Prang,Kan Pyin Thar Si,Maungdaw,Tat U Chaung,20.822060,92.416908,none_detected,,,,,,,,,,
+608,Kan Tha Yar Moagh Para,Kan Thar Yar,Maungdaw,Tat U Chaung,20.801300,92.423203,none_detected,,,,,,,,,,
+609,Madi Lah Para,Mar Di Lar,Maungdaw,Tat U Chaung,20.787291,92.401253,destroyed,,True,0,4.12,0.146,6,2017-09-16,2017-09-16,medium,False
+610,Nurulla Para,Nu Ru Lar,Maungdaw,Tat U Chaung,20.785320,92.406509,destroyed,,True,0,11.63,0.411,1,2017-09-16,2017-09-16,medium,False
+611,Bagh Guna,Tat U Chaung,Maungdaw,Tat U Chaung,20.791960,92.401154,destroyed,,True,0,11.54,0.408,1,2017-09-16,2017-09-16,medium,False
+612,"Bagh Guna, Fosim Para",Tat U Chaung (West),Maungdaw,Tat U Chaung,20.781870,92.393143,nearby,,False,319,0.0,0.0,1,2017-09-16,2017-09-16,medium,False
+613,Taung Bru,Taung Pyo Let Yar,Maungdaw,Taung Pyo Let Yar,21.194530,92.198990,destroyed,,False,4,5.58,0.197,4,2017-09-16,2017-09-25,medium,False
+614,Bor Sora,Tha Pyay Taw,Maungdaw,Tha Pyay Taw,20.631300,92.493874,destroyed,,False,2,3.96,0.14,2,2017-09-16,2017-09-16,medium,False
+615,Tha Yar Taw,Thar Yar Taw,Maungdaw,Tha Pyay Taw,20.641630,92.481979,destroyed,,True,0,7.79,0.275,1,2017-09-16,2017-09-16,medium,False
+616,Zone Khara,Zone Kar Yar,Maungdaw,Tha Pyay Taw,20.639040,92.491333,destroyed,,True,0,8.23,0.291,1,2017-09-16,2017-09-16,medium,False
+617,Kuwais Cahung,Gwa Son,Maungdaw,Tha Win Chaung,20.494400,92.599442,destroyed,,True,0,10.21,0.361,4,2017-09-16,2017-10-03,medium,True
+618,Sura Ali ro Para,Su Ra Li,Maungdaw,Tha Win Chaung,20.455690,92.626457,destroyed,,True,0,4.54,0.161,1,2017-09-16,2017-09-16,medium,False
+619,Hanpu Para,Tha Win Chaung (Kan Pyo),Maungdaw,Tha Win Chaung,20.480499,92.611359,destroyed,,True,0,9.68,0.342,2,2017-09-16,2017-09-16,medium,False
+620,"Kuin Nah Para,  Grain Daung",Gyin Chaung,Maungdaw,Tha Yae Kone Tan,20.723591,92.415260,destroyed,,True,0,5.31,0.188,11,2017-09-16,2017-09-25,medium,False
+621,Kuin Nah Para,Tha Yae Kone Tan,Maungdaw,Tha Yae Kone Tan,20.718700,92.416397,destroyed,,True,0,18.86,0.667,7,2017-09-16,2017-09-25,medium,False
+622,"Kuin Nah Para, (Mazor Para)",Tha Yae Kone Tan (Middle),Maungdaw,Tha Yae Kone Tan,20.719290,92.412529,destroyed,,False,36,13.39,0.473,8,2017-09-16,2017-09-25,medium,False
+623,Kuin Nah Para ( Uttor Para),Tha Yae Kone Tan (North),Maungdaw,Tha Yae Kone Tan,20.733320,92.421227,destroyed,,True,0,10.37,0.367,6,2017-09-16,2017-09-16,medium,False
+624,Kuin Nah Para ( Fosim Para),Tha Yae Kone Tan (West),Maungdaw,Tha Yae Kone Tan,20.719749,92.409714,destroyed,,True,0,9.27,0.328,3,2017-09-16,2017-09-16,medium,False
+625,Abboizza Para,Ah Bu Gyar,Maungdaw,Tha Yet Oke,20.923941,92.322670,none_detected,,,,,,,,,,
+626,Sira Gow Gyi Bil,Dar Gyi Zar,Maungdaw,Tha Yet Oke,20.946739,92.330482,none_detected,,,,,,,,,,
+627,Fuk Para,Min Ga Lar Ahr Sheik Kyar,Maungdaw,Tha Yet Oke,20.936440,92.314499,none_detected,,,,,,,,,,
+628,Nga to,Nga Toe,Maungdaw,Tha Yet Oke,20.939770,92.311256,none_detected,,,,,,,,,,
+629,Pi Yae,Pi Yae,Maungdaw,Tha Yet Oke,20.925020,92.335777,none_detected,,,,,,,,,,
+630,Mang Ga Hla,Tha Yet Oke,Maungdaw,Tha Yet Oke,20.943050,92.315857,none_detected,,,,,,,,,,
+631,Sainda Para ( Woror Para),(Du) Than Dar,Maungdaw,Than Dar,20.713461,92.442146,destroyed,,False,1,5.76,0.204,3,2017-09-16,2017-09-16,medium,False
+632,Sainda Para (Lamar Para),(Pa) Than Dar,Maungdaw,Than Dar,20.705509,92.436012,destroyed,,False,58,7.4,0.262,6,2017-09-16,2017-09-16,medium,False
+633,Day Boinna,Kyun Taung,Maungdaw,Thea Chaung,21.146900,92.241638,nearby,,False,86,0.2,0.007,3,2017-10-11,2017-10-11,medium,False
+634,Muden Zaga Para,Mu Hti,Maungdaw,Thea Chaung,21.162029,92.242264,nearby,,False,101,0.07,0.002,2,2017-10-11,2017-10-11,medium,False
+635,Tha Yar Kone,Thar Yar Kone,Maungdaw,Thea Chaung,21.153582,92.250885,none_detected,,,,,,,,,,
+636,Balu Khali,Thea Chaung Hpar Ri,Maungdaw,Thea Chaung,21.138670,92.252823,destroyed,,False,20,2.34,0.083,7,2017-10-11,2017-10-11,medium,False
+637,Moloi Za ga,Thea Chaung Maw La Bi,Maungdaw,Thea Chaung,21.133350,92.234032,nearby,,False,480,0.0,0.0,1,2017-09-16,2017-09-16,medium,False
+638,Shan bolla para,Thin Baw Hla (Ku Lar),Maungdaw,Thea Chaung,21.179689,92.246559,none_detected,,,,,,,,,,
+639,Shan bolla Mogh Para,Thin Baw Hla (Rakhine) (Thar Yar Gone),Maungdaw,Thea Chaung,21.177719,92.239548,destroyed,,False,43,2.48,0.088,1,2017-09-16,2017-09-16,medium,False
+640,Zanta Khali,Zaing Thar Khar Li,Maungdaw,Thea Chaung,21.154551,92.245232,destroyed,,False,63,1.42,0.05,12,2017-10-11,2017-10-11,medium,False
+641,Lombo Para,Laung Boke,Maungdaw,Thet Kaing Nyar,21.190300,92.314720,destroyed,,True,0,10.21,0.361,1,2017-09-16,2017-09-16,medium,False
+642,Shat Kin Nah,That Kaing Nyar,Maungdaw,Thet Kaing Nyar,21.188910,92.306763,destroyed,,True,0,18.92,0.669,1,2017-09-16,2017-09-16,medium,False
+643,Shat Kin Nah Noya Para,That Kaing Nyar (Thet),Maungdaw,Thet Kaing Nyar,21.200752,92.309303,nearby,,False,57,0.23,0.008,1,2017-09-16,2017-09-16,medium,False
+644,Nonda Khali,Naung Dar Khar Li,Maungdaw,Thet Kay Pyin,20.918579,92.363136,destroyed,,False,7,10.44,0.369,4,2017-09-16,2017-09-16,medium,False
+645,Thet Kay Pyin,Thet Kay Pyin,Maungdaw,Thet Kay Pyin,20.913309,92.373779,destroyed,,False,23,10.44,0.369,5,2017-09-16,2017-09-16,medium,False
+646,Khainr Para(Fuk Para),Har Bi (East),Maungdaw,Thi Ho Kyun,20.864571,92.376312,none_detected,,,,,,,,,,
+647,Khainr Para (Mazor Para),Har Bi (Middle),Maungdaw,Thi Ho Kyun,20.861469,92.373123,none_detected,,,,,,,,,,
+648,Khainr Para (Fosim Para),Har Bi (West),Maungdaw,Thi Ho Kyun,20.860590,92.367844,none_detected,,,,,,,,,,
+649,Khoila Banga,Khway Lar Bin Gar,Maungdaw,Thi Ho Kyun,20.857321,92.388351,destroyed,,True,0,9.83,0.348,7,2017-09-16,2017-09-25,medium,True
+650,Thi Ho Kyun,Thi Ho Kyun,Maungdaw,Thi Ho Kyun,20.857611,92.368828,none_detected,,,,,,,,,,
+651,Kul Lung,Thin Baw Kwe,Maungdaw,Thin Baw Kwe,20.532190,92.557877,destroyed,,True,0,13.5,0.477,2,2017-09-16,2017-10-09,medium,True
+652,Kul Lung (Fosim Para),Thin Baw Kwe (West),Maungdaw,Thin Baw Kwe,20.538820,92.550171,destroyed,,True,0,9.27,0.328,2,2017-09-16,2017-09-16,medium,False
+653,Kullung Noapara,Thin Baw Kwe Ywar Thit,Maungdaw,Thin Baw Kwe,20.527519,92.562790,destroyed,,True,0,3.65,0.129,2,2017-09-16,2017-09-16,medium,False
+654,,Let Yar Chaung,Maungdaw,Thit Tone Nar Gwa Son,21.234890,92.293404,destroyed,,True,0,14.96,0.529,3,2017-09-16,2017-09-16,medium,False
+655,Oe htein,Oe Htein,Maungdaw,Thit Tone Nar Gwa Son,21.244137,92.286407,destroyed,,True,0,16.76,0.593,1,2017-09-16,2017-09-16,medium,False
+656,Reazuddin Para,Thit Tone Nar Gwa Son,Maungdaw,Thit Tone Nar Gwa Son,21.239080,92.288933,destroyed,,True,0,19.55,0.691,1,2017-09-16,2017-09-16,medium,False
+657,bawthi,Baw Htee,Maungdaw,Thu U Lar,20.930710,92.336800,none_detected,,,,,,,,,,
+658,bor para,Kan Pyin,Maungdaw,Thu U Lar,20.946421,92.345238,none_detected,,,,,,,,,,
+659,Kul La Bil,Thu U Lar,Maungdaw,Thu U Lar,20.940069,92.337914,none_detected,,,,,,,,,,
+660,Fuk Para,Ah Shey,Maungdaw,U Daung,20.676800,92.470596,destroyed,,True,0,6.39,0.226,7,2017-09-16,2017-10-01,medium,True
+661,Foiro Para,Hpar Ti (Ko Yi),Maungdaw,U Daung,20.665360,92.476646,destroyed,,True,0,6.93,0.245,2,2017-09-16,2017-09-16,medium,False
+662,U Daung Fosim Para,Kon Tan (U Daung Ah Nauk),Maungdaw,U Daung,20.669300,92.465759,destroyed,,True,0,8.66,0.306,3,2017-09-16,2017-09-16,medium,False
+663,Ottor Para,Myauk,Maungdaw,U Daung,20.673410,92.466019,destroyed,,True,0,8.82,0.312,4,2017-09-16,2017-09-25,medium,True
+664,U Daung Mumor Deyl,U Daung (Kone Tan),Maungdaw,U Daung,20.668280,92.472076,destroyed,,True,0,13.28,0.469,5,2017-09-16,2017-10-01,medium,True
+665,U Daung Natala para,U Daung (NaTaLa),Maungdaw,U Daung,20.680985,92.473495,nearby,,False,247,0.34,0.012,1,2017-09-16,2017-09-16,medium,False
+666,Zumma Para,Zon Mar,Maungdaw,U Daung,20.671619,92.473846,destroyed,,True,0,5.89,0.208,4,2017-09-16,2017-10-01,medium,True
+667,Bura Shikdar Para,U Shey Kya,Maungdaw,U Shey Kya,20.999069,92.310532,none_detected,,,,,,,,,,
+668,Maw Ra Waddy (NaTaLa),Maw Ra Waddy (NaTaLa),Maungdaw,War Cha,20.698130,92.458290,none_detected,,,,,,,,,,
+669,Sam Boin Nar,Thaung Paing Nyar,Maungdaw,War Cha,20.697180,92.446228,destroyed,,True,0,16.04,0.567,1,2017-09-16,2017-09-16,medium,False
+670,WarCha,War Cha,Maungdaw,War Cha,20.707621,92.444427,destroyed,,True,0,10.26,0.363,1,2017-09-16,2017-09-16,medium,False
+671,Wet khaung,Wet Kyein,Maungdaw,Wet Kyein,21.142099,92.338173,destroyed,,False,88,6.73,0.238,11,2017-09-16,2017-09-16,medium,False
+672,Wet Khaung ( Uttor Para),Wet Kyein (Myo),Maungdaw,Wet Kyein,21.131010,92.354012,none_detected,,,,,,,,,,
+673,Tetoi boinna,Gwa Son,Maungdaw,Yae Khat Chaung Gwa Son,20.971750,92.319366,none_detected,,,,,,,,,,
+674,Bor Gozi bil,Yae Khat Chaung Gwa Son,Maungdaw,Yae Khat Chaung Gwa Son,20.965611,92.328941,none_detected,,,,,,,,,,
+675,Rimma Daung,Yae Myet Taung,Maungdaw,Yae Myet Taung,20.998243,92.321320,nearby,,False,482,0.0,0.0,1,2017-09-16,2017-09-16,medium,False
+676,Rimma Taung (Natala Para),Yae Myet Taung (NaTaLa),Maungdaw,Yae Myet Taung,21.009253,92.319069,destroyed,,False,233,1.1,0.039,2,2017-09-16,2017-09-16,medium,False
+677,Nanu Para,Yae Nauk Ngar Thar,Maungdaw,Yae Nauk Ngar Thar,21.208097,92.308609,destroyed,,True,0,7.4,0.262,1,2017-09-16,2017-09-16,medium,False
+678,Yae Nauk Ngar Thar (Daing Net),Yae Nauk Ngar Thar (Daing Net),Maungdaw,Yae Nauk Ngar Thar,21.210039,92.297287,destroyed,,True,0,3.58,0.126,4,2017-09-16,2017-09-16,medium,False
+679,Raimmo Beel,Yae Twin Kyun,Maungdaw,Yae Twin Kyun,20.973431,92.295982,destroyed,,True,0,24.32,0.86,1,2017-09-16,2017-09-16,medium,False
+680,Kuwar bil mazor Para,Yae Twin Pyin (Ale Ywa),Maungdaw,Yae Twin Pyin,21.054871,92.279617,none_detected,,,,,,,,,,
+681,,Bwin (Baung),Maungdaw,Ye Aung San Ya Hpway,21.322531,92.283630,destroyed,,False,33,3.44,0.122,7,2017-09-25,2017-10-01,medium,False
+682,,Mar Zay,Maungdaw,Ye Aung San Ya Hpway,21.327530,92.284622,destroyed,,False,38,2.23,0.079,2,2017-10-01,2017-10-01,medium,False
+683,,Myo (Ye Aung Chaung),Maungdaw,Ye Aung San Ya Hpway,21.341148,92.304520,none_detected,,,,,,,,,,
+684,,Thu Pan Na Ka (Myo),Maungdaw,Ye Aung San Ya Hpway,21.331314,92.290939,nearby,,False,412,0.0,0.0,2,2017-09-25,2017-10-01,medium,False
+685,,Yay Chan Chaung,Maungdaw,Ye Aung San Ya Hpway,21.333193,92.301941,none_detected,,,,,,,,,,
+686,Rani Para,Ye Aung San Ya Hpway,Maungdaw,Ye Aung San Ya Hpway,21.305040,92.283928,nearby,,False,78,0.99,0.035,3,2017-10-11,2017-10-11,medium,False
+687,"Godu Sora, Fuk Para",Gaw Du Thar Ra (East),Maungdaw,Ywar Thit Kay (Gaw Du Thar Ra),20.757610,92.421837,destroyed,,False,8,5.06,0.179,3,2017-09-16,2017-09-16,medium,False
+688,"Godu Sora, Ottor Para",Gaw Du Thar Ra (North),Maungdaw,Ywar Thit Kay (Gaw Du Thar Ra),20.760990,92.415466,destroyed,,True,0,8.46,0.299,4,2017-09-16,2017-09-16,medium,False
+689,"Godu Sora, Doin Para",Gaw Du Thar Ra (South),Maungdaw,Ywar Thit Kay (Gaw Du Thar Ra),20.751610,92.413063,destroyed,,True,0,4.3,0.152,3,2017-09-16,2017-09-16,medium,False
+690,"Godu Sora, Fosim Para",Gaw Du Thar Ra (West),Maungdaw,Ywar Thit Kay (Gaw Du Thar Ra),20.758881,92.407913,nearby,,False,45,0.56,0.02,2,2017-09-16,2017-09-16,medium,False
+691,"Godu soraa, (Noa Para, Soilla Para)",Gaw Du Thar Yar (Ywar Thit Kay),Maungdaw,Ywar Thit Kay (Gaw Du Thar Ra),20.747370,92.418411,destroyed,,True,0,5.38,0.19,3,2017-09-16,2017-09-16,medium,False
+692,Chair Kombo Para,Tha Ray Kon Baung,Maungdaw,Ywar Thit Kay (Gaw Du Thar Ra),20.730436,92.423531,destroyed,,True,0,10.06,0.356,5,2017-09-16,2017-09-16,medium,False
+693,Tha Rau Kun Baw Natala Para,Tha Ray Kon Baung (NaTaLa),Maungdaw,Ywar Thit Kay (Gaw Du Thar Ra),20.731571,92.428177,nearby,,False,383,0.0,0.0,3,2017-09-16,2017-09-16,medium,False
+694,Godu Sora,Ywar Thit Kay (Gaw Du Thar Ra),Maungdaw,Ywar Thit Kay (Gaw Du Thar Ra),20.744390,92.420883,destroyed,,True,0,9.36,0.331,6,2017-09-16,2017-09-16,medium,False
+695,Roinga Doung,Ywet Nyo Taung,Maungdaw,Ywet Nyo Taung,20.946011,92.301872,destroyed,,False,174,1.94,0.068,2,2017-09-16,2017-09-16,medium,False
+696,Fuk Para,Ywet Nyo Taung (Ku Lar),Maungdaw,Ywet Nyo Taung,20.953293,92.303741,destroyed,,True,0,3.31,0.117,3,2017-09-16,2017-09-16,medium,False
+697,Roimga Doung Mazor para,Ywet Nyo Taung (Middle),Maungdaw,Ywet Nyo Taung,20.949499,92.301544,destroyed,,False,108,6.01,0.212,2,2017-09-16,2017-09-16,medium,False
+698,Roimga Doung Doin Para,Ywet Nyo Taung (South),Maungdaw,Ywet Nyo Taung,20.948898,92.303505,destroyed,,True,0,7.76,0.274,2,2017-09-16,2017-09-16,medium,False
+699,Dang Ga Para,Din Gar,Maungdaw,Zaw Ma Tet,20.720169,92.432983,destroyed,,False,13,5.51,0.195,7,2017-09-16,2017-09-16,medium,False
+700,Haan Sar Para,Hin Thar Ya,Maungdaw,Zaw Ma Tet,20.714560,92.435226,destroyed,,False,34,3.51,0.124,5,2017-09-16,2017-09-25,medium,False
+701,Kaing Gyi ( Natala),Kaing Gyi (NaTaLa),Maungdaw,Zaw Ma Tet,20.721937,92.442871,none_detected,,,,,,,,,,
+702,Kaing Gyi ( Moagh Para),Kaing Gyi (Rakhine),Maungdaw,Zaw Ma Tet,20.716122,92.442459,destroyed,,False,175,2.7,0.095,1,2017-09-16,2017-09-16,medium,False
+703,Lam Ba Guna,Lin Bar Kone Nar,Maungdaw,Zaw Ma Tet,20.720079,92.423592,destroyed,,True,0,7.38,0.261,7,2017-09-16,2017-09-16,medium,False
+704,Solim Mar Para,Saw Gi Nar (Sin Na Mar),Maungdaw,Zaw Ma Tet,20.717480,92.437492,nearby,,False,255,0.38,0.014,2,2017-09-16,2017-09-16,medium,False
+705,Lam Ba Gu Na,Zaw Ma Tet,Maungdaw,Zaw Ma Tet,20.717590,92.426422,destroyed,,True,0,14.42,0.51,2,2017-09-16,2017-09-16,medium,False
+706,Song Kho Lar Para,Thaung Khu Lar (Song Khu Lar),Maungdaw,Zee Pin Chaung,21.074850,92.284073,destroyed,,True,0,2.88,0.102,7,2017-09-25,2017-10-01,medium,True
+707,Zimmong khali (Mazor Para),Zee Pin Chaung (Middle),Maungdaw,Zee Pin Chaung,21.074400,92.272636,destroyed,,True,0,4.91,0.173,4,2017-09-16,2017-09-16,medium,False
+708,Hat Kola Para,Zee Pin Chaung (North),Maungdaw,Zee Pin Chaung,21.078640,92.270790,destroyed,,False,21,6.19,0.219,6,2017-09-16,2017-09-25,medium,True
+709,Zimmong Khali (Doin Para),Zee Pin Chaung (South),Maungdaw,Zee Pin Chaung,21.071770,92.273819,destroyed,,False,36,6.08,0.215,4,2017-09-16,2017-09-16,medium,False
+710,Darguwar Deyl,Doe Tan,Maungdaw,Zin Paing Nyar,20.893089,92.356262,destroyed,,True,0,13.37,0.473,1,2017-09-16,2017-09-16,medium,False
+711,Haw Ri Tu Lar,Haw Ri Tu Lar,Maungdaw,Zin Paing Nyar,20.898090,92.367996,destroyed,,True,0,16.54,0.585,1,2017-09-16,2017-09-16,medium,False
+712,Fuk Para,Hpu Khar Li,Maungdaw,Zin Paing Nyar,20.894550,92.377167,destroyed,,True,0,5.58,0.197,2,2017-09-16,2017-09-16,medium,False
+713,Dow Ra Bil,Kywe Htar Pyin,Maungdaw,Zin Paing Nyar,20.882240,92.365860,destroyed,,True,0,7.2,0.255,1,2017-09-16,2017-09-16,medium,False
+714,Zammoinna Bor Para,Thar Zay Kone (Thar Zi Kone),Maungdaw,Zin Paing Nyar,20.900330,92.362213,destroyed,,True,0,11.0,0.389,3,2017-09-16,2017-09-25,medium,True
+715,Zam Moinna,Zin Paing Nyar,Maungdaw,Zin Paing Nyar,20.889891,92.366920,destroyed,,False,16,7.25,0.256,6,2017-09-16,2017-09-16,medium,False
+1025,Fawyazi Para,Fawyazi Para,Maungdaw,,20.820148,92.359638,none_detected,,,,,,,,,,
+809,Razarbill Orro fara,Ah Htet Nan Yar,Rathedaung,Ah Htet Nan Yar,20.555611,92.643517,destroyed,,True,0,12.53,0.443,2,2017-09-16,2017-09-16,medium,True
+810,,Navy Seik,Rathedaung,Ah Htet Nan Yar,20.511930,92.645317,none_detected,,,,,,,,,,
+811,Nilam Bor Fara,Ni Lin Paw,Rathedaung,Ah Htet Nan Yar,20.550770,92.650513,destroyed,,True,0,11.97,0.423,2,2017-09-16,2017-09-16,medium,False
+812,,Nyaung Pin Hla,Rathedaung,Ah Htet Nan Yar,20.518520,92.640938,none_detected,,,,,,,,,,
+813,Shay Rah Khara,Pyaing Taung,Rathedaung,Ah Htet Nan Yar,20.542891,92.634163,destroyed,,True,0,7.42,0.263,4,2017-09-16,2017-09-16,medium,False
+814,,Sin Oe,Rathedaung,Ah Htet Nan Yar,20.523090,92.637947,none_detected,,,,,,,,,,
+815,Anaf Parang,Ah Nauk Pyin,Rathedaung,Ah Nauk Pyin,20.399710,92.781143,none_detected,,,,,,,,,,
+816,,Taung Thar Yar,Rathedaung,Ah Nauk Pyin,20.407579,92.803108,none_detected,,,,,,,,,,
+817,,Ah Ngu Maw (Ku Lar),Rathedaung,Ah Ngu Maw,20.288780,92.737556,none_detected,,,,,,,,,,
+818,,Ah Ngu Maw (Rakhine),Rathedaung,Ah Ngu Maw,20.286409,92.727867,none_detected,,,,,,,,,,
+819,,Ma Gyi Chaung,Rathedaung,Ah Ngu Maw,20.294821,92.731651,none_detected,,,,,,,,,,
+820,,Ah Ngu Maw (Kone Tan),Rathedaung,Ah Ngu Maw Kone Tan,20.287991,92.725960,none_detected,,,,,,,,,,
+821,Razarbill Lamar fara,Auk Nan Yar,Rathedaung,Auk Nan Yar,20.553640,92.674217,destroyed,,True,0,17.82,0.63,1,2017-09-16,2017-09-16,medium,False
+822,,Aung Ba La,Rathedaung,Aung Ba La,20.337730,92.693222,none_detected,,,,,,,,,,
+823,,Sin Paik,Rathedaung,Aung Ba La,20.328751,92.693588,none_detected,,,,,,,,,,
+824,,Tan Aye,Rathedaung,Aung Ba La,20.317110,92.703369,none_detected,,,,,,,,,,
+825,,Thar Si,Rathedaung,Aung Ba La,20.311520,92.708252,none_detected,,,,,,,,,,
+826,,Aung Seik,Rathedaung,Aung Seik,20.419710,92.692368,none_detected,,,,,,,,,,
+827,,Kaung Ri Chaung Ywar Thit,Rathedaung,Aung Seik,20.438721,92.688629,none_detected,,,,,,,,,,
+828,,Thet,Rathedaung,Aung Seik,20.419680,92.690353,none_detected,,,,,,,,,,
+829,,Bar Ta Lay,Rathedaung,Bar Ta Lay,20.511391,92.805527,none_detected,,,,,,,,,,
+830,,Tha Yet Chaung Kha Mway,Rathedaung,Bar Ta Lay,20.503691,92.811707,none_detected,,,,,,,,,,
+831,,Chin (Pyaing Taung),Rathedaung,Chut Pyin,20.581470,92.643272,destroyed,,False,12,9.11,0.322,1,2017-10-09,2017-10-09,medium,False
+832,Shuap praun Muslim ,Chut Pyin,Rathedaung,Chut Pyin,20.569796,92.640526,destroyed,,True,0,8.75,0.309,1,2017-09-16,2017-09-16,medium,False
+833,,Pi Dauk Myaing,Rathedaung,Chut Pyin,20.583776,92.629669,none_detected,,,,,,,,,,
+834,,Thet,Rathedaung,Chut Pyin,20.571611,92.644203,nearby,,False,256,0.25,0.009,1,2017-09-16,2017-09-16,medium,False
+835,,Done Paik,Rathedaung,Done Paik,20.355970,92.678917,none_detected,,,,,,,,,,
+836,,Gwa Son,Rathedaung,Gwa Son,20.528681,92.679382,none_detected,,,,,,,,,,
+837,,Hpet Leik,Rathedaung,Hpet Leik,20.631229,92.641533,none_detected,,,,,,,,,,
+838,,Tha Pyay Taw,Rathedaung,Hpet Leik,20.614019,92.648903,destroyed,,False,21,16.88,0.597,2,2017-09-16,2017-09-16,medium,False
+839,,Daing Kyat,Rathedaung,Hpyu Chaung,20.358601,92.827217,none_detected,,,,,,,,,,
+840,,Hpyu Chaung,Rathedaung,Hpyu Chaung,20.346930,92.844353,none_detected,,,,,,,,,,
+841,,Aung Thar Zay,Rathedaung,Htee Swea,20.584473,92.755806,none_detected,,,,,,,,,,
+842,,Htee Swea Ywar Haung,Rathedaung,Htee Swea,20.578461,92.743088,none_detected,,,,,,,,,,
+843,,Htee Swea Ywar Thit,Rathedaung,Htee Swea,20.578230,92.739983,none_detected,,,,,,,,,,
+844,,Htun Ya Wai,Rathedaung,Htun Ya Wai,20.486142,92.806840,none_detected,,,,,,,,,,
+845,,Htun Ya Wai Ywar Thit,Rathedaung,Htun Ya Wai,20.496090,92.821404,none_detected,,,,,,,,,,
+846,,Ka Nyin Chaung,Rathedaung,Ka Nyin Chaung,20.520451,92.707512,none_detected,,,,,,,,,,
+847,,Pyin Chaung Ku Lar,Rathedaung,Ka Paing,20.348770,92.716782,none_detected,,,,,,,,,,
+848,,Yae Hpyu Kan,Rathedaung,Ka Paing,20.362930,92.711243,none_detected,,,,,,,,,,
+849,,Kan Pyin,Rathedaung,Kan Pyin,20.369450,92.774063,none_detected,,,,,,,,,,
+850,,Kat Chaung,Rathedaung,Kat Chaung,20.350241,92.783791,none_detected,,,,,,,,,,
+851,,Kaung Ri Chaung Ywar Haung,Rathedaung,Kaung Ri Chaung,20.437630,92.721138,none_detected,,,,,,,,,,
+852,,Kyun Chaung,Rathedaung,Kaung Ri Chaung,20.428810,92.723763,none_detected,,,,,,,,,,
+853,,Kan Pyin,Rathedaung,Kha Naung Gyi,20.509390,92.743134,none_detected,,,,,,,,,,
+854,,Kha Naung Gyi,Rathedaung,Kha Naung Gyi,20.521931,92.739532,none_detected,,,,,,,,,,
+855,,Se Kan Ywar Thit,Rathedaung,Kha Naung Gyi,20.518419,92.743607,none_detected,,,,,,,,,,
+856,,Ywar Thit Kay,Rathedaung,Kha Naung Gyi,20.538610,92.749496,none_detected,,,,,,,,,,
+857,,Bar Sar Ra,Rathedaung,Koe Tan Kauk,20.416759,92.663193,nearby,,False,493,0.0,0.0,1,2017-08-31,2017-08-31,medium,False
+858,,Chein Khar Li (Ku Lar),Rathedaung,Koe Tan Kauk,20.411850,92.656792,destroyed,,False,76,11.81,0.418,2,2017-08-31,2017-08-31,medium,False
+859,,Chein Khar Li (Rakhine),Rathedaung,Koe Tan Kauk,20.397039,92.664452,none_detected,,,,,,,,,,
+860,,Koe Tan Kauk,Rathedaung,Koe Tan Kauk,20.432280,92.650177,none_detected,,,,,,,,,,
+861,,Koe Tan Kauk (Rakhine),Rathedaung,Koe Tan Kauk,20.447399,92.630463,destroyed,,True,0,5.56,0.196,5,2017-09-16,2017-09-16,medium,False
+862,,Koe Tan Kauk Ywar Ma,Rathedaung,Koe Tan Kauk,20.442110,92.637177,destroyed,,True,0,10.62,0.375,2,2017-09-16,2017-09-16,medium,False
+863,,Kon Tan (Ku Lar),Rathedaung,Kon Tan,20.465151,92.686203,none_detected,,,,,,,,,,
+864,,Kon Tan (Rakhine),Rathedaung,Kon Tan,20.470060,92.686256,none_detected,,,,,,,,,,
+865,,Naw Wai,Rathedaung,Kon Tan,20.453831,92.683090,none_detected,,,,,,,,,,
+866,,Ku Lar Chaung,Rathedaung,Ku Lar Chaung,20.332800,92.724663,none_detected,,,,,,,,,,
+867,,Ku Taung,Rathedaung,Ku Taung,20.417919,92.784363,none_detected,,,,,,,,,,
+868,,Ku Taung Ywar Chay,Rathedaung,Ku Taung,20.434420,92.784767,none_detected,,,,,,,,,,
+869,,Baw Di Kone,Rathedaung,Kyauk Sar Taing,20.473930,92.668854,none_detected,,,,,,,,,,
+870,,Kon Tan Zay,Rathedaung,Kyauk Sar Taing,20.469950,92.676437,none_detected,,,,,,,,,,
+871,,Kyauk Sar Taing,Rathedaung,Kyauk Sar Taing,20.463909,92.675468,none_detected,,,,,,,,,,
+872,,Mi Chaung Yae Thauk,Rathedaung,Kyauk Sar Taing,20.470119,92.672653,none_detected,,,,,,,,,,
+873,,Kyauk Tan,Rathedaung,Kyauk Tan,20.594839,92.751137,none_detected,,,,,,,,,,
+874,,Kyauk Yan Thar Si,Rathedaung,Kyauk Yan Thar Si,20.643591,92.722618,none_detected,,,,,,,,,,
+875,,Maung Hpyu (Da Pyu Chaung),Rathedaung,Kyauk Yan Thar Si,20.639530,92.721909,none_detected,,,,,,,,,,
+876,,Yae Poke,Rathedaung,Kyauk Yan Thar Si,20.614630,92.741997,none_detected,,,,,,,,,,
+877,,Kha Maung Tone,Rathedaung,Kyaung Taung,20.534269,92.706963,none_detected,,,,,,,,,,
+878,,Kyaung Taung,Rathedaung,Kyaung Taung,20.564011,92.704819,none_detected,,,,,,,,,,
+879,,Doe Wai Chaung,Rathedaung,Kyein Tan,20.585840,92.670723,none_detected,,,,,,,,,,
+880,,Hman Ni Pyin,Rathedaung,Kyein Tan,20.614910,92.667419,none_detected,,,,,,,,,,
+881,,Kyein Tan,Rathedaung,Kyein Tan,20.598709,92.664337,none_detected,,,,,,,,,,
+882,,Kar May (Kha Mway),Rathedaung,Kyein Thar,20.486700,92.842583,none_detected,,,,,,,,,,
+883,,Kar May (Rakhine),Rathedaung,Kyein Thar,20.492390,92.841530,none_detected,,,,,,,,,,
+884,,Kyein Thar,Rathedaung,Kyein Thar,20.481239,92.833794,none_detected,,,,,,,,,,
+885,,Hpa Yar Hla,Rathedaung,Kyet Yoe Seik,20.346020,92.806557,none_detected,,,,,,,,,,
+886,,Kyet Yoe Seik,Rathedaung,Kyet Yoe Seik,20.340309,92.801849,none_detected,,,,,,,,,,
+887,,Kyun Gyi,Rathedaung,Kyun Gyi,20.322020,92.805687,none_detected,,,,,,,,,,
+888,,Kyun Paw,Rathedaung,Kyun Paw,20.521271,92.686096,none_detected,,,,,,,,,,
+889,,La Mone Taing,Rathedaung,La Mone Taing,20.578194,92.783539,none_detected,,,,,,,,,,
+890,,Nwar Tin Koke,Rathedaung,La Mone Taing,20.563219,92.793579,none_detected,,,,,,,,,,
+891,,Aung Ma,Rathedaung,Laung Chaung,20.370609,92.711700,none_detected,,,,,,,,,,
+892,,Ka Paing Chaung,Rathedaung,Laung Chaung,20.356791,92.712250,none_detected,,,,,,,,,,
+893,,Laung Chaung,Rathedaung,Laung Chaung,20.375259,92.710159,none_detected,,,,,,,,,,
+894,,Lay Gwa Son (Ywar Haung),Rathedaung,Lay Gwa Son,20.516876,92.792442,none_detected,,,,,,,,,,
+895,,Lay Gwa Son (Ywar Thit),Rathedaung,Lay Gwa Son,20.519814,92.798698,none_detected,,,,,,,,,,
+896,,Sagar Ywar,Rathedaung,Lay Gwa Son,20.522108,92.805969,none_detected,,,,,,,,,,
+897,,Lay Kan,Rathedaung,Lay Kan (Pauk Taw Gyi),20.449720,92.795319,none_detected,,,,,,,,,,
+898,,Pauk Taw Gyi,Rathedaung,Lay Kan (Pauk Taw Gyi),20.472260,92.803307,none_detected,,,,,,,,,,
+899,,Ah Lel Zee Kaing,Rathedaung,Let Pan Pin Yin,20.323200,92.842827,none_detected,,,,,,,,,,
+900,,Hnan Kham Ywar,Rathedaung,Let Pan Pin Yin,20.329876,92.833527,none_detected,,,,,,,,,,
+901,,Let Pan Pin Yin,Rathedaung,Let Pan Pin Yin,20.323709,92.836929,none_detected,,,,,,,,,,
+902,,Mi Nyo Htaunt,Rathedaung,Mi Nyo Htaunt,20.504730,92.683113,none_detected,,,,,,,,,,
+903,,Mi Nyo Htaunt Ywar Thit,Rathedaung,Mi Nyo Htaunt,20.500710,92.680359,none_detected,,,,,,,,,,
+904,,Thar Si,Rathedaung,Mi Nyo Htaunt,20.497299,92.683098,none_detected,,,,,,,,,,
+905,,Min Kan,Rathedaung,Min Kan,20.420349,92.811279,none_detected,,,,,,,,,,
+906,,Myin Gan Chaung,Rathedaung,Myin Gan Chaung,20.376040,92.776894,none_detected,,,,,,,,,,
+907,,Myin Gan Chaung Kone Tan,Rathedaung,Myin Gan Chaung,20.379299,92.781036,none_detected,,,,,,,,,,
+908,,Seik Gyi Nar,Rathedaung,Myin Gan Chaung,20.376881,92.790627,none_detected,,,,,,,,,,
+909,,Myin Hpu,Rathedaung,Myin Hpu,20.450081,92.688728,none_detected,,,,,,,,,,
+910,,Myin Hpu Ywar Thit,Rathedaung,Myin Hpu,20.442579,92.686203,none_detected,,,,,,,,,,
+911,,Ah Htet Na Gar Mauk,Rathedaung,Na Gar Mauk,20.436180,92.845177,none_detected,,,,,,,,,,
+912,,Ah Lel Na Gar Mauk,Rathedaung,Na Gar Mauk,20.431660,92.847923,none_detected,,,,,,,,,,
+913,,Auk Na Gar Mauk,Rathedaung,Na Gar Mauk,20.415390,92.860489,none_detected,,,,,,,,,,
+914,,Ah Lel Chaung,Rathedaung,Nat Chaung,20.459169,92.711189,none_detected,,,,,,,,,,
+915,,Nat Chaung,Rathedaung,Nat Chaung,20.455139,92.713257,none_detected,,,,,,,,,,
+916,,Ah Myet Taung,Rathedaung,Nga San Baw,20.655180,92.720322,none_detected,,,,,,,,,,
+917,,Nga/ San Baw (Moke Soe Chaung) (Ywar Haung),Rathedaung,Nga San Baw,20.636511,92.713379,none_detected,,,,,,,,,,
+918,,Nga Tauk Tu Chay,Rathedaung,Nga Tauk Tu Chay,20.502939,92.767487,none_detected,,,,,,,,,,
+919,,Se Kan Ywar Haung,Rathedaung,Nga Tauk Tu Chay,20.512951,92.749893,none_detected,,,,,,,,,,
+920,,Taung Hla Maw,Rathedaung,Nga Tauk Tu Chay,20.490480,92.759178,none_detected,,,,,,,,,,
+921,,Bat Kar,Rathedaung,Nga Tauk Tu Gyi,20.518009,92.775970,none_detected,,,,,,,,,,
+922,,Nga Tauk Tu Gyi,Rathedaung,Nga Tauk Tu Gyi,20.499981,92.779327,none_detected,,,,,,,,,,
+923,,Nwar Hla Kyaw,Rathedaung,Nwar Hla Kyaw,20.590870,92.773216,none_detected,,,,,,,,,,
+924,,Nyaung Pin Gyi (Ku Lar),Rathedaung,Nyaung Pin Gyi,20.335911,92.784416,none_detected,,,,,,,,,,
+925,,Nyaung Pin Gyi (Rakhine),Rathedaung,Nyaung Pin Gyi,20.339800,92.782654,none_detected,,,,,,,,,,
+926,,Pan Zin Maw,Rathedaung,Nyaung Pin Gyi,20.319111,92.777542,none_detected,,,,,,,,,,
+927,,Khway Tauk Chaung Ywar Thit (Hnin Si Kone),Rathedaung,Nyaung Pin Hla,20.469561,92.701103,none_detected,,,,,,,,,,
+928,,Nyaung Pin Hla (Khway Tauk Chaung),Rathedaung,Nyaung Pin Hla,20.468651,92.710129,none_detected,,,,,,,,,,
+929,,Leik Htaunt Teit Su,Rathedaung,Nyaung Pin Lel,20.333691,92.814598,none_detected,,,,,,,,,,
+930,,Nyaung Pin Lel,Rathedaung,Nyaung Pin Lel,20.321939,92.825447,none_detected,,,,,,,,,,
+931,,Ohn Chaung,Rathedaung,Ohn Chaung,20.686460,92.682327,none_detected,,,,,,,,,,
+932,,Kan Sit,Rathedaung,Oke Hpo (Oe Hpauk),20.683399,92.656609,none_detected,,,,,,,,,,
+933,,Oe Hpauk Ywar Thit,Rathedaung,Oke Hpo (Oe Hpauk),20.694500,92.647751,none_detected,,,,,,,,,,
+934,,Oke Hpo (Oe Hpauk),Rathedaung,Oke Hpo (Oe Hpauk),20.688629,92.652481,none_detected,,,,,,,,,,
+935,,Pan Hpaw Pyin,Rathedaung,Pan Hpaw Pyin,20.517700,92.660263,none_detected,,,,,,,,,,
+936,,Pan Kaing,Rathedaung,Pan Hpaw Pyin,20.508341,92.649094,none_detected,,,,,,,,,,
+937,,Ah Du,Rathedaung,Pauk Pin Yin (Pauk Taw),20.547621,92.671059,destroyed,,True,0,4.93,0.174,1,2017-09-16,2017-09-16,medium,False
+938,,Be Lar Mi,Rathedaung,Pauk Pin Yin (Pauk Taw),20.546440,92.648399,destroyed,,True,0,11.25,0.398,1,2017-09-16,2017-09-16,medium,False
+939,,Pauk Pin Yin,Rathedaung,Pauk Pin Yin (Pauk Taw),20.543480,92.676979,none_detected,,,,,,,,,,
+940,,Than Du,Rathedaung,Pauk Pin Yin (Pauk Taw),20.550131,92.656723,destroyed,,False,10,3.31,0.117,2,2017-09-16,2017-09-16,medium,False
+941,,Aung Zay Ya,Rathedaung,Pauk Taw,20.456470,92.762329,none_detected,,,,,,,,,,
+942,,Kyauk Son,Rathedaung,Pauk Taw,20.447809,92.776627,none_detected,,,,,,,,,,
+943,,Pauk Taw Chay,Rathedaung,Pauk Taw,20.460911,92.766930,none_detected,,,,,,,,,,
+944,,Pauk Taw Chay Ywar Thit,Rathedaung,Pauk Taw,20.455360,92.774803,none_detected,,,,,,,,,,
+945,,Pyin Khaung Ywar Thit,Rathedaung,Pauk Taw,20.472860,92.763168,none_detected,,,,,,,,,,
+946,,Kyet Yoe Kone Tan,Rathedaung,Paung Zar,20.409849,92.719681,none_detected,,,,,,,,,,
+947,,Nay Pu Khan,Rathedaung,Paung Zar,20.418909,92.724998,none_detected,,,,,,,,,,
+948,,Paung Zar,Rathedaung,Paung Zar,20.416109,92.724457,none_detected,,,,,,,,,,
+949,,Baw Di Kaing,Rathedaung,Pe Tha Du,20.674360,92.735970,none_detected,,,,,,,,,,
+950,,Done,Rathedaung,Pe Tha Du,20.665779,92.725517,none_detected,,,,,,,,,,
+951,,Kyauk Kon Boke,Rathedaung,Pe Tha Du,20.667919,92.719093,none_detected,,,,,,,,,,
+952,,Let Wea Det,Rathedaung,Pe Tha Du,20.666491,92.737091,none_detected,,,,,,,,,,
+953,,Nay Pu Khan,Rathedaung,Pe Tha Du,20.678270,92.715790,none_detected,,,,,,,,,,
+954,,Pe Tha Du,Rathedaung,Pe Tha Du,20.678160,92.713821,none_detected,,,,,,,,,,
+955,,Thet Pyay Kya,Rathedaung,Pe Tha Du,20.680479,92.707642,none_detected,,,,,,,,,,
+956,,Ah Wa Dar,Rathedaung,Pyar Chaung Gyi,20.472210,92.784187,none_detected,,,,,,,,,,
+957,,Pyar Chaung Gyi,Rathedaung,Pyar Chaung Gyi,20.487729,92.772687,none_detected,,,,,,,,,,
+958,,Pyar Chaung Gyi (Middle),Rathedaung,Pyar Chaung Gyi,20.484253,92.772970,none_detected,,,,,,,,,,
+959,,Pyin Khaung Ywar Haung,Rathedaung,Pyar Chaung Gyi,20.478081,92.771111,none_detected,,,,,,,,,,
+960,,Pyar Pin Yin,Rathedaung,Pyar Pin Yin,20.489229,92.713707,none_detected,,,,,,,,,,
+961,,Aung Zay Ya,Rathedaung,Pyein Taw,20.635401,92.685966,none_detected,,,,,,,,,,
+962,,Kone Tan,Rathedaung,Pyein Taw,20.651939,92.684578,none_detected,,,,,,,,,,
+963,,Ma Nyin Taung,Rathedaung,Pyein Taw,20.641279,92.700439,none_detected,,,,,,,,,,
+964,,Pyein Taw,Rathedaung,Pyein Taw,20.620729,92.697693,none_detected,,,,,,,,,,
+965,,Aung Si Kone,Rathedaung,Pyin Shey,20.586620,92.689621,none_detected,,,,,,,,,,
+966,,Kan Pyin,Rathedaung,Pyin Shey,20.593061,92.692085,none_detected,,,,,,,,,,
+967,,Pyin Shey (Sa Hpo Kyun),Rathedaung,Pyin Shey,20.589970,92.691757,none_detected,,,,,,,,,,
+968,,Pyin Wan,Rathedaung,Pyin Shey,20.596470,92.687897,none_detected,,,,,,,,,,
+969,,Kan Pyin,Rathedaung,Sa Par Htar,20.527800,92.778847,none_detected,,,,,,,,,,
+970,,Sa Par Htar,Rathedaung,Sa Par Htar,20.534430,92.777797,none_detected,,,,,,,,,,
+971,,Sar Pyin Chay,Rathedaung,Sar Pyin Chay,20.315531,92.788933,none_detected,,,,,,,,,,
+972,,Sar Pyin Gyi,Rathedaung,Sar Pyin Gyi,20.306219,92.817871,none_detected,,,,,,,,,,
+973,,Say Oe Kya,Rathedaung,Say Oe Kya,20.435658,92.824098,none_detected,,,,,,,,,,
+974,,Shwe Laung Tin,Rathedaung,Shwe Laung Tin (Paik Seik),20.391680,92.770866,none_detected,,,,,,,,,,
+975,,Lun Taung,Rathedaung,Sin Khone Taing,20.730360,92.647377,none_detected,,,,,,,,,,
+976,,Sin Khone Taing (Ku Lar),Rathedaung,Sin Khone Taing,20.716560,92.645409,none_detected,,,,,,,,,,
+977,,Sin Khone Taing (Rakhine),Rathedaung,Sin Khone Taing,20.725330,92.647957,none_detected,,,,,,,,,,
+978,,Sin Khone Taing Zay,Rathedaung,Sin Khone Taing,20.727461,92.643402,none_detected,,,,,,,,,,
+979,,Soe May,Rathedaung,Soe May,20.461550,92.835037,none_detected,,,,,,,,,,
+980,,Wet Noke Thee,Rathedaung,Soe May,20.452829,92.831467,none_detected,,,,,,,,,,
+981,,Aung Myay Kone,Rathedaung,Tha Mee Hla,20.603041,92.731667,none_detected,,,,,,,,,,
+982,,Sauk Khat Ywar Haung (Tha Mee Hla),Rathedaung,Tha Mee Hla,20.603540,92.738853,none_detected,,,,,,,,,,
+983,,Sauk Khat Ywar Thit,Rathedaung,Tha Mee Hla,20.607180,92.726936,none_detected,,,,,,,,,,
+984,,Tha Yet Chaung,Rathedaung,Tha Yet Chaung,20.392200,92.703468,none_detected,,,,,,,,,,
+985,,Tha Yet Pyin,Rathedaung,Tha Yet Chaung,20.391649,92.707657,none_detected,,,,,,,,,,
+986,,Than Chaung,Rathedaung,Than Chaung,20.400311,92.697281,none_detected,,,,,,,,,,
+987,,Chay Yar Taw,Rathedaung,Thar Si Htaunt,20.374041,92.831749,none_detected,,,,,,,,,,
+988,,Thar Si Htaunt,Rathedaung,Thar Si Htaunt,20.390209,92.825523,none_detected,,,,,,,,,,
+989,,Thaung Da Rar,Rathedaung,Thaung Da Rar,20.553610,92.753258,none_detected,,,,,,,,,,
+990,,Kyauk Yan,Rathedaung,Thein Taung,20.596420,92.658028,none_detected,,,,,,,,,,
+991,,Maw Htet,Rathedaung,Thein Taung,20.582689,92.664680,none_detected,,,,,,,,,,
+992,,Tar Zaw,Rathedaung,Thein Taung,20.616390,92.628403,destroyed,,False,6,3.8,0.134,3,2017-09-16,2017-10-01,medium,False
+993,,Thazin Myaing,Rathedaung,Thein Taung,20.607965,92.616272,none_detected,,,,,,,,,,
+994,,Thein Taung,Rathedaung,Thein Taung,20.602591,92.655418,none_detected,,,,,,,,,,
+995,,Thin Ga Net,Rathedaung,Thein Taung,20.609690,92.635368,destroyed,,False,108,3.69,0.13,2,2017-10-09,2017-10-09,medium,False
+996,,Kan Pyin,Rathedaung,Thit Ka Toe,20.495670,92.651497,none_detected,,,,,,,,,,
+997,,Kyone Pyin,Rathedaung,Thit Ka Toe,20.502600,92.647476,none_detected,,,,,,,,,,
+998,,Thit Ka Toe,Rathedaung,Thit Ka Toe,20.486931,92.662758,none_detected,,,,,,,,,,
+999,,Laung Zin,Rathedaung,Tin Koke,20.407761,92.840714,none_detected,,,,,,,,,,
+1000,,Tin Koke,Rathedaung,Tin Koke,20.405109,92.829224,none_detected,,,,,,,,,,
+1001,,U Gar,Rathedaung,U Gar,20.366871,92.796837,none_detected,,,,,,,,,,
+1002,,Aung Taing (Laung Chaung),Rathedaung,Yae Gaung Chaung,20.715750,92.699722,none_detected,,,,,,,,,,
+1003,,Aung Taing Taung Pyo,Rathedaung,Yae Gaung Chaung,20.718691,92.727043,none_detected,,,,,,,,,,
+1004,,Kha Yu Chaung,Rathedaung,Yae Gaung Chaung,20.698799,92.703682,none_detected,,,,,,,,,,
+1005,,Nga Yant Chaung,Rathedaung,Yae Gaung Chaung,20.720039,92.701813,none_detected,,,,,,,,,,
+1006,,Yae Gaung Chaung,Rathedaung,Yae Gaung Chaung,20.714260,92.692131,none_detected,,,,,,,,,,
+1007,,Nyaung Pin Hla,Rathedaung,Yae Myet,20.619101,92.710274,none_detected,,,,,,,,,,
+1008,,Yae Myet (Ywar Haung),Rathedaung,Yae Myet,20.609631,92.714020,none_detected,,,,,,,,,,
+1009,,Yae Myet (Ywar Thit),Rathedaung,Yae Myet,20.609131,92.719368,none_detected,,,,,,,,,,
+1010,,Yae Paik Son,Rathedaung,Yae Paik Son,20.345110,92.821213,none_detected,,,,,,,,,,
+1011,,Kin Pun Chaung,Rathedaung,Yae Soe Chaung,20.656561,92.758423,none_detected,,,,,,,,,,
+1012,,Yae Chan Chaung Kha Mway,Rathedaung,Yae Soe Chaung,20.667450,92.758987,none_detected,,,,,,,,,,
+1013,,Yae Soe Chaung,Rathedaung,Yae Soe Chaung,20.653940,92.736633,none_detected,,,,,,,,,,
+1014,,Yae Zar Te Su,Rathedaung,Yae Soe Chaung,20.666750,92.755417,none_detected,,,,,,,,,,
+1015,,Lone Tin,Rathedaung,Yan Aung Pyin,20.480101,92.704819,none_detected,,,,,,,,,,
+1016,,Yan Aung Pyin,Rathedaung,Yan Aung Pyin,20.478970,92.683746,none_detected,,,,,,,,,,
+1017,,Ahr Kar Taung,Rathedaung,Yet Khone Taing,20.678459,92.663757,none_detected,,,,,,,,,,
+1018,,Yet Khone Taing,Rathedaung,Yet Khone Taing,20.665930,92.672691,none_detected,,,,,,,,,,
+1019,,Zay Di Pyin,Rathedaung,Zay Di Pyin,20.575781,92.670403,nearby,,False,267,0.23,0.008,1,2017-09-16,2017-09-16,medium,False
+1020,,Auk Zee Kaing,Rathedaung,Zee Kaing,20.322559,92.850487,none_detected,,,,,,,,,,
+1021,,Tha Mee Hla Ywar Thit,Rathedaung,Zee Khaung,20.660872,92.683090,none_detected,,,,,,,,,,
+1022,,Zee Khaung,Rathedaung,Zee Khaung,20.672281,92.701523,none_detected,,,,,,,,,,
+716,Ah Myint Kyun,Ah Myint Kyun,Sittwe,Ah Myint Kyun,20.298000,92.875092,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+717,Alisan fara,Ah Lar Than,Sittwe,Aung Daing,20.232500,92.804962,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+718,Aung Daing,Aung Daing,Sittwe,Aung Daing,20.235189,92.790192,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+719,,Daung Pyauk Kay,Sittwe,Aung Daing,20.218300,92.805969,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+720, Kikú fara,Me Za Li Kone,Sittwe,Aung Daing,20.230169,92.818008,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+721, Náffon fara (Bor fara),Nga/Pun Ywar Gyi,Sittwe,Aung Daing,20.219509,92.811333,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+722, Náffon fara (showrow fara),Nga/Pun Ywar Shey,Sittwe,Aung Daing,20.212660,92.820778,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+723,Pa Lin Pyin,Pa Lin Pyin (Ku Lar),Sittwe,Aung Daing,20.208799,92.794113,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+724,Pa Lin Pyin,Pa Lin Pyin (Rakhine),Sittwe,Aung Daing,20.219910,92.771606,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+725,Bogar Dheil,Bay Dar,Sittwe,Bu May,20.157169,92.822937,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+726,Furan Fara,Bu May,Sittwe,Bu May,20.143860,92.867577,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+727,Ázimma fara,Bu May Let Tha Mar,Sittwe,Bu May,20.145330,92.856857,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+728,Muggul Barizar,Bu May Ohn Taw,Sittwe,Bu May,20.142469,92.863968,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+729,Furan Débaing ,Dar Paing Ywar Haung,Sittwe,Bu May,20.170469,92.834351,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+730,Noya-Débaing ,Dar Paing Ywar Thit,Sittwe,Bu May,20.168970,92.826897,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+731,Hmanzi,Hman Zi,Sittwe,Bu May,20.174471,92.821419,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+732,Mosóinna fara,Myat Pan Nyo,Sittwe,Bu May,20.185400,92.831253,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+733,Zatéilla gúna,Sat Oe,Sittwe,Bu May,20.185890,92.840134,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+734,,Tain Bway,Sittwe,Bu May,20.138738,92.856624,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+735,Guaillar Dheil,Thea Chaung Ku Lar,Sittwe,Bu May,20.157360,92.838654,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+736,Misírid Dheil,Thea Chaung Let Tha Mar Kone,Sittwe,Bu May,20.147863,92.846769,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+737,Misírid Dheil (Mog fara),Thea Chaung Rakhine,Sittwe,Bu May,20.162600,92.834457,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+738,Walíc fara,War Yar Lit,Sittwe,Bu May,20.147940,92.853813,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+739, Rwagúng fara (Furan fara),Ywar Gaung Ywar Haung,Sittwe,Bu May,20.145739,92.850008,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+740, Rwagúng fara(Naya fara),Ywar Gaung Ywar Thit,Sittwe,Bu May,20.139271,92.839767,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+741,,Ywar Thar Yar,Sittwe,Bu May,20.128851,92.872498,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+742,,Chaung Nwe,Sittwe,Chaung Nwe,20.203440,92.909607,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+743,,Kan Pyin Ywar Haung,Sittwe,Chaung Nwe,20.191799,92.906616,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+744,,Kan Pyin Ywar Thit,Sittwe,Chaung Nwe,20.187860,92.903419,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+745,,Thone Saung,Sittwe,Chaung Nwe,20.189960,92.895767,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+746,,Zaw Ma Det,Sittwe,Chaung Nwe,20.208071,92.900993,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+747,,Chi Laing Hpin,Sittwe,Chi Laing Hpin,20.286720,92.882843,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+748,,Gant Gaw Kyun,Sittwe,Gant Gaw Kyun,20.210091,92.879753,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+749,Ywar Ma,Thet Kay Pyin Ywar Ma,Sittwe,Gant Gaw Kyun,20.193460,92.867783,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+750,Fialicóng fara,Kha Tin Paik,Sittwe,Kha Tin Paik,20.246250,92.822060,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+751,,Pyin Shey,Sittwe,Kha Tin Paik,20.239929,92.827530,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+752,,Yae Chan Pyin,Sittwe,Kha Tin Paik,20.257851,92.811127,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+753,,Aung Pin Lel,Sittwe,Khaung Doke Kar,20.182079,92.807877,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+754,Kunka fara,Khaung Doke Kar,Sittwe,Khaung Doke Kar,20.189880,92.816360,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+755,,Kyar Ma Thauk,Sittwe,Kyar Ma Thauk,20.237560,92.861153,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+756,,Kyauk Tan Chay,Sittwe,Kyar Ma Thauk,20.248520,92.862183,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+757,,Kyay Taw,Sittwe,Kyay Taw,20.170759,92.909317,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+758,,Kyay Taw Paik Seik,Sittwe,Kyay Taw,20.174120,92.911720,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+759,,Pyi Taw Thar,Sittwe,Kyay Taw,20.165251,92.903198,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+760,,Kyet Taw Pyin,Sittwe,Kyet Taw Pyin,20.245159,92.807419,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+761,,Ohn Yae Paw,Sittwe,Kyet Taw Pyin,20.261358,92.805673,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+762,,Kyauk Tan Gyi,Sittwe,Kywi Te,20.263029,92.858856,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+763,,Kywi Te,Sittwe,Kywi Te,20.272631,92.843262,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+764,,Kywi Te Paik Seik Gyi,Sittwe,Kywi Te,20.280750,92.845161,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+765,,Kywi Te Paik Seik Shey,Sittwe,Kywi Te,20.278030,92.840553,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+766,Cábok fara (Fook fara),Done Pyin (East),Sittwe,Maung Ni Pyin,20.195850,92.842270,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+767,Dottóli fara,Done Pyin (North),Sittwe,Maung Ni Pyin,20.199499,92.834328,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+768,Cábok fara ,Done Pyin (South),Sittwe,Maung Ni Pyin,20.194370,92.834007,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+769,Maung Ni Pyin,Maung Ni Pyin,Sittwe,Maung Ni Pyin,20.210560,92.836456,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+770,,Min Hla,Sittwe,Myit Nar,20.226700,92.914429,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+771,,Myit Nar,Sittwe,Myit Nar,20.215500,92.908508,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+772,,Ywar Haung Chaung,Sittwe,Myit Nar,20.217800,92.910500,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+773,,Nar Yi Kan,Sittwe,Nar Yi Kan,20.219700,92.851379,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+774,,Nga/Tauk Tet,Sittwe,Nga/Tauk Tet,20.260790,92.878593,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+775,,Nyo Yaung Chaung,Sittwe,Nyo Yaung Chaung,20.236860,92.909599,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+776,,Par Da Leik,Sittwe,Par Da Leik,20.285789,92.858917,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+777,,Chan Thar Kone,Sittwe,Say Tha Mar,20.207670,92.785728,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+778,Bor-Bagiza fara,Ohn Taw Gyi,Sittwe,Say Tha Mar,20.197550,92.785683,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+779,Showraw-Bagiza fara,Ohn Taw Shey,Sittwe,Say Tha Mar,20.204370,92.780357,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+780,Cícar fara,Say Tha Mar Gyi,Sittwe,Say Tha Mar,20.201500,92.796654,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+781,Arsar Del,Say Tha Mar Nge,Sittwe,Say Tha Mar,20.191719,92.808166,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+782,,Kyan Taw,Sittwe,Taw Kan,20.231520,92.876129,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+783,,Taw Kan,Sittwe,Taw Kan,20.236971,92.877876,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+784,,Thein Tan,Sittwe,Thein Tan,20.229290,92.864670,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+785,,Yar Tan,Sittwe,Thein Tan,20.223511,92.869843,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+786, Sáa Farang fara,Hla May Shwe,Sittwe,Thin Ga Net,20.183790,92.864143,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+787,,Koe Saung,Sittwe,Thin Ga Net,20.172649,92.874352,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+788,,Thar Yar Kone Ka Man,Sittwe,Thin Ga Net,20.176319,92.875183,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+789,,Thar Yar Kone Rakhine,Sittwe,Thin Ga Net,20.179029,92.874779,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+790,Sakki fara,Thet Kay Pyin Kone,Sittwe,Thin Ga Net,20.182529,92.884239,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+791, Sángana,Thin Ga Net,Sittwe,Thin Ga Net,20.166349,92.871902,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+792,Gar Ti,Ye Baw Haung,Sittwe,Thin Ga Net,20.171150,92.875092,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+793,Fialicóng fara,Pyar Lay Chaung,Sittwe,Thin Pone Tan,20.236940,92.833260,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+794,,Pyin Shey Ku Lar,Sittwe,Thin Pone Tan,20.239800,92.825089,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+795,,Thin Pone Tan,Sittwe,Thin Pone Tan,20.226730,92.836929,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+796,,Aung Chan Thar,Sittwe,U Yin Thar,20.153900,92.861031,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+797,,Kan Taw Gyi,Sittwe,U Yin Thar,20.162399,92.851250,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+798,,Kha Yae Myaing,Sittwe,U Yin Thar,20.177731,92.843910,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+799,,Kha Yam Pyar,Sittwe,U Yin Thar,20.168430,92.847504,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+800,Hath-thól boinna fara,Pain Nae Kone,Sittwe,U Yin Thar,20.156349,92.851143,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+801,,Saik Pyo Yay Daing,Sittwe,U Yin Thar,20.184620,92.856613,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+802,Ambari,Tha Yet Kone,Sittwe,U Yin Thar,20.159321,92.851044,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+803,Lesu barizar,U Yin Thar,Sittwe,U Yin Thar,20.171829,92.845078,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+804,,Bya Har,Sittwe,War Bo,20.228970,92.899727,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+805,,War Bo,Sittwe,War Bo,20.227341,92.893341,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+806,Sakki Fara bazar,Thet Kay Pyin Zay,Sittwe,Ywar Thit Kay,20.201929,92.860878,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+807,Buhá fara,Ywar Thit Kay,Sittwe,Ywar Thit Kay,20.206499,92.858170,not_assessed,outside the area UNOSAT analysed,,,,,,,,,
+808,Tambi fara,Zaw Pu Gyar,Sittwe,Zaw Pu Gyar,20.202360,92.812782,not_assessed,outside the area UNOSAT analysed,,,,,,,,,

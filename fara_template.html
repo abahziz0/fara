@@ -801,6 +801,61 @@ body.areaing #areabar{display:flex}
   #printsheet .ps-near,#printsheet .ps-src{font-size:9.5pt;color:#111;margin-bottom:4pt}
   #printsheet .ps-foot{margin-top:12pt;padding-top:5pt;border-top:.5pt solid #999;font-size:8pt;color:#555}
 }
+
+/* ============ 2017 DESTRUCTION (UNOSAT) ============ */
+.st17{margin-top:8px}
+.st17 .sthead{display:flex;align-items:center;gap:9px;font-size:15px;font-weight:600;margin:2px 0 6px}
+.st17 .sthead i{flex:none;width:10px;height:10px;border-radius:50%}
+.st17 .sttext{font-size:12.5px;line-height:1.55;color:var(--text-dim)}
+.st17 .stbtn{display:flex;align-items:center;justify-content:center;width:100%;margin-top:10px;padding:9px;border:1px solid var(--cyan-dim);background:rgba(0,229,255,.08);color:var(--cyan);font-family:'Share Tech Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:all .2s}
+.st17 .stbtn:hover{background:rgba(0,229,255,.16);box-shadow:0 0 14px rgba(0,229,255,.15)}
+#panel.ward .st17{display:none}
+#regtable .cst{font-family:'Share Tech Mono',monospace;font-size:10.5px;color:var(--text-dim)}
+.ivtabs>button.ivz{margin-left:8px;border-style:dashed}
+.ivtabs>button.ivz.on{border-style:solid;border-color:#FFD400;color:#FFD400;background:rgba(255,212,0,.1)}
+.ivzonenote{position:absolute;left:12px;bottom:46px;z-index:550;display:none;align-items:center;gap:8px;padding:5px 9px;background:rgba(2,5,10,.82);border:1px solid rgba(255,212,0,.5);font-family:'Share Tech Mono',monospace;font-size:10.5px;color:var(--text);pointer-events:none}
+.ivzonenote.show{display:flex}
+.ivzonenote i{width:14px;height:10px;border:2px solid #FFD400}
+@media (max-width:760px){
+  .st17 .stbtn{padding:13px}
+  .ivtabs>button.ivz{margin-left:0}
+  .ivtabs>button{font-size:10.5px;padding:14px 4px}
+  .ivzonenote{bottom:42px;font-size:9.5px;max-width:calc(100% - 24px)}
+  #regtable th:nth-child(8),#regtable td:nth-child(8){display:none}
+}
+
+/* ============ LEFT MENU — clearer grouping ============ */
+.card h3{margin-bottom:8px;letter-spacing:.18em;white-space:nowrap}
+.card h3::after{order:1;min-width:6px}
+.h3hint{order:2;font-size:8px;letter-spacing:.14em;color:var(--text-faint);opacity:.8;white-space:nowrap}
+.sublbl{margin:12px 0 6px;font-family:'Share Tech Mono',monospace;font-size:8.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--text-faint)}
+.sublbl.first{margin-top:2px}
+.town{padding:6px 8px;gap:10px}
+.town:hover{border-color:var(--line-soft)}
+.town .nm{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.town .ct{flex:none;font-size:11.5px}
+.town.off{opacity:.38}
+.town.off .nm{text-decoration:line-through;text-decoration-color:rgba(143,168,199,.5)}
+.seg button{padding:8px 6px;white-space:nowrap}
+.card.tools{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.card.tools h3{grid-column:1/-1;margin-bottom:2px}
+.card.tools .tool{min-width:0;padding:9px 8px;gap:8px;border:1px solid var(--line-soft);font-size:10px;letter-spacing:.06em;white-space:nowrap}
+.card.tools .tool:hover{border-color:var(--cyan-dim)}
+.card.tools .tool.on{border-color:var(--cyan-dim)}
+.card.tools .tool .kk{display:none}
+.card.tools .tool svg{width:14px;height:14px}
+@media (min-width:961px){
+  #deck{width:236px;gap:8px;padding-right:3px;scrollbar-width:thin;scrollbar-color:rgba(0,229,255,.2) transparent}
+  #deck::-webkit-scrollbar{width:4px}
+  .card{padding:12px 12px 13px}
+}
+@media (max-width:760px){
+  .h3hint{font-size:9px}
+  .sublbl{font-size:9.5px;margin:14px 0 8px}
+  .card.tools{gap:8px}
+  .card.tools .tool{padding:15px 10px;min-height:50px;font-size:11.5px;gap:10px}
+  .card.tools .tool svg{width:17px;height:17px}
+}
 </style>
 </head>
 <body>
@@ -857,21 +912,32 @@ body.areaing #areabar{display:flex}
 
 <nav id="deck" aria-label="Archive controls">
   <div class="card notch">
-    <h3>Townships</h3>
+    <h3>Townships<span class="h3hint">show / hide</span></h3>
     <div id="townlist"></div>
   </div>
   <div class="card notch">
+    <h3>2017 Destruction<span class="h3hint">show / hide</span></h3>
+    <div id="st17list"></div>
+    <div class="sublbl">Colour the villages by</div>
+    <div class="seg">
+      <button id="cm-town" class="on" aria-pressed="true" title="Colour the villages by township">Township</button>
+      <button id="cm-st17" aria-pressed="false" title="Colour the villages by what was found in 2017">2017 status</button>
+    </div>
+  </div>
+  <div class="card notch">
     <h3>Optics</h3>
-    <div class="seg" style="margin-bottom:6px">
+    <div class="sublbl first">Basemap</div>
+    <div class="seg">
       <button id="bm-dark" class="on" aria-pressed="true">Grid</button>
       <button id="bm-sat" aria-pressed="false">Orbital</button>
     </div>
+    <div class="sublbl">Overlays</div>
     <div class="seg">
       <button id="gridbtn" aria-pressed="false">Graticule</button>
       <button id="labelsbtn" aria-pressed="false">Labels</button>
     </div>
   </div>
-  <div class="card notch">
+  <div class="card notch tools">
     <h3>Tools</h3>
     <button class="tool" id="registrybtn">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 5h18"/><path d="M3 12h18"/><path d="M3 19h18"/></svg>
@@ -945,6 +1011,7 @@ body.areaing #areabar{display:flex}
         </div>
       </div>
     </div>
+    <div id="status17" class="pcodes st17"></div>
     <div id="pcodes" class="pcodes"></div>
     <div class="actions">
       <button class="abtn primary" id="sharebtn">Share Link</button>
@@ -996,7 +1063,7 @@ body.areaing #areabar{display:flex}
     <div class="ivhead">
       <div class="ivtitle" id="ivtitle"></div>
       <div class="ivtabs">
-        <button id="ivclear" class="on">Clear</button><button id="ivlatest">Latest</button><button id="ivcompare">Compare</button>
+        <button id="ivclear" class="on">Clear</button><button id="ivlatest">Latest</button><button id="ivcompare">Compare</button><button id="ivzones" class="ivz" title="Outline the zones of destroyed buildings UNOSAT mapped in 2017">2017 zones</button>
       </div>
       <button class="mclose" data-close="imgviewer" aria-label="Close">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
@@ -1008,6 +1075,7 @@ body.areaing #areabar{display:flex}
       <div class="ivdiv" id="ivdiv"><span class="ivhandle" id="ivhandle" role="slider" aria-label="Drag to compare" tabindex="0">⇆</span></div>
       <div class="ivside l" id="ivsl"></div><div class="ivside r" id="ivsr"></div>
       <div class="ivmsg" id="ivmsg"></div>
+      <div class="ivzonenote" id="ivzonenote"><i></i>Destroyed zones · UNOSAT, imagery of 31 Aug – 11 Oct 2017</div>
     </div>
     <div class="ivcap" id="ivcap"></div>
   </div>
@@ -1346,13 +1414,13 @@ function addBatch(){
   const s = mSize(map.getZoom());
   const step = reduceMotion ? sortedPlot.length : 30;
   for (let k=0; k<step && addI<sortedPlot.length; k++, addI++){
-    const v = sortedPlot[addI], c = colorOf(v);
+    const v = sortedPlot[addI], c = markerColor(v);
     const m = L.circleMarker([+v.lat, +v.lng], { renderer, radius:s.r, fillColor:c, fillOpacity:.92, color:c, weight:s.w, opacity:.22 });
     m.bindTooltip(`<div class="tt-ro">${esc(roName(v))}</div><div class="tt-en">${esc(recId(v))} · ${esc(townOf(v))}</div>`,
       { className:'v-tip', direction:'top', offset:[0,-6] });
     m.on('click', () => { if (!measuring && !areaing) openVillage(v, false); });
     markers.set(v.id, m);
-    if (activeTowns.has(townOf(v))) m.addTo(map);
+    if (isShown(v)) m.addTo(map);
   }
   if (addI < sortedPlot.length){
     // rAF for smoothness + timer fallback so hidden/throttled tabs still finish
@@ -1365,7 +1433,7 @@ function applyFilters(){
   plottable.forEach(v => {
     const m = markers.get(v.id);
     if (!m) return;
-    const show = activeTowns.has(townOf(v));
+    const show = isShown(v);
     if (show && !map.hasLayer(m)) m.addTo(map);
     if (!show && map.hasLayer(m)) m.remove();
   });
@@ -1390,7 +1458,7 @@ refreshOpArea();
 if (!reduceMotion){
   setInterval(() => {
     if (document.hidden || measuring || !markers.size) return;
-    const pool = plottable.filter(v => activeTowns.has(townOf(v)) && markers.has(v.id));
+    const pool = plottable.filter(v => isShown(v) && markers.has(v.id));
     if (!pool.length) return;
     const v = pool[Math.floor(Math.random()*pool.length)];
     const r = L.marker([+v.lat,+v.lng], { interactive:false,
@@ -1423,6 +1491,118 @@ Object.entries(TOWN_COLORS).forEach(([t,c]) => {
   });
   townlist.appendChild(b);
 });
+
+/* ================= 2017 DESTRUCTION (UNOSAT) =================
+   What UNOSAT's satellite analysis of 31 Aug – 11 Oct 2017 marked at or near each village
+   (tools/match_unosat.py). d destroyed · n a destroyed zone nearby · z none detected · x not assessed.
+   "None detected" is not "standing": the imagery ends on 11 Oct 2017. */
+const ST17 = {
+  d:{ label:'Destroyed in 2017', short:'Destroyed', color:'#FF3B5C' },
+  n:{ label:'Destruction nearby in 2017', short:'Destruction nearby', color:'#FFB020' },
+  z:{ label:'No destruction detected in 2017', short:'None detected', color:'#8FA8C7' },
+  x:{ label:'Not assessed in 2017', short:'Not assessed', color:'#54708F' }
+};
+const ST17_URL = 'https://data.humdata.org/dataset/destroyed-areas-in-buthidaung-maungdaw-and-rathedaung-townships-of-rakhine-state-in-myanmar-2727';
+const st17 = v => (v.u && v.u.s) || 'x';
+const activeStatus = new Set(Object.keys(ST17));
+const isShown = v => activeTowns.has(townOf(v)) && activeStatus.has(st17(v));
+const st17Day = iso => { const d = new Date(iso + 'T00:00:00Z'); return d.getUTCDate() + ' ' + ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][d.getUTCMonth()] + ' ' + d.getUTCFullYear(); };
+function st17Text(v){
+  const u = v.u || {}, s = st17(v);
+  if (s === 'd') return 'UNOSAT marked ' + (u.h >= 0.1 ? u.h + ' hectares of destroyed buildings within 300 m of this village' : 'destroyed buildings at this village')
+    + ', first seen in satellite imagery of ' + st17Day(u.f) + '.';
+  if (s === 'n') return 'UNOSAT marked a destroyed zone ' + u.m + ' m from this village’s recorded point (imagery of ' + st17Day(u.f) + '). It may belong to a neighbouring settlement.';
+  if (s === 'z') return 'UNOSAT found no destroyed zone within 500 m in imagery of 31 Aug – 11 Oct 2017. That is not proof the village stands: the imagery ends there.';
+  return 'This village lies outside the area UNOSAT analysed in 2017, so there is no assessment for it.';
+}
+function st17Html(v){
+  if (isUnverified(v)) return '';
+  const s = st17(v), u = v.u || {}, flags = [];
+  if (u.c === 'u') flags.push('UNOSAT rated these zones “uncertain”.');
+  if (u.cl) flags.push('Parts of the area were under cloud in some images.');
+  return '<div class="k">2017 · UNOSAT satellite analysis</div>'
+    + '<div class="sthead"><i style="background:' + ST17[s].color + '"></i>' + ST17[s].label + '</div>'
+    + '<div class="sttext">' + st17Text(v) + (flags.length ? ' ' + flags.join(' ') : '') + '</div>'
+    + (s === 'x' ? '' : '<button class="stbtn" id="st17btn" type="button">See before and after</button>')
+    + '<div class="psrc">Source: <a href="' + ST17_URL + '" target="_blank" rel="noopener">UNOSAT</a> · not field validated · CC BY-SA</div>';
+}
+document.getElementById('status17').addEventListener('click', e => { if (e.target.closest('#st17btn')) openEvidence(); });
+
+/* the zones themselves, drawn over the imagery viewer */
+let zonesData = null;
+function loadZones(){
+  return zonesData || (zonesData = fetch('/unosat_2017_zones.geojson').then(r => { if (!r.ok) throw new Error('zones'); return r.json(); })
+    .catch(e => { zonesData = null; throw e; }));
+}
+async function ivZones(on){
+  IV.zonesOn = on;
+  document.getElementById('ivzones').classList.toggle('on', on);
+  if (!on){ if (IV.zl) IV.zl.remove(); ivZoneNote(); return; }
+  try {
+    const data = await loadZones();
+    if (!IV.zl) IV.zl = L.geoJSON(data, { style:{ color:'#FFD400', weight:2, opacity:.95, fill:false }, interactive:false });
+    if (IV.zonesOn && IV.map) IV.zl.addTo(IV.map);
+  } catch(e){ showToast('// could not load the 2017 zones'); IV.zonesOn = false; document.getElementById('ivzones').classList.remove('on'); }
+  ivZoneNote();
+}
+function ivZoneNote(){
+  const el = document.getElementById('ivzonenote');
+  el.classList.toggle('show', !!IV.zonesOn);
+}
+document.getElementById('ivzones').addEventListener('click', () => ivZones(!IV.zonesOn));
+/* open the before/after view on the captures either side of the 2017 imagery, with the zones drawn */
+async function openEvidence(){
+  const v = current; if (!v || isUnverified(v)) return;
+  track('2017 evidence');
+  if (!IMG.histCache.has(v.id)){
+    showToast('// loading capture dates…');
+    const t0 = performance.now();
+    while (performance.now() - t0 < 9000 && current === v && !IMG.histCache.has(v.id)) await new Promise(r => setTimeout(r, 250));
+    if (current !== v) return;
+  }
+  const H = IMG.hist, before = new Date('2017-08-25'), after = new Date('2017-10-11');
+  const l = H.findIndex(h => h.date < before);                      // newest capture before the destruction
+  let r = -1; for (let i = H.length - 1; i >= 0; i--) if (H[i].date > after){ r = i; break; }   // earliest capture after it
+  openViewer(l >= 0 && r >= 0 ? 'compare' : 'clear');
+  if (l >= 0 && r >= 0){ IV.l = l; IV.r = r; ivShow('compare'); }
+  else showToast('// no capture from both before and after 2017 here — showing what exists');
+  ivZones(true);
+}
+
+/* map: colour and filter the villages by 2017 status */
+let colourBy = 'town';
+const markerColor = v => colourBy === 'st17' ? ST17[st17(v)].color : colorOf(v);
+function restyleMarkers(){
+  const byId = new Map(VILLAGES.map(v => [v.id, v]));
+  markers.forEach((m, id) => { const c = markerColor(byId.get(id)); m.setStyle({ fillColor:c, color:c }); });
+}
+(function st17Deck(){
+  const counts = {}; plottable.forEach(v => { counts[st17(v)] = (counts[st17(v)] || 0) + 1; });
+  const list = document.getElementById('st17list');
+  Object.entries(ST17).forEach(([s, o]) => {
+    if (!counts[s]) return;
+    const b = document.createElement('button');
+    b.className = 'town'; b.setAttribute('aria-pressed', 'true');
+    b.innerHTML = `<span class="sw" style="background:${o.color};color:${o.color};border-radius:50%"></span><span class="nm">${o.short}</span><span class="ct">${counts[s]}</span>`;
+    b.addEventListener('click', () => {
+      if (activeStatus.has(s)) activeStatus.delete(s); else activeStatus.add(s);
+      b.classList.toggle('off', !activeStatus.has(s));
+      b.setAttribute('aria-pressed', String(activeStatus.has(s)));
+      applyFilters();
+    });
+    list.appendChild(b);
+  });
+  const set = mode => {
+    colourBy = mode;
+    document.getElementById('cm-town').classList.toggle('on', mode === 'town');
+    document.getElementById('cm-st17').classList.toggle('on', mode === 'st17');
+    document.getElementById('cm-town').setAttribute('aria-pressed', String(mode === 'town'));
+    document.getElementById('cm-st17').setAttribute('aria-pressed', String(mode === 'st17'));
+    restyleMarkers();
+  };
+  document.getElementById('cm-town').addEventListener('click', () => set('town'));
+  document.getElementById('cm-st17').addEventListener('click', () => { set('st17'); track('Colour by 2017 status'); });
+})();
 
 /* ================= OPTICS ================= */
 const bmDark=document.getElementById('bm-dark'), bmSat=document.getElementById('bm-sat');
@@ -1753,6 +1933,7 @@ function openVillage(v, fly){
   document.getElementById('p-district').textContent = v.district || '—';
   document.getElementById('p-tract').textContent = v.village_tract || '—';
   document.getElementById('pcodes').innerHTML = pcodesHtml(v);
+  document.getElementById('status17').innerHTML = st17Html(v);
   document.getElementById('unverified').classList.toggle('show', unv);
 
   const bmb=document.getElementById('bookmarkbtn');
@@ -2371,6 +2552,7 @@ document.getElementById('copyrec').addEventListener('click',()=>{
     'Township: '+(v.township||'—')+' · District: '+(v.district||'—')+' · Tract: '+(v.village_tract||'—'),
     'Coordinates: '+(isUnverified(v)?'UNVERIFIED':(+v.lat).toFixed(6)+', '+(+v.lng).toFixed(6)),
     pcodesText(v) ? 'Place codes ('+PCODE_SOURCE+'): '+pcodesText(v) : '',
+    isUnverified(v) ? '' : '2017 (UNOSAT satellite analysis, not field validated): '+ST17[st17(v)].label+'. '+st17Text(v),
     'Source: FARA — The Arakan Village Name Archive (data: map.rohingyakhobor.com)'
   ].filter(Boolean).join('\n');
   copyText(rec,'// record copied');
@@ -2646,6 +2828,7 @@ function printRecord(){
       ${row('District', esc(v.district || '—'))}
       ${row('Village tract', esc(v.village_tract || '—'))}
       ${row('Coordinates (WGS84)', unv ? '<i>unverified</i>' : (+v.lat).toFixed(6) + ', ' + (+v.lng).toFixed(6))}
+      ${unv ? '' : row('2017 · UNOSAT satellite analysis', '<b>' + ST17[st17(v)].label + '.</b> ' + st17Text(v) + ' Not field validated.')}
       ${PCODE_TOWNSHIP[v.township] ? pcodesOf(v).rows.map(([label, name, code, none]) => row(label + ' place code', code ? esc(code) + (name ? ' · ' + esc(name) : '') : '<i>' + none + '</i>')).join('') : ''}
     </table>
     <div class="ps-imgs" id="ps-imgs"></div>
@@ -2683,7 +2866,7 @@ const inPoly = (lat, lng, pts) => {
   }
   return inside;
 };
-const areaVillages = () => areaPts.length < 3 ? [] : plottable.filter(v => activeTowns.has(townOf(v)) && inPoly(+v.lat, +v.lng, areaPts));
+const areaVillages = () => areaPts.length < 3 ? [] : plottable.filter(v => isShown(v) && inPoly(+v.lat, +v.lng, areaPts));
 function drawArea(){
   if (areaLayer){ areaLayer.remove(); areaLayer = null; }
   if (!areaPts.length){ updateAreaBar(); return; }
@@ -2744,7 +2927,7 @@ checkHash();
 
 /* discover w/ radar */
 function discover(){
-  const pool = plottable.filter(v=>activeTowns.has(townOf(v)));
+  const pool = plottable.filter(v=>isShown(v));
   if (!pool.length) return;
   const v = pool[Math.floor(Math.random()*pool.length)];
   openVillage(v,true);
@@ -2809,7 +2992,8 @@ const REG_COLS = [
   ['village_name_mmr','Burmese', v=>v.village_name_mmr||'—','mmr'],
   ['village_tract','Tract', v=>v.village_tract||'—',''],
   ['township','Township', v=>v.township||'—',''],
-  ['coords','Coordinates', v=>isUnverified(v)?'UNVERIFIED':(+v.lat).toFixed(5)+', '+(+v.lng).toFixed(5), 'cco']
+  ['coords','Coordinates', v=>isUnverified(v)?'UNVERIFIED':(+v.lat).toFixed(5)+', '+(+v.lng).toFixed(5), 'cco'],
+  ['st17','2017 · UNOSAT', v=>isUnverified(v)?'—':ST17[st17(v)].short, 'cst']
 ];
 let regSort={key:'rohingya_name',dir:1}, regBuilt=false;
 function regFiltered(){
@@ -2821,7 +3005,7 @@ function regFiltered(){
   const k=regSort.key;
   rows.sort((a,b)=>{
     let x,y;
-    if (k==='id'){ x=a.id;y=b.id; } else if (k==='coords'){ x=+a.lat;y=+b.lat; }
+    if (k==='id'){ x=a.id;y=b.id; } else if (k==='coords'){ x=+a.lat;y=+b.lat; } else if (k==='st17'){ x='dnzx'.indexOf(st17(a)); y='dnzx'.indexOf(st17(b)); }
     else { x=(a[k]||'￿'); y=(b[k]||'￿'); }
     return (x<y?-1:x>y?1:0)*regSort.dir;
   });
@@ -2863,10 +3047,11 @@ function renderRegistry(){
 }
 function exportRegistry(){
   const rows=regFiltered();
-  const head=['id','rohingya_name','english_name','burmese_name','village_tract','township','district','lat','lng','coord_status','pcode_village','pcode_village_tract','pcode_township','pcode_district'];
+  const head=['id','rohingya_name','english_name','burmese_name','village_tract','township','district','lat','lng','coord_status','pcode_village','pcode_village_tract','pcode_township','pcode_district','unosat_2017','unosat_2017_destroyed_ha_within_300m','unosat_2017_nearest_zone_m','unosat_2017_first_seen'];
   const csv=[head.join(',')].concat(rows.map(v=>[
     v.id, v.rohingya_name||'', v.name||'', v.village_name_mmr||'', v.village_tract||'', v.township||'', v.district||'',
-    v.lat, v.lng, isUnverified(v)?'unverified':'ok', v.pv||'', v.pt||'', PCODE_TOWNSHIP[v.township]||'', PCODE_DISTRICT[v.district]||''
+    v.lat, v.lng, isUnverified(v)?'unverified':'ok', v.pv||'', v.pt||'', PCODE_TOWNSHIP[v.township]||'', PCODE_DISTRICT[v.district]||'',
+    isUnverified(v)?'':({d:'destroyed',n:'nearby',z:'none_detected',x:'not_assessed'})[st17(v)], (v.u&&v.u.h!=null)?v.u.h:'', (v.u&&v.u.m!=null)?v.u.m:'', (v.u&&v.u.f)||''
   ].map(x=>'"'+String(x).replace(/"/g,'""')+'"').join(','))).join('\n');
   const a=document.createElement('a');
   a.href=URL.createObjectURL(new Blob(['﻿'+csv],{type:'text/csv;charset=utf-8'}));
@@ -2965,7 +3150,7 @@ map.on('mousemove', e=>{
 });
 function updateViewCount(){
   const b=map.getBounds(); let n=0;
-  plottable.forEach(v=>{ if (activeTowns.has(townOf(v)) && b.contains([+v.lat,+v.lng])) n++; });
+  plottable.forEach(v=>{ if (isShown(v) && b.contains([+v.lat,+v.lng])) n++; });
   document.getElementById('sb-view').textContent=n.toLocaleString();
   document.getElementById('sb-z').textContent=map.getZoom();
 }

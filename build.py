@@ -93,6 +93,37 @@ def pcode_rows(v):
 
 # ------------------------------------------------------------------ the interactive archive
 KEYS = ['id', 'name', 'lat', 'lng', 'township', 'district', 'village_tract', 'rohingya_name', 'village_name_mmr', 'coord_status', 'slug']
+
+# what UNOSAT's 2017 satellite analysis marked at or near each village (tools/match_unosat.py)
+ST17 = {}
+if os.path.exists(p('status_unosat_2017.json')):
+    ST17 = json.load(open(p('status_unosat_2017.json'), encoding='utf-8'))['villages']
+ST17_URL = 'https://data.humdata.org/dataset/destroyed-areas-in-buthidaung-maungdaw-and-rathedaung-townships-of-rakhine-state-in-myanmar-2727'
+ST17_LABEL = {'destroyed': 'Destroyed in 2017', 'nearby': 'Destruction nearby in 2017',
+              'none_detected': 'No destruction detected in 2017', 'not_assessed': 'Not assessed in 2017'}
+MONTHS_LONG = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+def long_day(iso):
+    y, m, d = iso.split('-')
+    return '%d %s %s' % (int(d), MONTHS_LONG[int(m) - 1], y)
+def st17_sentence(v, name):
+    """(status, one careful sentence on what UNOSAT marked), or (None, None) when there is no verified location."""
+    r = ST17.get(str(v['id']))
+    if not r or r.get('reason') == 'no verified location': return None, None
+    s = r['status']
+    if s == 'destroyed':
+        ha = r.get('destroyed_ha_within_300m') or 0
+        extent = ": about %g hectares within 300 metres of the village's recorded location" % ha if ha >= 0.1 else ''
+        t = ("UNOSAT's analysis of satellite imagery from 31 August to 11 October 2017 marked destroyed buildings at %s%s, first seen in imagery of %s. "
+             "UNOSAT has not validated this on the ground." % (name, extent, long_day(r['first_seen'])))
+    elif s == 'nearby':
+        t = ("UNOSAT marked a zone of destroyed buildings %d metres from the recorded location of %s, in satellite imagery of %s. "
+             "It may belong to a neighbouring settlement; this record has not been reviewed individually." % (r['nearest_zone_m'], name, long_day(r['first_seen'])))
+    elif s == 'none_detected':
+        t = ("UNOSAT's analysis of satellite imagery from 31 August to 11 October 2017 found no destroyed zone within 500 metres of %s. "
+             "That does not show the village is standing: the imagery ends on 11 October 2017, some areas were under cloud, and destruction continued afterwards." % name)
+    else:
+        t = "%s lies outside the area UNOSAT analysed in 2017, so FARA holds no assessment for it." % name
+    return s, t
 def embed(r):
     # official MIMU place codes, kept short because they are repeated for every village:
     # pv village code, pt tract code, mn / mt MIMU's spelling where it differs from the archive's,
@@ -106,6 +137,16 @@ def embed(r):
     if ms.startswith('inactive'): d['ms'] = 'w' if ms.endswith('ward') else 'r'
     if ts.startswith('inactive'): d['ts'] = 'w' if ts.endswith('ward') else 't'
     if r.get('pcode_match') == 'unconfirmed': d['pm'] = 'u'
+    # u: UNOSAT 2017 — s status (d destroyed, n nearby, z none detected; absent = not assessed),
+    # h hectares marked destroyed within 300 m, m metres to the nearest zone, f first imagery date, c 'u' uncertain, cl cloud note
+    u = ST17.get(str(r['id']))
+    if u and u['status'] != 'not_assessed':
+        o = {'s': {'destroyed': 'd', 'nearby': 'n', 'none_detected': 'z'}[u['status']]}
+        if u.get('first_seen'):
+            o.update(h=u.get('destroyed_ha_within_300m'), m=u.get('nearest_zone_m'), f=u['first_seen'])
+            if u.get('confidence') == 'uncertain': o['c'] = 'u'
+            if u.get('cloud_note'): o['cl'] = 1
+        d['u'] = o
     return d
 data = json.dumps([embed(r) for r in V], ensure_ascii=False, separators=(',', ':'))
 app = open(p('fara_template.html'), encoding='utf-8').read().replace('__VILLAGE_DATA__', data)
@@ -232,6 +273,8 @@ for v in V:
     if v.get('pcode_village'): qa.append(('What is the official place code (P-code) of %s?' % name,
         'The MIMU place code of %s is %s%s. Its village tract code is %s and its township code is %s.' % (
             name, v['pcode_village'], ' (listed by MIMU as %s)' % v['mimu_village_name'] if v.get('mimu_village_name') else '', v['pcode_village_tract'], v['pcode_township'])))
+    st_code, st_text = st17_sentence(v, name)
+    if st_text: qa.append(('Was %s destroyed in 2017?' % name, st_text))
     if near: qa.append(('Which villages are near %s?' % name, 'The nearest villages in the archive are ' + ', '.join('%s (%s)' % (ro(x), fmt_dist(d)) for d, x in near[:5]) + '.'))
     qa.append(('What is FARA?', 'FARA, the Arakan Village Name Archive, preserves the names and locations of %s Rohingya villages across Arakan in Rohingya, English and Burmese, so that those names are never erased.' % '{:,}'.format(N)))
 
@@ -252,6 +295,11 @@ for v in V:
         body += ('<p class="note">%sPlace codes (P-codes) are the reference numbers the United Nations and aid agencies use for places in Myanmar. '
                  'They link this record to other datasets. Source: <a href="%s" rel="noopener">%s</a>, © Myanmar Information Management Unit. '
                  'The names beside the codes are MIMU\'s official spellings.</p>' % (''.join(n + ' ' for n in pc_notes), PCODE_URL, PCODE_SOURCE))
+    if st_text:
+        body += ('<h2>2017 · satellite analysis</h2><p class="lede st17"><b>%s.</b> %s</p>'
+                 '<p class="note">Source: <a href="%s" rel="noopener">UNOSAT, “Destroyed areas in Buthidaung, Maungdaw, and Rathedaung Townships”</a> (CC BY-SA), '
+                 'matched to this village by location. <a href="/#v=%d">Open the map</a> to compare satellite images from before and after.</p>'
+                 % (ST17_LABEL[st_code], esc(st_text), ST17_URL, v['id']))
     if near:
         body += '<h2>Nearby villages</h2><ul class="near">' + ''.join(
             '<li><a href="%s"><b>%s</b><span>%s</span></a><em>%s</em></li>' % (vurl(x), esc(ro(x)), esc(en(x)) if en(x) != ro(x) else '', fmt_dist(d)) for d, x in near) + '</ul>'
@@ -353,6 +401,7 @@ Rohingya village names are being renamed, depopulated and removed from official 
 - %(with_ro)s villages have a recorded Rohingya name; %(with_mm)s have a Burmese-script name. Missing names are stated as missing, not guessed.
 - Records with known data problems are flagged, never silently altered. One record has unverified coordinates.
 - Coordinates are decimal degrees, WGS84.
+- Each village also carries what UNOSAT's satellite analysis of 31 August – 11 October 2017 marked at or near it: destroyed, destruction nearby, none detected, or not assessed. "None detected" does not mean the village is standing; the imagery ends on 11 October 2017 and the analysis was not validated on the ground.
 - %(with_pc)s villages carry their official MIMU place code (P-code), with village tract, township and district codes, from %(pc_source)s. Villages MIMU has dropped from its list are marked inactive; villages with no official code are stated as having none.
 
 ## How the site is organised
@@ -365,6 +414,7 @@ Rohingya village names are being renamed, depopulated and removed from official 
 - [CSV](%(site)s/arakan_villages.csv)
 - [JSON](%(site)s/arakan_villages.json)
 - [GeoJSON](%(site)s/arakan_villages.geojson) (verified coordinates only)
+- [2017 destruction per village, CSV](%(site)s/status_unosat_2017.csv) and [the destroyed zones, GeoJSON](%(site)s/unosat_2017_zones.geojson): derived from UNOSAT data, CC BY-SA 4.0, credit UNOSAT
 - Fields: id, name (official romanised), rohingya_name, village_name_mmr (Burmese script), lat, lng, village_tract, township, district, coord_status, pcode_village, pcode_village_tract, pcode_township, pcode_district, mimu_village_name, mimu_village_tract_name, mimu_village_status, mimu_village_tract_status, pcode_match.
 - [Place-code matching, record by record](%(site)s/pcodes.csv): how each code was matched, and the few records still to be confirmed.
 

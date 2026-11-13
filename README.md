@@ -70,6 +70,16 @@ python3 tools/build_share.py
 
 writes the site icons (`favicon.svg`, `favicon.ico`, `icon-192.png`, `icon-512.png`, `apple-touch-icon.png`), `logo.svg` / `logo.png`, the site's share picture `og.png`, one share picture per village (`share/img/v/<id>.png`: names, township, tract, coordinates and a locator map), and one page and picture per village poster (`art/<id>/`, `share/img/art/<id>.png`). A poster shared from Map Art links to `/art/<id>`, which previews as a poster and opens Map Art on that village. Needs Google Chrome and Pillow; takes about five minutes. Run it again when village data changes.
 
+### 2017 destruction (UNOSAT)
+
+Every village carries what UNOSAT's satellite analysis of 31 August – 11 October 2017 marked at or near it.
+
+- **Four results:** *destroyed* (the village's point is inside a UNOSAT destroyed zone, or at least 1 hectare within 300 m is marked destroyed), *destruction nearby* (a zone within 500 m, but less than that), *none detected*, and *not assessed* (outside the area UNOSAT analysed: all of Sittwe and a few villages elsewhere). Counts: 243 / 81 / 596 / 103.
+- **"None detected" is not "standing":** the imagery ends on 11 October 2017, some areas were under cloud, destruction continued afterwards, and UNOSAT did not validate the zones on the ground. A village is one point and the zones are outlines, so the match is by distance.
+- **On the site:** a status block on each village record with a *See before and after* button, which opens the swipe view on the captures either side of the 2017 imagery with UNOSAT's zones outlined in yellow; a *2017 zones* toggle in the imagery viewer; a *2017 Destruction* card on the map to filter villages and colour them by status; a registry column and CSV fields; a section and a question on every village page; a line in the PDF record.
+- **Files:** `status_unosat_2017.json` / `.csv` (per village: status, distance to the nearest zone, hectares marked destroyed within 300 m, imagery dates, confidence), `unosat_2017_zones.geojson` (the 1,862 zones), `tools/match_unosat.py` (reproduces the match), `sources/unosat_2017/` (UNOSAT's original file and its provenance).
+- **Licence:** UNOSAT's data is CC BY-SA, so these derived files are CC BY-SA 4.0 too. Credit UNOSAT.
+
 ### Community, research and offline
 
 - **Suggest a name or correction** on every village record. Suggestions are never published directly; they go to the archive's keeper for review. Each suggestion is posted to FormSubmit (`SUGGEST_ENDPOINT` in the template), which forwards it by email to the keeper's inbox; if the visitor is offline or delivery fails it is kept on the device and sent later. With `SUGGEST_ENDPOINT` empty, the visitor's email app opens with the suggestion written out instead.
