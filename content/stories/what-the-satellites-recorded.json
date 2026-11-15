@@ -1,0 +1,51 @@
+{
+  "slug": "what-the-satellites-recorded",
+  "date": "2026-11-16",
+  "kicker": "Northern Arakan · autumn 2017",
+  "title": "What the satellites recorded",
+  "description": "What satellites recorded in northern Arakan in autumn 2017: the 1,862 destroyed zones the UN mapped, set against 1,023 Rohingya villages by name.",
+  "summary": "In the autumn of 2017, satellites passing over northern Arakan photographed Rohingya villages, and analysts at the United Nations mapped where buildings had been destroyed. This is what that record shows for the villages in this archive, and what it cannot show.",
+  "village": 441,
+  "steps": [
+    {
+      "map": { "fit": "all", "base": "dark", "dots": "town", "lines": true, "legend": "town" },
+      "html": "<p class=\"k\">The archive</p><h2>{{n}} villages, each with a name</h2><p>Every dot is a Rohingya village in one of four townships of Arakan, the land Myanmar calls Rakhine State: Maungdaw, Buthidaung, Rathedaung and Sittwe.</p><p>FARA keeps each village's name as its people say it, beside its official name and its name in Burmese. <b>Fará</b> is the Rohingya word for village.</p>"
+    },
+    {
+      "map": { "fit": ["Maungdaw", "Buthidaung", "Rathedaung"], "base": "dark", "dots": "town", "lines": true, "legend": "town" },
+      "html": "<p class=\"k\">August 2017</p><h2>The villages emptied</h2><p>From late August 2017, more than 750,000 Rohingya fled to Bangladesh, according to the UN refugee agency. Most came from the three northern townships on this map.</p><p>What happened to the places they left was recorded from above.</p>"
+    },
+    {
+      "map": { "at": "village", "zoom": 16, "base": "before", "dots": "none", "pin": true, "caption": "<b>Photographed {{cap_before}}</b> · Esri World Imagery, Wayback archive" },
+      "html": "<p class=\"k\">One village</p><div class=\"names\"><b>{{v_name}}</b><span>{{v_official}} on official maps · {{v_tract}} tract, {{v_town}} township</span></div><p>This is {{v_name}} on {{cap_before}}: the most recent picture of it in Esri's archive from before August 2017.</p><p>The village sits under its trees, between the shore and a bend in the river. The ring marks its recorded position.</p>"
+    },
+    {
+      "map": { "at": "village", "zoom": 16, "base": "after", "dots": "none", "pin": true, "zones": true, "caption": "<b>Photographed {{cap_after}}</b> · yellow line: destroyed zone mapped by UNOSAT" },
+      "html": "<p class=\"k\">The same ground</p><h2>{{cap_after}}</h2><p>The same place, in the earliest picture the archive holds from after that autumn. The yellow line is the area that UNOSAT, the United Nations satellite centre, mapped as destroyed: about <b>{{v_ha}} hectares</b> within 300 metres of the village's recorded position, first seen in a satellite image of {{v_first}}.</p><p class=\"sbtns\"><a class=\"sbtn primary\" href=\"{{v_story}}\">The story of {{v_name}}</a><a class=\"sbtn\" href=\"/#v={{v_id}}\">Compare the two pictures yourself</a></p>"
+    },
+    {
+      "map": { "fit": "Maungdaw", "base": "sat", "dots": "none", "zones": true, "lines": true, "caption": "<b>Yellow:</b> zones of destroyed buildings mapped by UNOSAT in imagery of 31 Aug – 11 Oct 2017" },
+      "html": "<p class=\"k\">The survey</p><div class=\"big\"><b>{{n_zones}}</b><span>destroyed zones<br>mapped by UNOSAT</span></div><p>UNOSAT studied satellite images of Maungdaw, Buthidaung and Rathedaung taken between 31 August and 11 October 2017, and outlined every zone where it found buildings destroyed.</p><p>It mapped {{n_zones}} zones, about {{zone_ha}} hectares in all. This is Maungdaw township, where most of them lie.</p>"
+    },
+    {
+      "map": { "fit": ["Maungdaw", "Buthidaung", "Rathedaung"], "base": "dark", "dots": "st17", "lines": true, "legend": "st17" },
+      "html": "<p class=\"k\">Against the names</p><div class=\"big red\"><b>{{n_destroyed}}</b><span>villages in this archive<br>with destroyed buildings</span></div><p>Set against the villages FARA has on record, {{n_destroyed}} had destroyed buildings mapped at their recorded position. Another {{n_nearby}} had a destroyed zone within 500 metres.</p><table><thead><tr><th>Township</th><th><i style=\"background:#FF3B5C\"></i>Destroyed</th><th><i style=\"background:#FFB020\"></i>Nearby</th><th><i style=\"background:#8FA8C7\"></i>None seen</th></tr></thead><tbody><tr><td>Maungdaw</td><td>{{maungdaw_d}}</td><td>{{maungdaw_n}}</td><td>{{maungdaw_z}}</td></tr><tr><td>Buthidaung</td><td>{{buthidaung_d}}</td><td>{{buthidaung_n}}</td><td>{{buthidaung_z}}</td></tr><tr><td>Rathedaung</td><td>{{rathedaung_d}}</td><td>{{rathedaung_n}}</td><td>{{rathedaung_z}}</td></tr></tbody></table>"
+    },
+    {
+      "map": { "fit": ["Maungdaw", "Buthidaung", "Rathedaung"], "base": "dark", "dots": "st17", "lines": true, "legend": "st17" },
+      "html": "<p class=\"k\">What it cannot show</p><h2>“None detected” is not “still standing”</h2><p>At {{n_none}} villages UNOSAT marked no destroyed zone within 500 metres. That is not proof those villages stand.</p><p>The imagery ends on 11 October 2017. Parts of the area were under cloud. Destruction went on after that date, and UNOSAT did not check its findings on the ground.</p><p>Sittwe township, with {{sittwe_all}} villages in this archive, lay outside the survey altogether.</p>"
+    },
+    {
+      "map": { "fit": "all", "base": "dark", "dots": "town", "lines": true, "legend": "town" },
+      "html": "<p class=\"k\">The names remain</p><h2>Every village had a name</h2><p>A village is more than its buildings. Its name carries the memory of the people who lived there, and a name is the easiest thing to erase: by renaming a place, or by leaving it off the map.</p><p>FARA keeps the names. If you know one this archive is missing or has wrong, tell us.</p><p class=\"sbtns\"><a class=\"sbtn primary\" href=\"/stories/#villages\">The stories of {{n_stories}} villages</a><a class=\"sbtn\" href=\"/\">Open the archive</a><a class=\"sbtn\" href=\"/township/maungdaw/gazetteer/\">Printable gazetteers</a><a class=\"sbtn\" href=\"/#v={{v_id}}&amp;suggest\">Suggest a name</a></p>"
+    }
+  ],
+  "sources": [
+    { "name": "UNOSAT: Destroyed areas in Buthidaung, Maungdaw, and Rathedaung Townships of Rakhine State in Myanmar", "url": "https://data.humdata.org/dataset/destroyed-areas-in-buthidaung-maungdaw-and-rathedaung-townships-of-rakhine-state-in-myanmar-2727", "note": "the destroyed zones and their dates. CC BY-SA. Analysis from satellite imagery, not validated on the ground." },
+    { "name": "Esri World Imagery Wayback", "url": "https://livingatlas.arcgis.com/wayback/", "note": "the two satellite pictures and their capture dates." },
+    { "name": "UNHCR: Rohingya emergency", "url": "https://www.unhcr.org/emergencies/rohingya-emergency", "note": "the number of people who fled to Bangladesh from August 2017." },
+    { "name": "Rohingya Khobor: Arakan Maps Project", "url": "https://map.rohingyakhobor.com/map", "note": "village names and positions." },
+    { "name": "UN OCHA: Myanmar Subnational Administrative Boundaries (COD-AB)", "url": "https://data.humdata.org/dataset/cod-ab-mmr", "note": "township boundaries. CC BY-IGO." }
+  ],
+  "method": "How villages were matched: a village is counted as destroyed when a UNOSAT zone covers its recorded position or at least one hectare is marked destroyed within 300 metres of it, and as “nearby” when any zone lies within 500 metres. Matching is by position only and has not been reviewed village by village. The per-village results are in <a href=\"/status_unosat_2017.csv\">status_unosat_2017.csv</a>."
+}

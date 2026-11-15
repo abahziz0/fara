@@ -21,6 +21,14 @@ Rohingya village names are being renamed, depopulated and removed from official 
 - [Rathedaung township](https://map.rohingya.ro/township/rathedaung/)
 - [Sittwe township](https://map.rohingya.ro/township/sittwe/)
 - One page per village at https://map.rohingya.ro/village/<id>-<name>/ with names, location, nearby villages and a short question-and-answer section.
+- Printable gazetteers, one per township, with every village's names, coordinates and place code and a map of every village tract:
+  - [Maungdaw township gazetteer](https://map.rohingya.ro/township/maungdaw/gazetteer/) · [PDF](https://map.rohingya.ro/downloads/fara-gazetteer-maungdaw.pdf)
+  - [Buthidaung township gazetteer](https://map.rohingya.ro/township/buthidaung/gazetteer/) · [PDF](https://map.rohingya.ro/downloads/fara-gazetteer-buthidaung.pdf)
+  - [Rathedaung township gazetteer](https://map.rohingya.ro/township/rathedaung/gazetteer/) · [PDF](https://map.rohingya.ro/downloads/fara-gazetteer-rathedaung.pdf)
+  - [Sittwe township gazetteer](https://map.rohingya.ro/township/sittwe/gazetteer/) · [PDF](https://map.rohingya.ro/downloads/fara-gazetteer-sittwe.pdf)
+- [Stories](https://map.rohingya.ro/stories/): guided accounts told with the map and the satellite record. One written account of autumn 2017 (https://map.rohingya.ro/stories/what-the-satellites-recorded/) and one story at https://map.rohingya.ro/stories/<id>-<name>/ for each of the 324 villages where UNOSAT mapped destruction at or beside the village, with the dated satellite pictures from before and after.
+- An embeddable card for every village at https://map.rohingya.ro/embed/<id>/ (for use in an iframe; it links back to the village page).
+- On the map: township and village-tract boundaries, the whole map in the imagery of earlier years (2014 onwards), and a browse list (township, village tract, village) for finding a village without typing.
 
 ## Data
 - [CSV](https://map.rohingya.ro/arakan_villages.csv)
@@ -29,6 +37,8 @@ Rohingya village names are being renamed, depopulated and removed from official 
 - [2017 destruction per village, CSV](https://map.rohingya.ro/status_unosat_2017.csv) and [the destroyed zones, GeoJSON](https://map.rohingya.ro/unosat_2017_zones.geojson): derived from UNOSAT data, CC BY-SA 4.0, credit UNOSAT
 - Fields: id, name (official romanised), rohingya_name, village_name_mmr (Burmese script), lat, lng, village_tract, township, district, coord_status, pcode_village, pcode_village_tract, pcode_township, pcode_district, mimu_village_name, mimu_village_tract_name, mimu_village_status, mimu_village_tract_status, pcode_match.
 - [Place-code matching, record by record](https://map.rohingya.ro/pcodes.csv): how each code was matched, and the few records still to be confirmed.
+- [Satellite capture dates per village](https://map.rohingya.ro/captures.json): for each village, the dates of the images Esri's World Imagery Wayback archive holds (looked up by tools/build_captures.py).
+- [Township and village-tract boundaries](https://map.rohingya.ro/boundaries.json): from UN OCHA's COD-AB dataset for Myanmar (source MIMU), CC BY-IGO; approximate, about 1:250,000.
 
 ## Citing
 Cite a record as: FARA — The Arakan Village Name Archive, record FARA-<id>, "<village name>", followed by the page URL.

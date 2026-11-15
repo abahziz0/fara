@@ -88,6 +88,24 @@ Every village carries what UNOSAT's satellite analysis of 31 August – 11 Octob
 - **Works offline**: a service worker saves the app, and the map tiles you have looked at, on the device. Pages load from the network when online, so updates arrive normally.
 - **Usage statistics**: Vercel Web Analytics (no cookies, no personal data). Enable it once under the project's Analytics tab in Vercel.
 
+### Finding, reading the past, and taking it with you
+
+- **Browse without typing** (`B`, or the Browse button in the search bar): township → village tract → village. For people who know where a village is but not how its name is spelt in Latin letters. On a computer the map moves to the tract as you choose it.
+- **Borders** (`O`, under Optics → Overlays): township and village-tract boundaries, with tract names once zoomed in. Tapping a tract name lists its villages; the tract of the open village is outlined. Each border is drawn once (not once per side). Source: UN OCHA's *Myanmar Subnational Administrative Boundaries* (COD-AB, source MIMU), **CC BY-IGO**, about 1:250,000, so approximate. MIMU's own download of the same boundaries may not be used on an online platform without written agreement, which is why the openly licensed COD-AB edition is used. Built by `tools/build_boundaries.py` into `boundaries.json`.
+- **Imagery by year** (`Y`, the "Imagery" bar at the bottom of the map; the clock button on phones): shows the whole map in the last edition of Esri's World Imagery published in each year from 2014. An edition holds the newest pictures Esri had at the time, so a picture can be older than its edition; the capture date at the centre of the map is looked up and shown when zoomed in.
+- **Instant capture dates**: the dates of every earlier satellite capture of every village are looked up ahead of time by `tools/build_captures.py` (about 34,000 requests to Esri's Wayback archive, 45 minutes) and saved in `captures.json`, so the timeline in a village record appears at once. The site then only asks Esri whether anything newer has been published. Run the script again every few months (`--refresh`); it only asks for what is new.
+- **Download an image** (in the imagery viewer): what is on screen as one picture, with the village's names, the capture date, a scale bar, the sources and a link. In Compare it holds both dates of the same ground.
+- **Annotate** (in the imagery viewer): arrows, circles, boxes, freehand lines and short notes. Marks are stored by latitude and longitude, so they stay on the same building when the date changes, and they are part of the downloaded image (which says the marks were added by its maker). Nothing is uploaded.
+- **Embed**: every village has a small card at `/embed/<id>/` for use in an `<iframe>` on another site (button in the village record, and the code is on each village page). No cookies, no tracking.
+- **Printable gazetteers**: one booklet per township at `/township/<name>/gazetteer/`, designed for A4: cover, how to read it, a key map of the village tracts, every village by tract (Rohingya name, official name, Burmese, coordinates, place code, 2017 status) with a small map of each tract, an A–Z index of both Rohingya and official names, and a page of ruled lines for names it is missing. `python3 tools/build_pdfs.py` prints them to `downloads/fara-gazetteer-<township>.pdf` with Chrome.
+- **Stories** at `/stories/`: accounts where the map moves as you scroll. Two kinds, one engine (`stories.js`, `stories.css`):
+  - *Written stories*: one file each in `content/stories/` (text plus what the map should show at each step). `{{tokens}}` in the text are filled with numbers from the data at build time, so a story cannot drift from the archive.
+  - *Village stories*: one for each of the 324 villages where UNOSAT mapped destruction at or beside the village in 2017, at `/stories/<id>-<name>/`. They are generated: where the village is, the last satellite picture from before August 2017, the first one after with UNOSAT's finding, the newest picture, the township's numbers, and links on. The text states dates and UNOSAT's figures only; it never describes what a picture shows.
+  - *The index* at `/stories/` lists every story by township, with a name filter, township and finding switches, and a small map whose dots are links.
+  - *Found by search engines*: every story has its own title and description (no two alike), one H1, Article and Breadcrumb structured data, a link preview picture, and is in `sitemap.xml`. Each village page, township page and village record links to its story; each story links to its village, township, four neighbouring stories and the next and previous story.
+  - *Fast*: the text is in the page and shows before any script runs; scripts are deferred; what all stories share (village dots, township borders) is one cached file, `stories/data.js`; the destroyed zones around a village travel inside its page; the pictures for the next step are fetched while the reader is still on the current one. A first visit to a village story is about 40 KB compressed, plus the map library and tiles.
+- **Caching**: `vercel.json` tells browsers to keep share pictures, icons and PDFs for a week, and data files and stylesheets for an hour (then refresh in the background). Pages themselves are always checked for a newer copy.
+
 ## Coverage
 
 | Township   | Villages | District |
@@ -154,7 +172,12 @@ Every record carries the place codes the United Nations and aid agencies use for
 | `summary.json` | Counts, coverage, corrections log |
 | `pcodes.json`, `pcodes.csv`, `pcodes_review.csv` | Official MIMU place codes matched to every record, and the records needing review |
 | `tools/add_pcodes.py` | Writes the place codes from `pcodes.json` into the data files |
-| `build.py` | Builds the whole static site from the template and the dataset |
+| `build.py`, `build_extra.py` | Build the whole static site from the template and the dataset (the second: embed cards, gazetteers, stories) |
+| `tools/build_captures.py`, `captures.json`, `sources/esri_wayback/` | Satellite capture dates for every village, looked up ahead of time (the folder keeps the raw answers so later runs only ask for what is new) |
+| `tools/build_boundaries.py`, `boundaries.json`, `sources/cod_ab_mmr/` | Township and village-tract boundaries (UN OCHA COD-AB, CC BY-IGO) |
+| `tools/build_pdfs.py`, `downloads/`, `gazetteer.css` | The printable township gazetteers as PDFs, and their print design |
+| `content/stories/`, `stories/`, `stories.js`, `stories.css` | Story texts, the generated story pages, and the scrolling-map engine |
+| `embed/` | Generated embed cards, one per village |
 | `village/`, `township/`, `villages/` | Generated record and index pages |
 | `pages.css` | Styles for the generated pages |
 | `sitemap.xml`, `robots.txt`, `llms.txt`, `og.png` | Search engine, AI assistant and link-preview files |

@@ -28,6 +28,10 @@
 <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect x="0" y="0" width="64" height="64" fill="%2303101E"/><rect x="6" y="6" width="52" height="52" fill="none" stroke="%2300E5FF" stroke-opacity=".28" stroke-width="1.5"/><path d="M6 6h16v3.5H9.5V22H6zM58 58H42v-3.5h12.5V42H58z" fill="%2300E5FF"/><g transform="translate(17.00,7.08) scale(0.06637)"><path d="M 0 726 L 0 631 L 153 631 C 204.3 631 243.8 617.2 271.5 589.5 C 299.2 561.8 313 522.3 313 471 L 313 388 C 313 360.7 308.2 339.5 298.5 324.5 C 288.8 309.5 275 302 257 302 C 243.7 302 232.3 307 223 317 C 213.7 327 209 339 209 353 C 209 371.7 216.8 386.2 232.5 396.5 C 248.2 406.8 270.3 412 299 412 L 353 412 L 353 519 L 288 519 C 247.3 519 211.5 512 180.5 498 C 149.5 484 125.3 464.5 108 439.5 C 90.7 414.5 82 385.7 82 353 C 82 322.3 89.7 295.2 105 271.5 C 120.3 247.8 141.3 229.2 168 215.5 C 194.7 201.8 225 195 259 195 C 317 195 363.7 212.7 399 248 C 434.3 283.3 452 330 452 388 L 452 476 C 452 562 428.7 629.3 382 678 C 335.3 726.7 270.3 751 187 751 L 106 751 C 89.3 751 70.3 748.5 49 743.5 C 27.7 738.5 11.3 732.7 0 726 Z" fill="%2300E5FF"/><path d="M 260 144 C 239.3 144 223 137.7 211 125 C 199 112.3 193 94.7 193 72 C 193 49.3 199 31.7 211 19 C 223 6.3 239.3 0 260 0 C 281.3 0 297.8 6.3 309.5 19 C 321.2 31.7 327 49.3 327 72 C 327 94.7 321.2 112.3 309.5 125 C 297.8 137.7 281.3 144 260 144 Z" fill="%23fff"/></g></svg>'>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link rel="preconnect" href="https://server.arcgisonline.com" crossorigin>
+<link rel="dns-prefetch" href="https://services.arcgisonline.com">
+<link rel="dns-prefetch" href="https://wayback.maptiles.arcgis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Share+Tech+Mono&family=Noto+Sans+Myanmar:wght@400;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <script defer src="/_vercel/insights/script.js"></script>
@@ -139,8 +143,9 @@ input,select{font-family:inherit}
 #kbtn{display:flex;align-items:center;gap:8px;padding:0 16px;border-left:1px solid var(--line-soft);color:var(--text-dim);font-family:'Share Tech Mono',monospace;font-size:11px;letter-spacing:.08em;transition:color .2s;cursor:pointer}
 #kbtn:hover{color:var(--cyan)}
 #kbtn .kb{border:1px solid var(--line-soft);border-radius:4px;padding:2px 6px;font-size:10px}
-#aboutbtn,#posterbtn{display:flex;align-items:center;gap:7px;padding:0 16px;border-left:1px solid var(--line-soft);color:var(--text-dim);font-family:'Share Tech Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;transition:color .2s;cursor:pointer}
-#aboutbtn:hover,#posterbtn:hover{color:var(--cyan)}
+#aboutbtn,#posterbtn,#storiesbtn{display:flex;align-items:center;gap:7px;padding:0 16px;border-left:1px solid var(--line-soft);color:var(--text-dim);font-family:'Share Tech Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;transition:color .2s;cursor:pointer}
+#aboutbtn:hover,#posterbtn:hover,#storiesbtn:hover{color:var(--cyan)}
+#storiesbtn{text-decoration:none}
 #sysstat{display:flex;align-items:center;gap:8px;padding:0 18px;border-left:1px solid var(--line-soft);font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:.14em;color:var(--green)}
 #sysstat .dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green);animation:blink 2.2s infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.35}}
@@ -629,7 +634,7 @@ button:focus-visible,input:focus-visible,a:focus-visible,select:focus-visible{ou
   body.searching #results,body.searching #recent{flex:1;min-height:0;max-height:none;margin-top:8px;overflow-y:auto;border:none;background:none;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;padding-bottom:46vh;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
   body.searching #results:not(.open){display:none}
   body.searching #recent{display:block}
-  body.searching #results.open + #recent{display:none}
+  body.searching #results.open ~ #recent{display:none}
   .res{padding:13px 6px;min-height:58px}
   .res .rn{font-size:15.5px}
   .res .re{font-size:12px}
@@ -809,6 +814,8 @@ body.areaing #areabar{display:flex}
 .st17 .sttext{font-size:12.5px;line-height:1.55;color:var(--text-dim)}
 .st17 .stbtn{display:flex;align-items:center;justify-content:center;width:100%;margin-top:10px;padding:9px;border:1px solid var(--cyan-dim);background:rgba(0,229,255,.08);color:var(--cyan);font-family:'Share Tech Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:all .2s}
 .st17 .stbtn:hover{background:rgba(0,229,255,.16);box-shadow:0 0 14px rgba(0,229,255,.15)}
+.st17 .stbtn.story{margin-top:7px;background:none;border-color:var(--line);color:var(--text);text-decoration:none}
+.st17 .stbtn.story:hover{border-color:var(--cyan-dim);color:var(--cyan);background:rgba(0,229,255,.06)}
 #panel.ward .st17{display:none}
 #regtable .cst{font-family:'Share Tech Mono',monospace;font-size:10.5px;color:var(--text-dim)}
 .ivtabs>button.ivz{margin-left:8px;border-style:dashed}
@@ -872,6 +879,177 @@ body.areaing #areabar{display:flex}
 .ivchip .spin{width:9px;height:9px;border-width:1.5px}
 .ivdating{margin-left:8px;white-space:nowrap}
 @media (prefers-reduced-motion:reduce){.spin{animation-duration:2.4s}.ivprog i{animation:none;width:100%;opacity:.5}}
+
+/* ============ BROWSE · BORDERS · IMAGERY BY YEAR ============ */
+#browsebtn{flex:none;display:flex;align-items:center;gap:6px;padding:5px 9px;border:1px solid var(--line-soft);color:var(--text-dim);font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:all .2s;white-space:nowrap}
+#browsebtn:hover,#browsebtn.on{color:var(--cyan);border-color:var(--cyan-dim);background:rgba(0,229,255,.07)}
+#browsebtn svg{width:13px;height:13px}
+#browse{margin-top:6px;max-height:min(56vh,520px);overflow-y:auto;display:none;background:var(--panel);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--line);box-shadow:0 12px 40px rgba(0,0,0,.55);scrollbar-width:thin;scrollbar-color:rgba(0,229,255,.25) transparent}
+#browse.open{display:block}
+#browse::-webkit-scrollbar{width:5px}#browse::-webkit-scrollbar-thumb{background:rgba(0,229,255,.25)}
+.brhead{position:sticky;top:0;z-index:2;display:flex;align-items:center;gap:9px;min-height:40px;padding:7px 12px;background:var(--panel-solid);border-bottom:1px solid var(--line);font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-faint)}
+.brhead .crumb{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.brhead .crumb b{color:var(--cyan);font-weight:400}
+.brhead .crumb i{font-style:normal;opacity:.6;margin:0 5px}
+.brhead button{flex:none;display:flex;align-items:center;gap:5px;padding:5px 9px;border:1px solid var(--line-soft);color:var(--text-dim);font:inherit;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:all .2s}
+.brhead button:hover{color:var(--cyan);border-color:var(--cyan-dim)}
+#browse .res .rt{white-space:nowrap}
+#browse .res .rt b{color:var(--text);font-weight:400;font-size:12px;letter-spacing:.04em}
+#browse .res .go{flex:none;color:var(--cyan);opacity:.7;font-family:'Share Tech Mono',monospace}
+#browse .res.all{background:rgba(0,229,255,.04)}
+#browse .res.all .rn{color:var(--cyan)}
+.brnote{padding:9px 14px;font-family:'Share Tech Mono',monospace;font-size:10px;line-height:1.6;color:var(--text-faint);border-top:1px solid var(--line-soft)}
+
+.seg.three{grid-template-columns:1fr 1fr 1fr;gap:5px}
+.seg.three button{padding:8px 2px;font-size:9.5px;letter-spacing:.03em}
+.tlbl{position:absolute;left:0;top:0;transform:translate(-50%,-50%);white-space:nowrap;font-family:'Share Tech Mono',monospace;text-transform:uppercase;color:#EAFBFF;text-shadow:0 0 3px #02050A,0 0 3px #02050A,0 1px 6px #02050A;pointer-events:auto;cursor:pointer;transition:color .15s}
+.tlbl.tl-tract{font-size:9.5px;letter-spacing:.14em;opacity:.92}
+.tlbl.tl-tract:hover{color:var(--cyan)}
+.tlbl.tl-town{font-size:13px;letter-spacing:.34em;font-weight:700;color:#fff;cursor:default;pointer-events:none}
+.tlbl.tl-town small{display:block;margin-top:2px;font-size:9px;letter-spacing:.2em;opacity:.8;text-align:center;font-weight:400}
+
+#timebar{position:fixed;left:50%;bottom:44px;transform:translateX(-50%);z-index:var(--z-hud);display:none;flex-direction:column;align-items:stretch;background:var(--panel);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);box-shadow:0 8px 30px rgba(0,0,0,.5);font-family:'Share Tech Mono',monospace}
+body.sat #timebar{display:flex}
+#timepill{display:flex;align-items:center;gap:8px;padding:8px 13px;color:var(--text-dim);font-family:inherit;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;white-space:nowrap;transition:color .2s}
+#timepill:hover{color:var(--text)}
+#timepill svg{flex:none;width:13px;height:13px;color:var(--cyan)}
+#timepill b{color:var(--cyan);font-weight:400;letter-spacing:.1em}
+#timepill .chev{width:11px;height:11px;margin-left:2px;transition:transform .2s;color:var(--text-faint)}
+#timebar.open #timepill .chev{transform:rotate(180deg)}
+#timebar.past{border-color:rgba(255,176,32,.6);box-shadow:0 0 18px rgba(255,176,32,.16),0 8px 30px rgba(0,0,0,.5)}
+#timebar.past #timepill b,#timebar.past #timepill svg:first-child{color:var(--amber)}
+#timebody{display:none;width:min(470px,calc(100vw - 40px));padding:4px 14px 12px;border-top:1px solid var(--line-soft)}
+#timebar.open #timebody{display:block}
+#timebar.open #timepill{justify-content:center}
+.tmrow{display:flex;align-items:center;gap:8px;margin-top:8px}
+.tmrow button{flex:none;width:28px;height:28px;display:grid;place-items:center;border:1px solid var(--line-soft);color:var(--text-dim);font-size:12px;cursor:pointer;transition:all .2s}
+.tmrow button:hover:not(:disabled){color:var(--cyan);border-color:var(--cyan-dim)}
+.tmrow button:disabled{opacity:.3;cursor:default}
+#timerange{flex:1;min-width:0;height:28px;margin:0;background:transparent;-webkit-appearance:none;appearance:none;cursor:pointer}
+#timerange::-webkit-slider-runnable-track{height:2px;background:linear-gradient(90deg,rgba(0,229,255,.2),var(--cyan-dim))}
+#timerange::-moz-range-track{height:2px;background:linear-gradient(90deg,rgba(0,229,255,.2),var(--cyan-dim))}
+#timerange::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;margin-top:-7px;border-radius:50%;background:var(--bg);border:2px solid var(--cyan);box-shadow:0 0 10px rgba(0,229,255,.7)}
+#timerange::-moz-range-thumb{width:13px;height:13px;border-radius:50%;background:var(--bg);border:2px solid var(--cyan);box-shadow:0 0 10px rgba(0,229,255,.7)}
+#timebar.past #timerange::-webkit-slider-thumb{border-color:var(--amber);box-shadow:0 0 10px rgba(255,176,32,.7)}
+#timebar.past #timerange::-moz-range-thumb{border-color:var(--amber);box-shadow:0 0 10px rgba(255,176,32,.7)}
+#timerange:focus-visible{outline:1px solid var(--cyan-dim);outline-offset:2px}
+.tmticks{display:flex;justify-content:space-between;margin:1px 44px 0;font-size:9px;color:var(--text-faint);user-select:none}
+.tmticks span{flex:1 1 0;min-width:0;text-align:center;cursor:pointer;padding:3px 0;transition:color .15s}
+.tmticks span:hover{color:var(--text)}
+.tmticks span.on{color:var(--cyan)}
+#timebar.past .tmticks span.on{color:var(--amber)}
+.tmnote{margin-top:8px;font-size:10px;line-height:1.55;color:var(--text-dim);letter-spacing:.02em;text-align:center}
+.tmnote b{color:var(--text);font-weight:400}
+.tmnote .cap{display:block;margin-top:3px;color:var(--text-faint);min-height:15px}
+.tmnote .cap b{color:var(--cyan)}
+.tmnote .spin{width:9px;height:9px;border-width:1.5px;margin-right:6px}
+#timecross{position:fixed;left:50%;top:50%;width:22px;height:22px;margin:-11px 0 0 -11px;z-index:var(--z-map);pointer-events:none;display:none;opacity:.85}
+#timecross::before,#timecross::after{content:"";position:absolute;background:#fff;box-shadow:0 0 3px #000}
+#timecross::before{left:10px;top:0;width:2px;height:22px}
+#timecross::after{top:10px;left:0;height:2px;width:22px}
+body.sat.timeopen #timecross{display:block}
+body.sat #toast{bottom:92px}
+body.sat.timeopen #toast{bottom:198px}
+#fab-time{display:none}
+@media (max-width:760px){
+  #browsebtn{height:36px;padding:0 10px;border-radius:9px;font-size:10.5px}
+  body.searching #browsebtn span{display:none}
+  body.searching #browse{flex:1;min-height:0;max-height:none;margin-top:8px;overflow-y:auto;border:none;background:none;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;padding-bottom:46vh;overscroll-behavior:contain}
+  body.searching #browse:not(.open){display:none}
+  body.searching #browse.open ~ #recent{display:none}
+  .brhead{min-height:48px;padding:8px 6px;background:rgba(2,5,10,.97);font-size:10.5px}
+  .brhead button{padding:9px 12px;border-radius:9px}
+  #recent .brentry{display:flex;align-items:center;gap:10px;width:calc(100% - 12px);margin:10px 6px 2px;padding:14px;border:1px solid var(--line);border-radius:12px;color:var(--text);font-family:'Share Tech Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;text-align:left}
+  #recent .brentry svg{width:17px;height:17px;color:var(--cyan);flex:none}
+  #recent .brentry span{margin-left:auto;color:var(--cyan)}
+  .seg.three button{padding:13px 2px;font-size:10.5px}
+  #fab-time{display:grid}
+  #fab-time.on{border-color:var(--amber);color:var(--amber)}
+  #timebar,body.sat #timebar{display:none}
+  body.sat.timeopen #timebar{display:flex;left:10px;right:66px;bottom:auto;top:calc(var(--sat) + 72px);transform:none;border-radius:14px;background:rgba(5,12,22,.95)}
+  body.sat.timeopen #timebar #timepill{padding:11px 13px 5px}
+  #timebody{width:auto;padding:4px 10px 10px;border-top:none}
+  .tmrow button{width:34px;height:34px;border-radius:9px}
+  .tmticks{margin:1px 50px 0}
+  .tmticks span:nth-child(even):not(:last-child),.tmticks span:nth-last-child(2){visibility:hidden}
+  body.searching #timebar,body.sheet-full #timebar,body.menu-open #timebar{display:none!important}
+  body.sat #toast,body.sat.timeopen #toast{bottom:calc(var(--tabh) + var(--sab) + 14px)}
+  #timecross{top:calc(50% + 0px)}
+}
+#toast{opacity:0;transition:transform .3s cubic-bezier(.22,1,.36,1),opacity .2s}
+#toast.show{opacity:1}
+
+/* ============ VIEWER: ANNOTATE + DOWNLOAD · EMBED ============ */
+.ivtabs{flex-wrap:wrap}
+.ivtabs>button.ivtool{display:flex;align-items:center;gap:7px}
+.ivtabs>button.ivtool svg{width:13px;height:13px;flex:none}
+.ivtabs>button#ivann{margin-left:8px}
+.ivtabs>button#ivsave{border-color:var(--cyan-dim);color:var(--cyan);background:rgba(0,229,255,.06)}
+.ivtabs>button#ivsave:hover:not(:disabled){background:rgba(0,229,255,.16)}
+.ivtabs>button.busy{opacity:.6;pointer-events:none}
+#ivdraw{position:absolute;inset:0;width:100%;height:100%;z-index:540;pointer-events:none}
+#imgviewer.annotating #ivdraw.draw{pointer-events:auto;cursor:crosshair;touch-action:none}
+.anntools{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);z-index:620;display:none;align-items:center;gap:4px;max-width:calc(100% - 20px);padding:5px;background:rgba(5,12,22,.94);border:1px solid var(--line);box-shadow:0 8px 28px rgba(0,0,0,.6);overflow-x:auto;scrollbar-width:none}
+.anntools::-webkit-scrollbar{display:none}
+#imgviewer.annotating .anntools{display:flex}
+.anntools button{flex:none;width:36px;height:36px;display:grid;place-items:center;border:1px solid transparent;color:var(--text-dim);cursor:pointer;transition:all .15s}
+.anntools button svg{width:17px;height:17px}
+.anntools button:hover{color:var(--text);background:rgba(255,255,255,.05)}
+.anntools button.on{color:var(--cyan);border-color:var(--cyan-dim);background:rgba(0,229,255,.1)}
+.anntools button.sw{width:26px}
+.anntools button.sw i{display:block;width:16px;height:16px;border-radius:50%;background:var(--c);box-shadow:0 0 0 1px rgba(0,0,0,.6)}
+.anntools button.sw.on{border-color:transparent;background:none}
+.anntools button.sw.on i{box-shadow:0 0 0 2px var(--panel-solid),0 0 0 4px var(--c)}
+.anntools .sep{flex:none;width:1px;height:22px;margin:0 4px;background:var(--line-soft)}
+.anntools button.done{width:auto;padding:0 12px;font-family:'Share Tech Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);border-color:var(--cyan-dim)}
+#anntext{position:absolute;z-index:630;display:none;min-width:150px;max-width:60%;padding:6px 9px;background:rgba(2,5,10,.92);border:1px solid var(--cyan-dim);color:#fff;font:600 15px 'Space Grotesk',sans-serif;outline:none}
+#anntext.show{display:block}
+.embwrap{border:1px solid var(--line);background:#03070d;padding:14px;display:grid;place-items:center}
+#embframe{display:block;width:100%;max-width:480px;height:430px;border:0;background:#050B14}
+.emk{margin:16px 0 7px;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--text-faint);font-family:'Share Tech Mono',monospace}
+#embcode{display:block;width:100%;padding:10px 12px;resize:none;background:var(--bg-2);border:1px solid var(--line-soft);color:var(--text);font-family:'Share Tech Mono',monospace;font-size:11.5px;line-height:1.5;word-break:break-all;outline:none}
+#embcode:focus{border-color:var(--cyan-dim)}
+.embnote{margin-top:12px;font-family:'Share Tech Mono',monospace;font-size:10px;line-height:1.6;color:var(--text-faint)}
+@media (max-width:640px){
+  .ivtabs{gap:5px}
+  .ivtabs>button{padding:9px 9px;letter-spacing:.06em}
+  .ivtabs>button.ivtool span,.ivtabs .zl{display:none}
+  .ivtabs>button.ivtool{padding:9px 10px}
+  .ivtabs>button#ivann{margin-left:0}
+  .anntools{bottom:10px}
+  .anntools button{width:40px;height:40px}
+  #imgviewer.annotating .leaflet-bottom.leaflet-left{bottom:56px}
+  #imgviewer.annotating .ivzonenote{bottom:100px}
+  #embframe{height:410px}
+}
+
+/* ============ POLISH (16 Nov 2026) ============
+   A light pass over the menus: the same design with fewer outlined boxes, so the eye lands on the names
+   and numbers. Nothing moved and nothing was renamed. To go back to how it was, delete this block. */
+.card{border-color:rgba(0,229,255,.17)}
+/* a two- or three-way switch reads as one control instead of separate boxes */
+.seg,.seg.three{gap:0;border:1px solid var(--line-soft)}
+.seg button,.seg.three button{border:0;border-right:1px solid var(--line-soft)}
+.seg button:last-child{border-right:0}
+.seg button.on{background:rgba(0,229,255,.11);box-shadow:inset 0 -2px 0 var(--cyan-dim)}
+/* tools: plain tiles; an outline only when a tool is switched on */
+.card.tools .tool{border-color:transparent;background:rgba(255,255,255,.03)}
+.card.tools .tool:hover{border-color:transparent;background:rgba(0,229,255,.085)}
+.card.tools .tool.on{border-color:var(--cyan-dim);background:rgba(0,229,255,.1)}
+/* village record: the facts as one quiet table rather than three boxes */
+.metagrid{gap:0;border:1px solid var(--line-soft);background:rgba(255,255,255,.015)}
+.metagrid .meta{border:0;background:none}
+.metagrid .meta + .meta{border-left:1px solid var(--line-soft)}
+.metagrid .meta.wide{border-left:0;border-top:1px solid var(--line-soft)}
+/* one main action; the rest step back until you point at them */
+.actions .abtn:not(.primary){border-color:var(--line-soft);color:var(--text-dim)}
+.actions .abtn:not(.primary):hover{border-color:var(--cyan-dim);color:var(--cyan)}
+.actions.actions2{margin-top:8px}
+.tstat.zero{display:none}
+@media (max-width:760px){
+  .seg button{padding:13px 6px}
+  .card.tools .tool{background:rgba(255,255,255,.04);border-radius:10px}
+}
 </style>
 </head>
 <body>
@@ -908,6 +1086,10 @@ body.areaing #areabar{display:flex}
     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
     Map Art
   </button>
+  <a id="storiesbtn" href="/stories/" aria-label="Stories told with the map">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5"/><path d="M9 8h6"/><path d="M9 12h4"/></svg>
+    Stories
+  </a>
   <button id="aboutbtn" aria-label="About this archive">
     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
     Mission
@@ -919,10 +1101,14 @@ body.areaing #areabar{display:flex}
   <div id="searchbox" class="notch">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
     <input id="search" type="text" placeholder="Search 1,023 villages — Rohingya, English, Burmese…" autocomplete="off" aria-label="Search villages">
+    <button id="browsebtn" type="button" aria-expanded="false" aria-controls="browse" title="Find a village without typing: township, then village tract">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h7"/><path d="M3 12h11"/><path d="M3 18h15"/><path d="m17 5 3 3-3 3"/></svg><span>Browse</span>
+    </button>
     <span id="skey" aria-hidden="true">/</span>
     <button id="scancel" type="button">Cancel</button>
   </div>
   <div id="results" role="listbox" aria-label="Search results"></div>
+  <div id="browse" role="region" aria-label="Browse villages by township and village tract"></div>
   <div id="recent"></div>
 </div>
 
@@ -948,9 +1134,10 @@ body.areaing #areabar{display:flex}
       <button id="bm-sat" aria-pressed="false">Orbital</button>
     </div>
     <div class="sublbl">Overlays</div>
-    <div class="seg">
-      <button id="gridbtn" aria-pressed="false">Graticule</button>
-      <button id="labelsbtn" aria-pressed="false">Labels</button>
+    <div class="seg three">
+      <button id="gridbtn" aria-pressed="false" title="Latitude and longitude lines">Graticule</button>
+      <button id="labelsbtn" aria-pressed="false" title="Village names on the map when zoomed in">Labels</button>
+      <button id="bordersbtn" aria-pressed="false" title="Township and village-tract boundaries">Borders</button>
     </div>
   </div>
   <div class="card notch tools">
@@ -979,6 +1166,10 @@ body.areaing #areabar{display:flex}
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
       Shortcuts<span class="kk">?</span>
     </button>
+    <a class="tool m-only" id="m-stories" href="/stories/">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5"/><path d="M9 8h6"/><path d="M9 12h4"/></svg>
+      Stories
+    </a>
     <button class="tool m-only" id="m-about">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
       Mission
@@ -1037,6 +1228,7 @@ body.areaing #areabar{display:flex}
     <div class="actions actions2">
       <button class="abtn" id="pdfbtn" title="A one-page record you can print or save as PDF">PDF Record</button>
       <a class="abtn" id="pagebtn" href="#" title="This village's own page, for citing and sharing">Village Page</a>
+      <button class="abtn" id="embedbtn" title="A small card you can put on another website">Embed</button>
     </div>
     <button class="suggest" id="suggestbtn">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
@@ -1080,7 +1272,7 @@ body.areaing #areabar{display:flex}
     <div class="ivhead">
       <div class="ivtitle" id="ivtitle"></div>
       <div class="ivtabs">
-        <button id="ivclear" class="on">Clear</button><button id="ivlatest">Latest</button><button id="ivcompare">Compare</button><button id="ivzones" class="ivz" title="Outline the zones of destroyed buildings UNOSAT mapped in 2017">2017 zones</button>
+        <button id="ivclear" class="on">Clear</button><button id="ivlatest">Latest</button><button id="ivcompare">Compare</button><button id="ivzones" class="ivz" title="Outline the zones of destroyed buildings UNOSAT mapped in 2017">2017<span class="zl"> zones</span></button><button id="ivann" class="ivtool" aria-pressed="false" title="Draw arrows, circles and notes on the imagery"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg><span>Annotate</span></button><button id="ivsave" class="ivtool" title="Download what you see as one image, with the names, dates and sources on it"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg><span>Download</span></button>
       </div>
       <button class="mclose" data-close="imgviewer" aria-label="Close">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
@@ -1092,6 +1284,25 @@ body.areaing #areabar{display:flex}
       <div class="ivdiv" id="ivdiv"><span class="ivhandle" id="ivhandle" role="slider" aria-label="Drag to compare" tabindex="0">⇆</span></div>
       <div class="ivside l" id="ivsl"></div><div class="ivside r" id="ivsr"></div>
       <div class="ivmsg" id="ivmsg"></div>
+      <canvas id="ivdraw" aria-hidden="true"></canvas>
+      <input id="anntext" type="text" maxlength="80" placeholder="Type a note, then Enter" aria-label="Note to place on the image">
+      <div class="anntools" id="anntools" role="toolbar" aria-label="Drawing tools">
+        <button data-tool="pan" title="Move the map" aria-label="Move the map"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 11V6a2 2 0 0 0-4 0v5"/><path d="M14 10V4a2 2 0 0 0-4 0v6"/><path d="M10 10.5V6a2 2 0 0 0-4 0v8"/><path d="M18 8a2 2 0 0 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.9-6-2.300l-3.600-3.600a2 2 0 0 1 2.800-2.800L7 15"/></svg></button>
+        <button data-tool="arrow" class="on" title="Arrow" aria-label="Arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5"/><path d="M9 5h10v10"/></svg></button>
+        <button data-tool="oval" title="Circle" aria-label="Circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/></svg></button>
+        <button data-tool="box" title="Box" aria-label="Box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="1"/></svg></button>
+        <button data-tool="pen" title="Draw freehand" aria-label="Draw freehand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17c3-6 5 4 8-2s4-8 6-6 1 6 4 5"/></svg></button>
+        <button data-tool="text" title="Note" aria-label="Note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 6V4h14v2"/><path d="M12 4v16"/><path d="M9 20h6"/></svg></button>
+        <span class="sep"></span>
+        <button class="sw on" data-col="#FFD400" style="--c:#FFD400" title="Yellow" aria-label="Yellow"><i></i></button>
+        <button class="sw" data-col="#FF3B5C" style="--c:#FF3B5C" title="Red" aria-label="Red"><i></i></button>
+        <button class="sw" data-col="#00E5FF" style="--c:#00E5FF" title="Cyan" aria-label="Cyan"><i></i></button>
+        <button class="sw" data-col="#FFFFFF" style="--c:#FFFFFF" title="White" aria-label="White"><i></i></button>
+        <span class="sep"></span>
+        <button id="annundo" title="Undo the last mark" aria-label="Undo the last mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.500a5.500 5.500 0 0 1 0 11H11"/></svg></button>
+        <button id="annclear" title="Remove all marks" aria-label="Remove all marks"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18"/><path d="M8 6V4h8v2"/><path d="M19 6l-1 14H6L5 6"/></svg></button>
+        <button id="anndone" class="done" title="Finish drawing">Done</button>
+      </div>
       <div class="ivzonenote" id="ivzonenote"><i></i>Destroyed zones · UNOSAT, imagery of 31 Aug – 11 Oct 2017</div>
     </div>
     <div class="ivcap" id="ivcap"></div>
@@ -1155,7 +1366,28 @@ body.areaing #areabar{display:flex}
     <p>The archive is built to support <b>research, reporting, documentation, and evidence-based understanding</b> of Rohingya village names and locations — for journalists, researchers, human-rights documentation, and the Rohingya community itself.</p>
     <p>Source data: <a href="https://map.rohingyakhobor.com/map" target="_blank" rel="noopener">Rohingya Khobor — Arakan Maps Project</a>. Records with known data issues are flagged, never silently altered. Map Art posters are drawn from map data © OpenStreetMap contributors.</p>
     <p>Every village also has a page of its own: <a href="/villages/">browse all villages, A–Z</a>.</p>
+    <p><b>Read:</b> <a href="/stories/">stories told with the map and the satellite record</a>. <b>Print:</b> a gazetteer of every village, with maps, for
+      <a href="/township/maungdaw/gazetteer/">Maungdaw</a>, <a href="/township/buthidaung/gazetteer/">Buthidaung</a>, <a href="/township/rathedaung/gazetteer/">Rathedaung</a> and <a href="/township/sittwe/gazetteer/">Sittwe</a>.</p>
+    <p>Township and village-tract boundaries: UN OCHA, Myanmar administrative boundaries (COD-AB, source MIMU), CC BY-IGO. They are approximate and do not imply endorsement of any boundary.</p>
     <p><b>A project by AB Aziz</b> · Contact — <a href="mailto:ab@rohingya.ro">ab@rohingya.ro</a></p>
+  </div>
+</div>
+
+<div class="modal" id="embedmodal" role="dialog" aria-modal="true" aria-label="Embed this village">
+  <div class="mcard notch" style="width:min(560px,100%)">
+    <button class="mclose" data-close="embedmodal" aria-label="Close">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+    <h2>EMBED <span>THIS VILLAGE</span></h2>
+    <div class="sub2">a small card for a news story, a blog or a school page · it links back to this record</div>
+    <div class="embwrap"><iframe id="embframe" title="Preview of the embed card"></iframe></div>
+    <div class="emk">Copy this code into your page</div>
+    <textarea id="embcode" readonly rows="4" spellcheck="false" aria-label="Embed code"></textarea>
+    <div class="actions">
+      <button class="abtn primary" id="embcopy">Copy code</button>
+      <a class="abtn" id="embopen" target="_blank" rel="noopener" href="#">Open the card</a>
+    </div>
+    <div class="embnote">// free to use · no cookies, no tracking · the picture comes from Esri World Imagery</div>
   </div>
 </div>
 
@@ -1169,6 +1401,7 @@ body.areaing #areabar{display:flex}
     <div class="shgrid">
       <div class="sh">Command palette<span class="kb">⌘K / Ctrl+K</span></div>
       <div class="sh">Focus search<span class="kb">/</span></div>
+      <div class="sh">Browse by township<span class="kb">B</span></div>
       <div class="sh">Registry table<span class="kb">R</span></div>
       <div class="sh">Measure distance<span class="kb">M</span></div>
       <div class="sh">Select an area<span class="kb">A</span></div>
@@ -1176,6 +1409,8 @@ body.areaing #areabar{display:flex}
       <div class="sh">Discover random<span class="kb">D</span></div>
       <div class="sh">Map art studio<span class="kb">P</span></div>
       <div class="sh">Toggle graticule<span class="kb">G</span></div>
+      <div class="sh">Toggle borders<span class="kb">O</span></div>
+      <div class="sh">Imagery by year<span class="kb">Y</span></div>
       <div class="sh">This help<span class="kb">?</span></div>
       <div class="sh">Close / cancel<span class="kb">Esc</span></div>
     </div>
@@ -1330,9 +1565,29 @@ body.areaing #areabar{display:flex}
 </div>
 
 <div id="scrim" aria-hidden="true"></div>
+<div id="timebar" role="group" aria-label="Imagery by year">
+  <button id="timepill" type="button" aria-expanded="false" title="See the whole map as it looked in earlier years">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+    Imagery <b id="timeyear">Now</b>
+    <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 15 6-6 6 6"/></svg>
+  </button>
+  <div id="timebody">
+    <div class="tmrow">
+      <button id="timeprev" type="button" aria-label="One year earlier">◂</button>
+      <input id="timerange" type="range" min="0" max="13" step="1" value="13" aria-label="Year of the imagery">
+      <button id="timenext" type="button" aria-label="One year later">▸</button>
+    </div>
+    <div class="tmticks" id="timeticks"></div>
+    <div class="tmnote" id="timenote" role="status"></div>
+  </div>
+</div>
+<div id="timecross" aria-hidden="true"></div>
 <div id="fabs">
   <button id="fab-layer" aria-label="Switch between satellite and grid map">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5z"/><path d="m3 13 9 5 9-5"/></svg>
+  </button>
+  <button id="fab-time" aria-label="See the map in earlier years">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
   </button>
   <button id="fab-fit" aria-label="Show all villages">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9V4h5"/><path d="M20 9V4h-5"/><path d="M4 15v5h5"/><path d="M20 15v5h-5"/><circle cx="12" cy="12" r="2.5"/></svg>
@@ -1541,6 +1796,7 @@ function st17Html(v){
     + '<div class="sthead"><i style="background:' + ST17[s].color + '"></i>' + ST17[s].label + '</div>'
     + '<div class="sttext">' + st17Text(v) + (flags.length ? ' ' + flags.join(' ') : '') + '</div>'
     + (s === 'x' ? '' : '<button class="stbtn" id="st17btn" type="button">See before and after</button>')
+    + ((s === 'd' || s === 'n') && v.slug ? '<a class="stbtn story" href="/stories/' + esc(v.slug) + '/">Read this village’s story</a>' : '')
     + '<div class="psrc">Source: <a href="' + ST17_URL + '" target="_blank" rel="noopener">UNOSAT</a> · not field validated · CC BY-SA</div>';
 }
 document.getElementById('status17').addEventListener('click', e => { if (e.target.closest('#st17btn')) openEvidence(); });
@@ -1623,8 +1879,13 @@ function restyleMarkers(){
 
 /* ================= OPTICS ================= */
 const bmDark=document.getElementById('bm-dark'), bmSat=document.getElementById('bm-sat');
+let yearLayer=null, satIsOn=true;                 // yearLayer: a past edition of the imagery, while one is chosen (IMAGERY BY YEAR)
 function setBasemap(sat){
-  if (sat){ map.removeLayer(darkTiles); satTiles.addTo(map); } else { map.removeLayer(satTiles); darkTiles.addTo(map); }
+  satIsOn=sat;
+  const want = sat ? (yearLayer || satTiles) : darkTiles;
+  [satTiles, yearLayer, darkTiles].forEach(l=>{ if (l && l!==want && map.hasLayer(l)) map.removeLayer(l); });
+  if (!map.hasLayer(want)) want.addTo(map);
+  document.body.classList.toggle('sat', sat);
   bmDark.classList.toggle('on',!sat); bmSat.classList.toggle('on',sat);
   bmDark.setAttribute('aria-pressed',String(!sat)); bmSat.setAttribute('aria-pressed',String(sat));
 }
@@ -1814,6 +2075,7 @@ let bookmarks = new Set(JSON.parse(localStorage.getItem('fara_bookmarks')||'[]')
 function saveBm(){ localStorage.setItem('fara_bookmarks', JSON.stringify([...bookmarks])); renderBm(); }
 function renderBm(){
   document.getElementById('st-mark').textContent = bookmarks.size;
+  document.getElementById('st-mark').parentElement.classList.toggle('zero', !bookmarks.size);   // no "0 bookmarked" taking up room
   const card = document.getElementById('bmcard'), list = document.getElementById('bmlist');
   card.style.display = bookmarks.size ? '' : 'none';
   list.innerHTML = [...bookmarks].map(id => {
@@ -1832,6 +2094,170 @@ document.getElementById('bookmarkbtn').addEventListener('click', () => {
   else { bookmarks.add(current.id); svg.setAttribute('fill','currentColor'); document.getElementById('bookmarkbtn').classList.add('on'); showToast('// added to watchlist'); }
   saveBm();
 });
+
+
+/* ================= BORDERS =================
+   Township and village-tract boundaries: UN OCHA's open edition (COD-AB, CC BY-IGO) of the boundaries MIMU
+   maintains, prepared by tools/build_boundaries.py so each border is drawn once. Loaded only when switched on. */
+let bordersP=null, bordersData=null, bordersOn=false, bordersLayer=null, tractLabels=null, tractHi=null;
+function loadBorders(){
+  return bordersP || (bordersP = fetch('/boundaries.json').then(r=>{ if (!r.ok) throw new Error('borders'); return r.json(); })
+    .then(d=>{ d.byCode=new Map(d.tracts.map(t=>[t.p,t])); bordersData=d; return d; })
+    .catch(e=>{ bordersP=null; throw e; }));
+}
+map.createPane('borders'); map.getPane('borders').style.zIndex=350; map.getPane('borders').style.pointerEvents='none';
+map.createPane('borderlabels'); map.getPane('borderlabels').style.zIndex=450;
+const bordersRenderer=L.canvas({ pane:'borders', padding:.4 });
+async function toggleBorders(force){
+  const on = typeof force==='boolean' ? force : !bordersOn, btn=document.getElementById('bordersbtn');
+  if (on===bordersOn) return;
+  bordersOn=on; btn.classList.toggle('on',on); btn.setAttribute('aria-pressed',String(on));
+  if (!on){
+    if (bordersLayer) bordersLayer.remove();
+    if (tractLabels) tractLabels.remove();
+    if (tractHi){ tractHi.remove(); tractHi=null; }
+    return;
+  }
+  try{
+    const d=await loadBorders();
+    if (!bordersLayer){
+      const o={ renderer:bordersRenderer, interactive:false, pane:'borders' };
+      bordersLayer=L.layerGroup([
+        L.polyline(d.lines.tract,{ ...o, color:'#02050A', weight:2.8, opacity:.32 }),          // a dark casing keeps the line readable on imagery
+        L.polyline(d.lines.tract,{ ...o, color:'#CFF6FF', weight:1, opacity:.85, dashArray:'5 4' }),
+        L.polyline(d.lines.town,{ ...o, color:'#02050A', weight:4.8, opacity:.42 }),
+        L.polyline(d.lines.town,{ ...o, color:'#FFFFFF', weight:2, opacity:.95 })
+      ],{ attribution:'Boundaries: UN OCHA COD-AB (source: MIMU), CC BY-IGO' });
+      tractLabels=L.layerGroup();
+    }
+    if (!bordersOn) return;
+    bordersLayer.addTo(map); tractLabels.addTo(map); refreshBorders(); bordersFor(current);
+    track('Borders on');
+  }catch(e){
+    bordersOn=false; btn.classList.remove('on'); btn.setAttribute('aria-pressed','false');
+    showToast('// could not load the boundaries');
+  }
+}
+/* names: the four townships from afar, the village tracts in view once zoomed in */
+function refreshBorders(){
+  if (!bordersOn || !tractLabels || !bordersData) return;
+  const d=bordersData, z=map.getZoom(), box=map.getBounds().pad(.05);
+  tractLabels.clearLayers();
+  const label=(c, cls, html, title, code)=>{
+    const m=L.marker(c,{ pane:'borderlabels', keyboard:false, interactive:!!code,
+      icon:L.divIcon({ className:'', iconSize:[0,0], html:`<div class="tlbl ${cls}"${title?' title="'+esc(title)+'"':''}>${html}</div>` }) });
+    if (code) m.on('click', ev=>{ L.DomEvent.stop(ev); browseTractCode(code); });
+    tractLabels.addLayer(m);
+  };
+  if (z<=11) d.towns.forEach(t=>label(t.c, 'tl-town', esc(t.n)+'<small>township</small>'));
+  else if (z>=13) d.tracts.forEach(t=>{ if (box.contains(t.c)) label(t.c, 'tl-tract', esc(t.n), (t.my ? t.my+' · ' : '')+t.p+' · show its villages', t.p); });
+}
+map.on('moveend', refreshBorders);
+/* outline the tract of the village that is open */
+function bordersFor(v){
+  if (tractHi){ tractHi.remove(); tractHi=null; }
+  if (!bordersOn || !bordersData || !v || !v.pt) return;
+  const t=bordersData.byCode.get(v.pt); if (!t) return;
+  tractHi=L.polygon(t.g,{ pane:'borders', renderer:bordersRenderer, interactive:false, color:'#00E5FF', weight:2.4, opacity:.95, fillColor:'#00E5FF', fillOpacity:.07 }).addTo(map);
+}
+document.getElementById('bordersbtn').addEventListener('click', ()=>toggleBorders());
+
+/* ================= IMAGERY BY YEAR =================
+   Esri keeps every past edition of its World Imagery map (Wayback). Choosing a year swaps the Orbital basemap
+   for the last edition published that year, so the whole map shows what that map showed then. An edition holds
+   the newest pictures Esri had at the time, so a picture can be older than its edition: the capture date at
+   the centre of the map is looked up and shown once zoomed in. */
+const TIME={ stops:null, stopsP:null, i:-1, capKey:'', capT:0, open:false };
+const timeEl=document.getElementById('timebar'), timeRange=document.getElementById('timerange');
+function timeStops(){
+  return TIME.stopsP || (TIME.stopsP = loadWbConfig().then(rels=>{
+    const last={};
+    rels.forEach(r=>{ const y=r.released.slice(0,4); if (!last[y] || r.released>last[y].released) last[y]=r; });
+    TIME.stops=Object.keys(last).sort().map(y=>({ y, rel:last[y].rel, released:last[y].released, meta:last[y].meta }));
+    TIME.newest=rels[0];
+    return TIME.stops;
+  }).catch(e=>{ TIME.stopsP=null; throw e; }));
+}
+function timeRender(){
+  const stops=TIME.stops||[], n=stops.length, past=TIME.i>=0, s=past ? stops[TIME.i] : null;
+  timeEl.classList.toggle('past', past); timeEl.classList.toggle('open', TIME.open);
+  document.body.classList.toggle('timeopen', TIME.open);
+  document.getElementById('timepill').setAttribute('aria-expanded', String(TIME.open));
+  document.getElementById('timeyear').textContent = past ? s.y : 'Now';
+  document.getElementById('fab-time').classList.toggle('on', past);
+  if (!n) return;
+  const pos = past ? TIME.i : n;
+  timeRange.max=n; timeRange.value=pos;
+  timeRange.setAttribute('aria-valuetext', past ? s.y : 'Now');
+  document.getElementById('timeprev').disabled = pos<=0;
+  document.getElementById('timenext').disabled = pos>=n;
+  document.getElementById('timeticks').innerHTML = stops.map((t,k)=>`<span data-i="${k}" class="${k===pos?'on':''}">’${t.y.slice(2)}</span>`).join('')+`<span data-i="${n}" class="${pos===n?'on':''}">Now</span>`;
+  document.getElementById('timenote').innerHTML = (past
+    ? `The map as Esri published it in <b>${s.y}</b>. Pictures were taken that year or earlier.`
+    : 'The newest imagery Esri publishes.') + '<span class="cap" id="timecap"></span>';
+  timeCapture(true);
+}
+function setYear(i){
+  const stops=TIME.stops||[];
+  if (i>=stops.length || i<0) i=-1;
+  if (i!==TIME.i){
+    if (yearLayer){ map.removeLayer(yearLayer); yearLayer=null; }
+    TIME.i=i;
+    if (i>=0){
+      const layer=L.tileLayer(`${WB}/WMTS/1.0.0/default028mm/MapServer/tile/${stops[i].rel}/{z}/{y}/{x}`,{ attribution:'Esri World Imagery Wayback', maxNativeZoom:18, maxZoom:20, crossOrigin:true });
+      /* older editions often stop one zoom level short: fall back to stretching that level instead of showing holes */
+      layer.on('tileerror', e=>{ if (e.coords && e.coords.z>=18 && layer.options.maxNativeZoom>17){ layer.options.maxNativeZoom=17; layer.redraw(); } });
+      yearLayer=layer;
+      track('Imagery year', { year:stops[i].y });
+    }
+    setBasemap(true);
+  }
+  timeRender();
+}
+async function timeOpen(open){
+  TIME.open = typeof open==='boolean' ? open : !TIME.open;
+  if (TIME.open && !satIsOn) setBasemap(true);
+  timeRender();
+  if (TIME.open && !TIME.stops){
+    document.getElementById('timenote').innerHTML='<span class="spin"></span>Loading the list of past editions…';
+    try{ await timeStops(); timeRender(); }
+    catch(e){ document.getElementById('timenote').innerHTML='The archive of past imagery could not be reached. <b>Close and open this bar to try again.</b>'; }
+  }
+}
+/* when was the picture under the centre of the map taken? */
+function timeCapture(now){
+  clearTimeout(TIME.capT);
+  const el=document.getElementById('timecap');
+  if (!el || !TIME.open || !TIME.stops || !satIsOn) return;
+  const z=Math.round(map.getZoom());
+  if (z<12){ TIME.capKey=''; el.textContent='Zoom in to see when a place was photographed.'; return; }
+  const rel = TIME.i>=0 ? TIME.stops[TIME.i] : TIME.newest, c=map.getCenter();
+  const key=rel.rel+':'+z+':'+c.lat.toFixed(3)+':'+c.lng.toFixed(3);
+  if (key===TIME.capKey && el.dataset.key===key) return;
+  TIME.capKey=key; el.dataset.key=''; el.innerHTML='<span class="spin"></span>Finding the capture date at the centre of the map…';
+  TIME.capT=setTimeout(async()=>{
+    const cap=await wbCapture(rel, c.lat, c.lng, 23-Math.min(18, Math.max(10, z)));
+    if (TIME.capKey!==key) return;
+    const now2=document.getElementById('timecap'); if (!now2) return;
+    now2.dataset.key=key;
+    now2.innerHTML = cap ? 'At the centre of the map: <b>photographed '+fmtDay(cap.date)+'</b>'+(cap.src ? ' · '+esc(cap.src) : '')
+                         : 'Esri publishes no capture date for the centre of the map at this zoom.';
+  }, now ? 150 : 650);
+}
+map.on('moveend', ()=>timeCapture(false));
+document.getElementById('timepill').addEventListener('click', ()=>timeOpen());
+document.getElementById('fab-time').addEventListener('click', ()=>{ buzz(); timeOpen(); });
+document.getElementById('timeprev').addEventListener('click', ()=>setYear((TIME.i<0 ? TIME.stops.length : TIME.i)-1));
+document.getElementById('timenext').addEventListener('click', ()=>setYear(TIME.i<0 ? -1 : TIME.i+1));
+document.getElementById('timeticks').addEventListener('click', e=>{ const s=e.target.closest('span[data-i]'); if (s) setYear(+s.dataset.i); });
+/* dragging shows the year at once; the imagery follows when the thumb comes to rest */
+let timeDrag=0;
+timeRange.addEventListener('input', ()=>{
+  const i=+timeRange.value, stops=TIME.stops||[];
+  document.getElementById('timeyear').textContent = i>=stops.length ? 'Now' : stops[i].y;
+  clearTimeout(timeDrag); timeDrag=setTimeout(()=>setYear(i), 260);
+});
+timeRange.addEventListener('change', ()=>{ clearTimeout(timeDrag); setYear(+timeRange.value); });
 
 /* ================= SEARCH ================= */
 const searchEl=document.getElementById('search'), resultsEl=document.getElementById('results');
@@ -1875,7 +2301,11 @@ function doSearch(qRaw){
   resultsEl.querySelectorAll('.res').forEach(b=>b.addEventListener('click',()=>{ openVillage(resItems[+b.dataset.i],true); closeResults(); }));
   resultsEl.classList.add('open');
 }
-function closeResults(){ resultsEl.classList.remove('open'); searchEl.blur(); document.body.classList.remove('searching'); }
+function closeResults(){
+  resultsEl.classList.remove('open'); searchEl.blur(); document.body.classList.remove('searching');
+  document.getElementById('browse').classList.remove('open');
+  const bb=document.getElementById('browsebtn'); bb.classList.remove('on'); bb.setAttribute('aria-expanded','false');
+}
 searchEl.addEventListener('input', e=>doSearch(e.target.value));
 searchEl.addEventListener('keydown', e=>{
   const items=resultsEl.querySelectorAll('.res');
@@ -1888,6 +2318,85 @@ searchEl.addEventListener('keydown', e=>{
   else if (e.key==='Escape'){ closeResults(); }
 });
 document.addEventListener('click', e=>{ if (!document.getElementById('searchwrap').contains(e.target)) resultsEl.classList.remove('open'); });
+
+
+/* ================= BROWSE =================
+   Find a village without typing: township → village tract → village. Tracts are the archive's own
+   (the tract each record names), so every village is reachable, including ones with no official code. */
+const browseEl=document.getElementById('browse'), browseBtn=document.getElementById('browsebtn');
+const BR={ town:null, tract:null };
+const brGroups={};
+VILLAGES.forEach(v=>{ const t=townOf(v), k=v.village_tract||'Tract not recorded'; ((brGroups[t]=brGroups[t]||{})[k]=brGroups[t][k]||[]).push(v); });
+const brTowns=[...Object.keys(TOWN_COLORS).filter(t=>brGroups[t]), ...Object.keys(brGroups).filter(t=>!TOWN_COLORS[t])];
+const brKey=t=>String(t).normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();   // A–Z ignoring brackets and accents
+const brSort=(a,b)=>brKey(roName(a)).localeCompare(brKey(roName(b)));
+const brCount=t=>Object.values(brGroups[t]).reduce((s,a)=>s+a.length,0);
+const brBack='<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>';
+function browseRender(){
+  const town=BR.town, tract=BR.tract; let head, rows;
+  if (!town || !brGroups[town]){
+    head='<span class="crumb">Browse · choose a township</span>';
+    rows=brTowns.map(t=>`<button class="res" data-town="${esc(t)}">
+        <span class="dot" style="background:${TOWN_COLORS[t]||'#8FA8C7'};color:${TOWN_COLORS[t]||'#8FA8C7'}"></span>
+        <span><span class="rn">${esc(t)}</span><br><span class="re">${Object.keys(brGroups[t]).length} village tracts</span></span>
+        <span class="rt"><b>${brCount(t)}</b> villages</span><span class="go">›</span>
+      </button>`).join('');
+  } else if (!tract){
+    const names=Object.keys(brGroups[town]).sort((a,b)=>brKey(a).localeCompare(brKey(b)));
+    head=`<button data-back="1" aria-label="Back to townships">${brBack}Back</button><span class="crumb"><b>${esc(town)}</b><i>›</i>choose a village tract</span>`;
+    rows=`<button class="res all" data-tract="*"><span class="dot" style="background:${TOWN_COLORS[town]};color:${TOWN_COLORS[town]}"></span>
+        <span><span class="rn">All villages of ${esc(town)}</span><br><span class="re">A to Z</span></span><span class="rt"><b>${brCount(town)}</b></span><span class="go">›</span></button>`
+      + names.map(n=>`<button class="res" data-tract="${esc(n)}">
+        <span class="dot" style="background:${TOWN_COLORS[town]};color:${TOWN_COLORS[town]};opacity:.55"></span>
+        <span><span class="rn">${esc(n)}</span></span>
+        <span class="rt"><b>${brGroups[town][n].length}</b> ${brGroups[town][n].length===1?'village':'villages'}</span><span class="go">›</span>
+      </button>`).join('');
+  } else {
+    const list=(tract==='*' ? Object.values(brGroups[town]).flat() : (brGroups[town][tract]||[])).slice().sort(brSort);
+    head=`<button data-back="1" aria-label="Back to village tracts">${brBack}Back</button><span class="crumb">${esc(town)}<i>›</i><b>${tract==='*'?'All villages':esc(tract)}</b><i>·</i>${list.length}</span>`;
+    rows=list.map(v=>`<button class="res" data-id="${v.id}">
+        <span class="dot" style="background:${colorOf(v)};color:${colorOf(v)}"></span>
+        <span><span class="rn">${esc(roName(v))}</span><br><span class="re">${esc(enName(v))}${v.village_name_mmr?' · <span class="mmr">'+esc(v.village_name_mmr)+'</span>':''}</span></span>
+        <span class="rt">${tract==='*'?esc(v.village_tract||''):esc(recId(v))}${isUnverified(v)?'<br><span class="flag">UNVERIFIED</span>':''}</span>
+      </button>`).join('');
+  }
+  browseEl.innerHTML='<div class="brhead">'+head+'</div>'+rows;
+  browseEl.scrollTop=0;
+}
+function browseOpen(){
+  if (PHONE.matches && !document.body.classList.contains('searching')){ renderRecent(); closeMenu(); document.body.classList.add('searching'); }
+  searchEl.value=''; resultsEl.classList.remove('open'); resultsEl.innerHTML=''; resItems=[];
+  browseRender(); browseEl.classList.add('open'); browseBtn.classList.add('on'); browseBtn.setAttribute('aria-expanded','true');
+  track('Browse opened');
+}
+function browseClose(){ browseEl.classList.remove('open'); browseBtn.classList.remove('on'); browseBtn.setAttribute('aria-expanded','false'); }
+function browseToggle(){ if (browseEl.classList.contains('open')) browseClose(); else browseOpen(); }
+/* open Browse on the villages of one official tract (used by the tract names on the map) */
+function browseTractCode(code){
+  const vs=VILLAGES.filter(v=>v.pt===code);
+  if (!vs.length){ showToast('// no archive villages recorded in this tract'); return; }
+  BR.town=townOf(vs[0]); BR.tract=vs[0].village_tract||'Tract not recorded'; browseOpen();
+}
+browseBtn.addEventListener('click', e=>{ e.stopPropagation(); browseToggle(); });
+browseEl.addEventListener('click', e=>{
+  const b=e.target.closest('button'); if (!b) return;
+  e.stopPropagation();
+  if (b.dataset.back){ if (BR.tract) BR.tract=null; else BR.town=null; browseRender(); return; }
+  if (b.dataset.town){ BR.town=b.dataset.town; BR.tract=null; browseRender(); return; }
+  if (b.dataset.tract){
+    BR.tract=b.dataset.tract; browseRender();
+    if (!PHONE.matches){                                                    // show the tract on the map behind the list
+      const pts=(BR.tract==='*' ? Object.values(brGroups[BR.town]).flat() : brGroups[BR.town][BR.tract]).filter(v=>!isUnverified(v)).map(v=>[+v.lat,+v.lng]);
+      const side=(innerWidth-540)/2;                                           // free strip to the right of the list
+      if (pts.length) map.flyToBounds(L.latLngBounds(pts).pad(.25), { maxZoom:14, duration: reduceMotion ? 0 : .9,
+        paddingTopLeft: side>300 ? [innerWidth-side+20, 90] : [30, 120], paddingBottomRight: side>300 ? [70, 70] : [30, 60] });
+    }
+    return;
+  }
+  if (b.dataset.id){ const v=VILLAGES.find(x=>x.id===+b.dataset.id); if (v){ openVillage(v,true); closeResults(); } }
+});
+searchEl.addEventListener('input', ()=>{ if (searchEl.value) browseClose(); });
+document.addEventListener('click', e=>{ if (!document.getElementById('searchwrap').contains(e.target) && !e.target.closest('.tlbl')) browseClose(); });
 
 /* ================= OFFICIAL PLACE CODES (MIMU P-codes) =================
    The codes the UN and aid agencies use for places in Myanmar. Written into the data by tools/add_pcodes.py.
@@ -1939,6 +2448,7 @@ function distKm(a,b){
 function openVillage(v, fly){
   clearWard();
   current=v;
+  bordersFor(v);
   const c=colorOf(v), unv=isUnverified(v);
   document.getElementById('p-id').textContent = recId(v);
   const tag=document.getElementById('p-town-tag');
@@ -2186,7 +2696,8 @@ function loadWbConfig(){
     .catch(e=>{ wbConfig=null; throw e; }));
 }
 /* capture date of one release at this spot: the usual metadata layer first; if it is slow or empty, the neighbouring layers too */
-function wbCapture(rel, lat, lng){
+function wbCapture(rel, lat, lng, base){
+  base = base || 6;                                                   // metadata layer = 23 − zoom; 6 is the zoom-17 layer
   const q='f=json&where=1%3D1&outFields=SRC_DATE2,NICE_DESC,SAMP_RES&returnGeometry=false&geometryType=esriGeometryPoint'
     +'&spatialRel=esriSpatialRelIntersects&geometry='+encodeURIComponent(JSON.stringify({x:lng,y:lat,spatialReference:{wkid:4326}}));
   const ask=layer=>getJson(`${rel.meta}/${layer}/query?${q}`, 6500).then(j=>{
@@ -2195,9 +2706,9 @@ function wbCapture(rel, lat, lng){
     return { date:new Date(a.SRC_DATE2), res:a.SAMP_RES, src:a.NICE_DESC };
   });
   let done=false;
-  const first=ask(6); first.then(()=>{ done=true; }, ()=>{});
+  const first=ask(base); first.then(()=>{ done=true; }, ()=>{});
   const rest=Promise.race([first.then(()=>new Promise(()=>{}), ()=>0), new Promise(r=>setTimeout(r, 2200))])
-    .then(()=> done ? Promise.reject(new Error('not needed')) : Promise.any([ask(5), ask(7)]));
+    .then(()=> done ? Promise.reject(new Error('not needed')) : Promise.any([ask(base-1), ask(base+1)]));
   return Promise.any([first, rest]).catch(()=>null);
 }
 /* Find every release where this spot's imagery actually changed. A probe of release i answers with the release
@@ -2254,12 +2765,64 @@ function histRecall(id){
   return e.h.map(a=>({ rel:a[0], date:new Date(a[1]), res:a[2], src:a[3], z18:!!a[4] }));
 }
 const histDay = h => h.approx ? 'by '+fmtDay(h.date) : fmtDay(h.date);
+/* captures.json (tools/build_captures.py): { newest, src:[names], v:{ id:[[release, yyyymmdd|0, cm|0, srcIndex|-1, z18, releasedYyyymmdd], …] } } */
+let capFileP=null;
+function capFile(){ return capFileP || (capFileP = getJson('/captures.json', 12000).catch(()=>null)); }
+function capRows(file, id){
+  const rows=file && file.v && file.v[id]; if (!rows || !rows.length) return null;
+  const day=n=>new Date(Date.UTC(Math.floor(n/10000), Math.floor(n/100)%100-1, n%100));
+  return rows.map(r=> r[1] ? { rel:r[0], date:day(r[1]), res:r[2] ? r[2]/100 : null, src:r[3]>=0 ? file.src[r[3]] : null, z18:!!r[4] }
+                           : { rel:r[0], date:day(r[5]), z18:!!r[4], approx:true });
+}
+/* has Esri published a newer picture of this spot since the file was made? Usually one or two small requests. */
+async function histNewer(v, base, file, alive){
+  try{
+    const rels=await loadWbConfig(); if (!alive()) return;
+    const lim=rels.findIndex(r=>r.rel===file.newest);
+    if (lim<=0) return;                                                 // nothing published since
+    const lat=+v.lat, lng=+v.lng, [tx,ty]=tileXY(lat,lng,17), [tx18,ty18]=tileXY(lat,lng,18), fresh=[];
+    for (let i=0; i<lim; ){
+      const j=await getJson(`${WB}/MapServer/tilemap/${rels[i].rel}/17/${ty}/${tx}`, 6000);
+      if (!alive()) return;
+      if (!j.data || j.data[0]!==1) break;
+      let k=j.select ? rels.findIndex(r=>r.rel===j.select[0]) : i; if (k<i) k=i;
+      if (k>=lim) break;                                                // from here back the file already has it
+      fresh.push(rels[k]); i=k+1;
+    }
+    if (!fresh.length) return;
+    const add=await Promise.all(fresh.map(async rel=>{
+      const [cap, tm]=await Promise.all([ wbCapture(rel, lat, lng), getJson(`${WB}/MapServer/tilemap/${rel.rel}/18/${ty18}/${tx18}`, 5000).catch(()=>null) ]);
+      const z18=!!(tm && tm.data && tm.data[0]===1);
+      return cap ? { rel:rel.rel, date:cap.date, res:cap.res, src:cap.src, z18 } : { rel:rel.rel, date:new Date(rel.released+'T00:00:00Z'), z18, approx:true };
+    }));
+    if (!alive()) return;
+    const seen=new Set(), merged=[];
+    [...add, ...base].forEach(h=>{ const key=h.approx ? 'r'+h.rel : h.date.toISOString().slice(0,10); if (!seen.has(key)){ seen.add(key); merged.push(h); } });
+    const first=merged[0]; merged.sort((x,y)=> x===first ? -1 : y===first ? 1 : y.date-x.date);
+    const was=['a','l','r'].map(k=>IV[k]>0 ? IMG.hist[IV[k]] : null);    // the newest stays the newest; older picks keep their picture
+    IMG.hist=merged; IMG.histCache.set(v.id, merged);
+    ['a','l','r'].forEach((k,n)=>{ const at=was[n] ? merged.indexOf(was[n]) : -1; if (at>=0) IV[k]=at; });
+    if (!merged.some(h=>h.approx)) histRemember(v.id, merged);
+    renderHistRow();
+    if (ivOpen() && IV.mode!=='latest') ivShow(IV.mode);
+  }catch(e){}
+}
 async function loadHistory(v, token){
   const row=document.getElementById('histrow');
   row.classList.remove('show'); IMG.hist=[]; IMG.histState='loading'; IMG.histProg=''; histWait();
   const saved = IMG.histCache.get(v.id) || histRecall(v.id);
   if (saved){ IMG.hist=saved; IMG.histCache.set(v.id, saved); IMG.histState='ok'; renderHistRow(); return; }
   const alive=()=>token===IMG.token;
+  /* the dates were looked up ahead of time for every village: show them at once, then only ask Esri whether
+     it has published anything newer since */
+  const file=await capFile();
+  if (!alive()) return;
+  const pre=capRows(file, v.id);
+  if (pre){
+    IMG.hist=pre; IMG.histCache.set(v.id, pre); IMG.histState='ok'; renderHistRow();
+    histNewer(v, pre, file, alive);
+    return;
+  }
   try{
     const rels=await loadWbConfig(), lat=+v.lat, lng=+v.lng;
     if (!alive()) return;
@@ -2433,16 +2996,17 @@ function ivTone(h, v){
       try{
         const c=document.createElement('canvas'); c.width=c.height=128;
         const x=c.getContext('2d',{ willReadFrequently:true }); x.drawImage(im,0,0,128,128);
-        const d=x.getImageData(0,0,128,128).data, n=128*128, S=.5; let fn='';
+        const d=x.getImageData(0,0,128,128).data, n=128*128, S=.5, ps=[]; let fn='';
         ['R','G','B'].forEach((name,ch)=>{
           const hist=new Uint32Array(256); for (let i=0;i<n;i++) hist[d[i*4+ch]]++;
           let lo=0, hi=255, acc=0;
           for (let i=0;i<256;i++){ acc+=hist[i]; if (acc>=n*.01){ lo=i; break; } }
           acc=0; for (let i=255;i>=0;i--){ acc+=hist[i]; if (acc>=n*.02){ hi=i; break; } }
           hi=Math.max(hi,lo+80); const k=Math.min(2.2,255/(hi-lo));
-          fn+=`<feFunc${name} type="linear" slope="${(1+S*(k-1)).toFixed(3)}" intercept="${(-S*lo*k/255).toFixed(3)}"/>`;
+          const sl=+(1+S*(k-1)).toFixed(3), ic=+(-S*lo*k/255).toFixed(3); ps.push([sl, ic]);
+          fn+=`<feFunc${name} type="linear" slope="${sl}" intercept="${ic}"/>`;
         });
-        const id='ivtone'+(++toneSeq);
+        const id='ivtone'+(++toneSeq); TONE_P.set(id, ps);
         document.getElementById('ivdefs').insertAdjacentHTML('beforeend',`<filter id="${id}" color-interpolation-filters="sRGB"><feComponentTransfer>${fn}</feComponentTransfer></filter>`);
         res(id);
       }catch(e){ res(null); }
@@ -2482,7 +3046,7 @@ function ivClip(){
 }
 function ivReset(){
   IV.layers.forEach(l=>l.remove()); IV.layers=[];
-  if (IV.overlay){ IV.overlay.remove(); IV.overlay=null; }
+  if (IV.overlay){ IV.overlay.remove(); IV.overlay=null; IV.ovCv=null; IV.ovB=null; }
   ['ivdiv','ivsl','ivsr','ivmsg'].forEach(id=>document.getElementById(id).classList.remove('show'));
 }
 function ivPin(v){
@@ -2564,7 +3128,7 @@ async function ivShow(mode){
     if (!win){ msg.textContent='// this pass does not cover the village — pick another date'; return; }
     const cv=document.createElement('canvas'); cv.width=win.w; cv.height=win.h;
     cv.getContext('2d').putImageData(win.id,0,0);
-    IV.overlay=L.imageOverlay(cv.toDataURL('image/jpeg',.95), win.bounds).addTo(IV.map);
+    IV.overlay=L.imageOverlay(cv.toDataURL('image/jpeg',.95), win.bounds).addTo(IV.map); IV.ovCv=cv; IV.ovB=win.bounds;
     if (fresh) IV.map.fitBounds(win.bounds, {animate:false});
     cap.innerHTML=latestCaption(sc)+' · 10 m per pixel';
     msg.classList.remove('show');
@@ -2574,7 +3138,7 @@ function openViewer(mode){
   if (!current || isUnverified(current)) return;
   track('Imagery viewer', { mode });
   document.getElementById('imgviewer').classList.add('open');
-  ivInit(); IV.map.invalidateSize();
+  ivInit(); IV.map.invalidateSize(); annAttach(); annSet(false);
   if (IV.forId!==current.id){ IV.forId=current.id; IV.a=0; IV.l=0; IV.r=0; IV.split=.5; IV.viewKey=''; }
   ivShow(mode);
 }
@@ -2636,6 +3200,324 @@ document.addEventListener('keydown',e=>{
   e.preventDefault(); e.stopPropagation();
 }, true);
 
+
+/* ---------- VIEWER: MARK UP THE IMAGE ----------
+   Arrows, circles, boxes, freehand lines and short notes drawn over the imagery. Every mark is stored as
+   latitude / longitude, so it stays on the same building when the map moves and when the date changes.
+   Marks live in this tab only: nothing is uploaded. They are drawn into the image the Download button makes. */
+const ANN={ on:false, tool:'arrow', color:'#FFD400', store:new Map(), cur:null, attached:false };
+const annCv=document.getElementById('ivdraw'), annTextEl=document.getElementById('anntext');
+function annShapes(){ const id=current ? current.id : null; if (id==null) return []; if (!ANN.store.has(id)) ANN.store.set(id, []); return ANN.store.get(id); }
+/* one painter for the screen and for the downloaded image: proj turns [lat,lng] into pixels, k scales the line widths */
+function annPaint(ctx, shapes, proj, k){
+  ctx.save(); ctx.lineCap='round'; ctx.lineJoin='round';
+  const both=(w, fill)=>{                                                  // dark casing first, so a mark reads on any ground
+    ctx.lineWidth=(w+3.2)*k; ctx.strokeStyle='rgba(2,5,10,.78)'; ctx.stroke();
+    if (fill){ ctx.fillStyle=fill; ctx.fill(); }
+  };
+  shapes.forEach(s=>{
+    ctx.beginPath();
+    if (s.t==='arrow'){
+      const [x0,y0]=proj(s.a), [x1,y1]=proj(s.b), len=Math.hypot(x1-x0,y1-y0); if (len<2) return;
+      const ux=(x1-x0)/len, uy=(y1-y0)/len, h=Math.min(20*k, len*.45), w=h*.52, bx=x1-ux*h, by=y1-uy*h;
+      const shaft=()=>{ ctx.beginPath(); ctx.moveTo(x0,y0); ctx.lineTo(bx+ux*2*k, by+uy*2*k); };
+      const head=()=>{ ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(bx-uy*w, by+ux*w); ctx.lineTo(bx+uy*w, by-ux*w); ctx.closePath(); };
+      shaft(); ctx.lineWidth=6.6*k; ctx.strokeStyle='rgba(2,5,10,.78)'; ctx.stroke();
+      head(); ctx.lineWidth=3.4*k; ctx.strokeStyle='rgba(2,5,10,.78)'; ctx.stroke();
+      shaft(); ctx.lineWidth=3.4*k; ctx.strokeStyle=s.c; ctx.stroke();
+      head(); ctx.fillStyle=s.c; ctx.fill();
+      return;
+    }
+    if (s.t==='oval' || s.t==='box'){
+      const [x0,y0]=proj(s.a), [x1,y1]=proj(s.b);
+      const path=()=>{ ctx.beginPath(); if (s.t==='box') ctx.rect(Math.min(x0,x1), Math.min(y0,y1), Math.abs(x1-x0), Math.abs(y1-y0));
+                       else ctx.ellipse((x0+x1)/2, (y0+y1)/2, Math.max(1,Math.abs(x1-x0)/2), Math.max(1,Math.abs(y1-y0)/2), 0, 0, Math.PI*2); };
+      path(); both(3); path(); ctx.lineWidth=3*k; ctx.strokeStyle=s.c; ctx.stroke();
+      return;
+    }
+    if (s.t==='pen'){
+      const path=()=>{ ctx.beginPath(); s.p.forEach((q,i)=>{ const [x,y]=proj(q); if (i) ctx.lineTo(x,y); else ctx.moveTo(x,y); }); };
+      path(); both(3); path(); ctx.lineWidth=3*k; ctx.strokeStyle=s.c; ctx.stroke();
+      return;
+    }
+    if (s.t==='text'){
+      const [x,y]=proj(s.a);
+      ctx.font=`600 ${Math.round(16*k)}px 'Space Grotesk', system-ui, sans-serif`; ctx.textBaseline='middle'; ctx.textAlign='left';
+      const w=ctx.measureText(s.s).width, px=8*k, h=28*k;
+      ctx.fillStyle='rgba(2,5,10,.82)'; ctx.fillRect(x, y-h/2, w+px*2, h);
+      ctx.fillStyle=s.c; ctx.fillRect(x, y-h/2, 3*k, h);
+      ctx.fillStyle='#fff'; ctx.fillText(s.s, x+px+1.5*k, y+1*k);
+    }
+  });
+  ctx.restore();
+}
+function annRedraw(){
+  if (!IV.map) return;
+  const body=annCv.parentElement, dpr=Math.min(2, window.devicePixelRatio||1), w=body.clientWidth, h=body.clientHeight;
+  if (annCv.width!==Math.round(w*dpr) || annCv.height!==Math.round(h*dpr)){ annCv.width=Math.round(w*dpr); annCv.height=Math.round(h*dpr); }
+  const ctx=annCv.getContext('2d'); ctx.clearRect(0,0,annCv.width,annCv.height);
+  const shapes=annShapes().concat(ANN.cur ? [ANN.cur] : []);
+  if (!shapes.length) return;
+  annPaint(ctx, shapes, ll=>{ const p=IV.map.latLngToContainerPoint(ll); return [p.x*dpr, p.y*dpr]; }, dpr);
+}
+function annSet(on){
+  ANN.on=on; ANN.cur=null; annTextCommit(false);
+  document.getElementById('imgviewer').classList.toggle('annotating', on);
+  const b=document.getElementById('ivann'); b.classList.toggle('on', on); b.setAttribute('aria-pressed', String(on));
+  if (on && ANN.tool==='pan') ANN.tool='arrow';
+  annTool();
+  if (on && !ANN.hinted){
+    ANN.hinted=true;
+    const msg=document.getElementById('ivmsg'), text='// drag on the image to draw · marks stay on this device';
+    msg.textContent=text; msg.classList.add('show'); setTimeout(()=>{ if (msg.textContent===text) msg.classList.remove('show'); }, 3800);
+  }
+  annRedraw();
+}
+function annTool(tool){                                                    // 'pan' lets the map be moved without leaving annotate mode
+  if (tool) ANN.tool=tool;
+  annCv.classList.toggle('draw', ANN.on && ANN.tool!=='pan');
+  document.querySelectorAll('#anntools [data-tool]').forEach(b=>b.classList.toggle('on', b.dataset.tool===ANN.tool));
+}
+function annTextCommit(save){
+  if (!annTextEl.classList.contains('show')) return;
+  const s=annTextEl.value.trim();
+  if (save && s && ANN.textAt) annShapes().push({ t:'text', a:ANN.textAt, s:s.slice(0,80), c:ANN.color });
+  annTextEl.classList.remove('show'); annTextEl.value=''; ANN.textAt=null; annRedraw();
+}
+function annAttach(){
+  if (ANN.attached) return; ANN.attached=true;
+  IV.map.on('move zoom zoomend resize viewreset', annRedraw);
+  const ll=e=>{ const rc=annCv.getBoundingClientRect(), p=IV.map.containerPointToLatLng([e.clientX-rc.left, e.clientY-rc.top]); return [p.lat, p.lng]; };
+  let down=null;
+  annCv.addEventListener('pointerdown', e=>{
+    if (!ANN.on || ANN.tool==='pan' || e.button>0) return;
+    e.preventDefault(); annTextCommit(true);
+    const a=ll(e); down={ x:e.clientX, y:e.clientY, lx:e.clientX, ly:e.clientY };
+    if (ANN.tool==='text'){ down=null; return; }                              // a note is placed on the click that follows (see below)
+    annCv.setPointerCapture(e.pointerId);
+    ANN.cur = ANN.tool==='pen' ? { t:'pen', p:[a], c:ANN.color } : { t:ANN.tool, a, b:a, c:ANN.color };
+  });
+  annCv.addEventListener('pointermove', e=>{
+    if (!ANN.cur || !down) return;
+    const q=ll(e);
+    if (ANN.cur.t==='pen'){ if (Math.hypot(e.clientX-down.lx, e.clientY-down.ly)>2.5){ ANN.cur.p.push(q); down.lx=e.clientX; down.ly=e.clientY; } }
+    else ANN.cur.b=q;
+    annRedraw();
+  });
+  const up=e=>{
+    if (!ANN.cur || !down) return;
+    const s=ANN.cur, moved=Math.hypot(e.clientX-down.x, e.clientY-down.y); ANN.cur=null; down=null;
+    if (s.t==='pen' ? s.p.length>2 : moved>7) annShapes().push(s);
+    annRedraw();
+  };
+  annCv.addEventListener('pointerup', up); annCv.addEventListener('pointercancel', up);
+  /* notes: the box opens where the click lands, and takes the keyboard there and then */
+  annCv.addEventListener('click', e=>{
+    if (!ANN.on || ANN.tool!=='text') return;
+    const rc=annCv.getBoundingClientRect();
+    ANN.textAt=ll(e);
+    annTextEl.style.left=Math.min(rc.width-170, Math.max(4, e.clientX-rc.left))+'px'; annTextEl.style.top=Math.max(4, e.clientY-rc.top-17)+'px';
+    annTextEl.classList.add('show'); annTextEl.focus();
+  });
+  annTextEl.addEventListener('keydown', e=>{
+    e.stopPropagation();
+    if (e.key==='Enter'){ e.preventDefault(); annTextCommit(true); } else if (e.key==='Escape'){ e.preventDefault(); annTextCommit(false); }
+  });
+  annTextEl.addEventListener('blur', ()=>annTextCommit(true));
+}
+document.getElementById('ivann').addEventListener('click', ()=>annSet(!ANN.on));
+document.getElementById('anntools').addEventListener('click', e=>{
+  const b=e.target.closest('button'); if (!b) return;
+  if (b.dataset.tool){ annTextCommit(true); annTool(b.dataset.tool); }
+  else if (b.dataset.col){ ANN.color=b.dataset.col; document.querySelectorAll('#anntools .sw').forEach(x=>x.classList.toggle('on', x===b)); }
+  else if (b.id==='annundo'){ annShapes().pop(); annRedraw(); }
+  else if (b.id==='annclear'){ if (annShapes().length){ annShapes().length=0; annRedraw(); showToast('// all marks removed'); } }
+  else if (b.id==='anndone') annSet(false);
+});
+document.addEventListener('keydown', e=>{                                  // Esc leaves drawing first; ⌘Z / Ctrl+Z undoes a mark
+  if (!ivOpen() || !ANN.on || /^(INPUT|SELECT|TEXTAREA)$/.test(e.target.tagName)) return;
+  if (e.key==='Escape'){ annSet(false); e.preventDefault(); e.stopPropagation(); }
+  else if ((e.metaKey||e.ctrlKey) && e.key.toLowerCase()==='z'){ annShapes().pop(); annRedraw(); e.preventDefault(); e.stopPropagation(); }
+}, true);
+
+/* ---------- VIEWER: DOWNLOAD WHAT YOU SEE AS ONE IMAGE ----------
+   Clear → one picture. Compare → both dates, the same ground, side by side (stacked when the view is wide).
+   The village's names, the capture dates, a scale bar, the sources, and any marks drawn on it are part of the image. */
+const TONE_P=new Map();                                                    // tone filter id → [[slope, intercept] × R G B], for redoing the correction on a canvas
+function ivLoadImg(url){
+  return new Promise(res=>{ const im=new Image(); im.crossOrigin='anonymous'; im.onload=()=>res(im); im.onerror=()=>res(null); im.src=url; });
+}
+async function ivPanel(p, PW, PH, f, v){
+  const cv=document.createElement('canvas'); cv.width=PW; cv.height=PH;
+  const ctx=cv.getContext('2d', { willReadFrequently:true }), m=IV.map, z=m.getZoom();
+  ctx.fillStyle='#03070d'; ctx.fillRect(0,0,PW,PH);
+  const proj=ll=>{ const q=m.latLngToContainerPoint(ll); return [q.x*f, q.y*f]; };
+  if (p.kind==='hist'){
+    const h=IMG.hist[p.i], cur=!h || p.i===0, maxN = cur ? (IMG.z19 ? 19 : 18) : (h.z18 ? 18 : 17);
+    const tz=Math.max(8, Math.min(maxN, Math.ceil(z+Math.log2(f)-.25))), s=f*Math.pow(2, z-tz);        // tile zoom whose pixels are closest to the output's
+    const nw=m.project(m.containerPointToLatLng([0,0]), tz), jobs=[];
+    for (let ty=Math.floor(nw.y/256); ty*256<nw.y+PH/s; ty++) for (let tx=Math.floor(nw.x/256); tx*256<nw.x+PW/s; tx++){
+      const url = cur ? `${ESRI_IMG}/tile/${tz}/${ty}/${tx}` : `${WB}/WMTS/1.0.0/default028mm/MapServer/tile/${h.rel}/${tz}/${ty}/${tx}`;
+      jobs.push(ivLoadImg(url).then(im=>{
+        if (!im) return 0;
+        const x0=Math.floor((tx*256-nw.x)*s), y0=Math.floor((ty*256-nw.y)*s), x1=Math.ceil(((tx+1)*256-nw.x)*s), y1=Math.ceil(((ty+1)*256-nw.y)*s);
+        ctx.drawImage(im, x0, y0, x1-x0, y1-y0); return 1;
+      }));
+    }
+    const got=(await Promise.all(jobs)).reduce((a,b)=>a+b, 0);
+    if (got<jobs.length*.6) throw new Error('tiles');
+    if (!cur){                                                             // the same gentle tone correction the viewer shows
+      const ps=TONE_P.get(await ivTone(h, v));
+      if (ps){
+        const id=ctx.getImageData(0,0,PW,PH), d=id.data;
+        const lut=ps.map(([sl,ic])=>{ const t=new Uint8ClampedArray(256); for (let i=0;i<256;i++) t[i]=sl*i+ic*255; return t; });
+        for (let i=0;i<d.length;i+=4){ d[i]=lut[0][d[i]]; d[i+1]=lut[1][d[i+1]]; d[i+2]=lut[2][d[i+2]]; }
+        ctx.putImageData(id,0,0);
+      }
+    }
+  } else {
+    if (!IV.ovCv || !IV.ovB) throw new Error('latest');
+    const b=L.latLngBounds(IV.ovB), [x0,y0]=proj(b.getNorthWest()), [x1,y1]=proj(b.getSouthEast());
+    ctx.imageSmoothingQuality='high'; ctx.drawImage(IV.ovCv, x0, y0, x1-x0, y1-y0);
+  }
+  /* 2017 destroyed zones, if they are switched on */
+  if (IV.zonesOn && zonesData){
+    try{
+      const data=await loadZones(), box=m.getBounds().pad(.2);
+      ctx.save(); ctx.lineJoin='round';
+      const ring=r=>{ r.forEach((q,i)=>{ const [x,y]=proj([q[1],q[0]]); if (i) ctx.lineTo(x,y); else ctx.moveTo(x,y); }); ctx.closePath(); };
+      data.features.forEach(ft=>{
+        const g=ft.geometry; if (!g) return;
+        (g.type==='MultiPolygon' ? g.coordinates : [g.coordinates]).forEach(poly=>{
+          if (!poly[0] || !poly[0].some(q=>box.contains([q[1],q[0]]))) return;
+          ctx.beginPath(); poly.forEach(ring); p.zones=(p.zones||0)+1;
+          ctx.lineWidth=4.4*f; ctx.strokeStyle='rgba(2,5,10,.6)'; ctx.stroke();
+          ctx.lineWidth=2.2*f; ctx.strokeStyle='#FFD400'; ctx.stroke();
+        });
+      });
+      ctx.restore();
+    }catch(e){}
+  }
+  /* the village itself */
+  ctx.save(); ctx.strokeStyle='#00E5FF'; ctx.lineWidth=2.2*f; ctx.shadowColor='rgba(0,0,0,.8)'; ctx.shadowBlur=4*f;
+  if (v.isWard && v.g){ ctx.beginPath(); v.g.flat(1).forEach(r=>{ r.forEach((q,i)=>{ const [x,y]=proj(q); if (i) ctx.lineTo(x,y); else ctx.moveTo(x,y); }); ctx.closePath(); }); ctx.stroke(); }
+  else { const [x,y]=proj([+v.lat,+v.lng]); ctx.beginPath(); ctx.arc(x,y,10*f,0,Math.PI*2); ctx.stroke(); }
+  ctx.restore();
+  annPaint(ctx, annShapes(), proj, f);
+  /* date label */
+  const mono=px=>`${px}px 'Share Tech Mono', ui-monospace, monospace`;
+  ctx.font=mono(22); ctx.textBaseline='middle';
+  const lw=ctx.measureText(p.label).width;
+  ctx.fillStyle='rgba(2,5,10,.84)'; ctx.fillRect(18, 18, lw+34, 42);
+  ctx.fillStyle=p.accent||'#00E5FF'; ctx.fillRect(18, 18, 4, 42);
+  ctx.fillStyle='#fff'; ctx.fillText(p.label, 36, 40);
+  /* scale bar */
+  const mpp=40075016.686*Math.cos((+m.getCenter().lat)*Math.PI/180)/(256*Math.pow(2, z))/f;
+  const nice=[10,20,50,100,200,500,1000,2000,5000,10000,20000].filter(n=>n/mpp<=PW*.2).pop()||10, bw=nice/mpp, by=PH-30;
+  ctx.fillStyle='rgba(2,5,10,.84)'; ctx.fillRect(18, by-28, bw+24, 46);
+  ctx.fillStyle='#fff'; ctx.fillRect(30, by+4, bw, 3); ctx.fillRect(30, by-3, 2, 10); ctx.fillRect(30+bw-2, by-3, 2, 10);
+  ctx.font=mono(16); ctx.fillText(nice>=1000 ? (nice/1000)+' km' : nice+' m', 30, by-12);
+  return cv;
+}
+async function ivExport(){
+  const v=current, btn=document.getElementById('ivsave'), msg=document.getElementById('ivmsg');
+  if (!v || !IV.map || btn.classList.contains('busy')) return;
+  annTextCommit(true);
+  btn.classList.add('busy'); msg.textContent='// preparing the image…'; msg.classList.add('show');
+  try{
+    const H=IMG.hist, size=IV.map.getSize(), day=i=>H[i] ? histDay(H[i]) : (IMG.clearCap||'').replace(/<[^>]+>/g,'').split('·')[0].replace(/^\s*Captured\s*/i,'').trim();
+    let panels;
+    if (IV.mode==='compare') panels=[IV.l, IV.r].map((i,n)=>({ kind:'hist', i, label:day(i).toUpperCase(), accent:n ? '#00E5FF' : '#FFB020' }));
+    else if (IV.mode==='clear') panels=[{ kind:'hist', i:IV.a, label:(day(IV.a) || 'Current imagery').toUpperCase() }];
+    else { const sc=IMG.scenes[IMG.idx]; if (!sc || !IV.ovCv) throw new Error('latest'); panels=[{ kind:'latest', label:fmtDay(sc.date).toUpperCase()+' · SENTINEL-2' }]; }
+    const two=panels.length===2, stacked=two && size.x/size.y>1.25;
+    const PW = two && !stacked ? 940 : 1680, f=PW/size.x, PH=Math.round(size.y*f), M=44, GAP=12;
+    await Promise.all(["700 60px 'Space Grotesk'", "500 26px 'Space Grotesk'", "22px 'Share Tech Mono'", "26px 'Noto Sans Myanmar'"].map(x=>document.fonts.load(x, roName(v)+(v.village_name_mmr||'')).catch(()=>0)));
+    const shots=await Promise.all(panels.map(p=>ivPanel(p, PW, PH, f, v)));
+    const marks=annShapes().length>0, zones=panels.some(p=>p.zones>0);
+    const W = two && !stacked ? PW*2+GAP+M*2 : PW+M*2, HEAD=206;
+    const notes=[];
+    if (IV.mode==='latest') notes.push('Imagery: Copernicus Sentinel-2 (European Space Agency), 10 m per pixel.');
+    else notes.push('Imagery: Esri World Imagery and its Wayback archive (Vantor / Maxar). The dates are the capture dates Esri publishes.');
+    if (zones) notes.push('Yellow outlines: zones of destroyed structures mapped by UNOSAT from imagery of 31 Aug – 11 Oct 2017. Not field validated.');
+    if (marks) notes.push('Arrows, shapes and notes were added by the person who made this image; they are not part of the archive.');
+    const FOOT=62+notes.length*30+36, Hh=HEAD+(stacked ? PH*2+GAP : PH)+FOOT;
+    const cv=document.createElement('canvas'); cv.width=W; cv.height=Hh;
+    const c=cv.getContext('2d');
+    c.fillStyle='#050B14'; c.fillRect(0,0,W,Hh);
+    const g=c.createLinearGradient(0,0,W,0); g.addColorStop(0,'#00E5FF'); g.addColorStop(.6,'rgba(0,229,255,0)'); c.fillStyle=g; c.fillRect(0,0,W,4);
+    const mono=px=>`${px}px 'Share Tech Mono', ui-monospace, monospace`, sans=(w,px)=>`${w} ${px}px 'Space Grotesk', system-ui, sans-serif`;
+    const fit=(text, font, max)=>{ c.font=font; if (c.measureText(text).width<=max) return text; let t=text; while (t.length>4 && c.measureText(t+'…').width>max) t=t.slice(0,-1); return t+'…'; };
+    /* header: who and where */
+    c.textBaseline='alphabetic'; c.textAlign='left';
+    c.font=mono(19); c.fillStyle='rgba(0,229,255,.85)'; c.fillText('// FARA · THE ARAKAN VILLAGE NAME ARCHIVE', M, 50);
+    const rightW=Math.min(520, W*.36), leftW=W-M*2-rightW-30;
+    c.fillStyle='#E8F2FF'; c.fillText(fit(roName(v), sans(700,62), leftW), M, 118);
+    const sub = enName(v)!==roName(v) ? enName(v) : '';
+    c.font=sans(500,27); c.fillStyle='#8FA8C7'; let sx=M;
+    if (sub){ const t=fit(sub, sans(500,27), leftW*.6); c.fillText(t, sx, 162); sx+=c.measureText(t).width+18; }
+    if (v.village_name_mmr){ c.font="27px 'Noto Sans Myanmar', 'Space Grotesk', sans-serif"; c.fillText(v.village_name_mmr, sx, 162); }
+    c.textAlign='right'; c.font=mono(19); c.fillStyle='#E8F2FF';
+    const R=W-M, where=[(townOf(v)+' township').toUpperCase(), v.village_tract ? 'TRACT · '+String(v.village_tract).toUpperCase() : '',
+      isUnverified(v) ? '' : Math.abs(+v.lat).toFixed(5)+'° '+(+v.lat>=0?'N':'S')+'  '+Math.abs(+v.lng).toFixed(5)+'° '+(+v.lng>=0?'E':'W'), v.isWard ? '' : recId(v)].filter(Boolean);
+    where.forEach((t,i)=>{ c.fillStyle = i===0 ? colorOf(v) : i===where.length-1 ? '#54708F' : '#8FA8C7'; c.fillText(fit(t, mono(19), rightW), R, 84+i*28); });
+    c.textAlign='left';
+    /* the pictures */
+    c.drawImage(shots[0], M, HEAD);
+    if (two) c.drawImage(shots[1], stacked ? M : M+PW+GAP, stacked ? HEAD+PH+GAP : HEAD);
+    c.strokeStyle='rgba(0,229,255,.28)'; c.lineWidth=1;
+    c.strokeRect(M+.5, HEAD+.5, PW-1, PH-1); if (two) c.strokeRect((stacked ? M : M+PW+GAP)+.5, (stacked ? HEAD+PH+GAP : HEAD)+.5, PW-1, PH-1);
+    /* footer: sources and where this came from */
+    let y=HEAD+(stacked ? PH*2+GAP : PH)+46;
+    c.font=sans(400,19); c.fillStyle='#8FA8C7';
+    notes.forEach(t=>{ c.fillText(fit(t, sans(400,19), W-M*2), M, y); y+=30; });
+    y+=14; c.fillStyle='rgba(110,160,210,.2)'; c.fillRect(M, y-22, W-M*2, 1);
+    c.font=mono(18); c.fillStyle='#00E5FF'; c.fillText(v.isWard ? 'map.rohingya.ro' : pageUrl(v).replace(/^https?:\/\//,'').replace(/^(localhost|127\.0\.0\.1)(:\d+)?/, 'map.rohingya.ro'), M, y+10);
+    c.textAlign='right'; c.fillStyle='#54708F'; const now=new Date(), made=now.getFullYear()+'-'+String(now.getMonth()+1).padStart(2,'0')+'-'+String(now.getDate()).padStart(2,'0');
+    c.fillText('Made '+made+' · every village had a name', R, y+10);
+    try{                                                                    // the Hanifi logo, top right of the title block
+      const svg=document.querySelector('#brand svg.logo');
+      if (svg){ const im=await ivLoadImg('data:image/svg+xml;charset=utf-8,'+encodeURIComponent(new XMLSerializer().serializeToString(svg).replace('<svg','<svg xmlns="http://www.w3.org/2000/svg" width="226" height="75"')));
+        if (im){ c.globalAlpha=.9; c.drawImage(im, R-96, 26, 96, 32); c.globalAlpha=1; } }
+    }catch(e){}
+    const slug=(v.slug || String(v.id)).replace(/[^a-z0-9-]/gi,'');
+    const tag = IV.mode==='compare' ? 'before-after' : IV.mode==='latest' ? 'sentinel' : 'imagery';
+    const name='fara-'+slug+'-'+tag+'.jpg';
+    const blob=await new Promise(r=>cv.toBlob(r, 'image/jpeg', .92));
+    if (!blob) throw new Error('blob');
+    const file = typeof File==='function' ? new File([blob], name, { type:'image/jpeg' }) : null;
+    if (PHONE.matches && file && navigator.canShare && navigator.canShare({ files:[file] })){
+      try{ await navigator.share({ files:[file], title:roName(v)+' · FARA' }); }catch(e){ if (e && e.name!=='AbortError') throw e; }
+    } else {
+      const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=name; document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(()=>URL.revokeObjectURL(a.href), 8000);
+      showToast('// image saved · '+Math.round(blob.size/1024)+' KB');
+    }
+    IV.lastExport={ w:W, h:Hh, kb:Math.round(blob.size/1024), name };
+    track('Image downloaded', { mode:IV.mode, marks:marks ? 1 : 0 });
+    msg.classList.remove('show');
+  }catch(e){
+    msg.textContent = e && e.message==='latest' ? '// wait for the Sentinel-2 image to load, then try again' : '// could not make the image — check the connection and try again';
+    msg.classList.add('show'); setTimeout(()=>{ if (/could not|wait for/.test(msg.textContent)) msg.classList.remove('show'); }, 5000);
+  }
+  btn.classList.remove('busy');
+}
+document.getElementById('ivsave').addEventListener('click', ivExport);
+
+/* ---------- EMBED: a small card other sites can show ---------- */
+function openEmbed(){
+  const v=current; if (!v) return;
+  const local=/^(localhost|127\.|0\.0\.0\.0|\[::1\])/.test(location.hostname);
+  const live='https://map.rohingya.ro/embed/'+v.id+'/';
+  document.getElementById('embframe').src=(local ? location.origin+'/embed/'+v.id+'/' : live);
+  document.getElementById('embopen').href=(local ? location.origin+'/embed/'+v.id+'/' : live);
+  document.getElementById('embcode').value='<iframe src="'+live+'" title="'+esc(roName(v))+' — FARA, the Arakan Village Name Archive" width="100%" height="430" style="border:0;max-width:480px" loading="lazy"></iframe>';
+  openModal('embedmodal'); track('Embed opened');
+}
+document.getElementById('embedbtn').addEventListener('click', openEmbed);
+document.getElementById('embcopy').addEventListener('click', ()=>copyText(document.getElementById('embcode').value, '// embed code copied'));
+document.getElementById('embcode').addEventListener('focus', e=>e.target.select());
+
 function closePanel(){
   clearWard();
   panel.classList.remove('open');
@@ -2643,6 +3525,7 @@ function closePanel(){
   if (selMarker){ selMarker.remove(); selMarker=null; }
   IMG.token++;
   current=null;
+  bordersFor(null);
   history.replaceState(null,'',location.pathname);
 }
 document.getElementById('pclose').addEventListener('click', closePanel);
@@ -2769,14 +3652,15 @@ function pushRecent(id){
 }
 function renderRecent(){
   const list=getRecent().map(id=>VILLAGES.find(v=>v.id===id)).filter(Boolean);
-  recentEl.innerHTML = list.length
+  recentEl.innerHTML = '<button class="brentry" id="recbrowse" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h7"/><path d="M3 12h11"/><path d="M3 18h15"/><path d="m17 5 3 3-3 3"/></svg>Browse by township<span>›</span></button>' + (list.length
     ? '<div class="rechead">// Recently opened</div>'+list.map(v=>`
       <button class="res" data-id="${v.id}">
         <span class="dot" style="background:${colorOf(v)};color:${colorOf(v)}"></span>
         <span><span class="rn">${esc(roName(v))}</span><br><span class="re">${esc(enName(v))}</span></span>
         <span class="rt">${esc(townOf(v))}</span>
       </button>`).join('')
-    : '<div class="rechint">// type a village name in Rohingya, English or Burmese<br>// or open one at random</div><button class="abtn primary" id="recrandom">Discover a village</button>';
+    : '<div class="rechint">// type a village name in Rohingya, English or Burmese<br>// or open one at random</div><button class="abtn primary" id="recrandom">Discover a village</button>');
+  document.getElementById('recbrowse').addEventListener('click', e=>{ e.stopPropagation(); browseOpen(); });
   recentEl.querySelectorAll('.res').forEach(b=>b.addEventListener('click',()=>{
     const v=VILLAGES.find(x=>x.id===+b.dataset.id); if (v){ openVillage(v,true); closeResults(); }
   }));
@@ -2824,7 +3708,7 @@ if (PHONE.matches) deck.classList.add('hidden');
 syncTabs();
 
 /* ---- floating map buttons ---- */
-document.getElementById('fab-layer').addEventListener('click',()=>{ buzz(); setBasemap(!map.hasLayer(satTiles)); showToast(map.hasLayer(satTiles) ? '// orbital view' : '// grid view'); });
+document.getElementById('fab-layer').addEventListener('click',()=>{ buzz(); setBasemap(!satIsOn); showToast(satIsOn ? '// orbital view' : '// grid view'); });
 document.getElementById('fab-fit').addEventListener('click',()=>{ buzz(); map.flyToBounds(bounds,{ paddingTopLeft:[16,96], paddingBottomRight:[16,84], duration: reduceMotion ? 0 : 1 }); });
 document.getElementById('mdone').addEventListener('click',()=>setMeasure(false));
 
@@ -3215,7 +4099,12 @@ const ACTIONS=[
   {n:'Discover Random Village',d:'radar sweep to a record',k:'D',fn:discover},
   {n:'Map Art Studio',d:'create a printable village poster',k:'P',fn:()=>document.getElementById('posterbtn').click()},
   {n:'Toggle Graticule',d:'lat/lng grid overlay',k:'G',fn:toggleGrid},
-  {n:'Toggle Orbital View',d:'satellite imagery',k:'',fn:()=>setBasemap(!map.hasLayer(satTiles))},
+  {n:'Toggle Orbital View',d:'satellite imagery',k:'',fn:()=>setBasemap(!satIsOn)},
+  {n:'Browse by Township',d:'township → village tract → village, no typing',k:'B',fn:()=>browseOpen()},
+  {n:'Toggle Borders',d:'township + village-tract boundaries',k:'O',fn:()=>toggleBorders()},
+  {n:'Imagery by Year',d:'see the map as it looked in earlier years',k:'Y',fn:()=>timeOpen(true)},
+  {n:'Stories',d:'guided accounts told with the map',k:'',fn:()=>{ location.href='/stories/'; }},
+  {n:'Printable Gazetteers',d:'every village of a township, with maps',k:'',fn:()=>{ location.href='/township/'+((current && current.township) || 'Maungdaw').toLowerCase()+'/gazetteer/'; }},
   {n:'The Mission',d:'why FARA exists',k:'',fn:()=>openModal('aboutmodal')},
   {n:'Keyboard Shortcuts',d:'all bindings',k:'?',fn:()=>openModal('helpmodal')},
 ];
@@ -4118,6 +5007,9 @@ document.addEventListener('keydown', e=>{
       if (areaing){ setArea(false); clearArea(); break; }
       if (measuring) setMeasure(false);
       closeModals(); closePanel(); closeResults(); break;
+    case 'b': case 'B': browseToggle(); break;
+    case 'o': case 'O': toggleBorders(); break;
+    case 'y': case 'Y': timeOpen(); break;
     case 'r': case 'R': openModal('registrymodal'); break;
     case 'm': case 'M': setMeasure(!measuring); break;
     case 'a': case 'A': document.getElementById('areabtn').click(); break;

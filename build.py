@@ -7,6 +7,9 @@ Writes:
   fara.html                     the interactive archive (template + embedded data)
   village/<id>-<slug>/index.html   one page per village (for search engines, link previews, citing)
   township/<slug>/index.html    one index page per township
+  township/<slug>/gazetteer/    a print-designed gazetteer of the township (build_extra.py; tools/build_pdfs.py makes the PDFs)
+  embed/<id>/index.html         a small card other websites can show in an iframe (build_extra.py)
+  stories/<slug>/index.html     guided scrolling accounts written in content/stories/*.json (build_extra.py)
   villages/index.html           A-Z index of every village
   sitemap.xml, robots.txt, llms.txt
   sw.js                         offline support (cache name changes whenever the site changes)
@@ -161,6 +164,8 @@ LOGO = ('<svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><rect x="4" y="
 _m = re.search(r'<div id="brand">\s*(<svg class="logo".*?</svg>)', app, re.S)
 if _m: LOGO = _m.group(1).replace(' class="logo"', '')
 
+CSS_V = hashlib.sha256(open(p('pages.css'), 'rb').read()).hexdigest()[:8]      # so a changed stylesheet is never served from an old copy
+
 def page(path, title, desc, body, jsonld=None, og_title=None, og_image=None, og_alt=None):
     url = SITE + path
     ld = ''.join('<script type="application/ld+json">%s</script>\n' % json.dumps(j, ensure_ascii=False, separators=(',', ':')) for j in (jsonld or []))
@@ -191,12 +196,12 @@ def page(path, title, desc, body, jsonld=None, og_title=None, og_image=None, og_
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Share+Tech+Mono&family=Noto+Sans+Myanmar:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/pages.css">
+<link rel="stylesheet" href="/pages.css?v=%(cssv)s">
 %(ld)s</head>
 <body>
 <header class="top">
   <a class="brand" href="/" aria-label="FARA home">%(logo)s<span><b>FARA</b><i>Arakan Village Name Archive</i></span></a>
-  <nav><a href="/">Map</a><a href="/villages/">All villages</a></nav>
+  <nav><a href="/">Map</a><a href="/villages/">All villages</a><a href="/stories/">Stories</a></nav>
 </header>
 <main>
 %(body)s
@@ -205,6 +210,7 @@ def page(path, title, desc, body, jsonld=None, og_title=None, og_image=None, og_
   <p><b>FARA — The Arakan Village Name Archive.</b> Every village had a name. FARA exists so those names are never erased.</p>
   <p>%(n)s villages across Maungdaw, Buthidaung, Rathedaung and Sittwe townships. Source data: <a href="https://map.rohingyakhobor.com/map" rel="noopener">Rohingya Khobor — Arakan Maps Project</a>, collected %(collected)s.
   Download the data: <a href="/arakan_villages.csv">CSV</a> · <a href="/arakan_villages.json">JSON</a> · <a href="/arakan_villages.geojson">GeoJSON</a>.</p>
+  <p><a href="/">The map</a> · <a href="/villages/">All villages, A–Z</a> · <a href="/stories/">Stories</a> · Townships: <a href="/township/maungdaw/">Maungdaw</a>, <a href="/township/buthidaung/">Buthidaung</a>, <a href="/township/rathedaung/">Rathedaung</a>, <a href="/township/sittwe/">Sittwe</a></p>
   <p>A project by AB Aziz · <a href="mailto:ab@rohingya.ro">ab@rohingya.ro</a></p>
 </footer>
 %(analytics)s
@@ -213,7 +219,7 @@ def page(path, title, desc, body, jsonld=None, og_title=None, og_image=None, og_
 </html>
 ''' % dict(title=esc(title), desc=esc(desc), url=url, ogt=esc(og_title or title), site=SITE, ld=ld, logo=LOGO, body=body,
            ogi=og_image or (SITE + '/og.png'), oga=esc(og_alt or 'FARA — The Arakan Village Name Archive'),
-           n='{:,}'.format(N), collected=COLLECTED, analytics=ANALYTICS)
+           n='{:,}'.format(N), collected=COLLECTED, analytics=ANALYTICS, cssv=CSS_V)
 
 def crumbs(items):
     out = []
@@ -223,6 +229,14 @@ def crumbs(items):
 def crumbs_ld(items):
     return {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
         {'@type': 'ListItem', 'position': i+1, 'name': n, 'item': SITE + h} for i, (n, h) in enumerate(items)]}
+
+import build_extra
+EXTRA = build_extra.Ctx(globals())
+# stories first: the village and township pages link to them
+if os.path.isdir(p('stories')): shutil.rmtree(p('stories'))
+n_story = build_extra.build_stories(EXTRA)
+story_paths = getattr(EXTRA, 'story_paths', [])
+STORY = getattr(EXTRA, 'village_stories', {})          # village id -> its story page
 
 # ------------------------------------------------------------------ village pages
 if os.path.isdir(p('village')): shutil.rmtree(p('village'))
@@ -285,6 +299,7 @@ for v in V:
     if alt: body += '<p class="alt">%s</p>' % alt
     body += '<p class="lede">%s</p>' % esc(lede)
     body += '<p class="cta"><a class="btn primary" href="/#v=%d">Open on the interactive map</a>' % v['id']
+    if v['id'] in STORY: body += '<a class="btn" href="%s">Its story in 2017</a>' % STORY[v['id']]
     if not unv: body += '<a class="btn" href="https://www.google.com/maps?q=%.6f,%.6f" rel="noopener">Google Maps</a>' % (float(v['lat']), float(v['lng']))
     body += '<a class="btn" href="/#v=%d&amp;suggest">Suggest a name or correction</a></p>' % v['id']
     body += img
@@ -300,10 +315,15 @@ for v in V:
                  '<p class="note">Source: <a href="%s" rel="noopener">UNOSAT, “Destroyed areas in Buthidaung, Maungdaw, and Rathedaung Townships”</a> (CC BY-SA), '
                  'matched to this village by location. <a href="/#v=%d">Open the map</a> to compare satellite images from before and after.</p>'
                  % (ST17_LABEL[st_code], esc(st_text), ST17_URL, v['id']))
+        if v['id'] in STORY:
+            body += ('<p class="note"><a href="%s"><b>Read the story of %s in 2017</b></a>: the last satellite picture from before that autumn, the first one after, '
+                     'and what UNOSAT mapped, step by step.</p>' % (STORY[v['id']], esc(name)))
     if near:
         body += '<h2>Nearby villages</h2><ul class="near">' + ''.join(
             '<li><a href="%s"><b>%s</b><span>%s</span></a><em>%s</em></li>' % (vurl(x), esc(ro(x)), esc(en(x)) if en(x) != ro(x) else '', fmt_dist(d)) for d, x in near) + '</ul>'
     body += '<h2>Questions and answers</h2><div class="qa">' + ''.join('<h3>%s</h3><p>%s</p>' % (esc(q), esc(a)) for q, a in qa) + '</div>'
+    body += ('<h2>Show this village on your own site</h2><p class="note">Paste this code into a web page to show a small card for %s that links back to this record. It is free to use.</p>'
+             '<pre class="embedcode"><code>%s</code></pre>' % (esc(name), esc(build_extra.embed_code(EXTRA, v))))
     body += ('<h2>About this record</h2><p class="note">This record comes from the <a href="https://map.rohingyakhobor.com/map" rel="noopener">Rohingya Khobor — Arakan Maps Project</a>, collected on %s. '
              'Records with known problems are flagged, never silently altered. To cite it: <span class="cite">FARA — The Arakan Village Name Archive, record %s, “%s”, %s%s.</span></p>'
              % (COLLECTED, rid(v), esc(name), SITE, vurl(v)))
@@ -343,7 +363,14 @@ for t in towns:
     desc = 'All %d Rohingya villages of %s township, Arakan (Rakhine State, Myanmar) in the FARA archive, with their Rohingya, English and Burmese names and locations.' % (len(vs), t)
     body = crumbs([('FARA', '/'), (t + ' township', None)])
     body += '<h1>%s township</h1><p class="lede">FARA records %d Rohingya villages in %s township, across %d village tracts. Each has its name in Rohingya, its official romanised name, its Burmese name where known, and its location.</p>' % (esc(t), len(vs), esc(t), tracts)
-    body += '<p class="cta"><a class="btn primary" href="/">Open the interactive map</a><a class="btn" href="/by_township/%s.csv">Download this township (CSV)</a></p>' % t
+    body += '<p class="cta"><a class="btn primary" href="/">Open the interactive map</a><a class="btn" href="/downloads/fara-gazetteer-%s.pdf">Printable gazetteer (PDF)</a><a class="btn" href="%sgazetteer/">Gazetteer (web)</a><a class="btn" href="/by_township/%s.csv">Download this township (CSV)</a></p>' % (slugify(t), turl(t), t)
+    told = sorted((v for v in vs if v['id'] in STORY), key=lambda x: ro(x).lower())
+    if told:
+        body += ('<h2>Stories from %s</h2><p class="note">%d villages of %s township have a story of their own: what satellites recorded there in 2017, with dated pictures from before and after. '
+                 '<a href="/stories/#%s">See them all on the stories page</a>, or start with <a href="/stories/what-the-satellites-recorded/">the whole account</a>.</p>'
+                 % (esc(t), len(told), esc(t), slugify(t)))
+        body += '<ul class="vlist">' + ''.join('<li><a href="%s"><b>%s</b>%s</a></li>' % (
+            STORY[x['id']], esc(ro(x)), '<span>%s</span>' % esc(en(x)) if en(x) and en(x) != ro(x) else '') for x in told) + '</ul>'
     body += '<h2>Villages in %s</h2>' % esc(t) + vlist(vs)
     ld = {'@context': 'https://schema.org', '@type': 'CollectionPage', 'name': '%s township — Rohingya villages' % t, 'url': SITE + turl(t), 'description': desc}
     write(p('township', slugify(t), 'index.html'), page(turl(t), '%s township — %d Rohingya villages | FARA' % (t, len(vs)), desc, body,
@@ -358,9 +385,14 @@ for t in towns:
 write(p('villages', 'index.html'), page('/villages/', 'All %s Rohingya villages of Arakan, A–Z | FARA' % '{:,}'.format(N), desc, body,
       [crumbs_ld([('FARA', '/'), ('All villages', '/villages/')])]))
 
+# ------------------------------------------------------------------ embed cards, gazetteers, stories
+n_embed = build_extra.build_embeds(EXTRA)
+n_gaz = build_extra.build_gazetteers(EXTRA)
+
 # ------------------------------------------------------------------ sitemap, robots, llms.txt
 today = date.today().isoformat()
-urls = [('/', '1.0'), ('/villages/', '0.8')] + [(turl(t), '0.8') for t in towns] + [(vurl(v), '0.6') for v in V]
+urls = ([('/', '1.0'), ('/villages/', '0.8')] + [(turl(t), '0.8') for t in towns] + [(turl(t) + 'gazetteer/', '0.7') for t in towns]
+        + ([('/stories/', '0.8')] + [(sp, '0.8') for sp in story_paths] if story_paths else []) + [(vurl(v), '0.6') for v in V])
 write(p('sitemap.xml'), '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(
     '  <url><loc>%s%s</loc><lastmod>%s</lastmod><priority>%s</priority></url>\n' % (SITE, u, today, pr) for u, pr in urls) + '</urlset>\n')
 write(p('robots.txt'), '''# FARA — The Arakan Village Name Archive
@@ -409,6 +441,10 @@ Rohingya village names are being renamed, depopulated and removed from official 
 - [All villages, A–Z](%(site)s/villages/)
 %(town_links)s
 - One page per village at %(site)s/village/<id>-<name>/ with names, location, nearby villages and a short question-and-answer section.
+- Printable gazetteers, one per township, with every village's names, coordinates and place code and a map of every village tract:
+%(gaz_links)s
+%(story_links)s- An embeddable card for every village at %(site)s/embed/<id>/ (for use in an iframe; it links back to the village page).
+- On the map: township and village-tract boundaries, the whole map in the imagery of earlier years (2014 onwards), and a browse list (township, village tract, village) for finding a village without typing.
 
 ## Data
 - [CSV](%(site)s/arakan_villages.csv)
@@ -417,6 +453,8 @@ Rohingya village names are being renamed, depopulated and removed from official 
 - [2017 destruction per village, CSV](%(site)s/status_unosat_2017.csv) and [the destroyed zones, GeoJSON](%(site)s/unosat_2017_zones.geojson): derived from UNOSAT data, CC BY-SA 4.0, credit UNOSAT
 - Fields: id, name (official romanised), rohingya_name, village_name_mmr (Burmese script), lat, lng, village_tract, township, district, coord_status, pcode_village, pcode_village_tract, pcode_township, pcode_district, mimu_village_name, mimu_village_tract_name, mimu_village_status, mimu_village_tract_status, pcode_match.
 - [Place-code matching, record by record](%(site)s/pcodes.csv): how each code was matched, and the few records still to be confirmed.
+- [Satellite capture dates per village](%(site)s/captures.json): for each village, the dates of the images Esri's World Imagery Wayback archive holds (looked up by tools/build_captures.py).
+- [Township and village-tract boundaries](%(site)s/boundaries.json): from UN OCHA's COD-AB dataset for Myanmar (source MIMU), CC BY-IGO; approximate, about 1:250,000.
 
 ## Citing
 Cite a record as: FARA — The Arakan Village Name Archive, record FARA-<id>, "<village name>", followed by the page URL.
@@ -424,15 +462,19 @@ Cite a record as: FARA — The Arakan Village Name Archive, record FARA-<id>, "<
            towns=', '.join('%s (%d)' % (t, sum(1 for v in V if v.get('township') == t)) for t in towns),
            with_pc='{:,}'.format(sum(1 for v in V if v.get('pcode_village'))), pc_source=PCODE_SOURCE,
            with_ro=sum(1 for v in V if v.get('rohingya_name')), with_mm=sum(1 for v in V if v.get('village_name_mmr')),
-           town_links='\n'.join('- [%s township](%s%s)' % (t, SITE, turl(t)) for t in towns)))
+           town_links='\n'.join('- [%s township](%s%s)' % (t, SITE, turl(t)) for t in towns),
+           gaz_links='\n'.join('  - [%s township gazetteer](%s%sgazetteer/) · [PDF](%s/downloads/fara-gazetteer-%s.pdf)' % (t, SITE, turl(t), SITE, slugify(t)) for t in towns),
+           story_links=('- [Stories](%s/stories/): guided accounts told with the map and the satellite record. One written account of autumn 2017 '
+                        '(%s/stories/what-the-satellites-recorded/) and one story at %s/stories/<id>-<name>/ for each of the %d villages where UNOSAT mapped destruction at or beside the village, '
+                        'with the dated satellite pictures from before and after.\n' % (SITE, SITE, SITE, len(STORY))) if story_paths else ''))
 
 # ------------------------------------------------------------------ service worker (offline)
 sw_src = p('sw.template.js')
 if os.path.exists(sw_src):
     h = hashlib.sha256()
-    for f in ('fara.html', 'wards.js', 'pages.css', 'sw.template.js'):
+    for f in ('fara.html', 'wards.js', 'pages.css', 'gazetteer.css', 'stories.css', 'stories.js', 'captures.json', 'boundaries.json', 'sw.template.js'):
         if os.path.exists(p(f)): h.update(open(p(f), 'rb').read())
     write(p('sw.js'), open(sw_src, encoding='utf-8').read().replace('__VERSION__', h.hexdigest()[:12]))
 
-print('built: fara.html, %d village pages, %d township pages, sitemap (%d urls), robots.txt, llms.txt%s'
-      % (N, len(towns), len(urls), ', sw.js' if os.path.exists(sw_src) else ''))
+print('built: fara.html, %d village pages, %d township pages, %d embed cards, %d gazetteers, %d stories, sitemap (%d urls), robots.txt, llms.txt%s'
+      % (N, len(towns), n_embed, n_gaz, n_story, len(urls), ', sw.js' if os.path.exists(sw_src) else ''))

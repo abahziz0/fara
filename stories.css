@@ -1,0 +1,113 @@
+/* FARA stories: a map that stays put while the text scrolls over it (build_extra.py writes the pages, stories.js drives the map).
+   Same look as the archive: dark console, cyan lines, Space Grotesk + Share Tech Mono. Without JavaScript the text still reads top to bottom. */
+:root{--bg:#02050A;--panel:rgba(5,12,22,.9);--solid:#071120;--line:rgba(0,229,255,.24);--soft:rgba(110,160,210,.16);--cyan:#00E5FF;--text:#E8F2FF;--dim:#A9BCD4;--faint:#6B86A6;--amber:#FFB020;--red:#FF3B5C;--yellow:#FFD400}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Space Grotesk',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--cyan)}
+.mono{font-family:'Share Tech Mono',ui-monospace,monospace}
+.mmr{font-family:'Noto Sans Myanmar','Space Grotesk',sans-serif}
+
+.smap{position:fixed;inset:0;z-index:0;background:#03070d;contain:strict}
+.story:not(.js) .smap,.story:not(.js) .scap,.story:not(.js) .slegend,.story:not(.js) .sprog{display:none}
+#smap,#smap.leaflet-container{background:#03070d}                       /* wins over the map library's own grey, whichever stylesheet arrives first */
+.smap .leaflet-layer{transition:opacity .9s ease}
+.smap .leaflet-control-attribution{background:rgba(2,5,10,.7)!important;color:#8FA8C7!important;font:400 9px 'Share Tech Mono',monospace!important;padding:2px 7px!important}
+.smap .leaflet-control-attribution a{color:#8FA8C7!important}
+.sprog{position:fixed;left:0;top:0;height:2px;width:100%;z-index:6;background:linear-gradient(90deg,var(--cyan),rgba(0,229,255,.4));box-shadow:0 0 10px rgba(0,229,255,.7);transform:scaleX(0);transform-origin:0 50%;will-change:transform}
+.scap{position:fixed;right:16px;bottom:30px;z-index:3;max-width:min(430px,calc(100vw - 32px));padding:8px 12px;background:rgba(2,5,10,.84);border:1px solid var(--line);border-left:3px solid var(--cyan);font:400 11px/1.5 'Share Tech Mono',monospace;color:var(--dim);opacity:0;transform:translateY(6px);transition:opacity .4s,transform .4s;pointer-events:none}
+.scap.show{opacity:1;transform:none}
+.scap b{color:var(--text);font-weight:400}
+.slegend{position:fixed;right:16px;top:16px;z-index:3;display:none;flex-direction:column;gap:6px;padding:10px 12px;background:rgba(2,5,10,.84);border:1px solid var(--line);font:400 10.5px 'Share Tech Mono',monospace;letter-spacing:.06em;color:var(--dim)}
+.slegend.show{display:flex}
+.slegend span{display:flex;align-items:center;gap:8px;white-space:nowrap}
+.slegend i{flex:none;width:9px;height:9px;border-radius:50%;box-shadow:0 0 6px currentColor}
+.slegend i.sq{border-radius:0;width:13px;height:9px;background:none!important;border:2px solid var(--yellow);box-shadow:none}
+
+.shero{position:relative;z-index:2;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:28px clamp(18px,6vw,84px) clamp(48px,12vh,120px);background:linear-gradient(90deg,rgba(2,5,10,.94) 0%,rgba(2,5,10,.78) 42%,rgba(2,5,10,.2) 100%)}
+.story:not(.js) .shero{min-height:0;padding-top:60px;background:none}
+.sbrand{position:absolute;left:clamp(18px,6vw,84px);top:26px;display:flex;align-items:center;gap:12px;color:var(--text);text-decoration:none}
+.scrumbs{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:16px;font:400 11.5px 'Share Tech Mono',monospace;letter-spacing:.08em;color:var(--faint)}
+.scrumbs a{color:var(--dim);text-decoration:none}
+.scrumbs a:hover{color:var(--cyan)}
+.scrumbs i{font-style:normal;color:var(--cyan);opacity:.6}
+.sbrand svg{height:26px;width:auto}
+.sbrand b{display:block;font-size:17px;letter-spacing:.3em;line-height:1}
+.sbrand i{display:block;margin-top:5px;font:400 9.5px 'Share Tech Mono',monospace;letter-spacing:.3em;text-transform:uppercase;color:var(--faint)}
+.skick{font:400 12px 'Share Tech Mono',monospace;letter-spacing:.26em;text-transform:uppercase;color:var(--cyan)}
+.skick::before{content:"// "}
+.shero h1{margin-top:14px;max-width:16ch;font-size:clamp(38px,7vw,88px);line-height:1;font-weight:700;letter-spacing:-.03em;text-wrap:balance;overflow-wrap:anywhere}
+.sdek{margin-top:22px;max-width:44ch;font-size:clamp(16px,1.5vw,20px);line-height:1.5;color:var(--dim)}
+.sscroll{margin-top:38px;font:400 11px 'Share Tech Mono',monospace;letter-spacing:.24em;text-transform:uppercase;color:var(--faint)}
+.sscroll span{display:inline-block;margin-left:6px;color:var(--cyan);animation:sbob 1.6s ease-in-out infinite}
+.story:not(.js) .sscroll{display:none}
+@keyframes sbob{50%{transform:translateY(5px)}}
+
+.steps{position:relative;z-index:2;pointer-events:none}
+.step{min-height:100vh;display:flex;align-items:center;padding:8vh clamp(14px,5vw,72px)}
+.story:not(.js) .step{min-height:0;padding-top:18px;padding-bottom:18px}
+.scard{pointer-events:auto;width:min(430px,100%);padding:26px 26px 24px;background:rgba(5,12,22,.94);border:1px solid var(--line);position:relative;
+  clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px));opacity:.45;transform:translate3d(0,14px,0);transition:opacity .45s ease,transform .45s cubic-bezier(.22,1,.36,1);will-change:opacity,transform}
+.story:not(.js) .scard,.step.on .scard,.send .scard{opacity:1;transform:translate3d(0,0,0)}
+.scard::before{content:"";position:absolute;left:0;top:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),transparent 60%)}
+.scard .k{font:400 10px 'Share Tech Mono',monospace;letter-spacing:.24em;text-transform:uppercase;color:var(--faint);margin-bottom:10px}
+.scard .k::before{content:"// ";color:var(--cyan)}
+.scard h2{font-size:25px;line-height:1.14;font-weight:700;letter-spacing:-.012em;margin-bottom:12px;text-wrap:balance}
+.scard p{font-size:15.5px;line-height:1.62;color:#C9D8EA;margin-bottom:11px}
+.scard p:last-child{margin-bottom:0}
+.scard p b,.scard p strong{color:var(--text);font-weight:600}
+.scard .big,.scard h2.big{display:flex;align-items:baseline;gap:12px;margin:2px 0 10px;font-size:inherit;letter-spacing:0}
+.scard .big b{font-size:54px;line-height:1;font-weight:700;letter-spacing:-.03em;color:var(--cyan)}
+.scard .big.red b{color:var(--red)}
+.scard .big span{font:400 11px/1.4 'Share Tech Mono',monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.scard .names{margin:4px 0 12px;padding:10px 12px;border-left:2px solid var(--cyan);background:rgba(0,229,255,.05)}
+.scard .names b{display:block;font-size:20px;font-weight:700}
+.scard .names span{display:block;margin-top:3px;font-size:13.5px;color:var(--dim)}
+.scard table{width:100%;border-collapse:collapse;margin:6px 0 12px;font-size:13.5px}
+.scard th{font:400 9.5px 'Share Tech Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);text-align:right;padding:5px 6px;border-bottom:1px solid var(--soft)}
+.scard th:first-child,.scard td:first-child{text-align:left;padding-left:0}
+.scard td{padding:7px 6px;border-bottom:1px solid var(--soft);text-align:right;font-family:'Share Tech Mono',monospace;color:var(--text)}
+.scard td:first-child{font-family:inherit;font-weight:500}
+.scard td i,.scard th i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}
+.scard .fine{font:400 11px/1.6 'Share Tech Mono',monospace;color:var(--faint)}
+.scard .k.near{margin:18px 0 6px}
+.snear{list-style:none}
+.snear li{display:flex;align-items:baseline;justify-content:space-between;gap:12px;border-top:1px solid var(--soft)}
+.snear a{flex:1;padding:9px 0;color:var(--text);font-size:15px;font-weight:500;text-decoration:none}
+.snear a:hover{color:var(--cyan)}
+.snear span{font:400 11px 'Share Tech Mono',monospace;color:var(--cyan)}
+.sbtns{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.sbtn{display:inline-flex;align-items:center;padding:10px 14px;border:1px solid var(--line);color:var(--text);font:400 11px 'Share Tech Mono',monospace;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:all .2s}
+.sbtn:hover{border-color:var(--cyan);color:var(--cyan)}
+.sbtn.primary{background:rgba(0,229,255,.1);border-color:rgba(0,229,255,.55);color:var(--cyan)}
+
+.send{position:relative;z-index:2;padding:10vh clamp(14px,5vw,72px) 12vh;background:linear-gradient(180deg,rgba(2,5,10,0),rgba(2,5,10,.96) 22%)}
+.story:not(.js) .send{background:none;padding-top:20px}
+.scard.wide{width:min(760px,100%)}
+.ssrc{list-style:none;margin:4px 0 14px}
+.ssrc li{padding:9px 0;border-bottom:1px solid var(--soft);font-size:14px;line-height:1.5;color:#C9D8EA}
+.ssrc a{font-weight:600;text-decoration:none}
+.ssrc a:hover{text-decoration:underline}
+.snote{font:400 11.5px/1.65 'Share Tech Mono',monospace;color:var(--faint)}
+.snote a{color:var(--dim)}
+
+@media (max-width:760px){
+  .shero{padding:24px 18px 64px;background:linear-gradient(180deg,rgba(2,5,10,.55) 0%,rgba(2,5,10,.35) 30%,rgba(2,5,10,.94) 78%)}
+  .sbrand{left:18px;top:20px}
+  .step{align-items:flex-end;min-height:128vh;padding:0 10px 22px}
+  .scard{width:100%;padding:20px 18px 18px;clip-path:none;border-radius:16px;max-height:62vh;overflow-y:auto;overscroll-behavior:contain;background:rgba(5,12,22,.96)}
+  .scrumbs{font-size:10.5px;margin-bottom:12px}
+  .scard::before{left:16px;right:40%}
+  .scard h2{font-size:21px}
+  .scard p{font-size:15px}
+  .scard .big b{font-size:44px}
+  .scap{left:10px;right:10px;top:10px;bottom:auto;max-width:none;font-size:10.5px}
+  .slegend{left:10px;right:auto;top:auto;bottom:auto;display:none!important}
+  .send{padding:8vh 10px 10vh}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .scard{transition:none;transform:none;opacity:1}
+  .smap .leaflet-layer{transition:none}
+  .sscroll span{animation:none}
+}
