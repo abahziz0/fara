@@ -500,7 +500,7 @@ id,name,rohingya_name,village_name_mmr,lat,lng,village_tract,township,district,l
 494,Mee Kyaung Tet,Munchi Para,,20.896761,92.332222,Min Ga Lar Gyi (Pyin Hpyu),Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009056,197963,Mee Kyaung Tet,Min Ga Lar Gyi (Pyin Hpyu),active,active,exact
 495,Min Ga Lar Gyi,Ferang Pru Bor Para,,20.903370,92.332237,Min Ga Lar Gyi (Pyin Hpyu),Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009056,197961,Min Ga Lar Gyi,Min Ga Lar Gyi (Pyin Hpyu),active,active,exact
 496,Thar Zay,Hor Boinna Para,,20.895069,92.339661,Min Ga Lar Gyi (Pyin Hpyu),Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009056,197962,Thar Zay,Min Ga Lar Gyi (Pyin Hpyu),active,active,exact
-497,Min Gyi (Ku Lar),Mangala,,21.139830,92.330849,Min Gyi (Tu Lar Tu Li),Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009018,197848,Min Gyi (Ku Lar),Min Gyi (Tu Lar Tu Li),active,active,exact
+497,Min Gyi,Mangala,,21.139830,92.330849,Min Gyi (Tu Lar Tu Li),Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009018,197848,Min Gyi,Min Gyi (Tu Lar Tu Li),active,active,exact
 498,Min Gyi (Tu Lar Tu Li),Tu La Tuli,,21.134050,92.323479,Min Gyi (Tu Lar Tu Li),Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009018,197847,Min Gyi (Tu Lar Tu Li),Min Gyi (Tu Lar Tu Li),active,active,exact
 500,Myaw Taung,Sali Prang,,20.974470,92.342644,Myaw Taung,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009044,197911,Myaw Taung,Myaw Taung,active,active,exact
 501,Tha Lu Chaung,Tha Lu Chaung ,,20.952410,92.351562,Myaw Taung,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009044,197912,Tha Lu Chaung,Myaw Taung,active,active,exact
@@ -536,7 +536,7 @@ id,name,rohingya_name,village_name_mmr,lat,lng,village_tract,township,district,l
 530,Nan Yar Kaing (NaTaLa),Nan Yar Gone,,21.245684,92.303314,Nan Yar Kaing,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009011,220720,Nan Yar Kaing (NaTaLa),Nan Yar Kaing,active,active,exact
 540,Hindu,Hindu Para,,21.027990,92.298882,Nga Khu Ya,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009034,220731,Hindu,Nga Khu Ya,active,active,exact
 541,Ngar Khu Ya,Nak kura,,21.025551,92.295288,Nga Khu Ya,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009034,197894,Nga Khu Ya,Nga Khu Ya,active,active,strong
-542,Ngar Khu Ya (Ku Lar),Ngar Khu Ya Musalman para,,21.019171,92.291992,Nga Khu Ya,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009034,197895,Nga Khu Ya (Ku Lar),Nga Khu Ya,active,active,strong
+542,Ngar Khu Ya,Ngar Khu Ya Musalman para,,21.019171,92.291992,Nga Khu Ya,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009034,197895,Nga Khu Ya,Nga Khu Ya,active,active,strong
 543,Hmaing Sa Ri,Hmaing Sa Ri,,21.241570,92.282043,Nga Yant Chaung,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009009,197824,Hmaing Sa Ri,Nga Yant Chaung,active,active,exact
 544,Ngar Yant Chaung,Naraing Chaung,,21.252558,92.274109,Nga Yant Chaung,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009009,197823,Nga Yant Chaung,Nga Yant Chaung,active,active,strong
 545,Gone Nar,Guna Para,,21.007271,92.358521,Ngan Chaung,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009043,197910,Gone Nar,Ngan Chaung,active,active,exact
@@ -560,7 +560,7 @@ id,name,rohingya_name,village_name_mmr,lat,lng,village_tract,township,district,l
 537,Tat Chaung,Tat Chaung,,21.183849,92.312790,N‌at Chaung,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009019,197853,Tat Chaung,N‌at Chaung,active,active,exact
 538,Than Hpa Yar,,,21.172600,92.325233,N‌at Chaung,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009019,197856,Than Hpa Yar,N‌at Chaung,active,active,exact
 539,Zaw Za Dein,,,21.174120,92.321609,N‌at Chaung,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009019,197851,Zaw Za Dein,N‌at Chaung,active,active,exact
-557,Done Ku Lar,Boroi Toli,,21.152550,92.330299,Pa Da Kar Ywar Thit,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009021,197859,Done Ku Lar,Pa Da Kar Ywar Thit,active,active,exact
+557,Done,Boroi Toli,,21.152550,92.330299,Pa Da Kar Ywar Thit,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009021,197859,Done,Pa Da Kar Ywar Thit,active,active,exact
 558,Pa Da Kar Ywar Thit,Diyal Tali,,21.160549,92.330261,Pa Da Kar Ywar Thit,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009021,197858,Pa Da Kar Ywar Thit,Pa Da Kar Ywar Thit,active,active,exact
 559,Ka Nyin Tan,Gorzon Diya,,20.780500,92.385628,Pa Din,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009067,198005,Ka Nyin Tan,Pa Din,active,active,exact
 560,Khaung Ta Kar,Khun Khara Para,,20.786091,92.387489,Pa Din,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009067,198006,Khaung Ta Kar,Pa Din,active,active,exact
@@ -596,10 +596,10 @@ id,name,rohingya_name,village_name_mmr,lat,lng,village_tract,township,district,l
 590,Hpaung Seik,Hpaung Seik,,21.203051,92.300629,Ta Man Thar,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009012,197833,Hpaung Seik,Ta Man Thar,active,active,exact
 591,Mingalar Nyunt (NaTaLa),Mingalar Nyunt (NaTaLa),,21.224543,92.294197,Ta Man Thar,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009012,220721,Mingalar Nyunt (NaTaLa),Ta Man Thar,active,active,exact
 592,Ta Man Thar (Bo Hmu Gyi Thet),Noya Para,,21.210880,92.296791,Ta Man Thar,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009012,197832,Ta Man Thar (Bo Hmu Gyi Thet),Ta Man Thar,active,active,exact
-593,Ta Man Thar (Ku Lar),Shab Bazar Bor Para,,21.216930,92.292976,Ta Man Thar,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009012,197829,Ta Man Thar (Ku Lar),Ta Man Thar,active,active,exact
+593,Ta Man Thar,Shab Bazar Bor Para,,21.216930,92.292976,Ta Man Thar,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009012,197829,Ta Man Thar,Ta Man Thar,active,active,exact
 594,Ta Man Thar (Myo),Shab Bazar,,21.218201,92.323174,Ta Man Thar,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009012,197830,Ta Man Thar (Myo),Ta Man Thar,inactive_removed_from_list,active,exact
 595,Ta Man Thar Ah Nauk (Rakhine),Ta Man Thar Ah Nauk(Mogh Para),,21.218611,92.300232,Ta Man Thar,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009012,197835,Ta Man Thar Ah Nauk (Rakhine),Ta Man Thar,active,active,exact
-596,Ta Man Thar Ah Shey (Ku Lar),Fuk Para,,21.213512,92.304886,Ta Man Thar,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009012,197831,Ta Man Thar Ah Shey (Ku Lar),Ta Man Thar,active,active,exact
+596,Ta Man Thar Ah Shey,Fuk Para,,21.213512,92.304886,Ta Man Thar,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009012,197831,Ta Man Thar Ah Shey,Ta Man Thar,active,active,exact
 597,Ta Man Thar Bo Hmu Gyi,Biyamu Para,,21.213140,92.300751,Ta Man Thar,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009012,197837,Ta Man Thar Bo Hmu Gyi,Ta Man Thar,active,active,exact
 598,Ta Man Thar Taung,Shab Bazar (Doin Para),,21.211990,92.294441,Ta Man Thar,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009012,197836,Ta Man Thar Taung,Ta Man Thar,inactive_removed_from_list,active,exact
 599,Ta Man Thar Thea Kone Tan,San kone dain,,21.213400,92.292236,Ta Man Thar,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009012,197838,Ta Man Thar Thea Kone Tan,Ta Man Thar,active,active,exact
@@ -641,7 +641,7 @@ id,name,rohingya_name,village_name_mmr,lat,lng,village_tract,township,district,l
 635,Thar Yar Kone,Tha Yar Kone,,21.153582,92.250885,Thea Chaung,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009092,220747,Thar Yar Kone,Thea Chaung,active,active,exact
 636,Thea Chaung Hpar Ri,Balu Khali,,21.138670,92.252823,Thea Chaung,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009092,198099,Thea Chaung Hpar Ri,Thea Chaung,active,active,exact
 637,Thea Chaung Maw La Bi,Moloi Za ga,,21.133350,92.234032,Thea Chaung,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009092,198098,Thea Chaung Maw La Bi,Thea Chaung,active,active,exact
-638,Thin Baw Hla (Ku Lar),Shan bolla para,,21.179689,92.246559,Thea Chaung,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009092,198103,Thin Baw Hla (Ku Lar),Thea Chaung,active,active,exact
+638,Thin Baw Hla,Shan bolla para,,21.179689,92.246559,Thea Chaung,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009092,198103,Thin Baw Hla,Thea Chaung,active,active,exact
 639,Thin Baw Hla (Rakhine) (Thar Yar Gone),Shan bolla Mogh Para,,21.177719,92.239548,Thea Chaung,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009092,198101,Thin Baw Hla (Rakhine) (Thar Yar Gone),Thea Chaung,active,active,exact
 640,Zaing Thar Khar Li,Zanta Khali,,21.154551,92.245232,Thea Chaung,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009092,198102,Zaing Thar Khar Li,Thea Chaung,active,active,exact
 641,Laung Boke,Lombo Para,,21.190300,92.314720,Thet Kaing Nyar,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009013,197840,Laung Boke,Thet Kaing Nyar,active,active,exact
@@ -699,7 +699,7 @@ id,name,rohingya_name,village_name_mmr,lat,lng,village_tract,township,district,l
 693,Tha Ray Kon Baung (NaTaLa),Tha Rau Kun Baw Natala Para,,20.731571,92.428177,Ywar Thit Kay (Gaw Du Thar Ra),Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009070,220740,Tha Ray Kon Baung (NaTaLa),Ywar Thit Kay (Gaw Du Thar Ra),active,active,exact
 694,Ywar Thit Kay (Gaw Du Thar Ra),Godu Sora,,20.744390,92.420883,Ywar Thit Kay (Gaw Du Thar Ra),Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009070,198014,Ywar Thit Kay (Gaw Du Thar Ra),Ywar Thit Kay (Gaw Du Thar Ra),active,active,exact
 695,Ywet Nyo Taung,Roinga Doung,,20.946011,92.301872,Ywet Nyo Taung,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009037,197899,Ywet Nyo Taung,Ywet Nyo Taung,active,active,exact
-696,Ywet Nyo Taung (Ku Lar),Fuk Para,,20.953293,92.303741,Ywet Nyo Taung,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009037,197900,Ywet Nyo Taung (Ku Lar),Ywet Nyo Taung,active,active,exact
+696,Ywet Nyo Taung,Fuk Para,,20.953293,92.303741,Ywet Nyo Taung,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009037,197900,Ywet Nyo Taung,Ywet Nyo Taung,active,active,exact
 697,Ywet Nyo Taung (Middle),Roimga Doung Mazor para,,20.949499,92.301544,Ywet Nyo Taung,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009037,217892,Ywet Nyo Taung (Middle),Ywet Nyo Taung,active,active,exact
 698,Ywet Nyo Taung (South),Roimga Doung Doin Para,,20.948898,92.303505,Ywet Nyo Taung,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009037,217893,Ywet Nyo Taung (South),Ywet Nyo Taung,active,active,exact
 699,Din Gar,Dang Ga Para,,20.720169,92.432983,Zaw Ma Tet,Maungdaw,Maungdaw,Maungdaw Village,#FF5252,,MMR012D002,MMR012009,MMR012009078,198046,Din Gar,Zaw Ma Tet,active,active,exact

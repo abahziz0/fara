@@ -500,7 +500,7 @@ id,rohingya_name,name,township,village_tract,lat,lng,status,reason,point_inside_
 494,Munchi Para,Mee Kyaung Tet,Maungdaw,Min Ga Lar Gyi (Pyin Hpyu),20.896761,92.332222,none_detected,,,,,,,,,,
 495,Ferang Pru Bor Para,Min Ga Lar Gyi,Maungdaw,Min Ga Lar Gyi (Pyin Hpyu),20.903370,92.332237,none_detected,,,,,,,,,,
 496,Hor Boinna Para,Thar Zay,Maungdaw,Min Ga Lar Gyi (Pyin Hpyu),20.895069,92.339661,none_detected,,,,,,,,,,
-497,Mangala,Min Gyi (Ku Lar),Maungdaw,Min Gyi (Tu Lar Tu Li),21.139830,92.330849,destroyed,,True,0,6.17,0.218,4,2017-09-16,2017-09-16,medium,False
+497,Mangala,Min Gyi,Maungdaw,Min Gyi (Tu Lar Tu Li),21.139830,92.330849,destroyed,,True,0,6.17,0.218,4,2017-09-16,2017-09-16,medium,False
 498,Tu La Tuli,Min Gyi (Tu Lar Tu Li),Maungdaw,Min Gyi (Tu Lar Tu Li),21.134050,92.323479,nearby,,False,351,0.0,0.0,5,2017-09-16,2017-09-16,medium,False
 500,Sali Prang,Myaw Taung,Maungdaw,Myaw Taung,20.974470,92.342644,none_detected,,,,,,,,,,
 501,Tha Lu Chaung ,Tha Lu Chaung,Maungdaw,Myaw Taung,20.952410,92.351562,none_detected,,,,,,,,,,
@@ -536,7 +536,7 @@ id,rohingya_name,name,township,village_tract,lat,lng,status,reason,point_inside_
 530,Nan Yar Gone,Nan Yar Kaing (NaTaLa),Maungdaw,Nan Yar Kaing,21.245684,92.303314,destroyed,,True,0,5.54,0.196,1,2017-09-16,2017-09-16,medium,False
 540,Hindu Para,Hindu,Maungdaw,Nga Khu Ya,21.027990,92.298882,destroyed,,True,0,6.21,0.22,3,2017-09-16,2017-09-16,medium,False
 541,Nak kura,Ngar Khu Ya,Maungdaw,Nga Khu Ya,21.025551,92.295288,destroyed,,False,16,9.74,0.344,1,2017-09-16,2017-09-16,medium,False
-542,Ngar Khu Ya Musalman para,Ngar Khu Ya (Ku Lar),Maungdaw,Nga Khu Ya,21.019171,92.291992,none_detected,,,,,,,,,,
+542,Ngar Khu Ya Musalman para,Ngar Khu Ya,Maungdaw,Nga Khu Ya,21.019171,92.291992,none_detected,,,,,,,,,,
 543,Hmaing Sa Ri,Hmaing Sa Ri,Maungdaw,Nga Yant Chaung,21.241570,92.282043,destroyed,,True,0,4.82,0.17,2,2017-09-16,2017-09-16,medium,False
 544,Naraing Chaung,Ngar Yant Chaung,Maungdaw,Nga Yant Chaung,21.252558,92.274109,destroyed,,True,0,5.0,0.177,6,2017-09-16,2017-09-16,medium,False
 545,Guna Para,Gone Nar,Maungdaw,Ngan Chaung,21.007271,92.358521,none_detected,,,,,,,,,,
@@ -560,7 +560,7 @@ id,rohingya_name,name,township,village_tract,lat,lng,status,reason,point_inside_
 537,Tat Chaung,Tat Chaung,Maungdaw,N‌at Chaung,21.183849,92.312790,destroyed,,False,9,11.38,0.403,1,2017-09-16,2017-09-16,medium,False
 538,,Than Hpa Yar,Maungdaw,N‌at Chaung,21.172600,92.325233,destroyed,,True,0,4.14,0.146,1,2017-09-16,2017-09-16,medium,False
 539,,Zaw Za Dein,Maungdaw,N‌at Chaung,21.174120,92.321609,destroyed,,False,10,3.44,0.122,2,2017-09-16,2017-09-16,medium,False
-557,Boroi Toli,Done Ku Lar,Maungdaw,Pa Da Kar Ywar Thit,21.152550,92.330299,destroyed,,True,0,9.43,0.333,11,2017-09-16,2017-09-25,medium,False
+557,Boroi Toli,Done,Maungdaw,Pa Da Kar Ywar Thit,21.152550,92.330299,destroyed,,True,0,9.43,0.333,11,2017-09-16,2017-09-25,medium,False
 558,Diyal Tali,Pa Da Kar Ywar Thit,Maungdaw,Pa Da Kar Ywar Thit,21.160549,92.330261,destroyed,,False,22,7.56,0.267,4,2017-09-16,2017-09-25,medium,False
 559,Gorzon Diya,Ka Nyin Tan,Maungdaw,Pa Din,20.780500,92.385628,destroyed,,True,0,8.37,0.296,1,2017-09-16,2017-09-16,medium,False
 560,Khun Khara Para,Khaung Ta Kar,Maungdaw,Pa Din,20.786091,92.387489,destroyed,,True,0,10.69,0.378,1,2017-09-16,2017-09-16,medium,False
@@ -596,10 +596,10 @@ id,rohingya_name,name,township,village_tract,lat,lng,status,reason,point_inside_
 590,Hpaung Seik,Hpaung Seik,Maungdaw,Ta Man Thar,21.203051,92.300629,nearby,,False,330,0.0,0.0,3,2017-09-16,2017-09-16,medium,False
 591,Mingalar Nyunt (NaTaLa),Mingalar Nyunt (NaTaLa),Maungdaw,Ta Man Thar,21.224543,92.294197,none_detected,,,,,,,,,,
 592,Noya Para,Ta Man Thar (Bo Hmu Gyi Thet),Maungdaw,Ta Man Thar,21.210880,92.296791,destroyed,,True,0,4.79,0.169,4,2017-09-16,2017-09-16,medium,False
-593,Shab Bazar Bor Para,Ta Man Thar (Ku Lar),Maungdaw,Ta Man Thar,21.216930,92.292976,destroyed,,True,0,11.77,0.416,2,2017-09-16,2017-09-16,medium,False
+593,Shab Bazar Bor Para,Ta Man Thar,Maungdaw,Ta Man Thar,21.216930,92.292976,destroyed,,True,0,11.77,0.416,2,2017-09-16,2017-09-16,medium,False
 594,Shab Bazar,Ta Man Thar (Myo),Maungdaw,Ta Man Thar,21.218201,92.323174,none_detected,,,,,,,,,,
 595,Ta Man Thar Ah Nauk(Mogh Para),Ta Man Thar Ah Nauk (Rakhine),Maungdaw,Ta Man Thar,21.218611,92.300232,destroyed,,True,0,4.05,0.143,10,2017-09-16,2017-09-16,medium,False
-596,Fuk Para,Ta Man Thar Ah Shey (Ku Lar),Maungdaw,Ta Man Thar,21.213512,92.304886,destroyed,,True,0,8.84,0.313,2,2017-09-16,2017-09-16,medium,False
+596,Fuk Para,Ta Man Thar Ah Shey,Maungdaw,Ta Man Thar,21.213512,92.304886,destroyed,,True,0,8.84,0.313,2,2017-09-16,2017-09-16,medium,False
 597,Biyamu Para,Ta Man Thar Bo Hmu Gyi,Maungdaw,Ta Man Thar,21.213140,92.300751,nearby,,False,194,0.61,0.021,8,2017-09-16,2017-09-16,medium,False
 598,Shab Bazar (Doin Para),Ta Man Thar Taung,Maungdaw,Ta Man Thar,21.211990,92.294441,destroyed,,True,0,6.73,0.238,3,2017-09-16,2017-09-16,medium,False
 599,San kone dain,Ta Man Thar Thea Kone Tan,Maungdaw,Ta Man Thar,21.213400,92.292236,destroyed,,True,0,6.57,0.232,1,2017-09-16,2017-09-16,medium,False
@@ -641,7 +641,7 @@ id,rohingya_name,name,township,village_tract,lat,lng,status,reason,point_inside_
 635,Tha Yar Kone,Thar Yar Kone,Maungdaw,Thea Chaung,21.153582,92.250885,none_detected,,,,,,,,,,
 636,Balu Khali,Thea Chaung Hpar Ri,Maungdaw,Thea Chaung,21.138670,92.252823,destroyed,,False,20,2.34,0.083,7,2017-10-11,2017-10-11,medium,False
 637,Moloi Za ga,Thea Chaung Maw La Bi,Maungdaw,Thea Chaung,21.133350,92.234032,nearby,,False,480,0.0,0.0,1,2017-09-16,2017-09-16,medium,False
-638,Shan bolla para,Thin Baw Hla (Ku Lar),Maungdaw,Thea Chaung,21.179689,92.246559,none_detected,,,,,,,,,,
+638,Shan bolla para,Thin Baw Hla,Maungdaw,Thea Chaung,21.179689,92.246559,none_detected,,,,,,,,,,
 639,Shan bolla Mogh Para,Thin Baw Hla (Rakhine) (Thar Yar Gone),Maungdaw,Thea Chaung,21.177719,92.239548,destroyed,,False,43,2.48,0.088,1,2017-09-16,2017-09-16,medium,False
 640,Zanta Khali,Zaing Thar Khar Li,Maungdaw,Thea Chaung,21.154551,92.245232,destroyed,,False,63,1.42,0.05,12,2017-10-11,2017-10-11,medium,False
 641,Lombo Para,Laung Boke,Maungdaw,Thet Kaing Nyar,21.190300,92.314720,destroyed,,True,0,10.21,0.361,1,2017-09-16,2017-09-16,medium,False
@@ -699,7 +699,7 @@ id,rohingya_name,name,township,village_tract,lat,lng,status,reason,point_inside_
 693,Tha Rau Kun Baw Natala Para,Tha Ray Kon Baung (NaTaLa),Maungdaw,Ywar Thit Kay (Gaw Du Thar Ra),20.731571,92.428177,nearby,,False,383,0.0,0.0,3,2017-09-16,2017-09-16,medium,False
 694,Godu Sora,Ywar Thit Kay (Gaw Du Thar Ra),Maungdaw,Ywar Thit Kay (Gaw Du Thar Ra),20.744390,92.420883,destroyed,,True,0,9.36,0.331,6,2017-09-16,2017-09-16,medium,False
 695,Roinga Doung,Ywet Nyo Taung,Maungdaw,Ywet Nyo Taung,20.946011,92.301872,destroyed,,False,174,1.94,0.068,2,2017-09-16,2017-09-16,medium,False
-696,Fuk Para,Ywet Nyo Taung (Ku Lar),Maungdaw,Ywet Nyo Taung,20.953293,92.303741,destroyed,,True,0,3.31,0.117,3,2017-09-16,2017-09-16,medium,False
+696,Fuk Para,Ywet Nyo Taung,Maungdaw,Ywet Nyo Taung,20.953293,92.303741,destroyed,,True,0,3.31,0.117,3,2017-09-16,2017-09-16,medium,False
 697,Roimga Doung Mazor para,Ywet Nyo Taung (Middle),Maungdaw,Ywet Nyo Taung,20.949499,92.301544,destroyed,,False,108,6.01,0.212,2,2017-09-16,2017-09-16,medium,False
 698,Roimga Doung Doin Para,Ywet Nyo Taung (South),Maungdaw,Ywet Nyo Taung,20.948898,92.303505,destroyed,,True,0,7.76,0.274,2,2017-09-16,2017-09-16,medium,False
 699,Dang Ga Para,Din Gar,Maungdaw,Zaw Ma Tet,20.720169,92.432983,destroyed,,False,13,5.51,0.195,7,2017-09-16,2017-09-16,medium,False
