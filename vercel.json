@@ -4,5 +4,42 @@
       "source": "/",
       "destination": "/fara.html"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/village/794-pyin-shey-ku-lar/:path*",
+      "destination": "/village/794-pyin-shey/",
+      "permanent": true
+    },
+    {
+      "source": "/village/817-ah-ngu-maw-ku-lar/:path*",
+      "destination": "/village/817-ah-ngu-maw/",
+      "permanent": true
+    },
+    {
+      "source": "/village/847-pyin-chaung-ku-lar/:path*",
+      "destination": "/village/847-pyin-chaung/",
+      "permanent": true
+    },
+    {
+      "source": "/village/858-chein-khar-li-ku-lar/:path*",
+      "destination": "/village/858-chein-khar-li/",
+      "permanent": true
+    },
+    {
+      "source": "/village/863-kon-tan-ku-lar/:path*",
+      "destination": "/village/863-kon-tan/",
+      "permanent": true
+    },
+    {
+      "source": "/village/924-nyaung-pin-gyi-ku-lar/:path*",
+      "destination": "/village/924-nyaung-pin-gyi/",
+      "permanent": true
+    },
+    {
+      "source": "/village/976-sin-khone-taing-ku-lar/:path*",
+      "destination": "/village/976-sin-khone-taing/",
+      "permanent": true
+    }
   ]
 }

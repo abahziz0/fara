@@ -6,7 +6,7 @@ id,name,rohingya_name,village_name_mmr,lat,lng,village_tract,township,district,l
 720,Me Za Li Kone, Kikú fara,မဲဇလီကုန်း,20.230169,92.818008,Aung Daing,Sittwe,Sittwe,Sittwe,#9C27B0,,MMR012D001,MMR012001,MMR012001005,196139,Me Za Li Kone,Aung Daing,active,active,exact
 721,Nga/Pun Ywar Gyi, Náffon fara (Bor fara),င/ပွန်းရွာကြီး,20.219509,92.811333,Aung Daing,Sittwe,Sittwe,Sittwe,#9C27B0,,MMR012D001,MMR012001,MMR012001005,196145,Nga/Pun Ywar Gyi,Aung Daing,active,active,exact
 722,Nga/Pun Ywar Shey, Náffon fara (showrow fara),င/ပွန်းရွာရှေ,20.212660,92.820778,Aung Daing,Sittwe,Sittwe,Sittwe,#9C27B0,,MMR012D001,MMR012001,MMR012001005,196144,Nga/Pun Ywar Shey,Aung Daing,active,active,exact
-723,Pa Lin Pyin (Ku Lar),Pa Lin Pyin,ပလ္လင်ပြင် (ကုလား),20.208799,92.794113,Aung Daing,Sittwe,Sittwe,Sittwe,#9C27B0,,MMR012D001,MMR012001,MMR012001005,196142,Pa Lin Pyin (Ku Lar),Aung Daing,active,active,exact
+723,Pa Lin Pyin,Pa Lin Pyin,ပလ္လင်ပြင်,20.208799,92.794113,Aung Daing,Sittwe,Sittwe,Sittwe,#9C27B0,,MMR012D001,MMR012001,MMR012001005,196142,Pa Lin Pyin,Aung Daing,active,active,exact
 724,Pa Lin Pyin (Rakhine),Pa Lin Pyin,ပလ္လင်ပြင် (ရခိုင်),20.219910,92.771606,Aung Daing,Sittwe,Sittwe,Sittwe,#9C27B0,,MMR012D001,MMR012001,MMR012001005,196141,Pa Lin Pyin (Rakhine),Aung Daing,active,active,exact
 725,Bay Dar,Bogar Dheil,ဗေဒါ,20.157169,92.822937,Bu May,Sittwe,Sittwe,Sittwe,#9C27B0,,MMR012D001,MMR012001,MMR012001027,196212,Bay Dar,Bu May,active,active,exact
 726,Bu May,Furan Fara,ဘုမေ,20.143860,92.867577,Bu May,Sittwe,Sittwe,Sittwe,#9C27B0,,MMR012D001,MMR012001,MMR012001027,196200,Bu May,Bu May,active,active,exact
@@ -18,7 +18,7 @@ id,name,rohingya_name,village_name_mmr,lat,lng,village_tract,township,district,l
 732,Myat Pan Nyo,Mosóinna fara,မြတ်ပန်းညို,20.185400,92.831253,Bu May,Sittwe,Sittwe,Sittwe,#9C27B0,,MMR012D001,MMR012001,MMR012001027,196213,Myat Pan Nyo,Bu May,active,active,exact
 733,Sat Oe,Zatéilla gúna,ဆတ်အိုး,20.185890,92.840134,Bu May,Sittwe,Sittwe,Sittwe,#9C27B0,,MMR012D001,MMR012001,MMR012001027,196201,Sat Oe,Bu May,active,active,exact
 734,Tain Bway,,တိမ်ဗွေ,20.138738,92.856624,Bu May,Sittwe,Sittwe,Sittwe,#9C27B0,,MMR012D001,MMR012001,MMR012001027,196216,Tain Bway,Bu May,active,active,exact
-735,Thea Chaung Ku Lar,Guaillar Dheil,သဲချောင်းကုလား,20.157360,92.838654,Bu May,Sittwe,Sittwe,Sittwe,#9C27B0,,MMR012D001,MMR012001,MMR012001027,196211,Thea Chaung Ku Lar,Bu May,active,active,exact
+735,Thea Chaung,Guaillar Dheil,သဲချောင်း,20.157360,92.838654,Bu May,Sittwe,Sittwe,Sittwe,#9C27B0,,MMR012D001,MMR012001,MMR012001027,196211,Thea Chaung,Bu May,active,active,exact
 736,Thea Chaung Let Tha Mar Kone,Misírid Dheil,သဲချောင်းလက်သမားကုန်း,20.147863,92.846769,Bu May,Sittwe,Sittwe,Sittwe,#9C27B0,,MMR012D001,MMR012001,MMR012001027,196209,Thea Chaung Let Tha Mar Kone,Bu May,active,active,exact
 737,Thea Chaung Rakhine,Misírid Dheil (Mog fara),သဲချောင်းရခိုင်,20.162600,92.834457,Bu May,Sittwe,Sittwe,Sittwe,#9C27B0,,MMR012D001,MMR012001,MMR012001027,196210,Thea Chaung Rakhine,Bu May,active,active,exact
 738,War Yar Lit,Walíc fara,ဝါယာလစ်,20.147940,92.853813,Bu May,Sittwe,Sittwe,Sittwe,#9C27B0,,MMR012D001,MMR012001,MMR012001027,196214,War Yar Lit,Bu May,active,active,exact
@@ -77,7 +77,7 @@ id,name,rohingya_name,village_name_mmr,lat,lng,village_tract,township,district,l
 791,Thin Ga Net, Sángana,သင်းဂနက်,20.166349,92.871902,Thin Ga Net,Sittwe,Sittwe,Sittwe,#9C27B0,,MMR012D001,MMR012001,MMR012001026,196193,Thin Ga Net,Thin Ga Net,active,active,exact
 792,Ye Baw Haung,Gar Ti,ရဲဘော်ဟောင်း,20.171150,92.875092,Thin Ga Net,Sittwe,Sittwe,Sittwe,#9C27B0,,MMR012D001,MMR012001,MMR012001026,196199,Ye Baw Haung,Thin Ga Net,inactive_removed_from_list,active,exact
 793,Pyar Lay Chaung,Fialicóng fara,ပျားလေချောင်း,20.236940,92.833260,Thin Pone Tan,Sittwe,Sittwe,Sittwe,#9C27B0,,MMR012D001,MMR012001,MMR012001002,196130,Pyar Lay Chaung,Thin Pone Tan,active,active,exact
-794,Pyin Shey Ku Lar,,ပြင်ရှည်ကုလား,20.239800,92.825089,Thin Pone Tan,Sittwe,Sittwe,Sittwe,#9C27B0,,MMR012D001,MMR012001,MMR012001002,196131,Pyin Shey Ku Lar,Thin Pone Tan,active,active,exact
+794,Pyin Shey,,ပြင်ရှည်,20.239800,92.825089,Thin Pone Tan,Sittwe,Sittwe,Sittwe,#9C27B0,,MMR012D001,MMR012001,MMR012001002,196131,Pyin Shey,Thin Pone Tan,active,active,exact
 795,Thin Pone Tan,,သင်းပုန်းတန်း,20.226730,92.836929,Thin Pone Tan,Sittwe,Sittwe,Sittwe,#9C27B0,,MMR012D001,MMR012001,MMR012001002,196129,Thin Pone Tan,Thin Pone Tan,active,active,exact
 796,Aung Chan Thar,,အောင်ချမ်းသာ,20.153900,92.861031,U Yin Thar,Sittwe,Sittwe,Sittwe,#9C27B0,,MMR012D001,MMR012001,MMR012001024,,,U Yin Thar,,active,unconfirmed
 797,Kan Taw Gyi,,ကန်တော်ကြီး,20.162399,92.851250,U Yin Thar,Sittwe,Sittwe,Sittwe,#9C27B0,,MMR012D001,MMR012001,MMR012001024,196190,Kan Taw Gyi,U Yin Thar,inactive_removed_from_list,active,exact
