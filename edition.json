@@ -2,7 +2,7 @@
   "title": "FARA — The Arakan Village Name Archive",
   "version": "1.0",
   "date": "2026-11-16",
-  "doi": "",
+  "doi": "10.5281/zenodo.24266548",
   "concept_doi": "",
   "publisher": "Zenodo",
   "authors": [
@@ -13,7 +13,13 @@
       "orcid": "0009-0003-8386-3740"
     }
   ],
-  "licence": null,
+  "licence": {
+    "id": "CC-BY-4.0",
+    "short": "CC BY 4.0",
+    "name": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "means": "You may copy, share and adapt it for any purpose, as long as you credit FARA."
+  },
   "dataset_files": [
     ["arakan_villages.csv", "Every village, one row each: names in three languages, coordinates, village tract, township, district and official place codes."],
     ["arakan_villages.json", "The same records as JSON."],
