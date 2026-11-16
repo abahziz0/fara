@@ -40,5 +40,10 @@ Rohingya village names are being renamed, depopulated and removed from official 
 - [Satellite capture dates per village](https://map.rohingya.ro/captures.json): for each village, the dates of the images Esri's World Imagery Wayback archive holds (looked up by tools/build_captures.py).
 - [Township and village-tract boundaries](https://map.rohingya.ro/boundaries.json): from UN OCHA's COD-AB dataset for Myanmar (source MIMU), CC BY-IGO; approximate, about 1:250,000.
 
-## Citing
-Cite a record as: FARA — The Arakan Village Name Archive, record FARA-<id>, "<village name>", followed by the page URL.
+## Editions, methods and citing
+- This is edition 1.0 of 16 November 2026. The archive is published in numbered editions so that a citation always leads to the same data.
+- [How this archive was made](https://map.rohingya.ro/methods/): where every part of the data came from, how it was checked and corrected, and what it cannot tell you.
+- [Change log](https://map.rohingya.ro/changelog/): what changed in each edition. [Corrections, record by record (CSV)](https://map.rohingya.ro/corrections.csv). [The edition as data](https://map.rohingya.ro/edition.json).
+- Cite the archive as: Aziz, Abdul. FARA — The Arakan Village Name Archive. Edition 1.0, 16 November 2026. https://map.rohingya.ro/.
+- Cite one village by naming its record and the edition, for example: Aziz, Abdul. “Hadira Para (Kar Di), Buthidaung township.” Record FARA-0001 in FARA — The Arakan Village Name Archive, edition 1.0 (16 November 2026). https://map.rohingya.ro/village/1-hadira-para/.
+- Every village page has a "Cite this" section with the citation in plain text, APA, BibTeX and RIS.

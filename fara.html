@@ -19,7 +19,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://map.rohingya.ro/">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"FARA — The Arakan Village Name Archive","alternateName":"FARA","url":"https://map.rohingya.ro/","description":"A public archive of the names and locations of 1,023 Rohingya villages in Arakan (Rakhine State, Myanmar), in Rohingya, English and Burmese.","inLanguage":["en","rhg","my"],"creator":{"@type":"Person","name":"AB Aziz"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"FARA — The Arakan Village Name Archive","url":"https://map.rohingya.ro/","description":"Names and locations of 1,023 Rohingya villages across Maungdaw, Buthidaung, Rathedaung and Sittwe townships of Arakan (Rakhine State, Myanmar). Each record has the Rohingya name, the official romanised name, the Burmese-script name where known, village tract, township, district and WGS84 coordinates.","keywords":["Rohingya","Arakan","Rakhine State","Myanmar","village names","place names","gazetteer","Maungdaw","Buthidaung","Rathedaung","Sittwe"],"creator":{"@type":"Person","name":"AB Aziz","email":"ab@rohingya.ro"},"isBasedOn":"https://map.rohingyakhobor.com/map","dateModified":"2026-07-02","spatialCoverage":{"@type":"Place","name":"Arakan (Rakhine State), Myanmar","geo":{"@type":"GeoShape","box":"19.9 92.1 21.5 93.2"}},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://map.rohingya.ro/arakan_villages.csv"},{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://map.rohingya.ro/arakan_villages.json"},{"@type":"DataDownload","encodingFormat":"application/geo+json","contentUrl":"https://map.rohingya.ro/arakan_villages.geojson"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"FARA — The Arakan Village Name Archive","url":"https://map.rohingya.ro/","description":"Names and locations of 1,023 Rohingya villages across Maungdaw, Buthidaung, Rathedaung and Sittwe townships of Arakan (Rakhine State, Myanmar). Each record has the Rohingya name, the official romanised name, the Burmese-script name where known, village tract, township, district and WGS84 coordinates.","keywords":["Rohingya","Arakan","Rakhine State","Myanmar","village names","place names","gazetteer","Maungdaw","Buthidaung","Rathedaung","Sittwe"],"creator":[{"@type":"Person","name":"Abdul Aziz","givenName":"Abdul","familyName":"Aziz","alternateName":"AB Aziz","sameAs":"https://orcid.org/0009-0003-8386-3740"}],"isBasedOn":"https://map.rohingyakhobor.com/map","dateModified":"2026-11-16","spatialCoverage":{"@type":"Place","name":"Arakan (Rakhine State), Myanmar","geo":{"@type":"GeoShape","box":"19.9 92.1 21.5 93.2"}},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://map.rohingya.ro/arakan_villages.csv"},{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://map.rohingya.ro/arakan_villages.json"},{"@type":"DataDownload","encodingFormat":"application/geo+json","contentUrl":"https://map.rohingya.ro/arakan_villages.geojson"}],"version":"1.0","citation":"Aziz, Abdul. FARA — The Arakan Village Name Archive. Edition 1.0, 16 November 2026. https://map.rohingya.ro/.","subjectOf":[{"@type":"TechArticle","name":"How this archive was made","url":"https://map.rohingya.ro/methods/"},{"@type":"WebPage","name":"Change log","url":"https://map.rohingya.ro/changelog/"}]}</script>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <title>FARA — The Arakan Village Name Archive · 1,023 Rohingya village names and locations</title>
@@ -1010,6 +1010,23 @@ body.sat.timeopen #toast{bottom:198px}
 #embcode{display:block;width:100%;padding:10px 12px;resize:none;background:var(--bg-2);border:1px solid var(--line-soft);color:var(--text);font-family:'Share Tech Mono',monospace;font-size:11.5px;line-height:1.5;word-break:break-all;outline:none}
 #embcode:focus{border-color:var(--cyan-dim)}
 .embnote{margin-top:12px;font-family:'Share Tech Mono',monospace;font-size:10px;line-height:1.6;color:var(--text-faint)}
+/* cite this record */
+.citetabs{display:flex;gap:6px;margin-bottom:10px}
+.citetabs button{flex:1;padding:9px 6px;border:1px solid var(--line-soft);color:var(--text-dim);font-family:'Share Tech Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:all .2s}
+.citetabs button:hover{border-color:var(--cyan-dim);color:var(--cyan)}
+.citetabs button[aria-selected="true"]{background:rgba(0,229,255,.1);border-color:var(--cyan-dim);color:var(--cyan)}
+#citetext{display:block;width:100%;min-height:150px;padding:12px 13px;resize:vertical;background:var(--bg-2);border:1px solid var(--line-soft);border-left:2px solid var(--cyan);color:var(--text);font-family:'Space Grotesk',system-ui,sans-serif;font-size:13.5px;line-height:1.55;outline:none}
+#citetext.code{font-family:'Share Tech Mono',monospace;font-size:11.5px;white-space:pre;overflow-x:auto}
+#citetext:focus{border-color:var(--cyan-dim);border-left-color:var(--cyan)}
+#citemodal .actions{margin-top:12px}
+#citebtn{flex-basis:100%}
+#citesave[hidden]{display:none}
+.embnote a{color:var(--cyan)}
+@media (max-width:760px){
+  .citetabs button{padding:13px 4px}
+  #citetext{font-size:15px;min-height:210px}
+  #citetext.code{font-size:12.5px}
+}
 @media (max-width:640px){
   .ivtabs{gap:5px}
   .ivtabs>button{padding:9px 9px;letter-spacing:.06em}
@@ -1229,6 +1246,7 @@ body.sat.timeopen #toast{bottom:198px}
       <button class="abtn" id="pdfbtn" title="A one-page record you can print or save as PDF">PDF Record</button>
       <a class="abtn" id="pagebtn" href="#" title="This village's own page, for citing and sharing">Village Page</a>
       <button class="abtn" id="embedbtn" title="A small card you can put on another website">Embed</button>
+      <button class="abtn" id="citebtn" title="How to cite this record: plain text, APA, BibTeX or RIS">Cite This</button>
     </div>
     <button class="suggest" id="suggestbtn">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
@@ -1369,7 +1387,27 @@ body.sat.timeopen #toast{bottom:198px}
     <p><b>Read:</b> <a href="/stories/">stories told with the map and the satellite record</a>. <b>Print:</b> a gazetteer of every village, with maps, for
       <a href="/township/maungdaw/gazetteer/">Maungdaw</a>, <a href="/township/buthidaung/gazetteer/">Buthidaung</a>, <a href="/township/rathedaung/gazetteer/">Rathedaung</a> and <a href="/township/sittwe/gazetteer/">Sittwe</a>.</p>
     <p>Township and village-tract boundaries: UN OCHA, Myanmar administrative boundaries (COD-AB, source MIMU), CC BY-IGO. They are approximate and do not imply endorsement of any boundary.</p>
+    <p><b>Edition 1.0 · 16 November 2026.</b> The archive is published in numbered editions, so a citation always leads to the same data. <a href="/methods/">How this archive was made</a> · <a href="/changelog/">Change log</a> · to cite a village, open its record and choose <b>Cite This</b>.</p>
     <p><b>A project by AB Aziz</b> · Contact — <a href="mailto:ab@rohingya.ro">ab@rohingya.ro</a></p>
+  </div>
+</div>
+
+<div class="modal" id="citemodal" role="dialog" aria-modal="true" aria-label="Cite this record">
+  <div class="mcard notch" style="width:min(600px,100%)">
+    <button class="mclose" data-close="citemodal" aria-label="Close">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+    <h2>CITE <span>THIS RECORD</span></h2>
+    <div class="sub2" id="citesub"></div>
+    <div class="citetabs" role="tablist" aria-label="Citation format">
+      <button role="tab" data-f="plain" aria-selected="true">Citation</button><button role="tab" data-f="apa" aria-selected="false">APA</button><button role="tab" data-f="bibtex" aria-selected="false">BibTeX</button><button role="tab" data-f="ris" aria-selected="false">RIS</button>
+    </div>
+    <textarea id="citetext" readonly rows="6" spellcheck="false" aria-label="Citation"></textarea>
+    <div class="actions">
+      <button class="abtn primary" id="citecopy">Copy citation</button>
+      <a class="abtn" id="citesave" href="#" hidden>Save file</a>
+    </div>
+    <div class="embnote">// cite the edition you used, so your reference still leads to the same data after a correction<br>// <a href="/methods/">how this archive was made</a> · <a href="/changelog/">change log</a></div>
   </div>
 </div>
 
@@ -3518,6 +3556,66 @@ document.getElementById('embedbtn').addEventListener('click', openEmbed);
 document.getElementById('embcopy').addEventListener('click', ()=>copyText(document.getElementById('embcode').value, '// embed code copied'));
 document.getElementById('embcode').addEventListener('focus', e=>e.target.select());
 
+/* ---------- CITE: the edition being published (edition.json), and the citation of a record in four forms.
+   The wording has a twin in build_edition.py (cite); change both together. ---------- */
+const EDITION = {"v":"1.0","d":"2026-11-16","doi":"","pub":"","title":"FARA — The Arakan Village Name Archive","authors":[{"family":"Aziz","given":"Abdul"}]};
+const LONG_MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+const edDateLong = (+EDITION.d.slice(8)) + ' ' + LONG_MONTHS[+EDITION.d.slice(5,7) - 1] + ' ' + EDITION.d.slice(0,4);
+const citeClean = s => String(s == null ? '' : s).replace(/\s+/g, ' ').trim();
+function citeNames(style){
+  const a = EDITION.authors.map(x => x.family + ', ' + (style === 'apa' ? x.given.split(/\s+/).map(w => w[0] + '.').join(' ') : x.given));
+  return a.length < 2 ? a[0] : a.slice(0,-1).join(', ') + (style === 'apa' ? ', & ' : ', and ') + a[a.length-1];
+}
+function citeTitle(v){
+  const name = citeClean(v.rohingya_name), off = citeClean(v.name);
+  let t = name || off || 'Unnamed village';
+  if (name && off && off !== name) t += ' (' + off + ')';
+  if (v.township) t += ', ' + citeClean(v.township) + ' township';
+  return t;
+}
+function citeFormats(v){
+  const E = EDITION, doi = E.doi, doiUrl = doi ? 'https://doi.org/' + doi : '', year = E.d.slice(0,4);
+  const url = 'https://map.rohingya.ro/village/' + (v.slug || v.id) + '/', rid = recId(v), rt = citeTitle(v);
+  let plain = citeNames('plain') + '. “' + rt + '.” Record ' + rid + ' in ' + E.title + ', edition ' + E.v + ' (' + edDateLong + '). ' + url + '.';
+  if (doi) plain += ' Edition DOI: ' + doiUrl + '.';
+  const apa = citeNames('apa') + ' (' + year + '). ' + rt + ' (Record ' + rid + '). In ' + E.title + ' (Version ' + E.v + ') [Data set]. ' + (doi ? E.pub + '. ' + doiUrl + '. ' : '') + url;
+  const au = E.authors.map(x => x.family + ', ' + x.given), bt = rt + '. Record ' + rid;
+  const f = [['author', au.join(' and ')], ['title', bt], ['howpublished', E.title], ['version', E.v], ['year', year], ['month', String(+E.d.slice(5,7))]];
+  if (doi) f.push(['publisher', E.pub], ['doi', doi]);
+  f.push(['url', url]);
+  const bib = t => t.replace(/([&%#_{}])/g, '\\$1');
+  const bibtex = '@misc{fara_' + String(v.id).padStart(4,'0') + ',\n' + f.map(x => '  ' + x[0].padEnd(12) + ' = {' + bib(x[1]) + '}').join(',\n') + '\n}';
+  const r = [['TY','DATA']].concat(au.map(x => ['AU', x]), [['TI', bt], ['T2', E.title], ['ET', E.v], ['PY', year], ['DA', E.d.replace(/-/g,'/')]]);
+  if (doi) r.push(['PB', E.pub], ['DO', doi]);
+  r.push(['UR', url], ['ER', '']);
+  return { plain, apa, bibtex, ris: r.map(x => x[0] + '  - ' + x[1]).join('\n') };
+}
+let citeFmt = 'plain', citeUrl = null;
+function showCite(){
+  const v = current; if (!v) return;
+  const text = citeFormats(v)[citeFmt], box = document.getElementById('citetext'), save = document.getElementById('citesave');
+  document.querySelectorAll('#citemodal .citetabs button').forEach(b => b.setAttribute('aria-selected', b.dataset.f === citeFmt ? 'true' : 'false'));
+  box.value = text; box.classList.toggle('code', citeFmt === 'bibtex' || citeFmt === 'ris');
+  /* BibTeX and RIS can be saved as a file, which reference managers such as Zotero open directly */
+  if (citeUrl){ URL.revokeObjectURL(citeUrl); citeUrl = null; }
+  const file = citeFmt === 'bibtex' ? ['bib', 'application/x-bibtex'] : citeFmt === 'ris' ? ['ris', 'application/x-research-info-systems'] : null;
+  save.hidden = !file;
+  if (file){
+    citeUrl = URL.createObjectURL(new Blob([text + '\n'], { type: file[1] }));
+    save.href = citeUrl; save.download = recId(v) + '.' + file[0]; save.textContent = 'Save .' + file[0] + ' file';
+  }
+}
+function openCite(){
+  if (!current) return;
+  document.getElementById('citesub').innerHTML = esc(roName(current)) + ' · ' + recId(current) + ' · edition ' + esc(EDITION.v) + ' of ' + edDateLong
+    + (EDITION.doi ? ' · DOI <a href="https://doi.org/' + esc(EDITION.doi) + '" target="_blank" rel="noopener">' + esc(EDITION.doi) + '</a>' : '');
+  showCite(); openModal('citemodal'); track('Cite opened');
+}
+document.getElementById('citebtn').addEventListener('click', openCite);
+document.querySelectorAll('#citemodal .citetabs button').forEach(b => b.addEventListener('click', () => { citeFmt = b.dataset.f; showCite(); }));
+document.getElementById('citecopy').addEventListener('click', () => copyText(document.getElementById('citetext').value, '// citation copied'));
+document.getElementById('citetext').addEventListener('focus', e => e.target.select());
+
 function closePanel(){
   clearWard();
   panel.classList.remove('open');
@@ -3552,7 +3650,8 @@ document.getElementById('copyrec').addEventListener('click',()=>{
     'Coordinates: '+(isUnverified(v)?'UNVERIFIED':(+v.lat).toFixed(6)+', '+(+v.lng).toFixed(6)),
     pcodesText(v) ? 'Place codes ('+PCODE_SOURCE+'): '+pcodesText(v) : '',
     isUnverified(v) ? '' : '2017 (UNOSAT satellite analysis, not field validated): '+ST17[st17(v)].label+'. '+st17Text(v),
-    'Source: FARA — The Arakan Village Name Archive (data: map.rohingyakhobor.com)'
+    'Source: FARA — The Arakan Village Name Archive (data: map.rohingyakhobor.com)',
+    'Cite as: ' + citeFormats(v).plain
   ].filter(Boolean).join('\n');
   copyText(rec,'// record copied');
 });
@@ -3836,7 +3935,7 @@ function printRecord(){
     <h2>Source</h2>
     <p class="ps-src">Rohingya Khobor — Arakan Maps Project, collected 2 July 2026. Records with known problems are flagged, never silently altered.
     Satellite imagery: Esri World Imagery; Copernicus Sentinel-2. Place codes: ${PCODE_SOURCE}, © Myanmar Information Management Unit.</p>
-    <p class="ps-src"><b>Cite as:</b> FARA — The Arakan Village Name Archive, record ${recId(v)}, “${esc(roName(v))}”, ${esc(pageUrl(v))}</p>
+    <p class="ps-src"><b>Cite as:</b> ${esc(citeFormats(v).plain)}</p>
     <div class="ps-foot">Printed ${new Date().toISOString().slice(0,10)} from map.rohingya.ro · A project by AB Aziz</div>`;
   const imgs = document.getElementById('ps-imgs');
   [['clearcv','clearframe','clearcap','Sharpest image'], ['latestcv','latestframe','latestcap','Latest image']].forEach(([cv, frame, cap, label]) => {
