@@ -111,6 +111,16 @@ These are shown on the website but are not part of the village records.
 - Where a village begins and ends.
 - What happened in a village. The 2017 results state what UNOSAT's analysts marked from orbit, and the fire results what NASA's satellites detected, and nothing more.
 
+## Safety and care
+
+FARA is a record of places, not of people.
+
+- **No personal data.** The archive holds no names of people, no household lists, no photographs of people and no testimony. A suggestion sent through the site is read by the archive's keeper and is not published; an email address given with it is used only to reply.
+- **Only what is already public.** Village positions come from a public map and match those in the official MIMU place-code list. The satellite pictures, the UNOSAT analysis and the NASA fire detections are public data.
+- **Careful words.** FARA reports what a source recorded and says what that source cannot show. It does not say who destroyed a building or lit a fire, and it does not describe what a satellite picture shows.
+- **No tracking.** The site sets no cookies and counts visits without identifying anyone.
+- **Asking for a change or a removal.** If something here is wrong, or you believe publishing it puts someone at risk, write to [ab@rohingya.ro](mailto:ab@rohingya.ro). Requests are answered, and what is changed is recorded in the [change log](/changelog/).
+
 ## Editions and how to cite
 
 The archive changes as names are added and corrected. So that a citation stays true, it is published in numbered editions. Each edition is the data exactly as it stood on its date{{doi_sentence}}

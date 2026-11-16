@@ -475,7 +475,7 @@ def build_gazetteers(c):
 <title>%(title)s</title>
 <meta name="description" content="%(desc)s">
 <link rel="canonical" href="%(site)s%(path)s">
-<meta property="og:type" content="book">
+%(cite)s<meta property="og:type" content="book">
 <meta property="og:site_name" content="FARA — The Arakan Village Name Archive">
 <meta property="og:title" content="%(title)s">
 <meta property="og:description" content="%(desc)s">
@@ -494,7 +494,7 @@ def build_gazetteers(c):
 %(analytics)s
 </body>
 </html>
-''' % dict(title=esc(title), desc=esc(desc), site=c.SITE, path=path, pdf=pdf, fonts=FONTS, acc=acc, town=esc(town), body='\n'.join(h), analytics=c.ANALYTICS,
+''' % dict(cite=c.g['cite_meta'](title, c.SITE + path), title=esc(title), desc=esc(desc), site=c.SITE, path=path, pdf=pdf, fonts=FONTS, acc=acc, town=esc(town), body='\n'.join(h), analytics=c.ANALYTICS,
            ld=json.dumps({'@context': 'https://schema.org', '@type': 'Book', 'name': 'Gazetteer of Rohingya Villages: %s Township' % town,
                           'url': c.SITE + path, 'inLanguage': ['en', 'rhg', 'my'], 'datePublished': c.today.isoformat(),
                           'publisher': {'@type': 'Organization', 'name': 'FARA — The Arakan Village Name Archive', 'url': c.SITE + '/'},
@@ -603,7 +603,7 @@ def story_shell(c, path, title, desc, body, data, ld, og_image=None, og_alt=None
 <title>%(title)s</title>
 <meta name="description" content="%(desc)s">
 <link rel="canonical" href="%(site)s%(path)s">
-<meta name="robots" content="index, follow, max-image-preview:large">
+%(cite)s<meta name="robots" content="index, follow, max-image-preview:large">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="FARA — The Arakan Village Name Archive">
 <meta property="og:title" content="%(title)s">
@@ -637,7 +637,7 @@ def story_shell(c, path, title, desc, body, data, ld, og_image=None, og_alt=None
 <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').catch(function(){});</script>
 </body>
 </html>
-''' % dict(title=esc(title), desc=esc(desc), site=c.SITE, path=path, fonts=FONTS, body=body, analytics=c.ANALYTICS, ver=ver,
+''' % dict(cite=c.g['cite_meta'](title, c.SITE + path), title=esc(title), desc=esc(desc), site=c.SITE, path=path, fonts=FONTS, body=body, analytics=c.ANALYTICS, ver=ver,
            data=LD(data), ld=''.join('<script type="application/ld+json">%s</script>\n' % LD(j) for j in ld),
            ogi=og_image or (c.SITE + '/og.png'), oga=esc(og_alt or title))
 

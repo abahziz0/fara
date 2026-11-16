@@ -187,8 +187,22 @@ def embed(r):
         if o: d[short] = [o['nearest_m'], [x[5:7] + x[8:] for x in o['days']]]
     return d
 data = json.dumps([embed(r) for r in V], ensure_ascii=False, separators=(',', ':'))
+def cite_meta(title, url):
+    """Tags reference managers read (Zotero, Mendeley, Google Scholar): who, what, when, which edition, which DOI."""
+    t = esc(re.sub(r'\s*\|\s*FARA\s*$', '', title))
+    a = ED['authors'][0]; who = esc('%s, %s' % (a['family'], a['given']))
+    doi = ED.get('doi') or ''
+    tags = [('citation_title', t), ('citation_author', who), ('citation_publication_date', ED['date'].replace('-', '/')),
+            ('citation_publisher', 'FARA — The Arakan Village Name Archive'), ('citation_public_url', url), ('citation_language', 'en'),
+            ('DC.title', t), ('DC.creator', who), ('DC.date', ED['date']), ('DC.publisher', 'FARA — The Arakan Village Name Archive'),
+            ('DC.type', 'Dataset'), ('DC.language', 'en'), ('DC.rights', (ED.get('licence') or {}).get('url', '')),
+            ('DC.source', 'FARA — The Arakan Village Name Archive, edition %s' % ED['version'])]
+    if doi: tags += [('citation_doi', doi), ('DC.identifier', 'https://doi.org/' + doi)]
+    return ''.join('<meta name="%s" content="%s">\n' % (k, v) for k, v in tags if v)
+
 app = open(p('fara_template.html'), encoding='utf-8').read().replace('__VILLAGE_DATA__', data)
 app = build_edition.stamp_app(ED, app, SITE)
+app = app.replace('<title>', cite_meta(ED['title'], SITE + '/') + '<title>', 1)
 write(p('fara.html'), app)
 
 # ------------------------------------------------------------------ shared page chrome
@@ -214,7 +228,7 @@ def page(path, title, desc, body, jsonld=None, og_title=None, og_image=None, og_
 <title>%(title)s</title>
 <meta name="description" content="%(desc)s">
 <link rel="canonical" href="%(url)s">
-<meta property="og:type" content="article">
+%(cite)s<meta property="og:type" content="article">
 <meta property="og:site_name" content="FARA — The Arakan Village Name Archive">
 <meta property="og:title" content="%(ogt)s">
 <meta property="og:description" content="%(desc)s">
@@ -247,7 +261,7 @@ def page(path, title, desc, body, jsonld=None, og_title=None, og_image=None, og_
   <p>%(n)s villages across Maungdaw, Buthidaung, Rathedaung and Sittwe townships. Source data: <a href="https://map.rohingyakhobor.com/map" rel="noopener">Rohingya Khobor — Arakan Maps Project</a>, collected %(collected)s.
   Download the data: <a href="/arakan_villages.csv">CSV</a> · <a href="/arakan_villages.json">JSON</a> · <a href="/arakan_villages.geojson">GeoJSON</a>.</p>
   <p><a href="/">The map</a> · <a href="/villages/">All villages, A–Z</a> · <a href="/stories/">Stories</a> · Townships: <a href="/township/maungdaw/">Maungdaw</a>, <a href="/township/buthidaung/">Buthidaung</a>, <a href="/township/rathedaung/">Rathedaung</a>, <a href="/township/sittwe/">Sittwe</a></p>
-  <p class="ed">%(edition)s · <a href="/methods/">How this archive was made</a> · <a href="/changelog/">Change log</a></p>
+  <p class="ed">%(edition)s · <a href="/methods/">How this archive was made</a> · <a href="/changelog/">Change log</a> · <a href="/press/">For journalists</a></p>
   <p>A project by AB Aziz · <a href="mailto:ab@rohingya.ro">ab@rohingya.ro</a></p>
 </footer>
 %(analytics)s
@@ -256,7 +270,7 @@ def page(path, title, desc, body, jsonld=None, og_title=None, og_image=None, og_
 </html>
 ''' % dict(title=esc(title), desc=esc(desc), url=url, ogt=esc(og_title or title), site=SITE, ld=ld, logo=LOGO, body=body,
            ogi=og_image or (SITE + '/og.png'), oga=esc(og_alt or 'FARA — The Arakan Village Name Archive'),
-           n='{:,}'.format(N), collected=COLLECTED, analytics=ANALYTICS, cssv=CSS_V, edition=build_edition.edition_line(ED))
+           n='{:,}'.format(N), collected=COLLECTED, analytics=ANALYTICS, cssv=CSS_V, edition=build_edition.edition_line(ED), cite=cite_meta(title, url))
 
 def crumbs(items):
     out = []
@@ -433,6 +447,40 @@ n_gaz = build_extra.build_gazetteers(EXTRA)
 
 # ------------------------------------------------------------------ methods, change log, CITATION.cff
 edition_paths = build_edition.build_pages(EXTRA, ED)
+
+# ------------------------------------------------------------------ for journalists
+_st = [ (ST17.get(str(v['id'])) or {}).get('status') for v in V ]
+_cite = build_edition.cite(ED, SITE)['plain']
+_doi = ED.get('doi') or ''
+body = crumbs([('FARA', '/'), ('For journalists', None)])
+body += '<h1>For journalists</h1><p class="lede">What FARA is, the numbers you can quote, how to credit it, and who to ask. Everything here may be used in reporting.</p>'
+body += ('<h2>In one paragraph</h2><p class="note">FARA, the Arakan Village Name Archive, is a public record of the names and locations of %s Rohingya villages in Maungdaw, Buthidaung, Rathedaung and Sittwe townships of Arakan (Rakhine State, Myanmar). '
+         'Each village is listed with its Rohingya name, its official name, its name in Burmese where known, its position and its official place code, beside what satellites recorded there in 2017. '
+         '“Fará” is the Rohingya word for village. The archive is free, openly licensed and published in numbered editions so that a citation always leads to the same data.</p>' % '{:,}'.format(N))
+facts = [('Villages on record', '{:,}'.format(N)), ('With a recorded Rohingya name', '{:,}'.format(sum(1 for v in V if v.get('rohingya_name')))),
+         ('Marked destroyed by UNOSAT in 2017', str(_st.count('destroyed'))), ('With a destroyed zone within 500 m', str(_st.count('nearby'))),
+         ('With a fire detected by NASA satellites within 1 km, autumn 2017', str((FIRES_META.get('villages_with_fire') or {}).get('2017', '—'))),
+         ('Village stories', str(len(STORY))), ('Current edition', 'Edition %s, %s' % (ED['version'], long_day(ED['date'])))]
+body += '<h2>Numbers you can quote</h2><dl class="facts">' + ''.join('<div><dt>%s</dt><dd>%s</dd></div>' % (esc(k), esc(x)) for k, x in facts) + '</dl>'
+body += ('<p class="note">The 2017 figures are counts of villages in this archive, matched by position to UNOSAT’s satellite analysis of 31 August – 11 October 2017 and to NASA’s fire detections. '
+         'They are not counts of all villages destroyed. “None detected” does not mean a village is standing. <a href="/methods/">How each number was made</a>.</p>')
+body += ('<h2>How to credit</h2><p class="note">In text: <b>FARA, the Arakan Village Name Archive (map.rohingya.ro)</b>. For a figure from the 2017 analysis, add <b>UNOSAT</b>; for fire detections, <b>NASA FIRMS</b>; '
+         'for a satellite picture, <b>Esri World Imagery</b> and the date shown on it.</p><p class="note">Full citation:<span class="cite">%s</span></p>' % esc(_cite))
+body += ('<h2>What you may use</h2><p class="note">The data is under the Creative Commons Attribution 4.0 licence: copy it, publish it and adapt it, with credit. '
+         'Screenshots of the map, pictures and videos made with the site’s Picture and Video buttons, the story pages and the printable gazetteers may be used in reporting with the credits they carry. '
+         'Satellite pictures remain © Esri and its imagery providers; keep the credit line that is printed on them.</p>')
+body += ('<h2>Useful links</h2><ul class="vlist"><li><a href="/stories/what-the-satellites-recorded/"><b>What the satellites recorded</b><span>the account of autumn 2017</span></a></li>'
+         '<li><a href="/stories/"><b>Village stories</b><span>one for each village where destruction was mapped</span></a></li>'
+         '<li><a href="/methods/"><b>Methods</b><span>sources, corrections, limits</span></a></li>'
+         '<li><a href="/downloads/fara-dataset-v%s.zip"><b>The dataset</b><span>edition %s, ZIP</span></a></li>'
+         '<li><a href="/logo.png"><b>Logo</b><span>PNG</span></a></li><li><a href="/logo.svg"><b>Logo</b><span>SVG</span></a></li></ul>' % (ED['version'], ED['version']))
+body += ('<h2>Contact</h2><p class="note">AB Aziz, who keeps the archive: <a href="mailto:ab@rohingya.ro">ab@rohingya.ro</a>. Corrections are welcome and are recorded publicly in the <a href="/changelog/">change log</a>.</p>')
+write(p('press', 'index.html'), page('/press/', 'For journalists: facts, credit line and contact | FARA',
+      'What FARA, the Arakan Village Name Archive, is; figures you can quote on Rohingya villages and 2017; how to credit it; and who to contact.', body,
+      [{'@context': 'https://schema.org', '@type': 'AboutPage', 'name': 'FARA for journalists', 'url': SITE + '/press/',
+        'about': {'@type': 'Dataset', 'name': ED['title'], 'url': SITE + '/', 'identifier': ('https://doi.org/' + _doi) if _doi else SITE + '/'}},
+       crumbs_ld([('FARA', '/'), ('For journalists', '/press/')])]))
+edition_paths = list(edition_paths) + ['/press/']
 
 # ------------------------------------------------------------------ sitemap, robots, llms.txt
 today = date.today().isoformat()

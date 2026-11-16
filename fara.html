@@ -22,6 +22,22 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"FARA — The Arakan Village Name Archive","url":"https://map.rohingya.ro/","description":"Names and locations of 1,023 Rohingya villages across Maungdaw, Buthidaung, Rathedaung and Sittwe townships of Arakan (Rakhine State, Myanmar). Each record has the Rohingya name, the official romanised name, the Burmese-script name where known, village tract, township, district and WGS84 coordinates.","keywords":["Rohingya","Arakan","Rakhine State","Myanmar","village names","place names","gazetteer","Maungdaw","Buthidaung","Rathedaung","Sittwe"],"creator":[{"@type":"Person","name":"Abdul Aziz","givenName":"Abdul","familyName":"Aziz","alternateName":"AB Aziz","sameAs":"https://orcid.org/0009-0003-8386-3740"}],"isBasedOn":"https://map.rohingyakhobor.com/map","dateModified":"2026-11-16","spatialCoverage":{"@type":"Place","name":"Arakan (Rakhine State), Myanmar","geo":{"@type":"GeoShape","box":"19.9 92.1 21.5 93.2"}},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://map.rohingya.ro/arakan_villages.csv"},{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://map.rohingya.ro/arakan_villages.json"},{"@type":"DataDownload","encodingFormat":"application/geo+json","contentUrl":"https://map.rohingya.ro/arakan_villages.geojson"}],"version":"1.1","citation":"Aziz, Abdul. FARA — The Arakan Village Name Archive. Edition 1.1, 16 November 2026. Zenodo. https://doi.org/10.5281/zenodo.24267149.","identifier":"https://doi.org/10.5281/zenodo.24267149","sameAs":"https://doi.org/10.5281/zenodo.24267149","license":"https://creativecommons.org/licenses/by/4.0/","subjectOf":[{"@type":"TechArticle","name":"How this archive was made","url":"https://map.rohingya.ro/methods/"},{"@type":"WebPage","name":"Change log","url":"https://map.rohingya.ro/changelog/"}]}</script>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="citation_title" content="FARA — The Arakan Village Name Archive">
+<meta name="citation_author" content="Aziz, Abdul">
+<meta name="citation_publication_date" content="2026/11/16">
+<meta name="citation_publisher" content="FARA — The Arakan Village Name Archive">
+<meta name="citation_public_url" content="https://map.rohingya.ro/">
+<meta name="citation_language" content="en">
+<meta name="DC.title" content="FARA — The Arakan Village Name Archive">
+<meta name="DC.creator" content="Aziz, Abdul">
+<meta name="DC.date" content="2026-11-16">
+<meta name="DC.publisher" content="FARA — The Arakan Village Name Archive">
+<meta name="DC.type" content="Dataset">
+<meta name="DC.language" content="en">
+<meta name="DC.rights" content="https://creativecommons.org/licenses/by/4.0/">
+<meta name="DC.source" content="FARA — The Arakan Village Name Archive, edition 1.1">
+<meta name="citation_doi" content="10.5281/zenodo.24267149">
+<meta name="DC.identifier" content="https://doi.org/10.5281/zenodo.24267149">
 <title>FARA — The Arakan Village Name Archive · 1,023 Rohingya village names and locations</title>
 <meta name="description" content="FARA preserves the names and locations of 1,023 Rohingya villages across Arakan — in Rohingya, English and Burmese — for research, reporting and documentation.">
 <link rel="icon" href="favicon.ico" sizes="32x32">
@@ -404,6 +420,15 @@ input,select{font-family:inherit}
 .covitem b{color:var(--text);font-family:'Share Tech Mono',monospace;margin-left:auto}
 .mission p{font-size:13.5px;line-height:1.75;color:var(--text-dim);margin-bottom:13px}
 .mission p b{color:var(--text)}
+.mission h3{margin:20px 0 9px;font-family:'Share Tech Mono',monospace;font-size:10px;font-weight:400;letter-spacing:.24em;text-transform:uppercase;color:var(--text-faint);display:flex;align-items:center;gap:8px}
+.mission h3::before{content:"//";color:var(--cyan);opacity:.7}
+.mission h3::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+.mission .mlist{list-style:none;margin:0 0 13px}
+.mission .mlist li{position:relative;padding:6px 0 6px 16px;font-size:13.5px;line-height:1.65;color:var(--text-dim);border-bottom:1px solid var(--line-soft)}
+.mission .mlist li:last-child{border-bottom:0}
+.mission .mlist li::before{content:"";position:absolute;left:2px;top:15px;width:5px;height:5px;background:var(--cyan);opacity:.7}
+.mission .mlist b{color:var(--text)}
+.mission .mlist a{color:var(--cyan);text-decoration:none}
 .mission p a{color:var(--cyan);text-decoration:none}
 .mission .quote{border-left:2px solid var(--cyan);padding:10px 14px;background:rgba(0,229,255,.05);font-size:14px;color:var(--text);margin-bottom:13px}
 .shgrid{display:grid;grid-template-columns:1fr 1fr;gap:7px 22px}
@@ -1424,16 +1449,39 @@ body.sat.timeopen #toast{bottom:198px}
     <h2>THE <span>MISSION</span></h2>
     <div class="sub2">FARA // fará — "village" in the Rohingya language</div>
     <div class="quote">Every village had a name. FARA exists so those names are never erased.</div>
-    <p>Across Arakan (Rakhine State, Myanmar), the names of Rohingya villages — spoken for generations — are being systematically <b>renamed, depopulated, and wiped from official maps</b>. When a name disappears, the memory of the people who lived there begins to disappear with it.</p>
-    <p><b>FARA is a digital archive of 1,023 villages</b> across Maungdaw, Buthidaung, Rathedaung and Sittwe townships. Each record preserves the village's <b>Rohingya name</b>, its official romanized name, its Burmese-script name, its village tract, and its exact coordinates.</p>
-    <p>The archive is built to support <b>research, reporting, documentation, and evidence-based understanding</b> of Rohingya village names and locations — for journalists, researchers, human-rights documentation, and the Rohingya community itself.</p>
-    <p>Source data: <a href="https://map.rohingyakhobor.com/map" target="_blank" rel="noopener">Rohingya Khobor — Arakan Maps Project</a>. Records with known data issues are flagged, never silently altered. Map Art posters are drawn from map data © OpenStreetMap contributors.</p>
-    <p>Every village also has a page of its own: <a href="/villages/">browse all villages, A–Z</a>.</p>
-    <p><b>Read:</b> <a href="/stories/">stories told with the map and the satellite record</a>. <b>Print:</b> a gazetteer of every village, with maps, for
-      <a href="/township/maungdaw/gazetteer/">Maungdaw</a>, <a href="/township/buthidaung/gazetteer/">Buthidaung</a>, <a href="/township/rathedaung/gazetteer/">Rathedaung</a> and <a href="/township/sittwe/gazetteer/">Sittwe</a>.</p>
-    <p>Township and village-tract boundaries: UN OCHA, Myanmar administrative boundaries (COD-AB, source MIMU), CC BY-IGO. They are approximate and do not imply endorsement of any boundary.</p>
-    <p><b>Edition 1.1 · 16 November 2026 · DOI <a href="https://doi.org/10.5281/zenodo.24267149" rel="noopener">10.5281/zenodo.24267149</a>.</b> The archive is published in numbered editions, so a citation always leads to the same data. <a href="/methods/">How this archive was made</a> · <a href="/changelog/">Change log</a> · to cite a village, open its record and choose <b>Cite This</b>.</p>
-    <p><b>A project by AB Aziz</b> · Contact — <a href="mailto:ab@rohingya.ro">ab@rohingya.ro</a></p>
+    <p>Across Arakan (Rakhine State, Myanmar), the names of Rohingya villages, spoken for generations, are being <b>renamed, emptied and left off official maps</b>. When a name disappears, the memory of the people who lived there begins to disappear with it.</p>
+
+    <h3>What FARA is</h3>
+    <p><b>FARA is a public archive of 1,023 Rohingya villages</b> in Maungdaw, Buthidaung, Rathedaung and Sittwe townships. Each record keeps the village's <b>Rohingya name</b>, its official name, its name in Burmese where known, its village tract, its position and its official place code. A missing name is shown as missing. Nothing is guessed.</p>
+    <p>Beside the names, FARA sets out what satellites recorded at each village: every dated picture since about 2010, the buildings the United Nations mapped as destroyed in 2017, and the days on which fire was detected from orbit. It is made for the Rohingya community, and for the researchers, journalists and human-rights workers who document what happened to these places.</p>
+
+    <h3>What you can do here</h3>
+    <ul class="mlist">
+      <li><b>Find a village</b> by name in Rohingya, English or Burmese, or <b>browse</b> by township and village tract.</li>
+      <li><b>See it through the years</b>: play the satellite pictures, compare two dates, download a picture or a short video.</li>
+      <li><b>Read</b> <a href="/stories/">the stories</a>: one account of autumn 2017, and one for each village where destruction was mapped.</li>
+      <li><b>Print</b> a gazetteer of every village, with maps: <a href="/township/maungdaw/gazetteer/">Maungdaw</a>, <a href="/township/buthidaung/gazetteer/">Buthidaung</a>, <a href="/township/rathedaung/gazetteer/">Rathedaung</a>, <a href="/township/sittwe/gazetteer/">Sittwe</a>.</li>
+      <li><b>Correct it</b>: every record has a "Suggest a name or correction" button. Changes are recorded in the <a href="/changelog/">change log</a>.</li>
+    </ul>
+
+    <h3>Where the information comes from</h3>
+    <ul class="mlist src">
+      <li><b>Village names and positions</b>: <a href="https://map.rohingyakhobor.com/map" target="_blank" rel="noopener">Rohingya Khobor, Arakan Maps Project</a>, collected 2 July 2026. Every change FARA has made to a source value is listed in <a href="/corrections.csv">corrections.csv</a>.</li>
+      <li><b>Official place codes</b>: <a href="https://themimu.info/place-codes" target="_blank" rel="noopener">Myanmar Information Management Unit (MIMU)</a>, Place Codes release 9.7.</li>
+      <li><b>Buildings destroyed in 2017</b>: <a href="https://data.humdata.org/dataset/destroyed-areas-in-buthidaung-maungdaw-and-rathedaung-townships-of-rakhine-state-in-myanmar-2727" target="_blank" rel="noopener">UNOSAT</a>, satellite analysis of 31 August – 11 October 2017 (CC BY-SA). Not validated on the ground.</li>
+      <li><b>Fire detections</b>: <a href="https://firms.modaps.eosdis.nasa.gov/" target="_blank" rel="noopener">NASA FIRMS</a>, VIIRS and MODIS active fire data.</li>
+      <li><b>Satellite pictures</b>: <a href="https://livingatlas.arcgis.com/wayback/" target="_blank" rel="noopener">Esri World Imagery and its Wayback archive</a>; recent passes from Copernicus Sentinel-2 (European Space Agency).</li>
+      <li><b>Township and village-tract boundaries</b>: <a href="https://data.humdata.org/dataset/cod-ab-mmr" target="_blank" rel="noopener">UN OCHA, COD-AB</a> (source: MIMU), CC BY-IGO. Approximate; no endorsement of any boundary is implied.</li>
+      <li><b>Map Art posters</b>: map data © OpenStreetMap contributors.</li>
+    </ul>
+    <p>What each source can and cannot tell you is set out in <a href="/methods/">How this archive was made</a>.</p>
+
+    <h3>Citing and using it</h3>
+    <p><b>Edition 1.1 · 16 November 2026 · DOI <a href="https://doi.org/10.5281/zenodo.24267149" rel="noopener">10.5281/zenodo.24267149</a>.</b> The archive is published in numbered editions, each kept permanently at Zenodo under its own DOI, so a citation always leads to the same data. FARA's own work is free to use with credit (CC BY 4.0); the parts that come from other publishers stay under their terms.</p>
+    <p>To cite a village, open its record and choose <b>Cite This</b>. For the whole archive, see <a href="/methods/#editions-and-how-to-cite">how to cite</a>. Journalists: <a href="/press/">facts, credit line and contact</a>.</p>
+
+    <h3>Who keeps it</h3>
+    <p><b>A project by AB Aziz</b> (<a href="https://orcid.org/0009-0003-8386-3740" target="_blank" rel="noopener">ORCID</a>), independent and not for profit. Contact: <a href="mailto:ab@rohingya.ro">ab@rohingya.ro</a>. The code and the data are open at <a href="https://github.com/abahziz0/fara" target="_blank" rel="noopener">github.com/abahziz0/fara</a>.</p>
   </div>
 </div>
 

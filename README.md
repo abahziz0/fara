@@ -1,10 +1,52 @@
 # FARA — The Arakan Village Name Archive
 
-Data scraped from **https://map.rohingyakhobor.com/map** (Rohingya Khobor — Arakan Maps project) on **2026-07-02**.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24266547.svg)](https://doi.org/10.5281/zenodo.24266547)
+[![Data licence: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Code licence: MIT](https://img.shields.io/badge/code-MIT-green.svg)](LICENSE)
 
 > *Fará — "village" in the Rohingya language. Every village had a name. FARA exists so those names are never erased.*
 
-The dataset contains **1,023 villages** across 4 townships of Arakan (Rakhine State, Myanmar), each with its name in multiple languages/scripts and exact coordinates. Built to support **research, reporting, documentation, and evidence-based understanding** of Rohingya village names and locations.
+**FARA is a public archive of the names and locations of 1,023 Rohingya villages** in Maungdaw, Buthidaung, Rathedaung and Sittwe townships of Arakan (Rakhine State, Myanmar). Each record keeps the village's Rohingya name, its official name, its name in Burmese where known, its village tract, its position and its official place code, beside what satellites recorded there: dated pictures since about 2010, the buildings UNOSAT mapped as destroyed in 2017, and the days on which NASA's satellites detected fire.
+
+- **The archive:** https://map.rohingya.ro
+- **How it was made:** https://map.rohingya.ro/methods/ · **Change log:** https://map.rohingya.ro/changelog/
+- **Stories:** https://map.rohingya.ro/stories/ · **For journalists:** https://map.rohingya.ro/press/
+- **The dataset, permanently:** https://doi.org/10.5281/zenodo.24266547 (always the newest edition)
+
+## Cite
+
+> Aziz, Abdul. *FARA — The Arakan Village Name Archive.* Edition 1.1, 2026-11-16. Zenodo. https://doi.org/10.5281/zenodo.24267149
+
+Cite the edition you used; each has its own DOI. A single village is cited from its record ("Cite This"). Machine-readable: [`CITATION.cff`](CITATION.cff).
+
+## Sources
+
+| What | From | Terms |
+|---|---|---|
+| Village names and positions | [Rohingya Khobor, Arakan Maps Project](https://map.rohingyakhobor.com/map), collected 2 July 2026 | Credit the project |
+| Official place codes | [MIMU Place Codes](https://themimu.info/place-codes), release 9.7 | © MIMU, free with attribution, not for sale |
+| Buildings destroyed in 2017 | [UNOSAT](https://data.humdata.org/dataset/destroyed-areas-in-buthidaung-maungdaw-and-rathedaung-townships-of-rakhine-state-in-myanmar-2727) | CC BY-SA 4.0 |
+| Fire detections | [NASA FIRMS](https://firms.modaps.eosdis.nasa.gov/) (VIIRS, MODIS) | Free and open, credit NASA |
+| Township and tract boundaries | [UN OCHA COD-AB](https://data.humdata.org/dataset/cod-ab-mmr) (source: MIMU) | CC BY-IGO |
+| Satellite pictures (shown on the site, not in the dataset) | Esri World Imagery and Wayback; Copernicus Sentinel-2 | Their own terms |
+
+Every change FARA has made to a source value is listed in [`corrections.csv`](corrections.csv). A missing name is shown as missing; nothing is guessed.
+
+## Licence
+
+- **Data** (FARA's own part: the compilation, the corrections and the matching): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Parts from other publishers stay under their terms, above. See [`LICENSE-DATA.md`](LICENSE-DATA.md).
+- **Code** (the site and the build tools): [MIT](LICENSE).
+
+## Build
+
+```
+python3 build.py              # the whole site from the template and the data
+python3 tools/build_pdfs.py   # the printable gazetteers
+```
+
+Edit `fara_template.html`, never `fara.html`. The site is plain static files.
+
+A project by AB Aziz ([ORCID](https://orcid.org/0009-0003-8386-3740)) · ab@rohingya.ro
 
 ## The Website — `fara.html`
 
