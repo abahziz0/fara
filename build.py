@@ -102,6 +102,33 @@ ST17 = {}
 if os.path.exists(p('status_unosat_2017.json')):
     ST17 = json.load(open(p('status_unosat_2017.json'), encoding='utf-8'))['villages']
 ST17_URL = 'https://data.humdata.org/dataset/destroyed-areas-in-buthidaung-maungdaw-and-rathedaung-townships-of-rakhine-state-in-myanmar-2727'
+# fires NASA's satellites detected within 1 km of each village in the autumns of 2017 and 2016 (tools/match_fires.py)
+FIRES, FIRES_META = {}, {}
+if os.path.exists(p('fires.json')):
+    _f = json.load(open(p('fires.json'), encoding='utf-8')); FIRES, FIRES_META = _f['villages'], _f['meta']
+FIRMS_URL = 'https://firms.modaps.eosdis.nasa.gov/'
+MONTHS_SHORT = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+def day_list(days, long=True):
+    """'28 August, 29 August and 5 September 2017' from ISO days of one year."""
+    names = MONTHS_LONG if long else MONTHS_SHORT
+    parts = ['%d %s' % (int(d[8:]), names[int(d[5:7]) - 1]) for d in days]
+    return (', '.join(parts[:-1]) + ' and ' + parts[-1] if len(parts) > 1 else parts[0]) + ' ' + days[0][:4]
+def fire_sentence(v, name):
+    """What NASA's fire-detecting satellites recorded near a village, or None when the location is unverified."""
+    if unverified(v): return None
+    f = FIRES.get(str(v['id'])) or {}
+    out = []
+    for key in ('2017', '2016'):
+        if key in f:
+            o = f[key]
+            out.append("NASA's fire-detecting satellites recorded a fire within one kilometre of %s on %s%s; the nearest detection was %d metres from the village's recorded position."
+                       % (name, day_list(o['days']), ' (%d days)' % len(o['days']) if len(o['days']) > 2 else '', o['nearest_m']))
+    if '2017' not in f:
+        out.append("NASA's fire-detecting satellites recorded no fire within one kilometre of %s between 25 August and 30 November 2017. Fires under cloud are not detected, so this does not show there was none." % name)
+    else:
+        out.append('A detection is heat seen from orbit: it does not say what burned.')
+    return ' '.join(out)
+
 ST17_LABEL = {'destroyed': 'Destroyed in 2017', 'nearby': 'Destruction nearby in 2017',
               'none_detected': 'No destruction detected in 2017', 'not_assessed': 'Not assessed in 2017'}
 MONTHS_LONG = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
@@ -150,6 +177,9 @@ def embed(r):
             if u.get('confidence') == 'uncertain': o['c'] = 'u'
             if u.get('cloud_note'): o['cl'] = 1
         d['u'] = o
+    for key, short in (('2017', 'f7'), ('2016', 'f6')):
+        o = (FIRES.get(str(r['id'])) or {}).get(key)
+        if o: d[short] = [o['nearest_m'], [x[5:7] + x[8:] for x in o['days']]]
     return d
 data = json.dumps([embed(r) for r in V], ensure_ascii=False, separators=(',', ':'))
 app = open(p('fara_template.html'), encoding='utf-8').read().replace('__VILLAGE_DATA__', data)
@@ -289,6 +319,8 @@ for v in V:
             name, v['pcode_village'], ' (listed by MIMU as %s)' % v['mimu_village_name'] if v.get('mimu_village_name') else '', v['pcode_village_tract'], v['pcode_township'])))
     st_code, st_text = st17_sentence(v, name)
     if st_text: qa.append(('Was %s destroyed in 2017?' % name, st_text))
+    fire_text = fire_sentence(v, name) if FIRES else None
+    if fire_text: qa.append(('Were fires detected at %s in 2017?' % name, fire_text))
     if near: qa.append(('Which villages are near %s?' % name, 'The nearest villages in the archive are ' + ', '.join('%s (%s)' % (ro(x), fmt_dist(d)) for d, x in near[:5]) + '.'))
     qa.append(('What is FARA?', 'FARA, the Arakan Village Name Archive, preserves the names and locations of %s Rohingya villages across Arakan in Rohingya, English and Burmese, so that those names are never erased.' % '{:,}'.format(N)))
 
@@ -315,6 +347,9 @@ for v in V:
                  '<p class="note">Source: <a href="%s" rel="noopener">UNOSAT, “Destroyed areas in Buthidaung, Maungdaw, and Rathedaung Townships”</a> (CC BY-SA), '
                  'matched to this village by location. <a href="/#v=%d">Open the map</a> to compare satellite images from before and after.</p>'
                  % (ST17_LABEL[st_code], esc(st_text), ST17_URL, v['id']))
+        if fire_text:
+            body += ('<p class="lede st17"><b>Fire detections.</b> %s</p><p class="note">Source: <a href="%s" rel="noopener">NASA FIRMS</a>, VIIRS and MODIS active fire data. '
+                     'Days are in Myanmar time. <a href="/fires.csv">All detections by village (CSV)</a>.</p>' % (esc(fire_text), FIRMS_URL))
         if v['id'] in STORY:
             body += ('<p class="note"><a href="%s"><b>Read the story of %s in 2017</b></a>: the last satellite picture from before that autumn, the first one after, '
                      'and what UNOSAT mapped, step by step.</p>' % (STORY[v['id']], esc(name)))
@@ -452,6 +487,7 @@ Rohingya village names are being renamed, depopulated and removed from official 
 - [GeoJSON](%(site)s/arakan_villages.geojson) (verified coordinates only)
 - [2017 destruction per village, CSV](%(site)s/status_unosat_2017.csv) and [the destroyed zones, GeoJSON](%(site)s/unosat_2017_zones.geojson): derived from UNOSAT data, CC BY-SA 4.0, credit UNOSAT
 - Fields: id, name (official romanised), rohingya_name, village_name_mmr (Burmese script), lat, lng, village_tract, township, district, coord_status, pcode_village, pcode_village_tract, pcode_township, pcode_district, mimu_village_name, mimu_village_tract_name, mimu_village_status, mimu_village_tract_status, pcode_match.
+- [Fires detected by satellite near each village, CSV](%(site)s/fires.csv), [JSON](%(site)s/fires.json) and [every detection as points](%(site)s/fires_points.json): NASA FIRMS active fire detections (VIIRS 375 m and MODIS 1 km) within 1 km of a village's recorded position, 25 August – 30 November 2017 and 9 October – 30 November 2016, with days in Myanmar time. %(n_fire)s villages had a detection in autumn 2017 (%(n_fire_v)s by VIIRS alone); in the same weeks of 2013–2016 and 2018–2019 VIIRS never found more than %(fire_max)s. A detection does not say what burned, and fires under cloud are not detected.
 - [Place-code matching, record by record](%(site)s/pcodes.csv): how each code was matched, and the few records still to be confirmed.
 - [Satellite capture dates per village](%(site)s/captures.json): for each village, the dates of the images Esri's World Imagery Wayback archive holds (looked up by tools/build_captures.py).
 - [Township and village-tract boundaries](%(site)s/boundaries.json): from UN OCHA's COD-AB dataset for Myanmar (source MIMU), CC BY-IGO; approximate, about 1:250,000.
@@ -461,6 +497,9 @@ Cite a record as: FARA — The Arakan Village Name Archive, record FARA-<id>, "<
 ''' % dict(n='{:,}'.format(N), collected=COLLECTED, site=SITE,
            towns=', '.join('%s (%d)' % (t, sum(1 for v in V if v.get('township') == t)) for t in towns),
            with_pc='{:,}'.format(sum(1 for v in V if v.get('pcode_village'))), pc_source=PCODE_SOURCE,
+           n_fire=(FIRES_META.get('villages_with_fire') or {}).get('2017', 0),
+           n_fire_v=((FIRES_META.get('same_weeks_other_years_viirs') or {}).get('2017') or {}).get('villages', 0),
+           fire_max=max([o['villages'] for y, o in (FIRES_META.get('same_weeks_other_years_viirs') or {}).items() if y != '2017'] or [0]),
            with_ro=sum(1 for v in V if v.get('rohingya_name')), with_mm=sum(1 for v in V if v.get('village_name_mmr')),
            town_links='\n'.join('- [%s township](%s%s)' % (t, SITE, turl(t)) for t in towns),
            gaz_links='\n'.join('  - [%s township gazetteer](%s%sgazetteer/) · [PDF](%s/downloads/fara-gazetteer-%s.pdf)' % (t, SITE, turl(t), SITE, slugify(t)) for t in towns),
@@ -472,7 +511,7 @@ Cite a record as: FARA — The Arakan Village Name Archive, record FARA-<id>, "<
 sw_src = p('sw.template.js')
 if os.path.exists(sw_src):
     h = hashlib.sha256()
-    for f in ('fara.html', 'wards.js', 'pages.css', 'gazetteer.css', 'stories.css', 'stories.js', 'captures.json', 'boundaries.json', 'sw.template.js'):
+    for f in ('fara.html', 'wards.js', 'pages.css', 'fires_points.json', 'gazetteer.css', 'stories.css', 'stories.js', 'captures.json', 'boundaries.json', 'sw.template.js'):
         if os.path.exists(p(f)): h.update(open(p(f), 'rb').read())
     write(p('sw.js'), open(sw_src, encoding='utf-8').read().replace('__VERSION__', h.hexdigest()[:12]))
 

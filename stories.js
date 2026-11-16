@@ -59,6 +59,26 @@
       }).catch(function(){ zonesLoading = false; });
     }
 
+    /* fires NASA's satellites detected: the ones near this village come with the page (with their day); a story that
+       zooms out fetches them all (a small file) */
+    var fireNear = S.fires && S.fires.length ? L.layerGroup(S.fires.map(function(q){
+      return L.circleMarker([q[0], q[1]], { radius:6.5, color:'#fff', weight:1.5, fillColor:'#FF7A1A', fillOpacity:.95, interactive:false })
+        .bindTooltip(q[2], { permanent:true, direction:'right', offset:[9, 0], className:'sfire' }); })) : null;
+    var fireAll = null, fireWanted = '', fireLoading = false;
+    function setFires(mode){
+      fireWanted = mode || '';
+      if (fireNear){ if (mode === true) { if (!map.hasLayer(fireNear)) fireNear.addTo(map); } else map.removeLayer(fireNear); }
+      if (mode !== 'all'){ if (fireAll) map.removeLayer(fireAll); return; }
+      if (fireAll){ if (!map.hasLayer(fireAll)) fireAll.addTo(map); return; }
+      if (fireLoading) return; fireLoading = true;
+      fetch('/fires_points.json').then(function(r){ if (!r.ok) throw 0; return r.json(); }).then(function(d){
+        fireAll = L.layerGroup(d.p.filter(function(q){ return q[2] > 20170800; }).map(function(q){
+          return L.circleMarker([q[0], q[1]], { renderer:renderer, radius:3.2, weight:0, fillColor:'#FF7A1A', fillOpacity:.9, interactive:false }); }),
+          { attribution:'Fire detections: NASA FIRMS' });
+        if (fireWanted === 'all') fireAll.addTo(map);
+      }).catch(function(){ fireLoading = false; });
+    }
+
     /* ---- base maps, cross-faded ---- */
     function urlOf(b){ return b === 'sat' ? ESRI + '{z}/{y}/{x}' : b && typeof b === 'object' ? WB + b.rel + '/{z}/{y}/{x}' : DARK + 'Base/MapServer/tile/{z}/{y}/{x}'; }
     function nativeOf(b){ return b === 'sat' ? 18 : b && typeof b === 'object' ? (b.z18 ? 18 : 17) : 16; }
@@ -131,12 +151,13 @@
       if (!map.hasLayer(dotGroup)) dotGroup.addTo(map);
     }
     var legendEl = document.getElementById('slegend'), capEl = document.getElementById('scap'), legendKey = '';
-    function setLegend(kind, zones){
-      var key = (kind || '') + (zones ? 'z' : ''); if (key === legendKey) return; legendKey = key;
+    function setLegend(kind, zones, fires){
+      var key = (kind || '') + (zones ? 'z' : '') + (fires ? 'f' : ''); if (key === legendKey) return; legendKey = key;
       var h = '';
       if (kind === 'town') h = D.towns.map(function(t, i){ return '<span><i style="background:' + D.colors[i] + ';color:' + D.colors[i] + '"></i>' + t + '</span>'; }).join('');
       else if (kind === 'st17') h = ['d', 'n', 'z', 'x'].map(function(k){ return '<span><i style="background:' + ST[k] + ';color:' + ST[k] + '"></i>' + ST_NAME[k] + '</span>'; }).join('');
       if (zones) h += '<span><i class="sq"></i>Destroyed zone · UNOSAT</span>';
+      if (fires) h += '<span><i style="background:#FF7A1A;color:#FF7A1A"></i>Fire detected · NASA</span>';
       legendEl.innerHTML = h; legendEl.classList.toggle('show', !!h);
     }
 
@@ -165,10 +186,11 @@
       setDots(m.dots || 'town', z);
       if (lines){ if (m.lines){ if (!map.hasLayer(lines)) lines.addTo(map); } else map.removeLayer(lines); }
       setZones(m.zones, z);
+      setFires(m.fires);
       var at = m.pin === true ? m.at : m.pin;
       if (at){ pin.setLatLng(at); pin.setRadius(z >= 14 ? 18 : 9); if (!map.hasLayer(pin)) pin.addTo(map); } else map.removeLayer(pin);
       capEl.innerHTML = m.caption || ''; capEl.classList.toggle('show', !!m.caption);
-      setLegend(m.legend, m.zones);
+      setLegend(m.legend, m.zones, m.fires);
       steps.forEach(function(s, k){ s.classList.toggle('on', k === i); });
       setTimeout(function(){ if (active === i) warm(i + 1); }, instant ? 1200 : 700);
     }

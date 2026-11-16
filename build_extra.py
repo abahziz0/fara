@@ -653,10 +653,31 @@ def article_ld(c, path, headline, desc, image=None, about=None):
     return d
 
 
+def fire_points(c):
+    """Every fire detection of the two autumns as (lat, lng, yyyymmdd)."""
+    f = c.p('fires_points.json')
+    return [(q[0], q[1], q[2]) for q in json.load(open(f, encoding='utf-8'))['p']] if os.path.exists(f) else []
+
+
+def fires_near(points, lat, lng, km=2.2):
+    """Detections around one village, each with its day written out, to travel inside the story page."""
+    dlat = km / 110.574; dlng = km / (111.320 * math.cos(math.radians(lat)))
+    return [[la, ln, '%d %s %d' % (d % 100, MONTHS[d // 100 % 100 - 1][:3], d // 10000)] for la, ln, d in points
+            if abs(la - lat) <= dlat and abs(ln - lng) <= dlng]
+
+
+def days_text(days):
+    """'28 August, 29 August and 5 September 2017'."""
+    parts = ['%d %s' % (int(d[8:]), MONTHS[int(d[5:7]) - 1]) for d in days]
+    return (', '.join(parts[:-1]) + ' and ' + parts[-1] if len(parts) > 1 else parts[0]) + ' ' + days[0][:4]
+
+
 SOURCES_VILLAGE = [
     ('UNOSAT: Destroyed areas in Buthidaung, Maungdaw, and Rathedaung Townships of Rakhine State in Myanmar',
      'https://data.humdata.org/dataset/destroyed-areas-in-buthidaung-maungdaw-and-rathedaung-townships-of-rakhine-state-in-myanmar-2727',
      'the destroyed zones and their dates. CC BY-SA. Analysis from satellite imagery, not validated on the ground.'),
+    ('NASA FIRMS: active fire detections (VIIRS 375 m and MODIS 1 km)', 'https://firms.modaps.eosdis.nasa.gov/',
+     'the fires and their days, in Myanmar time. A detection is heat seen from orbit; fires under cloud are not detected.'),
     ('Esri World Imagery Wayback', 'https://livingatlas.arcgis.com/wayback/', 'the satellite pictures and their capture dates.'),
     ('Rohingya Khobor: Arakan Maps Project', 'https://map.rohingyakhobor.com/map', 'the village name and position.'),
     ('UN OCHA: Myanmar Subnational Administrative Boundaries (COD-AB, source: MIMU)', 'https://data.humdata.org/dataset/cod-ab-mmr', 'township boundaries. CC BY-IGO.'),
@@ -701,7 +722,7 @@ def step(i, html):
     return '<section class="step%s" data-i="%d"><div class="scard">%s</div></section>' % (' first' if i == 0 else '', i, html)
 
 
-def village_story(c, v, caps, zones, by_town, near, prev_next, ver, shared_name, used):
+def village_story(c, v, caps, zones, by_town, near, prev_next, ver, shared_name, used, fires, fire):
     """One village's story: where it is, the last picture before autumn 2017, the first one after with UNOSAT's finding,
     the newest picture, the township it is part of, and where to go next. Every sentence comes from the data."""
     esc, g = c.esc, c.g
@@ -755,6 +776,8 @@ def village_story(c, v, caps, zones, by_town, near, prev_next, ver, shared_name,
     if r.get('confidence') == 'uncertain': flags.append('UNOSAT rated its reading of this zone as uncertain.')
     if r.get('cloud_note'): flags.append('Parts of the area were under cloud in some of the images.')
     flags.append('UNOSAT worked from satellite images alone and did not check its findings on the ground.')
+    f17, f16 = (fire or {}).get('2017'), (fire or {}).get('2016')
+    if not f17: flags.append('NASA’s fire-detecting satellites recorded no fire within a kilometre in those weeks; a fire under monsoon cloud goes unseen.')
 
     S, J = [], []
     def add(m, html): S.append(step(len(S), html)); J.append(m)
@@ -763,7 +786,17 @@ def village_story(c, v, caps, zones, by_town, near, prev_next, ver, shared_name,
     add({'at': P, 'zoom': 16, 'base': base(bef), 'dots': 'none', 'pin': True, 'caption': '<b>Photographed %s</b> · Esri World Imagery, Wayback archive' % ymd(bef[1])},
         '<p class="k">Before</p><h2>%s</h2><p>The most recent picture of %s in Esri’s archive from before August 2017. The ring marks the village’s recorded position.</p>%s'
         % (ymd(bef[1]), N, '<p class="fine">The oldest picture of this ground in the archive is from %s.</p>' % ymd(old[1]) if old[1] != bef[1] else ''))
-    add({'at': P, 'zoom': 16, 'base': base(aft), 'dots': 'none', 'pin': True, 'zones': True,
+    if f17:
+        n = len(f17['days'])
+        add({'at': P, 'zoom': 15, 'base': base(bef), 'dots': 'none', 'pin': True, 'fires': True,
+             'caption': '<b>Orange dots:</b> fires detected by NASA satellites, with the day · picture of %s' % ymd(bef[1])},
+            '<p class="k">Between the two pictures</p><h2 class="big fire"><b>%d</b><span>%s on which a satellite<br>detected fire here</span></h2>'
+            '<p>NASA’s fire-detecting satellites pass over several times a day. They recorded fire within one kilometre of %s on <b>%s</b>. '
+            'The nearest detection was %d metres from the village’s recorded position.</p>%s'
+            '<p class="fine">A detection is heat seen from orbit. It does not say what burned, and fires under cloud are not seen at all. Days are in Myanmar time.</p>'
+            % (n, 'day' if n == 1 else 'days', N, days_text(f17['days']), f17['nearest_m'],
+               '<p>Fire was also detected here a year earlier, on %s.</p>' % days_text(f16['days']) if f16 else ''))
+    add({'at': P, 'zoom': 16, 'base': base(aft), 'dots': 'none', 'pin': True, 'zones': True, 'fires': bool(f17),
          'caption': '<b>Photographed %s</b> · yellow line: destroyed zone mapped by UNOSAT' % ymd(aft[1])},
         '<p class="k">After</p><h2>%s</h2><p>The same ground, in the earliest picture the archive holds from after that autumn. %s</p><p class="fine">%s</p>'
         % (ymd(aft[1]), found, ' '.join(flags)))
@@ -803,11 +836,13 @@ def village_story(c, v, caps, zones, by_town, near, prev_next, ver, shared_name,
     if alt: place['alternateName'] = alt
     ld = [article_ld(c, path, '%s in 2017: the satellite record' % name, desc, card, place),
           c.crumbs_ld([('FARA', '/'), ('Stories', '/stories/'), (town + ' township', c.turl(town)), (name, path)])]
-    html = story_shell(c, path, t, desc, body, {'steps': J, 'zones': zones}, ld, card,
+    data = {'steps': J, 'zones': zones}
+    if f17 and fires: data['fires'] = fires
+    html = story_shell(c, path, t, desc, body, data, ld, card,
                        '%s — Rohingya village in %s township, Arakan' % (name, town), ver)
     c.write(c.p('stories', v['slug'], 'index.html'), html)
     return {'v': v, 'path': path, 'name': name, 'off': off if both else '', 'town': town, 'tract': tract, 'status': status, 'ha': ha,
-            'm': r.get('nearest_zone_m'), 'y0': bef[1] // 10000, 'y1': aft[1] // 10000}
+            'm': r.get('nearest_zone_m'), 'y0': bef[1] // 10000, 'y1': aft[1] // 10000, 'fire': f17['days'] if f17 else None}
 
 
 def index_map(c, entries):
@@ -845,6 +880,9 @@ def build_stories(c):
     esc = c.esc
     zones = zone_polys(c)
     n_zones, zone_ha = zone_stats(zones)
+    fpts = fire_points(c)
+    FIRE = c.g.get('FIRES') or {}
+    fmeta = c.g.get('FIRES_META') or {}
     counts = Counter(c.status(v) for v in c.V)
     by_town = {t: Counter(c.status(v) for v in c.V if v.get('township') == t) for t in c.towns}
     caps = json.load(open(c.p('captures.json'), encoding='utf-8')).get('v', {}) if os.path.exists(c.p('captures.json')) else {}
@@ -874,13 +912,17 @@ def build_stories(c):
         k = same.index(v)
         made.append(village_story(c, v, caps[str(v['id'])], zones_near(zones, float(v['lat']), float(v['lng'])), by_town, near,
                                   (same[k - 1] if k else None, same[k + 1] if k + 1 < len(same) else None), ver,
-                                  shared_names[plain(c.ro(v))] > 1, used))
+                                  shared_names[plain(c.ro(v))] > 1, used,
+                                  fires_near([q for q in fpts if q[2] > 20170800], float(v['lat']), float(v['lng'])), FIRE.get(str(v['id']))))
 
     # ---- written stories
     tokens = {'n': '{:,}'.format(c.N), 'n_destroyed': counts.get('destroyed', 0), 'n_nearby': counts.get('nearby', 0),
               'n_none': counts.get('none_detected', 0), 'n_not': counts.get('not_assessed', 0) + counts.get(None, 0),
               'n_zones': '{:,}'.format(n_zones), 'zone_ha': '{:,}'.format(int(round(zone_ha, -1))),
-              'n_with_ro': sum(1 for v in c.V if v.get('rohingya_name')), 'n_towns': len(c.towns), 'n_stories': len(made)}
+              'n_with_ro': sum(1 for v in c.V if v.get('rohingya_name')), 'n_towns': len(c.towns), 'n_stories': len(made),
+              'n_fire': (fmeta.get('villages_with_fire') or {}).get('2017', 0), 'n_fire_2016': (fmeta.get('villages_with_fire') or {}).get('2016', 0),
+              'n_fire_viirs': ((fmeta.get('same_weeks_other_years_viirs') or {}).get('2017') or {}).get('villages', 0),
+              'fire_max_other': max([o['villages'] for y, o in (fmeta.get('same_weeks_other_years_viirs') or {}).items() if y != '2017'] or [0])}
     for t in c.towns:
         for k, key in (('destroyed', 'd'), ('nearby', 'n'), ('none_detected', 'z')): tokens['%s_%s' % (c.slugify(t), key)] = by_town[t].get(k, 0)
         tokens['%s_all' % c.slugify(t)] = sum(by_town[t].values())
@@ -928,7 +970,9 @@ def build_stories(c):
                           fill(st.get('method', ''), extra), links, long_date(date.fromisoformat(st['date'])))
         ld = [article_ld(c, path, title, summary), c.crumbs_ld([('FARA', '/'), ('Stories', '/stories/'), (title, path)])]
         page_data = {'steps': J}
-        if fv: page_data['zones'] = zones_near(zones, float(fv['lat']), float(fv['lng']))
+        if fv:
+            page_data['zones'] = zones_near(zones, float(fv['lat']), float(fv['lng']))
+            page_data['fires'] = fires_near([q for q in fpts if q[2] > 20170800], float(fv['lat']), float(fv['lng']))
         c.write(c.p('stories', st['slug'], 'index.html'), story_shell(c, path, title + ' | FARA', clip(st.get('description') or summary, 160), body, page_data, ld, ver=ver))
         written.append({'path': path, 'title': title, 'summary': summary, 'kicker': st.get('kicker', ''), 'date': st['date'], 'steps': len(S)})
 
@@ -959,6 +1003,7 @@ def build_stories(c):
         body += '<section class="sxgroup"><h3 id="%s"><a href="%s">%s township</a><span>%d stories</span></h3><ul class="sxlist">' % (c.slugify(t), c.turl(t), esc(t), len(es))
         for e in es:
             what = ('%g ha destroyed' % e['ha'] if e['ha'] >= 0.1 else 'destroyed') if e['status'] == 'destroyed' else 'zone %d m away' % e['m']
+            if e['fire']: what += ' · fire %d %s' % (int(e['fire'][0][8:]), MONTHS[int(e['fire'][0][5:7]) - 1][:3])
             body += ('<li data-t="%s" data-s="%s" data-n="%s"><a href="%s"><i class="%s"></i><b>%s</b>%s<em>%s · %d → %d</em></a></li>'
                      % (esc(t), e['status'][0], esc(plain(e['name'] + ' ' + e['off'] + ' ' + e['tract'])), e['path'], e['status'][0], esc(e['name']),
                         '<span>%s</span>' % esc(e['off']) if e['off'] else '', what, e['y0'], e['y1']))

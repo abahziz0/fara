@@ -812,6 +812,9 @@ body.areaing #areabar{display:flex}
 .st17 .sthead{display:flex;align-items:center;gap:9px;font-size:15px;font-weight:600;margin:2px 0 6px}
 .st17 .sthead i{flex:none;width:10px;height:10px;border-radius:50%}
 .st17 .sttext{font-size:12.5px;line-height:1.55;color:var(--text-dim)}
+.st17 .firerow{display:flex;gap:9px;align-items:flex-start;margin-top:8px;font-size:12.5px;line-height:1.5;color:var(--text-dim)}
+.st17 .firerow i{flex:none;width:9px;height:9px;margin-top:5px;border-radius:50%;background:#FF7A1A;box-shadow:0 0 8px rgba(255,122,26,.8)}
+.st17 .firerow b{color:var(--text);font-weight:600}
 .st17 .stbtn{display:flex;align-items:center;justify-content:center;width:100%;margin-top:10px;padding:9px;border:1px solid var(--cyan-dim);background:rgba(0,229,255,.08);color:var(--cyan);font-family:'Share Tech Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:all .2s}
 .st17 .stbtn:hover{background:rgba(0,229,255,.16);box-shadow:0 0 14px rgba(0,229,255,.15)}
 .st17 .stbtn.story{margin-top:7px;background:none;border-color:var(--line);color:var(--text);text-decoration:none}
@@ -823,6 +826,9 @@ body.areaing #areabar{display:flex}
 .ivzonenote{position:absolute;left:12px;bottom:46px;z-index:550;display:none;align-items:center;gap:8px;padding:5px 9px;background:rgba(2,5,10,.82);border:1px solid rgba(255,212,0,.5);font-family:'Share Tech Mono',monospace;font-size:10.5px;color:var(--text);pointer-events:none}
 .ivzonenote.show{display:flex}
 .ivzonenote i{width:14px;height:10px;border:2px solid #FFD400}
+.ivzonenote i.fd{width:10px;height:10px;margin-left:8px;border:1.5px solid #fff;border-radius:50%;background:#FF7A1A}
+.fire-tip{padding:1px 6px;background:rgba(2,5,10,.86);border:1px solid rgba(255,122,26,.65);border-radius:0;color:#FFE1CC;font:400 10px 'Share Tech Mono',monospace;box-shadow:none;white-space:nowrap}
+.fire-tip::before{display:none}
 @media (max-width:760px){
   .st17 .stbtn{padding:13px}
   .ivtabs>button.ivz{margin-left:0}
@@ -1021,6 +1027,41 @@ body.sat.timeopen #toast{bottom:198px}
   #imgviewer.annotating .leaflet-bottom.leaflet-left{bottom:56px}
   #imgviewer.annotating .ivzonenote{bottom:100px}
   #embframe{height:410px}
+}
+
+/* ============ PLAY · VIDEO ============ */
+#ivmap .leaflet-layer{transition:opacity .55s ease}
+.ivchip.ivplay{border-color:var(--cyan-dim);color:var(--cyan);background:rgba(0,229,255,.07);letter-spacing:.08em;text-transform:uppercase;margin-right:6px}
+.ivchip.ivplay.playing{background:rgba(0,229,255,.18)}
+.ivtabs{position:relative}
+.ivtabs>button#ivvideo{border-color:var(--cyan-dim);color:var(--cyan);background:rgba(0,229,255,.06)}
+.ivtabs>button#ivvideo:hover{background:rgba(0,229,255,.16)}
+/* Play stays at the left of the timeline however far the dates are scrolled */
+.ivchip.ivplay{position:sticky;left:0;z-index:2;background:#0A1D30;box-shadow:12px 0 10px -4px var(--panel-solid),-16px 0 0 var(--panel-solid)}
+.ivbar.fl:has(.ivplay){--fl:0px}
+#playrow{padding-top:0;margin-top:-4px}
+#playrow #playbtn{border-color:var(--cyan-dim);color:var(--cyan);background:rgba(0,229,255,.07)}
+#vidmodal{z-index:68}                                 /* above the imagery viewer it is opened from, on phones too */
+.vidcard{width:min(600px,100%)}
+.vidstage{display:grid;place-items:center;background:#03070d;border:1px solid var(--line);padding:10px}
+.vidstage canvas,.vidstage video{display:block;aspect-ratio:1/1;height:min(52vh,460px);width:auto;max-width:100%;background:#050B14}
+.vidstage[data-shape="wide"] canvas,.vidstage[data-shape="wide"] video{aspect-ratio:16/9;width:100%;height:auto}
+.vidstage[data-shape="tall"] canvas,.vidstage[data-shape="tall"] video{aspect-ratio:9/16}
+.vidstage [hidden]{display:none}
+.vidprog{height:3px;margin-top:10px;background:rgba(255,255,255,.08);overflow:hidden}
+.vidprog i{display:block;height:100%;width:0;background:var(--cyan);box-shadow:0 0 8px var(--cyan);transition:width .2s linear}
+.vidmsg{min-height:18px;margin-top:8px;font-family:'Share Tech Mono',monospace;font-size:11px;color:var(--text-dim)}
+#vidsave{text-decoration:none}
+#vidmodal .abtn[hidden]{display:none}
+@media (max-width:760px){
+  #vidmodal{inset:0}
+  #vidmodal .vidcard{max-height:100%;overflow-y:auto}
+  /* phones: the views on one row, and what you can do with them on the next, each with its name */
+  .ivtabs>button{flex:1 1 20%}
+  .ivtabs>button.ivtool{flex:1 1 30%;justify-content:center;padding:13px 6px;margin-left:0}
+  .ivtabs>button.ivtool span{display:inline}
+  .vidstage canvas,.vidstage video{height:min(44vh,360px)}
+  .vidstage[data-shape="wide"] canvas,.vidstage[data-shape="wide"] video{height:auto}
 }
 
 /* ============ POLISH (16 Nov 2026) ============
@@ -1246,6 +1287,9 @@ body.sat.timeopen #toast{bottom:198px}
         <div class="imgsub" id="histrow">
           <button id="histbtn"></button><button id="cmpbtn">⇆ Before / after</button>
         </div>
+        <div class="imgsub" id="playrow">
+          <button id="playbtn" title="Watch this place change, from the oldest picture to the newest">▶ Play the years</button><button id="videobtn" title="Make a short video of this place through the years, to keep or share">⤓ Make a video</button>
+        </div>
         <div class="histwait" id="histwait" role="status"></div>
       </div>
       <div class="imgcard">
@@ -1272,7 +1316,8 @@ body.sat.timeopen #toast{bottom:198px}
     <div class="ivhead">
       <div class="ivtitle" id="ivtitle"></div>
       <div class="ivtabs">
-        <button id="ivclear" class="on">Clear</button><button id="ivlatest">Latest</button><button id="ivcompare">Compare</button><button id="ivzones" class="ivz" title="Outline the zones of destroyed buildings UNOSAT mapped in 2017">2017<span class="zl"> zones</span></button><button id="ivann" class="ivtool" aria-pressed="false" title="Draw arrows, circles and notes on the imagery"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg><span>Annotate</span></button><button id="ivsave" class="ivtool" title="Download what you see as one image, with the names, dates and sources on it"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg><span>Download</span></button>
+        <button id="ivclear" class="on">Clear</button><button id="ivlatest">Latest</button><button id="ivcompare">Compare</button><button id="ivzones" class="ivz" title="Show what satellites recorded in 2017: the destroyed zones UNOSAT mapped, and the fires NASA detected">2017<span class="zl"> record</span></button><button id="ivann" class="ivtool" aria-pressed="false" title="Draw arrows, circles and notes on the imagery"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg><span>Annotate</span></button><button id="ivsave" class="ivtool" title="Download what is on screen as one picture, with the names, dates and sources on it"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg><span>Picture</span></button><button id="ivvideo" class="ivtool" title="Make a short video of this place through the years, to keep or share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m10 9 5 3-5 3z"/></svg><span>Video</span></button>
+        
       </div>
       <button class="mclose" data-close="imgviewer" aria-label="Close">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
@@ -1303,7 +1348,7 @@ body.sat.timeopen #toast{bottom:198px}
         <button id="annclear" title="Remove all marks" aria-label="Remove all marks"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18"/><path d="M8 6V4h8v2"/><path d="M19 6l-1 14H6L5 6"/></svg></button>
         <button id="anndone" class="done" title="Finish drawing">Done</button>
       </div>
-      <div class="ivzonenote" id="ivzonenote"><i></i>Destroyed zones · UNOSAT, imagery of 31 Aug – 11 Oct 2017</div>
+      <div class="ivzonenote" id="ivzonenote"><i></i>Destroyed zones · UNOSAT, 31 Aug – 11 Oct 2017<i class="fd"></i>Fire detected · NASA</div>
     </div>
     <div class="ivcap" id="ivcap"></div>
   </div>
@@ -1370,6 +1415,34 @@ body.sat.timeopen #toast{bottom:198px}
       <a href="/township/maungdaw/gazetteer/">Maungdaw</a>, <a href="/township/buthidaung/gazetteer/">Buthidaung</a>, <a href="/township/rathedaung/gazetteer/">Rathedaung</a> and <a href="/township/sittwe/gazetteer/">Sittwe</a>.</p>
     <p>Township and village-tract boundaries: UN OCHA, Myanmar administrative boundaries (COD-AB, source MIMU), CC BY-IGO. They are approximate and do not imply endorsement of any boundary.</p>
     <p><b>A project by AB Aziz</b> · Contact — <a href="mailto:ab@rohingya.ro">ab@rohingya.ro</a></p>
+  </div>
+</div>
+
+<div class="modal" id="vidmodal" role="dialog" aria-modal="true" aria-label="Make a video of this place through the years">
+  <div class="mcard notch vidcard">
+    <button class="mclose" data-close="vidmodal" aria-label="Close">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+    <h2>VIDEO <span>THROUGH THE YEARS</span></h2>
+    <div class="sub2" id="vidsub">every dated satellite picture, oldest to newest, as a short film</div>
+    <div class="vidstage" id="vidstage" data-shape="square">
+      <canvas id="vidcv" width="1080" height="1080" aria-label="Preview of the video"></canvas>
+      <video id="vidout" controls loop playsinline muted hidden></video>
+    </div>
+    <div class="vidprog" aria-hidden="true"><i id="vidbar"></i></div>
+    <div class="vidmsg" id="vidmsg" role="status"></div>
+    <div class="emk">Shape</div>
+    <div class="seg three" id="vidshape">
+      <button type="button" data-s="square" class="on" aria-pressed="true" title="1080 × 1080, for feeds">Square</button>
+      <button type="button" data-s="wide" aria-pressed="false" title="1920 × 1080, for YouTube and slides">Wide</button>
+      <button type="button" data-s="tall" aria-pressed="false" title="1080 × 1920, for stories and reels">Tall</button>
+    </div>
+    <div class="actions">
+      <button class="abtn primary" id="vidmake" type="button">Make the video</button>
+      <a class="abtn primary" id="vidsave" hidden>Download MP4</a>
+      <button class="abtn" id="vidshare" type="button" hidden>Share</button>
+    </div>
+    <div class="embnote">// made on this device · nothing is uploaded · about half a minute long</div>
   </div>
 </div>
 
@@ -1795,9 +1868,18 @@ function st17Html(v){
   return '<div class="k">2017 · UNOSAT satellite analysis</div>'
     + '<div class="sthead"><i style="background:' + ST17[s].color + '"></i>' + ST17[s].label + '</div>'
     + '<div class="sttext">' + st17Text(v) + (flags.length ? ' ' + flags.join(' ') : '') + '</div>'
+    + fireHtml(v)
     + (s === 'x' ? '' : '<button class="stbtn" id="st17btn" type="button">See before and after</button>')
     + ((s === 'd' || s === 'n') && v.slug ? '<a class="stbtn story" href="/stories/' + esc(v.slug) + '/">Read this village’s story</a>' : '')
-    + '<div class="psrc">Source: <a href="' + ST17_URL + '" target="_blank" rel="noopener">UNOSAT</a> · not field validated · CC BY-SA</div>';
+    + '<div class="psrc">Source: <a href="' + ST17_URL + '" target="_blank" rel="noopener">UNOSAT</a> · not field validated · CC BY-SA'
+    + (v.f7 || v.f6 ? ' · fires: <a href="https://firms.modaps.eosdis.nasa.gov/" target="_blank" rel="noopener">NASA FIRMS</a>' : '') + '</div>';
+}
+/* fires NASA's satellites detected within 1 km (tools/match_fires.py): f7 autumn 2017, f6 autumn 2016 = [nearest metres, [MMDD…]], days in Myanmar time */
+const fireDays = (f, year) => { const a = f[1].map(x => (+x.slice(2)) + ' ' + MONTHS[+x.slice(0,2) - 1]); return (a.length > 1 ? a.slice(0,-1).join(', ') + ' and ' + a[a.length-1] : a[0]) + ' ' + year; };
+function fireHtml(v){
+  if (!v.f7 && !v.f6) return '';
+  const line = (f, year) => '<div class="firerow"><i></i><span><b>Fire detected by satellite</b> on ' + fireDays(f, year) + ' · nearest ' + f[0] + ' m from this point</span></div>';
+  return (v.f7 ? line(v.f7, 2017) : '') + (v.f6 ? line(v.f6, 2016) : '');
 }
 document.getElementById('status17').addEventListener('click', e => { if (e.target.closest('#st17btn')) openEvidence(); });
 
@@ -1810,13 +1892,25 @@ function loadZones(){
 async function ivZones(on){
   IV.zonesOn = on;
   document.getElementById('ivzones').classList.toggle('on', on);
-  if (!on){ if (IV.zl) IV.zl.remove(); ivZoneNote(); return; }
+  if (!on){ if (IV.zl) IV.zl.remove(); if (IV.fl) IV.fl.remove(); ivZoneNote(); return; }
   try {
     const data = await loadZones();
     if (!IV.zl) IV.zl = L.geoJSON(data, { style:{ color:'#FFD400', weight:2, opacity:.95, fill:false }, interactive:false });
     if (IV.zonesOn && IV.map) IV.zl.addTo(IV.map);
   } catch(e){ showToast('// could not load the 2017 zones'); IV.zonesOn = false; document.getElementById('ivzones').classList.remove('on'); }
   ivZoneNote();
+  try {                                                             // the fires NASA's satellites detected in the two autumns, each with its day
+    const fp = await loadFires();
+    if (!IV.fl) IV.fl = L.layerGroup(fp.p.map(q => L.circleMarker([q[0], q[1]], { radius:6, color:'#fff', weight:1.5, fillColor:'#FF7A1A', fillOpacity:.95, interactive:false })
+      .bindTooltip(fireDay(q[2]), { permanent:true, direction:'right', offset:[8,0], className:'fire-tip' })));
+    if (IV.zonesOn && IV.map) IV.fl.addTo(IV.map);
+  } catch(e){}
+}
+let firesP = null, firesData = null;
+const fireDay = n => { const d = String(n); return (+d.slice(6)) + ' ' + MONTHS[+d.slice(4,6) - 1] + ' ' + d.slice(0,4); };
+function loadFires(){
+  return firesP || (firesP = fetch('/fires_points.json').then(r => { if (!r.ok) throw new Error('fires'); return r.json(); })
+    .then(d => (firesData = d)).catch(e => { firesP = null; throw e; }));
 }
 function ivZoneNote(){
   const el = document.getElementById('ivzonenote');
@@ -2809,7 +2903,7 @@ async function histNewer(v, base, file, alive){
 }
 async function loadHistory(v, token){
   const row=document.getElementById('histrow');
-  row.classList.remove('show'); IMG.hist=[]; IMG.histState='loading'; IMG.histProg=''; histWait();
+  row.classList.remove('show'); document.getElementById('playrow').classList.remove('show'); IMG.hist=[]; IMG.histState='loading'; IMG.histProg=''; histWait();
   const saved = IMG.histCache.get(v.id) || histRecall(v.id);
   if (saved){ IMG.hist=saved; IMG.histCache.set(v.id, saved); IMG.histState='ok'; renderHistRow(); return; }
   const alive=()=>token===IMG.token;
@@ -2877,6 +2971,7 @@ document.getElementById('histwait').addEventListener('click', e=>{ if (e.target.
 function renderHistRow(){
   const n=IMG.hist.length, row=document.getElementById('histrow');
   row.classList.toggle('show', n>1);
+  document.getElementById('playrow').classList.toggle('show', IMG.hist.filter(h=>!h.approx && !h.pending).length>1);
   if (n>1){
     const a=IMG.hist[n-1].date.getUTCFullYear(), b=IMG.hist[0].date.getUTCFullYear();
     document.getElementById('histbtn').textContent='◷ '+n+' dates · '+a+'–'+b;
@@ -3058,7 +3153,7 @@ function ivBar(){
   const bar=document.getElementById('ivbar'), n=IMG.hist.length;
   if (IV.mode==='clear'){
     bar.innerHTML = n>1
-      ? '<span class="lbl">CAPTURED</span>'+IMG.hist.map((h,i)=>`<button class="ivchip${i===IV.a?' on':''}" data-h="${i}" title="${h.pending ? 'Capture date still loading' : histDay(h)}">${h.pending ? '<span class="spin"></span>' : ''}${ivHistLabel(i)}${i===0?' · newest':''}</button>`).reverse().join('')
+      ? '<button class="ivchip ivplay'+(IV.playing?' playing':'')+'" data-play="1" title="Play through the years, oldest to newest">'+(IV.playing?'❚❚ Pause':'▶ Play')+'</button><span class="lbl">CAPTURED</span>'+IMG.hist.map((h,i)=>`<button class="ivchip${i===IV.a?' on':''}" data-h="${i}" title="${h.pending ? 'Capture date still loading' : histDay(h)}">${h.pending ? '<span class="spin"></span>' : ''}${ivHistLabel(i)}${i===0?' · newest':''}</button>`).reverse().join('')
         + (IMG.histState==='partial' ? '<span class="lbl ivdating">dating · '+IMG.histProg+'</span>' : '')
       : IMG.histState==='error'
         ? '<span class="lbl">The image archive could not be reached.</span><button class="ivchip" data-retry="1">Try again</button>'
@@ -3091,6 +3186,9 @@ function ivRefresh(){
 async function ivShow(mode){
   const v=current; if (!v || isUnverified(v)) return;
   if (mode==='compare' && IMG.hist.length<2) mode='clear';
+  /* the same place on another date: the new picture fades in over the old one instead of blinking */
+  const keep = (mode==='clear' && IV.mode==='clear' && IV.layers.length===1 && IV.viewKey===v.id+':sharp') ? IV.layers[0] : null;
+  if (keep) IV.layers=[];
   IV.mode=mode; const job=++IV.job;
   ['clear','latest','compare'].forEach(m=>document.getElementById('iv'+m).classList.toggle('on', m===mode));
   document.getElementById('ivtitle').textContent = roName(v)+' · '+enName(v);
@@ -3101,7 +3199,12 @@ async function ivShow(mode){
   if (sharp && fresh) IV.map.setView([+v.lat,+v.lng], 17, {animate:false});
   if (mode==='clear'){
     if (IV.a>=Math.max(1,IMG.hist.length)) IV.a=0;
-    IV.layers=[ivTiles(IV.a).addTo(IV.map)];
+    const neu=ivTiles(IV.a).addTo(IV.map); IV.layers=[neu];
+    if (keep){
+      neu.setOpacity(0);
+      let shown=false; const show=()=>{ if (shown) return; shown=true; neu.setOpacity(1); setTimeout(()=>keep.remove(), 650); };
+      neu.once('load', show); setTimeout(show, 2600);
+    }
     cap.innerHTML=ivHistCap(IV.a)+' · scroll or pinch to zoom, drag to move';
     ivBar(); return;
   }
@@ -3182,6 +3285,8 @@ document.addEventListener('click',e=>{ const a=e.target.closest('.leaflet-contro
 document.getElementById('ivbar').addEventListener('click',e=>{
   if (ivbarEl.dataset.dragged) return;
   const b=e.target.closest('.ivchip'); if (!b) return;
+  if (b.dataset.play){ ivPlay(!IV.playing); return; }
+  if (IV.playing) ivPlay(false);
   if (b.dataset.retry){ if (current) loadHistory(current, IMG.token); return; }
   if (b.dataset.h!==undefined){ IV.a=+b.dataset.h; ivShow('clear'); }
   else if (b.dataset.s!==undefined) ivPass(+b.dataset.s);
@@ -3398,6 +3503,19 @@ async function ivPanel(p, PW, PH, f, v){
       ctx.restore();
     }catch(e){}
   }
+  if (IV.zonesOn && firesData){
+    const box=m.getBounds().pad(.05);
+    ctx.save(); ctx.font=`${Math.round(13*f)}px 'Share Tech Mono', ui-monospace, monospace`; ctx.textBaseline='middle';
+    firesData.p.forEach(q=>{
+      if (!box.contains([q[0],q[1]])) return;
+      const [x,y]=proj([q[0],q[1]]), label=fireDay(q[2]), w=ctx.measureText(label).width;
+      ctx.fillStyle='rgba(2,5,10,.84)'; ctx.fillRect(x+10*f, y-10*f, w+12*f, 20*f);
+      ctx.fillStyle='#FFE1CC'; ctx.fillText(label, x+16*f, y+1*f);
+      ctx.beginPath(); ctx.arc(x,y,6*f,0,Math.PI*2); ctx.fillStyle='#FF7A1A'; ctx.fill(); ctx.lineWidth=1.6*f; ctx.strokeStyle='#fff'; ctx.stroke();
+      p.fires=(p.fires||0)+1;
+    });
+    ctx.restore();
+  }
   /* the village itself */
   ctx.save(); ctx.strokeStyle='#00E5FF'; ctx.lineWidth=2.2*f; ctx.shadowColor='rgba(0,0,0,.8)'; ctx.shadowBlur=4*f;
   if (v.isWard && v.g){ ctx.beginPath(); v.g.flat(1).forEach(r=>{ r.forEach((q,i)=>{ const [x,y]=proj(q); if (i) ctx.lineTo(x,y); else ctx.moveTo(x,y); }); ctx.closePath(); }); ctx.stroke(); }
@@ -3440,6 +3558,7 @@ async function ivExport(){
     if (IV.mode==='latest') notes.push('Imagery: Copernicus Sentinel-2 (European Space Agency), 10 m per pixel.');
     else notes.push('Imagery: Esri World Imagery and its Wayback archive (Vantor / Maxar). The dates are the capture dates Esri publishes.');
     if (zones) notes.push('Yellow outlines: zones of destroyed structures mapped by UNOSAT from imagery of 31 Aug – 11 Oct 2017. Not field validated.');
+    if (panels.some(p=>p.fires>0)) notes.push('Orange dots: fires detected by NASA satellites (FIRMS), with the day in Myanmar time. A detection does not say what burned.');
     if (marks) notes.push('Arrows, shapes and notes were added by the person who made this image; they are not part of the archive.');
     const FOOT=62+notes.length*30+36, Hh=HEAD+(stacked ? PH*2+GAP : PH)+FOOT;
     const cv=document.createElement('canvas'); cv.width=W; cv.height=Hh;
@@ -3502,7 +3621,336 @@ async function ivExport(){
   }
   btn.classList.remove('busy');
 }
-document.getElementById('ivsave').addEventListener('click', ivExport);
+
+
+/* ---------- VIEWER: PLAY THROUGH THE YEARS ----------
+   ▶ in the timeline steps from the oldest picture to the newest, each one fading into the next. */
+function ivPlay(on){
+  clearInterval(IV.playT); IV.playing=!!on;
+  if (on){
+    if (IMG.hist.length<2){ IV.playing=false; return; }
+    IV.a=IMG.hist.length-1; ivShow('clear');
+    IV.playT=setInterval(()=>{
+      if (!ivOpen() || IV.mode!=='clear' || IV.a<=0){ ivPlay(false); return; }
+      IV.a--; ivShow('clear');
+    }, 1900);
+    track('Imagery played');
+  } else if (ivOpen() && IV.mode==='clear') ivBar();
+}
+
+/* ---------- VIEWER: A VIDEO THROUGH THE YEARS ----------
+   Every dated picture of the village, oldest to newest, as a short film: a title card, each picture with its
+   date on a timeline, what was recorded in the autumn of 2017 where something was, and a closing card with
+   the sources. It is drawn frame by frame on a canvas and written as an MP4 on this device; nothing is uploaded.
+   vidDraw(t) draws the frame for any moment t, so the same code makes the preview and the file. */
+const VID={ shape:'square', W:1080, H:1080, fps:30, job:0, busy:false, url:null, blob:null, S:null };
+const VID_SHAPES={ square:[1080,1080], wide:[1920,1080], tall:[1080,1920] };
+const VID_LIB='https://cdn.jsdelivr.net/npm/mp4-muxer@5.2.1/build/mp4-muxer.min.js';
+const vidEl=id=>document.getElementById(id);
+const ease=x=>x<0?0:x>1?1:x*x*(3-2*x);
+function vidLib(){
+  return VID.libP || (VID.libP=new Promise((res,rej)=>{ const s=document.createElement('script'); s.src=VID_LIB; s.onload=res; s.onerror=()=>{ VID.libP=null; rej(new Error('lib')); }; document.head.appendChild(s); }));
+}
+/* one picture of the village: W × H pixels of the zoom-17 map centred on it, tone-corrected like the viewer */
+async function vidPicture(h, v, W, H){
+  const cv=document.createElement('canvas'); cv.width=W; cv.height=H;
+  const ctx=cv.getContext('2d',{ willReadFrequently:true }), z=17, c=L.CRS.EPSG3857.latLngToPoint(L.latLng(+v.lat,+v.lng), z);
+  const x0=c.x-W/2, y0=c.y-H/2, jobs=[];
+  ctx.fillStyle='#03070d'; ctx.fillRect(0,0,W,H);
+  for (let ty=Math.floor(y0/256); ty*256<y0+H; ty++) for (let tx=Math.floor(x0/256); tx*256<x0+W; tx++)
+    jobs.push(ivLoadImg(`${WB}/WMTS/1.0.0/default028mm/MapServer/tile/${h.rel}/${z}/${ty}/${tx}`).then(im=>{ if (!im) return 0; ctx.drawImage(im, Math.round(tx*256-x0), Math.round(ty*256-y0)); return 1; }));
+  const got=(await Promise.all(jobs)).reduce((a,b)=>a+b,0);
+  if (got<jobs.length*.7) throw new Error('tiles');
+  const ps=TONE_P.get(await ivTone(h, v));
+  if (ps){
+    const id=ctx.getImageData(0,0,W,H), d=id.data, lut=ps.map(([sl,ic])=>{ const t=new Uint8ClampedArray(256); for (let i=0;i<256;i++) t[i]=sl*i+ic*255; return t; });
+    for (let i=0;i<d.length;i+=4){ d[i]=lut[0][d[i]]; d[i+1]=lut[1][d[i+1]]; d[i+2]=lut[2][d[i+2]]; }
+    ctx.putImageData(id,0,0);
+  }
+  return cv;
+}
+/* everything the film needs, loaded once: pictures, outlines, words, and the timing of every scene */
+async function vidPrepare(v, shape, onProgress){
+  const [W,H]=VID_SHAPES[shape], u=Math.min(W,H)/1080, M=Math.round(64*u);
+  const caps=IMG.hist.filter(h=>!h.approx && !h.pending).slice(0,14).reverse();          // oldest first
+  if (caps.length<2) throw new Error('few');
+  await Promise.all(["700 90px 'Space Grotesk'","600 40px 'Space Grotesk'","500 28px 'Space Grotesk'","40px 'Share Tech Mono'","28px 'Noto Sans Myanmar'"]
+    .map(f=>document.fonts.load(f, roName(v)+(v.village_name_mmr||'')+'0123456789').catch(()=>0)));
+  const pics=[];
+  for (let i=0;i<caps.length;i++){ pics.push(await vidPicture(caps[i], v, W, H)); onProgress((i+1)/caps.length); }
+  const z=17, c=L.CRS.EPSG3857.latLngToPoint(L.latLng(+v.lat,+v.lng), z), px=ll=>{ const q=L.CRS.EPSG3857.latLngToPoint(L.latLng(ll[0],ll[1]), z); return [q.x-c.x+W/2, q.y-c.y+H/2]; };
+  /* overlays drawn once: the village's ring or ward outline, UNOSAT's zones, NASA's fire dots */
+  const layer=()=>{ const o=document.createElement('canvas'); o.width=W; o.height=H; return o; };
+  const ring=layer(), rc=ring.getContext('2d');
+  rc.lineJoin='round'; rc.shadowColor='rgba(0,0,0,.85)'; rc.shadowBlur=6*u; rc.strokeStyle='#00E5FF'; rc.lineWidth=3*u;
+  if (v.isWard && v.g){ rc.beginPath(); v.g.flat(1).forEach(r=>{ r.forEach((q,i)=>{ const [x,y]=px(q); if (i) rc.lineTo(x,y); else rc.moveTo(x,y); }); rc.closePath(); }); rc.stroke(); }
+  else { rc.beginPath(); rc.arc(W/2,H/2,17*u,0,Math.PI*2); rc.stroke(); }
+  const s=st17(v), uo=v.u||{}, told = !v.isWard && (s==='d' || s==='n');
+  let zones=null, nz=0;
+  if (told){
+    try{
+      const data=await loadZones(); zones=layer(); const zc=zones.getContext('2d'); zc.lineJoin='round';
+      data.features.forEach(ft=>{ const g=ft.geometry; if (!g) return;
+        (g.type==='MultiPolygon' ? g.coordinates : [g.coordinates]).forEach(poly=>{
+          const pts=poly[0].map(q=>px([q[1],q[0]])); if (!pts.some(([x,y])=>x>-80 && x<W+80 && y>-80 && y<H+80)) return;
+          zc.beginPath(); poly.forEach(r=>{ r.forEach((q,i)=>{ const [x,y]=px([q[1],q[0]]); if (i) zc.lineTo(x,y); else zc.moveTo(x,y); }); zc.closePath(); });
+          zc.lineWidth=6*u; zc.strokeStyle='rgba(2,5,10,.6)'; zc.stroke(); zc.lineWidth=3*u; zc.strokeStyle='#FFD400'; zc.stroke(); nz++; }); });
+    }catch(e){ zones=null; }
+  }
+  let fires=[];
+  if (v.f7){ try{ const fp=await loadFires(); fires=fp.p.filter(q=>q[2]>20170800).map(q=>px([q[0],q[1]])).filter(([x,y])=>x>0 && x<W && y>0 && y<H); }catch(e){} }
+  /* the words */
+  const days=f=>{ const a=f[1].map(x=>(+x.slice(2))+' '+MONTHS_FULL[+x.slice(0,2)-1]); const k=a.slice(0,3); return (k.length>1 ? k.slice(0,-1).join(', ')+' and '+k[k.length-1] : k[0])+' 2017'+(a.length>3 ? ' and '+(a.length-3)+' more '+(a.length-3===1?'day':'days') : ''); };
+  const card=[];
+  if (s==='d') card.push(uo.h>=0.1 ? 'UNOSAT mapped '+uo.h+' hectares of destroyed buildings at this village.' : 'UNOSAT mapped destroyed buildings at this village.');
+  else if (s==='n') card.push('UNOSAT mapped a destroyed zone '+uo.m+' metres from this village.');
+  const fireLine = v.f7 ? 'NASA satellites detected fire here on '+days(v.f7)+'.' : '';
+  const before=caps.findIndex(h=>h.date>new Date('2017-10-11T00:00:00Z'))-1;              // the last picture from before the autumn of 2017
+  const showCard=(card.length || fireLine) && before>=0 && caps[before].date<new Date('2017-08-25T00:00:00Z') && !v.isWard;
+  /* timing, in seconds */
+  const T={ intro:2.4, hold:1.35, fade:.65, card:3.6, last:2.2, outro:3 }, scenes=[]; let t=0;
+  scenes.push({ k:'intro', a:0, t0:t, d:T.intro }); t+=T.intro;
+  caps.forEach((h,i)=>{
+    const d = i===caps.length-1 ? T.last : i===0 ? T.hold*.7 : T.hold;
+    scenes.push({ k:'hold', a:i, t0:t, d }); t+=d;
+    if (showCard && i===before){ scenes.push({ k:'card', a:i, t0:t, d:T.card }); t+=T.card; }
+    if (i<caps.length-1){ scenes.push({ k:'fade', a:i, b:i+1, t0:t, d:T.fade }); t+=T.fade; }
+  });
+  scenes.push({ k:'outro', a:caps.length-1, t0:t, d:T.outro }); t+=T.outro;
+  const seen=caps.map((_,i)=>scenes.find(sc=>(sc.k==='fade' && sc.b===i) || (sc.a===i && sc.k!=='fade')).t0);   // when each picture first shows, for its slow push-in
+  let logo=null;
+  try{ const svg=document.querySelector('#brand svg.logo'); if (svg) logo=await ivLoadImg('data:image/svg+xml;charset=utf-8,'+encodeURIComponent(new XMLSerializer().serializeToString(svg).replace('<svg','<svg xmlns="http://www.w3.org/2000/svg" width="452" height="150"'))); }catch(e){}
+  return { v, W, H, u, M, caps, pics, ring, zones:nz ? zones : null, fires, card, fireLine, showCard, before, scenes, seen, dur:t, logo, told:told || !!v.f7,
+           d0:+caps[0].date, d1:+caps[caps.length-1].date };
+}
+const MONTHS_FULL=['January','February','March','April','May','June','July','August','September','October','November','December'];
+function vidDraw(ctx, S, t){
+  const { W, H, u, M, caps, pics, v }=S, sc=S.scenes.find(x=>t<x.t0+x.d) || S.scenes[S.scenes.length-1], p=Math.min(1, Math.max(0, (t-sc.t0)/sc.d));
+  const mono=px=>`${Math.round(px*u)}px 'Share Tech Mono', ui-monospace, monospace`, sans=(w,px)=>`${w} ${Math.round(px*u)}px 'Space Grotesk', system-ui, sans-serif`;
+  const sp=n=>{ try{ ctx.letterSpacing=(n*u).toFixed(1)+'px'; }catch(e){} };
+  const fit=(text, w, px, max)=>{ let s=px; ctx.font=sans(w,s); while (s>px*.55 && ctx.measureText(text).width>max){ s-=2; ctx.font=sans(w,s); } return s; };
+  const wrap=(text, max)=>{ const out=[]; let line=''; text.split(' ').forEach(wd=>{ const tr=line ? line+' '+wd : wd; if (ctx.measureText(tr).width>max && line){ out.push(line); line=wd; } else line=tr; }); if (line) out.push(line); return out; };
+  const pic=(i, alpha)=>{                                                  // a picture with its slow push-in, and what is drawn on it
+    const k=1+.05*Math.min(1, Math.max(0, (t-S.seen[i])/7)), w=W*k, h=H*k;
+    ctx.globalAlpha=alpha; ctx.drawImage(pics[i], (W-w)/2, (H-h)/2, w, h);
+    if (S.zones && caps[i].date>new Date('2017-10-11T00:00:00Z')) ctx.drawImage(S.zones, (W-w)/2, (H-h)/2, w, h);
+    ctx.globalAlpha=1;
+  };
+  ctx.fillStyle='#03070d'; ctx.fillRect(0,0,W,H);
+  let cur=sc.a, mix=0;                                                     // which date the words show, and how far into a change we are
+  if (sc.k==='fade'){ mix=ease(p); pic(sc.a,1); pic(sc.b, mix); if (mix>.5) cur=sc.b; } else pic(sc.a,1);
+  /* the village */
+  const kr=1+.05*Math.min(1, Math.max(0, (t-S.seen[cur])/7));
+  ctx.globalAlpha=.95; ctx.drawImage(S.ring, (W-W*kr)/2, (H-H*kr)/2, W*kr, H*kr); ctx.globalAlpha=1;
+  /* shade behind the words: top and bottom, and a soft vignette */
+  let g=ctx.createLinearGradient(0,0,0,H*.24); g.addColorStop(0,'rgba(2,5,10,.78)'); g.addColorStop(1,'rgba(2,5,10,0)'); ctx.fillStyle=g; ctx.fillRect(0,0,W,H*.24);
+  g=ctx.createLinearGradient(0,H*.52,0,H); g.addColorStop(0,'rgba(2,5,10,0)'); g.addColorStop(.55,'rgba(2,5,10,.72)'); g.addColorStop(1,'rgba(2,5,10,.94)'); ctx.fillStyle=g; ctx.fillRect(0,H*.52,W,H*.48);
+  g=ctx.createRadialGradient(W/2,H/2,Math.min(W,H)*.45,W/2,H/2,Math.max(W,H)*.75); g.addColorStop(0,'rgba(0,0,0,0)'); g.addColorStop(1,'rgba(0,0,0,.42)'); ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+  const chrome = sc.k==='intro' ? ease((p-.72)/.28) : sc.k==='outro' ? 1-ease(p/.3)
+               : sc.k==='card' ? 1-ease(p/.16)*(1-ease((p-.86)/.14)) : 1;                       // the working display steps back for the title, the 2017 card and the end
+  ctx.textBaseline='alphabetic';
+  if (chrome>0){
+    ctx.globalAlpha=chrome;
+    /* top: the archive, and the record */
+    if (S.logo) ctx.drawImage(S.logo, M, M-6*u, 120*u, 40*u);
+    ctx.textAlign='left'; ctx.fillStyle='#E8F2FF'; ctx.font=mono(17); sp(4); ctx.fillText('FARA', M+136*u, M+13*u);
+    ctx.fillStyle='rgba(232,242,255,.62)'; ctx.font=mono(13.5); sp(2.4); ctx.fillText('THE ARAKAN VILLAGE NAME ARCHIVE', M+136*u, M+34*u);
+    ctx.textAlign='right'; ctx.fillStyle='rgba(232,242,255,.7)'; ctx.font=mono(15.5); sp(2); ctx.fillText(v.isWard ? 'TOWN WARD' : recId(v), W-M, M+13*u);
+    if (S.zones && caps[cur].date>new Date('2017-10-11T00:00:00Z')){
+      const lab='DESTROYED ZONE · UNOSAT 2017'; ctx.font=mono(15); sp(1.6); const lw=ctx.measureText(lab).width;
+      ctx.strokeStyle='#FFD400'; ctx.lineWidth=2.4*u; ctx.strokeRect(W-M-lw-28*u, M+29*u, 16*u, 12*u);
+      ctx.fillStyle='rgba(255,236,150,.95)'; ctx.fillText(lab, W-M, M+41*u);
+    }
+    /* bottom: the date, the name, the timeline */
+    const wide=W>H*1.3, tlY=H-M-18*u, h=caps[cur], date=fmtDay(h.date).toUpperCase();
+    const res=parseFloat(h.res), src=[h.src ? String(h.src).toUpperCase() : '', res>0 ? (res<1 ? Math.round(res*100)+' CM' : res+' M')+' PER PIXEL' : ''].filter(Boolean).join(' · ');
+    const nameY = tlY-(wide ? 96 : 104)*u, dateX = wide ? W-M : M, dateY = wide ? nameY : nameY-118*u;
+    ctx.textAlign = wide ? 'right' : 'left';
+    ctx.fillStyle='#00E5FF'; ctx.font=mono(16); sp(4); ctx.fillText('PHOTOGRAPHED', dateX, dateY-64*u);
+    const flip = sc.k==='fade' ? Math.abs(mix-.5)*2 : 1;                   // the date dips out and back as the picture changes
+    ctx.globalAlpha=chrome*(.15+.85*flip); ctx.fillStyle='#fff'; ctx.font=mono(58); sp(1); ctx.fillText(date, dateX, dateY-4*u);
+    ctx.globalAlpha=chrome; if (src){ ctx.fillStyle='rgba(232,242,255,.6)'; ctx.font=mono(15.5); sp(2); ctx.fillText(src, dateX, dateY+26*u); }
+    ctx.textAlign='left'; sp(0);
+    const maxName = wide ? W-M*2-560*u : W-M*2, ns=fit(roName(v), 700, 60, maxName);
+    ctx.fillStyle='#fff'; ctx.font=sans(700, ns); ctx.fillText(roName(v), M, nameY);
+    let sx=M; const subY=nameY+40*u, off=enName(v)!==roName(v) ? enName(v) : '';
+    ctx.fillStyle='rgba(232,242,255,.78)'; ctx.font=sans(500,25);
+    const where=[off, v.township ? v.township+' township' : ''].filter(Boolean).join('  ·  ');
+    ctx.fillText(where, sx, subY); sx+=ctx.measureText(where).width+(where ? 18*u : 0);
+    if (v.village_name_mmr && sx<maxName*.8){ ctx.font=`${Math.round(25*u)}px 'Noto Sans Myanmar', 'Space Grotesk', sans-serif`; ctx.fillText(v.village_name_mmr, sx, subY); }
+    /* timeline: every picture is a tick placed by its date; the bright dot is now */
+    const x0=M, x1=W-M, at=d=>x0+(x1-x0)*((+d-S.d0)/Math.max(1,S.d1-S.d0));
+    ctx.fillStyle='rgba(255,255,255,.22)'; ctx.fillRect(x0, tlY, x1-x0, 2*u);
+    const here = sc.k==='fade' ? at(caps[sc.a].date)+(at(caps[sc.b].date)-at(caps[sc.a].date))*mix : at(caps[sc.a].date);
+    ctx.fillStyle='#00E5FF'; ctx.fillRect(x0, tlY, here-x0, 2*u);
+    caps.forEach((c2,i)=>{ const x=at(c2.date), past=x<=here+1; ctx.fillStyle=past ? '#fff' : 'rgba(255,255,255,.42)'; ctx.fillRect(x-1*u, tlY-7*u, 2*u, 16*u); });
+    if (S.told && S.d0<+new Date('2017-08-25') && S.d1>+new Date('2017-10-11')){
+      const x=at(new Date('2017-09-15')); ctx.fillStyle='#FFB020'; ctx.fillRect(x-1.5*u, tlY-16*u, 3*u, 34*u);
+      ctx.font=mono(14); sp(2); ctx.textAlign='center'; ctx.fillText('AUTUMN 2017', Math.min(x1-70*u, Math.max(x0+70*u, x)), tlY-24*u);
+    }
+    ctx.beginPath(); ctx.arc(here, tlY+1*u, 8*u, 0, Math.PI*2); ctx.fillStyle='#00E5FF'; ctx.shadowColor='rgba(0,229,255,.9)'; ctx.shadowBlur=16*u; ctx.fill(); ctx.shadowBlur=0;
+    ctx.beginPath(); ctx.arc(here, tlY+1*u, 3.2*u, 0, Math.PI*2); ctx.fillStyle='#02050A'; ctx.fill();
+    ctx.fillStyle='rgba(232,242,255,.7)'; ctx.font=mono(15.5); sp(2);
+    ctx.textAlign='left'; ctx.fillText(String(new Date(S.d0).getUTCFullYear()), x0, tlY+36*u);
+    ctx.textAlign='right'; ctx.fillText(String(new Date(S.d1).getUTCFullYear()), x1, tlY+36*u);
+    ctx.textAlign='left'; sp(0); ctx.globalAlpha=1;
+  }
+  /* the autumn of 2017: what two kinds of satellite recorded, over the last picture from before it */
+  if (sc.k==='card'){
+    const a=ease(p/.16)*(1-ease((p-.86)/.14));
+    ctx.globalAlpha=a*.8; ctx.fillStyle='#02050A'; ctx.fillRect(0,0,W,H); ctx.globalAlpha=a;
+    S.fires.forEach(([x,y],i)=>{ const pulse=.5+.5*Math.sin(t*5+i); ctx.beginPath(); ctx.arc(x,y,(9+5*pulse)*u,0,Math.PI*2); ctx.fillStyle='rgba(255,122,26,'+(.25+.2*pulse)+')'; ctx.fill();
+      ctx.beginPath(); ctx.arc(x,y,6*u,0,Math.PI*2); ctx.fillStyle='#FF7A1A'; ctx.fill(); ctx.lineWidth=1.6*u; ctx.strokeStyle='#fff'; ctx.stroke(); });
+    const tw=Math.min(W-M*2, 900*u); let y=H*.36;
+    ctx.textAlign='left'; ctx.fillStyle='#FFB020'; ctx.font=mono(17); sp(5); ctx.fillText('AUTUMN 2017', M, y); sp(0); y+=62*u;
+    ctx.fillStyle='#fff'; ctx.font=sans(600,44);
+    S.card.forEach(line=>wrap(line, tw).forEach(l=>{ ctx.fillText(l, M, y); y+=56*u; }));
+    if (S.fireLine){ y+=8*u; ctx.fillStyle='#FFB37A'; ctx.font=sans(500, S.card.length ? 31 : 42); wrap(S.fireLine, tw).forEach(l=>{ ctx.fillText(l, M, y); y+=(S.card.length ? 42 : 54)*u; }); }
+    y+=18*u; ctx.fillStyle='rgba(232,242,255,.55)'; ctx.font=mono(15.5); sp(1.5); ctx.fillText('SATELLITE ANALYSIS · NOT VALIDATED ON THE GROUND', M, y); sp(0);
+    ctx.globalAlpha=1;
+  }
+  /* title */
+  if (sc.k==='intro'){
+    const a=1-ease((p-.72)/.28), rise=(1-ease(p/.35))*18*u;
+    ctx.globalAlpha=a*.74; ctx.fillStyle='#02050A'; ctx.fillRect(0,0,W,H); ctx.globalAlpha=a*ease(p/.3);
+    const cy=H*.5; ctx.textAlign='left';
+    ctx.fillStyle='#00E5FF'; ctx.font=mono(16); sp(4.5); ctx.fillText(('A Rohingya '+(v.isWard ? 'town ward' : 'village')+(v.township ? ' in '+v.township+' township' : '')+', Arakan').toUpperCase(), M, cy-96*u+rise); sp(0);
+    const ns=fit(roName(v), 700, 96, W-M*2); ctx.fillStyle='#fff'; ctx.font=sans(700, ns); ctx.fillText(roName(v), M, cy+rise);
+    let y=cy+52*u+rise; const off=enName(v)!==roName(v) ? enName(v) : '';
+    ctx.fillStyle='rgba(232,242,255,.8)'; ctx.font=sans(500,30); let sx=M;
+    if (off){ ctx.fillText(off, sx, y); sx+=ctx.measureText(off).width+20*u; }
+    if (v.village_name_mmr){ ctx.font=`${Math.round(30*u)}px 'Noto Sans Myanmar', 'Space Grotesk', sans-serif`; ctx.fillText(v.village_name_mmr, sx, y); }
+    y+=64*u; ctx.fillStyle='rgba(232,242,255,.62)'; ctx.font=mono(18); sp(3);
+    ctx.fillText(caps.length+' SATELLITE PICTURES · '+new Date(S.d0).getUTCFullYear()+' – '+new Date(S.d1).getUTCFullYear(), M, y); sp(0);
+    ctx.fillStyle='#00E5FF'; ctx.fillRect(M, cy-128*u+rise, 54*u, 3*u);
+    ctx.globalAlpha=1;
+  }
+  /* closing card */
+  if (sc.k==='outro'){
+    const a=ease(p/.3); ctx.globalAlpha=a; ctx.fillStyle='#050B14'; ctx.fillRect(0,0,W,H);
+    const cx=W/2; let y=H*.4; ctx.textAlign='center';
+    if (S.logo){ const lw=240*u; ctx.drawImage(S.logo, cx-lw/2, y-130*u, lw, lw/3.013); }
+    ctx.fillStyle='#fff'; ctx.font=sans(600,46); ctx.fillText('Every village had a name.', cx, y+26*u);
+    ctx.fillStyle='rgba(232,242,255,.72)'; ctx.font=sans(400,25); ctx.fillText('FARA exists so those names are never erased.', cx, y+70*u);
+    ctx.fillStyle='#00E5FF'; ctx.font=mono(23); sp(1); ctx.fillText(v.isWard ? 'map.rohingya.ro' : pageUrl(v).replace(/^https?:\/\//,'').replace(/^(localhost|127\.0\.0\.1)(:\d+)?/, 'map.rohingya.ro'), cx, y+136*u);
+    ctx.fillStyle='rgba(232,242,255,.55)'; ctx.font=mono(14.5); sp(1.4); let yy=H-M-58*u;
+    ['SATELLITE PICTURES: ESRI WORLD IMAGERY (WAYBACK) · VANTOR / MAXAR', S.told ? 'DESTROYED ZONES: UNOSAT · FIRE DETECTIONS: NASA FIRMS' : '', 'FARA — THE ARAKAN VILLAGE NAME ARCHIVE'].filter(Boolean)
+      .forEach(l=>{ ctx.fillText(l, cx, yy); yy+=26*u; });
+    sp(0); ctx.textAlign='left'; ctx.globalAlpha=1;
+  }
+  /* a hairline along the top keeps time */
+  ctx.fillStyle='rgba(0,229,255,.9)'; ctx.fillRect(0,0,W*Math.min(1,t/S.dur),3*u);
+}
+/* write the film: frame-exact MP4 where the browser can encode video itself, otherwise record the canvas as it plays */
+async function vidEncode(cv, S, onProgress, alive){
+  const ctx=cv.getContext('2d'), fps=VID.fps, total=Math.round(S.dur*fps);
+  if (window.VideoEncoder && window.VideoFrame){
+    try{ await vidLib(); }catch(e){}
+    if (window.Mp4Muxer){
+      let cfg=null;
+      for (const codec of ['avc1.640028','avc1.4d0028','avc1.42e028','avc1.42001f']){
+        const c={ codec, width:S.W, height:S.H, bitrate: S.W*S.H>1.5e6 ? 6e6 : 4.2e6, framerate:fps };
+        try{ if ((await VideoEncoder.isConfigSupported(c)).supported){ cfg=c; break; } }catch(e){}
+      }
+      if (cfg){
+        const muxer=new Mp4Muxer.Muxer({ target:new Mp4Muxer.ArrayBufferTarget(), video:{ codec:'avc', width:S.W, height:S.H, frameRate:fps }, fastStart:'in-memory' });
+        let err=null; const enc=new VideoEncoder({ output:(c,m)=>muxer.addVideoChunk(c,m), error:e=>{ err=e; } });
+        enc.configure(cfg);
+        for (let i=0;i<total;i++){
+          if (!alive()){ try{ enc.close(); }catch(e){} throw new Error('cancel'); }
+          vidDraw(ctx, S, i/fps);
+          const frame=new VideoFrame(cv,{ timestamp:Math.round(i*1e6/fps), duration:Math.round(1e6/fps) });
+          enc.encode(frame,{ keyFrame:i%(fps*2)===0 }); frame.close();
+          while (enc.encodeQueueSize>5) await new Promise(r=>setTimeout(r,6));
+          if (i%5===0){ onProgress(i/total); await new Promise(r=>setTimeout(r,0)); }
+          if (err) throw err;
+        }
+        await enc.flush(); muxer.finalize();
+        return { blob:new Blob([muxer.target.buffer],{ type:'video/mp4' }), ext:'mp4' };
+      }
+    }
+  }
+  if (!cv.captureStream || !window.MediaRecorder) throw new Error('unsupported');
+  const mime=['video/mp4;codecs=avc1.42E01E','video/mp4','video/webm;codecs=vp9','video/webm'].find(m=>MediaRecorder.isTypeSupported(m));
+  if (!mime) throw new Error('unsupported');
+  const rec=new MediaRecorder(cv.captureStream(fps),{ mimeType:mime, videoBitsPerSecond:6e6 }), parts=[];
+  rec.ondataavailable=e=>{ if (e.data.size) parts.push(e.data); };
+  const done=new Promise(r=>{ rec.onstop=r; });
+  rec.start(); const t0=performance.now();
+  await new Promise((res,rej)=>{ (function tick(){ if (!alive()){ try{ rec.stop(); }catch(e){} rej(new Error('cancel')); return; }
+    const t=(performance.now()-t0)/1000; vidDraw(ctx, S, Math.min(t, S.dur-.001)); onProgress(Math.min(1,t/S.dur)); if (t>=S.dur) res(); else requestAnimationFrame(tick); })(); });
+  rec.stop(); await done;
+  return { blob:new Blob(parts,{ type:mime.split(';')[0] }), ext:mime.indexOf('mp4')>-1 ? 'mp4' : 'webm' };
+}
+function vidReset(){
+  VID.job++; VID.busy=false; VID.blob=null; VID.S=null;
+  if (VID.url){ URL.revokeObjectURL(VID.url); VID.url=null; }
+  const out=vidEl('vidout'); out.pause(); out.removeAttribute('src'); out.load(); out.hidden=true;
+  vidEl('vidcv').hidden=false; vidEl('vidsave').hidden=true; vidEl('vidshare').hidden=true; vidEl('vidmake').hidden=false; vidEl('vidmake').disabled=false;
+  vidEl('vidmake').textContent='Make the video'; vidEl('vidbar').style.width='0'; vidEl('vidmsg').textContent='';
+  vidEl('vidstage').dataset.shape=VID.shape;
+}
+function openVideo(){
+  const v=current; if (!v || isUnverified(v)) return;
+  if (IMG.hist.filter(h=>!h.approx && !h.pending).length<2){ showToast('// a video needs at least two dated pictures of this place'); return; }
+  vidReset(); openModal('vidmodal');
+  vidEl('vidsub').textContent=roName(v)+' · every dated satellite picture, oldest to newest, as a short film';
+  const cv=vidEl('vidcv'), [W,H]=VID_SHAPES[VID.shape]; cv.width=W; cv.height=H;
+  const c=cv.getContext('2d'); c.fillStyle='#050B14'; c.fillRect(0,0,W,H);
+  c.fillStyle='rgba(232,242,255,.5)'; c.font=`${Math.round(Math.min(W,H)/40)}px 'Share Tech Mono', monospace`; c.textAlign='center'; c.fillText('// press "Make the video"', W/2, H/2);
+  vidLib().catch(()=>{});
+  track('Video opened');
+}
+async function vidMake(){
+  const v=current; if (!v || VID.busy) return;
+  const job=++VID.job, alive=()=>job===VID.job && vidEl('vidmodal').classList.contains('open');
+  VID.busy=true; const btn=vidEl('vidmake'), msg=vidEl('vidmsg'), bar=vidEl('vidbar'); btn.disabled=true;
+  try{
+    msg.textContent='// loading the pictures…';
+    const S=await vidPrepare(v, VID.shape, p=>{ bar.style.width=(p*35)+'%'; msg.textContent='// loading the pictures… '+Math.round(p*100)+'%'; });
+    if (!alive()) return;
+    VID.S=S; const cv=vidEl('vidcv'); cv.width=S.W; cv.height=S.H;
+    msg.textContent='// making the video…';
+    const r=await vidEncode(cv, S, p=>{ bar.style.width=(35+p*65)+'%'; msg.textContent='// making the video… '+Math.round(p*100)+'%'; }, alive);
+    if (!alive()) return;
+    VID.blob=r.blob; VID.url=URL.createObjectURL(r.blob);
+    const slug=(v.slug || String(v.id)).replace(/[^a-z0-9-]/gi,''), name='fara-'+slug+'-'+new Date(S.d0).getUTCFullYear()+'-'+new Date(S.d1).getUTCFullYear()+'.'+r.ext;
+    VID.name=name;
+    const out=vidEl('vidout'); out.src=VID.url; out.hidden=false; cv.hidden=true; out.play().catch(()=>{});
+    const save=vidEl('vidsave'); save.href=VID.url; save.download=name; save.hidden=false; save.textContent='Download '+r.ext.toUpperCase()+' · '+(r.blob.size/1048576).toFixed(1)+' MB';
+    const file = typeof File==='function' ? new File([r.blob], name, { type:r.blob.type }) : null;
+    vidEl('vidshare').hidden = !(file && navigator.canShare && navigator.canShare({ files:[file] }));
+    btn.hidden=true; bar.style.width='100%'; msg.textContent='// ready · '+Math.round(S.dur)+' seconds · '+S.caps.length+' pictures';
+    VID.info={ w:S.W, h:S.H, sec:+S.dur.toFixed(1), mb:+(r.blob.size/1048576).toFixed(2), type:r.blob.type, pics:S.caps.length, card:!!S.showCard };
+    track('Video made', { shape:VID.shape });
+  }catch(e){
+    if (alive()){
+      msg.textContent = e && e.message==='few' ? '// not enough dated pictures of this place for a video'
+        : e && e.message==='unsupported' ? '// this browser cannot make video files; try Chrome, Edge or Safari'
+        : e && e.message==='tiles' ? '// some pictures could not be loaded; check the connection and try again'
+        : '// the video could not be made; try again';
+      btn.disabled=false; bar.style.width='0';
+    }
+  }
+  if (job===VID.job) VID.busy=false;
+}
+vidEl('vidmake').addEventListener('click', vidMake);
+vidEl('vidshape').addEventListener('click', e=>{
+  const b=e.target.closest('button'); if (!b || VID.busy) return;
+  VID.shape=b.dataset.s; vidEl('vidshape').querySelectorAll('button').forEach(x=>{ x.classList.toggle('on', x===b); x.setAttribute('aria-pressed', String(x===b)); });
+  openVideo();
+});
+vidEl('vidshare').addEventListener('click', async ()=>{
+  if (!VID.blob) return;
+  try{ await navigator.share({ files:[new File([VID.blob], VID.name, { type:VID.blob.type })], title:(current ? roName(current)+' · ' : '')+'FARA' }); }catch(e){}
+});
+new MutationObserver(()=>{ if (!vidEl('vidmodal').classList.contains('open')){ VID.job++; VID.busy=false; vidEl('vidout').pause(); } }).observe(vidEl('vidmodal'),{ attributes:true, attributeFilter:['class'] });
+/* two plain buttons in the viewer: the picture on screen, or the film */
+vidEl('ivsave').addEventListener('click', ivExport);
+vidEl('ivvideo').addEventListener('click', openVideo);
+/* and Play and Video on the village record itself, so nobody has to go looking for them */
+vidEl('playbtn').addEventListener('click', ()=>{ openViewer('clear'); ivPlay(true); });
+vidEl('videobtn').addEventListener('click', openVideo);
 
 /* ---------- EMBED: a small card other sites can show ---------- */
 function openEmbed(){
@@ -3993,7 +4441,8 @@ const REG_COLS = [
   ['village_tract','Tract', v=>v.village_tract||'—',''],
   ['township','Township', v=>v.township||'—',''],
   ['coords','Coordinates', v=>isUnverified(v)?'UNVERIFIED':(+v.lat).toFixed(5)+', '+(+v.lng).toFixed(5), 'cco'],
-  ['st17','2017 · UNOSAT', v=>isUnverified(v)?'—':ST17[st17(v)].short, 'cst']
+  ['st17','2017 · UNOSAT', v=>isUnverified(v)?'—':ST17[st17(v)].short, 'cst'],
+  ['f7','Fire 2017 · NASA', v=>v.f7 ? v.f7[1].map(x=>(+x.slice(2))+' '+MONTHS[+x.slice(0,2)-1]).join(', ') : '—', 'cst']
 ];
 let regSort={key:'rohingya_name',dir:1}, regBuilt=false;
 function regFiltered(){
@@ -4047,11 +4496,12 @@ function renderRegistry(){
 }
 function exportRegistry(){
   const rows=regFiltered();
-  const head=['id','rohingya_name','english_name','burmese_name','village_tract','township','district','lat','lng','coord_status','pcode_village','pcode_village_tract','pcode_township','pcode_district','unosat_2017','unosat_2017_destroyed_ha_within_300m','unosat_2017_nearest_zone_m','unosat_2017_first_seen'];
+  const head=['id','rohingya_name','english_name','burmese_name','village_tract','township','district','lat','lng','coord_status','pcode_village','pcode_village_tract','pcode_township','pcode_district','unosat_2017','unosat_2017_destroyed_ha_within_300m','unosat_2017_nearest_zone_m','unosat_2017_first_seen','fire_days_2017','fire_nearest_m_2017','fire_days_2016'];
   const csv=[head.join(',')].concat(rows.map(v=>[
     v.id, v.rohingya_name||'', v.name||'', v.village_name_mmr||'', v.village_tract||'', v.township||'', v.district||'',
     v.lat, v.lng, isUnverified(v)?'unverified':'ok', v.pv||'', v.pt||'', PCODE_TOWNSHIP[v.township]||'', PCODE_DISTRICT[v.district]||'',
-    isUnverified(v)?'':({d:'destroyed',n:'nearby',z:'none_detected',x:'not_assessed'})[st17(v)], (v.u&&v.u.h!=null)?v.u.h:'', (v.u&&v.u.m!=null)?v.u.m:'', (v.u&&v.u.f)||''
+    isUnverified(v)?'':({d:'destroyed',n:'nearby',z:'none_detected',x:'not_assessed'})[st17(v)], (v.u&&v.u.h!=null)?v.u.h:'', (v.u&&v.u.m!=null)?v.u.m:'', (v.u&&v.u.f)||'',
+    v.f7 ? v.f7[1].map(x=>'2017-'+x.slice(0,2)+'-'+x.slice(2)).join(' ') : '', v.f7 ? v.f7[0] : '', v.f6 ? v.f6[1].map(x=>'2016-'+x.slice(0,2)+'-'+x.slice(2)).join(' ') : ''
   ].map(x=>'"'+String(x).replace(/"/g,'""')+'"').join(','))).join('\n');
   const a=document.createElement('a');
   a.href=URL.createObjectURL(new Blob(['﻿'+csv],{type:'text/csv;charset=utf-8'}));
