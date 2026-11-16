@@ -34,10 +34,15 @@
   <nav><a href="/">Map</a><a href="/villages/">All villages</a><a href="/stories/">Stories</a></nav>
 </header>
 <main>
-<article class="doc log"><nav class="crumbs" aria-label="Breadcrumb"><a href="/">FARA</a><i>/</i><span>Change log</span></nav><h1>Change log</h1><p class="rid"><span class="mono">Current: Edition 1.0 · 16 November 2026 · DOI <a href="https://doi.org/10.5281/zenodo.24266548" rel="noopener">10.5281/zenodo.24266548</a></span></p>
+<article class="doc log"><nav class="crumbs" aria-label="Breadcrumb"><a href="/">FARA</a><i>/</i><span>Change log</span></nav><h1>Change log</h1><p class="rid"><span class="mono">Current: Edition 1.1 · 16 November 2026 · DOI <a href="https://doi.org/10.5281/zenodo.24267149" rel="noopener">10.5281/zenodo.24267149</a></span></p>
 <p>Every change to the archive&#x27;s data is written down here, newest first. A change to a value taken from the source is also listed, record by record, in <a href="/corrections.csv">corrections.csv</a>.</p>
 <p>An edition is the archive as it stood on one day. Each edition has a number, and from edition 1.0 each is kept permanently at Zenodo under its own DOI, so a citation of an edition always leads to exactly the data that was cited.</p>
 <ul class="mdl"><li>The second number goes up (1.0 to 1.1) when records, names or fields are added or corrected.</li><li>The first number goes up (1.x to 2.0) when the shape of the data changes in a way that could break work built on it, for example a field renamed or removed.</li><li>Record numbers (FARA-0001 and so on) never change and are never used again for another village.</li></ul>
+<h2 id="1-1-16-november-2026">1.1 — 16 November 2026</h2>
+<h3 id="added">Added</h3>
+<ul class="mdl"><li><b>Fires detected by satellite.</b> Three new files, <code>fires.csv</code>, <code>fires.json</code> and <code>fires_points.json</code>: for each village, the days on which NASA&#x27;s fire-detecting satellites (VIIRS and MODIS, from NASA FIRMS) recorded a fire within one kilometre of its recorded position, from 25 August to 30 November 2017 and from 9 October to 30 November 2016. 164 villages had a detection in autumn 2017 and 10 in autumn 2016. Days are in Myanmar time.</li><li>A section on the fire detections in the <a href="/methods/">methods page</a>: the source, the rule, and what a detection cannot tell you.</li></ul>
+<h3 id="unchanged">Unchanged</h3>
+<ul class="mdl"><li>No village record changed. The village files, the corrections, the place codes and the UNOSAT results are the same as in edition 1.0.</li></ul>
 <h2 id="1-0-16-november-2026">1.0 — 16 November 2026</h2>
 <p>The first numbered edition, and the first to be given a DOI. It holds everything listed under the earlier dates below.</p>
 <h3 id="added">Added</h3>
@@ -51,14 +56,14 @@
 <h3 id="13-november-2026">13 November 2026</h3>
 <ul class="mdl"><li><b>Official place codes added to every record.</b> Nine new fields: <code>pcode_village</code>, <code>pcode_village_tract</code>, <code>pcode_township</code>, <code>pcode_district</code>, <code>mimu_village_name</code>, <code>mimu_village_tract_name</code>, <code>mimu_village_status</code>, <code>mimu_village_tract_status</code> and <code>pcode_match</code>. Source: MIMU Place Codes, Release 9.7 (January 2026).</li><li><b>2017 satellite analysis added.</b> New files <code>status_unosat_2017.csv</code>, <code>status_unosat_2017.json</code> and <code>unosat_2017_zones.geojson</code>, derived from UNOSAT&#x27;s analysis of imagery from 31 August to 11 October 2017.</li><li>One page for every village, with its own address.</li></ul>
 <h3 id="3-july-2026">3 July 2026</h3>
-<ul class="mdl"><li><b>First publication.</b> 1,023 villages, collected on 2 July 2026 from the Rohingya Khobor Arakan Maps Project.</li><li>Two records had no township or district in the source. FARA-1025 (Fawyazi Para) was placed in Maungdaw and FARA-0338 (Four Miles South) in Buthidaung, following the layer each sits in on the source map.</li><li>FARA-0338 has coordinates in the source that fall in Melbourne, Australia. The record is kept and marked <code>unverified</code>; it is not drawn on the map.</li></ul><p class="cta"><a class="btn primary" href="/">Open the interactive map</a><a class="btn" href="/methods/">How this archive was made</a><a class="btn" href="/corrections.csv">Corrections (CSV)</a><a class="btn" href="/downloads/fara-dataset-v1.0.zip">Download edition 1.0 (ZIP)</a></p></article>
+<ul class="mdl"><li><b>First publication.</b> 1,023 villages, collected on 2 July 2026 from the Rohingya Khobor Arakan Maps Project.</li><li>Two records had no township or district in the source. FARA-1025 (Fawyazi Para) was placed in Maungdaw and FARA-0338 (Four Miles South) in Buthidaung, following the layer each sits in on the source map.</li><li>FARA-0338 has coordinates in the source that fall in Melbourne, Australia. The record is kept and marked <code>unverified</code>; it is not drawn on the map.</li></ul><p class="cta"><a class="btn primary" href="/">Open the interactive map</a><a class="btn" href="/methods/">How this archive was made</a><a class="btn" href="/corrections.csv">Corrections (CSV)</a><a class="btn" href="/downloads/fara-dataset-v1.1.zip">Download edition 1.1 (ZIP)</a></p></article>
 </main>
 <footer class="foot">
   <p><b>FARA — The Arakan Village Name Archive.</b> Every village had a name. FARA exists so those names are never erased.</p>
   <p>1,023 villages across Maungdaw, Buthidaung, Rathedaung and Sittwe townships. Source data: <a href="https://map.rohingyakhobor.com/map" rel="noopener">Rohingya Khobor — Arakan Maps Project</a>, collected 2 July 2026.
   Download the data: <a href="/arakan_villages.csv">CSV</a> · <a href="/arakan_villages.json">JSON</a> · <a href="/arakan_villages.geojson">GeoJSON</a>.</p>
   <p><a href="/">The map</a> · <a href="/villages/">All villages, A–Z</a> · <a href="/stories/">Stories</a> · Townships: <a href="/township/maungdaw/">Maungdaw</a>, <a href="/township/buthidaung/">Buthidaung</a>, <a href="/township/rathedaung/">Rathedaung</a>, <a href="/township/sittwe/">Sittwe</a></p>
-  <p class="ed">Edition 1.0 · 16 November 2026 · DOI <a href="https://doi.org/10.5281/zenodo.24266548" rel="noopener">10.5281/zenodo.24266548</a> · <a href="/methods/">How this archive was made</a> · <a href="/changelog/">Change log</a></p>
+  <p class="ed">Edition 1.1 · 16 November 2026 · DOI <a href="https://doi.org/10.5281/zenodo.24267149" rel="noopener">10.5281/zenodo.24267149</a> · <a href="/methods/">How this archive was made</a> · <a href="/changelog/">Change log</a></p>
   <p>A project by AB Aziz · <a href="mailto:ab@rohingya.ro">ab@rohingya.ro</a></p>
 </footer>
 <script defer src="/_vercel/insights/script.js"></script>

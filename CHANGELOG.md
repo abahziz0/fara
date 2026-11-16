@@ -8,6 +8,17 @@ An edition is the archive as it stood on one day. Each edition has a number, and
 - The first number goes up (1.x to 2.0) when the shape of the data changes in a way that could break work built on it, for example a field renamed or removed.
 - Record numbers (FARA-0001 and so on) never change and are never used again for another village.
 
+## 1.1 — 16 November 2026
+
+### Added
+
+- **Fires detected by satellite.** Three new files, `fires.csv`, `fires.json` and `fires_points.json`: for each village, the days on which NASA's fire-detecting satellites (VIIRS and MODIS, from NASA FIRMS) recorded a fire within one kilometre of its recorded position, from 25 August to 30 November 2017 and from 9 October to 30 November 2016. 164 villages had a detection in autumn 2017 and 10 in autumn 2016. Days are in Myanmar time.
+- A section on the fire detections in the [methods page](/methods/): the source, the rule, and what a detection cannot tell you.
+
+### Unchanged
+
+- No village record changed. The village files, the corrections, the place codes and the UNOSAT results are the same as in edition 1.0.
+
 ## 1.0 — 16 November 2026
 
 The first numbered edition, and the first to be given a DOI. It holds everything listed under the earlier dates below.

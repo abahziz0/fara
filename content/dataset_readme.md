@@ -2,7 +2,7 @@
 
 Edition {{version}} · {{date}}{{doi_line}}
 
-FARA ("fará" means "village" in the Rohingya language) records the names and positions of {{n}} Rohingya villages in four townships of Arakan (Rakhine State, Myanmar): {{town_counts}}. Each record gives the village's Rohingya name, its official romanised name, its name in Burmese script where known, its village tract, township and district, its coordinates, and its official place codes.
+FARA ("fará" means "village" in the Rohingya language) records the names and positions of {{n}} Rohingya villages in four townships of Arakan (Rakhine State, Myanmar): {{town_counts}}. Each record gives the village's Rohingya name, its official romanised name, its name in Burmese script where known, its village tract, township and district, its coordinates, and its official place codes. Two further tables give what UNOSAT's satellite analysis marked at or near each village in 2017, and the days on which NASA's satellites detected a fire near it in the autumns of 2016 and 2017.
 
 Rohingya village names are being renamed and removed from official maps. FARA keeps them on record for research, reporting, human-rights documentation and the Rohingya community.
 
@@ -45,6 +45,22 @@ The living archive, with a map and satellite imagery of every village, is at htt
 
 "None detected" does not mean a village is standing. The imagery ends on 11 October 2017, some areas were under cloud, destruction continued afterwards, and UNOSAT did not validate its zones on the ground.
 
+## Fields of `fires`
+
+One row for each village and autumn in which a fire was detected within 1,000 metres of the village's recorded position. A village with no row had no detection, which does not show there was no fire: a fire under cloud is not detected.
+
+| Field | Meaning |
+|---|---|
+| `autumn` | `2017` ({{fire_window_2017}}) or `2016` ({{fire_window_2016}}). |
+| `fire_days` | Number of days with a detection. |
+| `first_day`, `last_day`, `days` | The days, in Myanmar time (UTC+6:30). |
+| `detections` | Number of detections in that autumn. |
+| `nearest_m` | Metres from the village's point to the nearest detection. |
+
+`fires.json` lists every detection: local day and time, sensor (`V` VIIRS 375 m, `M` MODIS 1 km), metres from the village, NASA's confidence, fire radiative power in megawatts, day or night pass, and the UTC date and time. `fires_points.json` lists every detection of the two autumns in the area as latitude, longitude, local day, sensor, and 1 when a village is within 1,000 metres.
+
+A detection is heat seen from orbit. It does not say what burned, or who lit it.
+
 ## Missing values
 
 A missing name or code is an empty value. Nothing is guessed. {{n_no_ro}} records have no Rohingya name and {{n_no_mm}} have no Burmese-script name.
@@ -63,6 +79,7 @@ Parts of the data come from other publishers and stay under their terms:
 
 - **Village names and positions as collected:** Rohingya Khobor Arakan Maps Project, https://map.rohingyakhobor.com/map. Credit the project as the source.
 - **Official names, positions and place codes** (the `pcode_` and `mimu_` fields, `pcodes.csv`, `pcodes_review.csv`): © Myanmar Information Management Unit (MIMU), {{pc_release_short}}, https://themimu.info/place-codes. Free to use with attribution. Not for sale or commercial use.
+- **Fire detections** (`fires.csv`, `fires.json`, `fires_points.json`): derived from NASA FIRMS active fire data (VIIRS S-NPP 375 m and MODIS Collection 6.1), {{fire_url}}. Free and open; NASA asks to be credited as the source.
 - **2017 analysis** (`status_unosat_2017.csv`, `status_unosat_2017.json`, `unosat_2017_zones.geojson`): derived from UNOSAT, "Destroyed areas in Buthidaung, Maungdaw, and Rathedaung Townships of Rakhine State in Myanmar", {{st_url}}. CC BY-SA 4.0. Credit UNOSAT.
 
 ## Contact

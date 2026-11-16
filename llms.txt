@@ -42,9 +42,9 @@ Rohingya village names are being renamed, depopulated and removed from official 
 - [Township and village-tract boundaries](https://map.rohingya.ro/boundaries.json): from UN OCHA's COD-AB dataset for Myanmar (source MIMU), CC BY-IGO; approximate, about 1:250,000.
 
 ## Editions, methods and citing
-- This is edition 1.0 of 16 November 2026, DOI https://doi.org/10.5281/zenodo.24266548. The archive is published in numbered editions so that a citation always leads to the same data.
+- This is edition 1.1 of 16 November 2026, DOI https://doi.org/10.5281/zenodo.24267149. The archive is published in numbered editions so that a citation always leads to the same data.
 - [How this archive was made](https://map.rohingya.ro/methods/): where every part of the data came from, how it was checked and corrected, and what it cannot tell you.
 - [Change log](https://map.rohingya.ro/changelog/): what changed in each edition. [Corrections, record by record (CSV)](https://map.rohingya.ro/corrections.csv). [The edition as data](https://map.rohingya.ro/edition.json).
-- Cite the archive as: Aziz, Abdul. FARA — The Arakan Village Name Archive. Edition 1.0, 16 November 2026. Zenodo. https://doi.org/10.5281/zenodo.24266548.
-- Cite one village by naming its record and the edition, for example: Aziz, Abdul. “Hadira Para (Kar Di), Buthidaung township.” Record FARA-0001 in FARA — The Arakan Village Name Archive, edition 1.0 (16 November 2026). https://map.rohingya.ro/village/1-hadira-para/. Edition DOI: https://doi.org/10.5281/zenodo.24266548.
+- Cite the archive as: Aziz, Abdul. FARA — The Arakan Village Name Archive. Edition 1.1, 16 November 2026. Zenodo. https://doi.org/10.5281/zenodo.24267149.
+- Cite one village by naming its record and the edition, for example: Aziz, Abdul. “Hadira Para (Kar Di), Buthidaung township.” Record FARA-0001 in FARA — The Arakan Village Name Archive, edition 1.1 (16 November 2026). https://map.rohingya.ro/village/1-hadira-para/. Edition DOI: https://doi.org/10.5281/zenodo.24267149.
 - Every village page has a "Cite this" section with the citation in plain text, APA, BibTeX and RIS.

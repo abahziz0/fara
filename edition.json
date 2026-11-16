@@ -1,8 +1,8 @@
 {
   "title": "FARA — The Arakan Village Name Archive",
-  "version": "1.0",
+  "version": "1.1",
   "date": "2026-11-16",
-  "doi": "10.5281/zenodo.24266548",
+  "doi": "10.5281/zenodo.24267149",
   "concept_doi": "10.5281/zenodo.24266547",
   "publisher": "Zenodo",
   "authors": [
@@ -21,15 +21,57 @@
     "means": "You may copy, share and adapt it for any purpose, as long as you credit FARA."
   },
   "dataset_files": [
-    ["arakan_villages.csv", "Every village, one row each: names in three languages, coordinates, village tract, township, district and official place codes."],
-    ["arakan_villages.json", "The same records as JSON."],
-    ["arakan_villages.geojson", "The same records as map points (villages with a verified position only)."],
-    ["corrections.csv", "Every change FARA has made to a value taken from its source, with the date and the reason."],
-    ["pcodes.csv", "How each official place code was matched: method, distance and MIMU's own names."],
-    ["pcodes_review.csv", "The records whose place code a person should still look at."],
-    ["status_unosat_2017.csv", "What UNOSAT's satellite analysis of 31 August to 11 October 2017 marked at or near each village."],
-    ["status_unosat_2017.json", "The same as JSON, with the method and its cautions."],
-    ["unosat_2017_zones.geojson", "The zones of destroyed buildings UNOSAT mapped in 2017, as outlines."],
-    ["summary.json", "Counts: villages by township and district, missing names, place codes."]
+    [
+      "arakan_villages.csv",
+      "Every village, one row each: names in three languages, coordinates, village tract, township, district and official place codes."
+    ],
+    [
+      "arakan_villages.json",
+      "The same records as JSON."
+    ],
+    [
+      "arakan_villages.geojson",
+      "The same records as map points (villages with a verified position only)."
+    ],
+    [
+      "corrections.csv",
+      "Every change FARA has made to a value taken from its source, with the date and the reason."
+    ],
+    [
+      "pcodes.csv",
+      "How each official place code was matched: method, distance and MIMU's own names."
+    ],
+    [
+      "pcodes_review.csv",
+      "The records whose place code a person should still look at."
+    ],
+    [
+      "status_unosat_2017.csv",
+      "What UNOSAT's satellite analysis of 31 August to 11 October 2017 marked at or near each village."
+    ],
+    [
+      "status_unosat_2017.json",
+      "The same as JSON, with the method and its cautions."
+    ],
+    [
+      "unosat_2017_zones.geojson",
+      "The zones of destroyed buildings UNOSAT mapped in 2017, as outlines."
+    ],
+    [
+      "fires.csv",
+      "The days on which NASA's satellites detected a fire within one kilometre of each village, autumn 2016 and autumn 2017."
+    ],
+    [
+      "fires.json",
+      "The same as JSON, with every single detection, the rule and its cautions."
+    ],
+    [
+      "fires_points.json",
+      "Every fire detection of the two autumns in the area, as points."
+    ],
+    [
+      "summary.json",
+      "Counts: villages by township and district, missing names, place codes."
+    ]
   ]
 }

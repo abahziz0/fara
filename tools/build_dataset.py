@@ -63,12 +63,18 @@ The `pcode_` and `mimu_` fields of `arakan_villages`, and the files `pcodes.csv`
 
 Source: Myanmar Information Management Unit (MIMU), %s, https://themimu.info/place-codes. © MIMU. MIMU products may be used free of charge with attribution. They are not for sale and not for commercial use.
 
+## Fire detections
+
+The files `fires.csv`, `fires.json` and `fires_points.json`.
+
+Derived from NASA FIRMS active fire data: VIIRS (Suomi NPP) 375 m and MODIS (Terra, Aqua) Collection 6.1, %s. NASA's data are free and open. NASA asks to be credited: "We acknowledge the use of data from NASA's Fire Information for Resource Management System (FIRMS), part of NASA's Earth Science Data and Information System (ESDIS)."
+
 ## 2017 satellite analysis
 
 The files `status_unosat_2017.csv`, `status_unosat_2017.json` and `unosat_2017_zones.geojson`.
 
 Derived from UNOSAT, "Destroyed areas in Buthidaung, Maungdaw, and Rathedaung Townships of Rakhine State in Myanmar", %s. Licence: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0), https://creativecommons.org/licenses/by-sa/4.0/. Credit UNOSAT, and share anything made from these files under the same licence.
-''' % (own, tk['collected'], tk['pc_release'], tk['st_url'])
+''' % (own, tk['collected'], tk['pc_release'], tk['fire_url'], tk['st_url'])
 
 
 def main():
@@ -126,7 +132,8 @@ def main():
     desc = ('<p>FARA ("fará" means "village" in the Rohingya language) records the names and positions of %(n)s Rohingya villages in four townships of Arakan '
             '(Rakhine State, Myanmar): %(town_counts)s. Each record gives the village\'s Rohingya name, its official romanised name, its name in Burmese script where known, '
             'its village tract, township and district, its coordinates (WGS84) and its official MIMU place codes. A second table gives what UNOSAT\'s analysis of satellite imagery '
-            'from 31 August to 11 October 2017 marked at or near each village.</p>'
+            'from 31 August to 11 October 2017 marked at or near each village, and a third the days on which NASA\'s satellites detected a fire within one kilometre of it '
+            'in the autumns of 2016 and 2017.</p>'
             '<p>Rohingya village names are being renamed and removed from official maps. FARA keeps them on record for research, reporting, human-rights documentation '
             'and the Rohingya community. The living archive, with a map and satellite imagery of every village, is at <a href="%(site)s/">%(site)s</a>.</p>'
             '<p>This is edition %(version)s of %(date)s. The archive is published in numbered editions so that a citation always leads to the same data. '
@@ -134,6 +141,7 @@ def main():
             '<code>corrections.csv</code> lists every change made to a source value.</p>'
             '<p><b>Sources and terms.</b> Village names and positions as collected: Rohingya Khobor Arakan Maps Project. Official names, positions and place codes: '
             '© Myanmar Information Management Unit (MIMU), free to use with attribution, not for sale or commercial use. 2017 analysis: derived from UNOSAT data, CC BY-SA 4.0. '
+            'Fire detections: derived from NASA FIRMS data, free and open. '
             'See <code>LICENSE.md</code>.</p>') % dict(tk, site=c.SITE)
     meta = {
         'resource_type': 'Dataset', 'title': ed['title'], 'publication_date': ed['date'], 'version': ed['version'],
@@ -141,7 +149,7 @@ def main():
         'description_html': desc,
         'licences': ([lic['name']] if lic else ['NOT DECIDED YET']) + ['Creative Commons Attribution Share Alike 4.0 International (the three UNOSAT-derived files)'],
         'copyright': 'Official names, positions and place codes © Myanmar Information Management Unit (MIMU). 2017 analysis derived from UNOSAT data (CC BY-SA 4.0).',
-        'keywords': be.KEYWORDS + ['Rohingya language', 'P-codes', 'UNOSAT', 'human rights documentation'],
+        'keywords': be.KEYWORDS + ['Rohingya language', 'P-codes', 'UNOSAT', 'NASA FIRMS', 'human rights documentation'],
         'languages': ['English', 'Rohingya', 'Burmese'],
         'publisher': 'Zenodo',
         'related_works': [

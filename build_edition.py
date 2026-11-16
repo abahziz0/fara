@@ -190,6 +190,9 @@ def tokens(c, ed):
     zones = json.load(open(c.p('unosat_2017_zones.geojson'), encoding='utf-8'))['features']
     unconf = [v for v in V if v.get('pcode_match') == 'unconfirmed']
     none = [v for v in V if v.get('pcode_match') == 'none']
+    fm = json.load(open(c.p('fires.json'), encoding='utf-8'))['meta']
+    other = fm['same_weeks_other_years_viirs']
+    span = lambda w: '%s to %s' % (long_day(w[0])[:-5], long_day(w[1]))          # '25 August to 30 November 2017'
     release = pc['meta']['source']['release']                      # 'MIMU Place Codes (P-codes) Release 9.7, January 2026 (Rakhine workbook)'
     return {
         'n': n(len(V)), 'version': ed['version'], 'date': ed['date_long'], 'collected': c.COLLECTED,
@@ -205,6 +208,10 @@ def tokens(c, ed):
         'pc_inactive': sum(1 for v in V if (v.get('mimu_village_status') or '').startswith('inactive')),
         'n_pcode': n(sum(1 for v in V if v.get('pcode_village'))),
         'st_url': c.ST17_URL, 'n_zones': n(len(zones)),
+        'fire_url': 'https://firms.modaps.eosdis.nasa.gov/', 'fire_window_2017': span(fm['windows']['2017']), 'fire_window_2016': span(fm['windows']['2016']),
+        'fire_2017': fm['villages_with_fire']['2017'], 'fire_2016': fm['villages_with_fire']['2016'], 'fire_2017_viirs': other['2017']['villages'],
+        'fire_other_max': max(o['villages'] for y, o in other.items() if y != '2017'),
+        'fire_points': n(len(json.load(open(c.p('fires_points.json'), encoding='utf-8'))['p'])),
         'st_destroyed': st.count('destroyed'), 'st_nearby': st.count('nearby'), 'st_none': st.count('none_detected'), 'st_na': st.count('not_assessed'),
     }
 

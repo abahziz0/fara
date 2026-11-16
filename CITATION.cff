@@ -2,13 +2,13 @@ cff-version: 1.2.0
 message: "If you use this archive, please cite the edition you used."
 type: dataset
 title: "FARA — The Arakan Village Name Archive"
-version: "1.0"
+version: "1.1"
 date-released: "2026-11-16"
 authors:
   - family-names: "Aziz"
     given-names: "Abdul"
     orcid: "https://orcid.org/0009-0003-8386-3740"
-doi: "10.5281/zenodo.24266548"
+doi: "10.5281/zenodo.24267149"
 url: "https://map.rohingya.ro/"
 repository-code: "https://github.com/abahziz0/fara"
 license: "CC-BY-4.0"

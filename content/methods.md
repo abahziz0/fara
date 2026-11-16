@@ -7,7 +7,7 @@ FARA records the names and positions of {{n}} Rohingya villages in four township
 - The villages, their names and their positions were collected on {{collected}} from the public map of the Rohingya Khobor Arakan Maps Project.
 - FARA changes a source value only for a stated reason, and writes every such change down. There are {{n_corr}} so far, in {{n_corr_records}} records. All are listed in [corrections.csv](/corrections.csv).
 - A missing name is shown as missing. Nothing is guessed.
-- Official place codes, the 2017 satellite analysis and the boundaries come from other publishers. Each is credited and described below, with its own terms of use.
+- Official place codes, the 2017 satellite analysis, the fire detections and the boundaries come from other publishers. Each is credited and described below, with its own terms of use.
 
 ## Where the villages come from
 
@@ -78,6 +78,25 @@ Read these results with care.
 
 The script that makes the match, `tools/match_unosat.py`, and UNOSAT's original file are in the [project's source](https://github.com/abahziz0/fara).
 
+## Fires detected by satellite
+
+Each village also carries the days on which NASA's fire-detecting satellites recorded a fire near it, in two autumns: {{fire_window_2017}} and {{fire_window_2016}}, when fires were also detected near villages in the north of Maungdaw.
+
+- **Source:** [NASA FIRMS]({{fire_url}}), the yearly country files for Myanmar. Two instruments are used: VIIRS on the Suomi NPP satellite, which sees fires in pixels 375 metres across, and MODIS on the Terra and Aqua satellites, in pixels 1 kilometre across.
+- **The rule:** a detection counts for a village when it lies within 1,000 metres of the village's recorded position. Low-confidence detections are left out (VIIRS marked "l", MODIS below 30), and only detections NASA types as presumed vegetation or land fires are used. The rule is simple on purpose, so that it can be checked by hand.
+- **Days are in Myanmar time.** NASA gives each detection in UTC. Myanmar is six and a half hours ahead, so a night pass late on the 4th in UTC is counted on the 5th, the day it was for the people under it. The UTC date and time are kept beside it.
+- **Result:** {{fire_2017}} villages had a detection within one kilometre in autumn 2017, and {{fire_2016}} in autumn 2016.
+- **For comparison:** counting VIIRS alone, {{fire_2017_viirs}} villages had a detection between 25 August and 30 November 2017. In the same weeks of every other year from 2013 to 2019 the number was never above {{fire_other_max}}.
+
+Read these results with care too.
+
+- **A detection is heat seen from orbit.** It does not say what burned, or who lit it.
+- **A fire under cloud is not detected at all**, and in the monsoon months cloud is common. A village with no detection has not been shown to be untouched.
+- A pixel is 375 metres or 1 kilometre across, and a village is one point. A detection near a village may be a fire in a neighbouring settlement or in fields.
+- The fire results and the UNOSAT results come from different satellites and different methods. Neither was used to make the other.
+
+`fires.csv` has one row per village and autumn. `fires.json` adds every single detection with its time, distance, confidence and strength. `fires_points.json` holds all {{fire_points}} detections of the two autumns in the area, whether or not a village is near. The script is `tools/match_fires.py`.
+
 ## Boundaries and satellite pictures on the site
 
 These are shown on the website but are not part of the village records.
@@ -90,7 +109,7 @@ These are shown on the website but are not part of the village records.
 - Whether a village exists today, or who lives there.
 - How many people lived in a village at any time.
 - Where a village begins and ends.
-- What happened in a village. The 2017 results state what UNOSAT's analysts marked from orbit, and nothing more.
+- What happened in a village. The 2017 results state what UNOSAT's analysts marked from orbit, and the fire results what NASA's satellites detected, and nothing more.
 
 ## Editions and how to cite
 
@@ -113,6 +132,7 @@ Parts of the data come from other publishers and stay under their terms:
 | Village names and positions as collected | [Rohingya Khobor Arakan Maps Project](https://map.rohingyakhobor.com/map) | Credit the project as the source. |
 | Official names, positions and place codes (the `pcode_` and `mimu_` fields, `pcodes.csv`) | [Myanmar Information Management Unit](https://themimu.info/place-codes), {{pc_release_short}} | © MIMU. Free to use with attribution. Not for sale or commercial use. |
 | 2017 analysis (`status_unosat_2017` files, `unosat_2017_zones.geojson`) | [UNOSAT]({{st_url}}) | CC BY-SA 4.0. Credit UNOSAT; share changes under the same licence. |
+| Fire detections (`fires` files) | [NASA FIRMS]({{fire_url}}), VIIRS and MODIS active fire data | Free and open. NASA asks to be credited as the source. |
 | Township and village-tract boundaries (website only) | UN OCHA, COD-AB (source MIMU) | CC BY-IGO. |
 
 ## Questions and corrections
