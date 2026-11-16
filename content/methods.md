@@ -110,11 +110,36 @@ How the sheets are placed, and how the placement was checked:
 - Each sheet is placed by its four corners. Two known corrections are part of that. Sheets printed before 1905 carry longitudes 2 minutes 27 seconds too far east, because of the value then used for the Madras Observatory. And all the sheets use the Everest figure of the Earth, which at this place differs from today's coordinates (WGS 84) by about 280 metres east to west and 100 metres north to south.
 - Paper stretches unevenly, so inside a sheet a place can drift from where the corners put it. Ten of the sixteen sheets print their latitude and longitude grid every five minutes. On those, FARA found each grid line along its length and warped the picture so that every line falls where its latitude or longitude says. Before this, grid lines were up to 156 metres out on the 1891 sheet, up to 32 metres on the one-inch sheets of 1925 to 1936, and up to 57 metres on the half-inch sheets. Afterwards they are within 5 metres on every sheet.
 - Six sheets print no such grid: four sheets of 1904 and 1905, and two wartime reprints of 1942. They are placed by their corners only.
-- Every sheet was then compared with today's roads, rivers and coast from OpenStreetMap and with satellite pictures. The streets of Akyab (Sittwe) on the 1925 sheet lie within about 15 metres of today's streets. Creeks and river banks on the other sheets, including the six without a grid, lie within about 10 to 40 metres where they were checked.
+- Every sheet was then checked a second time, sheet by sheet. For each sheet, close-up pictures were made at four spots in different parts of it, with today's rivers, creeks, coast and main roads from OpenStreetMap drawn over the sheet as it is placed, and the same spots were looked at against satellite pictures. The table gives the result. "Distance" is how far today's lines lie from the drawn ones.
 
-What to keep in mind: a one-inch map was drawn to about 30 metres at best, and a half-inch map to about 60. Rivers and coasts have moved in a century. St Martin's Island on the 1904 sheet lies about 60 to 150 metres from today's outline. The spellings are the surveyors' own. A village missing from an old sheet was not necessarily absent.
+| Sheet | Year | Placed by | Distance | What was checked |
+|---|---|---|---|---|
+| 84 C/3-7 | 1905 | corners | 30 to 90 m | Two creeks on the Bangladesh side: 30 to 60 m. The Kha Maung Seik river and the Yokhat chaung against the satellite picture: 45 to 90 m. Most of the Burmese hills are blank on this sheet, so there is little to compare. The least certain sheet. |
+| 84 C/4-8 | 1905 | corners | 15 to 70 m | A creek at Nhila on the Bangladesh side: 15 to 30 m. Three creeks near Kyein Chaung (Don, Leikya, Lamudeing) are drawn 50 to 70 m south-east of where they run today, by satellite picture and by today's map. Where this sheet meets 84 D/1-5 the lines join. The difference is local to those creeks, so the sheet was not moved. |
+| 84 D/1-5 | 1904 | corners | 10 to 30 m | Main road in Maungdaw town: 10 m. Road south of Maungdaw: 13 m. A stream crossing near Teknaf: 30 m. Creeks north of Maungdaw: 10 to 20 m. |
+| 84 D/2-6 | 1904 | corners | 15 to 30 m on the mainland | Road at Ah Lel Than Kyaw: 15 to 30 m. Road at Thayekonbaung: 15 m. A creek near Ton Chaung against the satellite picture: 10 to 20 m. St Martin's Island is drawn 60 to 150 m east of today's outline; the mainland on the same sheet fits, so this is the old survey of the island. |
+| 84 D/11-15 | 1891 | grid | 15 to 45 m | Grid lines were up to 156 m out before the correction and are within 3 m after it. Mayu river bank: 30 to 45 m. Coast: 15 m. A track at Pyungauk: 15 to 30 m. Tidal creeks have moved 50 to 100 m in places, each in its own direction. |
+| 84 D/9 | 1935 | grid | 10 to 30 m | Creek south of Buthidaung: 15 to 30 m. River bend at Megyaungzi: 30 m. Buthidaung town, river and roads: 10 to 20 m. |
+| 84 D/10 | 1936 | grid | 30 to 90 m | River banks at four spots: 30 to 90 m. Today's map draws these rivers coarsely here, which limits the check. |
+| 84 D/11 | 1925 | grid | 15 to 60 m | Roads at Gwedaukchaung and Shinkhali: 15 to 30 m. Coast: 30 to 60 m (the width of the beach). One road has been moved 60 to 90 m since. |
+| 84 D/13 | 1936 | grid | 15 to 30 m | Kyauktaw river front: 15 to 30 m. Yo chaung: 15 to 30 m. Kaladan banks: 30 m, one bank has shifted about 100 m. |
+| 84 D/14 | 1935, printed 1942 | corners | 15 to 30 m | River bends at four spots (Sabahta, Sinthe, Apaukwa and the loop to the east): 15 to 30 m. |
+| 84 D/15 | 1925 | grid | 15 to 30 m | River banks at Pyunkhaung, Mraunggri and Zadipyin: 15 to 30 m. |
+| 84 D/16 | 1925 | grid | 15 to 30 m | The streets of Akyab (Sittwe): within 15 m of today's streets. Creeks and the Kaladan bank: 15 to 30 m. |
+| half-inch 84 C/SW | 1941 | grid | 50 to 100 m | Rivers and creeks at four spots: 50 to 100 m. One loop of the Matamuhari is drawn up to 500 m from today's course (the river has moved or the loop was drawn loosely). |
+| half-inch 84 C/SE | 1938 | grid | 50 to 100 m | Rivers at Kyilewa and Ngame, and a hill stream: 50 to 100 m. |
+| half-inch 84 D/NW | 1942 | corners | 25 to 100 m | The Maungdaw to Buthidaung road and a road crossing south of Maungdaw: 25 to 50 m. Creeks: 50 to 100 m. |
+| half-inch 84 D/SE | 1926 | grid | 25 to 100 m | A road on the Sittwe peninsula: 25 to 50 m. River banks: 50 to 100 m. |
 
-The scripts are `tools/oldmaps_fetch.py` (takes only the needed sheets from the published archives), `tools/oldmaps_refine.py` (the grid correction, with the error before and after for each sheet) and `tools/oldmaps_tile.py` (cuts the map tiles). `oldmaps/sheets.json` lists every sheet used and whether it was corrected to its grid. `old_maps.csv` says, for each village, which period covers its position.
+What the check found. No sheet is misplaced as a whole. Roads and town streets, which do not move, lie 10 to 30 metres from where the sheets draw them. Tidal creeks and river banks have moved since the survey, often by 50 to 100 metres and each in its own direction, so a creek that does not fit does not mean the sheet is wrong. Two differences are worth knowing: three creeks near Kyein Chaung on sheet 84 C/4-8 are drawn 50 to 70 metres south-east of today's, and St Martin's Island on sheet 84 D/2-6 is drawn 60 to 150 metres east of today's outline. Neither sheet was changed for it, because the rest of each sheet fits.
+
+An automatic comparison was also tried, sliding today's water lines over each sheet to find the best fit. It could not tell a river that has moved from a sheet that is misplaced, and it gave wrong answers where the street check showed the sheet to be right, so its numbers are not used.
+
+What to keep in mind: a one-inch map was drawn to about 30 metres at best, and a half-inch map to about 60. The spellings are the surveyors' own. A village missing from an old sheet was not necessarily absent.
+
+The close-up pictures are at `/oldmaps/check/` (one per sheet, listed on the [further sources](/sources-list/) page), with `results.json` and the spots used. Today's lines in them are © OpenStreetMap contributors.
+
+The scripts are `tools/oldmaps_fetch.py` (takes only the needed sheets from the published archives), `tools/oldmaps_refine.py` (the grid correction, with the error before and after for each sheet), `tools/oldmaps_tile.py` (cuts the map tiles) and `tools/oldmaps_check.py` (makes the close-up pictures). `oldmaps/sheets.json` lists every sheet used and whether it was corrected to its grid. `old_maps.csv` says, for each village, which period covers its position.
 
 ### United Nations reports
 

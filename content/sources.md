@@ -16,6 +16,27 @@ On the map, choose a period under Old maps. "Lines only" hides the paper and lay
 
 What to keep in mind: the spellings on these maps are the surveyors' own and are often far from today's names. A village missing from an old sheet was not necessarily absent. A one-inch map was drawn to about 30 metres at best, and rivers and coasts have moved since.
 
+### How well each sheet sits
+
+Every sheet was checked against today's rivers, creeks, coast and main roads. Each picture below shows four close-ups of one sheet with today's lines drawn on it in blue (water) and magenta (roads); the red bar is 100 metres. The figure after each link is how far today's lines lie from the drawn ones. The [methods page](/methods/#old-maps-united-nations-reports-and-other-spellings) explains what was found. Today's lines are © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors.
+
+- [84 C/3-7, 1905](/oldmaps/check/a_84C03-07_1905.jpg): 30 to 90 m
+- [84 C/4-8, 1905](/oldmaps/check/a_84C04-08_1905.jpg): 15 to 70 m
+- [84 D/1-5, 1904](/oldmaps/check/a_84D01-05_1904.jpg): 10 to 30 m
+- [84 D/2-6, 1904](/oldmaps/check/a_84D02-06_1904.jpg): 15 to 30 m on the mainland
+- [84 D/11-15, 1891](/oldmaps/check/a_84D11-15_1891.jpg): 15 to 45 m
+- [84 D/9, 1935](/oldmaps/check/b_84D09_1935.jpg): 10 to 30 m
+- [84 D/10, 1936](/oldmaps/check/b_84D10_1936.jpg): 30 to 90 m
+- [84 D/11, 1925](/oldmaps/check/b_84D11_1925.jpg): 15 to 60 m
+- [84 D/13, 1936](/oldmaps/check/b_84D13_1936.jpg): 15 to 30 m
+- [84 D/14, 1935, printed 1942](/oldmaps/check/b_84D14_1942.jpg): 15 to 30 m
+- [84 D/15, 1925](/oldmaps/check/b_84D15_1925.jpg): 15 to 30 m
+- [84 D/16, 1925](/oldmaps/check/b_84D16_1925.jpg): 15 to 30 m
+- [half-inch 84 C/SW, 1941](/oldmaps/check/b_half_84CSW_1941.jpg): 50 to 100 m
+- [half-inch 84 C/SE, 1938](/oldmaps/check/b_half_84CSE_1938.jpg): 50 to 100 m
+- [half-inch 84 D/NW, 1942](/oldmaps/check/b_half_84DNW_1942.jpg): 25 to 100 m
+- [half-inch 84 D/SE, 1926](/oldmaps/check/b_half_84DSE_1926.jpg): 25 to 100 m
+
 Other old maps, not shown on the site:
 
 - [U.S. Army Map Service, Burma 1:250,000, series U542](https://maps.lib.utexas.edu/maps/ams/burma/), 1950s, at the University of Texas Libraries.

@@ -1,0 +1,151 @@
+{
+ "note": "Each old sheet compared with today's rivers, creeks, coast and main roads at several spots. \"Distance\" is how far today's lines lie from the drawn ones at those spots. Checked by eye on the close-up pictures in this folder and against satellite pictures; an automatic comparison was tried and set aside because it could not tell a moved river from a misplaced sheet.",
+ "checked": "2026-11-16",
+ "todays_lines": "© OpenStreetMap contributors (ODbL), fetched 16 November 2026",
+ "sheets": [
+  {
+   "layer": "around 1900",
+   "sheet": "84 C/3-7",
+   "year": "1905",
+   "pinned_to_printed_grid": false,
+   "picture": "/oldmaps/check/a_84C03-07_1905.jpg",
+   "distance": "30 to 90 m",
+   "what_was_checked": "Two creeks on the Bangladesh side: 30 to 60 m. The Kha Maung Seik river and the Yokhat chaung against the satellite picture: 45 to 90 m. Most of the Burmese hills are blank on this sheet, so there is little to compare. The least certain sheet."
+  },
+  {
+   "layer": "around 1900",
+   "sheet": "84 C/4-8",
+   "year": "1905",
+   "pinned_to_printed_grid": false,
+   "picture": "/oldmaps/check/a_84C04-08_1905.jpg",
+   "distance": "15 to 70 m",
+   "what_was_checked": "A creek at Nhila on the Bangladesh side: 15 to 30 m. Three creeks near Kyein Chaung (Don, Leikya, Lamudeing) are drawn 50 to 70 m south-east of where they run today, by satellite picture and by today's map. Where this sheet meets 84 D/1-5 the lines join. The difference is local to those creeks, so the sheet was not moved."
+  },
+  {
+   "layer": "around 1900",
+   "sheet": "84 D/1-5",
+   "year": "1904",
+   "pinned_to_printed_grid": false,
+   "picture": "/oldmaps/check/a_84D01-05_1904.jpg",
+   "distance": "10 to 30 m",
+   "what_was_checked": "Main road in Maungdaw town: 10 m. Road south of Maungdaw: 13 m. A stream crossing near Teknaf: 30 m. Creeks north of Maungdaw: 10 to 20 m."
+  },
+  {
+   "layer": "around 1900",
+   "sheet": "84 D/2-6",
+   "year": "1904",
+   "pinned_to_printed_grid": false,
+   "picture": "/oldmaps/check/a_84D02-06_1904.jpg",
+   "distance": "15 to 30 m on the mainland",
+   "what_was_checked": "Road at Ah Lel Than Kyaw: 15 to 30 m. Road at Thayekonbaung: 15 m. A creek near Ton Chaung against the satellite picture: 10 to 20 m. St Martin's Island is drawn 60 to 150 m east of today's outline; the mainland on the same sheet fits, so this is the old survey of the island."
+  },
+  {
+   "layer": "around 1900",
+   "sheet": "84 D/11-15",
+   "year": "1891",
+   "pinned_to_printed_grid": true,
+   "picture": "/oldmaps/check/a_84D11-15_1891.jpg",
+   "distance": "15 to 45 m",
+   "what_was_checked": "Grid lines were up to 156 m out before the correction and are within 3 m after it. Mayu river bank: 30 to 45 m. Coast: 15 m. A track at Pyungauk: 15 to 30 m. Tidal creeks have moved 50 to 100 m in places, each in its own direction."
+  },
+  {
+   "layer": "1925 to 1944",
+   "sheet": "84 D/9",
+   "year": "1935",
+   "pinned_to_printed_grid": true,
+   "picture": "/oldmaps/check/b_84D09_1935.jpg",
+   "distance": "10 to 30 m",
+   "what_was_checked": "Creek south of Buthidaung: 15 to 30 m. River bend at Megyaungzi: 30 m. Buthidaung town, river and roads: 10 to 20 m."
+  },
+  {
+   "layer": "1925 to 1944",
+   "sheet": "84 D/10",
+   "year": "1936",
+   "pinned_to_printed_grid": true,
+   "picture": "/oldmaps/check/b_84D10_1936.jpg",
+   "distance": "30 to 90 m",
+   "what_was_checked": "River banks at four spots: 30 to 90 m. Today's map draws these rivers coarsely here, which limits the check."
+  },
+  {
+   "layer": "1925 to 1944",
+   "sheet": "84 D/11",
+   "year": "1925",
+   "pinned_to_printed_grid": true,
+   "picture": "/oldmaps/check/b_84D11_1925.jpg",
+   "distance": "15 to 60 m",
+   "what_was_checked": "Roads at Gwedaukchaung and Shinkhali: 15 to 30 m. Coast: 30 to 60 m (the width of the beach). One road has been moved 60 to 90 m since."
+  },
+  {
+   "layer": "1925 to 1944",
+   "sheet": "84 D/13",
+   "year": "1936",
+   "pinned_to_printed_grid": true,
+   "picture": "/oldmaps/check/b_84D13_1936.jpg",
+   "distance": "15 to 30 m",
+   "what_was_checked": "Kyauktaw river front: 15 to 30 m. Yo chaung: 15 to 30 m. Kaladan banks: 30 m, one bank has shifted about 100 m."
+  },
+  {
+   "layer": "1925 to 1944",
+   "sheet": "84 D/14",
+   "year": "1935, printed 1942",
+   "pinned_to_printed_grid": false,
+   "picture": "/oldmaps/check/b_84D14_1942.jpg",
+   "distance": "15 to 30 m",
+   "what_was_checked": "River bends at four spots (Sabahta, Sinthe, Apaukwa and the loop to the east): 15 to 30 m."
+  },
+  {
+   "layer": "1925 to 1944",
+   "sheet": "84 D/15",
+   "year": "1925",
+   "pinned_to_printed_grid": true,
+   "picture": "/oldmaps/check/b_84D15_1925.jpg",
+   "distance": "15 to 30 m",
+   "what_was_checked": "River banks at Pyunkhaung, Mraunggri and Zadipyin: 15 to 30 m."
+  },
+  {
+   "layer": "1925 to 1944",
+   "sheet": "84 D/16",
+   "year": "1925",
+   "pinned_to_printed_grid": true,
+   "picture": "/oldmaps/check/b_84D16_1925.jpg",
+   "distance": "15 to 30 m",
+   "what_was_checked": "The streets of Akyab (Sittwe): within 15 m of today's streets. Creeks and the Kaladan bank: 15 to 30 m."
+  },
+  {
+   "layer": "1925 to 1944",
+   "sheet": "half-inch 84 C/SW",
+   "year": "1941",
+   "pinned_to_printed_grid": true,
+   "picture": "/oldmaps/check/b_half_84CSW_1941.jpg",
+   "distance": "50 to 100 m",
+   "what_was_checked": "Rivers and creeks at four spots: 50 to 100 m. One loop of the Matamuhari is drawn up to 500 m from today's course (the river has moved or the loop was drawn loosely)."
+  },
+  {
+   "layer": "1925 to 1944",
+   "sheet": "half-inch 84 C/SE",
+   "year": "1938",
+   "pinned_to_printed_grid": true,
+   "picture": "/oldmaps/check/b_half_84CSE_1938.jpg",
+   "distance": "50 to 100 m",
+   "what_was_checked": "Rivers at Kyilewa and Ngame, and a hill stream: 50 to 100 m."
+  },
+  {
+   "layer": "1925 to 1944",
+   "sheet": "half-inch 84 D/NW",
+   "year": "1942",
+   "pinned_to_printed_grid": false,
+   "picture": "/oldmaps/check/b_half_84DNW_1942.jpg",
+   "distance": "25 to 100 m",
+   "what_was_checked": "The Maungdaw to Buthidaung road and a road crossing south of Maungdaw: 25 to 50 m. Creeks: 50 to 100 m."
+  },
+  {
+   "layer": "1925 to 1944",
+   "sheet": "half-inch 84 D/SE",
+   "year": "1926",
+   "pinned_to_printed_grid": true,
+   "picture": "/oldmaps/check/b_half_84DSE_1926.jpg",
+   "distance": "25 to 100 m",
+   "what_was_checked": "A road on the Sittwe peninsula: 25 to 50 m. River banks: 50 to 100 m."
+  }
+ ]
+}
