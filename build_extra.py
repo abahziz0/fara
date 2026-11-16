@@ -315,7 +315,8 @@ def build_gazetteers(c):
         counts = Counter(c.status(v) for v in vs)
         with_ro = sum(1 for v in vs if v.get('rohingya_name')); with_mm = sum(1 for v in vs if v.get('village_name_mmr'))
         with_pc = sum(1 for v in vs if v.get('pcode_village'))
-        edition = long_date(c.today)
+        ed = c.g.get('ED')                                  # the numbered edition (edition.json); the day of printing when there is none
+        edition = '%s, %s' % (ed['version'], ed['date_long']) if ed else 'of ' + long_date(c.today)
         path = '%sgazetteer/' % c.turl(town)
         pdf = '/downloads/fara-gazetteer-%s.pdf' % slug
 
@@ -334,7 +335,7 @@ def build_gazetteers(c):
   <p class="where">Arakan (Rakhine State), Myanmar</p>
   <div class="cmap">%(map)s</div>
   <div class="stats"><div><b>%(n)d</b><span>Villages</span></div><div><b>%(t)d</b><span>Village tracts</span></div><div><b>3</b><span>Languages</span></div></div>
-  <div class="cfoot"><div class="motto">Every village had a name.</div><div class="ed">Edition of %(ed)s<br>map.rohingya.ro</div></div>
+  <div class="cfoot"><div class="motto">Every village had a name.</div><div class="ed">Edition %(ed)s<br>map.rohingya.ro</div></div>
 </section>''' % dict(logo=c.LOGO.replace('#00E5FF', acc), town=esc(town), map=cover_map, n=len(vs), t=n_tracts, ed=edition,
                      my='<p class="my mmr">%sမြို့နယ်</p>' % esc(tw['my']) if tw and tw.get('my') else ''))
 
@@ -453,7 +454,7 @@ def build_gazetteers(c):
 <h3>Using this gazetteer</h3>
 <p>You are free to print, copy and share it. The village names and positions come from the Rohingya Khobor Arakan Maps Project. Place codes are © Myanmar Information Management Unit. The boundaries are from UN OCHA's COD-AB dataset (source: MIMU; CC BY-IGO) and the 2017 analysis from UNOSAT (CC BY-SA); please keep those credits with the maps and the 2017 column.</p>
 <h3>How to cite</h3>
-<span class="cite">FARA — The Arakan Village Name Archive. <i>Gazetteer of Rohingya Villages: %(town)s Township.</i> Edition of %(ed)s. map.rohingya.ro%(path)s</span>
+<span class="cite">FARA — The Arakan Village Name Archive. <i>Gazetteer of Rohingya Villages: %(town)s Township.</i> Edition %(ed)s. map.rohingya.ro%(path)s</span>
 <h3>Contact</h3>
 <p>A project by AB Aziz · ab@rohingya.ro</p>
 </div>

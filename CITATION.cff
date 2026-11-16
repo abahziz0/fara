@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this archive, please cite the edition you used."
+type: dataset
+title: "FARA — The Arakan Village Name Archive"
+version: "1.0"
+date-released: "2026-11-16"
+authors:
+  - family-names: "Aziz"
+    given-names: "Abdul"
+    orcid: "https://orcid.org/0009-0003-8386-3740"
+doi: "10.5281/zenodo.24266548"
+url: "https://map.rohingya.ro/"
+repository-code: "https://github.com/abahziz0/fara"
+license: "CC-BY-4.0"
+abstract: "Names and locations of 1,023 Rohingya villages in Maungdaw, Buthidaung, Rathedaung and Sittwe townships of Arakan (Rakhine State, Myanmar), in Rohingya, English and Burmese, with official place codes and the results of the 2017 UNOSAT satellite analysis."
+keywords:
+  - "Rohingya"
+  - "Arakan"
+  - "Rakhine State"
+  - "Myanmar"
+  - "village names"
+  - "place names"
+  - "toponymy"
+  - "gazetteer"
+  - "Maungdaw"
+  - "Buthidaung"
+  - "Rathedaung"
+  - "Sittwe"

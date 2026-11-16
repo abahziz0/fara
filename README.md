@@ -55,7 +55,7 @@ This writes `fara.html`, one page per village, the township and A–Z index page
 
 ### Pages for search engines, AI assistants and link previews
 
-- **One page per village** at `/village/<id>-<name>/` (1,023 pages): names in three languages, location, a satellite image, nearby villages, a short question-and-answer section, how to cite, and a button into the interactive map. Each has its own title, description, link preview and structured data (`Place`, `BreadcrumbList`, `FAQPage`).
+- **One page per village** at `/village/<id>-<name>/` (1,023 pages): names in three languages, location, a satellite image, nearby villages, a short question-and-answer section, a "Cite this" section, and a button into the interactive map. Each has its own title, description, link preview and structured data (`Place`, `BreadcrumbList`, `FAQPage`).
 - **Township pages** at `/township/<name>/` and an **A–Z index** at `/villages/`.
 - `sitemap.xml` (1,029 URLs), `robots.txt` (search engines and AI crawlers welcome), `llms.txt` (a plain summary of the archive and its data for AI assistants), and `Dataset` + `WebSite` structured data on the home page.
 - The record panel's **Share Link** and Map Art captions point to the village's own page, so shared links show that village's name.
@@ -107,6 +107,30 @@ Every village carries what UNOSAT's satellite analysis of 31 August – 11 Octob
 - **Fires detected by satellite** (NASA FIRMS): for each village, the days on which NASA's fire-detecting satellites (VIIRS at 375 m, MODIS at 1 km) recorded a fire within 1 km of its recorded position, in autumn 2017 (25 Aug – 30 Nov) and autumn 2016 (9 Oct – 30 Nov). 164 villages had a detection in 2017 (149 by VIIRS alone); in the same weeks of every other year from 2013 to 2019 VIIRS never found more than 10. Days are in Myanmar time. Shown on the village record, the village page, the registry (and its CSV export), the imagery viewer ("2017 record" draws the detections with their days beside UNOSAT's zones), downloaded images, the stories and the video. A detection is heat seen from orbit: it does not say what burned, and fires under cloud are not detected. `python3 tools/match_fires.py` rebuilds `fires.json`, `fires.csv` and `fires_points.json` from the extract in `sources/nasa_firms/` (cut from NASA's country files with `--from <folder>`).
 - **Play, and video**: "Play the years" on the village record (and ▶ Play, pinned at the start of the viewer's timeline) steps from the oldest picture to the newest, each fading into the next. "Make a video" on the village record (and the Video button in the viewer, beside Picture) makes a short film of the same thing (square, wide or tall): a title card, each picture with its date on a timeline, what UNOSAT and NASA recorded in autumn 2017 where they did, and a closing card with the sources. It is drawn frame by frame and written as an MP4 in the browser (WebCodecs with the small `mp4-muxer` library from jsDelivr; where that is missing, the canvas is recorded as it plays). Nothing is uploaded.
 - **Caching**: `vercel.json` tells browsers to keep share pictures, icons and PDFs for a week, and data files and stylesheets for an hour (then refresh in the background). Pages themselves are always checked for a newer copy.
+
+## Editions, citing, methods and the change log
+
+The archive is published in **numbered editions**, so that a citation always leads to exactly the data that was cited.
+
+- **`edition.json`** is the edition being published: version, date, DOI, authors and licence. Everything else reads it.
+- **Version numbers:** the second number goes up (1.0 → 1.1) when records, names or fields are added or corrected; the first (1.x → 2.0) when the shape of the data changes in a way that could break work built on it. Record numbers (`FARA-0043`) never change and are never reused.
+- **DOI:** each edition is deposited at [Zenodo](https://zenodo.org/), which keeps it permanently and gives it a DOI. Zenodo also gives one DOI that always leads to the newest edition (`concept_doi`).
+- **"Cite this"** on every village: a button in the village record on the map, and a section on every village page, with the citation as plain text, APA, BibTeX and RIS. The wording lives in two places that must stay the same: `cite()` in `build_edition.py` and `citeFormats()` in `fara_template.html`.
+- **`/methods/`** (from `content/methods.md`): where every part of the data came from, how it was checked and corrected, and what it cannot tell you. `{{tokens}}` are filled with numbers counted from the data.
+- **`/changelog/`** (from `CHANGELOG.md`): what changed in each edition. The build stops if the newest entry is not for the version in `edition.json`.
+- **`corrections.csv`**: every change made to a value taken from the source, record by record, with date and reason. Add a row whenever a source value is changed.
+- **`CITATION.cff`** is written by the build, so GitHub shows a "Cite this repository" button.
+
+### Publishing a new edition
+
+1. Make the data changes. Add a row to `corrections.csv` for every source value changed.
+2. In `edition.json`, raise `version`, set `date`, and empty `doi`. Write the new entry at the top of `CHANGELOG.md`.
+3. At Zenodo, open the record, choose **New version**, and copy the DOI it reserves into `doi` in `edition.json`.
+4. Run `python3 build.py`, then `python3 tools/build_dataset.py` (and `python3 tools/build_pdfs.py` for the gazetteers).
+5. Upload the files in `dist/fara-v<version>/` to the Zenodo draft (all except `zenodo.json`, which lists what to type into the form) and publish it.
+6. Commit and push, so the site and the deposit say the same thing.
+
+`tools/build_dataset.py` writes the package: the data files listed under `dataset_files` in `edition.json`, with `README.md`, `METHODS.md`, `CHANGELOG.md`, `LICENSE.md`, `CITATION.cff` and checksums. It is also offered on the site as `downloads/fara-dataset-v<version>.zip`.
 
 ## Coverage
 
@@ -172,6 +196,11 @@ Every record carries the place codes the United Nations and aid agencies use for
 | `arakan_villages.csv` | Spreadsheet-friendly CSV |
 | `arakan_villages.geojson` | Point FeatureCollection (verified coordinates only) — QGIS/Leaflet/Mapbox ready |
 | `summary.json` | Counts, coverage, corrections log |
+| `edition.json` | The edition being published: version, date, DOI, authors, licence, and the files that make up the dataset |
+| `CHANGELOG.md`, `content/methods.md`, `corrections.csv` | The change log, the methods text, and every correction made to a source value |
+| `build_edition.py`, `cite.js` | Citations, the methods and change-log pages, `CITATION.cff`; the copy buttons on those pages |
+| `tools/build_dataset.py`, `content/dataset_readme.md`, `downloads/fara-dataset-v*.zip` | Packs an edition for deposit at Zenodo |
+| `methods/`, `changelog/`, `CITATION.cff` | Generated |
 | `pcodes.json`, `pcodes.csv`, `pcodes_review.csv` | Official MIMU place codes matched to every record, and the records needing review |
 | `tools/add_pcodes.py` | Writes the place codes from `pcodes.json` into the data files |
 | `build.py`, `build_extra.py` | Build the whole static site from the template and the dataset (the second: embed cards, gazetteers, stories) |

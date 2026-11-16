@@ -142,3 +142,47 @@ i.d{background:#FF3B5C}i.n{background:#FFB020}i.o{background:#5F7691}
   .sxlist{columns:1}
   .sxlist a{padding:12px 0 11px}
 }
+/* ---------- citing: the citation box on village pages and the methods page (build_edition.py, cite.js) ---------- */
+.citebox{margin-top:12px;border:1px solid var(--line);background:rgba(7,17,32,.7);position:relative}
+.citebox::before{content:"";position:absolute;left:0;top:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),transparent 60%)}
+.citefmt{padding:14px 16px 4px}
+.citefmt h3{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:34px;font-family:'Share Tech Mono',monospace;font-size:11px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:var(--text-faint)}
+.citefmt pre{margin-top:6px;padding:11px 13px;border-left:2px solid var(--cyan);background:rgba(0,229,255,.05);color:var(--text);font-family:'Space Grotesk',system-ui,sans-serif;font-size:14.5px;line-height:1.55;white-space:pre-wrap;word-break:break-word;user-select:all;-webkit-user-select:all}
+.citefmt.code pre{font-family:'Share Tech Mono',ui-monospace,monospace;font-size:12.5px;white-space:pre;overflow-x:auto;-webkit-overflow-scrolling:touch}
+#cite{scroll-margin-top:76px}
+.citecopy{flex:none;min-height:34px;padding:6px 14px;border:1px solid var(--cyan-dim);background:rgba(0,229,255,.1);color:var(--cyan);font-family:'Share Tech Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;cursor:pointer}
+.citecopy:hover{background:rgba(0,229,255,.18)}
+.citecopy:focus-visible,.citebox summary:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+.citebox details{margin-top:10px;border-top:1px solid var(--line-soft)}
+.citebox summary{padding:12px 16px;font-family:'Share Tech Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-dim);cursor:pointer}
+.citebox summary:hover{color:var(--cyan)}
+.citeed{padding:12px 16px 13px;border-top:1px solid var(--line-soft);font-family:'Share Tech Mono',monospace;font-size:12px;line-height:1.7;color:var(--text-faint)}
+.citebox details[open]+.citeed{margin-top:12px}
+.foot .ed{font-family:'Share Tech Mono',monospace;font-size:12px;color:var(--text-dim)}
+/* ---------- long reading pages: methods and the change log ---------- */
+.doc h1{margin-bottom:14px}
+.doc p{margin-top:14px;color:var(--text-dim);max-width:70ch}
+.doc p.rid{margin-top:0;color:var(--text-faint)}
+.doc p.jump,.doc p.cta{max-width:none}
+.doc h2{margin-top:44px;scroll-margin-top:76px}
+.doc h3{margin-top:26px;font-size:17px;font-weight:600;scroll-margin-top:76px}
+.doc b{color:var(--text);font-weight:600}
+.doc code{font-family:'Share Tech Mono',ui-monospace,monospace;font-size:.88em;padding:1px 5px;background:rgba(0,229,255,.07);color:var(--text);word-break:break-word}
+.doc .mdl{margin:12px 0 0 0;padding-left:20px;color:var(--text-dim);max-width:70ch}
+.doc .mdl li{margin-top:7px;padding-left:4px}
+.doc .mdl li::marker{color:var(--cyan)}
+.doc .tbl{margin-top:16px;overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line-soft)}
+.doc table{width:100%;min-width:520px;border-collapse:collapse;font-size:14.5px}
+.doc th{padding:10px 12px;text-align:left;font-family:'Share Tech Mono',monospace;font-size:11px;font-weight:400;letter-spacing:.16em;text-transform:uppercase;color:var(--text-faint);border-bottom:1px solid var(--line);white-space:nowrap}
+.doc td{padding:10px 12px;vertical-align:top;color:var(--text-dim);border-bottom:1px solid var(--line-soft)}
+.doc tr:last-child td{border-bottom:none}
+.doc td:last-child{color:var(--text)}
+.doc .citebox{max-width:70ch}
+.doc.log h2{color:var(--cyan)}
+.doc.log h3{font-family:'Share Tech Mono',monospace;font-size:12.5px;font-weight:400;letter-spacing:.16em;text-transform:uppercase;color:var(--text-dim)}
+@media print{
+  .citecopy,.citebox summary{display:none}
+  .citebox,.citefmt pre,.doc .tbl{border-color:#999;background:none;color:#000}
+  .citebox details>*{display:block}
+  .doc p,.doc td,.doc .mdl{color:#222}
+}

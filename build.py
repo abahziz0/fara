@@ -11,6 +11,8 @@ Writes:
   embed/<id>/index.html         a small card other websites can show in an iframe (build_extra.py)
   stories/<slug>/index.html     guided scrolling accounts written in content/stories/*.json (build_extra.py)
   villages/index.html           A-Z index of every village
+  methods/, changelog/          how the data was gathered and corrected, and what changed in each edition (build_edition.py)
+  CITATION.cff                  how to cite the edition named in edition.json (build_edition.py)
   sitemap.xml, robots.txt, llms.txt
   sw.js                         offline support (cache name changes whenever the site changes)
 
@@ -24,6 +26,9 @@ SITE = 'https://map.rohingya.ro'
 COLLECTED = '2 July 2026'
 TOWN_COLORS = {'Maungdaw': '#00E5FF', 'Buthidaung': '#2BF08D', 'Rathedaung': '#FFB020', 'Sittwe': '#FF4D8C'}
 ANALYTICS = '<script defer src="/_vercel/insights/script.js"></script>'
+
+import build_edition
+ED = build_edition.load(ROOT)          # the edition being published: version, date, DOI, authors (edition.json)
 
 def p(*a): return os.path.join(ROOT, *a)
 def esc(s): return html.escape(str(s if s is not None else ''), quote=True)
@@ -183,6 +188,7 @@ def embed(r):
     return d
 data = json.dumps([embed(r) for r in V], ensure_ascii=False, separators=(',', ':'))
 app = open(p('fara_template.html'), encoding='utf-8').read().replace('__VILLAGE_DATA__', data)
+app = build_edition.stamp_app(ED, app, SITE)
 write(p('fara.html'), app)
 
 # ------------------------------------------------------------------ shared page chrome
@@ -241,6 +247,7 @@ def page(path, title, desc, body, jsonld=None, og_title=None, og_image=None, og_
   <p>%(n)s villages across Maungdaw, Buthidaung, Rathedaung and Sittwe townships. Source data: <a href="https://map.rohingyakhobor.com/map" rel="noopener">Rohingya Khobor — Arakan Maps Project</a>, collected %(collected)s.
   Download the data: <a href="/arakan_villages.csv">CSV</a> · <a href="/arakan_villages.json">JSON</a> · <a href="/arakan_villages.geojson">GeoJSON</a>.</p>
   <p><a href="/">The map</a> · <a href="/villages/">All villages, A–Z</a> · <a href="/stories/">Stories</a> · Townships: <a href="/township/maungdaw/">Maungdaw</a>, <a href="/township/buthidaung/">Buthidaung</a>, <a href="/township/rathedaung/">Rathedaung</a>, <a href="/township/sittwe/">Sittwe</a></p>
+  <p class="ed">%(edition)s · <a href="/methods/">How this archive was made</a> · <a href="/changelog/">Change log</a></p>
   <p>A project by AB Aziz · <a href="mailto:ab@rohingya.ro">ab@rohingya.ro</a></p>
 </footer>
 %(analytics)s
@@ -249,7 +256,7 @@ def page(path, title, desc, body, jsonld=None, og_title=None, og_image=None, og_
 </html>
 ''' % dict(title=esc(title), desc=esc(desc), url=url, ogt=esc(og_title or title), site=SITE, ld=ld, logo=LOGO, body=body,
            ogi=og_image or (SITE + '/og.png'), oga=esc(og_alt or 'FARA — The Arakan Village Name Archive'),
-           n='{:,}'.format(N), collected=COLLECTED, analytics=ANALYTICS, cssv=CSS_V)
+           n='{:,}'.format(N), collected=COLLECTED, analytics=ANALYTICS, cssv=CSS_V, edition=build_edition.edition_line(ED))
 
 def crumbs(items):
     out = []
@@ -333,7 +340,7 @@ for v in V:
     body += '<p class="cta"><a class="btn primary" href="/#v=%d">Open on the interactive map</a>' % v['id']
     if v['id'] in STORY: body += '<a class="btn" href="%s">Its story in 2017</a>' % STORY[v['id']]
     if not unv: body += '<a class="btn" href="https://www.google.com/maps?q=%.6f,%.6f" rel="noopener">Google Maps</a>' % (float(v['lat']), float(v['lng']))
-    body += '<a class="btn" href="/#v=%d&amp;suggest">Suggest a name or correction</a></p>' % v['id']
+    body += '<a class="btn" href="/#v=%d&amp;suggest">Suggest a name or correction</a><a class="btn" href="#cite">Cite this</a></p>' % v['id']
     body += img
     body += '<h2>Names</h2>' + tbl(rows_names) + '<h2>Location</h2>' + tbl(rows_loc)
     pc_rows, pc_notes = pcode_rows(v)
@@ -360,8 +367,8 @@ for v in V:
     body += ('<h2>Show this village on your own site</h2><p class="note">Paste this code into a web page to show a small card for %s that links back to this record. It is free to use.</p>'
              '<pre class="embedcode"><code>%s</code></pre>' % (esc(name), esc(build_extra.embed_code(EXTRA, v))))
     body += ('<h2>About this record</h2><p class="note">This record comes from the <a href="https://map.rohingyakhobor.com/map" rel="noopener">Rohingya Khobor — Arakan Maps Project</a>, collected on %s. '
-             'Records with known problems are flagged, never silently altered. To cite it: <span class="cite">FARA — The Arakan Village Name Archive, record %s, “%s”, %s%s.</span></p>'
-             % (COLLECTED, rid(v), esc(name), SITE, vurl(v)))
+             'Records with known problems are flagged, never silently altered: <a href="/methods/">how this archive was made</a>.</p>' % COLLECTED)
+    body += build_edition.village_cite(ED, SITE, v, SITE + vurl(v))
 
     place = {'@context': 'https://schema.org', '@type': 'Place', '@id': SITE + vurl(v), 'name': name, 'url': SITE + vurl(v),
              'identifier': rid(v), 'description': lede,
@@ -424,9 +431,12 @@ write(p('villages', 'index.html'), page('/villages/', 'All %s Rohingya villages 
 n_embed = build_extra.build_embeds(EXTRA)
 n_gaz = build_extra.build_gazetteers(EXTRA)
 
+# ------------------------------------------------------------------ methods, change log, CITATION.cff
+edition_paths = build_edition.build_pages(EXTRA, ED)
+
 # ------------------------------------------------------------------ sitemap, robots, llms.txt
 today = date.today().isoformat()
-urls = ([('/', '1.0'), ('/villages/', '0.8')] + [(turl(t), '0.8') for t in towns] + [(turl(t) + 'gazetteer/', '0.7') for t in towns]
+urls = ([('/', '1.0'), ('/villages/', '0.8')] + [(ep, '0.7') for ep in edition_paths] + [(turl(t), '0.8') for t in towns] + [(turl(t) + 'gazetteer/', '0.7') for t in towns]
         + ([('/stories/', '0.8')] + [(sp, '0.8') for sp in story_paths] if story_paths else []) + [(vurl(v), '0.6') for v in V])
 write(p('sitemap.xml'), '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(
     '  <url><loc>%s%s</loc><lastmod>%s</lastmod><priority>%s</priority></url>\n' % (SITE, u, today, pr) for u, pr in urls) + '</urlset>\n')
@@ -492,9 +502,16 @@ Rohingya village names are being renamed, depopulated and removed from official 
 - [Satellite capture dates per village](%(site)s/captures.json): for each village, the dates of the images Esri's World Imagery Wayback archive holds (looked up by tools/build_captures.py).
 - [Township and village-tract boundaries](%(site)s/boundaries.json): from UN OCHA's COD-AB dataset for Myanmar (source MIMU), CC BY-IGO; approximate, about 1:250,000.
 
-## Citing
-Cite a record as: FARA — The Arakan Village Name Archive, record FARA-<id>, "<village name>", followed by the page URL.
-''' % dict(n='{:,}'.format(N), collected=COLLECTED, site=SITE,
+## Editions, methods and citing
+- This is edition %(ed_version)s of %(ed_date)s%(ed_doi)s. The archive is published in numbered editions so that a citation always leads to the same data.
+- [How this archive was made](%(site)s/methods/): where every part of the data came from, how it was checked and corrected, and what it cannot tell you.
+- [Change log](%(site)s/changelog/): what changed in each edition. [Corrections, record by record (CSV)](%(site)s/corrections.csv). [The edition as data](%(site)s/edition.json).
+- Cite the archive as: %(cite_all)s
+- Cite one village by naming its record and the edition, for example: %(cite_one)s
+- Every village page has a "Cite this" section with the citation in plain text, APA, BibTeX and RIS.
+''' % dict(ed_version=ED['version'], ed_date=ED['date_long'], ed_doi=', DOI https://doi.org/' + ED['doi'] if ED['doi'] else '',
+           cite_all=build_edition.cite(ED, SITE)['plain'], cite_one=build_edition.cite(ED, SITE, V[0], SITE + vurl(V[0]))['plain'],
+           n='{:,}'.format(N), collected=COLLECTED, site=SITE,
            towns=', '.join('%s (%d)' % (t, sum(1 for v in V if v.get('township') == t)) for t in towns),
            with_pc='{:,}'.format(sum(1 for v in V if v.get('pcode_village'))), pc_source=PCODE_SOURCE,
            n_fire=(FIRES_META.get('villages_with_fire') or {}).get('2017', 0),
@@ -513,7 +530,8 @@ if os.path.exists(sw_src):
     h = hashlib.sha256()
     for f in ('fara.html', 'wards.js', 'pages.css', 'fires_points.json', 'gazetteer.css', 'stories.css', 'stories.js', 'captures.json', 'boundaries.json', 'sw.template.js'):
         if os.path.exists(p(f)): h.update(open(p(f), 'rb').read())
+    h.update(open(p('edition.json'), 'rb').read())          # a new edition is a new release too
     write(p('sw.js'), open(sw_src, encoding='utf-8').read().replace('__VERSION__', h.hexdigest()[:12]))
 
-print('built: fara.html, %d village pages, %d township pages, %d embed cards, %d gazetteers, %d stories, sitemap (%d urls), robots.txt, llms.txt%s'
-      % (N, len(towns), n_embed, n_gaz, n_story, len(urls), ', sw.js' if os.path.exists(sw_src) else ''))
+print('built: edition %s, fara.html, %d village pages, %d township pages, %d embed cards, %d gazetteers, %d stories, methods, change log, sitemap (%d urls), robots.txt, llms.txt%s'
+      % (ED['version'], N, len(towns), n_embed, n_gaz, n_story, len(urls), ', sw.js' if os.path.exists(sw_src) else ''))
