@@ -55,7 +55,7 @@ This writes `fara.html`, one page per village, the township and A–Z index page
 
 ### Pages for search engines, AI assistants and link previews
 
-- **One page per village** at `/village/<id>-<name>/` (1,023 pages): names in three languages, location, a satellite image, nearby villages, a short question-and-answer section, how to cite, and a button into the interactive map. Each has its own title, description, link preview and structured data (`Place`, `BreadcrumbList`, `FAQPage`).
+- **One page per village** at `/village/<id>-<name>/` (1,023 pages): names in three languages, location, a satellite image, nearby villages, a short question-and-answer section, a "Cite this" section, and a button into the interactive map. Each has its own title, description, link preview and structured data (`Place`, `BreadcrumbList`, `FAQPage`).
 - **Township pages** at `/township/<name>/` and an **A–Z index** at `/villages/`.
 - `sitemap.xml` (1,029 URLs), `robots.txt` (search engines and AI crawlers welcome), `llms.txt` (a plain summary of the archive and its data for AI assistants), and `Dataset` + `WebSite` structured data on the home page.
 - The record panel's **Share Link** and Map Art captions point to the village's own page, so shared links show that village's name.
@@ -105,6 +105,30 @@ Every village carries what UNOSAT's satellite analysis of 31 August – 11 Octob
   - *Found by search engines*: every story has its own title and description (no two alike), one H1, Article and Breadcrumb structured data, a link preview picture, and is in `sitemap.xml`. Each village page, township page and village record links to its story; each story links to its village, township, four neighbouring stories and the next and previous story.
   - *Fast*: the text is in the page and shows before any script runs; scripts are deferred; what all stories share (village dots, township borders) is one cached file, `stories/data.js`; the destroyed zones around a village travel inside its page; the pictures for the next step are fetched while the reader is still on the current one. A first visit to a village story is about 40 KB compressed, plus the map library and tiles.
 - **Caching**: `vercel.json` tells browsers to keep share pictures, icons and PDFs for a week, and data files and stylesheets for an hour (then refresh in the background). Pages themselves are always checked for a newer copy.
+
+## Editions, citing, methods and the change log
+
+The archive is published in **numbered editions**, so that a citation always leads to exactly the data that was cited.
+
+- **`edition.json`** is the edition being published: version, date, DOI, authors and licence. Everything else reads it.
+- **Version numbers:** the second number goes up (1.0 → 1.1) when records, names or fields are added or corrected; the first (1.x → 2.0) when the shape of the data changes in a way that could break work built on it. Record numbers (`FARA-0043`) never change and are never reused.
+- **DOI:** each edition is deposited at [Zenodo](https://zenodo.org/), which keeps it permanently and gives it a DOI. Zenodo also gives one DOI that always leads to the newest edition (`concept_doi`).
+- **"Cite this"** on every village: a button in the village record on the map, and a section on every village page, with the citation as plain text, APA, BibTeX and RIS. The wording lives in two places that must stay the same: `cite()` in `build_edition.py` and `citeFormats()` in `fara_template.html`.
+- **`/methods/`** (from `content/methods.md`): where every part of the data came from, how it was checked and corrected, and what it cannot tell you. `{{tokens}}` are filled with numbers counted from the data.
+- **`/changelog/`** (from `CHANGELOG.md`): what changed in each edition. The build stops if the newest entry is not for the version in `edition.json`.
+- **`corrections.csv`**: every change made to a value taken from the source, record by record, with date and reason. Add a row whenever a source value is changed.
+- **`CITATION.cff`** is written by the build, so GitHub shows a "Cite this repository" button.
+
+### Publishing a new edition
+
+1. Make the data changes. Add a row to `corrections.csv` for every source value changed.
+2. In `edition.json`, raise `version`, set `date`, and empty `doi`. Write the new entry at the top of `CHANGELOG.md`.
+3. At Zenodo, open the record, choose **New version**, and copy the DOI it reserves into `doi` in `edition.json`.
+4. Run `python3 build.py`, then `python3 tools/build_dataset.py` (and `python3 tools/build_pdfs.py` for the gazetteers).
+5. Upload the files in `dist/fara-v<version>/` to the Zenodo draft (all except `zenodo.json`, which lists what to type into the form) and publish it.
+6. Commit and push, so the site and the deposit say the same thing.
+
+`tools/build_dataset.py` writes the package: the data files listed under `dataset_files` in `edition.json`, with `README.md`, `METHODS.md`, `CHANGELOG.md`, `LICENSE.md`, `CITATION.cff` and checksums. It is also offered on the site as `downloads/fara-dataset-v<version>.zip`.
 
 ## Coverage
 
@@ -170,6 +194,11 @@ Every record carries the place codes the United Nations and aid agencies use for
 | `arakan_villages.csv` | Spreadsheet-friendly CSV |
 | `arakan_villages.geojson` | Point FeatureCollection (verified coordinates only) — QGIS/Leaflet/Mapbox ready |
 | `summary.json` | Counts, coverage, corrections log |
+| `edition.json` | The edition being published: version, date, DOI, authors, licence, and the files that make up the dataset |
+| `CHANGELOG.md`, `content/methods.md`, `corrections.csv` | The change log, the methods text, and every correction made to a source value |
+| `build_edition.py`, `cite.js` | Citations, the methods and change-log pages, `CITATION.cff`; the copy buttons on those pages |
+| `tools/build_dataset.py`, `content/dataset_readme.md`, `downloads/fara-dataset-v*.zip` | Packs an edition for deposit at Zenodo |
+| `methods/`, `changelog/`, `CITATION.cff` | Generated |
 | `pcodes.json`, `pcodes.csv`, `pcodes_review.csv` | Official MIMU place codes matched to every record, and the records needing review |
 | `tools/add_pcodes.py` | Writes the place codes from `pcodes.json` into the data files |
 | `build.py`, `build_extra.py` | Build the whole static site from the template and the dataset (the second: embed cards, gazetteers, stories) |
