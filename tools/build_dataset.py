@@ -91,7 +91,8 @@ def main():
     table = '| File | What it holds |\n|---|---|\n' + ''.join('| `%s` | %s |\n' % (f, d) for f, d in files + docs)
     lic_para = be.licence_paragraph(ed)
     tk.update(licence_paragraph=lic_para, cite_dataset='> ' + cite['plain'], file_table=table.rstrip(),
-              doi_sentence=be.doi_sentence(ed), doi_line=' · DOI https://doi.org/' + ed['doi'] if ed['doi'] else '')
+              doi_sentence=be.doi_sentence(dict(ed, concept_doi='')),      # a deposited edition cannot name the all-versions DOI: Zenodo shows it only after publishing
+              doi_line=' · DOI https://doi.org/' + ed['doi'] if ed['doi'] else '')
     out = {}
     out['README.md'] = links(be.fill(open(p('content', 'dataset_readme.md'), encoding='utf-8').read(), tk), c.SITE)
     out['METHODS.md'] = links(be.fill(open(p('content', 'methods.md'), encoding='utf-8').read(), tk), c.SITE)
