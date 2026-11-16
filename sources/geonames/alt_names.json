@@ -1,0 +1,1152 @@
+{
+"meta": {
+"source": "GeoNames, https://www.geonames.org/ (CC BY 4.0), country file MM",
+"rule": "populated place within 700 m whose name matches the official name; other Latin-script spellings kept"
+},
+"villages": {
+"6": {
+"geonameid": 1328980,
+"metres": 283,
+"names": [
+"Adet-hngetthe",
+"Atet Ngetthe",
+"Ngetthe"
+]
+},
+"22": {
+"geonameid": 1294878,
+"metres": 0,
+"names": [
+"Talubya"
+]
+},
+"29": {
+"geonameid": 1295331,
+"metres": 0,
+"names": [
+"Dabyugyi-ywa",
+"Tabrugri"
+]
+},
+"32": {
+"geonameid": 1328638,
+"metres": 125,
+"names": [
+"Badaga"
+]
+},
+"39": {
+"geonameid": 1328637,
+"metres": 160,
+"names": [
+"Badana"
+]
+},
+"40": {
+"geonameid": 1299533,
+"metres": 1,
+"names": [
+"Prinkhaung"
+]
+},
+"51": {
+"geonameid": 1300976,
+"metres": 0,
+"names": [
+"Paungdawbyin"
+]
+},
+"54": {
+"geonameid": 1326989,
+"metres": 0,
+"names": [
+"Dabrugyaung"
+]
+},
+"66": {
+"geonameid": 1303223,
+"metres": 77,
+"names": [
+"Obru"
+]
+},
+"77": {
+"geonameid": 1323626,
+"metres": 223,
+"names": [
+"Hparabyin"
+]
+},
+"81": {
+"geonameid": 1323535,
+"metres": 344,
+"names": [
+"Hpayabyin Theindan"
+]
+},
+"82": {
+"geonameid": 1323535,
+"metres": 0,
+"names": [
+"Hpayabyin Theindan"
+]
+},
+"93": {
+"geonameid": 1323475,
+"metres": 187,
+"names": [
+"Ponnyoleik"
+]
+},
+"94": {
+"geonameid": 1323475,
+"metres": 256,
+"names": [
+"Ponnyoleik"
+]
+},
+"109": {
+"geonameid": 1284300,
+"metres": 109,
+"names": [
+"Zadidaung",
+"Zedidaung"
+]
+},
+"114": {
+"geonameid": 1312775,
+"metres": 0,
+"names": [
+"Lunchaung",
+"Lwangyaung"
+]
+},
+"124": {
+"geonameid": 1319035,
+"metres": 219,
+"names": [
+"Kindaung",
+"Kyar Nyo Pyin"
+]
+},
+"142": {
+"geonameid": 1316421,
+"metres": 200,
+"names": [
+"Kyaungdaung Bazar"
+]
+},
+"163": {
+"geonameid": 1295878,
+"metres": 92,
+"names": [
+"Sinzweya"
+]
+},
+"180": {
+"geonameid": 1310266,
+"metres": 167,
+"names": [
+"Mannggyidaung",
+"Maunggyihtaung"
+]
+},
+"182": {
+"geonameid": 1295996,
+"metres": 0,
+"names": [
+"Sin-obyin",
+"Sin-ohbyin"
+]
+},
+"192": {
+"geonameid": 13641385,
+"metres": 0,
+"names": [
+"Lin Bar Si Li"
+]
+},
+"195": {
+"geonameid": 1301421,
+"metres": 261,
+"names": [
+"Panphaigyaung"
+]
+},
+"206": {
+"geonameid": 1316155,
+"metres": 138,
+"names": [
+"Kyenokthe",
+"Kyinokthi"
+]
+},
+"212": {
+"geonameid": 1328701,
+"metres": 49,
+"names": [
+"Awlanbyin"
+]
+},
+"213": {
+"geonameid": 1328701,
+"metres": 423,
+"names": [
+"Awlanbyin"
+]
+},
+"219": {
+"geonameid": 1303048,
+"metres": 278,
+"names": [
+"Oktaung"
+]
+},
+"240": {
+"geonameid": 1324958,
+"metres": 0,
+"names": [
+"Hkamwe",
+"Hkamweywa",
+"Kamweywa"
+]
+},
+"243": {
+"geonameid": 1297939,
+"metres": 0,
+"names": [
+"Sannyinwe",
+"Sannyinweywa"
+]
+},
+"250": {
+"geonameid": 1293851,
+"metres": 129,
+"names": [
+"Taungmaw"
+]
+},
+"254": {
+"geonameid": 1297421,
+"metres": 1,
+"names": [
+"Seinnyinbya"
+]
+},
+"265": {
+"geonameid": 1322072,
+"metres": 96,
+"names": [
+"In-gyaung-ywa",
+"Ingyaung"
+]
+},
+"295": {
+"geonameid": 1317636,
+"metres": 114,
+"names": [
+"Gwazon",
+"Kwazon"
+]
+},
+"296": {
+"geonameid": 1317636,
+"metres": 263,
+"names": [
+"Gwazon",
+"Kwazon"
+]
+},
+"313": {
+"geonameid": 1291946,
+"metres": 60,
+"names": [
+"Thaze",
+"Thazeywa"
+]
+},
+"321": {
+"geonameid": 1284082,
+"metres": 316,
+"names": [
+"Zedidaung"
+]
+},
+"322": {
+"geonameid": 1284082,
+"metres": 83,
+"names": [
+"Zedidaung"
+]
+},
+"325": {
+"geonameid": 1298830,
+"metres": 0,
+"names": [
+"Ramupara",
+"Yamubaya"
+]
+},
+"340": {
+"geonameid": 1327113,
+"metres": 1,
+"names": [
+"Chiradan"
+]
+},
+"349": {
+"geonameid": 1303721,
+"metres": 9,
+"names": [
+"Nyaungbingyi"
+]
+},
+"370": {
+"geonameid": 13627782,
+"metres": 451,
+"names": [
+"Chein Khar Li Lower"
+]
+},
+"381": {
+"geonameid": 1317605,
+"metres": 416,
+"names": [
+"Kwemi"
+]
+},
+"374": {
+"geonameid": 1326325,
+"metres": 134,
+"names": [
+"Doedan"
+]
+},
+"396": {
+"geonameid": 1329199,
+"metres": 86,
+"names": [
+"Amtuila"
+]
+},
+"400": {
+"geonameid": 1322160,
+"metres": 487,
+"names": [
+"Indin"
+]
+},
+"417": {
+"geonameid": 1321360,
+"metres": 83,
+"names": [
+"Kaladeva",
+"Kalarua"
+]
+},
+"432": {
+"geonameid": 1309396,
+"metres": 0,
+"names": [
+"Midaik"
+]
+},
+"441": {
+"geonameid": 1316859,
+"metres": 39,
+"names": [
+"Kyaukpanduywama"
+]
+},
+"471": {
+"geonameid": 1315640,
+"metres": 0,
+"names": [
+"Kyunbouk"
+]
+},
+"489": {
+"geonameid": 1310265,
+"metres": 0,
+"names": [
+"Maunghnama"
+]
+},
+"492": {
+"geonameid": 6416856,
+"metres": 315,
+"names": [
+"Midaik"
+]
+},
+"493": {
+"geonameid": 6416925,
+"metres": 0,
+"names": [
+"Reaungyaung"
+]
+},
+"495": {
+"geonameid": 1309231,
+"metres": 443,
+"names": [
+"Mingalagyi",
+"Pyinbyu"
+]
+},
+"506": {
+"geonameid": 1329167,
+"metres": 686,
+"names": [
+"Anauk Myinhlut",
+"Myinhlut ashe"
+]
+},
+"507": {
+"geonameid": 1329167,
+"metres": 465,
+"names": [
+"Anauk Myinhlut",
+"Myinhlut ashe"
+]
+},
+"508": {
+"geonameid": 1329167,
+"metres": 135,
+"names": [
+"Anauk Myinhlut",
+"Myinhlut ashe"
+]
+},
+"509": {
+"geonameid": 1329167,
+"metres": 175,
+"names": [
+"Anauk Myinhlut",
+"Myinhlut ashe"
+]
+},
+"513": {
+"geonameid": 1308444,
+"metres": 65,
+"names": [
+"Mromigyaung"
+]
+},
+"529": {
+"geonameid": 1298857,
+"metres": 0,
+"names": [
+"Rajabil"
+]
+},
+"530": {
+"geonameid": 1298857,
+"metres": 565,
+"names": [
+"Rajabil"
+]
+},
+"542": {
+"geonameid": 1304659,
+"metres": 0,
+"names": [
+"Ngakura"
+]
+},
+"546": {
+"geonameid": 1304548,
+"metres": 249,
+"names": [
+"Ngangyaung"
+]
+},
+"551": {
+"geonameid": 1304915,
+"metres": 522,
+"names": [
+"Nawrondaung"
+]
+},
+"555": {
+"geonameid": 1303450,
+"metres": 0,
+"names": [
+"Nyaunggyaung"
+]
+},
+"532": {
+"geonameid": 1314702,
+"metres": 0,
+"names": [
+"Laungbok"
+]
+},
+"574": {
+"geonameid": 1299528,
+"metres": 0,
+"names": [
+"Pruma"
+]
+},
+"575": {
+"geonameid": 1298641,
+"metres": 165,
+"names": [
+"Sabaigon"
+]
+},
+"588": {
+"geonameid": 1320251,
+"metres": 0,
+"names": [
+"Kappagaung"
+]
+},
+"600": {
+"geonameid": 1297258,
+"metres": 238,
+"names": [
+"Shabe Bazar",
+"Tamantha"
+]
+},
+"617": {
+"geonameid": 1317638,
+"metres": 29,
+"names": [
+"Kwason"
+]
+},
+"627": {
+"geonameid": 1309236,
+"metres": 0,
+"names": [
+"Mingala"
+]
+},
+"633": {
+"geonameid": 6416870,
+"metres": 0,
+"names": [
+"Kyundaung"
+]
+},
+"637": {
+"geonameid": 6416846,
+"metres": 0,
+"names": [
+"Maulvi"
+]
+},
+"638": {
+"geonameid": 6416851,
+"metres": 285,
+"names": [
+"Shambala"
+]
+},
+"639": {
+"geonameid": 6416851,
+"metres": 476,
+"names": [
+"Shambala"
+]
+},
+"651": {
+"geonameid": 1291517,
+"metres": 349,
+"names": [
+"Thinbawgwe"
+]
+},
+"661": {
+"geonameid": 13627754,
+"metres": 0,
+"names": [
+"Ko Yi"
+]
+},
+"667": {
+"geonameid": 1290178,
+"metres": 0,
+"names": [
+"Ushingya",
+"Ushingyaywa"
+]
+},
+"675": {
+"geonameid": 1318070,
+"metres": 622,
+"names": [
+"Kretyobyin"
+]
+},
+"679": {
+"geonameid": 1285406,
+"metres": 0,
+"names": [
+"Yedwingyun"
+]
+},
+"694": {
+"geonameid": 1284352,
+"metres": 0,
+"names": [
+"Ywathitke"
+]
+},
+"695": {
+"geonameid": 1284313,
+"metres": 341,
+"names": [
+"Ywetnyodaung",
+"Ywetnyoduang"
+]
+},
+"696": {
+"geonameid": 1284313,
+"metres": 514,
+"names": [
+"Ywetnyodaung",
+"Ywetnyoduang"
+]
+},
+"697": {
+"geonameid": 1284313,
+"metres": 46,
+"names": [
+"Ywetnyodaung",
+"Ywetnyoduang"
+]
+},
+"698": {
+"geonameid": 1284313,
+"metres": 197,
+"names": [
+"Ywetnyodaung",
+"Ywetnyoduang"
+]
+},
+"700": {
+"geonameid": 1325118,
+"metres": 302,
+"names": [
+"Hinthaya"
+]
+},
+"704": {
+"geonameid": 13628136,
+"metres": 360,
+"names": [
+"Sin Na Mar"
+]
+},
+"705": {
+"geonameid": 1284155,
+"metres": 3,
+"names": [
+"Zawmadat"
+]
+},
+"706": {
+"geonameid": 13643860,
+"metres": 0,
+"names": [
+"Song Khu Lar"
+]
+},
+"714": {
+"geonameid": 13641290,
+"metres": 0,
+"names": [
+"Thar Zi Kone"
+]
+},
+"815": {
+"geonameid": 1329166,
+"metres": 101,
+"names": [
+"Anaukpyin"
+]
+},
+"820": {
+"geonameid": 1318631,
+"metres": 88,
+"names": [
+"Kondan"
+]
+},
+"821": {
+"geonameid": 1328914,
+"metres": 101,
+"names": [
+"Auk Nanra",
+"Nanra"
+]
+},
+"823": {
+"geonameid": 1296299,
+"metres": 424,
+"names": [
+"Sinbaik"
+]
+},
+"826": {
+"geonameid": 1328756,
+"metres": 70,
+"names": [
+"Aungzeik"
+]
+},
+"829": {
+"geonameid": 1328418,
+"metres": 85,
+"names": [
+"Batarai"
+]
+},
+"831": {
+"geonameid": 1327800,
+"metres": 217,
+"names": [
+"Byaingdaung"
+]
+},
+"835": {
+"geonameid": 1326299,
+"metres": 102,
+"names": [
+"Donbaik"
+]
+},
+"836": {
+"geonameid": 1325802,
+"metres": 109,
+"names": [
+"Gwazon"
+]
+},
+"838": {
+"geonameid": 1292953,
+"metres": 114,
+"names": [
+"Thabyedaw"
+]
+},
+"840": {
+"geonameid": 1298910,
+"metres": 113,
+"names": [
+"Pyuchaung"
+]
+},
+"842": {
+"geonameid": 1322629,
+"metres": 146,
+"names": [
+"Htizwe"
+]
+},
+"846": {
+"geonameid": 1320373,
+"metres": 182,
+"names": [
+"Kanyingyaung"
+]
+},
+"849": {
+"geonameid": 1320908,
+"metres": 259,
+"names": [
+"Kanbyin"
+]
+},
+"850": {
+"geonameid": 1319354,
+"metres": 417,
+"names": [
+"Ketchaung"
+]
+},
+"858": {
+"geonameid": 1296828,
+"metres": 481,
+"names": [
+"Shinkhali"
+]
+},
+"860": {
+"geonameid": 1318807,
+"metres": 0,
+"names": [
+"Kodingauk"
+]
+},
+"863": {
+"geonameid": 1318630,
+"metres": 279,
+"names": [
+"Kondan"
+]
+},
+"864": {
+"geonameid": 1318630,
+"metres": 273,
+"names": [
+"Kondan"
+]
+},
+"866": {
+"geonameid": 1321373,
+"metres": 100,
+"names": [
+"Kalachaung"
+]
+},
+"867": {
+"geonameid": 1318040,
+"metres": 12,
+"names": [
+"Kudaung"
+]
+},
+"875": {
+"geonameid": 13627644,
+"metres": 82,
+"names": [
+"Da Pyu Chaung"
+]
+},
+"884": {
+"geonameid": 1316170,
+"metres": 152,
+"names": [
+"Kyeintha"
+]
+},
+"890": {
+"geonameid": 1303841,
+"metres": 115,
+"names": [
+"Nwatingok"
+]
+},
+"902": {
+"geonameid": 1309069,
+"metres": 45,
+"names": [
+"Minyohtaung"
+]
+},
+"909": {
+"geonameid": 1307889,
+"metres": 0,
+"names": [
+"Myinbu"
+]
+},
+"917": {
+"geonameid": 1308869,
+"metres": 239,
+"names": [
+"Moke Soe Chaung",
+"Moksogyaung",
+"Moksogyaungywa"
+]
+},
+"927": {
+"geonameid": 13605703,
+"metres": 144,
+"names": [
+"Hnin Si Kone"
+]
+},
+"928": {
+"geonameid": 1325762,
+"metres": 0,
+"names": [
+"Gwedauk",
+"Gwedaukchaung",
+"Khway Tauk Chaung"
+]
+},
+"930": {
+"geonameid": 1303736,
+"metres": 131,
+"names": [
+"Nyaungbingale"
+]
+},
+"932": {
+"geonameid": 1320906,
+"metres": 74,
+"names": [
+"Kanbyin"
+]
+},
+"934": {
+"geonameid": 1303194,
+"metres": 230,
+"names": [
+"Oe Hpauk",
+"Ohpauk",
+"Ohpaukywa"
+]
+},
+"942": {
+"geonameid": 1317103,
+"metres": 100,
+"names": [
+"Kyaukchaung"
+]
+},
+"948": {
+"geonameid": 1300904,
+"metres": 119,
+"names": [
+"Paungza"
+]
+},
+"964": {
+"geonameid": 1299534,
+"metres": 0,
+"names": [
+"Prindaw"
+]
+},
+"967": {
+"geonameid": 1299532,
+"metres": 228,
+"names": [
+"Prinshe",
+"Sa Hpo Kyun",
+"Sahpogyun"
+]
+},
+"970": {
+"geonameid": 1298643,
+"metres": 37,
+"names": [
+"Sabahta",
+"Sabanta"
+]
+},
+"971": {
+"geonameid": 1298587,
+"metres": 304,
+"names": [
+"Sabyinchaung"
+]
+},
+"972": {
+"geonameid": 1298583,
+"metres": 50,
+"names": [
+"Sabyingyi"
+]
+},
+"973": {
+"geonameid": 1297899,
+"metres": 0,
+"names": [
+"Sa-o-gya"
+]
+},
+"976": {
+"geonameid": 1296141,
+"metres": 653,
+"names": [
+"Singondaing"
+]
+},
+"977": {
+"geonameid": 1296141,
+"metres": 381,
+"names": [
+"Singondaing"
+]
+},
+"979": {
+"geonameid": 1295711,
+"metres": 143,
+"names": [
+"Some"
+]
+},
+"988": {
+"geonameid": 1291947,
+"metres": 127,
+"names": [
+"Thaze"
+]
+},
+"989": {
+"geonameid": 1292263,
+"metres": 94,
+"names": [
+"Thaungdara"
+]
+},
+"994": {
+"geonameid": 1291746,
+"metres": 0,
+"names": [
+"Theindaung"
+]
+},
+"998": {
+"geonameid": 1291394,
+"metres": 21,
+"names": [
+"Thitkado"
+]
+},
+"1001": {
+"geonameid": 1290288,
+"metres": 88,
+"names": [
+"Uga",
+"Uga-ywa"
+]
+},
+"1006": {
+"geonameid": 1298777,
+"metres": 162,
+"names": [
+"Regaunggyaung"
+]
+},
+"1013": {
+"geonameid": 1284944,
+"metres": 0,
+"names": [
+"Yezogyaung"
+]
+},
+"1019": {
+"geonameid": 1328988,
+"metres": 66,
+"names": [
+"Atet Kyaungdaung",
+"Sedibyin"
+]
+},
+"1020": {
+"geonameid": 1328870,
+"metres": 51,
+"names": [
+"Auk Zigaing",
+"Zigaing"
+]
+},
+"716": {
+"geonameid": 1329190,
+"metres": 627,
+"names": [
+"Amyingyun"
+]
+},
+"721": {
+"geonameid": 1304496,
+"metres": 550,
+"names": [
+"Ngapun"
+]
+},
+"729": {
+"geonameid": 1326998,
+"metres": 113,
+"names": [
+"Dabaing"
+]
+},
+"742": {
+"geonameid": 1327450,
+"metres": 209,
+"names": [
+"Chaungne",
+"Chayngne"
+]
+},
+"750": {
+"geonameid": 1319325,
+"metres": 108,
+"names": [
+"Khadinbaik"
+]
+},
+"752": {
+"geonameid": 1285339,
+"metres": 154,
+"names": [
+"Yegyanbyin"
+]
+},
+"754": {
+"geonameid": 1320039,
+"metres": 142,
+"names": [
+"Kaungdaga"
+]
+},
+"760": {
+"geonameid": 1316075,
+"metres": 85,
+"names": [
+"Kyettawbyin"
+]
+},
+"762": {
+"geonameid": 1316557,
+"metres": 260,
+"names": [
+"Kyauktan"
+]
+},
+"763": {
+"geonameid": 1315434,
+"metres": 82,
+"names": [
+"Kywede"
+]
+},
+"769": {
+"geonameid": 1310085,
+"metres": 130,
+"names": [
+"Mawnubyin"
+]
+},
+"773": {
+"geonameid": 1305880,
+"metres": 93,
+"names": [
+"Narigan"
+]
+},
+"776": {
+"geonameid": 1302780,
+"metres": 318,
+"names": [
+"Padah",
+"Padali"
+]
+},
+"805": {
+"geonameid": 1290028,
+"metres": 59,
+"names": [
+"Wabo"
+]
+},
+"807": {
+"geonameid": 1284353,
+"metres": 0,
+"names": [
+"Yawathitke",
+"Ywathitke"
+]
+}
+}
+}

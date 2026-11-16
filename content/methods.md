@@ -97,6 +97,35 @@ Read these results with care too.
 
 `fires.csv` has one row per village and autumn. `fires.json` adds every single detection with its time, distance, confidence and strength. `fires_points.json` holds all {{fire_points}} detections of the two autumns in the area, whether or not a village is near. The script is `tools/match_fires.py`.
 
+## Old maps, United Nations reports and other spellings
+
+These are shown on the website and offered as separate files. They are not part of the village records, and they do not change any record.
+
+### Old maps
+
+The old-map layer is made of sixteen Survey of India sheets in two periods: five one-inch sheets surveyed between 1890 and 1906, and seven one-inch sheets of 1925 to 1936 with four half-inch sheets of 1926 to 1942 where no one-inch sheet is available. The scans were made and placed on modern coordinates by the Old Survey of India Maps community and Horst Held, who share them under CC BY 4.0. A one-inch sheet of 1890 for the hills north of Buthidaung was left out because it is almost blank.
+
+How the sheets are placed, and how the placement was checked:
+
+- Each sheet is placed by its four corners. Two known corrections are part of that. Sheets printed before 1905 carry longitudes 2 minutes 27 seconds too far east, because of the value then used for the Madras Observatory. And all the sheets use the Everest figure of the Earth, which at this place differs from today's coordinates (WGS 84) by about 280 metres east to west and 100 metres north to south.
+- Paper stretches unevenly, so inside a sheet a place can drift from where the corners put it. Ten of the sixteen sheets print their latitude and longitude grid every five minutes. On those, FARA found each grid line along its length and warped the picture so that every line falls where its latitude or longitude says. Before this, grid lines were up to 156 metres out on the 1891 sheet, up to 32 metres on the one-inch sheets of 1925 to 1936, and up to 57 metres on the half-inch sheets. Afterwards they are within 5 metres on every sheet.
+- Six sheets print no such grid: four sheets of 1904 and 1905, and two wartime reprints of 1942. They are placed by their corners only.
+- Every sheet was then compared with today's roads, rivers and coast from OpenStreetMap and with satellite pictures. The streets of Akyab (Sittwe) on the 1925 sheet lie within about 15 metres of today's streets. Creeks and river banks on the other sheets, including the six without a grid, lie within about 10 to 40 metres where they were checked.
+
+What to keep in mind: a one-inch map was drawn to about 30 metres at best, and a half-inch map to about 60. Rivers and coasts have moved in a century. St Martin's Island on the 1904 sheet lies about 60 to 150 metres from today's outline. The spellings are the surveyors' own. A village missing from an old sheet was not necessarily absent.
+
+The scripts are `tools/oldmaps_fetch.py` (takes only the needed sheets from the published archives), `tools/oldmaps_refine.py` (the grid correction, with the error before and after for each sheet) and `tools/oldmaps_tile.py` (cuts the map tiles). `oldmaps/sheets.json` lists every sheet used and whether it was corrected to its grid. `old_maps.csv` says, for each village, which period covers its position.
+
+### United Nations reports
+
+Where a United Nations report names a village or village tract of this archive, the village record carries a short line saying what the report found, with a link and the paragraph numbers. The lines were written from the text of the reports: the public summary of the land report of the Independent Investigative Mechanism for Myanmar (29 September 2025), and chapter V of the detailed findings of the Fact-Finding Mission (A/HRC/39/CRP.2, 17 September 2018). Each paragraph number was checked against the report. The lines keep to places, dates and counts. They do not retell what witnesses said; for that, read the report. The same lines are in `un_reports.csv`, and the hand-written source file is `sources/un_reports/records.json`.
+
+### Other spellings
+
+Some village records list other spellings of the name. They come from GeoNames, which keeps the spellings used by older gazetteers and maps. A spelling is attached only when the GeoNames place is a populated place within 700 metres of the village's recorded position and one of its names is the same as the archive's official name. The spellings are in `other_spellings.csv`; the script is `tools/match_geonames.py`.
+
+These three files will join the dataset with the next numbered edition.
+
 ## Boundaries and satellite pictures on the site
 
 These are shown on the website but are not part of the village records.
@@ -144,6 +173,9 @@ Parts of the data come from other publishers and stay under their terms:
 | 2017 analysis (`status_unosat_2017` files, `unosat_2017_zones.geojson`) | [UNOSAT]({{st_url}}) | CC BY-SA 4.0. Credit UNOSAT; share changes under the same licence. |
 | Fire detections (`fires` files) | [NASA FIRMS]({{fire_url}}), VIIRS and MODIS active fire data | Free and open. NASA asks to be credited as the source. |
 | Township and village-tract boundaries (website only) | UN OCHA, COD-AB (source MIMU) | CC BY-IGO. |
+| Old maps (website only, and `old_maps.csv`) | Survey of India sheets, scanned and placed by the [Old Survey of India Maps](https://zenodo.org/communities/old-survey-of-india-maps/) community and Horst Held | CC BY 4.0. Credit the community. |
+| Lines from United Nations reports (`un_reports.csv`) | [IIMM](https://iimm.un.org/) and the [Fact-Finding Mission on Myanmar](https://digitallibrary.un.org/record/1643079) | © United Nations. Summarised briefly with the source named; read the reports for the full text. |
+| Other spellings (`other_spellings.csv`) | [GeoNames](https://www.geonames.org/) | CC BY 4.0. |
 
 ## Questions and corrections
 

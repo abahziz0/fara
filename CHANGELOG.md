@@ -8,6 +8,15 @@ An edition is the archive as it stood on one day. Each edition has a number, and
 - The first number goes up (1.x to 2.0) when the shape of the data changes in a way that could break work built on it, for example a field renamed or removed.
 - Record numbers (FARA-0001 and so on) never change and are never used again for another village.
 
+### Since edition 1.1
+
+Added to the website on 16 November 2026. No village record changed, so the edition number stays at 1.1. The three new files will join the dataset with the next edition.
+
+- **Old maps.** Survey of India sheets of 1890 to 1942 can be laid over the map in two periods, shown beside the newest picture in a village's picture viewer, and they open a village's video. Each sheet's placement was checked, and ten sheets were corrected to their own printed grid. See the [methods page](/methods/). New file: `old_maps.csv`.
+- **Lines from United Nations reports** on the villages those reports name: the land report of the Independent Investigative Mechanism for Myanmar (2025) and the detailed findings of the Fact-Finding Mission (2018). New file: `un_reports.csv`.
+- **Other spellings** of village names, from GeoNames. New file: `other_spellings.csv`.
+- A page of [further sources](/sources-list/): old maps, United Nations reports, satellite studies and name lists.
+
 ## 1.1 — 16 November 2026
 
 ### Added

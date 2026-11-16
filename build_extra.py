@@ -784,6 +784,12 @@ def village_story(c, v, caps, zones, by_town, near, prev_next, ver, shared_name,
     def add(m, html): S.append(step(len(S), html)); J.append(m)
     add({'fit': town, 'base': 'dark', 'dots': 'town', 'lines': True, 'pin': P},
         '<p class="k">%s township · Arakan</p><h2>%s</h2><p>%s</p><p>%s</p>' % (esc(town), 'A village called ' + N if has_ro else N, where, names))
+    _per = c.g['old_periods'](v) if 'old_periods' in c.g else []
+    if _per:                                                                # the same ground on a British survey map, before any photograph
+        _k = _per[0]; _yrs = c.g['OLDMAPS'][_k][0]
+        add({'at': P, 'zoom': 14, 'base': 'old:' + _k, 'dots': 'none', 'pin': True, 'caption': '<b>Survey map of %s</b> · Survey of India, placed by the Old Survey of India Maps community, CC BY 4.0' % _yrs},
+            '<p class="k">A century ago</p><h2>On the map of %s</h2><p>British surveyors mapped this ground long before any satellite passed over it. The ring marks where %s is recorded today.</p>'
+            '<p class="fine">The spellings on the sheet are the surveyors’ own, and a position can be off by a hundred metres or more.</p>' % (_yrs, N))
     add({'at': P, 'zoom': 16, 'base': base(bef), 'dots': 'none', 'pin': True, 'caption': '<b>Photographed %s</b> · Esri World Imagery, Wayback archive' % ymd(bef[1])},
         '<p class="k">Before</p><h2>%s</h2><p>The most recent picture of %s in Esri’s archive from before August 2017. The ring marks the village’s recorded position.</p>%s'
         % (ymd(bef[1]), N, '<p class="fine">The oldest picture of this ground in the archive is from %s.</p>' % ymd(old[1]) if old[1] != bef[1] else ''))
@@ -811,6 +817,15 @@ def village_story(c, v, caps, zones, by_town, near, prev_next, ver, shared_name,
         '<p>The survey used pictures taken between 31 August and 11 October 2017. It cannot show what happened after that date.</p>'
         '<p class="sbtns"><a class="sbtn" href="/stories/what-the-satellites-recorded/">Read the whole account</a></p>' % (td, esc(town), part))
     nb = ''.join('<li><a href="/stories/%s/">%s</a><span>%s</span></li>' % (x['slug'], esc(c.ro(x).strip()), '%d m' % round(d * 1000) if d < 1 else '%.1f km' % d) for d, x in near)
+    _un = [(sr, pa, tx) for sr, pa, tx in (c.g.get('UNREC') or {}).get(str(v['id']), [])]
+    _srcs = list(SOURCES_VILLAGE)
+    if _per: _srcs.append(('Old Survey of India Maps: georeferenced maps of Burma', 'https://zenodo.org/records/18975982', 'the survey map, CC BY 4.0'))
+    for _key in dict.fromkeys(sr for sr, _, _ in _un):
+        _s = c.g['UNSRC'][_key]; _rows = [(pa, tx) for sr, pa, tx in _un if sr == _key]
+        add({'at': P, 'zoom': 15, 'base': base(new), 'dots': 'none', 'pin': True, 'zones': True, 'caption': '<b>%s</b>' % esc(_s['short'])},
+            '<p class="k">In a United Nations report</p><h2>%s</h2>%s<p class="fine"><a href="%s" rel="noopener">Read the report</a> · %s</p>'
+            % (esc(_s['short']), ''.join('<p>%s</p>' % esc(tx) for _, tx in _rows), _s['url'], esc(', '.join(dict.fromkeys(('paragraphs ' + pa) if pa[:1].isdigit() else pa for pa, _ in _rows)))))
+        _srcs.append((_s['title'], _s['url'], _s['by']))
     add({'at': P, 'zoom': 13, 'base': 'dark', 'dots': 'town', 'lines': True, 'pin': True},
         '<p class="k">The name remains</p><h2>Do you know %s?</h2><p>FARA keeps this village on record: its name, its place, and what the satellites saw. '
         'If you know its name as its people say it, or something here is wrong, tell us.</p>'
@@ -829,7 +844,7 @@ def village_story(c, v, caps, zones, by_town, near, prev_next, ver, shared_name,
     walk = ''.join('<a class="sbtn" href="/stories/%s/">%s %s</a>' % (x['slug'], lab, esc(c.ro(x).strip())) for x, lab in ((pv, '←'), (nx, '→')) if x)
     links = ('<a class="sbtn primary" href="/stories/">All village stories</a><a class="sbtn" href="%s">%s township</a>'
              '<a class="sbtn" href="%sgazetteer/">Printable gazetteer</a>%s' % (c.turl(town), esc(town), c.turl(town), walk))
-    body = story_body(c, '%s township · 2017' % town, name, dek, crumbs, S, SOURCES_VILLAGE, METHOD, links, long_date(date.fromisoformat(STORY_DATE)))
+    body = story_body(c, '%s township · 2017' % town, name, dek, crumbs, S, _srcs, METHOD, links, long_date(date.fromisoformat(STORY_DATE)))
     card = c.SITE + '/share/img/v/%d.png' % v['id'] if os.path.exists(c.p('share', 'img', 'v', '%d.png' % v['id'])) else None
     place = {'@type': 'Place', 'name': name, 'url': c.SITE + c.vurl(v), 'geo': {'@type': 'GeoCoordinates', 'latitude': lat, 'longitude': lng},
              'containedInPlace': {'@type': 'AdministrativeArea', 'name': town + ' Township, Rakhine State (Arakan), Myanmar'}}

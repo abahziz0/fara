@@ -1,0 +1,175 @@
+{
+ "a": {
+  "sheets": [
+   {
+    "file": "84C03-84C07_OILatLon_ed2-1905_p0000_fb-no",
+    "set": "early",
+    "w": 91.9565,
+    "s": 21.2509,
+    "e": 92.4564,
+    "n": 21.5009,
+    "pinned_to_printed_grid": false
+   },
+   {
+    "file": "84C04-84C08_OILatLon_edX-1905_p0000_fb-no",
+    "set": "early",
+    "w": 91.9565,
+    "s": 21.0009,
+    "e": 92.4565,
+    "n": 21.2509,
+    "pinned_to_printed_grid": false
+   },
+   {
+    "file": "84D01-84D05_OILatLon_ed2-1904_p0000_fb-no",
+    "set": "early",
+    "w": 91.9565,
+    "s": 20.7509,
+    "e": 92.4565,
+    "n": 21.0009,
+    "pinned_to_printed_grid": false
+   },
+   {
+    "file": "84D02-84D06_OILatLon_ed2-1904_p0000_fb-no",
+    "set": "early",
+    "w": 91.9565,
+    "s": 20.5009,
+    "e": 92.4565,
+    "n": 20.751,
+    "pinned_to_printed_grid": false
+   },
+   {
+    "file": "84D11-84D15_OILatLon_edX-1891_p1906_fb-no",
+    "set": "early",
+    "w": 92.4565,
+    "s": 20.251,
+    "e": 92.9564,
+    "n": 20.501,
+    "pinned_to_printed_grid": true
+   }
+  ],
+  "bounds": [
+   91.9565,
+   20.251,
+   92.9564,
+   21.5009
+  ],
+  "minzoom": 9,
+  "maxzoom": 14,
+  "bytes": 9213988,
+  "years": "1890–1906"
+ },
+ "b": {
+  "sheets": [
+   {
+    "file": "84-C-SW_79-O-SE_1941_HI-reg_Chittagong",
+    "set": "half",
+    "w": 91.9504,
+    "s": 21.0009,
+    "e": 92.4974,
+    "n": 21.5009,
+    "pinned_to_printed_grid": true
+   },
+   {
+    "file": "84-C-SE_1938_HI-reg_Chittagong_Hill_Tracts",
+    "set": "half",
+    "w": 92.4973,
+    "s": 21.0009,
+    "e": 92.9972,
+    "n": 21.5009,
+    "pinned_to_printed_grid": true
+   },
+   {
+    "file": "84-D-NW_1942_HI-reg_Arakan",
+    "set": "half",
+    "w": 92.1893,
+    "s": 20.501,
+    "e": 92.4974,
+    "n": 21.0009,
+    "pinned_to_printed_grid": false
+   },
+   {
+    "file": "84-D-SE_1926_HI-hs_Akyab",
+    "set": "half",
+    "w": 92.4973,
+    "s": 20.001,
+    "e": 92.9973,
+    "n": 20.501,
+    "pinned_to_printed_grid": true
+   },
+   {
+    "file": "84D9_OILatLon_ed1-1935_p0000",
+    "set": "later",
+    "w": 92.4973,
+    "s": 20.751,
+    "e": 92.7473,
+    "n": 21.0009,
+    "pinned_to_printed_grid": true
+   },
+   {
+    "file": "84D10_OILatLon_ed1-1936_p0000",
+    "set": "later",
+    "w": 92.4973,
+    "s": 20.501,
+    "e": 92.7473,
+    "n": 20.751,
+    "pinned_to_printed_grid": true
+   },
+   {
+    "file": "84D11_OILatLon_edX-1925_p0000",
+    "set": "later",
+    "w": 92.4973,
+    "s": 20.251,
+    "e": 92.7473,
+    "n": 20.501,
+    "pinned_to_printed_grid": true
+   },
+   {
+    "file": "84D13_OILatLon_ed1-1936_p0000",
+    "set": "later",
+    "w": 92.7473,
+    "s": 20.751,
+    "e": 92.9973,
+    "n": 21.0009,
+    "pinned_to_printed_grid": true
+   },
+   {
+    "file": "84D14_OI_ed1-1935_p1942",
+    "set": "later",
+    "w": 92.7473,
+    "s": 20.501,
+    "e": 92.9973,
+    "n": 20.751,
+    "pinned_to_printed_grid": false
+   },
+   {
+    "file": "84D15_OILatLon_edX-1925_p0000",
+    "set": "later",
+    "w": 92.7473,
+    "s": 20.251,
+    "e": 92.9973,
+    "n": 20.501,
+    "pinned_to_printed_grid": true
+   },
+   {
+    "file": "84D16_OILatLon_edX-1925_p0000",
+    "set": "later",
+    "w": 92.7473,
+    "s": 20.001,
+    "e": 92.9973,
+    "n": 20.251,
+    "pinned_to_printed_grid": true
+   }
+  ],
+  "bounds": [
+   91.9504,
+   20.001,
+   92.9973,
+   21.5009
+  ],
+  "minzoom": 9,
+  "maxzoom": 14,
+  "bytes": 34822074,
+  "years": "1925–1944"
+ },
+ "note": "Survey of India sheets cut into map tiles. Scans and first placement: Old Survey of India Maps community and Horst Held (Zenodo 18975982, 11367062, 13346102), CC BY 4.0. pinned_to_printed_grid: the sheet prints its 5-minute latitude/longitude grid and was warped so every grid line falls on its true position (tools/oldmaps_refine.py)."
+}

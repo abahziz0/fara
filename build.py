@@ -19,6 +19,7 @@ Writes:
 Everything is plain static files; no server code is needed.
 """
 import hashlib, html, json, math, os, re, shutil, unicodedata
+import csv
 from datetime import date
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -112,6 +113,47 @@ FIRES, FIRES_META = {}, {}
 if os.path.exists(p('fires.json')):
     _f = json.load(open(p('fires.json'), encoding='utf-8')); FIRES, FIRES_META = _f['villages'], _f['meta']
 FIRMS_URL = 'https://firms.modaps.eosdis.nasa.gov/'
+# EXPERIMENTAL. What United Nations reports say about named villages (sources/un_reports/records.json, written by hand from the reports),
+# and other spellings of village names from GeoNames (tools/match_geonames.py).
+UNREC, UNSRC, ALTNAMES = {}, {}, {}
+if os.path.exists(p('sources', 'un_reports', 'records.json')):
+    _u = json.load(open(p('sources', 'un_reports', 'records.json'), encoding='utf-8'))
+    UNSRC = {s['key']: s for s in _u['sources']}
+    for _e in _u['entries']:
+        for _i in _e['ids']: UNREC.setdefault(str(_i), []).append([_e['source'], _e['para'], _e['text']])
+if os.path.exists(p('sources', 'geonames', 'alt_names.json')):
+    ALTNAMES = json.load(open(p('sources', 'geonames', 'alt_names.json'), encoding='utf-8'))['villages']
+# old survey maps cut into tiles (oldmaps/): which period covers which ground
+OLDMAPS = {'a': ('1890–1906', []), 'b': ('1925–1944', [])}
+if os.path.exists(p('oldmaps', 'sheets.json')):
+    for _k, _o in json.load(open(p('oldmaps', 'sheets.json'), encoding='utf-8')).items():
+        if _k in OLDMAPS: OLDMAPS[_k][1].extend([s['w'], s['s'], s['e'], s['n']] for s in _o['sheets'])
+def old_periods(v):
+    try: la, ln = float(v['lat']), float(v['lng'])
+    except (TypeError, ValueError, KeyError): return []
+    if v.get('coord_status') == 'unverified': return []
+    return [k for k in ('a', 'b') if any(b[0] <= ln <= b[2] and b[1] <= la <= b[3] for b in OLDMAPS[k][1])]
+def other_records_html(v):
+    """For a village's own page: what UN reports say, other spellings, and the old maps that show its ground."""
+    out, i = '', str(v['id'])
+    by = {}
+    for src, para, text in UNREC.get(i, []): by.setdefault(src, []).append((para, text))
+    for src, rows in by.items():
+        s = UNSRC[src]; paras = []
+        for para, _ in rows:
+            lab = ('paragraphs ' + para) if para[:1].isdigit() else para
+            if lab not in paras: paras.append(lab)
+        out += '<h3>%s</h3>%s<p class="note">Source: <a href="%s" rel="noopener">%s</a>, %s, %s.</p>' % (
+            esc(s['short']), ''.join('<p class="lede st17">%s</p>' % esc(t) for _, t in rows), s['url'], esc(s['title']), esc(s['by']), ', '.join(paras))
+    if ALTNAMES.get(i):
+        out += ('<h3>Other spellings</h3><p class="lede st17"><b>%s</b></p><p class="note">Older spellings from maps and gazetteers, as listed by <a href="https://www.geonames.org/" rel="noopener">GeoNames</a> (CC BY 4.0), '
+                'matched to this village by position and name.</p>' % esc(' · '.join(ALTNAMES[i]['names'])))
+    per = old_periods(v)
+    if per:
+        out += ('<h3>On old maps</h3><p class="note">British survey maps show this ground as it was mapped a century ago: %s. The village’s point stays on top of the old sheet. '
+                'Spellings on the sheets are the surveyors’ own, and positions can be off by a hundred metres or more. <a href="/sources-list/">About the old maps</a>.</p>'
+                % ' · '.join('<a href="/?old=%s#v=%d"><b>map of %s</b></a>' % (k, v['id'], OLDMAPS[k][0]) for k in per))
+    return ('<h2>In other records</h2>' + out) if out else ''
 MONTHS_SHORT = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 def day_list(days, long=True):
     """'28 August, 29 August and 5 September 2017' from ISO days of one year."""
@@ -185,6 +227,8 @@ def embed(r):
     for key, short in (('2017', 'f7'), ('2016', 'f6')):
         o = (FIRES.get(str(r['id'])) or {}).get(key)
         if o: d[short] = [o['nearest_m'], [x[5:7] + x[8:] for x in o['days']]]
+    if UNREC.get(str(r['id'])): d['ur'] = UNREC[str(r['id'])]                     # ur: [[source key, paragraphs, text], ...]
+    if ALTNAMES.get(str(r['id'])): d['an'] = ALTNAMES[str(r['id'])]['names']      # an: other spellings (GeoNames)
     return d
 data = json.dumps([embed(r) for r in V], ensure_ascii=False, separators=(',', ':'))
 def cite_meta(title, url):
@@ -200,7 +244,7 @@ def cite_meta(title, url):
     if doi: tags += [('citation_doi', doi), ('DC.identifier', 'https://doi.org/' + doi)]
     return ''.join('<meta name="%s" content="%s">\n' % (k, v) for k, v in tags if v)
 
-app = open(p('fara_template.html'), encoding='utf-8').read().replace('__VILLAGE_DATA__', data)
+app = open(p('fara_template.html'), encoding='utf-8').read().replace('__VILLAGE_DATA__', data).replace('__OLD_BOXES_A__', json.dumps(OLDMAPS['a'][1])).replace('__OLD_BOXES_B__', json.dumps(OLDMAPS['b'][1])).replace('__UN_SOURCES__', json.dumps({k: {'short': s['short'], 'url': s['url']} for k, s in UNSRC.items()}, ensure_ascii=False))
 app = build_edition.stamp_app(ED, app, SITE)
 app = app.replace('<title>', cite_meta(ED['title'], SITE + '/') + '<title>', 1)
 write(p('fara.html'), app)
@@ -374,6 +418,7 @@ for v in V:
         if v['id'] in STORY:
             body += ('<p class="note"><a href="%s"><b>Read the story of %s in 2017</b></a>: the last satellite picture from before that autumn, the first one after, '
                      'and what UNOSAT mapped, step by step.</p>' % (STORY[v['id']], esc(name)))
+    body += other_records_html(v)
     if near:
         body += '<h2>Nearby villages</h2><ul class="near">' + ''.join(
             '<li><a href="%s"><b>%s</b><span>%s</span></a><em>%s</em></li>' % (vurl(x), esc(ro(x)), esc(en(x)) if en(x) != ro(x) else '', fmt_dist(d)) for d, x in near) + '</ul>'
@@ -481,6 +526,30 @@ write(p('press', 'index.html'), page('/press/', 'For journalists: facts, credit 
         'about': {'@type': 'Dataset', 'name': ED['title'], 'url': SITE + '/', 'identifier': ('https://doi.org/' + _doi) if _doi else SITE + '/'}},
        crumbs_ld([('FARA', '/'), ('For journalists', '/press/')])]))
 edition_paths = list(edition_paths) + ['/press/']
+
+# ------------------------------------------------------------------ further sources: old maps, UN reports, other records
+# the same things as plain tables, for anyone who wants the data rather than the pages (they join the dataset with the next edition)
+with open(p('other_spellings.csv'), 'w', newline='', encoding='utf-8') as _f:
+    _w = csv.writer(_f); _w.writerow(['id', 'name', 'township', 'other_spellings', 'geonames_id', 'metres_from_recorded_position', 'source'])
+    for v in V:
+        o = ALTNAMES.get(str(v['id']))
+        if o: _w.writerow([v['id'], v.get('name') or '', v.get('township') or '', ' | '.join(o['names']), o['geonameid'], o['metres'], 'GeoNames (CC BY 4.0)'])
+with open(p('un_reports.csv'), 'w', newline='', encoding='utf-8') as _f:
+    _w = csv.writer(_f); _w.writerow(['id', 'name', 'township', 'village_tract', 'report', 'paragraphs', 'what_the_report_says', 'url'])
+    for v in V:
+        for src, para, text in UNREC.get(str(v['id']), []):
+            _w.writerow([v['id'], v.get('name') or '', v.get('township') or '', v.get('village_tract') or '', UNSRC[src]['title'], para, text, UNSRC[src]['url']])
+with open(p('old_maps.csv'), 'w', newline='', encoding='utf-8') as _f:
+    _w = csv.writer(_f); _w.writerow(['id', 'name', 'township', 'on_map_of_1890_1906', 'on_map_of_1925_1944'])
+    for v in V:
+        per = old_periods(v); _w.writerow([v['id'], v.get('name') or '', v.get('township') or '', 'yes' if 'a' in per else 'no', 'yes' if 'b' in per else 'no'])
+if os.path.exists(p('content', 'sources.md')):
+    _b = build_edition.markdown(open(p('content', 'sources.md'), encoding='utf-8').read())
+    write(p('sources-list', 'index.html'), page('/sources-list/', 'Further sources: old maps, UN reports and other records of Rohingya villages | FARA',
+          'Old survey maps of Arakan, United Nations reports, satellite studies and name lists about the Rohingya villages of Maungdaw, Buthidaung, Rathedaung and Sittwe, with links.',
+          '<article class="doc">' + crumbs([('FARA', '/'), ('Further sources', None)]) + _b + '<p class="cta"><a class="btn primary" href="/">Open the interactive map</a><a class="btn" href="/methods/">How this archive was made</a></p></article>',
+          [crumbs_ld([('FARA', '/'), ('Further sources', '/sources-list/')])]))
+    edition_paths = list(edition_paths) + ['/sources-list/']
 
 # ------------------------------------------------------------------ sitemap, robots, llms.txt
 today = date.today().isoformat()

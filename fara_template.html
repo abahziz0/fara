@@ -852,6 +852,40 @@ body.areaing #areabar{display:flex}
 .h3hint{order:2;font-size:8px;letter-spacing:.14em;color:var(--text-faint);opacity:.8;white-space:nowrap}
 .sublbl{margin:12px 0 6px;font-family:'Share Tech Mono',monospace;font-size:8.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--text-faint)}
 .sublbl.first{margin-top:2px}
+/* cards that fold away: click the heading */
+.card.fold>h3{cursor:pointer;user-select:none}
+.card.fold>h3::after{content:"–";order:3;margin-left:auto;padding-left:10px;color:var(--text-faint);font-family:'Share Tech Mono',monospace;font-size:13px;line-height:1}
+.card.fold.folded>h3::after{content:"+";color:var(--cyan)}
+.card.fold.folded>*:not(h3){display:none!important}
+.card.fold.folded>h3{margin-bottom:0}
+#otherrec details.unrow>summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;gap:8px}
+#otherrec details.unrow>summary::-webkit-details-marker{display:none}
+#otherrec details.unrow>summary .unsrc{margin:0}
+#otherrec details.unrow>summary .unhint{margin-left:auto;font-family:'Share Tech Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--cyan)}
+#otherrec details.unrow[open]>summary .unhint{color:var(--text-faint)}
+#otherrec details.unrow[open]>summary{margin-bottom:7px}
+.ivtabs>button#ivold{border-color:rgba(255,176,32,.45);color:var(--amber)}
+.ivtabs>button#ivold.on{background:rgba(255,176,32,.12);border-color:var(--amber)}
+/* old maps and other records */
+#oldseg{margin-top:0}
+#oldmore{display:none;margin-top:8px}
+#oldmore.show{display:block}
+#oldmore label{display:flex;align-items:center;gap:8px;font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-faint)}
+#oldop{flex:1;accent-color:var(--cyan);height:22px}
+#oldink{display:block;width:100%;margin-top:6px;padding:7px 6px;border:1px solid var(--line-soft);background:none;color:var(--text-dim);font-family:'Share Tech Mono',monospace;font-size:9.5px;letter-spacing:.06em;cursor:pointer}
+#oldink:hover{color:var(--text);border-color:var(--cyan-dim)}
+#oldink.on{color:var(--cyan);border-color:var(--cyan-dim);background:rgba(0,229,255,.08)}
+#oldmore .psrc{margin-top:5px;font-size:9.5px;line-height:1.5;color:var(--text-faint);font-family:'Share Tech Mono',monospace}
+#oldmore .psrc a{color:var(--text-dim)}
+#otherrec:empty{display:none}
+#otherrec .exp{margin-left:6px;padding:1px 5px;border:1px solid var(--amber);color:var(--amber);font-size:8px;letter-spacing:.14em}
+#otherrec .unrow{margin-top:10px;padding-top:10px;border-top:1px solid var(--line-soft)}
+#otherrec .unrow:first-of-type{border-top:0;padding-top:2px;margin-top:6px}
+#otherrec .unsrc{font-size:13px;font-weight:600;color:var(--text);margin-bottom:5px}
+#otherrec p{font-size:12.5px;line-height:1.55;color:var(--text-dim);margin:0 0 6px}
+#otherrec p.alts{color:var(--text);font-size:13.5px}
+#otherrec .oldbtns{display:flex;gap:6px}
+#otherrec .oldbtns .stbtn{margin-top:2px}
 .town{padding:6px 8px;gap:10px}
 .town:hover{border-color:var(--line-soft)}
 .town .nm{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -1193,7 +1227,7 @@ body.sat.timeopen #toast{bottom:198px}
       <button id="cm-st17" aria-pressed="false" title="Colour the villages by what was found in 2017">2017 status</button>
     </div>
   </div>
-  <div class="card notch">
+  <div class="card notch fold" data-fold="optics">
     <h3>Optics</h3>
     <div class="sublbl first">Basemap</div>
     <div class="seg">
@@ -1206,8 +1240,19 @@ body.sat.timeopen #toast{bottom:198px}
       <button id="labelsbtn" aria-pressed="false" title="Village names on the map when zoomed in">Labels</button>
       <button id="bordersbtn" aria-pressed="false" title="Township and village-tract boundaries">Borders</button>
     </div>
+    <div class="sublbl">Old maps</div>
+    <div class="seg three" id="oldseg">
+      <button data-old="" class="on" aria-pressed="true" title="No old map">Off</button>
+      <button data-old="a" aria-pressed="false" title="British survey maps, one inch to a mile, 1890 to 1906">c. 1900</button>
+      <button data-old="b" aria-pressed="false" title="British survey maps, 1925 to 1944">1925–44</button>
+    </div>
+    <div id="oldmore">
+      <label>See through <input id="oldop" type="range" min="15" max="100" value="100" aria-label="How solid the old map is"></label>
+      <button id="oldink" type="button" aria-pressed="false" title="Hide the paper and keep only the drawn lines and names, laid over today's satellite picture">Lines only, over the satellite picture</button>
+      <div class="psrc">Survey of India, CC BY 4.0 · <a href="/sources-list/">about these maps</a><span id="oldnote" hidden></span></div>
+    </div>
   </div>
-  <div class="card notch tools">
+  <div class="card notch tools fold" data-fold="tools">
     <h3>Tools</h3>
     <button class="tool" id="registrybtn">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 5h18"/><path d="M3 12h18"/><path d="M3 19h18"/></svg>
@@ -1286,6 +1331,7 @@ body.sat.timeopen #toast{bottom:198px}
       </div>
     </div>
     <div id="status17" class="pcodes st17"></div>
+    <div id="otherrec" class="pcodes st17"></div>
     <div id="pcodes" class="pcodes"></div>
     <div class="actions">
       <button class="abtn primary" id="sharebtn">Share Link</button>
@@ -1343,7 +1389,7 @@ body.sat.timeopen #toast{bottom:198px}
     <div class="ivhead">
       <div class="ivtitle" id="ivtitle"></div>
       <div class="ivtabs">
-        <button id="ivclear" class="on">Clear</button><button id="ivlatest">Latest</button><button id="ivcompare">Compare</button><button id="ivzones" class="ivz" title="Show what satellites recorded in 2017: the destroyed zones UNOSAT mapped, and the fires NASA detected">2017<span class="zl"> record</span></button><button id="ivann" class="ivtool" aria-pressed="false" title="Draw arrows, circles and notes on the imagery"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg><span>Annotate</span></button><button id="ivsave" class="ivtool" title="Download what is on screen as one picture, with the names, dates and sources on it"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg><span>Picture</span></button><button id="ivvideo" class="ivtool" title="Make a short video of this place through the years, to keep or share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m10 9 5 3-5 3z"/></svg><span>Video</span></button>
+        <button id="ivclear" class="on">Clear</button><button id="ivlatest">Latest</button><button id="ivcompare">Compare</button><button id="ivold" title="A British survey map of this place beside the newest picture">Old map</button><button id="ivzones" class="ivz" title="Show what satellites recorded in 2017: the destroyed zones UNOSAT mapped, and the fires NASA detected">2017<span class="zl"> record</span></button><button id="ivann" class="ivtool" aria-pressed="false" title="Draw arrows, circles and notes on the imagery"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg><span>Annotate</span></button><button id="ivsave" class="ivtool" title="Download what is on screen as one picture, with the names, dates and sources on it"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg><span>Picture</span></button><button id="ivvideo" class="ivtool" title="Make a short video of this place through the years, to keep or share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m10 9 5 3-5 3z"/></svg><span>Video</span></button>
         
       </div>
       <button class="mclose" data-close="imgviewer" aria-label="Close">
@@ -1455,6 +1501,9 @@ body.sat.timeopen #toast{bottom:198px}
       <li><b>Buildings destroyed in 2017</b>: <a href="https://data.humdata.org/dataset/destroyed-areas-in-buthidaung-maungdaw-and-rathedaung-townships-of-rakhine-state-in-myanmar-2727" target="_blank" rel="noopener">UNOSAT</a>, satellite analysis of 31 August – 11 October 2017 (CC BY-SA). Not validated on the ground.</li>
       <li><b>Fire detections</b>: <a href="https://firms.modaps.eosdis.nasa.gov/" target="_blank" rel="noopener">NASA FIRMS</a>, VIIRS and MODIS active fire data.</li>
       <li><b>Satellite pictures</b>: <a href="https://livingatlas.arcgis.com/wayback/" target="_blank" rel="noopener">Esri World Imagery and its Wayback archive</a>; recent passes from Copernicus Sentinel-2 (European Space Agency).</li>
+      <li><b>Old maps</b>: Survey of India sheets of 1890 to 1942, scanned and placed by the <a href="https://zenodo.org/communities/old-survey-of-india-maps/" target="_blank" rel="noopener">Old Survey of India Maps</a> community (CC BY 4.0), then checked and corrected by FARA against each sheet’s printed grid.</li>
+      <li><b>United Nations reports</b>: the <a href="https://iimm.un.org/" target="_blank" rel="noopener">Independent Investigative Mechanism for Myanmar</a> (2025) and the <a href="https://digitallibrary.un.org/record/1643079" target="_blank" rel="noopener">Fact-Finding Mission on Myanmar</a> (2018), quoted briefly on the villages they name.</li>
+      <li><b>Other spellings</b>: <a href="https://www.geonames.org/" target="_blank" rel="noopener">GeoNames</a> (CC BY 4.0). <a href="/sources-list/">All further sources</a>.</li>
       <li><b>Township and village-tract boundaries</b>: <a href="https://data.humdata.org/dataset/cod-ab-mmr" target="_blank" rel="noopener">UN OCHA, COD-AB</a> (source: MIMU), CC BY-IGO. Approximate; no endorsement of any boundary is implied.</li>
       <li><b>Map Art posters</b>: map data © OpenStreetMap contributors.</li>
     </ul>
@@ -2326,6 +2375,93 @@ function bordersFor(v){
 }
 document.getElementById('bordersbtn').addEventListener('click', ()=>toggleBorders());
 
+
+/* ================= OLD MAPS (EXPERIMENTAL) =================
+   Survey maps drawn under British rule, laid over today's map. Two periods:
+     a  around 1900: one inch to a mile, surveyed 1890 to 1906
+     b  1925 to 1944: one inch to a mile (1925 to 1936), with half-inch sheets (1926 to 1942) where no one-inch sheet is available
+   The sheets were scanned and placed on modern coordinates by the Old Survey of India Maps community and Horst Held (CC BY 4.0);
+   the tiles in /oldmaps/ are cut from them. Village dots stay on top, so a village can be found on the old sheet. */
+const OLDMAPS = {
+  a:{ label:'Around 1900', years:'1890–1906', note:'One inch to a mile, surveyed 1890 to 1906. Maungdaw, north Buthidaung, part of Rathedaung.', boxes:__OLD_BOXES_A__ },
+  b:{ label:'1925–1944', years:'1925–1944', note:'One inch to a mile (1925 to 1936) and half inch (1926 to 1942). All four townships.', boxes:__OLD_BOXES_B__ }
+};
+const OLD = { key:'', layer:null, opacity:1, ink:false };
+map.createPane('oldmap'); map.getPane('oldmap').style.zIndex=250;
+const OldTiles = L.TileLayer.extend({
+  _isValidTile(coords){
+    if (!L.TileLayer.prototype._isValidTile.call(this, coords)) return false;
+    const b=this._tileCoordsToBounds(coords), w=b.getWest(), e=b.getEast(), s=b.getSouth(), n=b.getNorth();
+    return OLDMAPS[this.options.oldKey].boxes.some(q=>q[0]<e && q[2]>w && q[1]<n && q[3]>s);
+  }
+});
+const OLD_BLANK='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
+const oldTiles = (key, opts) => new OldTiles('/oldmaps/'+key+'/{z}/{x}/{y}.webp', Object.assign({ oldKey:key, minNativeZoom:9, maxNativeZoom:14, errorTileUrl:OLD_BLANK,
+  attribution:'Old map: Survey of India, '+OLDMAPS[key].years+' · Old Survey of India Maps, CC BY 4.0' }, opts));
+const oldCovers = (key, lat, lng) => OLDMAPS[key].boxes.some(b => lng>=b[0] && lng<=b[2] && lat>=b[1] && lat<=b[3]);
+function setOldMap(key){
+  if (OLD.layer){ map.removeLayer(OLD.layer); OLD.layer=null; }
+  OLD.key = key || '';
+  if (key){
+    OLD.layer = oldTiles(key, { pane:'oldmap', minZoom:9, maxZoom:20, opacity:OLD.opacity }).addTo(map);
+    const c=map.getCenter();
+    if (map.getZoom()<9) showToast('// zoom in to see the old map');
+    else if (!oldCovers(key, c.lat, c.lng)) showToast('// no sheet of this period here: try the other period');
+    track('Old map', { period:key });
+  }
+  document.querySelectorAll('#oldseg button').forEach(b=>{ const on=(b.dataset.old||'')===OLD.key; b.classList.toggle('on',on); b.setAttribute('aria-pressed',String(on)); });
+  document.getElementById('oldmore').classList.toggle('show', !!key);
+  document.getElementById('oldnote').textContent = key ? OLDMAPS[key].note : '';
+  document.body.classList.toggle('oldmap', !!key);
+  if (typeof deckFit==='function') setTimeout(deckFit, 30);
+}
+/* lines only: the paper disappears and the drawn lines and names lie on today's satellite picture */
+function setOldInk(on){
+  OLD.ink=on; map.getPane('oldmap').style.mixBlendMode = on ? 'multiply' : '';
+  const b=document.getElementById('oldink'); b.classList.toggle('on', on); b.setAttribute('aria-pressed', String(on));
+  if (on && !satIsOn) setBasemap(true);
+}
+document.getElementById('oldink').addEventListener('click', ()=>setOldInk(!OLD.ink));
+document.getElementById('oldseg').addEventListener('click', e=>{ const b=e.target.closest('button'); if (b) setOldMap(b.dataset.old); });
+{ const om=/[?&]old=([ab])\b/.exec(location.search); if (om) setTimeout(()=>setOldMap(om[1]), 600); }
+document.getElementById('oldop').addEventListener('input', e=>{ OLD.opacity=+e.target.value/100; if (OLD.layer) OLD.layer.setOpacity(OLD.opacity); });
+
+/* what other records say about this village: United Nations reports, other spellings, the old map */
+const UN_SOURCES = __UN_SOURCES__;
+function otherRecHtml(v){
+  if (isUnverified(v)) return '';
+  const parts=[];
+  if (v.ur){
+    const by={}; v.ur.forEach(r=>{ (by[r[0]] = by[r[0]] || []).push(r); });
+    Object.keys(by).forEach(k=>{ const s=UN_SOURCES[k] || { short:k, url:'#' };
+      parts.push('<details class="unrow"'+(Object.keys(by).length===1 ? ' open' : '')+'><summary><span class="unsrc">'+esc(s.short)+'</span><span class="unhint">what it says</span></summary>'+by[k].map(r=>'<p>'+esc(r[2])+'</p>').join('')
+        +'<div class="psrc"><a href="'+s.url+'" target="_blank" rel="noopener">Read the report</a> · '+esc([...new Set(by[k].map(r=>r[1]))].map(x=>/^\d/.test(x) ? 'paragraphs '+x : x).join(', '))+'</div></details>'); });
+  }
+  if (v.an) parts.push('<div class="unrow"><div class="unsrc">Other spellings</div><p class="alts">'+v.an.map(esc).join(' · ')+'</p><div class="psrc">Older spellings from maps and gazetteers, as listed by <a href="https://www.geonames.org/" target="_blank" rel="noopener">GeoNames</a> (CC BY 4.0)</div></div>');
+  const la=+v.lat, ln=+v.lng, has=['a','b'].filter(k=>oldCovers(k, la, ln));
+  if (has.length) parts.push('<div class="unrow"><div class="unsrc">On old maps</div><div class="oldbtns">'+has.map(k=>'<button class="stbtn" type="button" data-oldgo="'+k+'">Map of '+OLDMAPS[k].years+'</button>').join('')+'</div><div class="psrc">Survey of India sheets · <a href="/sources-list/">about the old maps</a></div></div>');
+  return parts.length ? '<div class="k">In other records</div>'+parts.join('') : '';
+}
+document.querySelectorAll('.card.fold').forEach(c=>{
+  const key='fara.fold.'+c.dataset.fold; let on=null; try{ on=localStorage.getItem(key); }catch(e){}
+  if (on==='1') c.classList.add('folded');
+  c.querySelector('h3').addEventListener('click', ()=>{ const f=c.classList.toggle('folded'); try{ localStorage.setItem(key, f ? '1' : '0'); }catch(e){} });
+});
+/* when the left column no longer fits the screen, the Tools card folds itself (unless the reader has chosen) */
+function deckFit(){
+  const deck=document.getElementById('deck'), tools=document.querySelector('.card.fold[data-fold="tools"]');
+  if (!deck || !tools || innerWidth<=760) return;
+  let chosen=null; try{ chosen=localStorage.getItem('fara.fold.tools'); }catch(e){}
+  if (chosen===null && !tools.classList.contains('folded') && deck.scrollHeight>deck.clientHeight+4) tools.classList.add('folded');
+}
+setTimeout(deckFit, 400); addEventListener('resize', deckFit);
+document.getElementById('otherrec').addEventListener('click', e=>{
+  const b=e.target.closest('[data-oldgo]'); if (!b || !current) return;
+  setOldMap(b.dataset.oldgo);
+  map.flyTo([+current.lat, +current.lng], Math.max(map.getZoom(), 14), { duration:.8 });
+  if (PHONE.matches) snapSheet('peek');
+});
+
 /* ================= IMAGERY BY YEAR =================
    Esri keeps every past edition of its World Imagery map (Wayback). Choosing a year swaps the Orbital basemap
    for the last edition published that year, so the whole map shows what that map showed then. An edition holds
@@ -2625,6 +2761,7 @@ function openVillage(v, fly){
   document.getElementById('p-tract').textContent = v.village_tract || '—';
   document.getElementById('pcodes').innerHTML = pcodesHtml(v);
   document.getElementById('status17').innerHTML = st17Html(v);
+  document.getElementById('otherrec').innerHTML = otherRecHtml(v);
   document.getElementById('unverified').classList.toggle('show', unv);
 
   const bmb=document.getElementById('bookmarkbtn');
@@ -3132,7 +3269,7 @@ document.getElementById('imgolder').addEventListener('click',()=>{ if (current) 
 document.getElementById('imgnewer').addEventListener('click',()=>{ if (current) showScene(current, IMG.token, IMG.idx-1, -1); });
 
 /* ---------- FULL-SCREEN VIEWER: zoom, pan, history, swipe compare ---------- */
-const IV = { map:null, layers:[], overlay:null, pin:null, mode:'clear', job:0, a:0, l:0, r:0, split:.5, viewKey:'' };
+const IV = { map:null, layers:[], overlay:null, pin:null, mode:'clear', job:0, a:0, l:0, r:0, split:.5, viewKey:'', old:'a' };
 const ivOpen = () => document.getElementById('imgviewer').classList.contains('open');
 function ivInit(){
   if (IV.map) return;
@@ -3188,6 +3325,7 @@ function ivTiles(i){
   layer.on('add',()=>ivTone(h,v).then(id=>{ const c=layer.getContainer(); if (id && c) c.style.filter='url(#'+id+')'; }));
   return layer;
 }
+function ivOldTiles(key){ return oldTiles(key, { maxZoom:21, crossOrigin:true }); }
 function ivHistCap(i){
   const h=IMG.hist[i];
   if (!h || i===0) return IMG.clearCap;
@@ -3202,7 +3340,7 @@ function ivHistLabel(i){
   return dup ? fmtDay(h.date) : fmtMon(h.date);
 }
 function ivClip(){
-  if (IV.mode!=='compare' || IV.layers.length<2) return;
+  if ((IV.mode!=='compare' && IV.mode!=='old') || IV.layers.length<2) return;
   const m=IV.map, sz=m.getSize(), nw=m.containerPointToLayerPoint([0,0]), se=m.containerPointToLayerPoint(sz), cx=nw.x+sz.x*IV.split;
   const L0=IV.layers[0].getContainer(), R0=IV.layers[1].getContainer();
   if (L0) L0.style.clip=`rect(${nw.y}px,${cx}px,${se.y}px,${nw.x}px)`;
@@ -3236,6 +3374,10 @@ function ivBar(){
       const l=sc.local, st=l ? (l.ok?'ok':'cl') : '', tip=l ? (l.ok?'clear over village':'cloud over village') : 'not checked yet';
       return `<button class="ivchip${i===IMG.idx?' on':''}" data-s="${i}" title="${fmtDay(sc.date)} · ${tip}"><span class="st ${st}"></span>${sc.date.getUTCDate()} ${MONTHS[sc.date.getUTCMonth()]}${sc.date.getUTCFullYear()!==yr?' '+sc.date.getUTCFullYear():''}</button>`;
     }).reverse().join('') + (IMG.scenes.length ? '' : '<span>searching…</span>');
+  } else if (IV.mode==='old'){
+    const la=+current.lat, ln=+current.lng;
+    bar.innerHTML = '<span class="lbl">SURVEY MAP</span>'+['a','b'].filter(k=>oldCovers(k, la, ln)).map(k=>`<button class="ivchip${k===IV.old?' on':''}" data-oldp="${k}" title="${esc(OLDMAPS[k].note)}">${OLDMAPS[k].years}</button>`).join('')
+      +'<span class="hint">drag the ⇆ handle · Survey of India, CC BY 4.0</span>';
   } else {
     const opts=sel=>IMG.hist.map((h,i)=>`<option value="${i}"${i===sel?' selected':''}>${histDay(h)}</option>`).join('');
     bar.innerHTML = `<span class="lbl">LEFT</span><select id="ivselL" aria-label="Left image date">${opts(IV.l)}</select>`
@@ -3259,14 +3401,28 @@ async function ivShow(mode){
   /* the same place on another date: the new picture fades in over the old one instead of blinking */
   const keep = (mode==='clear' && IV.mode==='clear' && IV.layers.length===1 && IV.viewKey===v.id+':sharp') ? IV.layers[0] : null;
   if (keep) IV.layers=[];
-  IV.mode=mode; const job=++IV.job;
-  ['clear','latest','compare'].forEach(m=>document.getElementById('iv'+m).classList.toggle('on', m===mode));
+  const prevMode=IV.mode; IV.mode=mode; const job=++IV.job;
+  ['clear','latest','compare','old'].forEach(m=>document.getElementById('iv'+m).classList.toggle('on', m===mode));
   document.getElementById('ivtitle').textContent = roName(v)+' · '+enName(v);
   const cap=document.getElementById('ivcap'), msg=document.getElementById('ivmsg');
   ivReset(); ivPin(v);
   const sharp = mode!=='latest', key=v.id+(sharp?':sharp':':wide');
   const fresh = IV.viewKey!==key; IV.viewKey=key;
   if (sharp && fresh) IV.map.setView([+v.lat,+v.lng], 17, {animate:false});
+  else if (sharp && prevMode==='old' && mode!=='old') IV.map.setView([+v.lat,+v.lng], 17, {animate:false});
+  if (mode==='old'){
+    /* a survey map on the left, the newest picture on the right: the same ground, a century apart */
+    const la=+v.lat, ln=+v.lng, has=['a','b'].filter(k=>oldCovers(k, la, ln));
+    if (!has.length){ showToast('// no old map sheet covers this place'); return ivShow('clear'); }
+    if (!has.includes(IV.old)) IV.old=has[0];
+    if (prevMode!=='old' || fresh) IV.map.setView([la,ln], 15, {animate:false});
+    IV.layers=[ivOldTiles(IV.old).addTo(IV.map), ivTiles(0).addTo(IV.map)];
+    const sl=document.getElementById('ivsl'), sr=document.getElementById('ivsr');
+    sl.textContent='Map of '+OLDMAPS[IV.old].years; sr.textContent='Now';
+    [sl,sr,document.getElementById('ivdiv')].forEach(el=>el.classList.add('show'));
+    cap.innerHTML='<b>Survey map of '+OLDMAPS[IV.old].years+'</b> on the left · <b>the newest picture</b> on the right · same place, drag the divider';
+    ivBar(); ivClip(); return;
+  }
   if (mode==='clear'){
     if (IV.a>=Math.max(1,IMG.hist.length)) IV.a=0;
     const neu=ivTiles(IV.a).addTo(IV.map); IV.layers=[neu];
@@ -3327,7 +3483,7 @@ async function ivPass(i){
 });
 document.getElementById('histbtn').addEventListener('click',()=>openViewer('clear'));
 document.getElementById('cmpbtn').addEventListener('click',()=>openViewer('compare'));
-['clear','latest','compare'].forEach(m=>document.getElementById('iv'+m).addEventListener('click',()=>ivShow(m)));
+['clear','latest','compare','old'].forEach(m=>document.getElementById('iv'+m).addEventListener('click',()=>ivShow(m)));
 const ivbarEl=document.getElementById('ivbar');
 function ivBarEdges(){
   ivbarEl.classList.toggle('fl', ivbarEl.scrollLeft>4);
@@ -3355,6 +3511,7 @@ document.addEventListener('click',e=>{ const a=e.target.closest('.leaflet-contro
 document.getElementById('ivbar').addEventListener('click',e=>{
   if (ivbarEl.dataset.dragged) return;
   const b=e.target.closest('.ivchip'); if (!b) return;
+  if (b.dataset.oldp){ IV.old=b.dataset.oldp; ivShow('old'); return; }
   if (b.dataset.play){ ivPlay(!IV.playing); return; }
   if (IV.playing) ivPlay(false);
   if (b.dataset.retry){ if (current) loadHistory(current, IMG.token); return; }
@@ -3527,12 +3684,12 @@ async function ivPanel(p, PW, PH, f, v){
   const ctx=cv.getContext('2d', { willReadFrequently:true }), m=IV.map, z=m.getZoom();
   ctx.fillStyle='#03070d'; ctx.fillRect(0,0,PW,PH);
   const proj=ll=>{ const q=m.latLngToContainerPoint(ll); return [q.x*f, q.y*f]; };
-  if (p.kind==='hist'){
-    const h=IMG.hist[p.i], cur=!h || p.i===0, maxN = cur ? (IMG.z19 ? 19 : 18) : (h.z18 ? 18 : 17);
+  if (p.kind==='hist' || p.kind==='old'){
+    const old=p.kind==='old', h=old ? null : IMG.hist[p.i], cur=!old && (!h || p.i===0), maxN = old ? 14 : cur ? (IMG.z19 ? 19 : 18) : (h.z18 ? 18 : 17);
     const tz=Math.max(8, Math.min(maxN, Math.ceil(z+Math.log2(f)-.25))), s=f*Math.pow(2, z-tz);        // tile zoom whose pixels are closest to the output's
     const nw=m.project(m.containerPointToLatLng([0,0]), tz), jobs=[];
     for (let ty=Math.floor(nw.y/256); ty*256<nw.y+PH/s; ty++) for (let tx=Math.floor(nw.x/256); tx*256<nw.x+PW/s; tx++){
-      const url = cur ? `${ESRI_IMG}/tile/${tz}/${ty}/${tx}` : `${WB}/WMTS/1.0.0/default028mm/MapServer/tile/${h.rel}/${tz}/${ty}/${tx}`;
+      const url = old ? `/oldmaps/${p.key}/${tz}/${tx}/${ty}.webp` : cur ? `${ESRI_IMG}/tile/${tz}/${ty}/${tx}` : `${WB}/WMTS/1.0.0/default028mm/MapServer/tile/${h.rel}/${tz}/${ty}/${tx}`;
       jobs.push(ivLoadImg(url).then(im=>{
         if (!im) return 0;
         const x0=Math.floor((tx*256-nw.x)*s), y0=Math.floor((ty*256-nw.y)*s), x1=Math.ceil(((tx+1)*256-nw.x)*s), y1=Math.ceil(((ty+1)*256-nw.y)*s);
@@ -3540,8 +3697,8 @@ async function ivPanel(p, PW, PH, f, v){
       }));
     }
     const got=(await Promise.all(jobs)).reduce((a,b)=>a+b, 0);
-    if (got<jobs.length*.6) throw new Error('tiles');
-    if (!cur){                                                             // the same gentle tone correction the viewer shows
+    if (got<jobs.length*(old ? .2 : .6)) throw new Error('tiles');
+    if (!cur && !old){                                                     // the same gentle tone correction the viewer shows
       const ps=TONE_P.get(await ivTone(h, v));
       if (ps){
         const id=ctx.getImageData(0,0,PW,PH), d=id.data;
@@ -3616,6 +3773,7 @@ async function ivExport(){
     const H=IMG.hist, size=IV.map.getSize(), day=i=>H[i] ? histDay(H[i]) : (IMG.clearCap||'').replace(/<[^>]+>/g,'').split('·')[0].replace(/^\s*Captured\s*/i,'').trim();
     let panels;
     if (IV.mode==='compare') panels=[IV.l, IV.r].map((i,n)=>({ kind:'hist', i, label:day(i).toUpperCase(), accent:n ? '#00E5FF' : '#FFB020' }));
+    else if (IV.mode==='old') panels=[{ kind:'old', key:IV.old, label:'SURVEY MAP OF '+OLDMAPS[IV.old].years, accent:'#FFB020' }, { kind:'hist', i:0, label:(day(0) || 'Current imagery').toUpperCase(), accent:'#00E5FF' }];
     else if (IV.mode==='clear') panels=[{ kind:'hist', i:IV.a, label:(day(IV.a) || 'Current imagery').toUpperCase() }];
     else { const sc=IMG.scenes[IMG.idx]; if (!sc || !IV.ovCv) throw new Error('latest'); panels=[{ kind:'latest', label:fmtDay(sc.date).toUpperCase()+' · SENTINEL-2' }]; }
     const two=panels.length===2, stacked=two && size.x/size.y>1.25;
@@ -3627,6 +3785,7 @@ async function ivExport(){
     const notes=[];
     if (IV.mode==='latest') notes.push('Imagery: Copernicus Sentinel-2 (European Space Agency), 10 m per pixel.');
     else notes.push('Imagery: Esri World Imagery and its Wayback archive (Vantor / Maxar). The dates are the capture dates Esri publishes.');
+    if (IV.mode==='old') notes.push('Old map: Survey of India, '+OLDMAPS[IV.old].years+', placed on modern coordinates by the Old Survey of India Maps community (CC BY 4.0). Positions can be off by 100 m or more.');
     if (zones) notes.push('Yellow outlines: zones of destroyed structures mapped by UNOSAT from imagery of 31 Aug – 11 Oct 2017. Not field validated.');
     if (panels.some(p=>p.fires>0)) notes.push('Orange dots: fires detected by NASA satellites (FIRMS), with the day in Myanmar time. A detection does not say what burned.');
     if (marks) notes.push('Arrows, shapes and notes were added by the person who made this image; they are not part of the archive.');
@@ -3739,6 +3898,16 @@ async function vidPicture(h, v, W, H){
   }
   return cv;
 }
+/* a survey map of the village's ground: a wider view than the photographs (the sheets are drawn at one inch to a mile) */
+async function vidOldPicture(key, v, W, H){
+  const cv=document.createElement('canvas'); cv.width=W; cv.height=H;
+  const ctx=cv.getContext('2d'), c=L.CRS.EPSG3857.latLngToPoint(L.latLng(+v.lat,+v.lng), 14), x0=c.x-W/4, y0=c.y-H/4, jobs=[];
+  ctx.fillStyle='#0b1220'; ctx.fillRect(0,0,W,H); ctx.imageSmoothingQuality='high';
+  for (let ty=Math.floor(y0/256); ty*256<y0+H/2; ty++) for (let tx=Math.floor(x0/256); tx*256<x0+W/2; tx++)
+    jobs.push(ivLoadImg(`/oldmaps/${key}/14/${tx}/${ty}.webp`).then(im=>{ if (!im) return 0; ctx.drawImage(im, Math.round((tx*256-x0)*2), Math.round((ty*256-y0)*2), 512, 512); return 1; }));
+  const got=(await Promise.all(jobs)).reduce((a,b)=>a+b,0);
+  return got>=jobs.length*.5 ? cv : null;
+}
 /* everything the film needs, loaded once: pictures, outlines, words, and the timing of every scene */
 async function vidPrepare(v, shape, onProgress){
   const [W,H]=VID_SHAPES[shape], u=Math.min(W,H)/1080, M=Math.round(64*u);
@@ -3748,6 +3917,8 @@ async function vidPrepare(v, shape, onProgress){
     .map(f=>document.fonts.load(f, roName(v)+(v.village_name_mmr||'')+'0123456789').catch(()=>0)));
   const pics=[];
   for (let i=0;i<caps.length;i++){ pics.push(await vidPicture(caps[i], v, W, H)); onProgress((i+1)/caps.length); }
+  const olds=[];                                                           // the survey maps of this ground, oldest first: they open the film
+  if (!v.isWard) for (const k of ['a','b']){ if (!oldCovers(k, +v.lat, +v.lng)) continue; try{ const cv=await vidOldPicture(k, v, W, H); if (cv) olds.push({ key:k, pic:cv }); }catch(e){} }
   const z=17, c=L.CRS.EPSG3857.latLngToPoint(L.latLng(+v.lat,+v.lng), z), px=ll=>{ const q=L.CRS.EPSG3857.latLngToPoint(L.latLng(ll[0],ll[1]), z); return [q.x-c.x+W/2, q.y-c.y+H/2]; };
   /* overlays drawn once: the village's ring or ward outline, UNOSAT's zones, NASA's fire dots */
   const layer=()=>{ const o=document.createElement('canvas'); o.width=W; o.height=H; return o; };
@@ -3780,6 +3951,7 @@ async function vidPrepare(v, shape, onProgress){
   /* timing, in seconds */
   const T={ intro:2.4, hold:1.35, fade:.65, card:3.6, last:2.2, outro:3 }, scenes=[]; let t=0;
   scenes.push({ k:'intro', a:0, t0:t, d:T.intro }); t+=T.intro;
+  olds.forEach((o,i)=>{ scenes.push({ k:'old', o:i, a:0, t0:t, d:3 }); t+=3; });
   caps.forEach((h,i)=>{
     const d = i===caps.length-1 ? T.last : i===0 ? T.hold*.7 : T.hold;
     scenes.push({ k:'hold', a:i, t0:t, d }); t+=d;
@@ -3790,7 +3962,7 @@ async function vidPrepare(v, shape, onProgress){
   const seen=caps.map((_,i)=>scenes.find(sc=>(sc.k==='fade' && sc.b===i) || (sc.a===i && sc.k!=='fade')).t0);   // when each picture first shows, for its slow push-in
   let logo=null;
   try{ const svg=document.querySelector('#brand svg.logo'); if (svg) logo=await ivLoadImg('data:image/svg+xml;charset=utf-8,'+encodeURIComponent(new XMLSerializer().serializeToString(svg).replace('<svg','<svg xmlns="http://www.w3.org/2000/svg" width="452" height="150"'))); }catch(e){}
-  return { v, W, H, u, M, caps, pics, ring, zones:nz ? zones : null, fires, card, fireLine, showCard, before, scenes, seen, dur:t, logo, told:told || !!v.f7,
+  return { olds, v, W, H, u, M, caps, pics, ring, zones:nz ? zones : null, fires, card, fireLine, showCard, before, scenes, seen, dur:t, logo, told:told || !!v.f7,
            d0:+caps[0].date, d1:+caps[caps.length-1].date };
 }
 const MONTHS_FULL=['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -3807,6 +3979,23 @@ function vidDraw(ctx, S, t){
     ctx.globalAlpha=1;
   };
   ctx.fillStyle='#03070d'; ctx.fillRect(0,0,W,H);
+  if (sc.k==='old'){                                                       // a survey map of the same ground, before the photographs begin
+    const o=S.olds[sc.o], a=ease(p/.14)*(1-ease((p-.88)/.12)), k=1+.04*p, w=W*k, h=H*k, om=OLDMAPS[o.key];
+    ctx.globalAlpha=a; ctx.drawImage(o.pic, (W-w)/2, (H-h)/2, w, h); ctx.drawImage(S.ring, (W-w)/2, (H-h)/2, w, h);
+    let g=ctx.createLinearGradient(0,0,0,H*.22); g.addColorStop(0,'rgba(2,5,10,.82)'); g.addColorStop(1,'rgba(2,5,10,0)'); ctx.fillStyle=g; ctx.fillRect(0,0,W,H*.22);
+    g=ctx.createLinearGradient(0,H*.55,0,H); g.addColorStop(0,'rgba(2,5,10,0)'); g.addColorStop(.5,'rgba(2,5,10,.8)'); g.addColorStop(1,'rgba(2,5,10,.95)'); ctx.fillStyle=g; ctx.fillRect(0,H*.55,W,H*.45);
+    ctx.textBaseline='alphabetic'; ctx.textAlign='left';
+    if (S.logo) ctx.drawImage(S.logo, M, M-6*u, 120*u, 40*u);
+    ctx.fillStyle='#E8F2FF'; ctx.font=mono(17); sp(4); ctx.fillText('FARA', M+136*u, M+13*u);
+    ctx.fillStyle='rgba(232,242,255,.62)'; ctx.font=mono(13.5); sp(2.4); ctx.fillText('THE ARAKAN VILLAGE NAME ARCHIVE', M+136*u, M+34*u);
+    const by=H-M-70*u;
+    ctx.fillStyle='#FFB020'; ctx.font=mono(16); sp(4); ctx.fillText('SURVEY MAP · BEFORE THE PHOTOGRAPHS', M, by-150*u);
+    ctx.fillStyle='#fff'; ctx.font=mono(58); sp(1); ctx.fillText(om.years.replace('–',' – '), M, by-88*u);
+    ctx.fillStyle='rgba(232,242,255,.66)'; ctx.font=mono(15.5); sp(2); ctx.fillText('SURVEY OF INDIA · '+(o.key==='a' ? 'ONE INCH TO A MILE' : 'ONE INCH AND HALF INCH TO A MILE')+' · WIDER VIEW', M, by-58*u);
+    sp(0); const ns=fit(roName(v), 700, 52, W-M*2); ctx.fillStyle='#fff'; ctx.font=sans(700, ns); ctx.fillText(roName(v), M, by);
+    ctx.fillStyle='rgba(232,242,255,.78)'; ctx.font=sans(500,24); ctx.fillText('The ring marks where the village is recorded today', M, by+38*u);
+    ctx.globalAlpha=1; return;
+  }
   let cur=sc.a, mix=0;                                                     // which date the words show, and how far into a change we are
   if (sc.k==='fade'){ mix=ease(p); pic(sc.a,1); pic(sc.b, mix); if (mix>.5) cur=sc.b; } else pic(sc.a,1);
   /* the village */
@@ -3904,7 +4093,7 @@ function vidDraw(ctx, S, t){
     ctx.fillStyle='rgba(232,242,255,.72)'; ctx.font=sans(400,25); ctx.fillText('FARA exists so those names are never erased.', cx, y+70*u);
     ctx.fillStyle='#00E5FF'; ctx.font=mono(23); sp(1); ctx.fillText(v.isWard ? 'map.rohingya.ro' : pageUrl(v).replace(/^https?:\/\//,'').replace(/^(localhost|127\.0\.0\.1)(:\d+)?/, 'map.rohingya.ro'), cx, y+136*u);
     ctx.fillStyle='rgba(232,242,255,.55)'; ctx.font=mono(14.5); sp(1.4); let yy=H-M-58*u;
-    ['SATELLITE PICTURES: ESRI WORLD IMAGERY (WAYBACK) · VANTOR / MAXAR', S.told ? 'DESTROYED ZONES: UNOSAT · FIRE DETECTIONS: NASA FIRMS' : '', 'FARA — THE ARAKAN VILLAGE NAME ARCHIVE'].filter(Boolean)
+    ['SATELLITE PICTURES: ESRI WORLD IMAGERY (WAYBACK) · VANTOR / MAXAR', S.told ? 'DESTROYED ZONES: UNOSAT · FIRE DETECTIONS: NASA FIRMS' : '', S.olds && S.olds.length ? 'OLD MAPS: SURVEY OF INDIA · OLD SURVEY OF INDIA MAPS, CC BY 4.0' : '', 'FARA — THE ARAKAN VILLAGE NAME ARCHIVE'].filter(Boolean)
       .forEach(l=>{ ctx.fillText(l, cx, yy); yy+=26*u; });
     sp(0); ctx.textAlign='left'; ctx.globalAlpha=1;
   }
@@ -4526,7 +4715,8 @@ function buildStats(){
   const withMmr=VILLAGES.filter(v=>v.village_name_mmr).length;
   const verified=VILLAGES.filter(v=>!isUnverified(v)).length;
   document.getElementById('biggrid').innerHTML = [
-    [total,'Records'],[4,'Townships'],[tractSet.size,'Village Tracts'],[verified,'Verified Locations']
+    [total,'Records'],[4,'Townships'],[tractSet.size,'Village Tracts'],[verified,'Verified Locations'],
+    [VILLAGES.filter(v=>v.ur).length,'In UN Reports'],[VILLAGES.filter(v=>v.an).length,'With Older Spellings'],[VILLAGES.filter(v=>!isUnverified(v) && oldCovers('a',+v.lat,+v.lng)).length,'On Maps of c. 1900'],[VILLAGES.filter(v=>!isUnverified(v) && oldCovers('b',+v.lat,+v.lng)).length,'On Maps of 1925–44']
   ].map(([n,l])=>`<div class="bigstat"><div class="n">${n.toLocaleString()}</div><div class="l">${l}</div></div>`).join('');
   const maxC=Math.max(...Object.values(counts));
   document.getElementById('barchart').innerHTML = Object.entries(counts).sort((a,b)=>b[1]-a[1]).map(([t,n])=>`

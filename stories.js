@@ -80,9 +80,11 @@
     }
 
     /* ---- base maps, cross-faded ---- */
-    function urlOf(b){ return b === 'sat' ? ESRI + '{z}/{y}/{x}' : b && typeof b === 'object' ? WB + b.rel + '/{z}/{y}/{x}' : DARK + 'Base/MapServer/tile/{z}/{y}/{x}'; }
-    function nativeOf(b){ return b === 'sat' ? 18 : b && typeof b === 'object' ? (b.z18 ? 18 : 17) : 16; }
+    function isOld(b){ return typeof b === 'string' && b.indexOf('old:') === 0; }
+    function urlOf(b){ return isOld(b) ? '/oldmaps/' + b.slice(4) + '/{z}/{x}/{y}.webp' : b === 'sat' ? ESRI + '{z}/{y}/{x}' : b && typeof b === 'object' ? WB + b.rel + '/{z}/{y}/{x}' : DARK + 'Base/MapServer/tile/{z}/{y}/{x}'; }
+    function nativeOf(b){ return isOld(b) ? 14 : b === 'sat' ? 18 : b && typeof b === 'object' ? (b.z18 ? 18 : 17) : 16; }
     function make(b){
+      if (isOld(b)) return [L.tileLayer(urlOf(b), opt({ maxNativeZoom:14, minNativeZoom:9, attribution:'Old map: Survey of India · Old Survey of India Maps, CC BY 4.0', errorTileUrl:'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==' }))];
       if (b === 'sat') return [L.tileLayer(urlOf(b), opt({ maxNativeZoom:18, attribution:'Esri, Vantor, Earthstar Geographics' }))];
       if (b && typeof b === 'object') return [L.tileLayer(urlOf(b), opt({ maxNativeZoom:nativeOf(b), attribution:'Esri World Imagery Wayback' }))];
       return [L.tileLayer(urlOf(b), opt({ maxNativeZoom:16, attribution:'Esri, TomTom, Garmin, &copy; OpenStreetMap contributors' })),

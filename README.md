@@ -29,8 +29,23 @@ Cite the edition you used; each has its own DOI. A single village is cited from 
 | Fire detections | [NASA FIRMS](https://firms.modaps.eosdis.nasa.gov/) (VIIRS, MODIS) | Free and open, credit NASA |
 | Township and tract boundaries | [UN OCHA COD-AB](https://data.humdata.org/dataset/cod-ab-mmr) (source: MIMU) | CC BY-IGO |
 | Satellite pictures (shown on the site, not in the dataset) | Esri World Imagery and Wayback; Copernicus Sentinel-2 | Their own terms |
+| Old maps of 1890 to 1942 (`oldmaps/`, `old_maps.csv`) | Survey of India sheets, scanned and placed by the [Old Survey of India Maps](https://zenodo.org/communities/old-survey-of-india-maps/) community and Horst Held; checked and corrected to their printed grid by FARA | CC BY 4.0, credit the community |
+| Lines from United Nations reports (`un_reports.csv`) | [IIMM land report, 2025](https://iimm.un.org/sites/default/files/2025/09/Land%20Report%20Public%20Summary%20EN.pdf); [Fact-Finding Mission, 2018](https://digitallibrary.un.org/record/1643079) | © United Nations, summarised briefly with the source named |
+| Other spellings (`other_spellings.csv`) | [GeoNames](https://www.geonames.org/) | CC BY 4.0 |
 
 Every change FARA has made to a source value is listed in [`corrections.csv`](corrections.csv). A missing name is shown as missing; nothing is guessed.
+
+### Old maps
+
+The site can lay British survey maps over today's map, in two periods (around 1900, and 1925 to 1944). The sheets are fetched, corrected and cut into tiles by three scripts:
+
+```
+python3 tools/oldmaps_fetch.py WORK        # takes only the Arakan sheets out of the published archives
+python3 tools/oldmaps_refine.py WORK       # pins each sheet to its own printed latitude/longitude grid; prints the error before and after
+python3 tools/oldmaps_tile.py WORK oldmaps # cuts the map tiles and writes oldmaps/sheets.json
+```
+
+Ten of the sixteen sheets print their grid and are corrected to within 5 metres of it; all sixteen were checked against today's roads, rivers and coast. The [methods page](https://map.rohingya.ro/methods/) gives the figures.
 
 ## Licence
 

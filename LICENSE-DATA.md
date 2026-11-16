@@ -23,3 +23,6 @@ These stay under their publishers' terms.
 | Fire detections (`fires*`, `sources/nasa_firms/`) | NASA FIRMS | Free and open. Credit NASA as the source. |
 | Township and village-tract boundaries (`boundaries.json`, `sources/cod_ab_mmr/`) | UN OCHA, COD-AB (source: MIMU) | CC BY-IGO. |
 | Satellite capture dates (`captures.json`) | Esri World Imagery Wayback metadata | Facts about Esri's imagery; the imagery itself is not included and remains Esri's. |
+| Old map tiles (`oldmaps/`) | Survey of India sheets of 1890 to 1942, scanned and placed by the Old Survey of India Maps community and Horst Held (Zenodo records 18975982, 11367062, 13346102) | CC BY 4.0. Credit the Old Survey of India Maps community. |
+| Lines from United Nations reports (`un_reports.csv`, `sources/un_reports/`) | United Nations Independent Investigative Mechanism for Myanmar; Independent International Fact-Finding Mission on Myanmar | © United Nations. Short summaries in FARA's own words, with the source and paragraphs named. |
+| Other spellings (`other_spellings.csv`, `sources/geonames/`) | GeoNames (https://www.geonames.org/) | CC BY 4.0. |
