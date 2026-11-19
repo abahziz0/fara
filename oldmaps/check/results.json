@@ -146,6 +146,196 @@
    "picture": "/oldmaps/check/b_half_84DSE_1926.jpg",
    "distance": "25 to 100 m",
    "what_was_checked": "A road on the Sittwe peninsula: 25 to 50 m. River banks: 50 to 100 m."
+  },
+  {
+   "layer": "1954 to 1955",
+   "sheet": "US Army NF 46-14 Akyab",
+   "year": "compiled 1954, printed 1960",
+   "pinned_to_printed_grid": true,
+   "picture": "/oldmaps/check/c_NF46-14_1954.jpg",
+   "distance": "40 to 90 m",
+   "what_was_checked": "Main road at Maungdaw: 40 m. Maungdaw to Buthidaung road: 40 m east of the river, about 85 m in the hills, where the sheet smooths out the bends. Road on the Sittwe peninsula: 40 to 80 m, drawn west of today's. Mayu river banks at Buthidaung and Rathedaung: 40 to 75 m.",
+   "checked": "2026-11-19",
+   "todays_roads_against_red_road_lines": "772 points: half within 68 m, nine in ten within 128 m. By place: Maungdaw 38 m; Sittwe peninsula 38 m in the north, 68 to 82 m in the south (drawn 26 to 62 m west of today's); hill road west of Buthidaung 86 m (drawn about 77 m south of today's, bends smoothed out).",
+   "placed_on": "the sheet's printed 10,000-yard grid (India Zone IIIB), tools/oldmaps_ams.py",
+   "grid_fit": {
+    "scan_pixels": [
+     5000,
+     3774
+    ],
+    "metres_per_pixel": 36.1,
+    "grid_lines": 31,
+    "grid_lines_found": 31,
+    "stations_read": 1922,
+    "stations_kept": 1842,
+    "grid_off_before_m": {
+     "typical": 83,
+     "worst": 273
+    },
+    "grid_off_after_m": {
+     "typical": 14,
+     "worst": 41
+    },
+    "frame_against_grid_m": {
+     "north_edge": 41,
+     "south_edge": 23,
+     "west_edge": -61,
+     "east_edge": 22,
+     "note": "printed frame minus where the grid puts it; plus is south (north and south edges) or east (west and east edges)"
+    },
+    "crosses_against_grid_m": {
+     "read": 15,
+     "of": 15,
+     "east_west_mean": 27,
+     "east_west_worst": 55,
+     "north_south_mean": 9,
+     "north_south_worst": 74,
+     "east_of_92.2E_worst": 55
+    }
+   }
+  },
+  {
+   "layer": "1954 to 1955",
+   "sheet": "US Army NF 46-10 Cox's Bazar",
+   "year": "compiled 1954, printed 1960",
+   "pinned_to_printed_grid": true,
+   "picture": "/oldmaps/check/c_NF46-10_1954.jpg",
+   "distance": "20 to 100 m",
+   "what_was_checked": "Road at Kyunbouk and Karani Bazar, north of Maungdaw: 25 to 40 m along 6 km. Roads between Ukhia and Cox's Bazar on the Bangladesh side: 20 to 45 m. Banks of the Naf and the Kalapanzin: 60 to 100 m. The sheet's printed frame does not agree with its printed grid (135 m at the foot of the sheet, over 200 m in the south-west corner at sea); the roads fit the grid, so the grid was kept.",
+   "checked": "2026-11-19",
+   "todays_roads_against_red_road_lines": "605 points: half within 30 m, nine in ten within 98 m, with no lean to any side (under 11 m).",
+   "placed_on": "the sheet's printed 10,000-yard grid (India Zone IIIB), tools/oldmaps_ams.py",
+   "grid_fit": {
+    "scan_pixels": [
+     5000,
+     3780
+    ],
+    "metres_per_pixel": 36.3,
+    "grid_lines": 30,
+    "grid_lines_found": 29,
+    "stations_read": 1700,
+    "stations_kept": 1546,
+    "grid_off_before_m": {
+     "typical": 79,
+     "worst": 393
+    },
+    "grid_off_after_m": {
+     "typical": 15,
+     "worst": 43
+    },
+    "frame_against_grid_m": {
+     "north_edge": 108,
+     "south_edge": -135,
+     "west_edge": -214,
+     "east_edge": -13,
+     "note": "printed frame minus where the grid puts it; plus is south (north and south edges) or east (west and east edges)"
+    },
+    "crosses_against_grid_m": {
+     "read": 15,
+     "of": 15,
+     "east_west_mean": -95,
+     "east_west_worst": 267,
+     "north_south_mean": -10,
+     "north_south_worst": 117,
+     "east_of_92.2E_worst": 161
+    }
+   }
+  },
+  {
+   "layer": "1954 to 1955",
+   "sheet": "US Army NF 46-15 Myohaung",
+   "year": "compiled 1954, printed 1960",
+   "pinned_to_printed_grid": true,
+   "picture": "/oldmaps/check/c_NF46-15_1954.jpg",
+   "distance": "20 to 100 m",
+   "what_was_checked": "Road from Kyauktaw to Myohaung (Mrauk U): 20 to 30 m. Roads in Myohaung town: 50 m. Road at Minbya: up to 100 m, drawn about 80 m west of today's. River banks at Myebon and on the Lemro: 60 to 100 m. The printed frame and crosses lie within 100 m of the printed grid. Around Minbya the sheet is the least certain: the crosses there lie 50 to 90 m west of the grid, in the same direction as the road, so that part may sit up to about 100 m too far west; today's highway partly follows a new line there. No village of the archive is on this sheet.",
+   "checked": "2026-11-19",
+   "todays_roads_against_red_road_lines": "1,089 points: half within 52 m, nine in ten within 128 m. By place: Kyauktaw to Myohaung road 22 to 30 m; Myohaung town 52 m; near Minbya 98 m (drawn 80 m west of today's). North to south the roads lie within 3 to 24 m, which is why the grid and not the frame was kept.",
+   "todays_lines": "© OpenStreetMap contributors (ODbL), fetched 19 November 2026",
+   "placed_on": "the sheet's printed 10,000-yard grid (India Zone IIIB), tools/oldmaps_ams.py",
+   "grid_fit": {
+    "scan_pixels": [
+     5000,
+     3773
+    ],
+    "metres_per_pixel": 36.5,
+    "grid_lines": 29,
+    "grid_lines_found": 29,
+    "stations_read": 1815,
+    "stations_kept": 1764,
+    "grid_off_before_m": {
+     "typical": 52,
+     "worst": 268
+    },
+    "grid_off_after_m": {
+     "typical": 12,
+     "worst": 44
+    },
+    "frame_against_grid_m": {
+     "north_edge": 100,
+     "south_edge": -39,
+     "west_edge": -61,
+     "east_edge": -66,
+     "note": "printed frame minus where the grid puts it; plus is south (north and south edges) or east (west and east edges)"
+    },
+    "crosses_against_grid_m": {
+     "read": 15,
+     "of": 15,
+     "east_west_mean": -31,
+     "east_west_worst": 90,
+     "north_south_mean": 60,
+     "north_south_worst": 99,
+     "east_of_92.2E_worst": 99
+    }
+   }
+  },
+  {
+   "layer": "1954 to 1955",
+   "sheet": "US Army NE 46-3 Kyaukpyu",
+   "year": "compiled 1955, printed 1959",
+   "pinned_to_printed_grid": true,
+   "picture": "/oldmaps/check/c_NE46-03_1955.jpg",
+   "distance": "30 to 100 m",
+   "what_was_checked": "Main road in Kyaukpyu town: 30 m. Shore of the Kyaukpyu peninsula: 30 to 50 m. Shores of East Boronga island: 60 to 100 m. At An and Ramree today's roads pass through the villages drawn, but little there can be measured. The sheet's printed frame and crosses lie up to 170 m from its printed grid; the road in Kyaukpyu town fits the grid, so the grid was kept. A thinner check than on the other two sheets. No village of the archive is on this sheet.",
+   "checked": "2026-11-19",
+   "todays_roads_against_red_road_lines": "65 points: half within 45 m, nine in ten within 128 m. In Kyaukpyu town 30 points, half within 30 m (drawn 24 m west of today's).",
+   "todays_lines": "© OpenStreetMap contributors (ODbL), fetched 19 November 2026",
+   "placed_on": "the sheet's printed 10,000-yard grid (India Zone IIIB), tools/oldmaps_ams.py",
+   "grid_fit": {
+    "scan_pixels": [
+     5000,
+     3791
+    ],
+    "metres_per_pixel": 36.5,
+    "grid_lines": 31,
+    "grid_lines_found": 28,
+    "stations_read": 1810,
+    "stations_kept": 1634,
+    "grid_off_before_m": {
+     "typical": 49,
+     "worst": 282
+    },
+    "grid_off_after_m": {
+     "typical": 14,
+     "worst": 44
+    },
+    "frame_against_grid_m": {
+     "north_edge": -75,
+     "south_edge": -127,
+     "west_edge": -18,
+     "east_edge": -137,
+     "note": "printed frame minus where the grid puts it; plus is south (north and south edges) or east (west and east edges)"
+    },
+    "crosses_against_grid_m": {
+     "read": 17,
+     "of": 18,
+     "east_west_mean": -94,
+     "east_west_worst": 171,
+     "north_south_mean": -21,
+     "north_south_worst": 75,
+     "east_of_92.2E_worst": 171
+    }
+   }
   }
  ]
 }

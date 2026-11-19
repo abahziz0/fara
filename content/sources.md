@@ -6,19 +6,22 @@ FARA is built on a small number of sources, listed on the [methods page](/method
 
 The old-map layer on the map is made from survey maps drawn under British rule. Each sheet was scanned and placed on modern coordinates by the Old Survey of India Maps community and by Horst Held, who share them under the Creative Commons Attribution 4.0 licence. FARA then checked every sheet and corrected ten of them against their own printed grid; the [methods page](/methods/#old-maps-united-nations-reports-and-other-spellings) says how, and how close each sheet now sits.
 
+The map of 1954 and 1955 is different. It is four sheets of the United States Army Map Service at 1:250,000, a quarter of the scale of the one-inch maps. The two that cover the villages of this archive were redrawn from the same surveys and from wartime air photographs; Myohaung (today's Mrauk U) lies to the east and Kyaukpyu to the south-east. The scans came with no coordinates, and FARA placed them on the blue yard grid the sheets print. It is the map to read for names: many villages carry a second name in brackets.
+
 | Layer | Sheets | Surveyed or printed | Source |
 |---|---|---|---|
 | Around 1900 | One inch to a mile, sheets 84 C/3-7, 84 C/4-8, 84 D/1-5, 84 D/2-6 and 84 D/11-15 | 1890 to 1906 | [Georeferenced historic 63k maps of Burma](https://zenodo.org/records/18975982) |
 | 1925 to 1944 | One inch to a mile, sheets 84 D/9, 10, 11, 13, 14, 15 and 16 | 1925 to 1936 | [Georeferenced 63k maps of Burma](https://zenodo.org/records/11367062) |
 | 1925 to 1944 | Half inch to a mile, sheets 84 C/SW, 84 C/SE, 84 D/NW and 84 D/SE, where no one-inch sheet is available | 1926 to 1942 | [Georeferenced half-inch maps of Burma](https://zenodo.org/records/13346102) |
+| 1954 to 1955 | United States Army Map Service, Burma 1:250,000, series U542, sheets NF 46-14 Akyab, NF 46-10 Cox's Bazar, NF 46-15 Myohaung and NE 46-3 Kyaukpyu | compiled 1954 and 1955, printed 1959 and 1960 | [Perry-Castañeda Library Map Collection](https://maps.lib.utexas.edu/maps/ams/burma/), University of Texas Libraries. Public domain |
 
 On the map, choose a period under Old maps. "Lines only" hides the paper and lays the drawn lines and names over today's satellite picture. In the picture viewer of a village, "Old map" puts the survey map beside the newest picture. The video of a village opens with the survey maps of its ground.
 
-What to keep in mind: the spellings on these maps are the surveyors' own and are often far from today's names. A village missing from an old sheet was not necessarily absent. A one-inch map was drawn to about 30 metres at best, and rivers and coasts have moved since.
+What to keep in mind: the spellings on these maps are the surveyors' own and are often far from today's names. A village missing from an old sheet was not necessarily absent. A one-inch map was drawn to about 30 metres at best, and rivers and coasts have moved since. On the map of 1954 and 1955 a village mark is about 100 metres wide, a village can be drawn 100 to 200 metres from its place, and many villages are marks without a name.
 
 ### How well each sheet sits
 
-Every sheet was checked against today's rivers, creeks, coast and main roads. Each picture below shows four close-ups of one sheet with today's lines drawn on it in blue (water) and magenta (roads); the red bar is 100 metres. The figure after each link is how far today's lines lie from the drawn ones. The [methods page](/methods/#old-maps-united-nations-reports-and-other-spellings) explains what was found. Today's lines are © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors.
+Every sheet was checked against today's rivers, creeks, coast and main roads. Each picture below shows four close-ups of one sheet with today's lines drawn on it in blue (water) and magenta (roads); the red bar is 100 metres (500 metres on the four United States Army sheets, which are drawn much smaller). The figure after each link is how far today's lines lie from the drawn ones. The [methods page](/methods/#old-maps-united-nations-reports-and-other-spellings) explains what was found. Today's lines are © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors.
 
 - [84 C/3-7, 1905](/oldmaps/check/a_84C03-07_1905.jpg): 30 to 90 m
 - [84 C/4-8, 1905](/oldmaps/check/a_84C04-08_1905.jpg): 15 to 70 m
@@ -36,10 +39,14 @@ Every sheet was checked against today's rivers, creeks, coast and main roads. Ea
 - [half-inch 84 C/SE, 1938](/oldmaps/check/b_half_84CSE_1938.jpg): 50 to 100 m
 - [half-inch 84 D/NW, 1942](/oldmaps/check/b_half_84DNW_1942.jpg): 25 to 100 m
 - [half-inch 84 D/SE, 1926](/oldmaps/check/b_half_84DSE_1926.jpg): 25 to 100 m
+- [US Army NF 46-14 Akyab, 1954](/oldmaps/check/c_NF46-14_1954.jpg): 40 to 90 m
+- [US Army NF 46-10 Cox's Bazar, 1954](/oldmaps/check/c_NF46-10_1954.jpg): 20 to 100 m
+- [US Army NF 46-15 Myohaung, 1954](/oldmaps/check/c_NF46-15_1954.jpg): 20 to 100 m
+- [US Army NE 46-3 Kyaukpyu, 1955](/oldmaps/check/c_NE46-03_1955.jpg): 30 to 100 m
 
 Other old maps, not shown on the site:
 
-- [U.S. Army Map Service, Burma 1:250,000, series U542](https://maps.lib.utexas.edu/maps/ams/burma/), 1950s, at the University of Texas Libraries.
+- [U.S. Army Map Service, Burma 1:250,000, series U542](https://maps.lib.utexas.edu/maps/ams/burma/), 1950s, at the University of Texas Libraries: the neighbouring sheets, which lie outside the four townships of this archive.
 - [British Library, India Office Records, half-inch sheet 84 D/SE Akyab](https://searcharchives.bl.uk/catalog/040-002248790), 1926, reprinted 1942. The catalogue entry only; no scan is linked.
 - [Declassified U.S. satellite photographs, 1971 to 1984](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-declassified-data-declassified-satellite-imagery-3), public domain, from the U.S. Geological Survey.
 

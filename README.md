@@ -30,6 +30,7 @@ Cite the edition you used; each has its own DOI. A single village is cited from 
 | Township and tract boundaries | [UN OCHA COD-AB](https://data.humdata.org/dataset/cod-ab-mmr) (source: MIMU) | CC BY-IGO |
 | Satellite pictures (shown on the site, not in the dataset) | Esri World Imagery and Wayback; Copernicus Sentinel-2 | Their own terms |
 | Old maps of 1890 to 1942 (`oldmaps/`, `old_maps.csv`) | Survey of India sheets, scanned and placed by the [Old Survey of India Maps](https://zenodo.org/communities/old-survey-of-india-maps/) community and Horst Held; checked and corrected to their printed grid by FARA | CC BY 4.0, credit the community |
+| Map of 1954 and 1955 (`oldmaps/c/`) | United States Army Map Service, Burma 1:250,000, sheets NF 46-14, NF 46-10, NF 46-15 and NE 46-3; scans from the [University of Texas Libraries](https://maps.lib.utexas.edu/maps/ams/burma/); placed by FARA on the sheets' printed grid | Public domain, credit the library for the scans |
 | Lines from United Nations reports (`un_reports.csv`) | [IIMM land report, 2025](https://iimm.un.org/sites/default/files/2025/09/Land%20Report%20Public%20Summary%20EN.pdf); [Fact-Finding Mission, 2018](https://digitallibrary.un.org/record/1643079) | © United Nations, summarised briefly with the source named |
 | Other spellings (`other_spellings.csv`) | [GeoNames](https://www.geonames.org/) | CC BY 4.0 |
 
@@ -37,7 +38,7 @@ Every change FARA has made to a source value is listed in [`corrections.csv`](co
 
 ### Old maps
 
-The site can lay British survey maps over today's map, in two periods (around 1900, and 1925 to 1944). The sheets are fetched, corrected and cut into tiles by three scripts:
+The site can lay old survey maps over today's map, in three periods: British sheets of around 1900 and of 1925 to 1944, and a United States Army map of 1954 and 1955. The British sheets are fetched, corrected and cut into tiles by three scripts:
 
 ```
 python3 tools/oldmaps_fetch.py WORK        # takes only the Arakan sheets out of the published archives
@@ -46,6 +47,14 @@ python3 tools/oldmaps_tile.py WORK oldmaps # cuts the map tiles and writes oldma
 ```
 
 Ten of the sixteen sheets print their grid and are corrected to within 5 metres of it; all sixteen were checked against today's roads, rivers and coast. The [methods page](https://map.rohingya.ro/methods/) gives the figures.
+
+The four United States Army sheets come as plain scans with no coordinates. One more script places them on the blue 10,000-yard grid they print, and the tiles of that layer alone are then cut:
+
+```
+python3 tools/oldmaps_ams.py WORK            # fetches the four scans, pins each to its printed yard grid, prints the error before and after
+python3 tools/oldmaps_tile.py WORK oldmaps c # cuts only the tiles of this layer
+python3 tools/oldmaps_check.py WORK oldmaps/check c_N      # the close-up pictures for these four sheets
+```
 
 ## Licence
 

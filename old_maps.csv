@@ -1,1024 +1,1024 @@
-id,name,township,on_map_of_1890_1906,on_map_of_1925_1944
-1,Kar Di,Buthidaung,no,yes
-2,Kywe Cho Maw,Buthidaung,no,yes
-3,Nyaung Chaung,Buthidaung,no,yes
-4,Ah Lel Chaung,Buthidaung,no,yes
-5,Let Thar,Buthidaung,no,yes
-6,Ah Twin Hnget Thay,Buthidaung,no,yes
-7,Hnget Thay,Buthidaung,no,yes
-8,Htan Shauk Khan,Buthidaung,no,yes
-9,Kyauk Seik,Buthidaung,no,yes
-10,Myaw Taung,Buthidaung,no,yes
-11,Pyar Pin Yin,Buthidaung,no,yes
-12,Thein Taung,Buthidaung,no,yes
-13,Aw Ra Ma,Buthidaung,no,yes
-14,Htu Myaung Lay,Buthidaung,no,yes
-15,Khar Lar U,Buthidaung,no,yes
-16,Min Kaing,Buthidaung,no,yes
-17,Nat Seik,Buthidaung,no,yes
-18,Nga Tin Tein,Buthidaung,no,yes
-19,Pein Hne Chaung,Buthidaung,no,yes
-20,Taung Chaung Gyi,Buthidaung,no,yes
-21,Taung Chay,Buthidaung,no,yes
-22,Tha Lu Pyar,Buthidaung,no,yes
-23,Aye Yar Cha,Buthidaung,no,yes
-24,Chan Thar,Buthidaung,no,yes
-25,Dar Sauk Paing,Buthidaung,no,yes
-26,Ma Yee Mee,Buthidaung,no,yes
-27,Maung Chaung,Buthidaung,no,yes
-28,Pein Hne Gyi,Buthidaung,no,yes
-29,Tha Ra Zaing,Buthidaung,no,yes
-30,Ah Htet Bo Ka Lay,Buthidaung,yes,yes
-31,Auk Bo Ka Lay,Buthidaung,yes,yes
-32,Ba Da Kar,Buthidaung,yes,yes
-33,Kyaung Zar Hpyu,Buthidaung,yes,yes
-34,Kyee Hnoke Thee,Buthidaung,yes,yes
-35,Nga/Myin Baw Kha Mway,Buthidaung,yes,yes
-36,Nga/Myin Baw,Buthidaung,yes,yes
-37,Pan Zi,Buthidaung,yes,yes
-38,Sin Shey Myo,Buthidaung,yes,yes
-39,Ba Da Nar,Buthidaung,no,yes
-40,Pyin Khaung,Buthidaung,yes,yes
-41,Yin Baung,Buthidaung,no,yes
-42,Ywar Thar Yar,Buthidaung,no,yes
-43,Ah Lel (Ba Gon Nar),Buthidaung,no,yes
-44,Kan Gyi Pyin,Buthidaung,no,yes
-45,Kyauk Tan,Buthidaung,no,yes
-46,Myauk (Ba Gon Nar),Buthidaung,no,yes
-47,Myaung Nar,Buthidaung,no,yes
-48,Taung (Ba Gon Nar),Buthidaung,no,yes
-49,Ywar Thit,Buthidaung,no,yes
-50,Chin Tha Mar,Buthidaung,no,yes
-51,Hpaung Taw Pyin,Buthidaung,no,yes
-52,Maung Nu,Buthidaung,no,yes
-53,Pale Taung,Buthidaung,no,yes
-54,Da Pyu Chaung,Buthidaung,no,yes
-55,Inn Gyin Myaing (NaTaLa),Buthidaung,no,yes
-56,Dar Paing Sa Yar,Buthidaung,no,yes
-57,Gaung Ni,Buthidaung,no,yes
-58,Myit Nar,Buthidaung,no,yes
-59,Saint Aung,Buthidaung,no,yes
-60,Zar Ti Pyin,Buthidaung,no,yes
-61,Baw Li,Buthidaung,no,yes
-62,Du Oe Thei Ma,Buthidaung,no,yes
-63,Ngwe Taung,Buthidaung,no,yes
-64,Kyein Taung,Buthidaung,no,yes
-65,Goke Pi,Buthidaung,yes,yes
-66,Oe Hpyu (Thet + Myo),Buthidaung,yes,yes
-67,Oh Byu,Buthidaung,yes,yes
-68,Pe Tha Htu,Buthidaung,yes,yes
-69,Sa Hone,Buthidaung,yes,yes
-70,Sa Hone Kha Mway,Buthidaung,no,yes
-71,Gu Dar Pyin,Buthidaung,no,yes
-72,Kyauk Sar Taing (Su See),Buthidaung,no,yes
-73,Rakhine Ywar,Buthidaung,no,yes
-74,Taung,Buthidaung,no,yes
-75,Tha Yet Taung,Buthidaung,no,yes
-76,Aung Pa,Buthidaung,no,yes
-77,Hpa Yar Pyin,Buthidaung,no,yes
-78,Kant Kaw Myaing (NaTaLa),Buthidaung,no,yes
-79,Kuwar Para,Buthidaung,no,yes
-80,Pyin Hla (Ywa Haung),Buthidaung,no,yes
-81,Thein Tan,Buthidaung,no,yes
-82,Thein Tan (Rakhine),Buthidaung,no,yes
-83,Ywa Thit (Esmile Para),Buthidaung,no,yes
-84,Doe Tan (1),Buthidaung,no,yes
-85,Doe Tan (2),Buthidaung,no,yes
-86,Hpa Yon Chaung (Daing Net),Buthidaung,no,yes
-87,Hpa Yon Chaung,Buthidaung,no,yes
-88,Kywe Tet Pyin,Buthidaung,no,yes
-89,Pyaing Taung,Buthidaung,no,yes
-90,Hpoe Khaung Chaung,Buthidaung,no,yes
-91,Kan Da (Kan Da Para),Buthidaung,no,yes
-92,Kan Pyin,Buthidaung,no,yes
-93,Hpon Nyo Leik,Buthidaung,no,yes
-94,Hpon Nyo Leik (Rakhine + Rohingya),Buthidaung,no,yes
-95,Kan Du,Buthidaung,no,yes
-96,Paik Thay Ywar,Buthidaung,no,yes
-97,Ba Da Nar,Buthidaung,no,yes
-98,Ba Da Nar Ywar Thit,Buthidaung,no,yes
-99,Inn Chaung Daing Net,Buthidaung,no,yes
-100,Inn Chaung Zay,Buthidaung,no,yes
-101,Zay Teit Kaung,Buthidaung,no,yes
-102,Ka Kyet Bet,Buthidaung,no,yes
-103,Ba Yaung Baw Li Para,Buthidaung,no,yes
-104,Kan Gyi Pyin,Buthidaung,no,yes
-105,Mun Shi Ywar,Buthidaung,no,yes
-106,Oe Thei,Buthidaung,no,yes
-107,Tat Yar,Buthidaung,no,yes
-108,Tat Yar (Rakhine),Buthidaung,no,yes
-109,Zay Di Taung,Buthidaung,no,yes
-110,Kyauk Pyin Chaung,Buthidaung,no,yes
-111,Min Hla Kaing,Buthidaung,no,yes
-112,Baw Di Kaing,Buthidaung,no,yes
-113,Ku Lar Chaung,Buthidaung,no,yes
-114,Laung Chaung,Buthidaung,no,yes
-115,Nan Tha Yway,Buthidaung,no,yes
-116,Sin Hpyu Taung,Buthidaung,no,yes
-117,Ahr Kar Pyan Kha Mway,Buthidaung,no,yes
-118,Kin Chaung,Buthidaung,no,yes
-119,Let Pan Kaing,Buthidaung,no,yes
-120,Pyin Shey,Buthidaung,no,yes
-121,Tha Bauk Chaung,Buthidaung,no,yes
-122,Bar Ri Zar,Buthidaung,no,yes
-123,Done Thein,Buthidaung,no,yes
-124,Kin Taung (Kyar Nyo Pyin),Buthidaung,no,yes
-125,Ah Nauk,Buthidaung,no,yes
-126,Ah Shey,Buthidaung,no,yes
-127,Kun Taing Ywar Gyi,Buthidaung,no,yes
-128,Nan Yar Kone,Buthidaung,no,yes
-129,Pale Taung,Buthidaung,no,yes
-130,War Shee Lar (War Shee Lar Para),Buthidaung,no,yes
-131,Kyauk Hpyu Taung,Buthidaung,no,yes
-132,Thar Yar Kone (a) Htein Taw,Buthidaung,no,yes
-133,Gone Nar,Buthidaung,no,yes
-134,Thay Kan,Buthidaung,no,yes
-135,Thay Kan (Rakhine),Buthidaung,no,yes
-136,Pyin Shey (Rakhine),Buthidaung,no,yes
-137,Kyauk Yan (Rakhine),Buthidaung,no,yes
-138,Na Nwin Ku,Buthidaung,no,yes
-139,Taung,Buthidaung,no,yes
-140,Teik Tu Pauk,Buthidaung,no,yes
-141,Kyauk Twe Chaung,Buthidaung,yes,yes
-142,Kyaung Taung,Buthidaung,yes,yes
-143,Kyaw U,Buthidaung,yes,yes
-144,Pu Zun Chaung,Buthidaung,yes,yes
-145,Sar Kaing,Buthidaung,yes,yes
-146,Thea Ni Chaung,Buthidaung,yes,yes
-147,Kyauk See,Buthidaung,yes,yes
-148,Kyun Pauk,Buthidaung,yes,yes
-149,Kyway Chaung Kha Mway,Buthidaung,yes,yes
-150,Kyway Chaung Kha Mway (Lower),Buthidaung,yes,yes
-151,Kyway Chaung,Buthidaung,yes,yes
-152,Kyway Chaung Rakhine,Buthidaung,yes,yes
-153,Pe Lun Kha Mway,Buthidaung,yes,yes
-154,Pe Tha Du (West),Buthidaung,yes,yes
-155,Doe Wai,Buthidaung,no,yes
-156,Man Aung,Buthidaung,no,yes
-157,Set Khaw,Buthidaung,no,yes
-158,Thar Zi,Buthidaung,no,yes
-159,Kha Yu Chaung,Buthidaung,no,yes
-160,Laung Chaung Daing Net,Buthidaung,no,yes
-161,Laung Chaung,Buthidaung,no,yes
-162,Pyein Chaung,Buthidaung,yes,yes
-163,Sin Swei Ya,Buthidaung,yes,yes
-164,Ah Yaing Kwet Chay,Buthidaung,no,yes
-165,Chaung Pauk,Buthidaung,no,yes
-166,Kyar Nyo Pyin,Buthidaung,no,yes
-167,Kyar Nyo Pyin (Rakhine),Buthidaung,no,yes
-168,Pyar (Yi) Yae,Buthidaung,no,yes
-169,Doe Tan,Buthidaung,no,yes
-170,Let Wea Det,Buthidaung,no,yes
-171,Pu Zun Chaung,Buthidaung,no,yes
-172,Done Chaung,Buthidaung,no,yes
-173,Gandamar (NaTaLa),Buthidaung,no,yes
-174,Htin Shar Pyin,Buthidaung,no,yes
-175,Inn Hpauk,Buthidaung,no,yes
-176,Kyauk Hla Pyin,Buthidaung,no,yes
-177,Let Wea Det Pyin Shey,Buthidaung,no,yes
-178,Tha Pyay Taw,Buthidaung,no,yes
-179,Toe Cheit Ywar,Buthidaung,no,yes
-180,Maung Gyi Taung,Buthidaung,no,yes
-181,Sin Oe Pyin (Middle),Buthidaung,no,yes
-182,Sin Oe Pyin (Ywar Gyi),Buthidaung,no,yes
-183,Maung Hnit Ma,Buthidaung,no,yes
-184,Bo Gyi Chaung,Buthidaung,no,yes
-185,Hpaw Tay Ahr Li,Buthidaung,no,yes
-186,Khaik Mu Ra,Buthidaung,no,yes
-187,Mar Zi,Buthidaung,no,yes
-188,Mee Chaung Zay,Buthidaung,no,yes
-189,Ywar Thit,Buthidaung,no,yes
-190,Kone Tan Ywar Thit,Buthidaung,no,yes
-191,Ku Mi Khar Li,Buthidaung,no,yes
-192,Maung Hla Ma (Lin Bar Si Li),Buthidaung,no,yes
-193,Mee Kyaung Khaung Swea,Buthidaung,no,yes
-194,Ka Htee Hla (Na Ta La),Buthidaung,yes,yes
-195,Pan Be Chaung,Buthidaung,no,yes
-196,Pan Be Chaung (Rakhine),Buthidaung,no,yes
-197,Day Li,Buthidaung,no,yes
-198,Myaung Nar,Buthidaung,no,yes
-199,Ku Toet Seik,Buthidaung,no,yes
-200,Kyauk Yit,Buthidaung,no,yes
-201,Myauk (Pale Taung),Buthidaung,no,yes
-202,Nan Yar Kone Ywar Thit,Buthidaung,no,yes
-203,Taung (Pale Taung),Buthidaung,no,yes
-204,Than Chay,Buthidaung,no,yes
-205,Nga Hlan Pyin,Buthidaung,no,yes
-206,Kyee Hnoke Thee,Buthidaung,no,yes
-207,Maung Hnit Ma,Buthidaung,no,yes
-208,Ngar Yant Chaung,Buthidaung,no,yes
-209,Pauk Taw Pyin,Buthidaung,no,yes
-210,Yin Ma,Buthidaung,no,yes
-211,Yin Ma Zay,Buthidaung,no,yes
-212,Aw Lan Pyin,Buthidaung,no,yes
-213,Aw Lan Pyin,Buthidaung,no,yes
-214,Nga Kyi Tauk Daing Net,Buthidaung,no,yes
-215,Nga Kyi Tauk,Buthidaung,no,yes
-216,Nga/ Kyin Tauk,Buthidaung,no,yes
-217,Tha Yae Kone Tan,Buthidaung,no,yes
-218,Myauk Chaung,Buthidaung,no,yes
-219,Oke Taung (Rakhine),Buthidaung,no,yes
-220,Ah Twin Pyin,Buthidaung,no,yes
-221,Aung Ze Ya (Rakhine),Buthidaung,no,yes
-222,Pauk Taw,Buthidaung,no,yes
-223,Pyaing Taung,Buthidaung,no,yes
-224,Taung Chaung,Buthidaung,no,yes
-225,Taung Maw,Buthidaung,no,yes
-226,Zin Kha Mar,Buthidaung,no,yes
-227,Let Pan Chaung,Buthidaung,no,yes
-228,Myo Ma Chaung,Buthidaung,no,yes
-229,Pyin Chaung,Buthidaung,no,yes
-230,Kun Taung,Buthidaung,no,yes
-231,Sa Par Htar,Buthidaung,no,yes
-232,Khaung Taik,Buthidaung,no,yes
-233,Nwar Yon Taung,Buthidaung,no,yes
-234,San Goe Taung,Buthidaung,no,yes
-235,Shat Shar Taung,Buthidaung,no,yes
-236,Sin Thay Pyin,Buthidaung,no,yes
-237,U Yin Thar,Buthidaung,no,yes
-238,U Yin Thar Kha Mway,Buthidaung,no,yes
-239,Kan Paing Chaung,Buthidaung,no,yes
-240,Kha Mway Chaung,Buthidaung,no,yes
-241,Pyin Shey,Buthidaung,no,yes
-242,San Hnyin Wai (Win Dwin Rakhine),Buthidaung,no,yes
-243,San Hnyin Wai Rakhine,Buthidaung,no,yes
-244,Si Pin Thar Yar,Buthidaung,no,yes
-245,Say Oe Kya,Buthidaung,no,yes
-246,Tha Zin Taw,Buthidaung,no,yes
-247,Wa Ra Kyun,Buthidaung,no,yes
-248,Gwa Son,Buthidaung,no,yes
-249,Kan Pyin,Buthidaung,no,yes
-250,Say Taung,Buthidaung,no,yes
-251,Daing Net Pyin,Buthidaung,no,yes
-252,Pyin Shey,Buthidaung,no,yes
-253,Pyin Shey Ah Shey,Buthidaung,no,yes
-254,Sein Hnyin Pyar Zay,Buthidaung,no,yes
-255,Taw Kan,Buthidaung,no,yes
-256,Tha Pyay Taw,Buthidaung,no,yes
-257,Tin Set,Buthidaung,no,yes
-258,Yet Chaung,Buthidaung,no,yes
-259,Zay Ah Nauk,Buthidaung,no,yes
-260,Ba Ho Pyin Ywar Haung,Buthidaung,no,yes
-261,Ba Ho Pyin Ywar Thit,Buthidaung,no,yes
-262,Chaung Chay,Buthidaung,no,yes
-263,Doe Tan,Buthidaung,no,yes
-264,Hmaing Sa Ri,Buthidaung,no,yes
-265,Inn Chaung,Buthidaung,no,yes
-266,Nga Thaing Chaung,Buthidaung,no,yes
-267,Pan Kone Ma,Buthidaung,no,yes
-268,Pauk Kyat,Buthidaung,no,yes
-269,Pauk Kyat Wa,Buthidaung,no,yes
-270,Pi Ywet Rakhine,Buthidaung,no,yes
-271,Seik Ta Ra,Buthidaung,no,yes
-272,Sin Ma U Kaing,Buthidaung,no,yes
-273,Ta Ra Gu,Buthidaung,no,yes
-274,Than Pu Yar,Buthidaung,no,yes
-275,Tharaphy (NaTaLa),Buthidaung,no,yes
-276,Yae Chan,Buthidaung,no,yes
-277,Daing Net Ywar,Buthidaung,no,yes
-278,Hpa Lan,Buthidaung,yes,yes
-279,Myaung,Buthidaung,no,yes
-280,Tat Min Chaung,Buthidaung,no,yes
-281,Taung Paing,Buthidaung,no,yes
-282,Myauk,Buthidaung,no,yes
-283,Taung,Buthidaung,no,yes
-284,Taung Chay,Buthidaung,no,yes
-285,Tha Peik Taung (Rakhine),Buthidaung,no,yes
-286,Kyet Mauk Taung,Buthidaung,no,yes
-287,Tha Yet Kin Ma Nu,Buthidaung,no,yes
-288,Tha Yet Pyin,Buthidaung,no,yes
-289,Tha Yet Pyin (Rakhine),Buthidaung,no,yes
-290,Yae Chan Pyin,Buthidaung,no,yes
-291,Kyauk Pyin Seik,Buthidaung,no,yes
-292,Tha Pyay Seik,Buthidaung,no,yes
-293,Thaing Ta Poke,Buthidaung,no,yes
-294,Gaung Gyi,Buthidaung,no,yes
-295,Gwa Son,Buthidaung,no,yes
-296,Gwa Son (Rakhine),Buthidaung,no,yes
-297,Maws Taw Hpi,Buthidaung,no,yes
-298,Wet Ma Kya,Buthidaung,no,yes
-299,Hla Tha Ma,Buthidaung,no,yes
-300,Laung Gyun,Buthidaung,no,yes
-301,Say Tha Ma,Buthidaung,no,yes
-302,Thein Taung Pyin (Daing Net),Buthidaung,no,yes
-303,Thein Taung Pyin,Buthidaung,no,yes
-304,Done Paing,Buthidaung,no,yes
-305,Khu Taung,Buthidaung,no,yes
-306,Kone Taung,Buthidaung,no,yes
-307,Thin Ga Net,Buthidaung,no,yes
-308,Kywe Rine (Na Ta La),Buthidaung,no,yes
-309,Tin May,Buthidaung,yes,yes
-310,Khe War,Buthidaung,no,yes
-311,Taung,Buthidaung,no,yes
-312,U Hla Hpay,Buthidaung,no,yes
-313,Hlaing Shey Pyin,Buthidaung,no,yes
-314,U Kyaw,Buthidaung,no,yes
-315,Doe Tan,Buthidaung,no,yes
-316,Kyein Chaung,Buthidaung,no,yes
-317,Wa Ra Kyun,Buthidaung,no,yes
-318,Zaw Baw,Buthidaung,no,yes
-319,Baw Li,Buthidaung,no,yes
-320,Baw Li (Rakhine),Buthidaung,no,yes
-321,Zay Di Taung,Buthidaung,no,yes
-322,Zay Di Taung (Rakhine),Buthidaung,no,yes
-323,Ah Nauk Pyin,Buthidaung,no,yes
-324,Kyein Chaung,Buthidaung,no,yes
-325,Rammoya Fara,Buthidaung,no,yes
-326,Yin Ma Kyauk Taung,Buthidaung,no,yes
-327,Gone Nar,Buthidaung,no,yes
-328,Thit Yin,Buthidaung,no,yes
-329,Ywar Ma Mu Sa Lin,Buthidaung,no,yes
-330,Ywar Ma Rakhine,Buthidaung,no,yes
-331,Ah Lel (Ywet Nyo Taung),Buthidaung,no,yes
-332,Myauk (Ywet Nyo Taung),Buthidaung,no,yes
-333,Taung (Ywet Nyo Taung),Buthidaung,no,yes
-334,Taung Gyi Yin,Buthidaung,no,yes
-335,Thar Si (Myo),Buthidaung,yes,yes
-336,Yin Ma Zee Hton,Buthidaung,no,yes
-337,Zee Hton Rakhine,Buthidaung,yes,yes
-338,Four Miles South,Buthidaung,no,no
-339,(Du) Chee Yar Tan (East),Maungdaw,yes,yes
-340,(Du) Chee Yar Tan (Middle),Maungdaw,yes,yes
-341,(Du) Chee Yar Tan (South),Maungdaw,yes,yes
-342,(Du) Chee Yar Tan (West),Maungdaw,yes,yes
-343,Baw Di Kone,Maungdaw,yes,yes
-344,DPA (Nyein Chan Yay),Maungdaw,yes,yes
-345,Kha Yay Myaing (NaTaLa),Maungdaw,yes,yes
-346,Kin Chaung,Maungdaw,yes,yes
-347,Nu Nar Sar Ri,Maungdaw,yes,yes
-348,Tat U Chaung,Maungdaw,yes,yes
-349,(Du) Nyaung Pin Gyi,Maungdaw,yes,yes
-350,(Pa) Chee Yar Tan,Maungdaw,yes,yes
-351,(Pa) Nyaung Pin Gyi,Maungdaw,yes,yes
-352,Maw,Maungdaw,yes,yes
-353,Ah Htet Pyu Ma,Maungdaw,yes,yes
-354,Koe Taung,Maungdaw,yes,yes
-355,Taung Yin,Maungdaw,yes,yes
-356,Byu Har Kone,Maungdaw,yes,yes
-357,Kan Hpu,Maungdaw,yes,yes
-358,Kan Paing Gyi (Lower),Maungdaw,yes,yes
-359,Kan Paing Gyi (Upper),Maungdaw,yes,yes
-360,Lay Yin Pyan Kwin,Maungdaw,yes,yes
-361,Maw Tu Lar,Maungdaw,yes,yes
-362,Zay Kone Tan,Maungdaw,yes,yes
-363,Aung Zan,Maungdaw,yes,yes
-364,Aung Zan (Daing Net),Maungdaw,yes,yes
-365,Kyaung Toe,Maungdaw,yes,yes
-366,Shee Dar,Maungdaw,yes,yes
-367,Aung Zay Ya (Nyein Chan Yay),Maungdaw,yes,yes
-368,Chan Pyin,Maungdaw,yes,yes
-369,Sa Bai Pin Yin,Maungdaw,yes,yes
-370,Ah Kya (Chein Khar Li) (Lower),Maungdaw,yes,yes
-371,Chein Khar Li,Maungdaw,yes,yes
-372,Chein Khar Li (West),Maungdaw,yes,yes
-373,Dar Gyi Zar,Maungdaw,yes,yes
-375,Lin Bar Gone Nar,Maungdaw,yes,yes
-376,Thein Taung,Maungdaw,yes,yes
-377,Bo Bar,Maungdaw,yes,yes
-378,Done Paik,Maungdaw,yes,yes
-379,Kyet Kyein,Maungdaw,yes,yes
-380,Ran Aung Pyin (NaTaLa),Maungdaw,yes,yes
-381,Ree Dar,Maungdaw,yes,yes
-374,Doe Tan,Maungdaw,yes,yes
-382,Hla Poe Khaung,Maungdaw,yes,yes
-383,Shein Kar Li,Maungdaw,yes,yes
-384,Baw Taw Lar,Maungdaw,yes,yes
-385,Hlaing Thi,Maungdaw,yes,yes
-386,Sin Thay Pyin,Maungdaw,yes,yes
-387,Taung Pyo,Maungdaw,yes,yes
-388,Tone Chaung,Maungdaw,yes,yes
-389,Hpar Wat Chaung (Ywar Haung),Maungdaw,yes,yes
-390,Hpar Wut Chaung (Su Sae),Maungdaw,yes,yes
-391,Hpar Wut Chaung (Ywar Thit),Maungdaw,yes,yes
-392,Thea Chaung,Maungdaw,yes,yes
-393,War Pyin,Maungdaw,yes,yes
-394,Aung Chan Thar,Maungdaw,yes,yes
-395,Baw Tu Lar,Maungdaw,yes,yes
-396,In Tu Lar,Maungdaw,yes,yes
-397,Koe Ein Su,Maungdaw,yes,yes
-398,Inn Din (East),Maungdaw,no,yes
-399,Inn Din (Middle),Maungdaw,no,yes
-400,Inn Din (Rakhine),Maungdaw,no,yes
-401,Inn Din (West),Maungdaw,no,yes
-402,Pe Yone (NaTaLa),Maungdaw,no,yes
-403,Doe Tan,Maungdaw,yes,yes
-404,Ka Nyin Tan,Maungdaw,yes,yes
-405,Na Khaung To,Maungdaw,yes,yes
-406,Ka Nyin Tan,Maungdaw,yes,yes
-407,Maung Ni,Maungdaw,yes,yes
-408,Ah Kyaw (Arisha Para),Maungdaw,yes,yes
-409,Dar Shey,Maungdaw,yes,yes
-410,Ka Nyin,Maungdaw,yes,yes
-411,Ka Nyin Taw,Maungdaw,yes,yes
-412,Kan Hpu,Maungdaw,no,yes
-413,Pan Be ( Pan Be (South)),Maungdaw,no,yes
-414,Ah Nauk Tan Chaung,Maungdaw,yes,yes
-415,Aung Tha Pyay,Maungdaw,yes,yes
-416,Gu Mi Yar,Maungdaw,yes,yes
-417,Kar Lar Day Hpet,Maungdaw,yes,yes
-418,Naw Yar,Maungdaw,yes,yes
-419,Ran Khar Zay Di,Maungdaw,yes,yes
-420,San Su Ri,Maungdaw,yes,yes
-421,Kat Pa Kaung,Maungdaw,yes,yes
-422,Tha Dut Taung,Maungdaw,yes,yes
-423,Ah Nauk Hka Maung Seik,Maungdaw,yes,yes
-424,Ah San Kyaw,Maungdaw,yes,yes
-425,Ah Shey Kha Maung Seik,Maungdaw,yes,yes
-426,Mee Kyaung Chaung,Maungdaw,yes,yes
-427,Min Kha Maung (NaTaLa),Maungdaw,yes,yes
-428,Taing Bin Gar,Maungdaw,yes,yes
-429,Ye Bauk Kyar,Maungdaw,yes,yes
-430,Kun Thee Pin,Maungdaw,yes,yes
-431,Let Hpwet Kya,Maungdaw,yes,yes
-432,Me Te,Maungdaw,yes,yes
-433,Nant Thar Taung,Maungdaw,yes,yes
-434,Kyar Gaung Taung,Maungdaw,yes,yes
-435,Ah Lel,Maungdaw,yes,yes
-436,Kyauk Chaung Ywar Thit,Maungdaw,yes,yes
-437,Kyauk Hlay Kar,Maungdaw,yes,yes
-438,Thea Chaung Pyu Su,Maungdaw,yes,yes
-439,Thea Chaung Ywar Thit Kay,Maungdaw,yes,yes
-440,Ho Kay Day Kone Nar,Maungdaw,no,yes
-441,Kyauk Pan Du,Maungdaw,no,yes
-442,Kyauk Pan Du (NaTaLa),Maungdaw,no,yes
-443,Zay Di,Maungdaw,no,yes
-444,Kyauk Pyin Seik,Maungdaw,yes,yes
-445,Set Khwar (East),Maungdaw,yes,yes
-446,Set Khwar (West),Maungdaw,yes,yes
-447,Ah Shey Tan Chaung (Htan Khar Li),Maungdaw,yes,yes
-448,Gaw Yin,Maungdaw,yes,yes
-449,Kyaung Na Hpay (East),Maungdaw,yes,yes
-450,Kyaung Na Hpay (Myo),Maungdaw,yes,yes
-451,Hpway Thar,Maungdaw,no,yes
-452,Kyaung Taung (1),Maungdaw,no,yes
-453,Kyaung Taung (2),Maungdaw,no,yes
-454,Mwi Thee,Maungdaw,no,yes
-455,Aung Thar Yar (NaTaLa),Maungdaw,yes,yes
-456,Aung Zay Ya (Su See),Maungdaw,yes,yes
-457,Kyee Kan Pyin (Middle),Maungdaw,yes,yes
-458,Kyee Kan Pyin (South),Maungdaw,yes,yes
-459,Kyee Kan Pyin (West),Maungdaw,yes,yes
-460,Wa Peik,Maungdaw,yes,yes
-461,Kyein Chaung,Maungdaw,yes,yes
-462,Myauk,Maungdaw,yes,yes
-463,Kyet Yoe Pyin (South),Maungdaw,yes,yes
-464,Kyet Yoe Pyin (Ywa Ma),Maungdaw,yes,yes
-465,Kywe Ta Ma,Maungdaw,yes,yes
-466,Lu Hpan Pyin,Maungdaw,yes,yes
-467,Baw Da Li (2),Maungdaw,yes,yes
-468,Baw Tar Li,Maungdaw,yes,yes
-469,Hpet Leik Pyin,Maungdaw,yes,yes
-470,Kyun Pauk Pyu Su,Maungdaw,yes,yes
-471,Kyun Pauk Ywar Haung,Maungdaw,yes,yes
-474,Gyit Chaung,Maungdaw,yes,yes
-472,Kyun Pauk Sin Oe,Maungdaw,yes,yes
-473,Saung Paing Nyar,Maungdaw,yes,yes
-475,Hpaw Ti Kaung,Maungdaw,yes,yes
-476,Kyun Gaung,Maungdaw,yes,yes
-477,Laung Don (Myo),Maungdaw,yes,yes
-478,Laung Don (NaTaLa),Maungdaw,yes,yes
-479,Laung Done Zay Di Pyin,Maungdaw,yes,yes
-480,Myar Zin,Maungdaw,yes,yes
-481,Sin Thay Pyin,Maungdaw,yes,yes
-482,Leik Ya (Middle),Maungdaw,yes,yes
-483,Leik Ya (South),Maungdaw,yes,yes
-484,Leik Ya Hpar Ri (Leik Ya (North)),Maungdaw,yes,yes
-485,Leik Ya Zone Karr Yar,Maungdaw,yes,yes
-486,Aung Min Ga Lar (NaTaLa),Maungdaw,yes,yes
-487,Kyauk Chaung,Maungdaw,yes,yes
-488,Maung Hnit Ma (Gyi),Maungdaw,yes,yes
-489,Maung Hnit Ma (Nge),Maungdaw,yes,yes
-490,May Ze Tu Lar,Maungdaw,yes,yes
-491,Hpon Thi,Maungdaw,yes,yes
-492,Mee Taik,Maungdaw,yes,yes
-493,Ye Aung Chaung,Maungdaw,yes,yes
-494,Mee Kyaung Tet,Maungdaw,yes,yes
-495,Min Ga Lar Gyi,Maungdaw,yes,yes
-496,Thar Zay,Maungdaw,yes,yes
-497,Min Gyi,Maungdaw,yes,yes
-498,Min Gyi (Tu Lar Tu Li),Maungdaw,yes,yes
-500,Myaw Taung,Maungdaw,yes,yes
-501,Tha Lu Chaung,Maungdaw,yes,yes
-502,Gyin Taw,Maungdaw,no,yes
-503,Hpway Yar,Maungdaw,no,yes
-504,Kan Nar Ywar Haung,Maungdaw,no,yes
-505,Myaw Chaung,Maungdaw,no,yes
-506,Myin Hlut (East),Maungdaw,no,yes
-507,Myin Hlut (Middle),Maungdaw,no,yes
-508,Myin Hlut (South),Maungdaw,no,yes
-509,Myin Hlut (West),Maungdaw,no,yes
-510,Myin Hlut Ywar Thit,Maungdaw,no,yes
-511,Shee Dar,Maungdaw,no,yes
-512,Zone Kalar/Zone Kara,Maungdaw,no,yes
-513,Myo Mi Chaung,Maungdaw,yes,yes
-514,Myo Thit,Maungdaw,yes,yes
-515,Kan Kya (North),Maungdaw,yes,yes
-516,Kan Kya (South),Maungdaw,yes,yes
-499,Myaw Chaung,Maungdaw,yes,yes
-517,Myo Thu Gyi (Yar Zar Bi),Maungdaw,yes,yes
-518,Thaung Paing Nyar,Maungdaw,yes,yes
-519,Wai Thar Li,Maungdaw,yes,yes
-520,Ywar Haung,Maungdaw,yes,yes
-521,Auk (Let Thar),Maungdaw,yes,yes
-522,Bar Su Ba,Maungdaw,yes,yes
-523,Gone Nar,Maungdaw,yes,yes
-524,Haw Ri Tu Lar,Maungdaw,yes,yes
-525,Myo U,Maungdaw,yes,yes
-526,Sar Kon Boke (Hindu Para),Maungdaw,yes,yes
-527,Zin Tu Lar,Maungdaw,yes,yes
-528,Zu La,Maungdaw,yes,yes
-529,Nan Yar Kaing,Maungdaw,yes,yes
-530,Nan Yar Kaing (NaTaLa),Maungdaw,yes,yes
-540,Hindu,Maungdaw,yes,yes
-541,Ngar Khu Ya,Maungdaw,yes,yes
-542,Ngar Khu Ya,Maungdaw,yes,yes
-543,Hmaing Sa Ri,Maungdaw,yes,yes
-544,Ngar Yant Chaung,Maungdaw,yes,yes
-545,Gone Nar,Maungdaw,yes,yes
-546,Ngan Chaung,Maungdaw,yes,yes
-547,Hpan Myaung,Maungdaw,yes,yes
-548,Leik Aing,Maungdaw,yes,yes
-549,Ngar Sar Kyu,Maungdaw,yes,yes
-550,Pyaung Paik,Maungdaw,yes,yes
-551,Nwar Yon Taung,Maungdaw,yes,yes
-552,Pyar Thar,Maungdaw,yes,yes
-553,Thu Kha Myaing,Maungdaw,yes,yes
-554,Yae Myet Taung,Maungdaw,yes,yes
-555,Nyaung Chaung,Maungdaw,yes,yes
-556,Shwe Yin Aye (NaTaLa),Maungdaw,yes,yes
-531,Gar Yar Pyin,Maungdaw,yes,yes
-532,La Baw Wa,Maungdaw,yes,yes
-533,Laung Boke,Maungdaw,yes,yes
-534,Myawaddy (NaTaLa),Maungdaw,yes,yes
-535,N‌at Chaung,Maungdaw,yes,yes
-536,Pa Da Kar Taung,Maungdaw,yes,yes
-537,Tat Chaung,Maungdaw,yes,yes
-538,Than Hpa Yar,Maungdaw,yes,yes
-539,Zaw Za Dein,Maungdaw,yes,yes
-557,Done,Maungdaw,yes,yes
-558,Pa Da Kar Ywar Thit,Maungdaw,yes,yes
-559,Ka Nyin Tan,Maungdaw,yes,yes
-560,Khaung Ta Kar,Maungdaw,yes,yes
-561,Pa Din,Maungdaw,yes,yes
-562,Paik Seik,Maungdaw,yes,yes
-563,Yae Hpu Pyin,Maungdaw,yes,yes
-564,Ah Nauk,Maungdaw,yes,yes
-565,Ah Shey,Maungdaw,yes,yes
-566,Pan Taw Pyin Ywar Thit,Maungdaw,yes,yes
-567,Ywar Gyi (Middle),Maungdaw,yes,yes
-568,Paung Zar,Maungdaw,yes,yes
-569,Pyin Hpyu,Maungdaw,yes,yes
-570,Pa Yin Taung,Maungdaw,yes,yes
-571,Pwint Hpyu Chaung,Maungdaw,yes,yes
-572,Zin Paing Nyar,Maungdaw,yes,yes
-573,Auk Pyu Ma (Rakhine),Maungdaw,yes,yes
-574,Pyu Ma Ka Nyin Tan,Maungdaw,yes,yes
-575,Sa Bai Kone,Maungdaw,yes,yes
-576,Yae Myet,Maungdaw,yes,yes
-577,San Kar Pin Yin,Maungdaw,yes,yes
-578,San Kar Pin Yin (Myo),Maungdaw,yes,yes
-579,San Kar Pin Yin (Rakhine),Maungdaw,yes,yes
-580,Aung Ba La (Rakhine),Maungdaw,yes,yes
-581,Gaung Nyar,Maungdaw,yes,yes
-582,Gone Nar,Maungdaw,yes,yes
-583,Ka Nyin Chaung,Maungdaw,yes,yes
-584,Kan Be,Maungdaw,yes,yes
-585,Kan Paing Nar,Maungdaw,yes,yes
-586,Pan Htein,Maungdaw,yes,yes
-587,Shwe Zar (West),Maungdaw,yes,yes
-588,Shwe Zar Kat Pa Kaung,Maungdaw,yes,yes
-589,Zay Di Pyin,Maungdaw,yes,yes
-590,Hpaung Seik,Maungdaw,yes,yes
-591,Mingalar Nyunt (NaTaLa),Maungdaw,yes,yes
-592,Ta Man Thar (Bo Hmu Gyi Thet),Maungdaw,yes,yes
-593,Ta Man Thar,Maungdaw,yes,yes
-594,Ta Man Thar (Myo),Maungdaw,yes,yes
-595,Ta Man Thar Ah Nauk (Rakhine),Maungdaw,yes,yes
-596,Ta Man Thar Ah Shey,Maungdaw,yes,yes
-597,Ta Man Thar Bo Hmu Gyi,Maungdaw,yes,yes
-598,Ta Man Thar Taung,Maungdaw,yes,yes
-599,Ta Man Thar Thea Kone Tan,Maungdaw,yes,yes
-600,Ta Man Thar Zay Nar,Maungdaw,yes,yes
-601,Hpar Zay Dar,Maungdaw,yes,yes
-602,Ku Kway (Thet),Maungdaw,yes,yes
-603,Myo,Maungdaw,yes,yes
-604,Shwe Taing (Rakhine),Maungdaw,yes,yes
-605,Tat Chaung,Maungdaw,yes,yes
-606,Hpway Yar,Maungdaw,yes,yes
-607,Kan Pyin Thar Si,Maungdaw,yes,yes
-608,Kan Thar Yar,Maungdaw,yes,yes
-609,Mar Di Lar,Maungdaw,yes,yes
-610,Nu Ru Lar,Maungdaw,yes,yes
-611,Tat U Chaung,Maungdaw,yes,yes
-612,Tat U Chaung (West),Maungdaw,yes,yes
-613,Taung Pyo Let Yar,Maungdaw,yes,yes
-614,Tha Pyay Taw,Maungdaw,no,yes
-615,Thar Yar Taw,Maungdaw,no,yes
-616,Zone Kar Yar,Maungdaw,no,yes
-617,Gwa Son,Maungdaw,yes,yes
-618,Su Ra Li,Maungdaw,yes,yes
-619,Tha Win Chaung (Kan Pyo),Maungdaw,yes,yes
-620,Gyin Chaung,Maungdaw,yes,yes
-621,Tha Yae Kone Tan,Maungdaw,yes,yes
-622,Tha Yae Kone Tan (Middle),Maungdaw,yes,yes
-623,Tha Yae Kone Tan (North),Maungdaw,yes,yes
-624,Tha Yae Kone Tan (West),Maungdaw,yes,yes
-625,Ah Bu Gyar,Maungdaw,yes,yes
-626,Dar Gyi Zar,Maungdaw,yes,yes
-627,Min Ga Lar Ahr Sheik Kyar,Maungdaw,yes,yes
-628,Nga Toe,Maungdaw,yes,yes
-629,Pi Yae,Maungdaw,yes,yes
-630,Tha Yet Oke,Maungdaw,yes,yes
-631,(Du) Than Dar,Maungdaw,yes,yes
-632,(Pa) Than Dar,Maungdaw,yes,yes
-633,Kyun Taung,Maungdaw,yes,yes
-634,Mu Hti,Maungdaw,yes,yes
-635,Thar Yar Kone,Maungdaw,yes,yes
-636,Thea Chaung Hpar Ri,Maungdaw,yes,yes
-637,Thea Chaung Maw La Bi,Maungdaw,yes,yes
-638,Thin Baw Hla,Maungdaw,yes,yes
-639,Thin Baw Hla (Rakhine) (Thar Yar Gone),Maungdaw,yes,yes
-640,Zaing Thar Khar Li,Maungdaw,yes,yes
-641,Laung Boke,Maungdaw,yes,yes
-642,That Kaing Nyar,Maungdaw,yes,yes
-643,That Kaing Nyar (Thet),Maungdaw,yes,yes
-644,Naung Dar Khar Li,Maungdaw,yes,yes
-645,Thet Kay Pyin,Maungdaw,yes,yes
-646,Har Bi (East),Maungdaw,yes,yes
-647,Har Bi (Middle),Maungdaw,yes,yes
-648,Har Bi (West),Maungdaw,yes,yes
-649,Khway Lar Bin Gar,Maungdaw,yes,yes
-650,Thi Ho Kyun,Maungdaw,yes,yes
-651,Thin Baw Kwe,Maungdaw,no,yes
-652,Thin Baw Kwe (West),Maungdaw,no,yes
-653,Thin Baw Kwe Ywar Thit,Maungdaw,no,yes
-654,Let Yar Chaung,Maungdaw,yes,yes
-655,Oe Htein,Maungdaw,yes,yes
-656,Thit Tone Nar Gwa Son,Maungdaw,yes,yes
-657,Baw Htee,Maungdaw,yes,yes
-658,Kan Pyin,Maungdaw,yes,yes
-659,Thu U Lar,Maungdaw,yes,yes
-660,Ah Shey,Maungdaw,no,yes
-661,Hpar Ti (Ko Yi),Maungdaw,no,yes
-662,Kon Tan (U Daung Ah Nauk),Maungdaw,no,yes
-663,Myauk,Maungdaw,no,yes
-664,U Daung (Kone Tan),Maungdaw,no,yes
-665,U Daung (NaTaLa),Maungdaw,no,yes
-666,Zon Mar,Maungdaw,no,yes
-667,U Shey Kya,Maungdaw,yes,yes
-668,Maw Ra Waddy (NaTaLa),Maungdaw,no,yes
-669,Thaung Paing Nyar,Maungdaw,yes,yes
-670,War Cha,Maungdaw,yes,yes
-671,Wet Kyein,Maungdaw,yes,yes
-672,Wet Kyein (Myo),Maungdaw,yes,yes
-673,Gwa Son,Maungdaw,yes,yes
-674,Yae Khat Chaung Gwa Son,Maungdaw,yes,yes
-675,Yae Myet Taung,Maungdaw,yes,yes
-676,Yae Myet Taung (NaTaLa),Maungdaw,yes,yes
-677,Yae Nauk Ngar Thar,Maungdaw,yes,yes
-678,Yae Nauk Ngar Thar (Daing Net),Maungdaw,yes,yes
-679,Yae Twin Kyun,Maungdaw,yes,yes
-680,Yae Twin Pyin (Ale Ywa),Maungdaw,yes,yes
-681,Bwin (Baung),Maungdaw,yes,yes
-682,Mar Zay,Maungdaw,yes,yes
-683,Myo (Ye Aung Chaung),Maungdaw,yes,yes
-684,Thu Pan Na Ka (Myo),Maungdaw,yes,yes
-685,Yay Chan Chaung,Maungdaw,yes,yes
-686,Ye Aung San Ya Hpway,Maungdaw,yes,yes
-687,Gaw Du Thar Ra (East),Maungdaw,yes,yes
-688,Gaw Du Thar Ra (North),Maungdaw,yes,yes
-689,Gaw Du Thar Ra (South),Maungdaw,yes,yes
-690,Gaw Du Thar Ra (West),Maungdaw,yes,yes
-691,Gaw Du Thar Yar (Ywar Thit Kay),Maungdaw,yes,yes
-692,Tha Ray Kon Baung,Maungdaw,yes,yes
-693,Tha Ray Kon Baung (NaTaLa),Maungdaw,yes,yes
-694,Ywar Thit Kay (Gaw Du Thar Ra),Maungdaw,yes,yes
-695,Ywet Nyo Taung,Maungdaw,yes,yes
-696,Ywet Nyo Taung,Maungdaw,yes,yes
-697,Ywet Nyo Taung (Middle),Maungdaw,yes,yes
-698,Ywet Nyo Taung (South),Maungdaw,yes,yes
-699,Din Gar,Maungdaw,yes,yes
-700,Hin Thar Ya,Maungdaw,yes,yes
-701,Kaing Gyi (NaTaLa),Maungdaw,yes,yes
-702,Kaing Gyi (Rakhine),Maungdaw,yes,yes
-703,Lin Bar Kone Nar,Maungdaw,yes,yes
-704,Saw Gi Nar (Sin Na Mar),Maungdaw,yes,yes
-705,Zaw Ma Tet,Maungdaw,yes,yes
-706,Thaung Khu Lar (Song Khu Lar),Maungdaw,yes,yes
-707,Zee Pin Chaung (Middle),Maungdaw,yes,yes
-708,Zee Pin Chaung (North),Maungdaw,yes,yes
-709,Zee Pin Chaung (South),Maungdaw,yes,yes
-710,Doe Tan,Maungdaw,yes,yes
-711,Haw Ri Tu Lar,Maungdaw,yes,yes
-712,Hpu Khar Li,Maungdaw,yes,yes
-713,Kywe Htar Pyin,Maungdaw,yes,yes
-714,Thar Zay Kone (Thar Zi Kone),Maungdaw,yes,yes
-715,Zin Paing Nyar,Maungdaw,yes,yes
-1025,Fawyazi Para,Maungdaw,yes,yes
-809,Ah Htet Nan Yar,Rathedaung,no,yes
-810,Navy Seik,Rathedaung,no,yes
-811,Ni Lin Paw,Rathedaung,no,yes
-812,Nyaung Pin Hla,Rathedaung,no,yes
-813,Pyaing Taung,Rathedaung,no,yes
-814,Sin Oe,Rathedaung,no,yes
-815,Ah Nauk Pyin,Rathedaung,yes,yes
-816,Taung Thar Yar,Rathedaung,yes,yes
-817,Ah Ngu Maw,Rathedaung,yes,yes
-818,Ah Ngu Maw (Rakhine),Rathedaung,yes,yes
-819,Ma Gyi Chaung,Rathedaung,yes,yes
-820,Ah Ngu Maw (Kone Tan),Rathedaung,yes,yes
-821,Auk Nan Yar,Rathedaung,no,yes
-822,Aung Ba La,Rathedaung,yes,yes
-823,Sin Paik,Rathedaung,yes,yes
-824,Tan Aye,Rathedaung,yes,yes
-825,Thar Si,Rathedaung,yes,yes
-826,Aung Seik,Rathedaung,yes,yes
-827,Kaung Ri Chaung Ywar Thit,Rathedaung,yes,yes
-828,Thet,Rathedaung,yes,yes
-829,Bar Ta Lay,Rathedaung,no,yes
-830,Tha Yet Chaung Kha Mway,Rathedaung,no,yes
-831,Chin (Pyaing Taung),Rathedaung,no,yes
-832,Chut Pyin,Rathedaung,no,yes
-833,Pi Dauk Myaing,Rathedaung,no,yes
-834,Thet,Rathedaung,no,yes
-835,Done Paik,Rathedaung,yes,yes
-836,Gwa Son,Rathedaung,no,yes
-837,Hpet Leik,Rathedaung,no,yes
-838,Tha Pyay Taw,Rathedaung,no,yes
-839,Daing Kyat,Rathedaung,yes,yes
-840,Hpyu Chaung,Rathedaung,yes,yes
-841,Aung Thar Zay,Rathedaung,no,yes
-842,Htee Swea Ywar Haung,Rathedaung,no,yes
-843,Htee Swea Ywar Thit,Rathedaung,no,yes
-844,Htun Ya Wai,Rathedaung,yes,yes
-845,Htun Ya Wai Ywar Thit,Rathedaung,yes,yes
-846,Ka Nyin Chaung,Rathedaung,no,yes
-847,Pyin Chaung,Rathedaung,yes,yes
-848,Yae Hpyu Kan,Rathedaung,yes,yes
-849,Kan Pyin,Rathedaung,yes,yes
-850,Kat Chaung,Rathedaung,yes,yes
-851,Kaung Ri Chaung Ywar Haung,Rathedaung,yes,yes
-852,Kyun Chaung,Rathedaung,yes,yes
-853,Kan Pyin,Rathedaung,no,yes
-854,Kha Naung Gyi,Rathedaung,no,yes
-855,Se Kan Ywar Thit,Rathedaung,no,yes
-856,Ywar Thit Kay,Rathedaung,no,yes
-857,Bar Sar Ra,Rathedaung,yes,yes
-858,Chein Khar Li,Rathedaung,yes,yes
-859,Chein Khar Li (Rakhine),Rathedaung,yes,yes
-860,Koe Tan Kauk,Rathedaung,yes,yes
-861,Koe Tan Kauk (Rakhine),Rathedaung,yes,yes
-862,Koe Tan Kauk Ywar Ma,Rathedaung,yes,yes
-863,Kon Tan,Rathedaung,yes,yes
-864,Kon Tan (Rakhine),Rathedaung,yes,yes
-865,Naw Wai,Rathedaung,yes,yes
-866,Ku Lar Chaung,Rathedaung,yes,yes
-867,Ku Taung,Rathedaung,yes,yes
-868,Ku Taung Ywar Chay,Rathedaung,yes,yes
-869,Baw Di Kone,Rathedaung,yes,yes
-870,Kon Tan Zay,Rathedaung,yes,yes
-871,Kyauk Sar Taing,Rathedaung,yes,yes
-872,Mi Chaung Yae Thauk,Rathedaung,yes,yes
-873,Kyauk Tan,Rathedaung,no,yes
-874,Kyauk Yan Thar Si,Rathedaung,no,yes
-875,Maung Hpyu (Da Pyu Chaung),Rathedaung,no,yes
-876,Yae Poke,Rathedaung,no,yes
-877,Kha Maung Tone,Rathedaung,no,yes
-878,Kyaung Taung,Rathedaung,no,yes
-879,Doe Wai Chaung,Rathedaung,no,yes
-880,Hman Ni Pyin,Rathedaung,no,yes
-881,Kyein Tan,Rathedaung,no,yes
-882,Kar May (Kha Mway),Rathedaung,yes,yes
-883,Kar May (Rakhine),Rathedaung,yes,yes
-884,Kyein Thar,Rathedaung,yes,yes
-885,Hpa Yar Hla,Rathedaung,yes,yes
-886,Kyet Yoe Seik,Rathedaung,yes,yes
-887,Kyun Gyi,Rathedaung,yes,yes
-888,Kyun Paw,Rathedaung,no,yes
-889,La Mone Taing,Rathedaung,no,yes
-890,Nwar Tin Koke,Rathedaung,no,yes
-891,Aung Ma,Rathedaung,yes,yes
-892,Ka Paing Chaung,Rathedaung,yes,yes
-893,Laung Chaung,Rathedaung,yes,yes
-894,Lay Gwa Son (Ywar Haung),Rathedaung,no,yes
-895,Lay Gwa Son (Ywar Thit),Rathedaung,no,yes
-896,Sagar Ywar,Rathedaung,no,yes
-897,Lay Kan,Rathedaung,yes,yes
-898,Pauk Taw Gyi,Rathedaung,yes,yes
-899,Ah Lel Zee Kaing,Rathedaung,yes,yes
-900,Hnan Kham Ywar,Rathedaung,yes,yes
-901,Let Pan Pin Yin,Rathedaung,yes,yes
-902,Mi Nyo Htaunt,Rathedaung,no,yes
-903,Mi Nyo Htaunt Ywar Thit,Rathedaung,yes,yes
-904,Thar Si,Rathedaung,yes,yes
-905,Min Kan,Rathedaung,yes,yes
-906,Myin Gan Chaung,Rathedaung,yes,yes
-907,Myin Gan Chaung Kone Tan,Rathedaung,yes,yes
-908,Seik Gyi Nar,Rathedaung,yes,yes
-909,Myin Hpu,Rathedaung,yes,yes
-910,Myin Hpu Ywar Thit,Rathedaung,yes,yes
-911,Ah Htet Na Gar Mauk,Rathedaung,yes,yes
-912,Ah Lel Na Gar Mauk,Rathedaung,yes,yes
-913,Auk Na Gar Mauk,Rathedaung,yes,yes
-914,Ah Lel Chaung,Rathedaung,yes,yes
-915,Nat Chaung,Rathedaung,yes,yes
-916,Ah Myet Taung,Rathedaung,no,yes
-917,Nga/ San Baw (Moke Soe Chaung) (Ywar Haung),Rathedaung,no,yes
-918,Nga Tauk Tu Chay,Rathedaung,no,yes
-919,Se Kan Ywar Haung,Rathedaung,no,yes
-920,Taung Hla Maw,Rathedaung,yes,yes
-921,Bat Kar,Rathedaung,no,yes
-922,Nga Tauk Tu Gyi,Rathedaung,yes,yes
-923,Nwar Hla Kyaw,Rathedaung,no,yes
-924,Nyaung Pin Gyi,Rathedaung,yes,yes
-925,Nyaung Pin Gyi (Rakhine),Rathedaung,yes,yes
-926,Pan Zin Maw,Rathedaung,yes,yes
-927,Khway Tauk Chaung Ywar Thit (Hnin Si Kone),Rathedaung,yes,yes
-928,Nyaung Pin Hla (Khway Tauk Chaung),Rathedaung,yes,yes
-929,Leik Htaunt Teit Su,Rathedaung,yes,yes
-930,Nyaung Pin Lel,Rathedaung,yes,yes
-931,Ohn Chaung,Rathedaung,no,yes
-932,Kan Sit,Rathedaung,no,yes
-933,Oe Hpauk Ywar Thit,Rathedaung,no,yes
-934,Oke Hpo (Oe Hpauk),Rathedaung,no,yes
-935,Pan Hpaw Pyin,Rathedaung,no,yes
-936,Pan Kaing,Rathedaung,no,yes
-937,Ah Du,Rathedaung,no,yes
-938,Be Lar Mi,Rathedaung,no,yes
-939,Pauk Pin Yin,Rathedaung,no,yes
-940,Than Du,Rathedaung,no,yes
-941,Aung Zay Ya,Rathedaung,yes,yes
-942,Kyauk Son,Rathedaung,yes,yes
-943,Pauk Taw Chay,Rathedaung,yes,yes
-944,Pauk Taw Chay Ywar Thit,Rathedaung,yes,yes
-945,Pyin Khaung Ywar Thit,Rathedaung,yes,yes
-946,Kyet Yoe Kone Tan,Rathedaung,yes,yes
-947,Nay Pu Khan,Rathedaung,yes,yes
-948,Paung Zar,Rathedaung,yes,yes
-949,Baw Di Kaing,Rathedaung,no,yes
-950,Done,Rathedaung,no,yes
-951,Kyauk Kon Boke,Rathedaung,no,yes
-952,Let Wea Det,Rathedaung,no,yes
-953,Nay Pu Khan,Rathedaung,no,yes
-954,Pe Tha Du,Rathedaung,no,yes
-955,Thet Pyay Kya,Rathedaung,no,yes
-956,Ah Wa Dar,Rathedaung,yes,yes
-957,Pyar Chaung Gyi,Rathedaung,yes,yes
-958,Pyar Chaung Gyi (Middle),Rathedaung,yes,yes
-959,Pyin Khaung Ywar Haung,Rathedaung,yes,yes
-960,Pyar Pin Yin,Rathedaung,yes,yes
-961,Aung Zay Ya,Rathedaung,no,yes
-962,Kone Tan,Rathedaung,no,yes
-963,Ma Nyin Taung,Rathedaung,no,yes
-964,Pyein Taw,Rathedaung,no,yes
-965,Aung Si Kone,Rathedaung,no,yes
-966,Kan Pyin,Rathedaung,no,yes
-967,Pyin Shey (Sa Hpo Kyun),Rathedaung,no,yes
-968,Pyin Wan,Rathedaung,no,yes
-969,Kan Pyin,Rathedaung,no,yes
-970,Sa Par Htar,Rathedaung,no,yes
-971,Sar Pyin Chay,Rathedaung,yes,yes
-972,Sar Pyin Gyi,Rathedaung,yes,yes
-973,Say Oe Kya,Rathedaung,yes,yes
-974,Shwe Laung Tin,Rathedaung,yes,yes
-975,Lun Taung,Rathedaung,no,yes
-976,Sin Khone Taing,Rathedaung,no,yes
-977,Sin Khone Taing (Rakhine),Rathedaung,no,yes
-978,Sin Khone Taing Zay,Rathedaung,no,yes
-979,Soe May,Rathedaung,yes,yes
-980,Wet Noke Thee,Rathedaung,yes,yes
-981,Aung Myay Kone,Rathedaung,no,yes
-982,Sauk Khat Ywar Haung (Tha Mee Hla),Rathedaung,no,yes
-983,Sauk Khat Ywar Thit,Rathedaung,no,yes
-984,Tha Yet Chaung,Rathedaung,yes,yes
-985,Tha Yet Pyin,Rathedaung,yes,yes
-986,Than Chaung,Rathedaung,yes,yes
-987,Chay Yar Taw,Rathedaung,yes,yes
-988,Thar Si Htaunt,Rathedaung,yes,yes
-989,Thaung Da Rar,Rathedaung,no,yes
-990,Kyauk Yan,Rathedaung,no,yes
-991,Maw Htet,Rathedaung,no,yes
-992,Tar Zaw,Rathedaung,no,yes
-993,Thazin Myaing,Rathedaung,no,yes
-994,Thein Taung,Rathedaung,no,yes
-995,Thin Ga Net,Rathedaung,no,yes
-996,Kan Pyin,Rathedaung,yes,yes
-997,Kyone Pyin,Rathedaung,no,yes
-998,Thit Ka Toe,Rathedaung,yes,yes
-999,Laung Zin,Rathedaung,yes,yes
-1000,Tin Koke,Rathedaung,yes,yes
-1001,U Gar,Rathedaung,yes,yes
-1002,Aung Taing (Laung Chaung),Rathedaung,no,yes
-1003,Aung Taing Taung Pyo,Rathedaung,no,yes
-1004,Kha Yu Chaung,Rathedaung,no,yes
-1005,Nga Yant Chaung,Rathedaung,no,yes
-1006,Yae Gaung Chaung,Rathedaung,no,yes
-1007,Nyaung Pin Hla,Rathedaung,no,yes
-1008,Yae Myet (Ywar Haung),Rathedaung,no,yes
-1009,Yae Myet (Ywar Thit),Rathedaung,no,yes
-1010,Yae Paik Son,Rathedaung,yes,yes
-1011,Kin Pun Chaung,Rathedaung,no,yes
-1012,Yae Chan Chaung Kha Mway,Rathedaung,no,yes
-1013,Yae Soe Chaung,Rathedaung,no,yes
-1014,Yae Zar Te Su,Rathedaung,no,yes
-1015,Lone Tin,Rathedaung,yes,yes
-1016,Yan Aung Pyin,Rathedaung,yes,yes
-1017,Ahr Kar Taung,Rathedaung,no,yes
-1018,Yet Khone Taing,Rathedaung,no,yes
-1019,Zay Di Pyin,Rathedaung,no,yes
-1020,Auk Zee Kaing,Rathedaung,yes,yes
-1021,Tha Mee Hla Ywar Thit,Rathedaung,no,yes
-1022,Zee Khaung,Rathedaung,no,yes
-716,Ah Myint Kyun,Sittwe,yes,yes
-717,Ah Lar Than,Sittwe,no,yes
-718,Aung Daing,Sittwe,no,yes
-719,Daung Pyauk Kay,Sittwe,no,yes
-720,Me Za Li Kone,Sittwe,no,yes
-721,Nga/Pun Ywar Gyi,Sittwe,no,yes
-722,Nga/Pun Ywar Shey,Sittwe,no,yes
-723,Pa Lin Pyin,Sittwe,no,yes
-724,Pa Lin Pyin (Rakhine),Sittwe,no,yes
-725,Bay Dar,Sittwe,no,yes
-726,Bu May,Sittwe,no,yes
-727,Bu May Let Tha Mar,Sittwe,no,yes
-728,Bu May Ohn Taw,Sittwe,no,yes
-729,Dar Paing Ywar Haung,Sittwe,no,yes
-730,Dar Paing Ywar Thit,Sittwe,no,yes
-731,Hman Zi,Sittwe,no,yes
-732,Myat Pan Nyo,Sittwe,no,yes
-733,Sat Oe,Sittwe,no,yes
-734,Tain Bway,Sittwe,no,yes
-735,Thea Chaung,Sittwe,no,yes
-736,Thea Chaung Let Tha Mar Kone,Sittwe,no,yes
-737,Thea Chaung Rakhine,Sittwe,no,yes
-738,War Yar Lit,Sittwe,no,yes
-739,Ywar Gaung Ywar Haung,Sittwe,no,yes
-740,Ywar Gaung Ywar Thit,Sittwe,no,yes
-741,Ywar Thar Yar,Sittwe,no,yes
-742,Chaung Nwe,Sittwe,no,yes
-743,Kan Pyin Ywar Haung,Sittwe,no,yes
-744,Kan Pyin Ywar Thit,Sittwe,no,yes
-745,Thone Saung,Sittwe,no,yes
-746,Zaw Ma Det,Sittwe,no,yes
-747,Chi Laing Hpin,Sittwe,yes,yes
-748,Gant Gaw Kyun,Sittwe,no,yes
-749,Thet Kay Pyin Ywar Ma,Sittwe,no,yes
-750,Kha Tin Paik,Sittwe,no,yes
-751,Pyin Shey,Sittwe,no,yes
-752,Yae Chan Pyin,Sittwe,yes,yes
-753,Aung Pin Lel,Sittwe,no,yes
-754,Khaung Doke Kar,Sittwe,no,yes
-755,Kyar Ma Thauk,Sittwe,no,yes
-756,Kyauk Tan Chay,Sittwe,no,yes
-757,Kyay Taw,Sittwe,no,yes
-758,Kyay Taw Paik Seik,Sittwe,no,yes
-759,Pyi Taw Thar,Sittwe,no,yes
-760,Kyet Taw Pyin,Sittwe,no,yes
-761,Ohn Yae Paw,Sittwe,yes,yes
-762,Kyauk Tan Gyi,Sittwe,yes,yes
-763,Kywi Te,Sittwe,yes,yes
-764,Kywi Te Paik Seik Gyi,Sittwe,yes,yes
-765,Kywi Te Paik Seik Shey,Sittwe,yes,yes
-766,Done Pyin (East),Sittwe,no,yes
-767,Done Pyin (North),Sittwe,no,yes
-768,Done Pyin (South),Sittwe,no,yes
-769,Maung Ni Pyin,Sittwe,no,yes
-770,Min Hla,Sittwe,no,yes
-771,Myit Nar,Sittwe,no,yes
-772,Ywar Haung Chaung,Sittwe,no,yes
-773,Nar Yi Kan,Sittwe,no,yes
-774,Nga/Tauk Tet,Sittwe,yes,yes
-775,Nyo Yaung Chaung,Sittwe,no,yes
-776,Par Da Leik,Sittwe,yes,yes
-777,Chan Thar Kone,Sittwe,no,yes
-778,Ohn Taw Gyi,Sittwe,no,yes
-779,Ohn Taw Shey,Sittwe,no,yes
-780,Say Tha Mar Gyi,Sittwe,no,yes
-781,Say Tha Mar Nge,Sittwe,no,yes
-782,Kyan Taw,Sittwe,no,yes
-783,Taw Kan,Sittwe,no,yes
-784,Thein Tan,Sittwe,no,yes
-785,Yar Tan,Sittwe,no,yes
-786,Hla May Shwe,Sittwe,no,yes
-787,Koe Saung,Sittwe,no,yes
-788,Thar Yar Kone Ka Man,Sittwe,no,yes
-789,Thar Yar Kone Rakhine,Sittwe,no,yes
-790,Thet Kay Pyin Kone,Sittwe,no,yes
-791,Thin Ga Net,Sittwe,no,yes
-792,Ye Baw Haung,Sittwe,no,yes
-793,Pyar Lay Chaung,Sittwe,no,yes
-794,Pyin Shey,Sittwe,no,yes
-795,Thin Pone Tan,Sittwe,no,yes
-796,Aung Chan Thar,Sittwe,no,yes
-797,Kan Taw Gyi,Sittwe,no,yes
-798,Kha Yae Myaing,Sittwe,no,yes
-799,Kha Yam Pyar,Sittwe,no,yes
-800,Pain Nae Kone,Sittwe,no,yes
-801,Saik Pyo Yay Daing,Sittwe,no,yes
-802,Tha Yet Kone,Sittwe,no,yes
-803,U Yin Thar,Sittwe,no,yes
-804,Bya Har,Sittwe,no,yes
-805,War Bo,Sittwe,no,yes
-806,Thet Kay Pyin Zay,Sittwe,no,yes
-807,Ywar Thit Kay,Sittwe,no,yes
-808,Zaw Pu Gyar,Sittwe,no,yes
+id,name,township,on_map_of_1890_1906,on_map_of_1925_1944,on_map_of_1954_1955
+1,Kar Di,Buthidaung,no,yes,yes
+2,Kywe Cho Maw,Buthidaung,no,yes,yes
+3,Nyaung Chaung,Buthidaung,no,yes,yes
+4,Ah Lel Chaung,Buthidaung,no,yes,yes
+5,Let Thar,Buthidaung,no,yes,yes
+6,Ah Twin Hnget Thay,Buthidaung,no,yes,yes
+7,Hnget Thay,Buthidaung,no,yes,yes
+8,Htan Shauk Khan,Buthidaung,no,yes,yes
+9,Kyauk Seik,Buthidaung,no,yes,yes
+10,Myaw Taung,Buthidaung,no,yes,yes
+11,Pyar Pin Yin,Buthidaung,no,yes,yes
+12,Thein Taung,Buthidaung,no,yes,yes
+13,Aw Ra Ma,Buthidaung,no,yes,yes
+14,Htu Myaung Lay,Buthidaung,no,yes,yes
+15,Khar Lar U,Buthidaung,no,yes,yes
+16,Min Kaing,Buthidaung,no,yes,yes
+17,Nat Seik,Buthidaung,no,yes,yes
+18,Nga Tin Tein,Buthidaung,no,yes,yes
+19,Pein Hne Chaung,Buthidaung,no,yes,yes
+20,Taung Chaung Gyi,Buthidaung,no,yes,yes
+21,Taung Chay,Buthidaung,no,yes,yes
+22,Tha Lu Pyar,Buthidaung,no,yes,yes
+23,Aye Yar Cha,Buthidaung,no,yes,yes
+24,Chan Thar,Buthidaung,no,yes,yes
+25,Dar Sauk Paing,Buthidaung,no,yes,yes
+26,Ma Yee Mee,Buthidaung,no,yes,yes
+27,Maung Chaung,Buthidaung,no,yes,yes
+28,Pein Hne Gyi,Buthidaung,no,yes,yes
+29,Tha Ra Zaing,Buthidaung,no,yes,yes
+30,Ah Htet Bo Ka Lay,Buthidaung,yes,yes,yes
+31,Auk Bo Ka Lay,Buthidaung,yes,yes,yes
+32,Ba Da Kar,Buthidaung,yes,yes,yes
+33,Kyaung Zar Hpyu,Buthidaung,yes,yes,yes
+34,Kyee Hnoke Thee,Buthidaung,yes,yes,yes
+35,Nga/Myin Baw Kha Mway,Buthidaung,yes,yes,yes
+36,Nga/Myin Baw,Buthidaung,yes,yes,yes
+37,Pan Zi,Buthidaung,yes,yes,yes
+38,Sin Shey Myo,Buthidaung,yes,yes,yes
+39,Ba Da Nar,Buthidaung,no,yes,yes
+40,Pyin Khaung,Buthidaung,yes,yes,yes
+41,Yin Baung,Buthidaung,no,yes,yes
+42,Ywar Thar Yar,Buthidaung,no,yes,yes
+43,Ah Lel (Ba Gon Nar),Buthidaung,no,yes,yes
+44,Kan Gyi Pyin,Buthidaung,no,yes,yes
+45,Kyauk Tan,Buthidaung,no,yes,yes
+46,Myauk (Ba Gon Nar),Buthidaung,no,yes,yes
+47,Myaung Nar,Buthidaung,no,yes,yes
+48,Taung (Ba Gon Nar),Buthidaung,no,yes,yes
+49,Ywar Thit,Buthidaung,no,yes,yes
+50,Chin Tha Mar,Buthidaung,no,yes,yes
+51,Hpaung Taw Pyin,Buthidaung,no,yes,yes
+52,Maung Nu,Buthidaung,no,yes,yes
+53,Pale Taung,Buthidaung,no,yes,yes
+54,Da Pyu Chaung,Buthidaung,no,yes,yes
+55,Inn Gyin Myaing (NaTaLa),Buthidaung,no,yes,yes
+56,Dar Paing Sa Yar,Buthidaung,no,yes,yes
+57,Gaung Ni,Buthidaung,no,yes,yes
+58,Myit Nar,Buthidaung,no,yes,yes
+59,Saint Aung,Buthidaung,no,yes,yes
+60,Zar Ti Pyin,Buthidaung,no,yes,yes
+61,Baw Li,Buthidaung,no,yes,yes
+62,Du Oe Thei Ma,Buthidaung,no,yes,yes
+63,Ngwe Taung,Buthidaung,no,yes,yes
+64,Kyein Taung,Buthidaung,no,yes,yes
+65,Goke Pi,Buthidaung,yes,yes,yes
+66,Oe Hpyu (Thet + Myo),Buthidaung,yes,yes,yes
+67,Oh Byu,Buthidaung,yes,yes,yes
+68,Pe Tha Htu,Buthidaung,yes,yes,yes
+69,Sa Hone,Buthidaung,yes,yes,yes
+70,Sa Hone Kha Mway,Buthidaung,no,yes,yes
+71,Gu Dar Pyin,Buthidaung,no,yes,yes
+72,Kyauk Sar Taing (Su See),Buthidaung,no,yes,yes
+73,Rakhine Ywar,Buthidaung,no,yes,yes
+74,Taung,Buthidaung,no,yes,yes
+75,Tha Yet Taung,Buthidaung,no,yes,yes
+76,Aung Pa,Buthidaung,no,yes,yes
+77,Hpa Yar Pyin,Buthidaung,no,yes,yes
+78,Kant Kaw Myaing (NaTaLa),Buthidaung,no,yes,yes
+79,Kuwar Para,Buthidaung,no,yes,yes
+80,Pyin Hla (Ywa Haung),Buthidaung,no,yes,yes
+81,Thein Tan,Buthidaung,no,yes,yes
+82,Thein Tan (Rakhine),Buthidaung,no,yes,yes
+83,Ywa Thit (Esmile Para),Buthidaung,no,yes,yes
+84,Doe Tan (1),Buthidaung,no,yes,yes
+85,Doe Tan (2),Buthidaung,no,yes,yes
+86,Hpa Yon Chaung (Daing Net),Buthidaung,no,yes,yes
+87,Hpa Yon Chaung,Buthidaung,no,yes,yes
+88,Kywe Tet Pyin,Buthidaung,no,yes,yes
+89,Pyaing Taung,Buthidaung,no,yes,yes
+90,Hpoe Khaung Chaung,Buthidaung,no,yes,yes
+91,Kan Da (Kan Da Para),Buthidaung,no,yes,yes
+92,Kan Pyin,Buthidaung,no,yes,yes
+93,Hpon Nyo Leik,Buthidaung,no,yes,yes
+94,Hpon Nyo Leik (Rakhine + Rohingya),Buthidaung,no,yes,yes
+95,Kan Du,Buthidaung,no,yes,yes
+96,Paik Thay Ywar,Buthidaung,no,yes,yes
+97,Ba Da Nar,Buthidaung,no,yes,yes
+98,Ba Da Nar Ywar Thit,Buthidaung,no,yes,yes
+99,Inn Chaung Daing Net,Buthidaung,no,yes,yes
+100,Inn Chaung Zay,Buthidaung,no,yes,yes
+101,Zay Teit Kaung,Buthidaung,no,yes,yes
+102,Ka Kyet Bet,Buthidaung,no,yes,yes
+103,Ba Yaung Baw Li Para,Buthidaung,no,yes,yes
+104,Kan Gyi Pyin,Buthidaung,no,yes,yes
+105,Mun Shi Ywar,Buthidaung,no,yes,yes
+106,Oe Thei,Buthidaung,no,yes,yes
+107,Tat Yar,Buthidaung,no,yes,yes
+108,Tat Yar (Rakhine),Buthidaung,no,yes,yes
+109,Zay Di Taung,Buthidaung,no,yes,yes
+110,Kyauk Pyin Chaung,Buthidaung,no,yes,yes
+111,Min Hla Kaing,Buthidaung,no,yes,yes
+112,Baw Di Kaing,Buthidaung,no,yes,yes
+113,Ku Lar Chaung,Buthidaung,no,yes,yes
+114,Laung Chaung,Buthidaung,no,yes,yes
+115,Nan Tha Yway,Buthidaung,no,yes,yes
+116,Sin Hpyu Taung,Buthidaung,no,yes,yes
+117,Ahr Kar Pyan Kha Mway,Buthidaung,no,yes,yes
+118,Kin Chaung,Buthidaung,no,yes,yes
+119,Let Pan Kaing,Buthidaung,no,yes,yes
+120,Pyin Shey,Buthidaung,no,yes,yes
+121,Tha Bauk Chaung,Buthidaung,no,yes,yes
+122,Bar Ri Zar,Buthidaung,no,yes,yes
+123,Done Thein,Buthidaung,no,yes,yes
+124,Kin Taung (Kyar Nyo Pyin),Buthidaung,no,yes,yes
+125,Ah Nauk,Buthidaung,no,yes,yes
+126,Ah Shey,Buthidaung,no,yes,yes
+127,Kun Taing Ywar Gyi,Buthidaung,no,yes,yes
+128,Nan Yar Kone,Buthidaung,no,yes,yes
+129,Pale Taung,Buthidaung,no,yes,yes
+130,War Shee Lar (War Shee Lar Para),Buthidaung,no,yes,yes
+131,Kyauk Hpyu Taung,Buthidaung,no,yes,yes
+132,Thar Yar Kone (a) Htein Taw,Buthidaung,no,yes,yes
+133,Gone Nar,Buthidaung,no,yes,yes
+134,Thay Kan,Buthidaung,no,yes,yes
+135,Thay Kan (Rakhine),Buthidaung,no,yes,yes
+136,Pyin Shey (Rakhine),Buthidaung,no,yes,yes
+137,Kyauk Yan (Rakhine),Buthidaung,no,yes,yes
+138,Na Nwin Ku,Buthidaung,no,yes,yes
+139,Taung,Buthidaung,no,yes,yes
+140,Teik Tu Pauk,Buthidaung,no,yes,yes
+141,Kyauk Twe Chaung,Buthidaung,yes,yes,yes
+142,Kyaung Taung,Buthidaung,yes,yes,yes
+143,Kyaw U,Buthidaung,yes,yes,yes
+144,Pu Zun Chaung,Buthidaung,yes,yes,yes
+145,Sar Kaing,Buthidaung,yes,yes,yes
+146,Thea Ni Chaung,Buthidaung,yes,yes,yes
+147,Kyauk See,Buthidaung,yes,yes,yes
+148,Kyun Pauk,Buthidaung,yes,yes,yes
+149,Kyway Chaung Kha Mway,Buthidaung,yes,yes,yes
+150,Kyway Chaung Kha Mway (Lower),Buthidaung,yes,yes,yes
+151,Kyway Chaung,Buthidaung,yes,yes,yes
+152,Kyway Chaung Rakhine,Buthidaung,yes,yes,yes
+153,Pe Lun Kha Mway,Buthidaung,yes,yes,yes
+154,Pe Tha Du (West),Buthidaung,yes,yes,yes
+155,Doe Wai,Buthidaung,no,yes,yes
+156,Man Aung,Buthidaung,no,yes,yes
+157,Set Khaw,Buthidaung,no,yes,yes
+158,Thar Zi,Buthidaung,no,yes,yes
+159,Kha Yu Chaung,Buthidaung,no,yes,yes
+160,Laung Chaung Daing Net,Buthidaung,no,yes,yes
+161,Laung Chaung,Buthidaung,no,yes,yes
+162,Pyein Chaung,Buthidaung,yes,yes,yes
+163,Sin Swei Ya,Buthidaung,yes,yes,yes
+164,Ah Yaing Kwet Chay,Buthidaung,no,yes,yes
+165,Chaung Pauk,Buthidaung,no,yes,yes
+166,Kyar Nyo Pyin,Buthidaung,no,yes,yes
+167,Kyar Nyo Pyin (Rakhine),Buthidaung,no,yes,yes
+168,Pyar (Yi) Yae,Buthidaung,no,yes,yes
+169,Doe Tan,Buthidaung,no,yes,yes
+170,Let Wea Det,Buthidaung,no,yes,yes
+171,Pu Zun Chaung,Buthidaung,no,yes,yes
+172,Done Chaung,Buthidaung,no,yes,yes
+173,Gandamar (NaTaLa),Buthidaung,no,yes,yes
+174,Htin Shar Pyin,Buthidaung,no,yes,yes
+175,Inn Hpauk,Buthidaung,no,yes,yes
+176,Kyauk Hla Pyin,Buthidaung,no,yes,yes
+177,Let Wea Det Pyin Shey,Buthidaung,no,yes,yes
+178,Tha Pyay Taw,Buthidaung,no,yes,yes
+179,Toe Cheit Ywar,Buthidaung,no,yes,yes
+180,Maung Gyi Taung,Buthidaung,no,yes,yes
+181,Sin Oe Pyin (Middle),Buthidaung,no,yes,yes
+182,Sin Oe Pyin (Ywar Gyi),Buthidaung,no,yes,yes
+183,Maung Hnit Ma,Buthidaung,no,yes,yes
+184,Bo Gyi Chaung,Buthidaung,no,yes,yes
+185,Hpaw Tay Ahr Li,Buthidaung,no,yes,yes
+186,Khaik Mu Ra,Buthidaung,no,yes,yes
+187,Mar Zi,Buthidaung,no,yes,yes
+188,Mee Chaung Zay,Buthidaung,no,yes,yes
+189,Ywar Thit,Buthidaung,no,yes,yes
+190,Kone Tan Ywar Thit,Buthidaung,no,yes,yes
+191,Ku Mi Khar Li,Buthidaung,no,yes,yes
+192,Maung Hla Ma (Lin Bar Si Li),Buthidaung,no,yes,yes
+193,Mee Kyaung Khaung Swea,Buthidaung,no,yes,yes
+194,Ka Htee Hla (Na Ta La),Buthidaung,yes,yes,yes
+195,Pan Be Chaung,Buthidaung,no,yes,yes
+196,Pan Be Chaung (Rakhine),Buthidaung,no,yes,yes
+197,Day Li,Buthidaung,no,yes,yes
+198,Myaung Nar,Buthidaung,no,yes,yes
+199,Ku Toet Seik,Buthidaung,no,yes,yes
+200,Kyauk Yit,Buthidaung,no,yes,yes
+201,Myauk (Pale Taung),Buthidaung,no,yes,yes
+202,Nan Yar Kone Ywar Thit,Buthidaung,no,yes,yes
+203,Taung (Pale Taung),Buthidaung,no,yes,yes
+204,Than Chay,Buthidaung,no,yes,yes
+205,Nga Hlan Pyin,Buthidaung,no,yes,yes
+206,Kyee Hnoke Thee,Buthidaung,no,yes,yes
+207,Maung Hnit Ma,Buthidaung,no,yes,yes
+208,Ngar Yant Chaung,Buthidaung,no,yes,yes
+209,Pauk Taw Pyin,Buthidaung,no,yes,yes
+210,Yin Ma,Buthidaung,no,yes,yes
+211,Yin Ma Zay,Buthidaung,no,yes,yes
+212,Aw Lan Pyin,Buthidaung,no,yes,yes
+213,Aw Lan Pyin,Buthidaung,no,yes,yes
+214,Nga Kyi Tauk Daing Net,Buthidaung,no,yes,yes
+215,Nga Kyi Tauk,Buthidaung,no,yes,yes
+216,Nga/ Kyin Tauk,Buthidaung,no,yes,yes
+217,Tha Yae Kone Tan,Buthidaung,no,yes,yes
+218,Myauk Chaung,Buthidaung,no,yes,yes
+219,Oke Taung (Rakhine),Buthidaung,no,yes,yes
+220,Ah Twin Pyin,Buthidaung,no,yes,yes
+221,Aung Ze Ya (Rakhine),Buthidaung,no,yes,yes
+222,Pauk Taw,Buthidaung,no,yes,yes
+223,Pyaing Taung,Buthidaung,no,yes,yes
+224,Taung Chaung,Buthidaung,no,yes,yes
+225,Taung Maw,Buthidaung,no,yes,yes
+226,Zin Kha Mar,Buthidaung,no,yes,yes
+227,Let Pan Chaung,Buthidaung,no,yes,yes
+228,Myo Ma Chaung,Buthidaung,no,yes,yes
+229,Pyin Chaung,Buthidaung,no,yes,yes
+230,Kun Taung,Buthidaung,no,yes,yes
+231,Sa Par Htar,Buthidaung,no,yes,yes
+232,Khaung Taik,Buthidaung,no,yes,yes
+233,Nwar Yon Taung,Buthidaung,no,yes,yes
+234,San Goe Taung,Buthidaung,no,yes,yes
+235,Shat Shar Taung,Buthidaung,no,yes,yes
+236,Sin Thay Pyin,Buthidaung,no,yes,yes
+237,U Yin Thar,Buthidaung,no,yes,yes
+238,U Yin Thar Kha Mway,Buthidaung,no,yes,yes
+239,Kan Paing Chaung,Buthidaung,no,yes,yes
+240,Kha Mway Chaung,Buthidaung,no,yes,yes
+241,Pyin Shey,Buthidaung,no,yes,yes
+242,San Hnyin Wai (Win Dwin Rakhine),Buthidaung,no,yes,yes
+243,San Hnyin Wai Rakhine,Buthidaung,no,yes,yes
+244,Si Pin Thar Yar,Buthidaung,no,yes,yes
+245,Say Oe Kya,Buthidaung,no,yes,yes
+246,Tha Zin Taw,Buthidaung,no,yes,yes
+247,Wa Ra Kyun,Buthidaung,no,yes,yes
+248,Gwa Son,Buthidaung,no,yes,yes
+249,Kan Pyin,Buthidaung,no,yes,yes
+250,Say Taung,Buthidaung,no,yes,yes
+251,Daing Net Pyin,Buthidaung,no,yes,yes
+252,Pyin Shey,Buthidaung,no,yes,yes
+253,Pyin Shey Ah Shey,Buthidaung,no,yes,yes
+254,Sein Hnyin Pyar Zay,Buthidaung,no,yes,yes
+255,Taw Kan,Buthidaung,no,yes,yes
+256,Tha Pyay Taw,Buthidaung,no,yes,yes
+257,Tin Set,Buthidaung,no,yes,yes
+258,Yet Chaung,Buthidaung,no,yes,yes
+259,Zay Ah Nauk,Buthidaung,no,yes,yes
+260,Ba Ho Pyin Ywar Haung,Buthidaung,no,yes,yes
+261,Ba Ho Pyin Ywar Thit,Buthidaung,no,yes,yes
+262,Chaung Chay,Buthidaung,no,yes,yes
+263,Doe Tan,Buthidaung,no,yes,yes
+264,Hmaing Sa Ri,Buthidaung,no,yes,yes
+265,Inn Chaung,Buthidaung,no,yes,yes
+266,Nga Thaing Chaung,Buthidaung,no,yes,yes
+267,Pan Kone Ma,Buthidaung,no,yes,yes
+268,Pauk Kyat,Buthidaung,no,yes,yes
+269,Pauk Kyat Wa,Buthidaung,no,yes,yes
+270,Pi Ywet Rakhine,Buthidaung,no,yes,yes
+271,Seik Ta Ra,Buthidaung,no,yes,yes
+272,Sin Ma U Kaing,Buthidaung,no,yes,yes
+273,Ta Ra Gu,Buthidaung,no,yes,yes
+274,Than Pu Yar,Buthidaung,no,yes,yes
+275,Tharaphy (NaTaLa),Buthidaung,no,yes,yes
+276,Yae Chan,Buthidaung,no,yes,yes
+277,Daing Net Ywar,Buthidaung,no,yes,yes
+278,Hpa Lan,Buthidaung,yes,yes,yes
+279,Myaung,Buthidaung,no,yes,yes
+280,Tat Min Chaung,Buthidaung,no,yes,yes
+281,Taung Paing,Buthidaung,no,yes,yes
+282,Myauk,Buthidaung,no,yes,yes
+283,Taung,Buthidaung,no,yes,yes
+284,Taung Chay,Buthidaung,no,yes,yes
+285,Tha Peik Taung (Rakhine),Buthidaung,no,yes,yes
+286,Kyet Mauk Taung,Buthidaung,no,yes,yes
+287,Tha Yet Kin Ma Nu,Buthidaung,no,yes,yes
+288,Tha Yet Pyin,Buthidaung,no,yes,yes
+289,Tha Yet Pyin (Rakhine),Buthidaung,no,yes,yes
+290,Yae Chan Pyin,Buthidaung,no,yes,yes
+291,Kyauk Pyin Seik,Buthidaung,no,yes,yes
+292,Tha Pyay Seik,Buthidaung,no,yes,yes
+293,Thaing Ta Poke,Buthidaung,no,yes,yes
+294,Gaung Gyi,Buthidaung,no,yes,yes
+295,Gwa Son,Buthidaung,no,yes,yes
+296,Gwa Son (Rakhine),Buthidaung,no,yes,yes
+297,Maws Taw Hpi,Buthidaung,no,yes,yes
+298,Wet Ma Kya,Buthidaung,no,yes,yes
+299,Hla Tha Ma,Buthidaung,no,yes,yes
+300,Laung Gyun,Buthidaung,no,yes,yes
+301,Say Tha Ma,Buthidaung,no,yes,yes
+302,Thein Taung Pyin (Daing Net),Buthidaung,no,yes,yes
+303,Thein Taung Pyin,Buthidaung,no,yes,yes
+304,Done Paing,Buthidaung,no,yes,yes
+305,Khu Taung,Buthidaung,no,yes,yes
+306,Kone Taung,Buthidaung,no,yes,yes
+307,Thin Ga Net,Buthidaung,no,yes,yes
+308,Kywe Rine (Na Ta La),Buthidaung,no,yes,yes
+309,Tin May,Buthidaung,yes,yes,yes
+310,Khe War,Buthidaung,no,yes,yes
+311,Taung,Buthidaung,no,yes,yes
+312,U Hla Hpay,Buthidaung,no,yes,yes
+313,Hlaing Shey Pyin,Buthidaung,no,yes,yes
+314,U Kyaw,Buthidaung,no,yes,yes
+315,Doe Tan,Buthidaung,no,yes,yes
+316,Kyein Chaung,Buthidaung,no,yes,yes
+317,Wa Ra Kyun,Buthidaung,no,yes,yes
+318,Zaw Baw,Buthidaung,no,yes,yes
+319,Baw Li,Buthidaung,no,yes,yes
+320,Baw Li (Rakhine),Buthidaung,no,yes,yes
+321,Zay Di Taung,Buthidaung,no,yes,yes
+322,Zay Di Taung (Rakhine),Buthidaung,no,yes,yes
+323,Ah Nauk Pyin,Buthidaung,no,yes,yes
+324,Kyein Chaung,Buthidaung,no,yes,yes
+325,Rammoya Fara,Buthidaung,no,yes,yes
+326,Yin Ma Kyauk Taung,Buthidaung,no,yes,yes
+327,Gone Nar,Buthidaung,no,yes,yes
+328,Thit Yin,Buthidaung,no,yes,yes
+329,Ywar Ma Mu Sa Lin,Buthidaung,no,yes,yes
+330,Ywar Ma Rakhine,Buthidaung,no,yes,yes
+331,Ah Lel (Ywet Nyo Taung),Buthidaung,no,yes,yes
+332,Myauk (Ywet Nyo Taung),Buthidaung,no,yes,yes
+333,Taung (Ywet Nyo Taung),Buthidaung,no,yes,yes
+334,Taung Gyi Yin,Buthidaung,no,yes,yes
+335,Thar Si (Myo),Buthidaung,yes,yes,yes
+336,Yin Ma Zee Hton,Buthidaung,no,yes,yes
+337,Zee Hton Rakhine,Buthidaung,yes,yes,yes
+338,Four Miles South,Buthidaung,no,no,no
+339,(Du) Chee Yar Tan (East),Maungdaw,yes,yes,yes
+340,(Du) Chee Yar Tan (Middle),Maungdaw,yes,yes,yes
+341,(Du) Chee Yar Tan (South),Maungdaw,yes,yes,yes
+342,(Du) Chee Yar Tan (West),Maungdaw,yes,yes,yes
+343,Baw Di Kone,Maungdaw,yes,yes,yes
+344,DPA (Nyein Chan Yay),Maungdaw,yes,yes,yes
+345,Kha Yay Myaing (NaTaLa),Maungdaw,yes,yes,yes
+346,Kin Chaung,Maungdaw,yes,yes,yes
+347,Nu Nar Sar Ri,Maungdaw,yes,yes,yes
+348,Tat U Chaung,Maungdaw,yes,yes,yes
+349,(Du) Nyaung Pin Gyi,Maungdaw,yes,yes,yes
+350,(Pa) Chee Yar Tan,Maungdaw,yes,yes,yes
+351,(Pa) Nyaung Pin Gyi,Maungdaw,yes,yes,yes
+352,Maw,Maungdaw,yes,yes,yes
+353,Ah Htet Pyu Ma,Maungdaw,yes,yes,yes
+354,Koe Taung,Maungdaw,yes,yes,yes
+355,Taung Yin,Maungdaw,yes,yes,yes
+356,Byu Har Kone,Maungdaw,yes,yes,yes
+357,Kan Hpu,Maungdaw,yes,yes,yes
+358,Kan Paing Gyi (Lower),Maungdaw,yes,yes,yes
+359,Kan Paing Gyi (Upper),Maungdaw,yes,yes,yes
+360,Lay Yin Pyan Kwin,Maungdaw,yes,yes,yes
+361,Maw Tu Lar,Maungdaw,yes,yes,yes
+362,Zay Kone Tan,Maungdaw,yes,yes,yes
+363,Aung Zan,Maungdaw,yes,yes,yes
+364,Aung Zan (Daing Net),Maungdaw,yes,yes,yes
+365,Kyaung Toe,Maungdaw,yes,yes,yes
+366,Shee Dar,Maungdaw,yes,yes,yes
+367,Aung Zay Ya (Nyein Chan Yay),Maungdaw,yes,yes,yes
+368,Chan Pyin,Maungdaw,yes,yes,yes
+369,Sa Bai Pin Yin,Maungdaw,yes,yes,yes
+370,Ah Kya (Chein Khar Li) (Lower),Maungdaw,yes,yes,yes
+371,Chein Khar Li,Maungdaw,yes,yes,yes
+372,Chein Khar Li (West),Maungdaw,yes,yes,yes
+373,Dar Gyi Zar,Maungdaw,yes,yes,yes
+375,Lin Bar Gone Nar,Maungdaw,yes,yes,yes
+376,Thein Taung,Maungdaw,yes,yes,yes
+377,Bo Bar,Maungdaw,yes,yes,yes
+378,Done Paik,Maungdaw,yes,yes,yes
+379,Kyet Kyein,Maungdaw,yes,yes,yes
+380,Ran Aung Pyin (NaTaLa),Maungdaw,yes,yes,yes
+381,Ree Dar,Maungdaw,yes,yes,yes
+374,Doe Tan,Maungdaw,yes,yes,yes
+382,Hla Poe Khaung,Maungdaw,yes,yes,yes
+383,Shein Kar Li,Maungdaw,yes,yes,yes
+384,Baw Taw Lar,Maungdaw,yes,yes,yes
+385,Hlaing Thi,Maungdaw,yes,yes,yes
+386,Sin Thay Pyin,Maungdaw,yes,yes,yes
+387,Taung Pyo,Maungdaw,yes,yes,yes
+388,Tone Chaung,Maungdaw,yes,yes,yes
+389,Hpar Wat Chaung (Ywar Haung),Maungdaw,yes,yes,yes
+390,Hpar Wut Chaung (Su Sae),Maungdaw,yes,yes,yes
+391,Hpar Wut Chaung (Ywar Thit),Maungdaw,yes,yes,yes
+392,Thea Chaung,Maungdaw,yes,yes,yes
+393,War Pyin,Maungdaw,yes,yes,yes
+394,Aung Chan Thar,Maungdaw,yes,yes,yes
+395,Baw Tu Lar,Maungdaw,yes,yes,yes
+396,In Tu Lar,Maungdaw,yes,yes,yes
+397,Koe Ein Su,Maungdaw,yes,yes,yes
+398,Inn Din (East),Maungdaw,no,yes,yes
+399,Inn Din (Middle),Maungdaw,no,yes,yes
+400,Inn Din (Rakhine),Maungdaw,no,yes,yes
+401,Inn Din (West),Maungdaw,no,yes,yes
+402,Pe Yone (NaTaLa),Maungdaw,no,yes,yes
+403,Doe Tan,Maungdaw,yes,yes,yes
+404,Ka Nyin Tan,Maungdaw,yes,yes,yes
+405,Na Khaung To,Maungdaw,yes,yes,yes
+406,Ka Nyin Tan,Maungdaw,yes,yes,yes
+407,Maung Ni,Maungdaw,yes,yes,yes
+408,Ah Kyaw (Arisha Para),Maungdaw,yes,yes,yes
+409,Dar Shey,Maungdaw,yes,yes,yes
+410,Ka Nyin,Maungdaw,yes,yes,yes
+411,Ka Nyin Taw,Maungdaw,yes,yes,yes
+412,Kan Hpu,Maungdaw,no,yes,yes
+413,Pan Be ( Pan Be (South)),Maungdaw,no,yes,yes
+414,Ah Nauk Tan Chaung,Maungdaw,yes,yes,yes
+415,Aung Tha Pyay,Maungdaw,yes,yes,yes
+416,Gu Mi Yar,Maungdaw,yes,yes,yes
+417,Kar Lar Day Hpet,Maungdaw,yes,yes,yes
+418,Naw Yar,Maungdaw,yes,yes,yes
+419,Ran Khar Zay Di,Maungdaw,yes,yes,yes
+420,San Su Ri,Maungdaw,yes,yes,yes
+421,Kat Pa Kaung,Maungdaw,yes,yes,yes
+422,Tha Dut Taung,Maungdaw,yes,yes,yes
+423,Ah Nauk Hka Maung Seik,Maungdaw,yes,yes,yes
+424,Ah San Kyaw,Maungdaw,yes,yes,yes
+425,Ah Shey Kha Maung Seik,Maungdaw,yes,yes,yes
+426,Mee Kyaung Chaung,Maungdaw,yes,yes,yes
+427,Min Kha Maung (NaTaLa),Maungdaw,yes,yes,yes
+428,Taing Bin Gar,Maungdaw,yes,yes,yes
+429,Ye Bauk Kyar,Maungdaw,yes,yes,yes
+430,Kun Thee Pin,Maungdaw,yes,yes,yes
+431,Let Hpwet Kya,Maungdaw,yes,yes,yes
+432,Me Te,Maungdaw,yes,yes,yes
+433,Nant Thar Taung,Maungdaw,yes,yes,yes
+434,Kyar Gaung Taung,Maungdaw,yes,yes,yes
+435,Ah Lel,Maungdaw,yes,yes,yes
+436,Kyauk Chaung Ywar Thit,Maungdaw,yes,yes,yes
+437,Kyauk Hlay Kar,Maungdaw,yes,yes,yes
+438,Thea Chaung Pyu Su,Maungdaw,yes,yes,yes
+439,Thea Chaung Ywar Thit Kay,Maungdaw,yes,yes,yes
+440,Ho Kay Day Kone Nar,Maungdaw,no,yes,yes
+441,Kyauk Pan Du,Maungdaw,no,yes,yes
+442,Kyauk Pan Du (NaTaLa),Maungdaw,no,yes,yes
+443,Zay Di,Maungdaw,no,yes,yes
+444,Kyauk Pyin Seik,Maungdaw,yes,yes,yes
+445,Set Khwar (East),Maungdaw,yes,yes,yes
+446,Set Khwar (West),Maungdaw,yes,yes,yes
+447,Ah Shey Tan Chaung (Htan Khar Li),Maungdaw,yes,yes,yes
+448,Gaw Yin,Maungdaw,yes,yes,yes
+449,Kyaung Na Hpay (East),Maungdaw,yes,yes,yes
+450,Kyaung Na Hpay (Myo),Maungdaw,yes,yes,yes
+451,Hpway Thar,Maungdaw,no,yes,yes
+452,Kyaung Taung (1),Maungdaw,no,yes,yes
+453,Kyaung Taung (2),Maungdaw,no,yes,yes
+454,Mwi Thee,Maungdaw,no,yes,yes
+455,Aung Thar Yar (NaTaLa),Maungdaw,yes,yes,yes
+456,Aung Zay Ya (Su See),Maungdaw,yes,yes,yes
+457,Kyee Kan Pyin (Middle),Maungdaw,yes,yes,yes
+458,Kyee Kan Pyin (South),Maungdaw,yes,yes,yes
+459,Kyee Kan Pyin (West),Maungdaw,yes,yes,yes
+460,Wa Peik,Maungdaw,yes,yes,yes
+461,Kyein Chaung,Maungdaw,yes,yes,yes
+462,Myauk,Maungdaw,yes,yes,yes
+463,Kyet Yoe Pyin (South),Maungdaw,yes,yes,yes
+464,Kyet Yoe Pyin (Ywa Ma),Maungdaw,yes,yes,yes
+465,Kywe Ta Ma,Maungdaw,yes,yes,yes
+466,Lu Hpan Pyin,Maungdaw,yes,yes,yes
+467,Baw Da Li (2),Maungdaw,yes,yes,yes
+468,Baw Tar Li,Maungdaw,yes,yes,yes
+469,Hpet Leik Pyin,Maungdaw,yes,yes,yes
+470,Kyun Pauk Pyu Su,Maungdaw,yes,yes,yes
+471,Kyun Pauk Ywar Haung,Maungdaw,yes,yes,yes
+474,Gyit Chaung,Maungdaw,yes,yes,yes
+472,Kyun Pauk Sin Oe,Maungdaw,yes,yes,yes
+473,Saung Paing Nyar,Maungdaw,yes,yes,yes
+475,Hpaw Ti Kaung,Maungdaw,yes,yes,yes
+476,Kyun Gaung,Maungdaw,yes,yes,yes
+477,Laung Don (Myo),Maungdaw,yes,yes,yes
+478,Laung Don (NaTaLa),Maungdaw,yes,yes,yes
+479,Laung Done Zay Di Pyin,Maungdaw,yes,yes,yes
+480,Myar Zin,Maungdaw,yes,yes,yes
+481,Sin Thay Pyin,Maungdaw,yes,yes,yes
+482,Leik Ya (Middle),Maungdaw,yes,yes,yes
+483,Leik Ya (South),Maungdaw,yes,yes,yes
+484,Leik Ya Hpar Ri (Leik Ya (North)),Maungdaw,yes,yes,yes
+485,Leik Ya Zone Karr Yar,Maungdaw,yes,yes,yes
+486,Aung Min Ga Lar (NaTaLa),Maungdaw,yes,yes,yes
+487,Kyauk Chaung,Maungdaw,yes,yes,yes
+488,Maung Hnit Ma (Gyi),Maungdaw,yes,yes,yes
+489,Maung Hnit Ma (Nge),Maungdaw,yes,yes,yes
+490,May Ze Tu Lar,Maungdaw,yes,yes,yes
+491,Hpon Thi,Maungdaw,yes,yes,yes
+492,Mee Taik,Maungdaw,yes,yes,yes
+493,Ye Aung Chaung,Maungdaw,yes,yes,yes
+494,Mee Kyaung Tet,Maungdaw,yes,yes,yes
+495,Min Ga Lar Gyi,Maungdaw,yes,yes,yes
+496,Thar Zay,Maungdaw,yes,yes,yes
+497,Min Gyi,Maungdaw,yes,yes,yes
+498,Min Gyi (Tu Lar Tu Li),Maungdaw,yes,yes,yes
+500,Myaw Taung,Maungdaw,yes,yes,yes
+501,Tha Lu Chaung,Maungdaw,yes,yes,yes
+502,Gyin Taw,Maungdaw,no,yes,yes
+503,Hpway Yar,Maungdaw,no,yes,yes
+504,Kan Nar Ywar Haung,Maungdaw,no,yes,yes
+505,Myaw Chaung,Maungdaw,no,yes,yes
+506,Myin Hlut (East),Maungdaw,no,yes,yes
+507,Myin Hlut (Middle),Maungdaw,no,yes,yes
+508,Myin Hlut (South),Maungdaw,no,yes,yes
+509,Myin Hlut (West),Maungdaw,no,yes,yes
+510,Myin Hlut Ywar Thit,Maungdaw,no,yes,yes
+511,Shee Dar,Maungdaw,no,yes,yes
+512,Zone Kalar/Zone Kara,Maungdaw,no,yes,yes
+513,Myo Mi Chaung,Maungdaw,yes,yes,yes
+514,Myo Thit,Maungdaw,yes,yes,yes
+515,Kan Kya (North),Maungdaw,yes,yes,yes
+516,Kan Kya (South),Maungdaw,yes,yes,yes
+499,Myaw Chaung,Maungdaw,yes,yes,yes
+517,Myo Thu Gyi (Yar Zar Bi),Maungdaw,yes,yes,yes
+518,Thaung Paing Nyar,Maungdaw,yes,yes,yes
+519,Wai Thar Li,Maungdaw,yes,yes,yes
+520,Ywar Haung,Maungdaw,yes,yes,yes
+521,Auk (Let Thar),Maungdaw,yes,yes,yes
+522,Bar Su Ba,Maungdaw,yes,yes,yes
+523,Gone Nar,Maungdaw,yes,yes,yes
+524,Haw Ri Tu Lar,Maungdaw,yes,yes,yes
+525,Myo U,Maungdaw,yes,yes,yes
+526,Sar Kon Boke (Hindu Para),Maungdaw,yes,yes,yes
+527,Zin Tu Lar,Maungdaw,yes,yes,yes
+528,Zu La,Maungdaw,yes,yes,yes
+529,Nan Yar Kaing,Maungdaw,yes,yes,yes
+530,Nan Yar Kaing (NaTaLa),Maungdaw,yes,yes,yes
+540,Hindu,Maungdaw,yes,yes,yes
+541,Ngar Khu Ya,Maungdaw,yes,yes,yes
+542,Ngar Khu Ya,Maungdaw,yes,yes,yes
+543,Hmaing Sa Ri,Maungdaw,yes,yes,yes
+544,Ngar Yant Chaung,Maungdaw,yes,yes,yes
+545,Gone Nar,Maungdaw,yes,yes,yes
+546,Ngan Chaung,Maungdaw,yes,yes,yes
+547,Hpan Myaung,Maungdaw,yes,yes,yes
+548,Leik Aing,Maungdaw,yes,yes,yes
+549,Ngar Sar Kyu,Maungdaw,yes,yes,yes
+550,Pyaung Paik,Maungdaw,yes,yes,yes
+551,Nwar Yon Taung,Maungdaw,yes,yes,yes
+552,Pyar Thar,Maungdaw,yes,yes,yes
+553,Thu Kha Myaing,Maungdaw,yes,yes,yes
+554,Yae Myet Taung,Maungdaw,yes,yes,yes
+555,Nyaung Chaung,Maungdaw,yes,yes,yes
+556,Shwe Yin Aye (NaTaLa),Maungdaw,yes,yes,yes
+531,Gar Yar Pyin,Maungdaw,yes,yes,yes
+532,La Baw Wa,Maungdaw,yes,yes,yes
+533,Laung Boke,Maungdaw,yes,yes,yes
+534,Myawaddy (NaTaLa),Maungdaw,yes,yes,yes
+535,N‌at Chaung,Maungdaw,yes,yes,yes
+536,Pa Da Kar Taung,Maungdaw,yes,yes,yes
+537,Tat Chaung,Maungdaw,yes,yes,yes
+538,Than Hpa Yar,Maungdaw,yes,yes,yes
+539,Zaw Za Dein,Maungdaw,yes,yes,yes
+557,Done,Maungdaw,yes,yes,yes
+558,Pa Da Kar Ywar Thit,Maungdaw,yes,yes,yes
+559,Ka Nyin Tan,Maungdaw,yes,yes,yes
+560,Khaung Ta Kar,Maungdaw,yes,yes,yes
+561,Pa Din,Maungdaw,yes,yes,yes
+562,Paik Seik,Maungdaw,yes,yes,yes
+563,Yae Hpu Pyin,Maungdaw,yes,yes,yes
+564,Ah Nauk,Maungdaw,yes,yes,yes
+565,Ah Shey,Maungdaw,yes,yes,yes
+566,Pan Taw Pyin Ywar Thit,Maungdaw,yes,yes,yes
+567,Ywar Gyi (Middle),Maungdaw,yes,yes,yes
+568,Paung Zar,Maungdaw,yes,yes,yes
+569,Pyin Hpyu,Maungdaw,yes,yes,yes
+570,Pa Yin Taung,Maungdaw,yes,yes,yes
+571,Pwint Hpyu Chaung,Maungdaw,yes,yes,yes
+572,Zin Paing Nyar,Maungdaw,yes,yes,yes
+573,Auk Pyu Ma (Rakhine),Maungdaw,yes,yes,yes
+574,Pyu Ma Ka Nyin Tan,Maungdaw,yes,yes,yes
+575,Sa Bai Kone,Maungdaw,yes,yes,yes
+576,Yae Myet,Maungdaw,yes,yes,yes
+577,San Kar Pin Yin,Maungdaw,yes,yes,yes
+578,San Kar Pin Yin (Myo),Maungdaw,yes,yes,yes
+579,San Kar Pin Yin (Rakhine),Maungdaw,yes,yes,yes
+580,Aung Ba La (Rakhine),Maungdaw,yes,yes,yes
+581,Gaung Nyar,Maungdaw,yes,yes,yes
+582,Gone Nar,Maungdaw,yes,yes,yes
+583,Ka Nyin Chaung,Maungdaw,yes,yes,yes
+584,Kan Be,Maungdaw,yes,yes,yes
+585,Kan Paing Nar,Maungdaw,yes,yes,yes
+586,Pan Htein,Maungdaw,yes,yes,yes
+587,Shwe Zar (West),Maungdaw,yes,yes,yes
+588,Shwe Zar Kat Pa Kaung,Maungdaw,yes,yes,yes
+589,Zay Di Pyin,Maungdaw,yes,yes,yes
+590,Hpaung Seik,Maungdaw,yes,yes,yes
+591,Mingalar Nyunt (NaTaLa),Maungdaw,yes,yes,yes
+592,Ta Man Thar (Bo Hmu Gyi Thet),Maungdaw,yes,yes,yes
+593,Ta Man Thar,Maungdaw,yes,yes,yes
+594,Ta Man Thar (Myo),Maungdaw,yes,yes,yes
+595,Ta Man Thar Ah Nauk (Rakhine),Maungdaw,yes,yes,yes
+596,Ta Man Thar Ah Shey,Maungdaw,yes,yes,yes
+597,Ta Man Thar Bo Hmu Gyi,Maungdaw,yes,yes,yes
+598,Ta Man Thar Taung,Maungdaw,yes,yes,yes
+599,Ta Man Thar Thea Kone Tan,Maungdaw,yes,yes,yes
+600,Ta Man Thar Zay Nar,Maungdaw,yes,yes,yes
+601,Hpar Zay Dar,Maungdaw,yes,yes,yes
+602,Ku Kway (Thet),Maungdaw,yes,yes,yes
+603,Myo,Maungdaw,yes,yes,yes
+604,Shwe Taing (Rakhine),Maungdaw,yes,yes,yes
+605,Tat Chaung,Maungdaw,yes,yes,yes
+606,Hpway Yar,Maungdaw,yes,yes,yes
+607,Kan Pyin Thar Si,Maungdaw,yes,yes,yes
+608,Kan Thar Yar,Maungdaw,yes,yes,yes
+609,Mar Di Lar,Maungdaw,yes,yes,yes
+610,Nu Ru Lar,Maungdaw,yes,yes,yes
+611,Tat U Chaung,Maungdaw,yes,yes,yes
+612,Tat U Chaung (West),Maungdaw,yes,yes,yes
+613,Taung Pyo Let Yar,Maungdaw,yes,yes,yes
+614,Tha Pyay Taw,Maungdaw,no,yes,yes
+615,Thar Yar Taw,Maungdaw,no,yes,yes
+616,Zone Kar Yar,Maungdaw,no,yes,yes
+617,Gwa Son,Maungdaw,yes,yes,yes
+618,Su Ra Li,Maungdaw,yes,yes,yes
+619,Tha Win Chaung (Kan Pyo),Maungdaw,yes,yes,yes
+620,Gyin Chaung,Maungdaw,yes,yes,yes
+621,Tha Yae Kone Tan,Maungdaw,yes,yes,yes
+622,Tha Yae Kone Tan (Middle),Maungdaw,yes,yes,yes
+623,Tha Yae Kone Tan (North),Maungdaw,yes,yes,yes
+624,Tha Yae Kone Tan (West),Maungdaw,yes,yes,yes
+625,Ah Bu Gyar,Maungdaw,yes,yes,yes
+626,Dar Gyi Zar,Maungdaw,yes,yes,yes
+627,Min Ga Lar Ahr Sheik Kyar,Maungdaw,yes,yes,yes
+628,Nga Toe,Maungdaw,yes,yes,yes
+629,Pi Yae,Maungdaw,yes,yes,yes
+630,Tha Yet Oke,Maungdaw,yes,yes,yes
+631,(Du) Than Dar,Maungdaw,yes,yes,yes
+632,(Pa) Than Dar,Maungdaw,yes,yes,yes
+633,Kyun Taung,Maungdaw,yes,yes,yes
+634,Mu Hti,Maungdaw,yes,yes,yes
+635,Thar Yar Kone,Maungdaw,yes,yes,yes
+636,Thea Chaung Hpar Ri,Maungdaw,yes,yes,yes
+637,Thea Chaung Maw La Bi,Maungdaw,yes,yes,yes
+638,Thin Baw Hla,Maungdaw,yes,yes,yes
+639,Thin Baw Hla (Rakhine) (Thar Yar Gone),Maungdaw,yes,yes,yes
+640,Zaing Thar Khar Li,Maungdaw,yes,yes,yes
+641,Laung Boke,Maungdaw,yes,yes,yes
+642,That Kaing Nyar,Maungdaw,yes,yes,yes
+643,That Kaing Nyar (Thet),Maungdaw,yes,yes,yes
+644,Naung Dar Khar Li,Maungdaw,yes,yes,yes
+645,Thet Kay Pyin,Maungdaw,yes,yes,yes
+646,Har Bi (East),Maungdaw,yes,yes,yes
+647,Har Bi (Middle),Maungdaw,yes,yes,yes
+648,Har Bi (West),Maungdaw,yes,yes,yes
+649,Khway Lar Bin Gar,Maungdaw,yes,yes,yes
+650,Thi Ho Kyun,Maungdaw,yes,yes,yes
+651,Thin Baw Kwe,Maungdaw,no,yes,yes
+652,Thin Baw Kwe (West),Maungdaw,no,yes,yes
+653,Thin Baw Kwe Ywar Thit,Maungdaw,no,yes,yes
+654,Let Yar Chaung,Maungdaw,yes,yes,yes
+655,Oe Htein,Maungdaw,yes,yes,yes
+656,Thit Tone Nar Gwa Son,Maungdaw,yes,yes,yes
+657,Baw Htee,Maungdaw,yes,yes,yes
+658,Kan Pyin,Maungdaw,yes,yes,yes
+659,Thu U Lar,Maungdaw,yes,yes,yes
+660,Ah Shey,Maungdaw,no,yes,yes
+661,Hpar Ti (Ko Yi),Maungdaw,no,yes,yes
+662,Kon Tan (U Daung Ah Nauk),Maungdaw,no,yes,yes
+663,Myauk,Maungdaw,no,yes,yes
+664,U Daung (Kone Tan),Maungdaw,no,yes,yes
+665,U Daung (NaTaLa),Maungdaw,no,yes,yes
+666,Zon Mar,Maungdaw,no,yes,yes
+667,U Shey Kya,Maungdaw,yes,yes,yes
+668,Maw Ra Waddy (NaTaLa),Maungdaw,no,yes,yes
+669,Thaung Paing Nyar,Maungdaw,yes,yes,yes
+670,War Cha,Maungdaw,yes,yes,yes
+671,Wet Kyein,Maungdaw,yes,yes,yes
+672,Wet Kyein (Myo),Maungdaw,yes,yes,yes
+673,Gwa Son,Maungdaw,yes,yes,yes
+674,Yae Khat Chaung Gwa Son,Maungdaw,yes,yes,yes
+675,Yae Myet Taung,Maungdaw,yes,yes,yes
+676,Yae Myet Taung (NaTaLa),Maungdaw,yes,yes,yes
+677,Yae Nauk Ngar Thar,Maungdaw,yes,yes,yes
+678,Yae Nauk Ngar Thar (Daing Net),Maungdaw,yes,yes,yes
+679,Yae Twin Kyun,Maungdaw,yes,yes,yes
+680,Yae Twin Pyin (Ale Ywa),Maungdaw,yes,yes,yes
+681,Bwin (Baung),Maungdaw,yes,yes,yes
+682,Mar Zay,Maungdaw,yes,yes,yes
+683,Myo (Ye Aung Chaung),Maungdaw,yes,yes,yes
+684,Thu Pan Na Ka (Myo),Maungdaw,yes,yes,yes
+685,Yay Chan Chaung,Maungdaw,yes,yes,yes
+686,Ye Aung San Ya Hpway,Maungdaw,yes,yes,yes
+687,Gaw Du Thar Ra (East),Maungdaw,yes,yes,yes
+688,Gaw Du Thar Ra (North),Maungdaw,yes,yes,yes
+689,Gaw Du Thar Ra (South),Maungdaw,yes,yes,yes
+690,Gaw Du Thar Ra (West),Maungdaw,yes,yes,yes
+691,Gaw Du Thar Yar (Ywar Thit Kay),Maungdaw,yes,yes,yes
+692,Tha Ray Kon Baung,Maungdaw,yes,yes,yes
+693,Tha Ray Kon Baung (NaTaLa),Maungdaw,yes,yes,yes
+694,Ywar Thit Kay (Gaw Du Thar Ra),Maungdaw,yes,yes,yes
+695,Ywet Nyo Taung,Maungdaw,yes,yes,yes
+696,Ywet Nyo Taung,Maungdaw,yes,yes,yes
+697,Ywet Nyo Taung (Middle),Maungdaw,yes,yes,yes
+698,Ywet Nyo Taung (South),Maungdaw,yes,yes,yes
+699,Din Gar,Maungdaw,yes,yes,yes
+700,Hin Thar Ya,Maungdaw,yes,yes,yes
+701,Kaing Gyi (NaTaLa),Maungdaw,yes,yes,yes
+702,Kaing Gyi (Rakhine),Maungdaw,yes,yes,yes
+703,Lin Bar Kone Nar,Maungdaw,yes,yes,yes
+704,Saw Gi Nar (Sin Na Mar),Maungdaw,yes,yes,yes
+705,Zaw Ma Tet,Maungdaw,yes,yes,yes
+706,Thaung Khu Lar (Song Khu Lar),Maungdaw,yes,yes,yes
+707,Zee Pin Chaung (Middle),Maungdaw,yes,yes,yes
+708,Zee Pin Chaung (North),Maungdaw,yes,yes,yes
+709,Zee Pin Chaung (South),Maungdaw,yes,yes,yes
+710,Doe Tan,Maungdaw,yes,yes,yes
+711,Haw Ri Tu Lar,Maungdaw,yes,yes,yes
+712,Hpu Khar Li,Maungdaw,yes,yes,yes
+713,Kywe Htar Pyin,Maungdaw,yes,yes,yes
+714,Thar Zay Kone (Thar Zi Kone),Maungdaw,yes,yes,yes
+715,Zin Paing Nyar,Maungdaw,yes,yes,yes
+1025,Fawyazi Para,Maungdaw,yes,yes,yes
+809,Ah Htet Nan Yar,Rathedaung,no,yes,yes
+810,Navy Seik,Rathedaung,no,yes,yes
+811,Ni Lin Paw,Rathedaung,no,yes,yes
+812,Nyaung Pin Hla,Rathedaung,no,yes,yes
+813,Pyaing Taung,Rathedaung,no,yes,yes
+814,Sin Oe,Rathedaung,no,yes,yes
+815,Ah Nauk Pyin,Rathedaung,yes,yes,yes
+816,Taung Thar Yar,Rathedaung,yes,yes,yes
+817,Ah Ngu Maw,Rathedaung,yes,yes,yes
+818,Ah Ngu Maw (Rakhine),Rathedaung,yes,yes,yes
+819,Ma Gyi Chaung,Rathedaung,yes,yes,yes
+820,Ah Ngu Maw (Kone Tan),Rathedaung,yes,yes,yes
+821,Auk Nan Yar,Rathedaung,no,yes,yes
+822,Aung Ba La,Rathedaung,yes,yes,yes
+823,Sin Paik,Rathedaung,yes,yes,yes
+824,Tan Aye,Rathedaung,yes,yes,yes
+825,Thar Si,Rathedaung,yes,yes,yes
+826,Aung Seik,Rathedaung,yes,yes,yes
+827,Kaung Ri Chaung Ywar Thit,Rathedaung,yes,yes,yes
+828,Thet,Rathedaung,yes,yes,yes
+829,Bar Ta Lay,Rathedaung,no,yes,yes
+830,Tha Yet Chaung Kha Mway,Rathedaung,no,yes,yes
+831,Chin (Pyaing Taung),Rathedaung,no,yes,yes
+832,Chut Pyin,Rathedaung,no,yes,yes
+833,Pi Dauk Myaing,Rathedaung,no,yes,yes
+834,Thet,Rathedaung,no,yes,yes
+835,Done Paik,Rathedaung,yes,yes,yes
+836,Gwa Son,Rathedaung,no,yes,yes
+837,Hpet Leik,Rathedaung,no,yes,yes
+838,Tha Pyay Taw,Rathedaung,no,yes,yes
+839,Daing Kyat,Rathedaung,yes,yes,yes
+840,Hpyu Chaung,Rathedaung,yes,yes,yes
+841,Aung Thar Zay,Rathedaung,no,yes,yes
+842,Htee Swea Ywar Haung,Rathedaung,no,yes,yes
+843,Htee Swea Ywar Thit,Rathedaung,no,yes,yes
+844,Htun Ya Wai,Rathedaung,yes,yes,yes
+845,Htun Ya Wai Ywar Thit,Rathedaung,yes,yes,yes
+846,Ka Nyin Chaung,Rathedaung,no,yes,yes
+847,Pyin Chaung,Rathedaung,yes,yes,yes
+848,Yae Hpyu Kan,Rathedaung,yes,yes,yes
+849,Kan Pyin,Rathedaung,yes,yes,yes
+850,Kat Chaung,Rathedaung,yes,yes,yes
+851,Kaung Ri Chaung Ywar Haung,Rathedaung,yes,yes,yes
+852,Kyun Chaung,Rathedaung,yes,yes,yes
+853,Kan Pyin,Rathedaung,no,yes,yes
+854,Kha Naung Gyi,Rathedaung,no,yes,yes
+855,Se Kan Ywar Thit,Rathedaung,no,yes,yes
+856,Ywar Thit Kay,Rathedaung,no,yes,yes
+857,Bar Sar Ra,Rathedaung,yes,yes,yes
+858,Chein Khar Li,Rathedaung,yes,yes,yes
+859,Chein Khar Li (Rakhine),Rathedaung,yes,yes,yes
+860,Koe Tan Kauk,Rathedaung,yes,yes,yes
+861,Koe Tan Kauk (Rakhine),Rathedaung,yes,yes,yes
+862,Koe Tan Kauk Ywar Ma,Rathedaung,yes,yes,yes
+863,Kon Tan,Rathedaung,yes,yes,yes
+864,Kon Tan (Rakhine),Rathedaung,yes,yes,yes
+865,Naw Wai,Rathedaung,yes,yes,yes
+866,Ku Lar Chaung,Rathedaung,yes,yes,yes
+867,Ku Taung,Rathedaung,yes,yes,yes
+868,Ku Taung Ywar Chay,Rathedaung,yes,yes,yes
+869,Baw Di Kone,Rathedaung,yes,yes,yes
+870,Kon Tan Zay,Rathedaung,yes,yes,yes
+871,Kyauk Sar Taing,Rathedaung,yes,yes,yes
+872,Mi Chaung Yae Thauk,Rathedaung,yes,yes,yes
+873,Kyauk Tan,Rathedaung,no,yes,yes
+874,Kyauk Yan Thar Si,Rathedaung,no,yes,yes
+875,Maung Hpyu (Da Pyu Chaung),Rathedaung,no,yes,yes
+876,Yae Poke,Rathedaung,no,yes,yes
+877,Kha Maung Tone,Rathedaung,no,yes,yes
+878,Kyaung Taung,Rathedaung,no,yes,yes
+879,Doe Wai Chaung,Rathedaung,no,yes,yes
+880,Hman Ni Pyin,Rathedaung,no,yes,yes
+881,Kyein Tan,Rathedaung,no,yes,yes
+882,Kar May (Kha Mway),Rathedaung,yes,yes,yes
+883,Kar May (Rakhine),Rathedaung,yes,yes,yes
+884,Kyein Thar,Rathedaung,yes,yes,yes
+885,Hpa Yar Hla,Rathedaung,yes,yes,yes
+886,Kyet Yoe Seik,Rathedaung,yes,yes,yes
+887,Kyun Gyi,Rathedaung,yes,yes,yes
+888,Kyun Paw,Rathedaung,no,yes,yes
+889,La Mone Taing,Rathedaung,no,yes,yes
+890,Nwar Tin Koke,Rathedaung,no,yes,yes
+891,Aung Ma,Rathedaung,yes,yes,yes
+892,Ka Paing Chaung,Rathedaung,yes,yes,yes
+893,Laung Chaung,Rathedaung,yes,yes,yes
+894,Lay Gwa Son (Ywar Haung),Rathedaung,no,yes,yes
+895,Lay Gwa Son (Ywar Thit),Rathedaung,no,yes,yes
+896,Sagar Ywar,Rathedaung,no,yes,yes
+897,Lay Kan,Rathedaung,yes,yes,yes
+898,Pauk Taw Gyi,Rathedaung,yes,yes,yes
+899,Ah Lel Zee Kaing,Rathedaung,yes,yes,yes
+900,Hnan Kham Ywar,Rathedaung,yes,yes,yes
+901,Let Pan Pin Yin,Rathedaung,yes,yes,yes
+902,Mi Nyo Htaunt,Rathedaung,no,yes,yes
+903,Mi Nyo Htaunt Ywar Thit,Rathedaung,yes,yes,yes
+904,Thar Si,Rathedaung,yes,yes,yes
+905,Min Kan,Rathedaung,yes,yes,yes
+906,Myin Gan Chaung,Rathedaung,yes,yes,yes
+907,Myin Gan Chaung Kone Tan,Rathedaung,yes,yes,yes
+908,Seik Gyi Nar,Rathedaung,yes,yes,yes
+909,Myin Hpu,Rathedaung,yes,yes,yes
+910,Myin Hpu Ywar Thit,Rathedaung,yes,yes,yes
+911,Ah Htet Na Gar Mauk,Rathedaung,yes,yes,yes
+912,Ah Lel Na Gar Mauk,Rathedaung,yes,yes,yes
+913,Auk Na Gar Mauk,Rathedaung,yes,yes,yes
+914,Ah Lel Chaung,Rathedaung,yes,yes,yes
+915,Nat Chaung,Rathedaung,yes,yes,yes
+916,Ah Myet Taung,Rathedaung,no,yes,yes
+917,Nga/ San Baw (Moke Soe Chaung) (Ywar Haung),Rathedaung,no,yes,yes
+918,Nga Tauk Tu Chay,Rathedaung,no,yes,yes
+919,Se Kan Ywar Haung,Rathedaung,no,yes,yes
+920,Taung Hla Maw,Rathedaung,yes,yes,yes
+921,Bat Kar,Rathedaung,no,yes,yes
+922,Nga Tauk Tu Gyi,Rathedaung,yes,yes,yes
+923,Nwar Hla Kyaw,Rathedaung,no,yes,yes
+924,Nyaung Pin Gyi,Rathedaung,yes,yes,yes
+925,Nyaung Pin Gyi (Rakhine),Rathedaung,yes,yes,yes
+926,Pan Zin Maw,Rathedaung,yes,yes,yes
+927,Khway Tauk Chaung Ywar Thit (Hnin Si Kone),Rathedaung,yes,yes,yes
+928,Nyaung Pin Hla (Khway Tauk Chaung),Rathedaung,yes,yes,yes
+929,Leik Htaunt Teit Su,Rathedaung,yes,yes,yes
+930,Nyaung Pin Lel,Rathedaung,yes,yes,yes
+931,Ohn Chaung,Rathedaung,no,yes,yes
+932,Kan Sit,Rathedaung,no,yes,yes
+933,Oe Hpauk Ywar Thit,Rathedaung,no,yes,yes
+934,Oke Hpo (Oe Hpauk),Rathedaung,no,yes,yes
+935,Pan Hpaw Pyin,Rathedaung,no,yes,yes
+936,Pan Kaing,Rathedaung,no,yes,yes
+937,Ah Du,Rathedaung,no,yes,yes
+938,Be Lar Mi,Rathedaung,no,yes,yes
+939,Pauk Pin Yin,Rathedaung,no,yes,yes
+940,Than Du,Rathedaung,no,yes,yes
+941,Aung Zay Ya,Rathedaung,yes,yes,yes
+942,Kyauk Son,Rathedaung,yes,yes,yes
+943,Pauk Taw Chay,Rathedaung,yes,yes,yes
+944,Pauk Taw Chay Ywar Thit,Rathedaung,yes,yes,yes
+945,Pyin Khaung Ywar Thit,Rathedaung,yes,yes,yes
+946,Kyet Yoe Kone Tan,Rathedaung,yes,yes,yes
+947,Nay Pu Khan,Rathedaung,yes,yes,yes
+948,Paung Zar,Rathedaung,yes,yes,yes
+949,Baw Di Kaing,Rathedaung,no,yes,yes
+950,Done,Rathedaung,no,yes,yes
+951,Kyauk Kon Boke,Rathedaung,no,yes,yes
+952,Let Wea Det,Rathedaung,no,yes,yes
+953,Nay Pu Khan,Rathedaung,no,yes,yes
+954,Pe Tha Du,Rathedaung,no,yes,yes
+955,Thet Pyay Kya,Rathedaung,no,yes,yes
+956,Ah Wa Dar,Rathedaung,yes,yes,yes
+957,Pyar Chaung Gyi,Rathedaung,yes,yes,yes
+958,Pyar Chaung Gyi (Middle),Rathedaung,yes,yes,yes
+959,Pyin Khaung Ywar Haung,Rathedaung,yes,yes,yes
+960,Pyar Pin Yin,Rathedaung,yes,yes,yes
+961,Aung Zay Ya,Rathedaung,no,yes,yes
+962,Kone Tan,Rathedaung,no,yes,yes
+963,Ma Nyin Taung,Rathedaung,no,yes,yes
+964,Pyein Taw,Rathedaung,no,yes,yes
+965,Aung Si Kone,Rathedaung,no,yes,yes
+966,Kan Pyin,Rathedaung,no,yes,yes
+967,Pyin Shey (Sa Hpo Kyun),Rathedaung,no,yes,yes
+968,Pyin Wan,Rathedaung,no,yes,yes
+969,Kan Pyin,Rathedaung,no,yes,yes
+970,Sa Par Htar,Rathedaung,no,yes,yes
+971,Sar Pyin Chay,Rathedaung,yes,yes,yes
+972,Sar Pyin Gyi,Rathedaung,yes,yes,yes
+973,Say Oe Kya,Rathedaung,yes,yes,yes
+974,Shwe Laung Tin,Rathedaung,yes,yes,yes
+975,Lun Taung,Rathedaung,no,yes,yes
+976,Sin Khone Taing,Rathedaung,no,yes,yes
+977,Sin Khone Taing (Rakhine),Rathedaung,no,yes,yes
+978,Sin Khone Taing Zay,Rathedaung,no,yes,yes
+979,Soe May,Rathedaung,yes,yes,yes
+980,Wet Noke Thee,Rathedaung,yes,yes,yes
+981,Aung Myay Kone,Rathedaung,no,yes,yes
+982,Sauk Khat Ywar Haung (Tha Mee Hla),Rathedaung,no,yes,yes
+983,Sauk Khat Ywar Thit,Rathedaung,no,yes,yes
+984,Tha Yet Chaung,Rathedaung,yes,yes,yes
+985,Tha Yet Pyin,Rathedaung,yes,yes,yes
+986,Than Chaung,Rathedaung,yes,yes,yes
+987,Chay Yar Taw,Rathedaung,yes,yes,yes
+988,Thar Si Htaunt,Rathedaung,yes,yes,yes
+989,Thaung Da Rar,Rathedaung,no,yes,yes
+990,Kyauk Yan,Rathedaung,no,yes,yes
+991,Maw Htet,Rathedaung,no,yes,yes
+992,Tar Zaw,Rathedaung,no,yes,yes
+993,Thazin Myaing,Rathedaung,no,yes,yes
+994,Thein Taung,Rathedaung,no,yes,yes
+995,Thin Ga Net,Rathedaung,no,yes,yes
+996,Kan Pyin,Rathedaung,yes,yes,yes
+997,Kyone Pyin,Rathedaung,no,yes,yes
+998,Thit Ka Toe,Rathedaung,yes,yes,yes
+999,Laung Zin,Rathedaung,yes,yes,yes
+1000,Tin Koke,Rathedaung,yes,yes,yes
+1001,U Gar,Rathedaung,yes,yes,yes
+1002,Aung Taing (Laung Chaung),Rathedaung,no,yes,yes
+1003,Aung Taing Taung Pyo,Rathedaung,no,yes,yes
+1004,Kha Yu Chaung,Rathedaung,no,yes,yes
+1005,Nga Yant Chaung,Rathedaung,no,yes,yes
+1006,Yae Gaung Chaung,Rathedaung,no,yes,yes
+1007,Nyaung Pin Hla,Rathedaung,no,yes,yes
+1008,Yae Myet (Ywar Haung),Rathedaung,no,yes,yes
+1009,Yae Myet (Ywar Thit),Rathedaung,no,yes,yes
+1010,Yae Paik Son,Rathedaung,yes,yes,yes
+1011,Kin Pun Chaung,Rathedaung,no,yes,yes
+1012,Yae Chan Chaung Kha Mway,Rathedaung,no,yes,yes
+1013,Yae Soe Chaung,Rathedaung,no,yes,yes
+1014,Yae Zar Te Su,Rathedaung,no,yes,yes
+1015,Lone Tin,Rathedaung,yes,yes,yes
+1016,Yan Aung Pyin,Rathedaung,yes,yes,yes
+1017,Ahr Kar Taung,Rathedaung,no,yes,yes
+1018,Yet Khone Taing,Rathedaung,no,yes,yes
+1019,Zay Di Pyin,Rathedaung,no,yes,yes
+1020,Auk Zee Kaing,Rathedaung,yes,yes,yes
+1021,Tha Mee Hla Ywar Thit,Rathedaung,no,yes,yes
+1022,Zee Khaung,Rathedaung,no,yes,yes
+716,Ah Myint Kyun,Sittwe,yes,yes,yes
+717,Ah Lar Than,Sittwe,no,yes,yes
+718,Aung Daing,Sittwe,no,yes,yes
+719,Daung Pyauk Kay,Sittwe,no,yes,yes
+720,Me Za Li Kone,Sittwe,no,yes,yes
+721,Nga/Pun Ywar Gyi,Sittwe,no,yes,yes
+722,Nga/Pun Ywar Shey,Sittwe,no,yes,yes
+723,Pa Lin Pyin,Sittwe,no,yes,yes
+724,Pa Lin Pyin (Rakhine),Sittwe,no,yes,yes
+725,Bay Dar,Sittwe,no,yes,yes
+726,Bu May,Sittwe,no,yes,yes
+727,Bu May Let Tha Mar,Sittwe,no,yes,yes
+728,Bu May Ohn Taw,Sittwe,no,yes,yes
+729,Dar Paing Ywar Haung,Sittwe,no,yes,yes
+730,Dar Paing Ywar Thit,Sittwe,no,yes,yes
+731,Hman Zi,Sittwe,no,yes,yes
+732,Myat Pan Nyo,Sittwe,no,yes,yes
+733,Sat Oe,Sittwe,no,yes,yes
+734,Tain Bway,Sittwe,no,yes,yes
+735,Thea Chaung,Sittwe,no,yes,yes
+736,Thea Chaung Let Tha Mar Kone,Sittwe,no,yes,yes
+737,Thea Chaung Rakhine,Sittwe,no,yes,yes
+738,War Yar Lit,Sittwe,no,yes,yes
+739,Ywar Gaung Ywar Haung,Sittwe,no,yes,yes
+740,Ywar Gaung Ywar Thit,Sittwe,no,yes,yes
+741,Ywar Thar Yar,Sittwe,no,yes,yes
+742,Chaung Nwe,Sittwe,no,yes,yes
+743,Kan Pyin Ywar Haung,Sittwe,no,yes,yes
+744,Kan Pyin Ywar Thit,Sittwe,no,yes,yes
+745,Thone Saung,Sittwe,no,yes,yes
+746,Zaw Ma Det,Sittwe,no,yes,yes
+747,Chi Laing Hpin,Sittwe,yes,yes,yes
+748,Gant Gaw Kyun,Sittwe,no,yes,yes
+749,Thet Kay Pyin Ywar Ma,Sittwe,no,yes,yes
+750,Kha Tin Paik,Sittwe,no,yes,yes
+751,Pyin Shey,Sittwe,no,yes,yes
+752,Yae Chan Pyin,Sittwe,yes,yes,yes
+753,Aung Pin Lel,Sittwe,no,yes,yes
+754,Khaung Doke Kar,Sittwe,no,yes,yes
+755,Kyar Ma Thauk,Sittwe,no,yes,yes
+756,Kyauk Tan Chay,Sittwe,no,yes,yes
+757,Kyay Taw,Sittwe,no,yes,yes
+758,Kyay Taw Paik Seik,Sittwe,no,yes,yes
+759,Pyi Taw Thar,Sittwe,no,yes,yes
+760,Kyet Taw Pyin,Sittwe,no,yes,yes
+761,Ohn Yae Paw,Sittwe,yes,yes,yes
+762,Kyauk Tan Gyi,Sittwe,yes,yes,yes
+763,Kywi Te,Sittwe,yes,yes,yes
+764,Kywi Te Paik Seik Gyi,Sittwe,yes,yes,yes
+765,Kywi Te Paik Seik Shey,Sittwe,yes,yes,yes
+766,Done Pyin (East),Sittwe,no,yes,yes
+767,Done Pyin (North),Sittwe,no,yes,yes
+768,Done Pyin (South),Sittwe,no,yes,yes
+769,Maung Ni Pyin,Sittwe,no,yes,yes
+770,Min Hla,Sittwe,no,yes,yes
+771,Myit Nar,Sittwe,no,yes,yes
+772,Ywar Haung Chaung,Sittwe,no,yes,yes
+773,Nar Yi Kan,Sittwe,no,yes,yes
+774,Nga/Tauk Tet,Sittwe,yes,yes,yes
+775,Nyo Yaung Chaung,Sittwe,no,yes,yes
+776,Par Da Leik,Sittwe,yes,yes,yes
+777,Chan Thar Kone,Sittwe,no,yes,yes
+778,Ohn Taw Gyi,Sittwe,no,yes,yes
+779,Ohn Taw Shey,Sittwe,no,yes,yes
+780,Say Tha Mar Gyi,Sittwe,no,yes,yes
+781,Say Tha Mar Nge,Sittwe,no,yes,yes
+782,Kyan Taw,Sittwe,no,yes,yes
+783,Taw Kan,Sittwe,no,yes,yes
+784,Thein Tan,Sittwe,no,yes,yes
+785,Yar Tan,Sittwe,no,yes,yes
+786,Hla May Shwe,Sittwe,no,yes,yes
+787,Koe Saung,Sittwe,no,yes,yes
+788,Thar Yar Kone Ka Man,Sittwe,no,yes,yes
+789,Thar Yar Kone Rakhine,Sittwe,no,yes,yes
+790,Thet Kay Pyin Kone,Sittwe,no,yes,yes
+791,Thin Ga Net,Sittwe,no,yes,yes
+792,Ye Baw Haung,Sittwe,no,yes,yes
+793,Pyar Lay Chaung,Sittwe,no,yes,yes
+794,Pyin Shey,Sittwe,no,yes,yes
+795,Thin Pone Tan,Sittwe,no,yes,yes
+796,Aung Chan Thar,Sittwe,no,yes,yes
+797,Kan Taw Gyi,Sittwe,no,yes,yes
+798,Kha Yae Myaing,Sittwe,no,yes,yes
+799,Kha Yam Pyar,Sittwe,no,yes,yes
+800,Pain Nae Kone,Sittwe,no,yes,yes
+801,Saik Pyo Yay Daing,Sittwe,no,yes,yes
+802,Tha Yet Kone,Sittwe,no,yes,yes
+803,U Yin Thar,Sittwe,no,yes,yes
+804,Bya Har,Sittwe,no,yes,yes
+805,War Bo,Sittwe,no,yes,yes
+806,Thet Kay Pyin Zay,Sittwe,no,yes,yes
+807,Ywar Thit Kay,Sittwe,no,yes,yes
+808,Zaw Pu Gyar,Sittwe,no,yes,yes

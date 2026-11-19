@@ -16,6 +16,7 @@ Added to the website on 16 November 2026. No village record changed, so the edit
 - **Lines from United Nations reports** on the villages those reports name: the land report of the Independent Investigative Mechanism for Myanmar (2025) and the detailed findings of the Fact-Finding Mission (2018). New file: `un_reports.csv`.
 - **Other spellings** of village names, from GeoNames. New file: `other_spellings.csv`.
 - A page of [further sources](/sources-list/): old maps, United Nations reports, satellite studies and name lists.
+- **A map of 1954 and 1955**, added to the website on 19 November 2026 as a third old-map period: four sheets of the United States Army Map Service at 1:250,000 (public domain; scans from the University of Texas Libraries). Two cover the four townships; Myohaung to the east and Kyaukpyu to the south-east hold no village of the archive. The scans came with no coordinates and were placed on the grid the sheets print; the [methods page](/methods/) gives the figures for each sheet. `old_maps.csv` has a new column, `on_map_of_1954_1955`. No village record changed.
 
 ## 1.1 — 16 November 2026
 

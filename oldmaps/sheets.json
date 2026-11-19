@@ -171,5 +171,55 @@
   "bytes": 34822074,
   "years": "1925–1944"
  },
- "note": "Survey of India sheets cut into map tiles. Scans and first placement: Old Survey of India Maps community and Horst Held (Zenodo 18975982, 11367062, 13346102), CC BY 4.0. pinned_to_printed_grid: the sheet prints its 5-minute latitude/longitude grid and was warped so every grid line falls on its true position (tools/oldmaps_refine.py)."
+ "c": {
+  "sheets": [
+   {
+    "file": "NF46-14_Akyab_1954",
+    "set": "ams",
+    "w": 91.8958,
+    "s": 19.9995,
+    "e": 92.9987,
+    "n": 21.0026,
+    "pinned_to_printed_grid": true
+   },
+   {
+    "file": "NF46-10_CoxsBazar_1954",
+    "set": "ams",
+    "w": 91.8957,
+    "s": 20.9995,
+    "e": 92.9987,
+    "n": 21.5525,
+    "pinned_to_printed_grid": true
+   },
+   {
+    "file": "NF46-15_Myohaung_1954",
+    "set": "ams",
+    "w": 92.9956,
+    "s": 19.9995,
+    "e": 94.4984,
+    "n": 21.0026,
+    "pinned_to_printed_grid": true
+   },
+   {
+    "file": "NE46-03_Kyaukpyu_1955",
+    "set": "ams",
+    "w": 92.9123,
+    "s": 18.9996,
+    "e": 94.4986,
+    "n": 20.0027,
+    "pinned_to_printed_grid": true
+   }
+  ],
+  "bounds": [
+   91.8957,
+   18.9996,
+   94.4986,
+   21.5525
+  ],
+  "minzoom": 9,
+  "maxzoom": 13,
+  "bytes": 51466900,
+  "years": "1954–1955"
+ },
+ "note": "Old map sheets cut into map tiles. a, b: Survey of India sheets. Scans and first placement: Old Survey of India Maps community and Horst Held (Zenodo 18975982, 11367062, 13346102), CC BY 4.0. pinned_to_printed_grid: the sheet prints its 5-minute latitude/longitude grid and was warped so every grid line falls on its true position (tools/oldmaps_refine.py). c: United States Army Map Service, Burma 1:250,000, series U542, compiled 1954 and 1955, printed 1959 and 1960 (public domain); scans from the University of Texas Libraries. These came with no coordinates and were placed by FARA on their printed 10,000-yard grid (tools/oldmaps_ams.py)."
 }

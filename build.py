@@ -124,7 +124,7 @@ if os.path.exists(p('sources', 'un_reports', 'records.json')):
 if os.path.exists(p('sources', 'geonames', 'alt_names.json')):
     ALTNAMES = json.load(open(p('sources', 'geonames', 'alt_names.json'), encoding='utf-8'))['villages']
 # old survey maps cut into tiles (oldmaps/): which period covers which ground
-OLDMAPS = {'a': ('1890–1906', []), 'b': ('1925–1944', [])}
+OLDMAPS = {'a': ('1890–1906', []), 'b': ('1925–1944', []), 'c': ('1954–1955', [])}
 if os.path.exists(p('oldmaps', 'sheets.json')):
     for _k, _o in json.load(open(p('oldmaps', 'sheets.json'), encoding='utf-8')).items():
         if _k in OLDMAPS: OLDMAPS[_k][1].extend([s['w'], s['s'], s['e'], s['n']] for s in _o['sheets'])
@@ -132,7 +132,7 @@ def old_periods(v):
     try: la, ln = float(v['lat']), float(v['lng'])
     except (TypeError, ValueError, KeyError): return []
     if v.get('coord_status') == 'unverified': return []
-    return [k for k in ('a', 'b') if any(b[0] <= ln <= b[2] and b[1] <= la <= b[3] for b in OLDMAPS[k][1])]
+    return [k for k in ('a', 'b', 'c') if any(b[0] <= ln <= b[2] and b[1] <= la <= b[3] for b in OLDMAPS[k][1])]
 def other_records_html(v):
     """For a village's own page: what UN reports say, other spellings, and the old maps that show its ground."""
     out, i = '', str(v['id'])
@@ -150,7 +150,7 @@ def other_records_html(v):
                 'matched to this village by position and name.</p>' % esc(' · '.join(ALTNAMES[i]['names'])))
     per = old_periods(v)
     if per:
-        out += ('<h3>On old maps</h3><p class="note">British survey maps show this ground as it was mapped a century ago: %s. The village’s point stays on top of the old sheet. '
+        out += ('<h3>On old maps</h3><p class="note">Old survey maps show this ground as it was mapped long ago, British sheets and a United States Army map: %s. The village’s point stays on top of the old sheet. '
                 'Spellings on the sheets are the surveyors’ own, and positions can be off by a hundred metres or more. <a href="/sources-list/">About the old maps</a>.</p>'
                 % ' · '.join('<a href="/?old=%s#v=%d"><b>map of %s</b></a>' % (k, v['id'], OLDMAPS[k][0]) for k in per))
     return ('<h2>In other records</h2>' + out) if out else ''
@@ -244,7 +244,7 @@ def cite_meta(title, url):
     if doi: tags += [('citation_doi', doi), ('DC.identifier', 'https://doi.org/' + doi)]
     return ''.join('<meta name="%s" content="%s">\n' % (k, v) for k, v in tags if v)
 
-app = open(p('fara_template.html'), encoding='utf-8').read().replace('__VILLAGE_DATA__', data).replace('__OLD_BOXES_A__', json.dumps(OLDMAPS['a'][1])).replace('__OLD_BOXES_B__', json.dumps(OLDMAPS['b'][1])).replace('__UN_SOURCES__', json.dumps({k: {'short': s['short'], 'url': s['url']} for k, s in UNSRC.items()}, ensure_ascii=False))
+app = open(p('fara_template.html'), encoding='utf-8').read().replace('__VILLAGE_DATA__', data).replace('__OLD_BOXES_A__', json.dumps(OLDMAPS['a'][1])).replace('__OLD_BOXES_B__', json.dumps(OLDMAPS['b'][1])).replace('__OLD_BOXES_C__', json.dumps(OLDMAPS['c'][1])).replace('__UN_SOURCES__', json.dumps({k: {'short': s['short'], 'url': s['url']} for k, s in UNSRC.items()}, ensure_ascii=False))
 app = build_edition.stamp_app(ED, app, SITE)
 app = app.replace('<title>', cite_meta(ED['title'], SITE + '/') + '<title>', 1)
 write(p('fara.html'), app)
@@ -540,9 +540,9 @@ with open(p('un_reports.csv'), 'w', newline='', encoding='utf-8') as _f:
         for src, para, text in UNREC.get(str(v['id']), []):
             _w.writerow([v['id'], v.get('name') or '', v.get('township') or '', v.get('village_tract') or '', UNSRC[src]['title'], para, text, UNSRC[src]['url']])
 with open(p('old_maps.csv'), 'w', newline='', encoding='utf-8') as _f:
-    _w = csv.writer(_f); _w.writerow(['id', 'name', 'township', 'on_map_of_1890_1906', 'on_map_of_1925_1944'])
+    _w = csv.writer(_f); _w.writerow(['id', 'name', 'township', 'on_map_of_1890_1906', 'on_map_of_1925_1944', 'on_map_of_1954_1955'])
     for v in V:
-        per = old_periods(v); _w.writerow([v['id'], v.get('name') or '', v.get('township') or '', 'yes' if 'a' in per else 'no', 'yes' if 'b' in per else 'no'])
+        per = old_periods(v); _w.writerow([v['id'], v.get('name') or '', v.get('township') or '', 'yes' if 'a' in per else 'no', 'yes' if 'b' in per else 'no', 'yes' if 'c' in per else 'no'])
 if os.path.exists(p('content', 'sources.md')):
     _b = build_edition.markdown(open(p('content', 'sources.md'), encoding='utf-8').read())
     write(p('sources-list', 'index.html'), page('/sources-list/', 'Further sources: old maps, UN reports and other records of Rohingya villages | FARA',

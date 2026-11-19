@@ -736,6 +736,7 @@ button:focus-visible,input:focus-visible,a:focus-visible,select:focus-visible{ou
   /* map art */
   .artin{padding:12px}
   .seg.seg5 button{padding:13px 2px;font-size:9.5px}
+  #oldseg button{padding:14px 2px;font-size:11px}
   .themebtn{padding:11px 4px 9px}
   #artgen{padding:16px}
   .artpreview{min-height:260px}
@@ -1241,15 +1242,16 @@ body.sat.timeopen #toast{bottom:198px}
       <button id="bordersbtn" aria-pressed="false" title="Township and village-tract boundaries">Borders</button>
     </div>
     <div class="sublbl">Old maps</div>
-    <div class="seg three" id="oldseg">
+    <div class="seg seg4" id="oldseg">
       <button data-old="" class="on" aria-pressed="true" title="No old map">Off</button>
       <button data-old="a" aria-pressed="false" title="British survey maps, one inch to a mile, 1890 to 1906">c. 1900</button>
       <button data-old="b" aria-pressed="false" title="British survey maps, 1925 to 1944">1925–44</button>
+      <button data-old="c" aria-pressed="false" title="United States Army maps, 1:250,000, compiled in 1954 and 1955">1954–55</button>
     </div>
     <div id="oldmore">
       <label>See through <input id="oldop" type="range" min="15" max="100" value="100" aria-label="How solid the old map is"></label>
       <button id="oldink" type="button" aria-pressed="false" title="Hide the paper and keep only the drawn lines and names, laid over today's satellite picture">Lines only, over the satellite picture</button>
-      <div class="psrc">Survey of India, CC BY 4.0 · <a href="/sources-list/">about these maps</a><span id="oldnote" hidden></span></div>
+      <div class="psrc"><span id="oldcredit">Survey of India, CC BY 4.0</span> · <a href="/sources-list/">about these maps</a><span id="oldnote" hidden></span></div>
     </div>
   </div>
   <div class="card notch tools fold" data-fold="tools">
@@ -1501,7 +1503,7 @@ body.sat.timeopen #toast{bottom:198px}
       <li><b>Buildings destroyed in 2017</b>: <a href="https://data.humdata.org/dataset/destroyed-areas-in-buthidaung-maungdaw-and-rathedaung-townships-of-rakhine-state-in-myanmar-2727" target="_blank" rel="noopener">UNOSAT</a>, satellite analysis of 31 August – 11 October 2017 (CC BY-SA). Not validated on the ground.</li>
       <li><b>Fire detections</b>: <a href="https://firms.modaps.eosdis.nasa.gov/" target="_blank" rel="noopener">NASA FIRMS</a>, VIIRS and MODIS active fire data.</li>
       <li><b>Satellite pictures</b>: <a href="https://livingatlas.arcgis.com/wayback/" target="_blank" rel="noopener">Esri World Imagery and its Wayback archive</a>; recent passes from Copernicus Sentinel-2 (European Space Agency).</li>
-      <li><b>Old maps</b>: Survey of India sheets of 1890 to 1942, scanned and placed by the <a href="https://zenodo.org/communities/old-survey-of-india-maps/" target="_blank" rel="noopener">Old Survey of India Maps</a> community (CC BY 4.0), then checked and corrected by FARA against each sheet’s printed grid.</li>
+      <li><b>Old maps</b>: Survey of India sheets of 1890 to 1942, scanned and placed by the <a href="https://zenodo.org/communities/old-survey-of-india-maps/" target="_blank" rel="noopener">Old Survey of India Maps</a> community (CC BY 4.0), then checked and corrected by FARA against each sheet’s printed grid. The map of 1954 and 1955 is four sheets of the United States <a href="https://maps.lib.utexas.edu/maps/ams/burma/" target="_blank" rel="noopener">Army Map Service</a> (public domain; scans from the University of Texas Libraries), placed by FARA on their printed grid.</li>
       <li><b>United Nations reports</b>: the <a href="https://iimm.un.org/" target="_blank" rel="noopener">Independent Investigative Mechanism for Myanmar</a> (2025) and the <a href="https://digitallibrary.un.org/record/1643079" target="_blank" rel="noopener">Fact-Finding Mission on Myanmar</a> (2018), quoted briefly on the villages they name.</li>
       <li><b>Other spellings</b>: <a href="https://www.geonames.org/" target="_blank" rel="noopener">GeoNames</a> (CC BY 4.0). <a href="/sources-list/">All further sources</a>.</li>
       <li><b>Township and village-tract boundaries</b>: <a href="https://data.humdata.org/dataset/cod-ab-mmr" target="_blank" rel="noopener">UN OCHA, COD-AB</a> (source: MIMU), CC BY-IGO. Approximate; no endorsement of any boundary is implied.</li>
@@ -2377,14 +2379,23 @@ document.getElementById('bordersbtn').addEventListener('click', ()=>toggleBorder
 
 
 /* ================= OLD MAPS (EXPERIMENTAL) =================
-   Survey maps drawn under British rule, laid over today's map. Two periods:
+   Old survey maps laid over today's map. Three periods:
      a  around 1900: one inch to a mile, surveyed 1890 to 1906
      b  1925 to 1944: one inch to a mile (1925 to 1936), with half-inch sheets (1926 to 1942) where no one-inch sheet is available
-   The sheets were scanned and placed on modern coordinates by the Old Survey of India Maps community and Horst Held (CC BY 4.0);
-   the tiles in /oldmaps/ are cut from them. Village dots stay on top, so a village can be found on the old sheet. */
+     c  1954 to 1955: four United States Army Map Service sheets at 1:250,000, compiled from the surveys of 1936 to 1944 and air
+        photographs (Akyab and Cox's Bazar, 1954) and from half-inch sheets and charts (Myohaung, 1954, east of the villages;
+        Kyaukpyu, 1955, south-east of them)
+   The Survey of India sheets (a, b) were scanned and placed on modern coordinates by the Old Survey of India Maps community and
+   Horst Held (CC BY 4.0). The Army Map Service sheets (c) are in the public domain; the scans are from the University of Texas
+   Libraries and were placed by FARA on their printed grid. The tiles in /oldmaps/ are cut from them. Village dots stay on top,
+   so a village can be found on the old sheet. The sheets of 1954 and 1955 are four times coarser: their tiles stop at zoom 13. */
 const OLDMAPS = {
-  a:{ label:'Around 1900', years:'1890–1906', note:'One inch to a mile, surveyed 1890 to 1906. Maungdaw, north Buthidaung, part of Rathedaung.', boxes:__OLD_BOXES_A__ },
-  b:{ label:'1925–1944', years:'1925–1944', note:'One inch to a mile (1925 to 1936) and half inch (1926 to 1942). All four townships.', boxes:__OLD_BOXES_B__ }
+  a:{ label:'Around 1900', years:'1890–1906', note:'One inch to a mile, surveyed 1890 to 1906. Maungdaw, north Buthidaung, part of Rathedaung.', boxes:__OLD_BOXES_A__,
+      maxNative:14, credit:'Survey of India, CC BY 4.0', attr:'Survey of India, 1890–1906 · Old Survey of India Maps, CC BY 4.0', by:'Survey of India sheets' },
+  b:{ label:'1925–1944', years:'1925–1944', note:'One inch to a mile (1925 to 1936) and half inch (1926 to 1942). All four townships.', boxes:__OLD_BOXES_B__,
+      maxNative:14, credit:'Survey of India, CC BY 4.0', attr:'Survey of India, 1925–1944 · Old Survey of India Maps, CC BY 4.0', by:'Survey of India sheets' },
+  c:{ label:'1954–1955', years:'1954–1955', note:'United States Army map at 1:250,000, compiled in 1954 from the surveys of 1936 to 1944 and air photographs of 1943 to 1945. All four townships; also Myohaung (Mrauk U) to the east and Kyaukpyu to the south-east (1955). Four times coarser than the other two.', boxes:__OLD_BOXES_C__,
+      maxNative:13, credit:'US Army Map Service, public domain', attr:'US Army Map Service, 1954–1955 (public domain) · scan: University of Texas Libraries', by:'a United States Army map' }
 };
 const OLD = { key:'', layer:null, opacity:1, ink:false };
 map.createPane('oldmap'); map.getPane('oldmap').style.zIndex=250;
@@ -2396,8 +2407,8 @@ const OldTiles = L.TileLayer.extend({
   }
 });
 const OLD_BLANK='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
-const oldTiles = (key, opts) => new OldTiles('/oldmaps/'+key+'/{z}/{x}/{y}.webp', Object.assign({ oldKey:key, minNativeZoom:9, maxNativeZoom:14, errorTileUrl:OLD_BLANK,
-  attribution:'Old map: Survey of India, '+OLDMAPS[key].years+' · Old Survey of India Maps, CC BY 4.0' }, opts));
+const oldTiles = (key, opts) => new OldTiles('/oldmaps/'+key+'/{z}/{x}/{y}.webp', Object.assign({ oldKey:key, minNativeZoom:9, maxNativeZoom:OLDMAPS[key].maxNative, errorTileUrl:OLD_BLANK,
+  attribution:'Old map: '+OLDMAPS[key].attr }, opts));
 const oldCovers = (key, lat, lng) => OLDMAPS[key].boxes.some(b => lng>=b[0] && lng<=b[2] && lat>=b[1] && lat<=b[3]);
 function setOldMap(key){
   if (OLD.layer){ map.removeLayer(OLD.layer); OLD.layer=null; }
@@ -2407,11 +2418,13 @@ function setOldMap(key){
     const c=map.getCenter();
     if (map.getZoom()<9) showToast('// zoom in to see the old map');
     else if (!oldCovers(key, c.lat, c.lng)) showToast('// no sheet of this period here: try the other period');
+    else if (map.getZoom()>OLDMAPS[key].maxNative+1) showToast('// this map is drawn small: zoom out to read it');
     track('Old map', { period:key });
   }
   document.querySelectorAll('#oldseg button').forEach(b=>{ const on=(b.dataset.old||'')===OLD.key; b.classList.toggle('on',on); b.setAttribute('aria-pressed',String(on)); });
   document.getElementById('oldmore').classList.toggle('show', !!key);
   document.getElementById('oldnote').textContent = key ? OLDMAPS[key].note : '';
+  if (key) document.getElementById('oldcredit').textContent = OLDMAPS[key].credit;
   document.body.classList.toggle('oldmap', !!key);
   if (typeof deckFit==='function') setTimeout(deckFit, 30);
 }
@@ -2423,7 +2436,7 @@ function setOldInk(on){
 }
 document.getElementById('oldink').addEventListener('click', ()=>setOldInk(!OLD.ink));
 document.getElementById('oldseg').addEventListener('click', e=>{ const b=e.target.closest('button'); if (b) setOldMap(b.dataset.old); });
-{ const om=/[?&]old=([ab])\b/.exec(location.search); if (om) setTimeout(()=>setOldMap(om[1]), 600); }
+{ const om=/[?&]old=([abc])\b/.exec(location.search); if (om) setTimeout(()=>setOldMap(om[1]), 600); }
 document.getElementById('oldop').addEventListener('input', e=>{ OLD.opacity=+e.target.value/100; if (OLD.layer) OLD.layer.setOpacity(OLD.opacity); });
 
 /* what other records say about this village: United Nations reports, other spellings, the old map */
@@ -2438,8 +2451,8 @@ function otherRecHtml(v){
         +'<div class="psrc"><a href="'+s.url+'" target="_blank" rel="noopener">Read the report</a> · '+esc([...new Set(by[k].map(r=>r[1]))].map(x=>/^\d/.test(x) ? 'paragraphs '+x : x).join(', '))+'</div></details>'); });
   }
   if (v.an) parts.push('<div class="unrow"><div class="unsrc">Other spellings</div><p class="alts">'+v.an.map(esc).join(' · ')+'</p><div class="psrc">Older spellings from maps and gazetteers, as listed by <a href="https://www.geonames.org/" target="_blank" rel="noopener">GeoNames</a> (CC BY 4.0)</div></div>');
-  const la=+v.lat, ln=+v.lng, has=['a','b'].filter(k=>oldCovers(k, la, ln));
-  if (has.length) parts.push('<div class="unrow"><div class="unsrc">On old maps</div><div class="oldbtns">'+has.map(k=>'<button class="stbtn" type="button" data-oldgo="'+k+'">Map of '+OLDMAPS[k].years+'</button>').join('')+'</div><div class="psrc">Survey of India sheets · <a href="/sources-list/">about the old maps</a></div></div>');
+  const la=+v.lat, ln=+v.lng, has=['a','b','c'].filter(k=>oldCovers(k, la, ln));
+  if (has.length) parts.push('<div class="unrow"><div class="unsrc">On old maps</div><div class="oldbtns">'+has.map(k=>'<button class="stbtn" type="button" data-oldgo="'+k+'">Map of '+OLDMAPS[k].years+'</button>').join('')+'</div><div class="psrc">'+[...new Set(has.map(k=>OLDMAPS[k].by))].join(' and ').replace(/^a /,'A ')+' · <a href="/sources-list/">about the old maps</a></div></div>');
   return parts.length ? '<div class="k">In other records</div>'+parts.join('') : '';
 }
 document.querySelectorAll('.card.fold').forEach(c=>{
@@ -2458,7 +2471,8 @@ setTimeout(deckFit, 400); addEventListener('resize', deckFit);
 document.getElementById('otherrec').addEventListener('click', e=>{
   const b=e.target.closest('[data-oldgo]'); if (!b || !current) return;
   setOldMap(b.dataset.oldgo);
-  map.flyTo([+current.lat, +current.lng], Math.max(map.getZoom(), 14), { duration:.8 });
+  const zmax=OLDMAPS[b.dataset.oldgo].maxNative;                            /* the United States Army map is drawn small: open it at the zoom where it is sharp */
+  map.flyTo([+current.lat, +current.lng], zmax<14 ? zmax : Math.max(map.getZoom(), 14), { duration:.8 });
   if (PHONE.matches) snapSheet('peek');
 });
 
